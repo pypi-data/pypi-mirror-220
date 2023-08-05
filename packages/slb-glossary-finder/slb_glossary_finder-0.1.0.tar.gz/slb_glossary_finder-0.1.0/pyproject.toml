@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "slb_glossary_finder.__version__"}
+
+
+[project]
+name = "slb_glossary_finder"
+dynamic = ["version"]
+
+authors = [
+  { name="Daniel T. Afolayan (ti-oluwa)", email="tioluwa.dev@gmail.com" },
+]
+maintainers = [
+  { name="Daniel T. Afolayan (ti-oluwa)", email="tioluwa.dev@gmail.com" },
+]
+description = "Finds and saves terms on the Schlumberger Oilfield Glossary website."
+keywords = [
+    "Schlumberger",
+    "Oilfield",
+    "Glossary",
+    "Petroleum terms",
+    "Petroleum",
+]
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+]
+dependencies = [
+    "selenium>=4.10.0",
+    "openpyxl>=3.1.2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ti-oluwa/slb_glossary_finder"
+"Bug Tracker" = "https://github.com/ti-oluwa/slb_glossary_finder/issues"
+"Repository" = "https://github.com/ti-oluwa/slb_glossary_finder"

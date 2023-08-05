@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+slb_glossary_finder/__init__.py
+slb_glossary_finder/exceptions.py
+slb_glossary_finder/finder.py
+slb_glossary_finder/save.py
+slb_glossary_finder.egg-info/PKG-INFO
+slb_glossary_finder.egg-info/SOURCES.txt
+slb_glossary_finder.egg-info/dependency_links.txt
+slb_glossary_finder.egg-info/requires.txt
+slb_glossary_finder.egg-info/top_level.txt
+tests/test_finder.py
+tests/test_save.py
