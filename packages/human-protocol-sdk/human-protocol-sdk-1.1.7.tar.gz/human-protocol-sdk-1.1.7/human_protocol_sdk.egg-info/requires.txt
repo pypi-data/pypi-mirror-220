@@ -1,0 +1,5 @@
+cryptography
+minio
+pgpy
+validators
+web3==5.24.0
