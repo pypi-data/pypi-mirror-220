@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+podbox/__init__.py
+podbox.egg-info/PKG-INFO
+podbox.egg-info/SOURCES.txt
+podbox.egg-info/dependency_links.txt
+podbox.egg-info/top_level.txt
+podbox.egg-info/zip-safe
