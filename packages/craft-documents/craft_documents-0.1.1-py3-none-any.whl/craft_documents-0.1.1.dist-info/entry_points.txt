@@ -1,0 +1,3 @@
+[console_scripts]
+craft=craft_documents.main:app
+

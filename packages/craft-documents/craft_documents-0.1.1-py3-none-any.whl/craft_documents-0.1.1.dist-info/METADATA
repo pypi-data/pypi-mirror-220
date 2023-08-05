@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: craft-documents
+Version: 0.1.1
+Summary: A template based command line utility to create exams or worksheets with LaTeX.
+License: MIT
+Author: Tobias Hauser
+Author-email: apps.hausertobias@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: pyinquirer (>=1.0.3,<2.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+
