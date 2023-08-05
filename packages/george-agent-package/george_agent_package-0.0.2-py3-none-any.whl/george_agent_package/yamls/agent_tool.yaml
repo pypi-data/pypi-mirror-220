@@ -1,0 +1,33 @@
+george_agent_package.tools.agent_tool.ZeroShotReactDescriptionAgent.run:
+  class_name: ZeroShotReactDescriptionAgent
+  function: run
+  inputs:
+    query:
+      type:
+      - string
+    tool1_config:
+      type:
+      - object
+    tool2_config:
+      type:
+      - object
+    tool3_config:
+      type:
+      - object
+    tool4_config:
+      type:
+      - object
+    agent_type:
+      type:
+      - string
+    memory:
+      type:
+      - string
+    prompt_template:
+      type:
+      - string
+  module: george_agent_package.tools.agent_tool
+  name: Agent Tool
+  description: A tool for calling other tools
+  type: python
+
