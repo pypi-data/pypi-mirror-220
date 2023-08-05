@@ -1,0 +1,10 @@
+sqlalchemy<2
+pandas
+astropy
+google-cloud-secret-manager
+cloud-sql-python-connector[pg8000]
+pg8000
+
+[tests]
+pre-commit
+pytest
