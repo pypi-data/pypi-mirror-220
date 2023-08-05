@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pine-client"
+version = "0.2.0"
+description = "This module provides the core layer for python interface for the pinejs API"
+authors = ["Balena <info@balena.io>"]
+readme = "README.md"
+packages = [{include = "pine_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+typing-extensions = "^4.5.0"
+
+[tool.poetry.dev-dependencies]
+black = {version = "*", python = "^3.8.1"}
+flake8 = "*"
+pytest = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
