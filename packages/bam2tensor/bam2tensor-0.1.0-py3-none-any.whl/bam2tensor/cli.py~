@@ -1,0 +1,14 @@
+
+import requests
+
+def cli():
+  r = requests.get('https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&current_weather=true')
+  if r.status_code == 200:
+    print(r.json()["current_weather"]["temperature"])
+  else:
+    print("Open-Meteo is down!")
+
+if __name__ == "__main__":
+   cli()
+
+    
