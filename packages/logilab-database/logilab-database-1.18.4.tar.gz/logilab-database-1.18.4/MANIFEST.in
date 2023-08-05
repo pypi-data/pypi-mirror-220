@@ -1,0 +1,16 @@
+include ChangeLog
+include COPYING
+include COPYING.LESSER
+include CHANGELOG.md
+include logilab/database/ftiparser.g
+include __pkginfo__.py
+include tox.ini
+include docs/*
+exclude .gitlab-ci.yml
+recursive-include test *.py
+prune debian
+prune docs/_build
+include README.rst
+exclude .yamllint
+exclude .cube-doctor.yml
+exclude .hg-format-source

@@ -1,0 +1,4 @@
+setuptools
+logilab-common>=1.8.0
+Yapps2-logilab
+python-dateutil
