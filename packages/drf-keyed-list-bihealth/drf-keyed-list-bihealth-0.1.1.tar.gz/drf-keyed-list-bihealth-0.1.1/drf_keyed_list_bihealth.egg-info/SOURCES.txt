@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+drf_keyed_list/__init__.py
+drf_keyed_list/serializers.py
+drf_keyed_list_bihealth.egg-info/PKG-INFO
+drf_keyed_list_bihealth.egg-info/SOURCES.txt
+drf_keyed_list_bihealth.egg-info/dependency_links.txt
+drf_keyed_list_bihealth.egg-info/not-zip-safe
+drf_keyed_list_bihealth.egg-info/requires.txt
+drf_keyed_list_bihealth.egg-info/top_level.txt
