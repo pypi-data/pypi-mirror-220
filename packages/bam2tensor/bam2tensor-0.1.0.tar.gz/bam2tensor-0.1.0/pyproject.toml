@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bam2tensor"
+version = "0.1.0"
+description = "Test deployment."
+authors = ["Nick Semenkovich <semenko@alum.mit.edu>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+bam2tensor = "bam2tensor.cli:cli"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.5"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
