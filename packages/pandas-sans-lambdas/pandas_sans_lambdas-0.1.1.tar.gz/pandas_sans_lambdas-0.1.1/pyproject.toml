@@ -1,0 +1,122 @@
+[build-system]
+requires      = ["setuptools>=58", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# Metadata etc not included until linting tools catch up
+[project]
+name            = "pandas_sans_lambdas"
+version         = "0.1.1"
+description     = "Tools to simplify pandas-based data processing"
+readme          = "README.md"
+requires-python = ">=3.6"
+
+# License Information
+license = { file = "LICENSE" }
+
+authors     = [{ name = "Jake Antmann", email = "jakeantmann@gmail.com" }]
+maintainers = [{ name = "Jake Antmann", email = "jakeantmann@gmail.com" }]
+# Search tags
+# TODO add your topics from the Trove controlled vocabulary (see https://pypi.org/classifiers)
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: Pytest",
+    "Framework :: tox",
+    "Framework :: Sphinx",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+# TODO add your own free-text keywords
+keywords = ["pandas"]
+
+dependencies = ["pandas>=1.5.0", "numpy>=1.23.4"]
+
+[project.optional-dependencies]
+tests = [
+    'coverage==6.3.2',
+    # 'mypy==0.982',
+    # 'mypy-extensions==0.4.3',
+    'pytest==7.1.3',
+    'pytest-cov==3.0.0',
+]
+
+# Borrowed from https://github.com/pawamoy/git-changelog/blob/master/pyproject.toml
+[project.urls]
+homepage   = "https://github.com/jakeantmann/pandas_sans_lambdas"
+repository = "https://github.com//jakeantmann/pandas_sans_lambdas"
+releases   = "https://github.com//jakeantmann/pandas_sans_lambdas/releases"
+# documentation = "https://pandas_sans_lambdas.readthedocs.io/en/0.1.0"
+# documentation = "https://jakeantmann.github.io/pandas_sans_lambdas"
+# changelog = "https://pawamoy.github.io/git-changelog/changelog" # See https://keepachangelog.com/en/1.0.0/ for info on this
+issues      = "https://github.com/jakeantmann/pandas_sans_lambdas/issues"
+discussions = "https://github.com/jakeantmann/pandas_sans_lambdas/discussions"
+# gitter = "https://gitter.im/pandas_sans_lambdas/community"
+# funding = "https://github.com/sponsors/jakeantmann"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+## package names should match these glob patterns (["*"] by default)
+# include = ["my_package*"]
+## exclude packages matching these glob patterns (empty by default)
+exclude = ["pandas_sans_lambdas.tests*"]
+# to disable scanning PEP 420 namespaces (true by default)
+namespaces = false
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style.toml"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+# === Linter configuration ===
+# You can reuse this configuration in your own projects.
+# See: https://wemake-python-stylegui.de/en/latest/pages/usage/integrations/nitpick.html
+[tool.flake8]
+# Base flake8 configuration:
+# https://flake8.pycqa.org/en/latest/user/configuration.html
+format          = "wemake"
+show-source     = true
+statistics      = false
+doctests        = true
+ignore          = ["D107", "D202", "D203", "D401", "E203", "E402", "E501", "W503"]
+max-line-length = 120
+inline-quotes   = "double"
+exclude         = [".tox", "build"]
+strictness      = "long"
+
+[tool.isort]
+# isort configuration:
+# https://github.com/timothycrosley/isort/wiki/isort-Settings
+multi_line_output      = 3
+include_trailing_comma = true
+use_parentheses        = true
+line_length            = 120
+skip                   = [".tox", "build"]
+known_first_party      = "tests"
+force_grid_wrap        = 0
+combine_as_imports     = true
+
+# [tool.mypy]
+# ignore_missing_imports = true
+# follow_imports         = "normal"
+# strict_optional        = true
+# warn_no_return         = true
+# warn_redundant_casts   = true
+# warn_unused_ignores    = false
+
+[tool.coverage.report]
+show_missing = true
+precision    = 2
+skip_covered = true
+skip_empty   = true
+sort         = "Cover"
