@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: signmeup
+Version: 0.0.2
+Summary: Sign-Me-Up API
+Author: Your Name
+Author-email: yourname@example.com
+Requires-Dist: asgiref (==3.7.2)
+Requires-Dist: Django (==4.2.2)
+Requires-Dist: django-cors-headers (==4.1.0)
+Requires-Dist: djangorestframework (==3.14.0)
+Requires-Dist: Pillow (==10.0.0)
+Requires-Dist: psycopg2 (==2.9.6)
+Requires-Dist: python-dotenv (==1.0.0)
+Requires-Dist: pytz (==2023.3)
+Requires-Dist: sqlparse (==0.4.4)
+Requires-Dist: typing-extensions (==4.6.3)
+Requires-Dist: tzdata (==2023.3)
+
