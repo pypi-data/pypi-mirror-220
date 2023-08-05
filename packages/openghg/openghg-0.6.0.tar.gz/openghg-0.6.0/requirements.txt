@@ -1,0 +1,23 @@
+addict
+dask
+h5netcdf
+icoscp
+matplotlib
+msgpack
+netcdf4
+nbformat
+numexpr
+numpy
+nc-time-axis
+pandas < 2.0
+plotly
+pyvis
+rapidfuzz
+requests >= 2.25
+scipy
+tinydb
+toml
+tqdm
+xarray
+urllib3 >= 1.26.3
+openghg_defs
