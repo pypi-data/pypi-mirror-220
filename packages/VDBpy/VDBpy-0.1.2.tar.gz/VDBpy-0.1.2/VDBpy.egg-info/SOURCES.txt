@@ -1,0 +1,10 @@
+README.md
+setup.py
+VDBpy/__init__.py
+VDBpy/indexing.py
+VDBpy/query.py
+VDBpy/similarity.py
+VDBpy.egg-info/PKG-INFO
+VDBpy.egg-info/SOURCES.txt
+VDBpy.egg-info/dependency_links.txt
+VDBpy.egg-info/top_level.txt
