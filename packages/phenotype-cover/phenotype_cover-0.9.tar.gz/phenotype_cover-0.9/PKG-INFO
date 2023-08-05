@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: phenotype_cover
+Version: 0.9
+Summary: phenotype_cover is a package for biomarker discovery using multiset multicover.
+Home-page: https://github.com/euxhenh/phenotype-cover
+Author: Euxhen Hasanaj
+Author-email: ehasanaj@cs.cmu.edu
+License: MIT
+Keywords: biomarker,marker,phenotype,scRNA-seq,set,cover,multiset,multicover
+Platform: ALL
+Provides: phenotype_cover
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+
+Implements the greedy and cross-entropy-method phenotype cover algorithms.
