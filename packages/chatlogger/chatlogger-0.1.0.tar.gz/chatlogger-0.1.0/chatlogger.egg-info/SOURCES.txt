@@ -1,0 +1,8 @@
+setup.py
+chatlogger/__init__.py
+chatlogger/logger.py
+chatlogger.egg-info/PKG-INFO
+chatlogger.egg-info/SOURCES.txt
+chatlogger.egg-info/dependency_links.txt
+chatlogger.egg-info/top_level.txt
+tests/test.py
