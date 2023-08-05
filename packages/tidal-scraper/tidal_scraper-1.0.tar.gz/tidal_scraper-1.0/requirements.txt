@@ -1,0 +1,5 @@
+tidalapi
+pycrypto
+tqdm
+mutagen
+toml
