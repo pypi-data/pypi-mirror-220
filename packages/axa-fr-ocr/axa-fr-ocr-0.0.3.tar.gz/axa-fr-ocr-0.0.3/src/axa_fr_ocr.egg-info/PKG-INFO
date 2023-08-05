@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: axa-fr-ocr
+Version: 0.0.3
+Summary: AXA France OCR library
+Home-page: https://github.com/AxaFrance/axa-fr-ocr
+Author: AXA
+Author-email: guillaume.chervet@axa.fr
+Platform: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.8
+
+Utility library built on top of Tesseract and providing algorithms to deskew text in order to enhance OCR performance. It also provides an algorithm to determine whether an image contains text.
