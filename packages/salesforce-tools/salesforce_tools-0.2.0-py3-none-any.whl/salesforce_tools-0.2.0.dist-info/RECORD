@@ -1,0 +1,13 @@
+salesforce_tools/__init__.py,sha256=txcbnSWR2voShEuIYc1Q3hCHJagUrsiJzmvHXRqa3ag,548
+salesforce_tools/async_sf/__init__.py,sha256=5XUWoRhc-Gf9Nq9iY-1mGK7_amcK5mlHfurOIuBk9fY,207
+salesforce_tools/async_sf/client.py,sha256=fOXXjxWhcV02bYnYgGdPbGYpEFbFTzalAc9-EWsQkq0,3862
+salesforce_tools/async_sf/metadata.py,sha256=4ZA89X89hY19HcIPUiWLlsS35IBnvodPBCzOpMsgTpk,3227
+salesforce_tools/auth.py,sha256=e-z0wGks3DeSc4pSNxCfiA_CT7Z8D130e1aESRSyLKo,7544
+salesforce_tools/bulk.py,sha256=D7ZcBOliwpT0LCKaBxkk2F8WGE_GktfzW8JBb0RKFZw,6263
+salesforce_tools/bulk_models.py,sha256=y5Fr2699TfwIQ2TPQ8A_0y8KL4ZU65bqAnEoS9P3RRI,5882
+salesforce_tools/oauth_server.py,sha256=bLpD0joo5vFp21rzmYYLpkZrWNxwx4dJuum-ru5R4Jo,1612
+salesforce_tools/salesforce.py,sha256=g2RaKU4IzblTdHb9FgfRYxydGi2IJ1PbAOOhuNRrGD4,82405
+salesforce_tools/util.py,sha256=YTHfemA-rU_29Nrwmis6cIrlP2KqU-koVG2U2aULb5g,1879
+salesforce_tools-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+salesforce_tools-0.2.0.dist-info/METADATA,sha256=mEvnGxdnSzYXAjBHxaMauCgqvYk4S91Xo-chyjRV0Cg,1079
+salesforce_tools-0.2.0.dist-info/RECORD,,
