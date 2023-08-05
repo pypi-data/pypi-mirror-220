@@ -1,0 +1,19 @@
+<div class="card">
+	<div class='card-header'>	
+		{{pub.container_title}}, {{ pub.published|date:'Y' }}
+	</div>
+	<div class="card-body">
+		<h4 class="card-title">{{ pub.title }}</h4>
+		<h5 class="card-subtitle mb-2">
+			{% for author in pub.authors.all %}
+				<a class="text-muted text-decoration-none" href="{{ author.get_absolute_url }}"><span>{{author.given.0}}. {{ author.family}} </span></a>{% if not forloop.last %},{% endif %} 
+			{% endfor %}
+		</h5>
+		{% if pub.abstract %}
+			<p class="card-text">
+				{{ pub.abstract|safe }}
+			</p>
+		{% endif %}
+		<a href="{% url "literature:detail" pk=pub.pk %}" class="btn btn-primary">View Details</a>
+	</div>
+</div>

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load render_form from formsetify %}
+{% load i18n %}
+
+{% block content %}
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  {% for form in form_collection %}
+  <li class="nav-item" role="presentation">
+    <button class="nav-link{% if forloop.first %} active{% endif %}" id="{{ form.legend|slugify }}-tab" data-bs-toggle="tab" data-bs-target="#{{ form.legend|slugify }}" type="button" role="tab" aria-controls="home" aria-selected="true">{{ form.legend }}</button>
+  </li>
+  {% endfor %}
+</ul>
+<django-formset endpoint="{{ request.path }}" csrf-token="{{ csrf_token }}">
+<div class="tab-content" id="myTabContent">
+
+  {% for form in form_collection %}
+  <div class="tab-pane fade show{% if forloop.first %} active{% endif %}" id="{{ form.legend|slugify }}" role="tabpanel" aria-labelledby="{{ form.legend|slugify }}-tab">
+    {{ form }}
+  </div>
+  {% endfor %}
+</div>
+</django-formset>
+
+
+
+  {% comment %} {% render_form form_collection "bootstrap" field_classes="mb-2" %}  {% endcomment %}
+  {% comment %} {{ form_collection }} {% endcomment %}
+  {% comment %} {% render_form form "bootstrap" field_classes="mb-2" %}  {% endcomment %}
+ {% if add %}
+   <button type="button" class='btn btn-success' click="submit({add: true}) -> proceed">{% trans "Add" %}</button>
+ {% else %}
+   <button type="button" class='btn btn-primary'click="submit({update: true}) -> proceed">{% trans "Update" %}</button>
+   <button type="button" class='btn btn-danger' click="submit({delete: true}) -> proceed">{% trans "Delete" %}</button>
+ {% endif %}
+
+  
+
+
+{% endblock content %}
