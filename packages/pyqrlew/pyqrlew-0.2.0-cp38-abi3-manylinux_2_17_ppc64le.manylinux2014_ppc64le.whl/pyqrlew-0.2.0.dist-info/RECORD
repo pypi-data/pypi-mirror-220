@@ -1,0 +1,9 @@
+pyqrlew-0.2.0.dist-info/METADATA,sha256=4IOp84Bjf1FciAHpSV_J5upK3AcTf1m-7Z5nRK4Vc9A,2527
+pyqrlew-0.2.0.dist-info/WHEEL,sha256=ppDdPJnjB5mEXyv5tRFIwax7NLtszsdN0SK00YbDraw,131
+pyqrlew-0.2.0.dist-info/license_files/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyqrlew/io/__init__.py,sha256=sCSk7XrQf7R5Xc-WhqiFVcOHGV_piGxFi2WZraGMsUY,45
+pyqrlew/io/postgresql.py,sha256=KEOEMkMorzbfpiuBbuKiueWGOP5h7w9LLWmoOMFbsow,2612
+pyqrlew/io/database.py,sha256=ivRphdxMKwehZCw29SJUoi-eYT9XpknvokjWd8s9G1I,10178
+pyqrlew/__init__.py,sha256=NsyVFjtdSAFvJWWwt24f2SVP0KleguCp_hRhT6edUMQ,112
+pyqrlew/pyqrlew.abi3.so,sha256=ZTpdGelXs8o2qzNhik5EhQ4EMXcq93Esjwi8Yi1gvP4,20256688
+pyqrlew-0.2.0.dist-info/RECORD,,
