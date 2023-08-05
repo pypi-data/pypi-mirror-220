@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: py-service
+Version: 2.0.1
+Summary: Extremely basic launchctl wrapper for macOS.
+Home-page: https://github.com/lojoja/service
+License: MIT
+Author: lojoja
+Author-email: dev@lojoja.com
+Requires-Python: >=3.10.0,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.0.0,<9.0.0)
+Requires-Dist: clickext (>=1.0.1,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/lojoja/service/issues
+Project-URL: Repository, https://github.com/lojoja/service
+Description-Content-Type: text/markdown
+
+# service
+
+Extremely basic launchctl wrapper for macOS.
+
+
+## Requirements
+
+* macOS 12.x+
+* Python 3.10.x, 3.11.x
+
+
+## Installation
+
+```
+pip install py-service
+```
+
+
+## Usage
+
+```
+Usage: service [OPTIONS] COMMAND [ARGS]...
+
+  Extremely basic launchctl wrapper for macOS.
+
+Options:
+  -c, --config TEXT  The configuration file to use
+  --help             Show this message and exit.
+  -v, --verbose      Increase verbosity
+  --version          Show the version and exit.
+
+Commands:
+  disable  Disable a service (system domain only).
+  enable   Enable a service (system domain only).
+  restart  Restart a service.
+  start    Start a service.
+  stop     Stop a service.
+```
+
+Services can be referenced by name, file name (with or without extension), or the full path to the file. When referenced by name, the service will be resolved using the defined reverse domains (see [Configuration](#Configuration)). All the following are valid references:
+
+- baz
+- com.foobar.baz
+- com.foobar.baz.plist
+- /Library/LaunchDaemons/com.foobar.baz
+- /Library/LaunchDaemons/com.foobar.baz.plist
+
+**Note:** Targeting a macOS system service found in the `/System/*` path will raise an error and terminate without attempting to modify the service state. These services typically cannot be changed unless SIP is disabled.
+
+
+### Examples
+
+Start a service:
+
+```
+> service start com.bar.foo
+```
+
+Enable and start a service:
+
+```
+> sudo service start --enable com.bar.foo
+```
+
+Stop a service:
+
+```
+> service stop com.bar.foo
+```
+
+Stop and disable a service:
+
+```
+> sudo service stop --disable com.bar.foo
+```
+
+Restart a service:
+```
+> service restart com.bar.foo
+```
+
+Enable a service:
+
+```
+> sudo service enable com.bar.foo
+```
+
+Disable a service:
+
+```
+> sudo service disable com.bar.foo
+```
+
+
+## Configuration
+
+Reverse domains can be defined in the file `~/.config/service.toml`. When a service is referenced by name it will be resolved to a file in the current domain using the defined reverse domains. Services cannot be referenced by name only if no reverse domains are defined.
+
+Example configuration:
+
+```
+reverse-domains = [
+  "com.bar.foo",
+  "org.bat.baz"
+]
+```
+
+
+## License
+
+service is released under the [MIT License](./LICENSE)
+
