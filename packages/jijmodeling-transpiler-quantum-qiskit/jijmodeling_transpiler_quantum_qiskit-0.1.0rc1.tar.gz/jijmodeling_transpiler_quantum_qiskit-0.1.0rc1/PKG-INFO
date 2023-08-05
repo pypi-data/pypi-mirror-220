@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: jijmodeling-transpiler-quantum-qiskit
+Version: 0.1.0rc1
+Summary: JijModeling Transpiler for Qiskit
+Author: Jij Inc.
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: jijmodeling-transpiler-quantum (>=0.1.0rc1,<0.2.0)
+Requires-Dist: qiskit (>=0.43.1)
+Description-Content-Type: text/markdown
+
+# JijModeling Transpiler Quantum for Qiskit
+
+## Installation
+
+```shell
+pip install jijmodeling-transpiler-quantum[qiskit]
+```
+
