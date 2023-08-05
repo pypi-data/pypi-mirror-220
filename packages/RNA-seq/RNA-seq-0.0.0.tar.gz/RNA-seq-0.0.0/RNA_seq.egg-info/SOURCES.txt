@@ -1,0 +1,6 @@
+package_runner.py
+setup.py
+RNA_seq.egg-info/PKG-INFO
+RNA_seq.egg-info/SOURCES.txt
+RNA_seq.egg-info/dependency_links.txt
+RNA_seq.egg-info/top_level.txt
