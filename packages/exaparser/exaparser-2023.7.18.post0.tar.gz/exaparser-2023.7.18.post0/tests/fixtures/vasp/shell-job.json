@@ -1,0 +1,134 @@
+{
+    "_project": {
+        "slug": "demo-external"
+    },
+    "compute": {
+        "nodes": 1,
+        "ppn": 1,
+        "queue": "D",
+        "timeLimit": "01:00:00"
+    },
+    "name": "External Job",
+    "owner": {
+        "slug": "demo"
+    },
+    "status": "finished",
+    "workDir": "/mock/path",
+    "workflow": {
+        "isMultiMaterial": true,
+        "name": "Shell Workflow",
+        "properties": [],
+        "subworkflows": [
+            {
+                "_id": "f476bbe958e19856f87ced18",
+                "application": {
+                    "name": "shell",
+                    "summary": "Shell Script",
+                    "version": "4.2.46"
+                },
+                "model": {
+                    "method": {
+                        "subtype": "unknown",
+                        "type": "unknown"
+                    },
+                    "subtype": "unknown",
+                    "type": "unknown"
+                },
+                "name": "Shell Subworkflow",
+                "properties": [],
+                "units": [
+                    {
+                        "application": {
+                            "name": "shell",
+                            "summary": "Shell Script",
+                            "version": "4.2.46"
+                        },
+                        "executable": {
+                            "name": "sh"
+                        },
+                        "flowchartId": "f476bbe958e19856f87ced18-shell",
+                        "head": true,
+                        "input": [
+                            {
+                                "isManuallyChanged": true,
+                                "name": "job.rms",
+                                "rendered": "#!/bin/bash\n\n#PBS -N TEST\n#PBS -j oe\n#PBS -l nodes=1\n#PBS -l ppn=1\n#PBS -l walltime=00:00:10:00\n#PBS -q D\n#PBS -m abe\n#PBS -M info@exabyte.io\n\n# load module\nmodule add vasp/535-i-174-impi-044\n\n# go to the job working directory\ncd $PBS_O_WORKDIR\n\n# run the calculation\nmpirun -np $PBS_NP vasp > stdout\n"
+                            }
+                        ],
+                        "monitors": [
+                            {
+                                "name": "standard_output"
+                            }
+                        ],
+                        "name": "shell",
+                        "next": "",
+                        "postProcessors": [],
+                        "preProcessors": [],
+                        "results": [
+                            {
+                                "name": "final_structure"
+                            },
+                            {
+                                "name": "phonon_dos"
+                            },
+                            {
+                                "name": "pressure"
+                            },
+                            {
+                                "name": "atomic_forces"
+                            },
+                            {
+                                "name": "stress_tensor"
+                            },
+                            {
+                                "name": "phonon_dispersions"
+                            },
+                            {
+                                "name": "fermi_energy"
+                            },
+                            {
+                                "name": "density_of_states"
+                            },
+                            {
+                                "name": "zero_point_energy"
+                            },
+                            {
+                                "name": "total_energy_contributions"
+                            },
+                            {
+                                "name": "total_force"
+                            },
+                            {
+                                "name": "band_structure"
+                            },
+                            {
+                                "name": "band_gaps"
+                            },
+                            {
+                                "name": "total_energy"
+                            }
+                        ],
+                        "status": "finished",
+                        "statusTrack": [
+                            {
+                                "status": "finished",
+                                "trackedAt": 1234567890
+                            }
+                        ],
+                        "type": "execution"
+                    }
+                ]
+            }
+        ],
+        "units": [
+            {
+                "_id": "f476bbe958e19856f87ced18",
+                "flowchartId": "b45017d33fb8f24e93a7fc24",
+                "head": true,
+                "name": "Shell Subworkflow",
+                "next": "",
+                "type": "subworkflow"
+            }
+        ]
+    }
+}

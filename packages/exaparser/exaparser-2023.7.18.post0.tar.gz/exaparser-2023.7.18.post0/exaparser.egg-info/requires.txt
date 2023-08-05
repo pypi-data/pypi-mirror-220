@@ -1,0 +1,8 @@
+exabyte-api-client>=2022.1.13.post0
+express-py==2023.7.17.post1
+requests>=2.26.0
+
+[test]
+coverage[toml]>=5.3
+mock>=1.3.0
+numpy>=1.17.3

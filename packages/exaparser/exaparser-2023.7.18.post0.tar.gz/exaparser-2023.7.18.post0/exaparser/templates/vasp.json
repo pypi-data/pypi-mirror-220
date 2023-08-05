@@ -1,0 +1,68 @@
+{
+    "name": "VASP Workflow",
+    "properties": [],
+    "subworkflows": [
+        {
+            "_id": "c22a89a3c92b28318796a839",
+            "application": {
+                "name": "vasp"
+            },
+            "model": {
+                "method": {
+                    "subtype": "unknown",
+                    "type": "unknown"
+                },
+                "subtype": "unknown",
+                "type": "unknown"
+            },
+            "name": "VASP Workflow",
+            "units": [
+                {
+                    "application": {
+                        "name": "vasp"
+                    },
+                    "flowchartId": "1241e3a98b2003e1d9d123aa",
+                    "head": true,
+                    "input": [
+                        {
+                            "name": "INCAR"
+                        },
+                        {
+                            "name": "KPOINTS"
+                        },
+                        {
+                            "name": "POSCAR"
+                        }
+                    ],
+                    "monitors": [
+                        {
+                            "name": "standard_output"
+                        }
+                    ],
+                    "name": "vasp",
+                    "postProcessors": [],
+                    "preProcessors": [],
+                    "results": [],
+                    "stdoutFile": "stdout",
+                    "type": "execution",
+                    "workDir": "."
+                }
+            ]
+        }
+    ],
+    "units": [
+        {
+            "_id": "c22a89a3c92b28318796a839",
+            "flowchartId": "f0c5bd0f2000a30b77f818ac",
+            "head": true,
+            "monitors": [],
+            "name": "VASP Workflow",
+            "postProcessors": [],
+            "preProcessors": [],
+            "results": [],
+            "status": "idle",
+            "statusTrack": [],
+            "type": "subworkflow"
+        }
+    ]
+}

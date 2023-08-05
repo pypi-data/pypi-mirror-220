@@ -1,0 +1,64 @@
+  PAW Si_sv_GW 29Sep2009
+   12.0000000000000
+ parameters from PSCTR are:
+   VRHFIN =Si: s2p2
+   LEXCH  = PE
+   EATOM  =  2779.1055 eV,  204.2585 Ry
+
+   TITEL  = PAW Si_sv_GW 29Sep2009
+   LULTRA =        F    use ultrasoft PP ?
+   IUNSCR =        0    unscreen: 0-lin 1-nonlin 2-no
+   RPACOR =    0.000    partial core radius
+   POMASS =   28.085; ZVAL   =   12.000    mass and valenz
+   RCORE  =    1.600    outmost cutoff radius
+   RWIGS  =    2.480; RWIGS  =    1.312    wigner-seitz radius (au A)
+   ENMAX  =  547.578; ENMIN  =  410.683 eV
+   RCLOC  =    1.712    cutoff for local pot
+   LCOR   =        T    correct aug charges
+   LPAW   =        T    paw PP
+   EAUG   = 1153.827
+   RMAX   =    1.635    core radius for proj-oper
+   RAUG   =    1.300    factor for augmentation sphere
+   RDEP   =    1.645    radius for radial grids
+   RDEPT  =    1.500    core radius for aug-charge
+
+   Atomic configuration
+    9 entries
+     n  l   j            E        occ.
+     1  0  0.50     -1785.8828   2.0000
+     2  1  1.50       -95.5546   6.0000
+     2  1  1.50       -97.9619   0.0000
+     3  1  0.50        -4.0811   2.0000
+     2  0  0.50      -139.4969   2.0000
+     2  0  0.50      -141.5006   0.0000
+     3  0  0.50       -10.8127   2.0000
+     3  2  1.50        -4.0817   0.0000
+     4  3  2.50        -4.0817   0.0000
+   Description
+     l       E           TYP  RCUT    TYP  RCUT
+     1    -95.5545942     23  1.400
+     1    -97.9619472     23  1.400
+     1     -4.0811372     23  1.400
+     0   -139.4969013     23  1.100
+     0   -141.5005904     23  1.100
+     0    -10.8127223     23  1.400
+     2     -1.3605826     23  1.600
+     2     81.6349560     23  1.600
+     3     -1.3605826     23  1.600
+   Error from kinetic energy argument (eV)
+   NDATA  =      100
+   STEP   =   20.000   1.050
+  269.      267.      266.      265.      264.      262.      261.      260.
+  258.      257.      256.      254.      252.      250.      248.      246.
+  243.      241.      238.      234.      231.      228.      224.      220.
+  217.      212.      206.      203.      197.      191.      185.      178.
+  172.      165.      159.      152.      143.      137.      128.      122.
+  113.      105.      96.9      89.1      81.7      74.6      67.8      59.9
+  54.0      47.1      40.9      36.3      31.1      26.4      21.5      18.0
+  14.9      11.8      9.15      7.03      5.32      3.97      2.91      1.98
+  1.40     0.913     0.584     0.370     0.222     0.149     0.105     0.838E-01
+ 0.741E-01 0.686E-01 0.629E-01 0.568E-01 0.488E-01 0.404E-01 0.315E-01 0.247E-01
+ 0.186E-01 0.143E-01 0.112E-01 0.895E-02 0.733E-02 0.608E-02 0.503E-02 0.409E-02
+ 0.336E-02 0.284E-02 0.245E-02 0.219E-02 0.190E-02 0.161E-02 0.128E-02 0.965E-03
+ 0.711E-03 0.573E-03 0.513E-03 0.499E-03
+END of PSCTR-controll parameters
