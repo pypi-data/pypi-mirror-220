@@ -1,0 +1,38 @@
+<p align="center">
+    <img src="./img/ask_lib_logo.png">
+</p>
+
+![](https://img.shields.io/pypi/l/ask_lib) 
+![](https://img.shields.io/pypi/v/ask_lib) 
+![](https://img.shields.io/pypi/pyversions/ask_lib)
+
+
+# ask_lib
+ask_lib is a small Python package available on PyPi that lets you ask user's confirmation from a [CLI](https://en.wikipedia.org/wiki/Command-line_interface).
+
+## Documentation
+ask_lib is well tested (with 100% test coverage).
+
+## Examples
+```py
+from ask_lib import ask, AskResult
+
+
+to_remove = "file.txt"
+
+if ask("Are you sure to delete this file ?", AskResult.NO):
+    os.remove(to_remove)
+```
+```py
+import os
+import sys
+
+from ask_lib import ask, AskResult
+
+
+yes_to_all = AskFlag.YES_TO_ALL if "-force" in sys.argv else None
+to_remove = "file.txt"
+
+if ask("Are you sure to delete this file ?", flag=yes_to_all):
+    os.remove(to_remove)
+```
