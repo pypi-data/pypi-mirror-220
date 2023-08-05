@@ -1,0 +1,3 @@
+include nvidiacheck/requirements.txt
+include nvidiacheck/thirdparty.json
+include nvidiacheck/README.MD

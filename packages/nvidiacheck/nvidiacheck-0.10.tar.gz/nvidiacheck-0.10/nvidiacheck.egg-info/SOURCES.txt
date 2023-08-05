@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nvidiacheck/README.MD
+nvidiacheck/__init__.py
+nvidiacheck/requirements.txt
+nvidiacheck/thirdparty.json
+nvidiacheck.egg-info/PKG-INFO
+nvidiacheck.egg-info/SOURCES.txt
+nvidiacheck.egg-info/dependency_links.txt
+nvidiacheck.egg-info/requires.txt
+nvidiacheck.egg-info/top_level.txt
