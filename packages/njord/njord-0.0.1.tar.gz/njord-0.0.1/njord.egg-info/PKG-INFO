@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: njord
+Version: 0.0.1
+Summary: A Python package for programmatically controlling NordVPN.
+Home-page: https://github.com/admjs/njord
+Author: admjs
+Author-email: ajs@sent.com
+Project-URL: Bug Tracker, https://github.com/admjs/njord/-/issues
+Project-URL: repository, https://github.com/admjs/njord
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Environment :: MacOS X
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Unix Shell
+Classifier: Natural Language :: English
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Njord Python Package
+## Overview
+The njord python package provides a convenient wrapper to programmatically working with NordVPN servers on Mac/Linux via OpenVPN.
+
+## Prerequisites
+- `sudo`
+- `openvpn`
+
+Because njord relies on `sudo` and `openvpn`, it only works on OSX (including Apple silicone) and Linux. Linux is currently untested. Nord has an [official client](https://support.nordvpn.com/Connectivity/Linux/) that may better serve your needs on Linux. Windows isn't supported.
+
+### Installing OpenVPN
+#### OSX
+`$ brew install openvpn`
+
+#### Ubuntu
+`$ sudo apt-get install openvpn`
+
+## Installation
+
+`$ pip install njord`
+
+## Usage
+#### Authentication
+Authentication is handled via *service credentials*. Generate these via your Nord account at `Services > NordVPN > Manual Setup`
+
+Copy the service credentials username and password. It's reccomended that you use a .env file for storing them. Njord will check for a .env file on initialization as well as os env variables. Authentication can also be done explicitly during init.
+
+
+
+```
+# .env
+NORD_USER=xxxxxxxxxxxxx
+NORD_PASSSWORD=xxxxxxxxxxx
+```
+
+```python
+from njord import VPN
+
+# Using .env file or os env
+vpn = VPN()
+
+# Explicit
+vpn = VPN(user="xxxxxxxx", password="xxxxxxxxx")
+```
+
+#### Connecting & Disconnecting
+``` python
+from njord import VPN
+vpn = VPN()
+vpn.connect()
+vpn.protected()
+>> True
+vpn.disconnect()
+vpn.protected()
+>> False
+```
+
+
+MIT License
+
+Copyright (c) 2023 Adam Smith
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
