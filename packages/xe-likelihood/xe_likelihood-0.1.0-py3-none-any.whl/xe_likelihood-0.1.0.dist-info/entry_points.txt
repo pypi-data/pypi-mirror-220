@@ -1,0 +1,3 @@
+[console_scripts]
+xe-likelihood=xe_likelihood.cli:main
+

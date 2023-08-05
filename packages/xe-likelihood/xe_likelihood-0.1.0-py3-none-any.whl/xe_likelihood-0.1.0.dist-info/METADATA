@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: xe-likelihood
+Version: 0.1.0
+Summary: Binwise approximate inference for XENON1T and XENONnT experiments.
+Home-page: https://github.com/XENON1T/xe_likelihood
+License: MIT
+Author: XENON collaboration
+Author-email: knut.dundas.moraa@columbia.edu
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: wimps
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas (!=1.3.4)
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: wimprates (>=0.3.2,<0.4.0) ; extra == "wimps"
+Description-Content-Type: text/x-rst
+
+xe-likelihood
+-------------
+
+Binwise approximations of the XENON1T likelihood and XENONnT projections for fast inference on arbitrary models.
+
+
+Example XENON1T based inference
+
+============
+Installation 
+============
+
+In the folder where you've downloaded this repository: 
+
+.. code-block:: python
+    
+    pip install -e .
+
+
+Simple example: 
+
+.. code-block:: python
+
+    from xe_likelihood import BinwiseInference, Spectrum
+
+    spectrum = Spectrum.from_wimp(mass=50)
+    inference = BinwiseInference.from_xenon1t_sr(spectrum=spectrum)
+    inference.plot_summary(show=True)
+
+
+Will produce something like this:
+
+.. image:: images/XENON1T_inference.png
+  :width: 800
+  :alt: Xenon1T Inference
+
+========
+Citation
+========
+
+If you use this package, please cite the following papers: 
+
+- the paper describing this method: https://arxiv.org/abs/2210.07231
+- the paper for the data used: https://arxiv.org/abs/1805.12562
+
+
+
