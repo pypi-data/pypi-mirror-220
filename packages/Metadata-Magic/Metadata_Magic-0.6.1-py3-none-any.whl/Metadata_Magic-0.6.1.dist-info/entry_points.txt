@@ -1,0 +1,12 @@
+[console_scripts]
+archive-all-comics = metadata_magic.main.comic_archive.archive_all:main
+archive-book = metadata_magic.main.epub.epub:main
+archive-comic = metadata_magic.main.comic_archive.comic_archive:main
+archive-series = metadata_magic.main.comic_archive.series_info:main
+extract-all-comics = metadata_magic.main.comic_archive.extract_all:main
+meta-missing-fields = metadata_magic.main.error_finding.missing_fields:main
+meta-missing-media = metadata_magic.main.error_finding.missing_media:main
+meta-missing-metadata = metadata_magic.main.error_finding.missing_metadata:main
+meta-rename = metadata_magic.main.rename.meta_rename:main
+sort-rename = metadata_magic.main.rename.sort_rename:main
+update-comic-archives = metadata_magic.main.comic_archive.comic_archive_update:main
