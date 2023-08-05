@@ -1,0 +1,1 @@
+RDFox version: 6.2 (f06b96821770347effc09d0b590d629b7d7bf53e)
