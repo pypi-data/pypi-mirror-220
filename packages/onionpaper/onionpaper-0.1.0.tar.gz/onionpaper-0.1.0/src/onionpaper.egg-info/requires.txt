@@ -1,0 +1,11 @@
+click
+humanfriendly
+PyAutoGUI
+PyYAML
+
+[dev]
+black
+build
+twine
+
+[test]
