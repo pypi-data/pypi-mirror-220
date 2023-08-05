@@ -1,0 +1,7 @@
+deprecation>=2.1.0
+httpx>=0.16.1
+urllib3
+six>=1.11.0
+pyjwt>=2.0.1
+cachetools>=4.2.4
+cryptography>=35.0.0
