@@ -1,0 +1,14 @@
+requests
+python-dateutil
+google-api-core
+google-api-python-client
+google-auth
+google-cloud-iam
+google-cloud-core
+google-cloud-storage
+google-cloud-bigquery
+google-cloud-pubsub
+google-cloud-secret-manager
+google-cloud-securitycenter
+googleapis-common-protos
+protobuf
