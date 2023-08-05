@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: stockscraper
+Version: 0.1.0
+Summary: A Tool for collecting stock data, to do fundamental analysis and does not predict or recommend any stock in particular.
+Home-page: https://github.com/pallav2905-py/stockscraper
+Author: Pallav
+License: MIT License
+        
+        Copyright (c) 2023 Pallav
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm (>=4.64.1)
+Requires-Dist: beautifulsoup4 (>=4.9.0)
+Requires-Dist: requests (>=2.0.0)
+
+# stockscraper
+
+## Introduction
+Stock Ratio Scraper is a Python web scraping program designed to fetch financial ratios for various stocks from a specific website. It scrapes stock names and links and then retrieves financial ratios such as MarketCap, CurrentPrice, StockPE, and more. The fetched data is stored in separate text files for further analysis or reference.
+
+
+## Disclaimer
+Please note that web scraping may have legal implications, and it is essential to ensure compliance with the website's terms of service and data usage policy. Respect the website's server load and bandwidth, and use this tool responsibly.
+
+## Data Source
+The financial ratios and stock data in this project are scraped from <https://www.screener.in/>. Please review their terms of service and data usage policy for more information on data access and usage.
+
+## Requirements
+- Python 3.x
+- `requests` library
+- `BeautifulSoup` library
+- `tqdm` library
+
+## How to Use
+The code is divided into two classes: FetchStocks and FetchStocksData.
+
+1. Import library or Clone it.
+    - To Import STEP-1:
+        `pip install stockscraper`
+    - To Import STEP-2
+        Create a .py file and write
+        `import stockscraper`
+        In any case, above code don't work use,
+        `from stockscraper import *`
+
+2. Creating an Object to Get Names and corresponding links of stocks 
+    ### Do the above step only for firsttime
+    ### No need to run this again, as long as you see a StockLink.txt in your folder.
+
+    `obj_1 = stockscraper.FetchStocks(stockname,stinfo)` <br>
+    once you get all the name and corresponding links of stocks, create a new object of class **FetchStockData**<br>
+    It takes two arrays as an argument to store stock name and stockinfo
+
+    `obj_2 = stockscraper.FetchStockData(stinfo)`<br>
+    This will get data of each stock and store them in a comman array.
+    It takes one array as an argument.
+
+    `stockscraper.FetchStockData.GetRatios()`<br>
+    It takes 8 array's as argument, to sort and store each data seperately obtained from above line individually.<br>
+    The array arg's should be in order<br>
+    - MarketCap,
+    - CurrentPrice,
+    - StockPE,
+    - BookValue,
+    - DividendYield,
+    - ROCE,
+    - ROE,
+    - FaceValue.
+
+    `stockscraper.FetchStockData.ExportRatios()`<br>
+    It Stores all the Ratios obtained earlier in a .txt file for furthur usage<br>
+    It takes 8 arrays as an argument in order MarketCap,CurrentPrice,StockPE,BookValue,DividendYield,ROCE,ROE,FaceValue.
+
+## License
+MIT License
+
+Copyright (c) 2023 Pallav
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
