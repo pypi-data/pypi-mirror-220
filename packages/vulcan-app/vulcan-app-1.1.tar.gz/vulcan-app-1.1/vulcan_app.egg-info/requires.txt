@@ -1,0 +1,16 @@
+aiofiles
+fastapi
+httpx==0.23.3
+pydantic
+PyJWT
+pytz
+requests
+requests-async
+SQLAlchemy
+PyDrive2
+pymongo
+boto3
+asyncpg
+shortuuid
+python-multipart
+sshtunnel==0.4.0
