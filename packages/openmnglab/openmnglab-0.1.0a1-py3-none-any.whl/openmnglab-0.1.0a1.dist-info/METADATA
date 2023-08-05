@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: openmnglab
+Version: 0.1.0a1
+Summary: A Python framework for microneurography analysis
+Author: Peter Konradi
+Author-email: codingchipmunk@posteo.net
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: pandas (>=2.0.1,<3.0.0)
+Requires-Dist: pandera (>=0.14.5,<0.15.0)
+Requires-Dist: pymatreader (>=0.0.31,<0.0.32)
+Requires-Dist: quantities (>=0.14.1,<0.15.0)
+Requires-Dist: seaborn (>=0.12.2,<0.13.0)
+Description-Content-Type: text/markdown
+
+# OpenMNGLab
+🚧 under heavy construction 🚧
+
+A Python framework for [microneurography]([Microneurography - Wikipedia](https://en.wikipedia.org/wiki/Microneurography)) analysis.
+
