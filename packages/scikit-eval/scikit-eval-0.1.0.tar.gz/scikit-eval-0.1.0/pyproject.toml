@@ -1,0 +1,114 @@
+[project]
+name = "scikit-eval"
+version = "0.1.0"
+description = "Minimal package to evaluate machine learning models with scikit-learn"
+authors = [
+    { name = "baggiponte", email = "57922983+baggiponte@users.noreply.github.com" },
+]
+dependencies = []
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/baggiponte/scikit-eval"
+"Bug Tracker" = "https://github.com/baggiponte/scikit-eval/issues"
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "pre-commit>=3.1.0",
+    "ruff>=0.0.252",
+    "black>=23.1.0",
+    "deptry>=0.8.0",
+]
+test = [
+    "pytest>=7.2.1",
+    "pytest-cov>=4.0.0",
+]
+docs = [
+    "mkdocs>=1.4.2",
+    "mkdocs-material>=9.0.14",
+    "mkdocstrings[python]>=0.20.0",
+]
+release = [
+    "commitizen>=2.42.0",
+]
+
+[tool.pdm.build]
+excludes = [
+    "**/.DS_Store",
+]
+package-dir = "src"
+source-includes = [
+    "tests",
+    "README.md",
+]
+
+[tool.ruff]
+src = [
+    "src",
+]
+target-version = "py39"
+line-length = 88
+select = [
+    "E",
+    "F",
+    "A",
+    "B",
+    "BLE",
+    "C4",
+    "D",
+    "DTZ",
+    "FBT",
+    "G",
+    "I",
+    "RET",
+    "S",
+    "UP",
+    "W",
+    "YTT",
+]
+fix = true
+ignore = [
+    "D107",
+]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = [
+    "F401",
+    "I002",
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.ruff.pycodestyle]
+max-doc-length = 88
+
+[tool.ruff.isort]
+required-imports = [
+    "from __future__ import annotations",
+]
+
+[tool.mypy]
+ignore_missing_imports = true
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+pythonpath = "src"
+
+[tool.pyright]
+exclude = [
+    ".venv",
+]
+venvPath = "."
+venv = ".venv"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0",
+]
+build-backend = "pdm.pep517.api"
