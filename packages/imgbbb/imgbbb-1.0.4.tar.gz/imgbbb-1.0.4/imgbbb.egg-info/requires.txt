@@ -1,0 +1,4 @@
+requests
+colorclip
+fake-useragent
+requests-toolbelt
