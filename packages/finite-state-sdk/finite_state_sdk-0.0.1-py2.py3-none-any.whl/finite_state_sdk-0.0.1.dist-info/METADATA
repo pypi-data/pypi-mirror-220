@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: finite-state-sdk
+Version: 0.0.1
+Summary: The official Finite State Python SDK.
+Home-page: https://github.com/FiniteStateInc/finite-state-sdk
+License: MIT
+Author: Finite State, Inc.
+Author-email: developer-tools@finitestate.io
+Maintainer: Finite State, Inc.
+Maintainer-email: developer-tools@finitestate.io
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests (>=2.31.0)
+Project-URL: Repository, https://www.github.com/FiniteStateInc/finite-state-sdk
+Description-Content-Type: text/markdown
+
+# Finite State Python SDK
+
+This package is used to interact with Finite State's powerful GraphQL API.
+
+## Generating the docs
+
+```
+$ pip3 install pdoc
+$ pdoc -o docs -d markdown finite_state_sdk
+```
