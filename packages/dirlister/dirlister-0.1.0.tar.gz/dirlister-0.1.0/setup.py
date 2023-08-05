@@ -1,0 +1,36 @@
+from setuptools import setup
+
+setup(
+    name='dirlister',
+    version='0.1.0',    
+    description='Generates wordlists to use for enumeration and brute-forcing files and directories',
+    url='https://github.com/jimmy-ly00/dirlister',
+    author='Jimmy Ly',
+    author_email='jimmy-ly00@proton.me',
+    license='GNU General Public License v2.0',
+    packages=['dirlister'],
+    classifiers=[
+        'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',  
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.3',
+        'Programming Language :: Python :: 2.4',
+        'Programming Language :: Python :: 2.5',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.0',
+        'Programming Language :: Python :: 3.1',
+        'Programming Language :: Python :: 3.2',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12'
+    ],
+)
