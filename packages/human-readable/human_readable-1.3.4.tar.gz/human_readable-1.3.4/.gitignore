@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+dist/
+*.egg-info/
+
+# Sphinx documentation
+docs/_build/
+
+# Unit test / coverage reports
+.cache
+.coverage
+.nox/
+
+# Translations
+## BUG IN POETRY https://github.com/python-poetry/poetry/issues/3285 https://github.com/python-poetry/poetry/issues/3673 https://github.com/python-poetry/poetry-core/pull/46
+#*.mo
+*.pot
+*.po~
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+
+# Pytype
+.pytype/
+
+# IDEs
+.idea/
+.vscode/
+
+# Scripts
+scripts/
