@@ -1,0 +1,10 @@
+include MANIFEST.in
+include *.md
+include htsct/statics/*.sh
+include htsct/statics/*.toml
+include htsct/statics/*.db
+recursive-include * *.yaml *.ui
+prune test
+include LICENSE
+exclude pack.py
+exclude install.py
