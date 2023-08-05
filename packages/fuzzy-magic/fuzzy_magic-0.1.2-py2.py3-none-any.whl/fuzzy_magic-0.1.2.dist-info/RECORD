@@ -1,0 +1,11 @@
+fuzzy_magic/__init__.py,sha256=Dn6hME8Z3PlhPA0kthrapE8R0yxa452ZRLIXEUJQD6s,78
+fuzzy_magic/exceptions.py,sha256=Jk-MVpMfIEJHt0of-fRUUBFyeLlml5x72ekUGr7bkGA,2281
+fuzzy_magic/fuzzy.py,sha256=KwEp80xfD_BzssFlMYWu_SNTh2dobO6mp96-6a_YExU,8132
+fuzzy_magic/lvs.py,sha256=5QJOUjQPaUPETQFp-_Ip82MV9Ubq4WvhNe5iKBItoQA,6132
+fuzzy_magic/memberships.py,sha256=rHawImtWZQ6Wl5ZRyF9EcmyYK_qEJzx6NCiE9LiH9vQ,1437
+fuzzy_magic/rules.py,sha256=X2YAlw4EdHg-Z2tH9HAnJCMYlq0mHWOdmCp-Acr_z5k,4401
+fuzzy_magic-0.1.2.dist-info/LICENSE.txt,sha256=2xnptUHrThWAhvnvPpMFx0t6ps7bM__1rFLAZZayoqI,1068
+fuzzy_magic-0.1.2.dist-info/METADATA,sha256=UQ2Ys7rQ6Yy3nMMuNJ6863DvJ-OoKMbNG-bk0AAXSFk,1323
+fuzzy_magic-0.1.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+fuzzy_magic-0.1.2.dist-info/top_level.txt,sha256=mqFrMr8YBchv8nSMzj-npCeTY3cyXe6iEBRZ025Buxo,12
+fuzzy_magic-0.1.2.dist-info/RECORD,,
