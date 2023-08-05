@@ -1,0 +1,12 @@
+<!-- upload_form.html -->
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="data-folder">Select Data Folder:</label>
+    <input type="file" id="data-folder" name="data-folder">
+    
+    <label for="config-parameters">Change Config Parameters:</label>
+    <input type="text" id="config-parameters" name="config-parameters">
+    
+    <button type="submit">Submit</button>
+</form>
+
