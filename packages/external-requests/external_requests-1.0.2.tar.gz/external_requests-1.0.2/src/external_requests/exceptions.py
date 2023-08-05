@@ -1,0 +1,2 @@
+class ExternalRequestException(Exception):
+    pass
