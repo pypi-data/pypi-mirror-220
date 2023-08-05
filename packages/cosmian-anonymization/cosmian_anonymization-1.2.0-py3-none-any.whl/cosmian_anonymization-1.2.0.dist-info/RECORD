@@ -1,0 +1,11 @@
+cosmian_anonymization/__init__.py,sha256=I2KNlDp6w9J0ZC8D8CBGxuAG5tD6mlLzme3tMuVqCjQ,262
+cosmian_anonymization/anonymize.py,sha256=Ib3c5k5oz9d81t05Encuhj1-IiJxKewJrgFl7NWbNs0,8273
+cosmian_anonymization/conversion_helper.py,sha256=WiT2AVz9_eR0KdR1hHx79U8wS_rDPy9_8hXolvWB-gg,1954
+cosmian_anonymization/method_parser.py,sha256=JoDKER4MZVYbOcRzsNcXZTe7DADZzWA9H4oHaBeJXbA,3628
+cosmian_anonymization/noise_correlation.py,sha256=GCmDJKpmB3p1DxeaQA_y6BcVLuB_tXxtCfBVJauwQmE,3784
+cosmian_anonymization/noise_parser.py,sha256=l6G9qjwPXNf43Rb9PvawFriF1AcDzSz0_nBNAqBz1Q4,3887
+cosmian_anonymization-1.2.0.dist-info/LICENSE.md,sha256=_zfsPgqYDWuqWECzE0w-LQfkkgg28_DMNj87xgn6OUI,32275
+cosmian_anonymization-1.2.0.dist-info/METADATA,sha256=UlzF4_5fs7k86OzzMBfQW0rtNLbYgF-larMHAJths6E,1500
+cosmian_anonymization-1.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+cosmian_anonymization-1.2.0.dist-info/entry_points.txt,sha256=8zwjT9vbjKsVxtbgIOOw9YY0zzI7PE9y06fEsILeAyA,73
+cosmian_anonymization-1.2.0.dist-info/RECORD,,
