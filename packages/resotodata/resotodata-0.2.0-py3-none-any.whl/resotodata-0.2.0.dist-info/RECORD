@@ -1,0 +1,16 @@
+resotodata/__init__.py,sha256=DEa3VdpuM5C6jVSXH0aQBKgdD0m1aBZyu542hw2JzpE,404
+resotodata/__main__.py,sha256=T9G-J-DE_u8VL6diQP5MiNXGo1t5rwP_WCB_xxqXObU,12753
+resotodata/cloud.py,sha256=aPTHr3t7jE3NMvgGDMCDO-OzX4FQQ4o4VIbEfzQF_DM,195
+resotodata/co2.py,sha256=OR6pjOOebj18w9NXD0z5PxAIFA6ZdxT0QoA40qTLNvw,93
+resotodata/colors.py,sha256=p6AwCBEjpdL1DYx578jq_OBf3TS7CgMtK3DeL1sTpmQ,85
+resotodata/utils.py,sha256=D4FLJaRVg0z0huX_SbebcyG-uwhNz98CDpB24B_QZO4,2361
+resotodata/data/ccfdataset.json,sha256=O_-HgE8D58cjuycbdN7rWYbQciNTLpgU_YjYQ5Qsz_M,16904
+resotodata/data/colors.json,sha256=jOOP0gunLjdHhAME-OVtAs2S4RVOxzA9P7I2_9303C8,1671
+resotodata/data/instances.json,sha256=UaQWx9-C_kj6Aykbm_S7Cmyty-kNezCaL67n9xNWhmg,101248560
+resotodata/data/regions.json,sha256=K6qE_Nnnju3FmU_RHpb5DonwAaIdgbMqhWutSQqtmrs,13805
+resotodata/data/stripped_instances.json,sha256=5-ngsmciD63RqFb54N_uIe2EoIuL1F18dV5-DqDOt8Q,21240137
+resotodata-0.2.0.dist-info/METADATA,sha256=gkYMixEEXdMZkRS4en8hMBnsYGcoyi72DlykgtEojMc,1306
+resotodata-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+resotodata-0.2.0.dist-info/entry_points.txt,sha256=cgEkZXY88xK-Uzewefxi6jJ5bRtuZ88JBROaVdqerZQ,278
+resotodata-0.2.0.dist-info/top_level.txt,sha256=FO2DummqDTYRli1-EoePl0KmYS1spASwCHR3p7zIfpE,11
+resotodata-0.2.0.dist-info/RECORD,,
