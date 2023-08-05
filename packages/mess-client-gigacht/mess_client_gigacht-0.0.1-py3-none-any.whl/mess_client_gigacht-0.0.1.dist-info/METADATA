@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mess-client-gigacht
+Version: 0.0.1
+Summary: mess_client_gigacht
+Author: gigachad
+Author-email: giga@chad.com
+License-File: LICENSE
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+
