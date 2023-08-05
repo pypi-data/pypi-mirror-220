@@ -1,0 +1,8 @@
+README.md
+main.py
+setup.py
+trailer_downloader.egg-info/PKG-INFO
+trailer_downloader.egg-info/SOURCES.txt
+trailer_downloader.egg-info/dependency_links.txt
+trailer_downloader.egg-info/requires.txt
+trailer_downloader.egg-info/top_level.txt
