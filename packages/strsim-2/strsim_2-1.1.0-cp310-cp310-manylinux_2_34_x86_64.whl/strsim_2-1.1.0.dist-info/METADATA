@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: strsim-2
+Version: 1.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: pytest >=7.1.3, <8.0.0 ; extra == 'dev'
+Provides-Extra: dev
+License-File: LICENSE
+License-File: LICENSE
+Summary: Yet another string similarity library (implemented in Rust)
+Keywords: string-similarity,strsim,levenshtein,jaro-winkler
+Home-Page: https://github.com/binh-vu/strsim
+Author-email: Binh Vu <binh@toan2.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: homepage, https://github.com/binh-vu/strsim
+Project-URL: repository, https://github.com/binh-vu/strsim
+
+# YASS
+
+YASS (Yet another string similarity) library.
+
