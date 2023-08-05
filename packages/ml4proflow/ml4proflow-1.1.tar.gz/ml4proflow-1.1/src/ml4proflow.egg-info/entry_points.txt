@@ -1,0 +1,2 @@
+[console_scripts]
+ml4proflow-cli = ml4proflow.ml4proflow_cli:main

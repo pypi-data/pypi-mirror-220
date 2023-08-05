@@ -1,0 +1,107 @@
+# ml4proflow - A data flow oriented framework for ml applications in industry
+**ml4proflow** is the acronym for *Data**flow** of **M**achine Learning **for Pro**duction and Production Systems*.
+
+It is a framework that manages the dataflow along the typical ml pipeline and is mainly used in industrial applications.
+The ml pipeline is decribed by a graph, the *DataFlowGraph*. Typically, graphs describing ml pipelines are simple directed. However, since other types of graphs are possible, this frameworks can produce a dataflow for all types of graphs. Following the typical description of a graph, a *DFG* consits of multiple nodes, which are connected along their edges. Nodes are represented by *modules* and edges by *channels*.
+
+*Modules* contain the ml algorithms and are implemented by experts. *Channels* are created by the *DFG* and controlled by a configuration given by an non-expert. 
+
+This enables all employees, from the machine operator to data scientists, to execute ml algorithms. Due to the framework's independence of execution platforms and execution architecture, it can be deployed anywhere in the production process, from edge devices to internal or public clouds. 
+
+[![Tests Status](https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow/-/jobs/artifacts/main/raw/tests-badge.svg?job=gen-cov)](https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow/-/jobs/artifacts/main/file/reports/junit/report.html?job=gen-cov)
+[![Coverage Status](https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow/-/jobs/artifacts/main/raw/coverage-badge.svg?job=gen-cov)](https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow/-/jobs/artifacts/main/file/reports/coverage/index.html?job=gen-cov)
+[![Flake8 Status](https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow/-/jobs/artifacts/main/raw/flake8-badge.svg?job=gen-cov)](https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow/-/jobs/artifacts/main/file/reports/flake8/index.html?job=gen-cov)
+[![mypy errors](https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow/-/jobs/artifacts/main/raw/mypy.svg?job=gen-cov)]()
+[![mypy strict errors](https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow/-/jobs/artifacts/main/raw/mypy_strict.svg?job=gen-cov)]()
+------------
+
+
+# Features 
+- Open Source 
+- Python based
+- Modular & scalable
+- Platform independent 
+# Installation
+## Binary Installer from PyPi
+The binaries are available from the [Python Package Index](https://pypi.org/project/ml4proflow). 
+Install this package with
+```bash
+pip install ml4proflow
+```
+## End User Installation
+As **ml4proflow** is intended for developers and end users, we provide an installation script that sets up all the necessary dependencies for your operating system. It installs a Python instance and all available modules for the framework in a virtual environment. This installation method is intended for end users who are not familiar with Python. 
+This entry point to the framework is located inside the repository [ml4proflow-standalone](https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow-standalone).
+Follow the steps given by the README.
+
+## Installation from source
+The source code is currently hosted on [Gitlab](https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow).
+#### Linux 
+ 
+```bash 
+git clone https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow
+cd ml4proflow
+pip install .
+``` 
+
+#### Windows 
+
+```bash 
+git clone https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow
+cd ml4proflow
+pip install .
+```  
+## Development installation
+
+For further development, install the package in editable mode: 
+```bash 
+pip install -e . 
+```
+
+# Usage 
+A DataFlowGraph is controlled by a Configuration-File. The ```config.json``` is structured through a list of all appearing modules in the data pipeline. Every module is described by the path, the name and the configuration of the module. 
+
+In most cases the order of execution is determined by the data flow defined through the DFG-configuration.
+But since modules can decide for themselves whether they want to be executed (e.g. executables),it is necessary to arrange the modules in an intuitive way according to the order in the DFG.
+
+### Example DFG-Config 
+```json
+{
+    "modules": [{
+        "module_ident": "ml4proflow.mods.xxx.modules", 
+        "module_name": "ModuleName", 
+        "module_config": {
+            "channels_pull": ["src"]
+            "channels_push": ["src"], 
+            "moduleParam1": "xxx",
+            "moduleParam2": 1.0
+            }
+        }]
+}
+```
+### CLI - Interface 
+```bash
+$ ml4proflow-cli --[Options]
+```
+For more documentation, see [here](https://gitlab.ub.uni-bielefeld.de/ml4proflow/ml4proflow/-/blob/main/src/ml4proflow/ml4proflow_cli.py).
+
+# Using ml4proflow for data analytics
+## Basic Principles 
+- DataFlow in ml pipelnie represented as graph --> DataFlowGraph 
+- A node (Modules) in the graph is created by the DataFlowGraph 
+- Nodes can have none to multiple inputs and outputs
+    - BasicModule : The basic class of the framework
+        - 0-n inputs, 0-m outputs
+    - Sources: Inherits from the BasicModule
+        - 0 inputs, m outputs
+    - Sinks: Inherits from the BasicModule
+        - n inputs, 0 outputs 
+    - Executable: Inherits from the BasicModule
+        - 0 inputs, 0 outputs 
+    - Modules: Inherits from Sinks & Sources
+        - n inputs, m outputs
+    - DFG: Inherits from Executables
+        - 0 inputs, 0 outputs
+- An edge between two nodes is created by the DataFlowManager
+    - `create_channel` (left side of edge = SourceModule) 
+    - `register_sink` (right side of edge = SinkModule)
+- Important: Everything is a node: Even a a complete graph can be a node of another graph

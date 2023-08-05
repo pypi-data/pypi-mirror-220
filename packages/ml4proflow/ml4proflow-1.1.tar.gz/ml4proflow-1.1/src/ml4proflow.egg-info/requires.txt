@@ -1,0 +1,15 @@
+pandas
+
+[docs]
+sphinx
+sphinx-rtd-theme
+recommonmark
+
+[tests]
+pytest
+pandas-stubs
+pytest-html
+pytest-cov
+flake8
+mypy
+jinja2==3.0.3
