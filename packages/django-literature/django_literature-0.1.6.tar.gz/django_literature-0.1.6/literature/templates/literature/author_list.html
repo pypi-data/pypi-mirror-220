@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class='display-3'>Author List</h1>
+<hr>
+<p>These are all the authors that have publications in our database.Remember that the Literature and Author models both have custom querysets attached which allow us to easily get useful parameters like then ones shown in the table. Check out the documentation on Django Literature managers to view what else they can do.</p>
+<table class="table table-striped align-middle">
+ <thead>
+   <tr>
+    <th scope="col" colspan="4"></th>
+    <th colspan="2" class='text-center border-start'>Listed as...</th>
+  </tr>
+   <tr>
+     <th scope="col">Go To</th>
+     <th scope="col">Given</th>
+     <th scope="col">Family</th>
+     <th scope="col" class='text-center'>ORCID</th>
+     <th scope="col" class='text-center'>First Author</th>
+     <th scope="col" class='text-center'>Co-author</th>
+   </tr>
+ </thead>
+ <tbody>
+  {% for author in author_list %}
+  <tr>
+   <th scope="row"><a class='btn btn-primary' href="{{ author.get_absolute_url }}">View</a></th>
+   <td >{{ author.given }}</td>
+   <td>{{ author.family }}</td>
+   <td class='text-center'>{{ author.ORCID|default_if_none:"" }}</td>
+   <td class='text-center'>{{ author.as_lead }}</td>
+   <td class='text-center'>{{ author.as_supporting }}</td>
+ </tr>
+  {% endfor %}
+ </tbody>
+</table>
+
+
+{% endblock content %}
