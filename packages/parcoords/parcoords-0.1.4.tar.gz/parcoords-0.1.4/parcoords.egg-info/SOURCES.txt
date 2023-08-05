@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+parcoords/__init__.py
+parcoords/parcoords.py
+parcoords.egg-info/PKG-INFO
+parcoords.egg-info/SOURCES.txt
+parcoords.egg-info/dependency_links.txt
+parcoords.egg-info/requires.txt
+parcoords.egg-info/top_level.txt
