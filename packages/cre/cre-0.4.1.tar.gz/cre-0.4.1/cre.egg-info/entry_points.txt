@@ -1,0 +1,2 @@
+[console_scripts]
+cre = console.cre_exec:main
