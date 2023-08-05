@@ -1,0 +1,15 @@
+numbsql/__init__.py,sha256=ms7GJH9iBPb-_FMruSzrIqmULwE4d7rjwq-cp5WPuBM,6956
+numbsql/aggregate.py,sha256=DyFs9FJhtCppq_rZbHOfqGq4sZtyQ3UdPVLVsNlBNxw,4772
+numbsql/exceptions.py,sha256=D0UaN019grPgTslCiQIln7TPfylWVwULnhw-Fa3s9D4,991
+numbsql/numbaext.py,sha256=f-bPDOuemh7rPNeG3weU_inDDmk7M56lQ8GFM4-Cbow,18928
+numbsql/scalar.py,sha256=uw33JAqvmAaWbcp4kmgkFCqED2aWSgkQQ3oh9twcpx0,1971
+numbsql/sqlite.py,sha256=aTkjWEtiCSbWKOj0IH_PZhIOg8UWTaHEbZDbm_O0M9g,9247
+numbsql/tests/conftest.py,sha256=2ROoSicN6fRTVCai-fOkVGDWR3_2C6qWgTVLRMsQYAc,2886
+numbsql/tests/test_aggregate.py,sha256=5dqPsrH9x8DH4g4noe3N0cZKPDTXmprltBzknjS1gL0,10499
+numbsql/tests/test_numbaext.py,sha256=_4MfXWiJP311LWoTh628DmlPCMrxeCI8J0_38go0SoE,969
+numbsql/tests/test_scalar.py,sha256=rnzZ8uO7LJlpn-MsaydRxBcKZ1C6zMFmZ04DeoW1t14,8356
+numbsql/tests/test_version.py,sha256=5OuK5xlgi9Az2FBUutE0R-ET68bAhoJS7ASfX_VY7BE,202
+numbsql-6.0.1.dist-info/LICENSE,sha256=UuKBTO6rKkzQ8OyTxMQty7oKVj46F_KEwAeRoMO7FM8,11352
+numbsql-6.0.1.dist-info/METADATA,sha256=JVkoDm4GUGYfYfGyDwvVts6bD7Zhg7BTiwMNoBpDG4A,3767
+numbsql-6.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+numbsql-6.0.1.dist-info/RECORD,,
