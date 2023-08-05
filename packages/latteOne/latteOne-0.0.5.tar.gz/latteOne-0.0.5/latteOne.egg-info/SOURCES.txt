@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+requirements.txt
+setup.py
+test.py
+testfn.py
+latteOne.egg-info/PKG-INFO
+latteOne.egg-info/SOURCES.txt
+latteOne.egg-info/dependency_links.txt
+latteOne.egg-info/requires.txt
+latteOne.egg-info/top_level.txt
