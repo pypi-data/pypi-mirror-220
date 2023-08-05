@@ -1,0 +1,19 @@
+name: PostgresHook
+description: The configuration for migrating airflow.providers.postgres.hooks.postgres.PostgresHook to air2phin.fake.hooks.postgres.
+
+migration:
+  module:
+    - action: replace
+      src: airflow.providers.postgres.hooks.postgres.PostgresHook
+      dest: air2phin.fake.hooks.postgres.PostgresHook
+
+examples:
+  providers:
+    description: |
+      The example of migrating `airflow.DAG` declaration with assigned.
+    src: |
+      from airflow.providers.postgres.hooks.postgres import PostgresHook
+      hook = PostgresHook(postgres_conn_id='postgres_default')
+    dest: |
+      from air2phin.fake.hooks.postgres import PostgresHook
+      hook = PostgresHook(postgres_conn_id='postgres_default')
