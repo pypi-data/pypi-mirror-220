@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+pystooq/__init__.py
+pystooq/stooq_data_fetcher.py
+pystooq.egg-info/PKG-INFO
+pystooq.egg-info/SOURCES.txt
+pystooq.egg-info/dependency_links.txt
+pystooq.egg-info/requires.txt
+pystooq.egg-info/top_level.txt
