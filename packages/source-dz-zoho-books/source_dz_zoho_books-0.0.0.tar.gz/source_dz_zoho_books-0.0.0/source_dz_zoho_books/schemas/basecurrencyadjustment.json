@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+      "base_currency_adjustment_id": {
+        "type": "string"
+      },
+      "adjustment_date": {
+        "type": "string"
+      },
+      "exchange_rate": {
+        "type": "number"
+      },
+      "currency_id": {
+        "type": "string"
+      },
+      "currency_code": {
+        "type": "string"
+      },
+      "notes": {
+        "type": "string"
+      },
+      "gain_or_loss": {
+        "type": "number"
+      }
+    }
+  }
+  
