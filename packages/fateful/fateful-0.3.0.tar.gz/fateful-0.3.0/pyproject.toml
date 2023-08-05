@@ -1,0 +1,39 @@
+[tool.pdm.build]
+includes = []
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.3.0",
+    "isort>=5.12.0",
+    "ruff>=0.0.275",
+    "assertpy>=1.1",
+    "pytest-asyncio>=0.21.0",
+    "mkdocs-material>=9.1.18",
+    "mkdocstrings>=0.22.0",
+    "mkdocstrings-python>=1.1.2",
+    "dead>=1.5.2",
+    "mypy>=1.4.1",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "fateful"
+version = "0.3.0"
+description = "rusty container"
+authors = [
+    { name = "Marco", email = "cram@hotmail.fr" },
+]
+dependencies = [
+    "aiohttp>=3.8.4",
+    "pampy>=0.3.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
