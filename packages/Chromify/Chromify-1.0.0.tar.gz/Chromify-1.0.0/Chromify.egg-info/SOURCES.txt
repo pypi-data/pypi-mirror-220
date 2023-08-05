@@ -1,0 +1,9 @@
+setup.py
+Chromify.egg-info/PKG-INFO
+Chromify.egg-info/SOURCES.txt
+Chromify.egg-info/dependency_links.txt
+Chromify.egg-info/top_level.txt
+lib/Chromify.py
+lib/Color.py
+lib/Converter.py
+lib/__init__.py
