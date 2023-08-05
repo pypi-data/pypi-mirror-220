@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: autopilot_tools
+Version: 0.1.0
+Summary: PX4/ArduPilot MAVLink usefull tools
+Author-email: Dmitry Ponomarev <PonomarevDA96@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PX4/ArduPilot Autopilot tools ![](https://badge.fury.io/py/autopilot-tools.svg) ![badge](https://github.com/PonomarevDA/autopilot_tools/actions/workflows/build_package.yml/badge.svg) ![badge](https://github.com/PonomarevDA/autopilot_tools/actions/workflows/pylint.yml/badge.svg) ![badge](https://github.com/PonomarevDA/autopilot_tools/actions/workflows/tests.yml/badge.svg)
+
+This repository is a collection of scripts created to facilitate automated work with the PX4/ArduPilot, such as:
+1. Upload a specific firmware to the autopilot via a link or given binaries
+2. Reset the autopilot to default and configure the required parameters
+3. Upload and run a mission
+4. Download the last flight log
+5. Analyze the flight log
+6. Analyze an overall flight statistic based on multiple flight logs (total number of vehicle flight hours, flight distance, etc)
+
+The package is designed to be used as part of the HITL CI process.
+
+## 1. User guide
+
+### 1.1. Installation
+
+The package is distrubuted via [pypi.org/project/autopilot-tools/](https://pypi.org/project/autopilot-tools/).
+
+```bash
+pip install autopilot_tools
+```
+
+### 1.2. Usage
+
+The script below could be used as part of a CI process and it illustrates the main functionality of the package:
+
+```python
+from autopilot_tools.vehicle import Vehicle
+from autopilot_tools.analyzer import Analyzer
+
+vehicle = Vehicle()
+vehicle.upload_firmware(firmware_path_or_url)
+vehicle.configure(params_path)
+vehicle.load_mission(mission_path)
+
+res = vehicle.run_mission(mission_path)
+print(res)
+
+log_file = vehicle.load_latest_log(mission_path)
+
+analzyer = Analyzer()
+res = analzyer.analyse_log(log_file, analyze_requests=("airspeed", "ice", "esc_status"))
+print(res)
+```
+
+## 2. Developer guide
+
+### 2.1. Installation from sources
+
+```bash
+git clone https://github.com/PonomarevDA/autopilot_tools.git --recursive
+git submodule update --init --recursive
+pip install -r requirements.txt
+```
+
+### 2.2. Deployment
+
+Please, deploy initially on [test.pypi.org](https://test.pypi.org/project/autopilot-tools/). Only if everything is fine, then deploy on [pypi.org](https://pypi.org/project/autopilot-tools/).
+
+Try the script below to get details:
+
+```bash
+./deploy.sh --help
+```
+
+### 2.3. Design
+
+The package consists of 2 modules:
+1. configurator module has the main class Vehicle. It is based on pymavlink and allows you to configure the autopilot, set required parameters, download logs and so on via MAVLink protocol.
+2. log_analyzer module has the main class Analyzer. It allows you to analyze a single log and a bunch of them.
+
+## 3. License
+
+The package is distributed under MIT license.
