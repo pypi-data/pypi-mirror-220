@@ -1,0 +1,6 @@
+SpiNNFrontEndCommon==1!7.0.0-a6
+
+[test]
+SpiNNakerTestBase==1!7.0.0-a6
+pytest-cov
+testfixtures
