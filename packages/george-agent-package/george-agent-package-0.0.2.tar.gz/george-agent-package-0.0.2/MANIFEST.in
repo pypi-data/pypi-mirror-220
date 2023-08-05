@@ -1,0 +1,1 @@
+include george_agent_package/yamls/*.yaml
