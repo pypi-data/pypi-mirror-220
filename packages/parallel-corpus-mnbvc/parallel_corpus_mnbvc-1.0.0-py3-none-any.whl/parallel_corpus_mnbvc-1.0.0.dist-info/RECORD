@@ -1,0 +1,16 @@
+parallel_corpus_mnbvc.py,sha256=o9j_ZnhISdzADsawWvB-PBZnzifnrmbuKanZBb1SCZQ,39
+alignment/__init__.py,sha256=YFL2JldJd3Pa-MHdaF3G8fbFJk0I9rLGwPYRLVu4Esk,41
+alignment/batch_detector.py,sha256=Fv6oki_LoiWDwJ6xlGsrsYDmtST7lgGptElj6zwQov8,6084
+alignment/batch_sequential_detector.py,sha256=L6VRF4jyQ_sIh07Z0H7_3gXvsmk2yp-uY3v6n9TPfqs,20466
+alignment/batch_sequential_for_one_file.py,sha256=gWu6HmrjJ-qMzJmdkWLdxnKfDJQ6xOZ9mSXhYzx2Eg0,1969
+alignment/evaluate_segmentation.py,sha256=tx0CT04HBTKDx4i-iMLnlxGj6R6oBWRVWw0jT2ZyN1w,6764
+alignment/rule_based_detector.py,sha256=QnwRT_bL14q86a7ygnBYAa3Jea9YCbdo0it6Uz4NpO8,8953
+alignment/text_segmenter.py,sha256=azFOu54Bh1YVPbeHoyq8Oev5KPPtMqUZPbkRtu009jc,6029
+alignment/utils.py,sha256=VwEKUuO6al5cfVAYKG7MvPXJWWwqFnwfiS2bHw6xQZ4,12285
+download_data/__init__.py,sha256=xTC8YcOZhag5P4bU-AeHR-MbEjrm8fUdCzDiaU0dLn8,45
+download_data/download_un_corpus.py,sha256=HgfN8z3NsBo5v21i8pFkpz17Z76Jj-90Ly2sYwXcRWs,10603
+parallel_corpus_mnbvc-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+parallel_corpus_mnbvc-1.0.0.dist-info/METADATA,sha256=6zoY9Poao4xlYduVpp2MZvMVCuka7MmL2GKZlH4BaF0,498
+parallel_corpus_mnbvc-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+parallel_corpus_mnbvc-1.0.0.dist-info/top_level.txt,sha256=W4AgTr-d6uU9CZXCwMxlaPk-wz8Frhv2CxtfcK4OfUs,46
+parallel_corpus_mnbvc-1.0.0.dist-info/RECORD,,
