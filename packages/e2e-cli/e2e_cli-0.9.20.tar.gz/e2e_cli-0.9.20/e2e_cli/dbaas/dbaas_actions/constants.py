@@ -1,0 +1,12 @@
+# urls
+TAKE_SNAPSHOT_URL = "api/v1/rds/cluster/{dbaas_id}/snapshot?apikey={api_key}"
+RESET_PASSWORD_URL = "api/v1/rds/cluster/{dbaas_id}/reset-password/?apikey={api_key}"
+STOP_DB_URL = "api/v1/rds/cluster/{dbaas_id}/shutdown?apikey={api_key}"
+START_DB_URL = "api/v1/rds/cluster/{dbaas_id}/resume?apikey={api_key}"
+RESTART_DB_URL = "api/v1/rds/cluster/{dbaas_id}/restart?apikey={api_key}"
+ADD_PARAMETER_URL = "api/v1/rds/cluster/{dbaas_id}/parameter-group/{parameter_group_id}/add?apikey={api_key}"
+REMOVE_PARAMETER_URL = "api/v1/rds/cluster/{dbaas_id}/parameter-group/{parameter_group_id}/detach?apikey={api_key}"
+ADD_VPC_URL = "api/v1/rds/cluster/{dbaas_id}//vpc-attach/?apikey={api_key}"
+REMOVE_VPC_URL = "api/v1/rds/cluster/{dbaas_id}/vpc-detach/?apikey={api_key}"
+ENABLE_BACKUP_URL = "api/v1/rds/cluster/{dbaas_id}/enable-backup?apikey={api_key}"
+DISABLE_BACKUP_URL = "api/v1/rds/cluster/{dbaas_id}/disable-backup?apikey={api_key}"
