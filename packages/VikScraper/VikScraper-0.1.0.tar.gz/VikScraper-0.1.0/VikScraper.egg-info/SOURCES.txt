@@ -1,0 +1,9 @@
+setup.py
+VikScraper/Crawl.py
+VikScraper/InfiniteCrawler.py
+VikScraper/__init__.py
+VikScraper.egg-info/PKG-INFO
+VikScraper.egg-info/SOURCES.txt
+VikScraper.egg-info/dependency_links.txt
+VikScraper.egg-info/requires.txt
+VikScraper.egg-info/top_level.txt

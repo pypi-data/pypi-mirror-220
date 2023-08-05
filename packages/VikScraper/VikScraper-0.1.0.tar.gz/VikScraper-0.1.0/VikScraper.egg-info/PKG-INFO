@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: VikScraper
+Version: 0.1.0
+Summary: Tool for Scraping PDF files given Google Query
+Home-page: https://github.com/vik135/VikScraper
+Author: Vikram Nagapudi
+Author-email: vikram@concentric.ai
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+
+UNKNOWN
+
