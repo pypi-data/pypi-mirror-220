@@ -1,0 +1,14 @@
+mpcq/__init__.py,sha256=w7f2XUymlsZSzrKSmez08cBBM3HF2xznNnDfKevVRe0,219
+mpcq/client.py,sha256=wUEWu2oJm5hVI7LwA5lVKWMVk0jpTDnIngaUL380o-U,7335
+mpcq/observation.py,sha256=n1eQ8hFWh1HsFhejlX2Wqb-cqMVkQWAqWs3FrmHSm-A,2354
+mpcq/submission.py,sha256=wkxU-PavFnHOhD14UwPWXFsx8ScK7U6N4EbECG3cw8M,606
+mpcq/utils.py,sha256=IHFUUaWBGo1xXGJbrfxdFuWh-luNLaIpzKvvwHLyQuM,1499
+mpcq/version.py,sha256=gfIUsZ8--RIaUj-9NvEiDCoybvDLeoOILCvAnJ9F8Yg,189
+mpcq/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mpcq/tests/test_integration.py,sha256=avnBZXk1fEZP1kt2KbOt0sZ00GQDyUkC29s1M7OyYo4,2093
+mpcq/tests/test_submission.py,sha256=RbwnihJ8UAihd4FZbErW7Rpq0jzvI1gru3mVSvsb0Eo,335
+mpcq/tests/test_utils.py,sha256=gJUtA9NOJn130OhBEe18feyljEU8fajiolYR7q9jUuk,2374
+mpcq-0.2.3.dist-info/METADATA,sha256=8vaSYGIp2Of4zJvgEunhiwImiAkmEuxnhX7W-4QR53Y,3225
+mpcq-0.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mpcq-0.2.3.dist-info/top_level.txt,sha256=vldAS3-4ybSuV_Y3YQJbdEQ16MmwUrhvCt_5uU-AUPg,5
+mpcq-0.2.3.dist-info/RECORD,,
