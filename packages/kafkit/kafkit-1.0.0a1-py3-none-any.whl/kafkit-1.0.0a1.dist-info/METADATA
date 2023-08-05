@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: kafkit
+Version: 1.0.0a1
+Summary: Kafkit helps you write Kafka producers and consumers in Python with asyncio.
+Author-email: "Association of Universities for Research in Astronomy, Inc. (AURA)" <sqre-admin@lists.lsst.org>
+License: MIT
+Project-URL: Homepage, https://kafkit.lsst.io
+Project-URL: Source, https://github.com/lsst-sqre/kafkit
+Keywords: rubin,lsst
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastavro
+Requires-Dist: uritemplate
+Provides-Extra: aiohttp
+Requires-Dist: aiohttp ; extra == 'aiohttp'
+Provides-Extra: aiokafka
+Requires-Dist: aiokafka ; extra == 'aiokafka'
+Provides-Extra: dev
+Requires-Dist: coverage[toml] ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: documenteer[guide] ; extra == 'dev'
+Provides-Extra: httpx
+Requires-Dist: httpx ; extra == 'httpx'
+Provides-Extra: pydantic
+Requires-Dist: pydantic ; extra == 'pydantic'
+Requires-Dist: dataclasses-avroschema[pydantic] ; extra == 'pydantic'
+
+# Kafkit
+
+Kafkit helps you write Kafka producers and consumers in Python with asyncio:
+
+- Kafkit provides a client for the Confluent Schema Registry's HTTP API.
+  The `RegistryApi` client includes both high-level methods for managing subjects and schemas in a Registry, and direct low-level access to HTTP methods (GET, POST, PUT, PATCH, and DELETE).
+  The high-level methods use caching so you can use the client as an integral part of your application's schema management.
+  `RegistryApi` is implemented around [aiohttp](https://aiohttp.readthedocs.io/en/stable/), but since the base class is designed with a [sans IO architecture](https://sans-io.readthedocs.io), a Registry client can be implemented with any asyncio HTTP library.
+
+- Kafkit provides Avro message serializers and deserializers that integrate with the [Confluent Schema Registry](https://docs.confluent.io/current/schema-registry/docs/index.html): `Deserializer`, `Serializer`, and `PolySerializer`.
+
+- The `RecordNameSchemaManager` is a streamlined tool for serializing messages using the schemas maintained by your app, while also integrating with the [Confluent Schema Registry](https://docs.confluent.io/current/schema-registry/docs/index.html).
+
+- The `kafkit.ssl` module helps you connect to SSL-secured Kafka brokers.
+
+Learn more about Kafkit at https://kafkit.lsst.io.
