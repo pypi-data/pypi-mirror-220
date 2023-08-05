@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: aws-fsx-lifecycle-status-monitor
+Version: 0.0.3
+Summary: aws_fsx_lifecycle_status_monitor
+Home-page: https://github.com/stefan.freitag/aws_fsx_lifecycle_status_monitor.git
+Author: Stefan Freitag<stefan.freitag@udo.edu>
+License: Apache-2.0
+Project-URL: Source, https://github.com/stefan.freitag/aws_fsx_lifecycle_status_monitor.git
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AWS FSx Life Cycle Status Monitor
+
+Monitors the health of Amazon FSx file systems by configuring
+notifications on file system status changes. It helps to
+quickly detect and take action if your file systems aren’t healthy.
+
+This solution is based on this [post](https://aws.amazon.com/de/blogs/storage/monitoring-the-health-of-amazon-fsx-file-systems-using-amazon-eventbridge-and-aws-lambda/) in the AWS Storage Blog.
+
+## How to run
+
+### Tests
+
+```shell
+yarn test
+```
+
+### Integration tests
+
+```shell
+yarn integ-runner --directory ./integ-tests  --update-on-failed --parallel-regions eu-central-1
+```
+
+## Links
+
+* [Amazon FSx file system status](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/file-system-lifecycle-states.html)
+* [Monitoring the health of Amazon FSx file systems using Amazon EventBridge and AWS Lambda](https://aws.amazon.com/de/blogs/storage/monitoring-the-health-of-amazon-fsx-file-systems-using-amazon-eventbridge-and-aws-lambda/)
