@@ -1,0 +1,8 @@
+VDBpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+VDBpy/indexing.py,sha256=L8EvBjXPi2StKwWAV4JlsjBaXhyXmaCFIKdS47OiSP8,1303
+VDBpy/query.py,sha256=A4ynFuW3-SavUksMHbqi6CJf10ZCXXrvel_4-_YSaL4,183
+VDBpy/similarity.py,sha256=YEjLkx4Jo-A7UkmaTjbVywvXq6FZYTzamkVI0_4wTMk,1099
+VDBpy-0.1.1.dist-info/METADATA,sha256=XB7F2CmxxbkP7i7Kr8Yyy-Tn64JI9-4R8vkBg8ooutI,605
+VDBpy-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+VDBpy-0.1.1.dist-info/top_level.txt,sha256=NwY95hrTfe--i0-G_FTwmsuqqGpeKAowEF-4sNKiJxk,6
+VDBpy-0.1.1.dist-info/RECORD,,
