@@ -1,0 +1,13 @@
+PyYAML<7,>=6.0
+beancount<3,>=2.3.5
+fio-banka<2,>=1.0.3
+creditas==1.0.0.*
+lxml<5,>=4.9.2
+click<9,>=8.1.4
+pydantic<3,>=2.0.3
+pydantic-settings<3,>=2.0.2
+rich<14,>=13.4.2
+
+[devel]
+pre-commit<4,>=3.3.3
+pytest<8,>=7.4.0
