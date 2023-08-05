@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: payload-api
+Version: 0.4.5
+Summary: Payload Python Library
+License: MIT
+Author-email: Ian Halpern <ian@payload.co>
+Requires-Python: >=3.7
