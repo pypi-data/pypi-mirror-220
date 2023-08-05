@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pytest-screenshot-on-failure
+Version: 0.0.1
+Summary: Saves a screenshot when a test case from a pytest execution fails
+Home-page: https://github.com/kleber26/pytest-screenshot-on-failure
+Author: Kleber Lauton
+License: MIT
+Download-URL: https://github.com/kleber26/pytest-screenshot-on-failure/archive/refs/tags/v0.0.1.tar.gz
+Keywords: pytest plugin test screenshot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+UNKNOWN
+

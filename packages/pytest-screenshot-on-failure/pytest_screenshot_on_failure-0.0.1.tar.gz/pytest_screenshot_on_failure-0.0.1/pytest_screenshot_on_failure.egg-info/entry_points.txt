@@ -1,0 +1,3 @@
+[pytest11]
+psf = pytest_screenshot_on_failures
+

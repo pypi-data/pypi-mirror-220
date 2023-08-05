@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pytest_screenshot_on_failure.egg-info/PKG-INFO
+pytest_screenshot_on_failure.egg-info/SOURCES.txt
+pytest_screenshot_on_failure.egg-info/dependency_links.txt
+pytest_screenshot_on_failure.egg-info/entry_points.txt
+pytest_screenshot_on_failure.egg-info/requires.txt
+pytest_screenshot_on_failure.egg-info/top_level.txt
