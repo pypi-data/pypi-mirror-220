@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: py-triex
+Version: 2.0.4
+Summary: A tool to generate semi-minimized regular expression alternations.
+Home-page: https://github.com.com/lojoja/triex
+License: MIT
+Author: lojoja
+Author-email: dev@lojoja.com
+Requires-Python: >=3.10.0,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.0.0,<9.0.0)
+Requires-Dist: clickext (>=1.0.1,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/lojoja/triex/issues
+Project-URL: Repository, https://github.com.com/lojoja/triex
+Description-Content-Type: text/markdown
+
+# Triex
+
+A tool to generate semi-minimized regular expression alternations.
+
+Given a list of `str`, `int`, and `float` values, triex constructs a trie data structure and generates a minimized regular expression that matches all members in the trie. The regex is created walking the values left-to-right, so the best results are achieved with values that share a common prefix.
+
+
+## Requirements
+
+* Python 3.10.x, 3.11.x
+
+
+## Installation
+
+```
+pip install py-triex
+```
+
+
+## Usage
+
+### As a Library
+
+```
+>>> from triex import Trie
+>>> t = Trie(['foo', 'foobar', 'foobaz', 'bar', 'bat'])
+>>> t.to_regex()
+ba[rt]|foo(?:ba[rz])?
+```
+
+### Command Line
+
+```
+Usage: triex [OPTIONS] COMMAND [ARGS]...
+
+  A tool to generate semi-minimized regular expression alternations.
+
+Options:
+  --help         Show this message and exit.
+  -v, --verbose  Increase verbosity
+  --version      Show the version and exit.
+
+Commands:
+  batch    Batch convert file contents to patterns.
+  convert  Convert input to a regex pattern.
+```
+
+#### Examples
+
+Convert:
+
+```
+> printf "foo\nfoobar\nfoobaz\nbar\nbat" > words.txt
+> triex convert -i words.txt
+ba[rt]|foo(?:ba[rz])?
+> printf "foo\nfoobar\nfoobaz\nbar\nbat" | triex convert
+ba[rt]|foo(?:ba[rz])?
+```
+
+Batch:
+
+```
+> printf "foo\nbar" > words1.txt
+> printf "foo\nbaz" > words2.txt
+> triex batch *.txt
+Converting words1.txt
+Converting words2.txt
+> less -FX words1.txt
+bar|foo
+> less -FX words2.txt
+baz|foo
+```
+
+## License
+
+triex is released under the [MIT License](./LICENSE)
+
