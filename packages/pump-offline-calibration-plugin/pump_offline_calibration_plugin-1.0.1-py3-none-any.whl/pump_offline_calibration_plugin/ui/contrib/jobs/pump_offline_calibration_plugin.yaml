@@ -1,0 +1,6 @@
+---
+display_name: Pump calibration from offline measurements
+job_name: pump_offline_calibration
+display: false
+source: app
+published_settings: []

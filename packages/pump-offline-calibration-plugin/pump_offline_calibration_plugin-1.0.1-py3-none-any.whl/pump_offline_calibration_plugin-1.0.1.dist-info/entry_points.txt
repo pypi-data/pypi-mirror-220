@@ -1,0 +1,2 @@
+[pioreactor.plugins]
+pump_offline_calibration_plugin = pump_offline_calibration_plugin

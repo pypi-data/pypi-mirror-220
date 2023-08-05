@@ -1,0 +1,10 @@
+pump_offline_calibration_plugin/__init__.py,sha256=LDYIa0VP7xyltbl3qS4R0VtTBBjZEMBJo6bM1XHVTHs,109
+pump_offline_calibration_plugin/pump_offline_calibration.py,sha256=_4uTho0Li-uE7VmnC0lMkSn5Q87MZipTlp6xUFi3OnQ,20523
+pump_offline_calibration_plugin/test_pump_offline_calibration.py,sha256=J2CqdM3SVxWQWzJBIOJHZ5xzU1X7E392XQ4rBrXuWSw,6885
+pump_offline_calibration_plugin/ui/contrib/jobs/pump_offline_calibration_plugin.yaml,sha256=uULBDc_imxWKKDp0B4MvwSg0nGwiSYzKLk93tGx78nU,145
+pump_offline_calibration_plugin-1.0.1.dist-info/LICENSE.txt,sha256=4cGjN4WDkfnBYIZNxNLrtNoai7jxokShSPCzz-qtFN4,1055
+pump_offline_calibration_plugin-1.0.1.dist-info/METADATA,sha256=tgaaAFyjuk7sdqtG8sH2E4Zbmqy73IvJMicBOf_0JGI,1250
+pump_offline_calibration_plugin-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pump_offline_calibration_plugin-1.0.1.dist-info/entry_points.txt,sha256=eRVbtB3jH4WG3Ux-Ye8QqYxqXlSxeLxrWDquMoDJnu8,87
+pump_offline_calibration_plugin-1.0.1.dist-info/top_level.txt,sha256=iZsyOttC-iz_ZEigYfJRFkJ4D6rwt_l-ixK-nES09R0,32
+pump_offline_calibration_plugin-1.0.1.dist-info/RECORD,,
