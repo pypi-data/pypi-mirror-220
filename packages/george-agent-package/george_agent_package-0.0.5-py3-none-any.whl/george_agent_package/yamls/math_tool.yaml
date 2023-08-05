@@ -1,0 +1,11 @@
+george_agent_package.tools.math_tool_adapter.MathToolAdapter.run:
+  class_name: MathToolAdapter
+  function: run
+  inputs:
+    description:
+      type:
+      - string
+  module: george_agent_package.tools.math_tool_adapter
+  name: Math Tool For Agent
+  description: A tool for calling LLM Math
+  type: python

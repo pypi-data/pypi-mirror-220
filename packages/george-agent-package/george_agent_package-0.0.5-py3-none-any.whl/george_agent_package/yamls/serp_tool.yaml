@@ -1,0 +1,11 @@
+george_agent_package.tools.serp_tool_adapter.SerpToolAdapter.run:
+  class_name: SerpToolAdapter
+  function: run
+  inputs:
+    description:
+      type:
+      - string
+  module: george_agent_package.tools.serp_tool_adapter
+  name: Serp Tool For Agent
+  description: A tool for calling Serp API
+  type: python
