@@ -1,0 +1,15 @@
+pybluemonday-0.0.12.dist-info/top_level.txt,sha256=D3_Is4A60cq3MWQ-_kiz3QvplfM8hnTSqFbJdUrv_8Y,43
+pybluemonday-0.0.12.dist-info/LICENSE,sha256=tcwM3JcuMTNagxYJzs1fIkYxXJ7kCYL3go9fgeXxnx8,1519
+pybluemonday-0.0.12.dist-info/RECORD,,
+pybluemonday-0.0.12.dist-info/WHEEL,sha256=DxsxQ6J6KEH-0lAkmXZakTT4oLd3-4uIR1qNStSxCTY,221
+pybluemonday-0.0.12.dist-info/METADATA,sha256=BmAVYsSfKngJK_f116iQ5Tauf0bzeEjTYab-aLUIrO4,3919
+tests/test_memory_leaks.py,sha256=t5AvjIa1r8J3BpiR72avOILEp2qkWx2mcpzICdVImAg,1233
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/html_sanitizer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/html_sanitizer/test_sanitize.py,sha256=Cyai3V6fFcWz4gZNkFV63LY0hicNkeUvf4YWrZaQO4o,1043
+tests/bluemonday/test_policies.py,sha256=Sc_8HV0Oj5Sgh8keIs-ZoXhFwTA0dcdjdT1HypkMQrg,4536
+tests/bluemonday/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/bluemonday/test_sanitize.py,sha256=TfPAy3f3jxqwGu2dkeT4f9Lk15kYgnYeeQQK0xxPxEM,6887
+pybluemonday/bluemonday.cpython-37m-x86_64-linux-gnu.h,sha256=244T2_nm323dZ8oE8t8FKOEOgKnD1PAsJBh_ajlpgMo,2514
+pybluemonday/__init__.py,sha256=_-0ZZAyTMYlND3RdCghIEVx74pSBuIdKhq8y1pJoDDE,4721
+pybluemonday/bluemonday.cpython-37m-x86_64-linux-gnu.so,sha256=bYYWBaHSUsQTTiYm57_dCWJ9u7Gc06jTqx6LqhkrM_s,3378328
