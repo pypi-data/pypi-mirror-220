@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+vadivelu/__init__.py
+vadivelu/py.typed
+vadivelu.egg-info/PKG-INFO
+vadivelu.egg-info/SOURCES.txt
+vadivelu.egg-info/dependency_links.txt
+vadivelu.egg-info/top_level.txt
