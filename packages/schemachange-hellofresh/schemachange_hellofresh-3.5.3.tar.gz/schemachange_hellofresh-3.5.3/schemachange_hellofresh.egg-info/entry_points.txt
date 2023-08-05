@@ -1,0 +1,2 @@
+[console_scripts]
+schemachange_hellofresh = schemachange_hellofresh.cli:main

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: schemachange-hellofresh
+Version: 3.5.3
+Summary: A Database Change Management tool for Snowflake
+Home-page: https://github.com/Snowflake-Labs/schemachange
+Author: US OPS Analytics
+Author-email: sca-automation@hellofresh.com
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+License-File: NOTICE
+
+Fork of schemachange for urgent PyYaml bump
