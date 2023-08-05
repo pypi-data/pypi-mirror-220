@@ -1,0 +1,126 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[project]
+name = "virtue"
+description = "After trial comes virtue. A test runner for good."
+readme = "README.rst"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+keywords = ["testing", "tests", "test runner", "unittest"]
+authors = [
+  {email = "Julian+Virtue@GrayVines.com"},
+  {name = "Julian Berman"},
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+dependencies = [
+  "attrs>=22.2.0",
+  "click",
+  "colorama",
+  "pyrsistent",
+  "twisted",
+
+  "pkgutil_resolve_name>=1.3.10;python_version<'3.9'",
+]
+
+[project.scripts]
+virtue = "virtue._cli:main"
+
+[project.urls]
+Documentation = "https://virtue.readthedocs.io/"
+Homepage = "https://github.com/Julian/Virtue"
+Issues = "https://github.com/Julian/Virtue/issues/"
+Funding = "https://github.com/sponsors/Julian"
+Source = "https://github.com/Julian/Virtue"
+
+[tool.coverage.html]
+show_contexts = true
+skip_covered = false
+
+[tool.coverage.run]
+branch = true
+source = ["referencing"]
+dynamic_context = "test_function"
+
+[tool.coverage.report]
+exclude_also = [
+  "if TYPE_CHECKING:",
+  "\\s*\\.\\.\\.\\s*",
+]
+show_missing = true
+skip_covered = true
+
+[tool.doc8]
+ignore = [
+    "D001",  # one sentence per line, so max length doesn't make sense
+]
+
+[tool.isort]
+combine_as_imports = true
+from_first = true
+include_trailing_comma = true
+multi_line_output = 3
+
+[tool.ruff]
+line-length = 79
+target-version = "py38"
+select = ["B", "D", "E", "F", "Q", "UP", "W"]
+ignore = [
+  # Wat, type annotations for self and cls, why is this a thing?
+  "ANN101",
+  "ANN102",
+  # Private annotations are fine to leave out.
+  "ANN202",
+  # I don't know how to more properly annotate "pass along all arguments".
+  "ANN401",
+  # raise SomeException(...) is fine.
+  "B904",
+  # It's fine to not have docstrings for magic methods.
+  "D105",
+  # __init__ doesn't need a docstring
+  "D107",
+  # This rule makes diffs uglier when expanding docstrings (and it's uglier)
+  "D200",
+  # No blank lines before docstrings.
+  "D203",
+  # Start docstrings on the second line.
+  "D212",
+  # This rule misses sassy docstrings ending with ! or ?.
+  "D400",
+  # Section headers should end with a colon not a newline
+  "D406",
+  # Underlines aren't needed
+  "D407",
+  # Plz spaces after section headers
+  "D412",
+  # We support 3.8 + 3.9
+  "UP007",
+]
+extend-exclude = ["suite"]
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.ruff.per-file-ignores]
+"docs/*" = ["ANN", "D"]
+"virtue/tests/*" = ["ANN", "D"]
+"virtue/tests/samples/*" = ["B"]
+"noxfile.py" = ["ANN", "D"]
