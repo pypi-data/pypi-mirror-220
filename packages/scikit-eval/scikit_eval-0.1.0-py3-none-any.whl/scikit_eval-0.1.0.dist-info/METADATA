@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: scikit-eval
+Version: 0.1.0
+Summary: Minimal package to evaluate machine learning models with scikit-learn
+License: MIT
+Author-email: baggiponte <57922983+baggiponte@users.noreply.github.com>
+Requires-Python: >=3.9
+Project-URL: Bug Tracker, https://github.com/baggiponte/scikit-eval/issues
+Project-URL: Homepage, https://github.com/baggiponte/scikit-eval
+Description-Content-Type: text/markdown
+
+# scikit-eval
+
+🚧 Work in progress
+
+`scikit-eval` aims to offer a lightweight and simple `Experiment` class to evaluate your machine learning models.
+
+
+
