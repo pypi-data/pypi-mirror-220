@@ -1,0 +1,15 @@
+**<u>N8N INSTRUCTIONS</u>**
+
+This example will be for a Notion connector:
+
+1. Extract the n8n-master.zip and find your connector's folder in ```nodes-base/```. Some connectors have multiple versions, find the latest version e.g. the folder ```Notion/V2```
+2. In ```nodes.json```, search for ```"displayName": "*YOUR CONNECTOR*"``` to find the JSON object for your connector - in case of multiple versions, there will be multiple results so find the object with the correct ```version``` field
+3. Extract the node-test-app.zip, run ```npm install```, and navigate to ```v1.ts``` and copy-paste your connector's object into the list ```const a: any[]```
+4. Run the node-test-app with ```npm start``` and send an API request to the port it runs on (by default 3031) of the form ```http://localhost:PORT_NUMBER/operation-params```. This should return an object with two main fields of the form ```notionParam``` and ```notionDescription```
+6. Follow the instructions in the CONTRIBUTING.md to implement the connector in the Lemon AI Server: 
+    - Your ```notionDescription``` object would go in the file for the Notion parameter descriptions. Make sure to remove question marks and the quotation marks around the field names i.e. ```pageCreateParamDescriptions``` instead of ```"pageCreateParamDescriptions?"```
+    - Your ```notionParam``` object would go in your execute connector file as the types for your operation parameters. Be careful not to remove question marks for optional arguments. Make sure to remove quotation marks around the field names as well as the values which represent Typescript types e.g. string, number. Enums can stay in quotation marks e.g. ```textType?: 'equation' | 'mention' | "text"```
+    - n8n may use parameter types that are not standard Typescript types for their parameters. Modify these by looking at the use of these parameters and adjust the type accordingly e.g. "string" instead of n8n's "options" type
+    - For the implementation of each operation, navigate to your connector's folder in the n8n-master repository e.g. ```nodes-base/Notion/``` and go to the .node.ts file (making sure to go to the latest version folder e.g. ```nodes-base/Notion/v2/Notion.node.ts```). This should have the implementation for executing each operation. These should go in your execute connector file in the Lemon AI server
+    - For the API logic, go to the ```GenericFunctions.ts``` file in your connector's folder. This will have common utility functions as well as both the single and bulk API request logic to the connector API. The API logic should go in your connector API class implementation in the Lemon AI server and any common utility functions that are required for the implementation of your connector should go in the execute connector file in the Lemon AI server
+6. In n8n's implementation, they often use their own custom types, the most common being IDataObject. Based on the usage of variables of these types, change them to regular Typescript types e.g. most of the time, IDataObject is either ```Record<string, unknown>``` or ```Array<Record<string, unknown>>```
