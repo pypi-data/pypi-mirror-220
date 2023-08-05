@@ -1,0 +1,7 @@
+gitpython
+numpy
+pandas
+matplotlib
+seaborn
+jieba
+requests
