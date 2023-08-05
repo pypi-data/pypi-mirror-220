@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tidal-scraper
+Version: 1.0
+Summary: A library to download music from tidal
+Author-email: Luca Bilke <luca@snaile.de>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Multimedia :: Sound/Audio
+Requires-Python: >=3.11
+Requires-Dist: mutagen
+Requires-Dist: pycrypto
+Requires-Dist: tidalapi
+Requires-Dist: tqdm

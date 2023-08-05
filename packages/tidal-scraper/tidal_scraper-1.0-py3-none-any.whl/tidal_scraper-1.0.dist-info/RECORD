@@ -1,0 +1,10 @@
+tidal_scraper/cli.py,sha256=2vyfbSvBrGl2jRV_k3rMk8_tgN822I3CeMvt7z9r9Dk,4617
+tidal_scraper/download.py,sha256=73w-j-IqtQPq1-A8UFexGq74RfjRPA48NtTG_72u-g4,6565
+tidal_scraper/helper.py,sha256=47dy4sj6rhAWXVRt5vzSbfk3O4r7uWhab5zgQc_CRM0,2674
+tidal_scraper/metadata.py,sha256=mfSt_oXkCqbdhTGkPKxqv52E5XlkprVdtZc4YtU_y2s,2317
+tidal_scraper/state.py,sha256=EmynkGJW4GT7LskmAmZls5GFxhqoHdgs12RV5QQB_ps,4822
+tidal_scraper-1.0.dist-info/METADATA,sha256=otA1zHsyQ6zB3UdpOCkyIMQEQuvnMgc4DpPyttAh1fY,545
+tidal_scraper-1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+tidal_scraper-1.0.dist-info/entry_points.txt,sha256=yREBsP7pzjJXuJquY9CQi-amyTVdvnVDKpV78pLErr8,56
+tidal_scraper-1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tidal_scraper-1.0.dist-info/RECORD,,
