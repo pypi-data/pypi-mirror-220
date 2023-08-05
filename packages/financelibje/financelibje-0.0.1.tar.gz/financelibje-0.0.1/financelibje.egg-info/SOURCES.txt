@@ -1,0 +1,5 @@
+setup.py
+financelibje.egg-info/PKG-INFO
+financelibje.egg-info/SOURCES.txt
+financelibje.egg-info/dependency_links.txt
+financelibje.egg-info/top_level.txt
