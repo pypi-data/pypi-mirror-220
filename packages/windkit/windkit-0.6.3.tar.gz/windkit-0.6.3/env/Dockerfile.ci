@@ -1,0 +1,25 @@
+# syntax=docker/dockerfile:experimental
+
+FROM condaforge/mambaforge:4.10.3-4
+LABEL maintainer="Neil Davis <neda@dtu.dk> and Nikola Vasiljevic <niva@dtu.dk>"
+
+WORKDIR /tmp
+
+SHELL ["/bin/bash", "-c"]
+
+# Use curl for download due to https://github.com/moby/moby/issues/12361
+RUN mamba install -y curl
+RUN mkdir -p /root/.local/share/pywasp
+RUN curl -s -L https://data.dtu.dk/ndownloader/files/38998532 -o /root/.local/share/pywasp/meandgdz_2010_2017_CFSRv3.nc
+RUN curl -s -L https://data.dtu.dk/ndownloader/files/25595507 -o /root/.local/share/pywasp/10yr_mean_rhoinp_ERA5v1.nc
+RUN curl -s -L https://data.dtu.dk/ndownloader/files/38969186 -o /root/.local/share/pywasp/10yr_mean_rhoinp_CFSRv1.nc
+RUN curl -s -L https://data.dtu.dk/ndownloader/files/38516624 -o /root/.local/share/pywasp/ERA5-barov1.nc
+RUN curl -s -L https://data.dtu.dk/ndownloader/files/38545826 -o /root/.local/share/pywasp/ERA5-mesov1.nc
+
+# Add user config
+ADD ./windkit.ini /root/.config/windkit/windkit.ini
+ADD ./pywasp.cfg /root/.config/pywasp/pywasp.cfg
+
+ADD ./conda-linux-64.lock /tmp/conda-linux-64.yml
+RUN --mount=type=cache,mode=0777,uid=1000,target=/opt/conda/pkgs \
+    mamba env create -n pywasp_env --file /tmp/conda-linux-64.yml
