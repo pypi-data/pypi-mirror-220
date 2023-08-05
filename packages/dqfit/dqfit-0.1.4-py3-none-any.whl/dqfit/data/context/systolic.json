@@ -1,0 +1,12 @@
+{
+    "dim": [
+        {
+            "path": "Observation.code",
+            "W": 1
+        }
+    ], 
+    "code": [
+        "8480-6"
+    ],
+    "min_date": "2016-01-01"
+}
