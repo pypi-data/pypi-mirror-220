@@ -1,0 +1,12 @@
+hacapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hacapi/assignment_grades.py,sha256=a4TWhuMpUUxiN1hqolr_b-Ar42HXTkE1AIH5g6-77_A,2785
+hacapi/course_grades.py,sha256=IGt3chISUKaj7maLRczmpmGLejjPgQfzLdMWwwaw4fY,6643
+hacapi/misc.py,sha256=NmWSoWsuvNZQsTJvsVAH1iWk4Dc078AiDhLrXxN5Cyc,460
+hacapi/payloads.py,sha256=qOIqaibavC6s_-2odRL4ZaUo6pUkpinOZDGZuAocmdY,26297
+hacapi/session.py,sha256=5px1aA_oWkVbIOCQQ4z1mkbg55dWB_hOBvbGEz4wDQI,7699
+hacapi/transcript.py,sha256=iiT4LRwja-MErSyJ4GDs5Gz8wj43tfX2gDBLj1MkcUc,1180
+hacapi-0.4.7.dist-info/LICENSE,sha256=DXcnoyMZm4866QcrhA0Ko63Rbq5HZtGuifN6lCMLdvk,1065
+hacapi-0.4.7.dist-info/METADATA,sha256=mIkyJJqSxKN-WVox0V3LWmJYxhlCykqR0m5l-PxKJJ8,1212
+hacapi-0.4.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hacapi-0.4.7.dist-info/top_level.txt,sha256=oB_mm_Z0Xn1WKUvA-v4mRQfxCy7un5r0HkRhTXKzsnI,7
+hacapi-0.4.7.dist-info/RECORD,,
