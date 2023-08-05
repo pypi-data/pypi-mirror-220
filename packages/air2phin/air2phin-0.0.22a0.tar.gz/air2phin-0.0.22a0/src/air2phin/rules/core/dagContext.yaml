@@ -1,0 +1,76 @@
+name: DAG-Context
+description: The configuration for migrating airflow.DAG context to pydolphinscheduler workflow context.
+
+migration:
+  module:
+    - action: replace
+      src: airflow.DAG
+      dest: pydolphinscheduler.core.process_definition.ProcessDefinition
+    - action: add
+      module: air2phin.patch.marco_path.PatchMarco
+  parameter:
+    - action: replace
+      src: dag_id
+      dest: name
+    - action: replace
+      src: start_date
+      dest: start_time
+    - action: add
+      arg: release_state
+      default: 
+        type: str
+        value: 'offline'
+
+examples:
+  assign:
+    description: |
+      The example of migrating `airflow.DAG` declaration with assigned.
+    src: |
+      from airflow import DAG
+      from datetime import datetime
+  
+      dag = DAG(
+          dag_id='dag',
+          description='DAG description',
+          start_date=datetime(2020, 1, 1),
+          schedule_interval='0 5 4 * * ? *',
+      )
+    dest: |
+      from air2phin.patch.marco_path import PatchMarco; from pydolphinscheduler.core.process_definition import ProcessDefinition
+      from datetime import datetime
+  
+      dag = ProcessDefinition(
+          name='dag',
+          description='DAG description',
+          start_time=datetime(2020, 1, 1),
+          schedule_interval='0 5 4 * * ? *',
+      release_state="offline",
+      )
+  context:
+    description: |
+      The example of migrating `airflow.DAG` in context mode.
+    src: |
+      from airflow import DAG
+      from datetime import datetime
+  
+      with DAG(
+          dag_id='dag',
+          description='DAG description',
+          start_date=datetime(2020, 1, 1),
+          schedule_interval='@once',
+      ) as dag:
+          pass
+    dest: |
+      from air2phin.patch.marco_path import PatchMarco; from pydolphinscheduler.core.process_definition import ProcessDefinition
+      from datetime import datetime
+  
+      with ProcessDefinition(
+          name='dag',
+          description='DAG description',
+          start_time=datetime(2020, 1, 1),
+          schedule_interval='@once',
+      release_state="offline",
+      ) as dag:
+          pass
+      PatchMarco(dag).patch()
+      dag.submit()
