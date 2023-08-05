@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+sqream_blue = pysqream_blue_sqlalchemy.dialect:SqreamBlueDialect
+
