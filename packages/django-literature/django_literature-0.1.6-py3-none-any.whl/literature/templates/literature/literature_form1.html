@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load render_form from formsetify %}
+{% load i18n %}
+
+{% block content %}
+{% comment %} <h1 class='display-5'>{{ object.title }}</h1> {% endcomment %}
+{% comment %} <hr> {% endcomment %}
+<django-formset endpoint="{{ request.path }}" csrf-token="{{ csrf_token }}">
+  {{ form_collection }}
+</django-formset>
+
+{% comment %} {% if add %}
+   <button type="button" class='btn btn-success' click="submit({add: true}) -> proceed">{% trans "Add" %}</button>
+ {% else %}
+   <button type="button" class='btn btn-primary'click="submit({update: true}) -> proceed">{% trans "Update" %}</button>
+   <button type="button" class='btn btn-danger' click="submit({delete: true}) -> proceed">{% trans "Delete" %}</button>
+ {% endif %} {% endcomment %}
+
+  
+
+
+{% endblock content %}
