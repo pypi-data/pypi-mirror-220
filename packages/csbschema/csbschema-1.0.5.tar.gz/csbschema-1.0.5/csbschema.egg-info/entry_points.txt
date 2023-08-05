@@ -1,0 +1,2 @@
+[console_scripts]
+csbschema = csbschema.cmd.__main__:main
