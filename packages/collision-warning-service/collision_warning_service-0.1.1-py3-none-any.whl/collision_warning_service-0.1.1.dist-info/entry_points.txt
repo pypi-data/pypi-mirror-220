@@ -1,0 +1,6 @@
+[console_scripts]
+fcw_client_python=fcw.client_python.client_python:main
+fcw_client_python_simple=fcw.client_python.client_python_simple:main
+fcw_example=fcw.core.fcw_example:main
+fcw_service=fcw.service.interface:main
+
