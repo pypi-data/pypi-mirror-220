@@ -1,0 +1,9 @@
+pydantic
+torch
+
+[test]
+pytest
+pytest-cov
+coverage[toml]
+flake8
+nox
