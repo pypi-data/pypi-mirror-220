@@ -1,0 +1,16 @@
+ros_license_toolkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ros_license_toolkit/checks.py,sha256=3_Bh0RIYCJVuolBr-3_j9jaw4cHPUfCiw-VnAZvnHRI,10695
+ros_license_toolkit/common.py,sha256=T7TiqnlH8S-K4Sc8vw1D3a0uU99nIuyBytBJrLrvCKk,1083
+ros_license_toolkit/copyright.py,sha256=SA7vVVvZGRXKuhxDsm8vQ-k7t543VIn4GCaZu7AdGZ4,2987
+ros_license_toolkit/license_tag.py,sha256=EAaE4Sfk9jJvt6KMj_KsaxSct16QO4yq45rwIdvsWIA,5537
+ros_license_toolkit/main.py,sha256=Y6gMXa_3oXyZsU9p8m3AtgDLOsFuo_qwpkwrm47gUZk,5153
+ros_license_toolkit/package.py,sha256=3S6XjbHdZLT3F-557RT-7HcXv60koCmli0isiJa_6b0,8700
+ros_license_toolkit/repo.py,sha256=RnDzF_sN1iy84dm9WAXPT4QtuviYVN72dTLtQd9vIX0,3081
+ros_license_toolkit/ui_elements.py,sha256=_zE1HgUwSsRqsMZaKQs13KpggALRc5IiVRGVnyigQIY,1846
+ros_license_toolkit-1.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+ros_license_toolkit-1.0.0.dist-info/METADATA,sha256=T6Sm-rujNzAeErMQL7VWHiFOreXz0Ou520Fn9uJ1BO0,18295
+ros_license_toolkit-1.0.0.dist-info/NOTICE,sha256=vTs4dJKkx3_Vye96nSq8TB13Nrq6Dcj1TiInzp6vTVw,993
+ros_license_toolkit-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ros_license_toolkit-1.0.0.dist-info/entry_points.txt,sha256=AiNBPyZeeOT4nNe6kPU06FSRqpklPFF8WxZu2IMPjhA,70
+ros_license_toolkit-1.0.0.dist-info/top_level.txt,sha256=3TAYYZHpKBbO29wt0NzqXrGEQRZEyxTKY5eGqgDsJws,20
+ros_license_toolkit-1.0.0.dist-info/RECORD,,
