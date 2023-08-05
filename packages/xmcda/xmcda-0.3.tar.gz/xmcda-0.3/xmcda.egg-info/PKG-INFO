@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xmcda
+Version: 0.3
+Summary: Read, write and manipulate XMCDA objects
+Author: Sébastien Bigaret
+Author-email: sebastien.bigaret@telecom-bretagne.eu
+Project-URL: Source, https://gitlab.com/sbigaret/xmcda-python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Read, write and manipulate XMCDA objects
+========================================
+
+This package enables the manipulating MCDA objects, as defined in the standard data interexchange format [XMCDA](https://www.decision-deck.org/xmcda/)
+
+XMCDA is a data standard which allows to represent MultiCriteria Decision Analysis (MCDA) data elements in XML according to a clearly defined grammar, designed by the [Decision Deck Consortium](https://www.decision-deck.org/).
