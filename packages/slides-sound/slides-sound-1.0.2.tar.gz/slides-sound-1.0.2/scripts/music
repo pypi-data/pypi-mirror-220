@@ -1,0 +1,186 @@
+#!/usr/bin/env python3
+# Copyright 2014 James P Goodwin music tool
+# This is a tool to create improvised music based on chord progression, and/or melody and ryththm
+from slides_sound import soundgen
+from slides_sound import notes
+from slides_sound.soundgen import init_sample_cache,init_sample_cache_sf,find_default_soundfont,improvise_ex,DeltaGenerator,arpegiate_ex,play_song,load_music
+from slides_sound.notes import Song, C, N, S
+from slides_sound.version import __version__
+from optparse import OptionParser
+import traceback
+import sys
+import random
+import pprint
+import os
+
+def main(options, args):
+    """ The main driver for the music utility """
+    if options.version:
+        print("music version %s"%__version__)
+        return(0)
+
+    deltas = []
+    d_gen = None
+    stime = 0
+    chords = []
+    melody = []
+    rhythm = []
+    bpm = 0
+
+    soundgen.set_verbose(options.verbose)
+    soundgen.set_debug(options.debug)
+
+    voice = 0
+    for sample_path in options.samples:
+        params = sample_path.split(",")
+        if len(params) == 1:
+            if options.verbose:
+                print("loading",sample_path, voice)
+            init_sample_cache(sample_path,voice,verbose=options.verbose)
+        else:
+            if options.verbose:
+                print("loading",sample_path, voice)
+            init_sample_cache(params[0],voice,int(params[1]),int(params[2]),verbose=options.verbose)
+        voice += 1
+
+    if voice == 0 and not options.soundfonts:
+        default_soundfont = find_default_soundfont()
+        if default_soundfont:
+            options.soundfonts.append(default_soundfont)
+
+    if not options.soundfonts and not options.samples:
+        print("You need to specify either --samples or --soundfonts we couldn't find a default to use")
+        return(1)
+
+    for sound_font in options.soundfonts:
+        bank,preset,sf_path = sound_font.split(":",2)
+        init_sample_cache_sf(int(bank),int(preset),sf_path,voice,verbose=options.verbose)
+        voice += 1
+
+    if options.deltas:
+        for ln in open(options.deltas,"r"):
+            deltas.append(int(ln.strip()))
+        d_gen = DeltaGenerator(deltas)
+
+    if options.time:
+        stime = int(options.time)
+
+    if options.chords:
+        chords = load_music(options.chords)
+
+    if options.melody:
+        melody = load_music(options.melody)
+
+    if options.rhythm:
+        rhythm = load_music(options.rhythm)
+
+    if options.bpm:
+        bpm = int(options.bpm)
+
+    voices = options.voices.split(",")
+    chord_voice = int(voices[0])
+    melody_voice = int(voices[1])
+    rhythm_voice = int(voices[2])
+
+    transpose = options.transpose.split(",")
+    chord_transpose = int(transpose[0])
+    melody_transpose = int(transpose[1])
+    rhythm_transpose = int(transpose[2])
+
+    if ( chords and not melody and not rhythm ):
+        sections = []
+        collect_section = []
+        section_idx = 1
+        for s in chords:
+            if isinstance( s, S ):
+                if collect_section:
+                    sections.append(S("S%d"%section_idx,collect_section))
+                    collect_section = []
+                    section_idx += 1
+                sections.append(s)
+            else:
+                collect_section.append(s)
+        if collect_section:
+            sections.append(S("S%d"%section_idx,collect_section))
+            collect_section = []
+            section_idx += 1
+
+        play_section = []
+        play_section.append(sections[0])
+        if len(sections) > 1:
+            for s in sections:
+                for i in range(0,random.choice([1,2])):
+                    play_section.append(s)
+            play_section.append(sections[0])
+
+        if options.verbose:
+            pprint.pprint(play_section)
+
+        song_chords = []
+        song_melody = []
+        song_rhythm = []
+
+        generated_sections = {}
+        for section in play_section:
+            if section.name in generated_sections:
+                if options.verbose:
+                    print(section.name, "cached")
+                s = generated_sections[section.name]
+            else:
+                s = Song( options.swing, bpm, 4,4, section.value, [], [], stime/len(sections), chord_voice,melody_voice,rhythm_voice )
+                s.melody = improvise_ex(s, melody_transpose,  delta_gen = d_gen)
+                s.rhythm = arpegiate_ex(s, rhythm_transpose)
+                generated_sections[section.name] = s
+                print(section.name, "stored")
+
+            song_chords += s.chords
+            song_melody += s.melody
+            song_rhythm += s.rhythm
+
+        s = Song( options.swing, bpm, 4,4, song_chords, song_melody, song_rhythm, stime, chord_voice,melody_voice,rhythm_voice )
+    else:
+        s = Song( options.swing, bpm, 4,4, chords, melody, rhythm, stime, chord_voice,melody_voice,rhythm_voice )
+
+    if options.verbose:
+        print("Chords")
+        pprint.pprint(s.chords)
+        print("Melody")
+        pprint.pprint(s.melody)
+        print("Rhythm")
+        pprint.pprint(s.rhythm)
+
+    play_song( s, options.output )
+    return(0)
+
+if __name__ == '__main__':
+    parser = OptionParser(usage="usage: %prog [options] ", description="A tool to create improvised music based on chord progression, and/or melody and rhythm")
+    parser.add_option("-c","--chords", dest="chords", default="", help="Read chord progression from file")
+    parser.add_option("-m","--melody", dest="melody", default="", help="Read melody from file")
+    parser.add_option("-r","--rhythm", dest="rhythm", default="", help="Read rhythm from file")
+    parser.add_option("-n","--chorus", dest="chorus", default="", help="Number of choruses")
+    parser.add_option("-t","--time", dest="time", default="30", help="Total seconds to generate music for")
+    parser.add_option("-o","--output",dest="output",default="music.wav", help="Output file to save music")
+    parser.add_option("-b","--bpm",dest="bpm",default="120",help="Beats per minute for tempo")
+    parser.add_option("-s","--swing",dest="swing",action="store_true", default=True, help="Swing the notes in the improvisation")
+    parser.add_option("-d","--deltas",dest="deltas", default="", help="Read the stream of delta values to generate melody from file" )
+    parser.add_option("-v","--verbose", dest="verbose", action="store_true", default=False, help="Log all activity to console")
+    parser.add_option("-D","--debug", dest="debug", action="store_true", default=False, help="save debug versions of the parts")
+    parser.add_option("-S","--samples", dest="samples", default = [], action="append", help="Add path to additional voice with samples")
+    parser.add_option("-f","--soundfonts", dest="soundfonts", default= [], action="append", help="Add soundfont to use for a voice, format is {bank number}:{preset number}:{full path to soundfont} will default to 0:0:{first soundfont we find}")
+    parser.add_option("-V","--voices", dest="voices", default="0,0,0", help="Voice numbers {chord_voice},{melody_voice},{rhythm_voice}")
+    parser.add_option("-T","--transpose", dest="transpose", default="1,1,-1", help="Transpose voices {chord_transpose},{melody_transpose},{rhythm_transpose}")
+    parser.add_option("-I","--version", dest="version", action="store_true", default=False, help="Display the script version and exit")
+
+
+    (options,args) = parser.parse_args()
+
+    try:
+        ret = main(options,args)
+    except:
+        tb = traceback.format_exc()
+        print(tb, file=sys.stderr)
+        sys.stdout.flush()
+        sys.stderr.flush()
+        exit(1)
+
+    exit(ret)

@@ -1,0 +1,173 @@
+#!/usr/bin/env python3
+# Copyright 2014 James P Goodwin slides tool
+# This is a tool to create contact sheets from collections of images
+import sys
+import os
+import re
+from optparse import OptionParser
+import traceback
+from PIL import Image, ImageDraw, ImageFont
+from PIL.ExifTags import TAGS
+import subprocess
+from multiprocessing import Pool
+from slides_sound.slides_util import cmpfile,run,saferemove
+from slides_sound.version import __version__
+from tempfile import TemporaryDirectory
+
+def process_frame( img_name, out_frame, width, height, verbose = False ):
+    try:
+        if verbose:
+            print("Processing",img_name)
+        img = Image.open(img_name,"r")
+        exif = img._getexif()
+        img_orientation = 0
+        if exif:
+            for (k,v) in list(exif.items()):
+                if k in TAGS and TAGS[k] == "Orientation":
+                    img_orientation = v
+                    break
+
+        if img_orientation == 6:
+            if options.verbose:
+                print("Rotating Image")
+            img = img.rotate( -90, Image.BICUBIC, True )
+
+        if verbose:
+            print("Resizing to", width, height)
+
+        fw = float(options.width)
+        fh = float(options.height)
+        iw = img.size[0]
+        ih = img.size[1]
+        sw = fh / ih
+        iw = int(iw * sw)
+        ih = int(ih * sw)
+        img = img.resize( (iw, ih), Image.BICUBIC)
+        nimg = Image.new( img.mode, (int(options.width),int(options.height)), "black")
+        ox = (nimg.size[0] - img.size[0]) // 2
+        oy = (nimg.size[1] - img.size[1]) // 2
+        nimg.paste(img, (ox,oy))
+        img = nimg
+
+        if options.verbose:
+            print("Saving Frame:",out_frame)
+        img.save(out_frame)
+    except:
+        tb = traceback.format_exc()
+        print(tb, file=sys.stderr)
+
+def main(options, args):
+    """ The main driver for the slides utility """
+
+    if options.version:
+        print("contact_sheet version %s"%__version__)
+        return(0)
+
+    slides = []
+    if options.file:
+        for ln in open(options.file,"r"):
+            slides.append(ln.strip())
+    else:
+        slides = sorted(args,key=lambda x: cmpfile(x))
+
+    with TemporaryDirectory() as tempdir:
+        p = Pool(10)
+        frame_idx = 0
+        frames = []
+        for img_name in slides:
+            while True:
+                out_name = "%s/frame%04d.jpg"%(tempdir,frame_idx)
+                if os.path.exists( out_name ):
+                    frame_idx += 1
+                else:
+                    break
+            p.apply_async(process_frame,( img_name, out_name, options.width, options.height, options.verbose ))
+            frames.append((img_name, out_name))
+            frame_idx += 1
+        if options.verbose:
+            print("Closing processing pool")
+        p.close()
+        if options.verbose:
+            print("Joining processing pool, waiting for termination")
+        p.join()
+
+        sheet = 0
+        row = 0
+        column = 0
+        sheet_width = (options.columns * options.width)+(2*options.bleed)
+        sheet_height = (options.rows * options.height)+(2*options.bleed)
+        sheet_image = None
+        fnt = ImageFont.load_default()
+        for (i,f) in frames:
+            try:
+                if options.verbose:
+                    print("Adding frame %s to contact_sheet"%f)
+                img = Image.open(f,"r")
+                if not sheet_image:
+                    sheet_image = Image.new( img.mode, (int(sheet_width),int(sheet_height)), "black")
+                    drw =  ImageDraw.Draw(sheet_image)
+    
+                img_x = (column*options.width)+options.bleed
+                img_y = (row*options.height)+options.bleed
+                sheet_image.paste(img, (img_x, img_y))
+                if options.labels:
+                    txt_width,txt_height = drw.textsize(i,font=fnt)
+                    j = None
+                    if txt_width > options.width:
+                        j = i[len(i)/2:]
+                        i = i[:len(i)/2]
+                        txt_width,txt_height = drw.textsize(i,font=fnt)
+                    drw.rectangle([(img_x,img_y),((img_x)+txt_width,(img_y)+txt_height)],outline=(0,0,0,255),fill=(0,0,0,255))
+                    drw.text((img_x,img_y),i,font=fnt,fill=(255,255,255,255))
+                    if j:
+                        txt_width,txt_height = drw.textsize(j,font=fnt)
+                        drw.rectangle([(img_x,(img_y)+txt_height),((img_x)+txt_width,(img_y)+2*txt_height)],outline=(0,0,0,255),fill=(0,0,0,255))
+                        drw.text((img_x,(img_y)+txt_height),j,font=fnt,fill=(255,255,255,255))
+    
+                column = column + 1
+                if column >= options.columns:
+                    column = 0
+                    row = row + 1
+                if row >= options.rows:
+                    row = 0
+                    if options.verbose:
+                        print("Saving contact sheet %s"%("%s/sheet%04d.jpg"%(options.path,sheet)))
+                    sheet_image.save("%s/sheet%04d.jpg"%(options.path,sheet))
+                    sheet = sheet + 1
+                    sheet_image = None
+            except:
+                tb = traceback.format_exc()
+                print(tb, file=sys.stderr)
+        if sheet_image:
+            if options.verbose:
+                print("Saving contact sheet %s"%("%s/sheet%04d.jpg"%(options.path,sheet)))
+            sheet_image.save("%s/sheet%04d.jpg"%(options.path,sheet), dpi=(options.dpi,options.dpi))
+
+    if options.verbose:
+        print("Done")
+    return 0
+
+if __name__ == '__main__':
+    parser = OptionParser(usage="usage: %prog [options] [path with wildcard to the images]", description="A tool to resize all photos to a common size and rotate and pad any camera rotated images and create a series of contact sheets as .jpg files")
+    parser.add_option("-f","--file", dest="file", default="", help="Read image file paths from a file one full path per line")
+    parser.add_option("-v","--verbose", dest="verbose", action="store_true", default=False, help="Log all activity to console")
+    parser.add_option("-l","--labels", dest="labels", action="store_true", default=False, help="Put labels on images")
+    parser.add_option("-x","--width", dest="width", default=320, type="int", help="Width of each image (default 320)")
+    parser.add_option("-y","--height", dest="height", default=240, type="int",help="Height of each image (default 240)")
+    parser.add_option("-r","--rows", dest="rows", default= 6, type="int", help="Rows in contact sheet (default 6)")
+    parser.add_option("-c","--columns", dest="columns", default = 8, type="int", help="Columns in contact sheet (default 8)")
+    parser.add_option("-p","--path", dest="path", default=".", help="Output path for transformed images")
+    parser.add_option("-b","--bleed", dest="bleed", default=18, type="int", help="Bleed around each page in pixels")
+    parser.add_option("-d","--dpi", dest="dpi", default=72, type="int", help="Set DPI for output images")
+    parser.add_option("-V","--version", dest="version", action="store_true", default=False, help="Display the script version and exit")
+
+    (options,args) = parser.parse_args()
+
+    try:
+        ret = main(options,args)
+    except:
+        tb = traceback.format_exc()
+        print(tb, file=sys.stderr)
+        exit(1)
+
+    exit(ret)
