@@ -1,0 +1,54 @@
+# SPDX-FileCopyrightText: 2022 Vijay Kartik <vijay.kartik@desy.de>
+#
+# SPDX-License-Identifier: CC0-1.0
+
+[project]
+name = "desy-mento"
+version = "0.2.1"
+description = "A Python (3.7+ only) package for PETRA-III beamlines at DESY for automatically triggering online data processing jobs like remote data analysis, and local visualization tasks."
+readme = "README.rst"
+requires-python = ">=3.7"
+license = {file = "LICENSES/GPL-3.0-or-later.txt" }
+authors = [{name="Vijay Kartik", email="vijay.kartik@desy.de"}]
+maintainers = [{name="DESY FS-SC", email="fsscuser@mail.desy.de"}]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research", 
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    ]
+
+[project.urls]
+homepage="https://gitlab.desy.de/fs-sc/mento"
+documentation="https://gitlab.desy.de/fs-sc/mento"
+repository="https://gitlab.desy.de/fs-sc/mento"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "coverage",
+    ]
+lint = [
+    "black",
+    "flake8",
+    ]
+
+[tool.coverage.paths]
+test_path = [
+    "src/mento",
+    "/usr/local/lib/python*/site-packages/mento",
+    ]
+combine_path = [
+    ".",
+    "/builds/*/*/fs-sc/mento",
+    ]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+

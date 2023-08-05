@@ -1,0 +1,9 @@
+
+[lint]
+black
+flake8
+
+[test]
+pytest
+pytest-cov
+coverage
