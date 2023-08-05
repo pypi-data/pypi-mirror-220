@@ -1,0 +1,9 @@
+PyQt5
+mayavi
+pyface
+pandas
+matplotlib
+nibabel
+nilearn
+pyyaml
+scipy
