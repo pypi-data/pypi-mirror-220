@@ -1,0 +1,11 @@
+latticegeometrylib/CellConfiguration.py,sha256=OIHen9byppRrG6bU1CFiEYHuB-d4AzWvYcJk9N_UmI4,11680
+latticegeometrylib/Generator.py,sha256=C7xKz9i1I8l-KT3VuA3qSp3ahU_2n-VeZIhnBa7UQUA,6898
+latticegeometrylib/Geometry.py,sha256=vGYuUPltjDdh7MhQ36bbhAm9x2jCRLw8K81JGvNz_fM,4617
+latticegeometrylib/Lattice.py,sha256=33M0Y-oKXCJD1Ux_Rgy-8I1butZILYHZ3JwiGi47HQA,3570
+latticegeometrylib/Miscellaneous.py,sha256=saoBZUg-iEBkhuXJPFn1sA3l2VjksORiacDITJf4-TQ,6118
+latticegeometrylib/UnitaryCell.py,sha256=nvT2SqvEdC8Ny0f2Q1YecO-EvKwYJ9kj9y13EZmq6NA,5048
+latticegeometrylib/__init__.py,sha256=TiN3cz2iZdKxG7-6zLPzhy6okk32WbMRl_syeRA-CtY,161
+latticegeometrylib-0.0.11.dist-info/METADATA,sha256=N0HUgOHIX64IP9BuHLXgKrJpUfFG-gDMEgNQ_2OtLSw,2895
+latticegeometrylib-0.0.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+latticegeometrylib-0.0.11.dist-info/top_level.txt,sha256=n9SEjTfxwSHoKKvYm0KA4-CkWxZQ7yNBb_s1B1h-IMo,19
+latticegeometrylib-0.0.11.dist-info/RECORD,,
