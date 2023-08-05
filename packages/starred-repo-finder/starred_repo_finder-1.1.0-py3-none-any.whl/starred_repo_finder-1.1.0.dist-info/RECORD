@@ -1,0 +1,12 @@
+starred_repo_finder/__init__.py,sha256=bOHAihT2i01hB8OCe6-9iQ78ud4_fjB8qD9UrCLx8jA,80
+starred_repo_finder/cli.py,sha256=yd3AQ12p_l0gI8LWu5iR7Vqo2KpXsEGSF1GEeGIc0xY,1556
+starred_repo_finder/starred_repo_finder.py,sha256=QCi2vrqGfbOKwni8uKSC080Okr26gMh6VENhYSqfLAs,6283
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=EUeWOY_XxIbq9Bt1_G1FiR1HSiRb8eABM0cRtMzLzeQ,917
+tests/test_starred_repo_finder.py,sha256=MIKB5zxF7xHKoS02meyhu4lYDZMnoeHX51ACA_02kNM,3225
+starred_repo_finder-1.1.0.dist-info/LICENSE,sha256=opoVc-GXjK_NXsnhDxbS6xV2NMz5ijfh-4gSS2L71-0,1069
+starred_repo_finder-1.1.0.dist-info/METADATA,sha256=txhGFpsXXztVupR6YgAeMe2pZ-EWoPMGIgcVtL3Q2Hw,12694
+starred_repo_finder-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+starred_repo_finder-1.1.0.dist-info/entry_points.txt,sha256=wOaShmvB7iaG00jSMCT8jZ0I8y0P-xlUhHbwronbYxY,48
+starred_repo_finder-1.1.0.dist-info/top_level.txt,sha256=HfCdTeihOAvkFawaW6FqQ1o6qUzKgbvw8EGV-zjmmHU,26
+starred_repo_finder-1.1.0.dist-info/RECORD,,
