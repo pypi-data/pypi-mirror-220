@@ -1,0 +1,178 @@
+#!python
+# Copyright 2014 James P Goodwin slides tool
+# This is a tool to create video slide shows from collections of images
+import sys
+import os
+import re
+import time
+from optparse import OptionParser
+import traceback
+from PIL import Image
+from PIL.ExifTags import TAGS
+import subprocess
+from multiprocessing import Pool
+from slides_sound.slides_util import cmpfile,run,saferemove
+from slides_sound.version import __version__
+from tempfile import TemporaryDirectory
+
+def process_frame( img_name, out_frame, width, height, verbose = False ):
+    try:
+        if verbose:
+            print("Processing",img_name)
+        img = Image.open(img_name,"r")
+        exif = img._getexif()
+        img_orientation = 0
+        if exif:
+            for (k,v) in list(exif.items()):
+                if k in TAGS and TAGS[k] == "Orientation":
+                    img_orientation = v
+                    break
+
+#        img = img.resize( (int(width),int(height)), Image.BICUBIC)
+
+        img_hist = []
+        try:
+            img_hist = img.histogram()
+            if options.verbose:
+                print("Adding histogram")
+        except:
+            if options.verbose:
+                print("Error: Histogram failed!")
+
+        deltas = open(out_frame+".dat","w")
+        for hist_idx in range(0,len(img_hist)-1):
+            if img_hist[hist_idx+1] < img_hist[hist_idx]:
+                print(-1, file=deltas)
+            elif img_hist[hist_idx+1] > img_hist[hist_idx]:
+                print(1, file=deltas)
+            else:
+                print(0, file=deltas)
+
+        if img_orientation == 6:
+            if options.verbose:
+                print("Rotating Image")
+            img = img.rotate( -90, Image.BICUBIC, True )
+
+        if verbose:
+            print("Resizing to", width, height)
+
+        fw = float(options.width)
+        fh = float(options.height)
+        iw = img.size[0]
+        ih = img.size[1]
+        sw = fh / ih
+        iw = int(iw * sw)
+        ih = int(ih * sw)
+        img = img.resize( (iw, ih), Image.BICUBIC)
+        nimg = Image.new( img.mode, (int(options.width),int(options.height)), "black")
+        ox = (nimg.size[0] - img.size[0]) // 2
+        oy = (nimg.size[1] - img.size[1]) // 2
+        nimg.paste(img, (ox,oy))
+        img = nimg
+
+        if options.verbose:
+            print("Saving Frame:",out_frame)
+        img.save(out_frame)
+    except:
+        tb = traceback.format_exc()
+        print(img_name)
+        print(tb, file=sys.stderr)
+
+
+def main(options, args):
+    """ The main driver for the slides utility """
+    
+    if options.version:
+        print("slides version %s"%__version__)
+        return(0)
+        
+    slides = []
+    if options.file:
+        for ln in open(options.file,"r"):
+            slides.append(ln.strip())
+    else:
+        slides = sorted(args,key=lambda x: cmpfile(x))
+
+    with TemporaryDirectory() as tempdir:
+        p = Pool(10)
+        frame_idx = 0
+        for img_name in slides:
+            p.apply_async(process_frame,( img_name,os.path.join(tempdir,"frame%05d.jpg"%frame_idx),options.width, options.height, options.verbose ))
+            frame_idx += 1
+        p.close()
+        p.join()
+
+        slideshow_basename = time.strftime("slideshow%Y%m%d%H%M%S.mp4")
+        slideshow_name = os.path.join(options.path,slideshow_basename)
+        saferemove(slideshow_name)
+        cmd = "ffmpeg -r %d -i %s/frame%%05d.jpg -r 24 -vsync cfr -s %dx%d %s"%(int(options.rate),tempdir,int(options.width),int(options.height),slideshow_name)
+        if options.verbose:
+            print("Generating %s: "%slideshow_name, cmd)
+        run(cmd,verbose = options.verbose)
+
+        if options.verbose:
+            print("Writing deltas")
+
+        saferemove(os.path.join(options.path,"deltas.dat"))
+        for fx in range(0,frame_idx):
+            dlts = open(os.path.join(tempdir,"frame%05d.jpg.dat"%fx),"r").read()
+            open(os.path.join(options.path,"deltas.dat"),"a").write(dlts)
+
+        if options.music:
+            saferemove(os.path.join(options.path,"music.wav"))
+            cmd = os.path.join(os.path.dirname(__file__),"music")+" -c %s -t %d -d %s -o %s -b %d %s"%(
+                options.music,
+                (frame_idx-1)/int(options.rate),
+                os.path.join(options.path,"deltas.dat"),
+                os.path.join(options.path,"music.wav"),
+                options.bpm,
+                ("-s" if options.swing else ""))
+            if options.samples:
+                cmd += " "+" ".join(["-S %s"%s for s in options.samples])
+            if options.soundfonts:
+                cmd += " "+" ".join(["-f %s"%s for s in options.soundfonts])
+            if options.verbose:
+                cmd += " -v"
+                print("Generating music.wav: ", cmd)
+            run(cmd,verbose= options.verbose)
+
+            slideshow_plus_name = os.path.join(options.path,"plus_"+slideshow_basename)
+            saferemove(slideshow_plus_name)
+
+            cmd = "ffmpeg -i %s -i %s -shortest %s"%(slideshow_name,os.path.join(options.path,"music.wav"),slideshow_plus_name)
+            if options.verbose:
+                cmd += " -v 40"
+                print("Merging music into %s: "%slideshow_plus_name, cmd)
+            run(cmd,verbose=options.verbose)
+            saferemove(slideshow_name)
+            saferemove(os.path.join(options.path,"music.wav"))
+
+    if options.verbose:
+        print("Done")
+    return 0
+
+if __name__ == '__main__':
+    parser = OptionParser(usage="usage: %prog [options] [path with wildcard to the images]", description="A tool to create slide show videos from a set of photos")
+    parser.add_option("-f","--file", dest="file", default="", help="Read image file paths from a file one full path per line")
+    parser.add_option("-m","--music", dest="music", default="", help="Read music chords from file")
+    parser.add_option("-v","--verbose", dest="verbose", action="store_true", default=False, help="Log all activity to console")
+    parser.add_option("-x","--width", dest="width", default=320, type="int", help="Width of slide show (default 320)")
+    parser.add_option("-y","--height", dest="height", default=240, type="int", help="Height of slide show (default 240)")
+    parser.add_option("-r","--rate", dest="rate", default=1, type="int", help="Frame rate in frames per second (default 1)")
+    parser.add_option("-b","--bpm",dest="bpm",default="120",type="int", help="Beats per minute for tempo")
+    parser.add_option("-s","--swing",dest="swing",action="store_true", default=False, help="Swing the notes in the improvisation")
+    parser.add_option("-S","--samples", dest="samples", default = [], action="append", help="Add path to additional voice with samples")
+    parser.add_option("-F","--soundfont", dest="soundfonts", default = [], action="append", help="Add path to additional voice with soundfont")
+    parser.add_option("-p","--path", dest="path", default=".", help="Output path for generated slideshow.")
+    parser.add_option("-V","--version", dest="version", action="store_true", default=False, help="Display the script version and exit")
+
+    (options,args) = parser.parse_args()
+
+    try:
+        ret = main(options,args)
+    except:
+        tb = traceback.format_exc()
+        print(tb, file=sys.stderr)
+        exit(1)
+
+    exit(ret)

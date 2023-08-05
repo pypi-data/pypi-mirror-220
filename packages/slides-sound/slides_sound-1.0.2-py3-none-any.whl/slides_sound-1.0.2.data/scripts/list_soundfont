@@ -1,0 +1,4 @@
+#!/bin/bash 
+echo "inst 1" | fluidsynth $1
+
+
