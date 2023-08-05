@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: podbox
+Version: 0.1.0
+Summary: busybox for podman.
+Home-page: https://github.com/zoumingzhe/podbox
+Author: Zou Mingzhe
+Author-email: zoumingzhe@qq.com
+License: GPLv2
+Project-URL: Source Code, https://github.com/zoumingzhe/podbox
+Project-URL: Bug Tracker, https://github.com/zoumingzhe/podbox/issues
+Project-URL: Documentation, https://github.com/zoumingzhe/podbox
+Keywords: podman,podman-compose,docker,docker-compose
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# podbox
+busybox for podman
+
+
