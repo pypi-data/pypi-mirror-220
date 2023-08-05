@@ -1,0 +1,2 @@
+[console_scripts]
+soopervisor = soopervisor.cli:cli
