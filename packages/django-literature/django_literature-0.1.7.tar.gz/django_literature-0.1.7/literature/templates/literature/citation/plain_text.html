@@ -1,0 +1,15 @@
+<div class="publication">
+			{{pub.container_title}}, {{ pub.published|date:'Y' }}
+			<h3><a href="{% url "literature:detail" pk=pub.pk %}">{{ pub.title }}</a></h3>
+   {% for author in pub.authors.all %}
+    <a href="{{ author.get_absolute_url }}"><span>{{author}}</span></a>{% if not forloop.last %},{% endif %} 
+   {% endfor %}
+			{% if pub.abstract %}
+				<p class="publication-abstract">
+					{{ pub.abstract }}
+				</p>
+			{% endif %}
+		</div>
+	</div>
+</div>
+

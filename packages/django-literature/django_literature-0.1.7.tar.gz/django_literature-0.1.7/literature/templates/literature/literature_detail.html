@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class='display-5'>{{ object.title }}</h1>
+{% for author in object.authors.all %}
+<a class="text-decoration-none" href="{{ author.get_absolute_url }}"><span>{{author.given.0}}. {{ author.family}} </span></a>{% if not forloop.last %},{% endif %} 
+{% endfor %}
+{% endblock content %}

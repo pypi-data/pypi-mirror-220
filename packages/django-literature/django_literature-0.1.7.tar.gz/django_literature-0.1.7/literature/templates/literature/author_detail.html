@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load literature %}
+
+{% block content %}
+<h1 class='display-5'>{{ author }}</h1>
+<hr>
+<p>This is a list of publications on which {{ author }} is listed as an author. Parsing the author section of a reference and storing each author in an Author table allows us to harness the full capabilities of relational databases. </p>
+<div class="alert alert-warning" role="alert">
+ Be careful when curating author lists! We don't want to mix up authors with similar names and assign them to the wrong publication!
+</div>
+<hr>
+
+{% bibliography literature_list "bootstrap" %}
+
+{% endblock content %}
