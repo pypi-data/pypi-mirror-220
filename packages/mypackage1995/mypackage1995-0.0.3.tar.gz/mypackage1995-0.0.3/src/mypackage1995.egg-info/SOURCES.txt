@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mypackage1995/__init__.py
+src/mypackage1995/main.py
+src/mypackage1995/main2.py
+src/mypackage1995.egg-info/PKG-INFO
+src/mypackage1995.egg-info/SOURCES.txt
+src/mypackage1995.egg-info/dependency_links.txt
+src/mypackage1995.egg-info/top_level.txt
+tests/test_mypackage1995.py
