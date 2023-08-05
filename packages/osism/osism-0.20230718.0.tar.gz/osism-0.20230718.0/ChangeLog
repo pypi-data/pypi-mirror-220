@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20230718.0
+-------------
+
+* chore(deps): update dependency pyyaml to v6.0.1 (#521)
