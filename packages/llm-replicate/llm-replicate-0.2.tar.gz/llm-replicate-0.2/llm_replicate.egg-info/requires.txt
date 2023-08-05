@@ -1,0 +1,7 @@
+llm
+requests-mock
+requests
+packaging
+
+[test]
+pytest
