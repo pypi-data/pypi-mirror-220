@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyed
+Version: 1.0.0
+Summary: "Python Yed Simple Graph generator "
+Home-page: https://github.com/ccossou/Pyed
+Author: "Christophe Cossou"
+Author-email: "ccossou@gmail.com"
+Platform: ["Linux"
+Platform: "Mac OS X"]
+Requires-Python: >=3.9
+License-File: LICENSE.txt
