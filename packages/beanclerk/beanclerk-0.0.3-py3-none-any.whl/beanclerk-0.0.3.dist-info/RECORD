@@ -1,0 +1,15 @@
+beanclerk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beanclerk/bean_helpers.py,sha256=Ujmq-JuQVesnw57KOlsVKhOt9uLOVKbJdcN1IQ0GpeM,1317
+beanclerk/clerk.py,sha256=NCAZWJIG_C4tLWdmhNqCU3A5rXTwm2pRiSSAgScDdXY,8485
+beanclerk/cli.py,sha256=bYC9WFelJSdmfFc7gixe_M2g8vxG8KODwVe_5g-_Yp8,2016
+beanclerk/config.py,sha256=s7vHFbhKS637aFoZMxCRj5ohZzw-hNcFJklXG92n588,2370
+beanclerk/exceptions.py,sha256=MMyyjefJ-XPVKseox3wajO1CseeIHVNeAvlxhnrkCRc,501
+beanclerk/importers/__init__.py,sha256=8H3kgLRDl0wvzsiMlBnyQesOoMwwnLZsZeH6OPX07HM,1022
+beanclerk/importers/banka_creditas.py,sha256=tlucj2ZQDDGBFMn36301zOKUXxppLequHIYrmzahCVg,4649
+beanclerk/importers/fio_banka.py,sha256=Xavt0fA7Mmxsf-mUGMTtq7pnWET7B5g9XPj9Zl5XWZs,2789
+beanclerk-0.0.3.dist-info/LICENSE,sha256=KG7Doh7ofOJF-b6o5lFaNrhUgT3TrgKwka_JEVKC2Es,18342
+beanclerk-0.0.3.dist-info/METADATA,sha256=zJNxRbjJ0rXpSJVpiZzoKnVO_5ZM8bc4JULJ-NChcB4,22800
+beanclerk-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+beanclerk-0.0.3.dist-info/entry_points.txt,sha256=X3FhcldNevut-ZJOYS0jpN0Em2cjc_geFL6LbHuv0yo,49
+beanclerk-0.0.3.dist-info/top_level.txt,sha256=KnPdjtspdb_BOSKD9GBOQ9DjaRN4PGinOCzTIY8jlFk,10
+beanclerk-0.0.3.dist-info/RECORD,,
