@@ -1,0 +1,7 @@
+gitpython
+Pygments
+prompt-toolkit
+click~=8.1
+
+[test]
+pytest

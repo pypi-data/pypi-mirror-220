@@ -1,0 +1,39 @@
+[project]
+name = "git-bbb"
+version = "0.0.8"
+dependencies = [
+	"gitpython",
+	"Pygments",
+	"prompt-toolkit",
+	"click~=8.1"
+]
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+readme = "README.md"
+maintainers = [
+	{name = "Błażej Michalik", email = "code.mrmino@gmail.com"},
+]
+
+[project.urls]
+repository = "https://github.com/MrMino/git-bbb"
+changelog = "https://github.com/MrMino/git-bbb/blob/master/CHANGELOG.md"
+
+[project.optional-dependencies]
+test = [
+	"pytest",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[options]
+
+[project.scripts]
+git-bbb = "git_bbb.cli:git_bbb"
+
+[options.extras_require]
+test = ["pytest"]
+
+[tool.black]
+line-length = 80

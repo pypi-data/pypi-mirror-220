@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+git_bbb/__init__.py
+git_bbb/browser.py
+git_bbb/cli.py
+git_bbb/git_plumbing.py
+git_bbb/key_bindings.py
+git_bbb/undo_redo.py
+git_bbb.egg-info/PKG-INFO
+git_bbb.egg-info/SOURCES.txt
+git_bbb.egg-info/dependency_links.txt
+git_bbb.egg-info/entry_points.txt
+git_bbb.egg-info/requires.txt
+git_bbb.egg-info/top_level.txt
