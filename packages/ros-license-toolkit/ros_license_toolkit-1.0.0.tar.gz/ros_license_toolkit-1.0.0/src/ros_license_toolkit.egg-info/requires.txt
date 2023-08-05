@@ -1,0 +1,4 @@
+gitpython
+rospkg
+scancode-toolkit<=31.2.6
+spdx-tools
