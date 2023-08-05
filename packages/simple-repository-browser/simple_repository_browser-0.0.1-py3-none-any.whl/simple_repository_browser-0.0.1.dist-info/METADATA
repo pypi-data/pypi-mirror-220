@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: simple-repository-browser
+Version: 0.0.1
+Summary: A frontend for a simple python package index
+Home-page: 
+Author: BE-CSS-SET, CERN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE_HEADER
+Requires-Dist: simple-repository
+Requires-Dist: aiohttp
+Requires-Dist: bleach
+Requires-Dist: diskcache
+Requires-Dist: docutils
+Requires-Dist: fastapi
+Requires-Dist: fastapi-utils
+Requires-Dist: importlib-metadata (>=6.0)
+Requires-Dist: jinja2
+Requires-Dist: markdown
+Requires-Dist: packaging
+Requires-Dist: parsley
+Requires-Dist: pkginfo
+Requires-Dist: pypi-simple (>=1.0)
+Requires-Dist: readme-renderer[md]
+Requires-Dist: uvicorn
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
+# pypi-frontend
+
+A frontend to a simple package index.
