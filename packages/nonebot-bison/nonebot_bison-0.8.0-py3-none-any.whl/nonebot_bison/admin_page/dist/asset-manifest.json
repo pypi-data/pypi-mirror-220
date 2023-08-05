@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bison/static/css/main.edb0504c.css",
+    "main.js": "/bison/static/js/main.78d72f5f.js",
+    "static/js/787.72b3b523.chunk.js": "/bison/static/js/787.72b3b523.chunk.js",
+    "index.html": "/bison/index.html",
+    "main.edb0504c.css.map": "/bison/static/css/main.edb0504c.css.map",
+    "main.78d72f5f.js.map": "/bison/static/js/main.78d72f5f.js.map",
+    "787.72b3b523.chunk.js.map": "/bison/static/js/787.72b3b523.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edb0504c.css",
+    "static/js/main.78d72f5f.js"
+  ]
+}
