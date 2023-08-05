@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: blissoda
+Version: 0.1.0
+Summary: Utilities for ewoks developers
+Home-page: https://gitlab.esrf.fr/bliss/blissoda/
+Author: ESRF
+Author-email: wout.de_nolf@esrf.fr
+License: MIT
+Project-URL: Source, https://gitlab.esrf.fr/bliss/blissoda/
+Project-URL: Documentation, https://blissoda.readthedocs.io/
+Project-URL: Tracker, https://gitlab.esrf.fr/bliss/blissoda/issues/
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: submit
+Provides-Extra: server
+Provides-Extra: id22
+Provides-Extra: id09
+Provides-Extra: id31
+Provides-Extra: bm02
+Provides-Extra: id11
+Provides-Extra: streamline
+Provides-Extra: bm23
+Provides-Extra: democlient
+Provides-Extra: demoworker
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: doc
+License-File: LICENSE.md
+
+# blissoda
+
+*blissoda* provides utilities for online data analysis and automation in [BLISS](https://gitlab.esrf.fr/bliss/bliss/).
+
+*blissoda* is mostly used by the beamline macro's for BLISS. In this case it needs to be installed in the BLISS environment.
+
+The actual data processing should be distributed by [ewoksjob](https://gitlab.esrf.fr/workflow/ewoks/ewoksjob). This project
+should not contain any data processing code or have any scientific libraries as dependencies.
+
+## Install
+
+```bash
+pip install blissoda[id22,bm23,id31,streamline,server,test,...]
+```
+
+* submit: when workflows need to be submitted from this environment (remote execution)
+* server: listen to Redis and execute workflows described in `scan info`
+* id22: XRD data reduction workflows
+* bm23: EXAFS plotting
+* id31: XRD data reduction workflows
+* streamline: XRD data reduction workflows
+* test: for testing
+
+Many modules of *blissoda* depend on *bliss* but this is not added to the project requirements.
+
+## Test
+
+```bash
+pytest --pyargs blissoda.tests
+```
+
+## Documentation
+
+https://blissoda.readthedocs.io/

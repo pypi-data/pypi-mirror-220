@@ -1,0 +1,82 @@
+"""Automatic pyfai integration for every scan with saving and plotting"""
+
+import os
+from typing import Optional
+from ..xrpd.processor import XrpdProcessor
+from ..persistent import ParameterInfo
+
+
+try:
+    from bliss import setup_globals
+except ImportError:
+    setup_globals = None
+
+
+class Id09XrpdProcessor(
+    XrpdProcessor,
+    parameters=[
+        ParameterInfo("pyfai_config", category="PyFai"),
+        ParameterInfo("integration_options", category="PyFai"),
+    ],
+):
+    def __init__(self) -> None:
+        if setup_globals is None:
+            raise ImportError("requires a bliss session")
+        super().__init__()
+        self._set_parameter_default(
+            "integration_options",
+            {
+                "method": "no_csr_ocl_gpu",
+                "nbpt_rad": 1024,
+                "unit": "q_A^-1",
+                "rot1": 0,
+                "rot2": 0,
+                "rot3": 0,
+                "binning": 2,
+            },
+        )
+
+    def get_config_filename(self, lima_name: str) -> Optional[str]:
+        return self.pyfai_config
+
+    def get_integration_options(self, lima_name: str) -> dict:
+        integration_options = self.integration_options
+
+        if integration_options:
+            integration_options = integration_options.to_dict()
+        else:
+            integration_options = dict()
+
+        integration_options.setdefault("energy", setup_globals.get_xray_energy())
+        integration_options.setdefault("binning", 2)
+
+        has_rotation = (
+            integration_options.get("rot1")
+            or integration_options.get("rot2")
+            or integration_options.get("rot3")
+        )
+
+        center = integration_options.pop("center", None)
+        if center is not None:
+            if has_rotation:
+                print(
+                    "WARNING: 'center' will be disregarded because rotations are not all zero."
+                )
+            else:
+                poni1, poni2 = setup_globals.get_poni(center)
+                integration_options["poni1"] = poni1
+                integration_options["poni2"] = poni2
+
+        return integration_options
+
+    def save_nexus_filename(self, scan, lima_name: Optional[str] = None) -> str:
+        filename = self.get_filename(scan)
+        root = self.scan_processed_directory(scan)
+        basename = os.path.basename(filename)
+        if lima_name:
+            name, ext = os.path.splitext(basename)
+            basename = f"{name}_{lima_name}_oda{ext}"
+        else:
+            name, ext = os.path.splitext(basename)
+            basename = f"{name}_oda{ext}"
+        return os.path.join(root, basename)
