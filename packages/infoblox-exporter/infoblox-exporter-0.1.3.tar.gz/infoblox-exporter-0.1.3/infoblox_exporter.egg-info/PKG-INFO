@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: infoblox-exporter
+Version: 0.1.3
+Summary: A Prometheus exporter for Infoblox
+Home-page: https://github.com/thenodon/infoblox-exporter
+Author: thenodon
+Author-email: aha@ingby.com
+License: GPLv3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+infoblox-exporter
+----------------------
+# Overview
+
+# Test
+```
+curl -s 'localhost:9597/probe?target=host.foo.com&type=nodes' 
+```
+
+The `type` can have the following values:
+- nodes - the target is infoblox member
+- dhcp_utilization - the target has to be network like `10.121.151.128/26`
