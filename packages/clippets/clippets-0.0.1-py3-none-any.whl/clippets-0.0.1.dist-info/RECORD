@@ -1,0 +1,17 @@
+clippets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clippets/clippets.css,sha256=D6o7QDiTw68wILW2LpUZtaU3KHBeVQi-LCygSFdCzm8,2924
+clippets/colors.py,sha256=HWkHTVUmC90F9pctWjDyxoXBR-9t0yraTLpilTAtUhY,554
+clippets/core.py,sha256=cX2dPK1XN44IXJu7q9OfuqI6KxpPQgE_Wri4tPPQ_lw,38321
+clippets/help.txt,sha256=ZtOUDqKG12t7hxH2xZu8dNAklOR7d8biZwUBp4kOzVk,4185
+clippets/linux.py,sha256=PiFDnnQbBxgjl-FhMiKsyXnMsSMakUeaRps6q4vk3ls,2182
+clippets/markup.py,sha256=GiyMsbCXrSLBOcmIINtWFMKhaiczR2xB6PCNGbXxZlA,17276
+clippets/platform.py,sha256=gRa1rspPquEkuuF_wsrdItje94AEk1OsosZ4LZK84V0,1611
+clippets/snippets.py,sha256=R239fttfeWPpg_sAdcmRcWbvG7yDxQGdjaNH4Hvmhes,28979
+clippets/widgets.py,sha256=em1hJohIKV9ekNbHNoOriwKPB_bg8qdPDcZnAZhqvp0,8371
+clippets/win.py,sha256=JVqxQbOkSqHYuTGwZv95paYhDZwmdYLZCRQIMbMNkJQ,10053
+clippets-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+clippets-0.0.1.dist-info/METADATA,sha256=z52xsHG54tcIvdH57wyldonB-bTBxVppT-Z3YLkMtBQ,1108
+clippets-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+clippets-0.0.1.dist-info/entry_points.txt,sha256=5A2vYPJ9xbv0BACejmEqxQNeWAf3zIzFdZ9FSwJPAL8,48
+clippets-0.0.1.dist-info/top_level.txt,sha256=Szic7Lp9stfCdebfx4MQ_a6J64n3nmNZRUg9wzei2wY,9
+clippets-0.0.1.dist-info/RECORD,,
