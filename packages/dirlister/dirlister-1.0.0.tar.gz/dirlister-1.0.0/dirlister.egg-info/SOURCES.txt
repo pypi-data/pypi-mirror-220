@@ -1,0 +1,10 @@
+LICENSE
+README.md
+dirlister.py
+setup.py
+dirlister.egg-info/PKG-INFO
+dirlister.egg-info/SOURCES.txt
+dirlister.egg-info/dependency_links.txt
+dirlister.egg-info/entry_points.txt
+dirlister.egg-info/requires.txt
+dirlister.egg-info/top_level.txt
