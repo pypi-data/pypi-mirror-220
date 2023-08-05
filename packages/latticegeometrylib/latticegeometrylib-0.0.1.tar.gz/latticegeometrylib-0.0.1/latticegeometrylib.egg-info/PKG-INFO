@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: latticegeometrylib
+Version: 0.0.1
+Summary: Package for generating periodic truss based lattices
+Author: Dennis Schulz
+Keywords: python,cadquery
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Package for generating periodic truss based lattices
