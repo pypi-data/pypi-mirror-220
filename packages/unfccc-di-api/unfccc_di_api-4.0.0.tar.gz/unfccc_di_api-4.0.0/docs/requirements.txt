@@ -1,0 +1,4 @@
+-e .
+ipykernel
+nbsphinx
+Sphinx >= 6
