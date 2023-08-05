@@ -1,0 +1,9 @@
+README.md
+setup.py
+easysec/__init__.py
+easysec/easysec.py
+easysec.egg-info/PKG-INFO
+easysec.egg-info/SOURCES.txt
+easysec.egg-info/dependency_links.txt
+easysec.egg-info/requires.txt
+easysec.egg-info/top_level.txt
