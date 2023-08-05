@@ -1,0 +1,5 @@
+[console_scripts]
+nbdev_export = nbdev.cli:nbdev_export
+
+[nbdev]
+jaxDiversity = jaxDiversity._modidx:d

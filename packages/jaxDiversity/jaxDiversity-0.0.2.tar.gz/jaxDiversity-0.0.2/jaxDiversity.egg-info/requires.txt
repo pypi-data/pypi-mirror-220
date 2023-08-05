@@ -1,0 +1,13 @@
+nbdev
+jax
+jaxlib
+optax
+equinox
+fastcore
+matplotlib
+pandas
+torch
+seaborn
+tqdm
+
+[dev]
