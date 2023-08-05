@@ -1,0 +1,11 @@
+mysqldave_package/.schemawiz_config2,sha256=OVHkcdVn_tUz1XZ94EtcadIclVLMyCXrJF9tG06HDq8,121
+mysqldave_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mysqldave_package/mysqldave.py,sha256=ydpNaIhscJ3esfuu4k9E1RiqhzcAq-GsP41SkZfQbPU,14927
+mysqldave_package/restored_sample.ddl,sha256=myQEjquEmAZoNQlMt7kP8E_ltbc9oAorKlgXq1VNZWc,573
+mysqldave_package/sample.csv,sha256=KoyZl4N-v2O7-8w5edmFZHp1ztkO8z7131-5ILgpeKI,109
+mysqldave_package/testcase1.csv,sha256=S41nQYeRNeJmOcbNlg3xz7EaW_beC2eIfFmO1AOX_yo,162
+mysqldave_package/this.tsv,sha256=_j0ke6nG67sS2IqL0EqMltcKIgNJIEKQRzuYKo4FA3s,54404
+mysqldave_package-2.0.5.dist-info/METADATA,sha256=D1_LLE4Yza0u4j2WbyZrH4yve8yuyR0-HSEnAzFdoIk,943
+mysqldave_package-2.0.5.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+mysqldave_package-2.0.5.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+mysqldave_package-2.0.5.dist-info/RECORD,,
