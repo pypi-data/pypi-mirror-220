@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: django-cryptographic-fields-bihealth
+Version: 0.6.0
+Summary: A set of django fields that internally are encrypted using the cryptography.io native python encryption library.
+Home-page: http://github.com/bihealth/django-cryptographic-fields/
+Author: Manuel Holtgrewe, Mikko Nieminen, Oliver Stolpe
+Author-email: manuel.holtgrewe@bih-charite.de, mikko.nieminen@bih-charite.de, oliver.stolpe@bih-charite.de
+License: MIT
+Keywords: encryption,django,fields
+License-File: LICENSE
