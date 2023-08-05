@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/cfstack/cfstack.egg-info/PKG-INFO
+src/cfstack/cfstack.egg-info/SOURCES.txt
+src/cfstack/cfstack.egg-info/dependency_links.txt
+src/cfstack/cfstack.egg-info/requires.txt
+src/cfstack/cfstack.egg-info/top_level.txt
