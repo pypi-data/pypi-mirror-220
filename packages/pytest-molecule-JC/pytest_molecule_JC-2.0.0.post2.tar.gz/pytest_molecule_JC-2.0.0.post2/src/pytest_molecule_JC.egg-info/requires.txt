@@ -1,0 +1,16 @@
+molecule>=3.6.0
+pytest-html
+pytest>=7.0.0
+
+[ansi]
+ansi2html
+
+[docker]
+molecule-docker
+paramiko>=2.5.0
+
+[podman]
+molecule-podman
+
+[vagrant]
+molecule-vagrant
