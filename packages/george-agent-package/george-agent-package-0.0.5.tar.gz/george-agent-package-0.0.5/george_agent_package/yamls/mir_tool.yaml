@@ -1,0 +1,17 @@
+george_agent_package.tools.mir_tool_adapter.MirToolAdapter.run:
+  class_name: MirToolAdapter
+  function: run
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    tool_name:
+      type:
+      - string
+    tool_description:
+      type:
+      - string
+  module: george_agent_package.tools.mir_tool_adapter
+  name: MIR Tool For Agent
+  description: A tool for calling MIR Endpoint
+  type: python
