@@ -1,0 +1,8 @@
+importlib_resources
+mlflow==2.3.1
+networkx==2.6.2
+requests
+tensorflow==2.11.1
+torch==1.13.1
+tqdm==4.61.2
+wheel
