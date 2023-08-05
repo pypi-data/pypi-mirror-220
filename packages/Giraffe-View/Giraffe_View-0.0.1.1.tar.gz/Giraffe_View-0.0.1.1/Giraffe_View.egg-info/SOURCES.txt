@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Giraffe_View/Giraffe_View
+Giraffe_View.egg-info/PKG-INFO
+Giraffe_View.egg-info/SOURCES.txt
+Giraffe_View.egg-info/dependency_links.txt
+Giraffe_View.egg-info/requires.txt
+Giraffe_View.egg-info/top_level.txt
