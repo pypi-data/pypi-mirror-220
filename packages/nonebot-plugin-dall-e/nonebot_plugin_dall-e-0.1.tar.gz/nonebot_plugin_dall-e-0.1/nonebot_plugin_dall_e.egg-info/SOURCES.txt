@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+nonebot_plugin_dall-e/__init__.py
+nonebot_plugin_dall-e/openai.py
+nonebot_plugin_dall-e/tools.py
+nonebot_plugin_dall_e.egg-info/PKG-INFO
+nonebot_plugin_dall_e.egg-info/SOURCES.txt
+nonebot_plugin_dall_e.egg-info/dependency_links.txt
+nonebot_plugin_dall_e.egg-info/requires.txt
+nonebot_plugin_dall_e.egg-info/top_level.txt
