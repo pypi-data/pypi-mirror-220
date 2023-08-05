@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: evo-featureflags-client
+Version: 0.3.3
+Summary: Feature flags client
+License: MIT
+Author-email: m.kindritskiy <m.kindritskiy@smartweb.com.ua>,Vladimir Magamedov <vladimir@magamedov.com>
+Requires-Python: >=3.7
+Requires-Dist: evo-featureflags-protobuf>=0.2.0
+Requires-Dist: hiku
