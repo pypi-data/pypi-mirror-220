@@ -1,0 +1,1 @@
+export PATH="$PATH:build/bdist.linux-x86_64/wheel//cenas1/bin"
