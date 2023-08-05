@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: fluidgpt
+Version: 1.1.3
+Summary: Run different validation tests on machine learning models.
+Home-page: https://github.com/
+Author: FluidAI
+Author-email: info@fluid.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: Cython
+Requires-Dist: ipywidgets
+Requires-Dist: markdown
+Requires-Dist: mdutils
+Requires-Dist: jupyter
+Requires-Dist: ipython
+Requires-Dist: python-jose
+
+UNKNOWN
+
+
