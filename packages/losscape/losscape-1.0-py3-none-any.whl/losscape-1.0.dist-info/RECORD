@@ -1,0 +1,9 @@
+losscape/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+losscape/compute_loss.py,sha256=i_Y-sM0D9Yayndbji79vnYS7RoHAtPdnv2keF3fNI1A,1380
+losscape/create_directions.py,sha256=71ZWTjazs13fbhyMNlrJNsBwFJfYZbgr5E5OfiJt330,1816
+losscape/create_landscape.py,sha256=_VZ3aOjsEHpAqNWyRomVT-lhM2rfzgoKTlzRczWHa1w,14961
+losscape/train.py,sha256=Z96Skto1l7f1EFyRJhdReZZuZKAIAZtK5mj3LOEvycM,1767
+losscape-1.0.dist-info/METADATA,sha256=P6_910RIA-Cws9GQ2umvxoEgguqXKe-Sb_VX_lrWMTU,286
+losscape-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+losscape-1.0.dist-info/top_level.txt,sha256=pyv3euVqC2FhIdO3IQySBm-qxDzrIv40fskpw2wZXC4,9
+losscape-1.0.dist-info/RECORD,,
