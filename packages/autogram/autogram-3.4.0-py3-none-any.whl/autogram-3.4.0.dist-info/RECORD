@@ -1,0 +1,12 @@
+autogram/__init__.py,sha256=YMxQwfomNJDWD8sfPtBkLw7a3pO4Q3xQSSG7lVcEmxo,418
+autogram/app.py,sha256=D8hvcloX-QZ1krNAOsbgmKTKBgitdBQ-W4DH6dqnHs0,1913
+autogram/base.py,sha256=IhEjPEFoVOWLWseN7iU4LUPEoP0gy88S9gVlFgJT888,11667
+autogram/config.py,sha256=1by1s8MHV1TnAG2TLpt8twUXm3dKdGC54xiIwZ-9TJ4,1514
+autogram/webserver.py,sha256=EN6I8GoZxY9bSZjhs2A0prtsvGXjB3PWwL1Q_Ci05IM,940
+autogram/updates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autogram/updates/base.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autogram-3.4.0.dist-info/LICENSE,sha256=lt1-5caMRROPcUL2hiQE7mOOtG_tstF3KV6LKhnaffo,1064
+autogram-3.4.0.dist-info/METADATA,sha256=8K7l5e1mUPmphhJqO80Qt9io_-_-PcKs93r38ZRhs5Q,5211
+autogram-3.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autogram-3.4.0.dist-info/top_level.txt,sha256=M4ZGLCyQcwI_4cmd7qjq1o7einboJw9PzD-eBcy69Lo,9
+autogram-3.4.0.dist-info/RECORD,,
