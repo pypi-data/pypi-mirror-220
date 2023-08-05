@@ -1,0 +1,15 @@
+Copyright Sébastien Bigaret, Patrick Meyer, 2017
+
+Project leaders:
+  Sébastien Bigaret <sebastien.bigaret@telecom-bretagne.eu>
+  Patrick Meyer <patrick.meyer@imt-atlantique.fr>
+
+This software is a library for manipulating MCDA objects, as defined in the
+standard data interexchange format XMCDA (http://www.xmcda.org).
+
+This software is licensed under the European Union Public Licence (EUPL) v1.2.
+
+The English version and the French version of this licence are in the
+directory LICENCE.  The EUPL is available in 22 official languages of the
+European Union; for more informations, please check its website:
+https://joinup.ec.europa.eu/page/eupl-text-11-12

@@ -1,0 +1,1791 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+Licensed under the EUPL, Version 1.1 only (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+  https://joinup.ec.europa.eu/software/page/eupl
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and
+limitations under the Licence.
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.decision-deck.org/2021/XMCDA-4.0.0"
+           xmlns="http://www.decision-deck.org/2021/XMCDA-4.0.0"
+           elementFormDefault="qualified">
+
+    <xs:annotation>
+        <xs:documentation>XMCDA v4.0.0 Schema - Copyright (c) Decision Deck Consortium, 2020-2021
+by Sébastien BIGARET and Patrick MEYER (IMT Atlantique)
+Based on the previous works:
+- XMCDA 3.x (2013-2019) by Sébastien BIGARET and Patrick MEYER (IMT Atlantique)
+- XMCDA 2.x (2009-2012) by Raymond BISDORFF (University of Luxembourg), Patrick MEYER (Telecom Bretagne), Thomas Veneziano (University of Luxembourg), who formalised the collective work of the Decision Deck Consortium.
+        </xs:documentation>
+    </xs:annotation>
+
+
+    <!-- Root elements -->
+
+    <xs:element name="xmcda">
+
+        <xs:annotation>
+            <xs:documentation>Root of the XMCDA tree.</xs:documentation>
+        </xs:annotation>
+
+        <xs:complexType>
+
+            <xs:sequence>
+
+                <!-- Alternatives and alternatives sets -->
+
+                <xs:element name="alternatives" type="alternatives" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="alternativesSets" type="alternativesSets" minOccurs="0" maxOccurs="1"/>
+
+                <!-- Criteria and criteria sets -->
+
+                <xs:element name="criteria" type="criteria" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="criteriaSets" type="criteriaSets" minOccurs="0" maxOccurs="1"/>
+
+                <!-- Performance tables -->
+
+                <xs:element name="performanceTable" type="performanceTable" minOccurs="0" maxOccurs="unbounded"/>
+
+                <!-- Categories and categories sets -->
+
+                <xs:element name="categories" type="categories" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="categoriesSets" type="categoriesSets" minOccurs="0" maxOccurs="1"/>
+
+                <!-- Data linked to alternatives -->
+
+                <xs:element name="alternativesAssignments" minOccurs="0" maxOccurs="unbounded" type="alternativesAssignments"/>
+                <xs:element name="alternativesCriteriaValues" minOccurs="0" maxOccurs="unbounded" type="alternativesCriteriaValues"/>
+                <xs:element name="alternativesLinearConstraints" minOccurs="0" maxOccurs="unbounded" type="alternativesLinearConstraints"/>
+                <xs:element name="alternativesMatrix" minOccurs="0" maxOccurs="unbounded" type="alternativesMatrix"/>
+                <xs:element name="alternativesValues" minOccurs="0" maxOccurs="unbounded" type="alternativesValues"/>
+
+                <!-- Data linked to alternatives sets -->
+
+                <xs:element name="alternativesSetsLinearConstraints" minOccurs="0" maxOccurs="unbounded" type="alternativesSetsLinearConstraints"/>
+                <xs:element name="alternativesSetsMatrix" minOccurs="0" maxOccurs="unbounded" type="alternativesSetsMatrix"/>
+                <xs:element name="alternativesSetsValues" minOccurs="0" maxOccurs="unbounded" type="alternativesSetsValues"/>
+
+                <!-- Data linked to criteria -->
+
+                <xs:element name="criteriaFunctions" type="criteriaFunctions" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="criteriaHierarchy" minOccurs="0" maxOccurs="unbounded" type="criteriaHierarchy"/>
+                <xs:element name="criteriaLinearConstraints" minOccurs="0" maxOccurs="unbounded" type="criteriaLinearConstraints"/>
+                <xs:element name="criteriaMatrix" minOccurs="0" maxOccurs="unbounded" type="criteriaMatrix"/>
+                <xs:element name="criteriaScales" type="criteriaScales" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="criteriaThresholds" type="criteriaThresholds" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="criteriaValues" minOccurs="0" maxOccurs="unbounded" type="criteriaValues"/>
+
+                <!-- Data linked to criteria sets -->
+
+                <xs:element name="criteriaSetsHierarchy" minOccurs="0" maxOccurs="unbounded" type="criteriaSetsHierarchy"/>
+                <xs:element name="criteriaSetsLinearConstraints" minOccurs="0" maxOccurs="unbounded" type="criteriaSetsLinearConstraints"/>
+                <xs:element name="criteriaSetsMatrix" minOccurs="0" maxOccurs="unbounded" type="criteriaSetsMatrix"/>
+                <xs:element name="criteriaSetsValues" minOccurs="0" maxOccurs="unbounded" type="criteriaSetsValues"/>
+
+                <!-- Data linked to categories -->
+
+                <xs:element name="categoriesLinearConstraints" minOccurs="0" maxOccurs="unbounded" type="categoriesLinearConstraints"/>
+                <xs:element name="categoriesMatrix" minOccurs="0" maxOccurs="unbounded" type="categoriesMatrix"/>
+                <xs:element name="categoriesProfiles" minOccurs="0" maxOccurs="unbounded" type="categoriesProfiles"/>
+                <xs:element name="categoriesValues" minOccurs="0" maxOccurs="unbounded" type="categoriesValues"/>
+
+                <!-- Data linked to categories sets -->
+
+                <xs:element name="categoriesSetsLinearConstraints" minOccurs="0" maxOccurs="unbounded" type="categoriesSetsLinearConstraints"/>
+                <xs:element name="categoriesSetsMatrix" minOccurs="0" maxOccurs="unbounded" type="categoriesSetsMatrix"/>
+                <xs:element name="categoriesSetsValues" minOccurs="0" maxOccurs="unbounded" type="categoriesSetsValues"/>
+
+                <!-- Data linked to algorithms -->
+
+                <xs:element name="programParameters" type="programParameters" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="programExecutionResult" type="programExecutionResult" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+
+        </xs:complexType>
+
+    </xs:element>
+
+    <!-- XMCDA types declarations -->
+
+    <xs:attributeGroup name="defaultAttributes">
+        <xs:annotation>
+            <xs:documentation>Group of attributes used for all the main tags.</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="id" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The id attribute allows to identify and reference the underlying piece of data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="name" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The name attribute contains the human readable name of the object or concept.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="mcdaConcept" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The mcdaConcept attribute allows to specify to what mcda concept a tag is related. It is used by an algorithm to make choices which will have an influence on the output. The documentation of the program should therefore specify, if necessary, what mcdaConcept should be used for the input data. In particular, if an algorithm requires, among other things, twice the same input tag, they can be differenciated by the mcdaConcept (this is even mandatory if they are present in the same file, but should be optional if the two tags can be in different input files, or originate from two different programs). The algorithm should therefore not be too strict on these mcdaConcepts, as this will reduce the compatibility between the various programs. </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+
+    <xs:attributeGroup name="defaultAttributesIDRequired">
+        <xs:annotation>
+            <xs:documentation>Group of attributes used for all the main tags. The id attribute is mandatory.</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="id" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>The mandatory id attribute allows to identify and reference the underlying piece of data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="name" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The name attribute contains the human readable name of the object or concept.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="mcdaConcept" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The mcdaConcept attribute allows to specify to what mcda concept a tag is related. It is used by an algorithm to make choices which will have an influence on the output. The documentation of the program should therefore specify, if necessary, what mcdaConcept should be used for the input data. In particular, if an algorithm requires, among other things, twice the same input tag, they can be differenciated by the mcdaConcept (this is even mandatory if they are present in the same file, but should be optional if the two tags can be in different input files, or originate from two different programs). The algorithm should therefore not be too strict on these mcdaConcepts, as this will reduce the compatibility between the various programs. </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+
+
+    <xs:complexType name="description">
+        <xs:annotation>
+            <xs:documentation>Description of most of the tags. The names of the elements suggest their standard use.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="comment" minOccurs="0" maxOccurs="1" type="xs:string"/>
+            <xs:element name="keyword" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="bibliography" minOccurs="0" maxOccurs="1" type="bibliography"/>
+            <xs:element name="creationDate" minOccurs="0" maxOccurs="1" type="xs:dateTime"/>
+            <xs:element name="lastModificationDate" minOccurs="0" maxOccurs="1" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="bibliography">
+        <xs:annotation>
+            <xs:documentation>Bibliographical entries</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="bibEntry" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation/>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <!-- alternatives -->
+
+    <xs:complexType name="alternatives">
+        <xs:annotation>
+            <xs:documentation>The set of alternatives.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="alternative" type="alternative" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternative">
+        <xs:annotation>
+            <xs:documentation>Definition of an alternative. The id attribute is mandatory.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="type" minOccurs="0" maxOccurs="1" default="real">
+                <xs:annotation>
+                    <xs:documentation>Type Indicates whether an alternative is real or fictive. By default, if the tag is not present, an alternative is considered as real. Fictive alternatives are those which might not exist in reality, but can be used for some preference elicitation means.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="real"/>
+                        <xs:enumeration value="fictive"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="active" type="xs:boolean" minOccurs="0" maxOccurs="1" default="true">
+                <xs:annotation>
+                    <xs:documentation>Active indicates whether an alternative is active or not in the calculations. By default, if the tag is not present, an alternative is considered as active (true).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributesIDRequired"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativesSets">
+        <xs:annotation>
+            <xs:documentation>Definition of sets of alternatives.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="alternativesSet" type="alternativesSet" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativesSet">
+        <xs:annotation>
+            <xs:documentation>Definition of a set of alternatives. Each element can be valued (to represent valued or ordered sets).</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="element" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="alternativeID" type="xs:string"/>
+                        <xs:element name="values" minOccurs="0" maxOccurs="1" type="values"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributesIDRequired"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativesValues">
+        <xs:annotation>
+            <xs:documentation>Values related to alternatives. Can for example be used to store overall values of alternatives, or their rank in a ranking.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="alternativeValues" type="alternativeValues" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativesSetsValues">
+        <xs:annotation>
+            <xs:documentation>Values related to sets of alternatives. Can for example be used to store overall values of sets of alternatives, or their rank in a ranking.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="alternativesSetValues" type="alternativesSetValues" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativeValues">
+        <xs:annotation>
+            <xs:documentation>One or more values related to an alternative. Can for example be used to store the overall value of an alternative, or its rank.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="alternativeID" type="xs:string"/>
+            <xs:element name="values" type="values" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativesSetValues">
+        <xs:annotation>
+            <xs:documentation>One or more values related to a set of alternatives. Can for example be used to store the overall value of a set of alternatives alternative, or its rank.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="alternativesSetID" type="xs:string"/>
+            <xs:element name="values" type="values" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativesMatrix">
+        <xs:annotation>
+            <xs:documentation>Matrix of values related to alternatives.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="row" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:annotation>
+                        <xs:documentation>Row of a matrix.</xs:documentation>
+                    </xs:annotation>
+                    <xs:sequence>
+                        <xs:element name="alternativeID" type="xs:string"/>
+                        <xs:element name="column" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="alternativeID" type="xs:string"/>
+                                    <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativesSetsMatrix">
+        <xs:annotation>
+            <xs:documentation>Matrix of values related to sets of alternatives.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="row" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:annotation>
+                        <xs:documentation>Row of a matrix.</xs:documentation>
+                    </xs:annotation>
+                    <xs:sequence>
+                        <xs:choice>
+                            <xs:element name="alternativeID" type="xs:string"/>
+                            <xs:element name="alternativesSetID" type="xs:string"/>
+                        </xs:choice>
+                        <xs:element name="column" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:choice>
+                                        <xs:element name="alternativeID" type="xs:string"/>
+                                        <xs:element name="alternativesSetID" type="xs:string"/>
+                                    </xs:choice>
+                                    <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativesLinearConstraints">
+        <xs:annotation>
+            <xs:documentation>Linear constraints on the alternatives.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="variables" type="variables" minOccurs="0"/>
+            <xs:element name="constraints">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="constraint" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:annotation>
+                                    <xs:documentation>A linear constraint related to alternatives. It is composed of a sum of elements, each element being composed of an alternative or a variable and a coefficient. The rhs allows to specify the value of the right hand side. The values linked to each constraint can represent a credibility of this constraint in the eyes of a decision maker, for example.</xs:documentation>
+                                </xs:annotation>
+                                <xs:sequence>
+                                    <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+                                    <xs:element name="elements" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="element" minOccurs="1" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:choice>
+                                                                <xs:element name="alternativeID" type="xs:string"/>
+                                                                <xs:element name="variableID" type="xs:string"/>
+                                                            </xs:choice>
+                                                            <xs:element name="coefficient" type="numericValue" minOccurs="1" maxOccurs="1"/>
+                                                        </xs:sequence>
+                                                        <xs:attributeGroup ref="defaultAttributes"/>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="operator" minOccurs="1">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="geq"/>
+                                                <xs:enumeration value="eq"/>
+                                                <xs:enumeration value="leq"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="rhs" type="numericValue"/>
+                                    <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+                                </xs:sequence>
+                                <xs:attributeGroup ref="defaultAttributes"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativesSetsLinearConstraints">
+        <xs:annotation>
+            <xs:documentation>Linear constraints on sets of alternatives.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="variables" type="variables" minOccurs="0"/>
+            <xs:element name="constraints">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="constraint" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:annotation>
+                                    <xs:documentation>A linear constraint related to sets of alternatives. It is composed of a sum of elements, each element being composed of a set of alternatives or a variable and a coefficient. The rhs allows to specify the value of the right hand side. The values linked to each constraint can represent a credibility of this constraint in the eyes of a decision maker, for example.</xs:documentation>
+                                </xs:annotation>
+                                <xs:sequence>
+                                    <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+                                    <xs:element name="elements" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="element" minOccurs="1" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:choice>
+                                                                <xs:element name="alternativesSetID" type="xs:string"/>
+                                                                <xs:element name="variableID" type="xs:string"/>
+                                                            </xs:choice>
+                                                            <xs:element name="coefficient" type="numericValue" minOccurs="1" maxOccurs="1"/>
+                                                        </xs:sequence>
+                                                        <xs:attributeGroup ref="defaultAttributes"/>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="operator" minOccurs="1">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="geq"/>
+                                                <xs:enumeration value="eq"/>
+                                                <xs:enumeration value="leq"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="rhs" type="numericValue"/>
+                                    <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+                                </xs:sequence>
+                                <xs:attributeGroup ref="defaultAttributes"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <!-- criteria -->
+
+    <xs:complexType name="criteria">
+        <xs:annotation>
+            <xs:documentation>Definition of criteria.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" minOccurs="0" type="description"/>
+            <xs:element name="criterion" minOccurs="1" maxOccurs="unbounded" type="criterion"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criterion">
+        <xs:annotation>
+            <xs:documentation>Definition of a criterion. The id attribute is mandatory.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="active" type="xs:boolean" minOccurs="0" default="true">
+                <xs:annotation>
+                    <xs:documentation>Indicates whether a criterion is active or not in the calculations. By default, if the tag is not present, the criterion is considered to be active (true).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributesIDRequired"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaFunctions">
+        <xs:annotation>
+            <xs:documentation>Functions related to criteria. For example value functions.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="criterionFunctions" type="criterionFunctions" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criterionFunctions">
+        <xs:annotation>
+            <xs:documentation>Functions related to a criterion, to store for example a value function.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="criterionID" type="xs:string"/>
+            <xs:element name="functions" minOccurs="1" maxOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="function" type="function" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaThresholds">
+        <xs:annotation>
+            <xs:documentation>Thresholds related to criteria (typically discrimination thresholds).</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="criterionThresholds" type="criterionThresholds" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criterionThresholds">
+        <xs:annotation>
+            <xs:documentation>Thresholds related to a criterion, to represent for example discrimination thresholds in outranking methods. The type of the threshold is specified in the mcdaConcept attribute of each threshold, and documented in each algorithm.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="criterionID" type="xs:string"/>
+            <xs:element name="thresholds" minOccurs="1" maxOccurs="1">
+                <xs:complexType>
+                    <xs:annotation>
+                        <xs:documentation>One or more discrimination thresholds related to a criterion.</xs:documentation>
+                    </xs:annotation>
+                    <xs:sequence>
+                        <xs:element name="description" type="description" minOccurs="0"/>
+                        <xs:element name="threshold" type="threshold" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaScales">
+        <xs:annotation>
+            <xs:documentation>Scales related to criteria (typically evaluation scales).</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="criterionScales" type="criterionScales" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criterionScales">
+        <xs:annotation>
+            <xs:documentation>Evaluation scales related to a criterion.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="criterionID" type="xs:string"/>
+            <xs:element name="scales" minOccurs="1" maxOccurs="1">
+                <xs:complexType>
+                    <xs:annotation>
+                        <xs:documentation>One or more scales related to a criterion.</xs:documentation>
+                    </xs:annotation>
+                    <xs:sequence>
+                        <xs:element name="description" type="description" minOccurs="0"/>
+                        <xs:sequence>
+                            <xs:choice minOccurs="1" maxOccurs="unbounded">
+                                <xs:element name="scale" type="scale"/>
+                                <xs:element name="scaleID" type="xs:string">
+                                    <xs:annotation>
+                                        <xs:documentation>A reference to a scale defined anywhere in the parent criteriaScales.</xs:documentation>
+                                    </xs:annotation>
+                                </xs:element>
+                            </xs:choice>
+                        </xs:sequence>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="threshold">
+        <xs:annotation>
+            <xs:documentation>Discrimination threshold (used to represent preferences on criteria).</xs:documentation>
+        </xs:annotation>
+        <xs:choice>
+            <xs:element name="constant" type="numericValue"/>
+            <xs:element name="affine">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="type" minOccurs="0" maxOccurs="1">
+                            <xs:simpleType>
+                                <xs:annotation>
+                                    <xs:documentation>The type of the affine threshold: either direct when the evaluation of the best of the 2 alternatives is taken into account in the affine formula, or inverse when the evaluation of the worst alternative is considered in the formula. If not present, it is assumed that the type is direct.</xs:documentation>
+                                </xs:annotation>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="direct"/>
+                                    <xs:enumeration value="inverse"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="slope" type="numericValue" minOccurs="1" maxOccurs="1"/>
+                        <xs:element name="intercept" type="numericValue" minOccurs="1" maxOccurs="1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaSets">
+        <xs:annotation>
+            <xs:documentation>Definition of criteria sets.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="criteriaSet" type="criteriaSet" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaSet">
+        <xs:annotation>
+            <xs:documentation>A set of criteria, where the elements can be valued. An empty set of criteria can also be represented when no element is present.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="element" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="criterionID" type="xs:string"/>
+                        <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributesIDRequired"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaValues">
+        <xs:annotation>
+            <xs:documentation>A sequence of criteria-related values.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="criterionValues" type="criterionValues" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaSetsValues">
+        <xs:annotation>
+            <xs:documentation>A sequence of criteria sets-related values.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="criteriaSetValues" type="criteriaSetValues" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criterionValues">
+        <xs:annotation>
+            <xs:documentation>One or more values related to a criterion.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="criterionID" type="xs:string"/>
+            <xs:element name="values" type="values" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaSetValues">
+        <xs:annotation>
+            <xs:documentation>One or more values related to a set of criteria.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="criteriaSetID" type="xs:string"/>
+            <xs:element name="values" type="values" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaMatrix">
+        <xs:annotation>
+            <xs:documentation>Generic type for a matrix on criteria.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="row" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:annotation>
+                        <xs:documentation>A row of the matrix.</xs:documentation>
+                    </xs:annotation>
+                    <xs:sequence>
+                        <xs:choice>
+                            <xs:element name="criterionID" type="xs:string"/>
+                        </xs:choice>
+                        <xs:element name="column" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:annotation>
+                                    <xs:documentation>A column of the matrix.</xs:documentation>
+                                </xs:annotation>
+                                <xs:sequence>
+                                    <xs:element name="criterionID" type="xs:string"/>
+                                    <xs:element name="values" type="values" minOccurs="1" maxOccurs="1"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaSetsMatrix">
+        <xs:annotation>
+            <xs:documentation>Generic type for a matrix on criteria sets.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="row" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:annotation>
+                        <xs:documentation>A row of the matrix.</xs:documentation>
+                    </xs:annotation>
+                    <xs:sequence>
+                        <xs:element name="criteriaSetID" type="xs:string"/>
+                        <xs:element name="column" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:annotation>
+                                    <xs:documentation>A column of the matrix.</xs:documentation>
+                                </xs:annotation>
+                                <xs:sequence>
+                                    <xs:element name="criteriaSetID" type="xs:string"/>
+                                    <xs:element name="values" type="values" minOccurs="1" maxOccurs="1"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaLinearConstraints">
+        <xs:annotation>
+            <xs:documentation>Represents a set of linear constraints on the criteria.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="variables" type="variables" minOccurs="0"/>
+            <xs:element name="constraints">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="constraint" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:annotation>
+                                    <xs:documentation>A linear constraint related to criteria. It is constructed from a sum of elements, each element being composed of a reference to a criterion or a variable, and a multiplicative coefficient. The right hand side is specified separately, and the operator is either geq, leq or eq. Values can also be assigned to each constraint, to represent, e.g., a credibility of the constraint.</xs:documentation>
+                                </xs:annotation>
+                                <xs:sequence>
+                                    <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+                                    <xs:element name="elements" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="element" minOccurs="1" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:choice>
+                                                                <xs:element name="criterionID" type="xs:string"/>
+                                                                <xs:element name="variableID" type="xs:string"/>
+                                                            </xs:choice>
+                                                            <xs:element name="coefficient" type="numericValue"/>
+                                                        </xs:sequence>
+                                                        <xs:attributeGroup ref="defaultAttributes"/>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="operator" minOccurs="1">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="geq"/>
+                                                <xs:enumeration value="eq"/>
+                                                <xs:enumeration value="leq"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="rhs" type="numericValue"/>
+                                    <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+                                </xs:sequence>
+                                <xs:attributeGroup ref="defaultAttributes"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaSetsLinearConstraints">
+        <xs:annotation>
+            <xs:documentation>Represents a set of linear constraints on the criteria.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="variables" type="variables" minOccurs="0"/>
+            <xs:element name="constraints">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="constraint" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:annotation>
+                                    <xs:documentation>A linear constraint related to criteria. It is constructed from a sum of elements, each element being composed of a reference to a set of criteria or a variable, and a multiplicative coefficient. The right hand side is specified separately, and the operator is either geq, leq or eq. Values can also be assigned to each constraint, to represent, e.g., a credibility of the constraint.</xs:documentation>
+                                </xs:annotation>
+                                <xs:sequence>
+                                    <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+                                    <xs:element name="elements" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="element" minOccurs="1" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:choice>
+                                                                <xs:element name="criteriaSetID" type="xs:string"/>
+                                                                <xs:element name="variableID" type="xs:string"/>
+                                                            </xs:choice>
+                                                            <xs:element name="coefficient" type="numericValue"/>
+                                                        </xs:sequence>
+                                                        <xs:attributeGroup ref="defaultAttributes"/>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="operator" minOccurs="1">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="geq"/>
+                                                <xs:enumeration value="eq"/>
+                                                <xs:enumeration value="leq"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="rhs" type="numericValue"/>
+                                    <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+                                </xs:sequence>
+                                <xs:attributeGroup ref="defaultAttributes"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaHierarchy">
+        <xs:annotation>
+            <xs:documentation>A hierarchy of criteria.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="nodes" type="criteriaHierarchyNodes" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaHierarchyNodes">
+        <xs:annotation>
+            <xs:documentation/>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="node" type="criterionHierarchyNode" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="criterionHierarchyNode">
+        <xs:annotation>
+            <xs:documentation/>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="criterionID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="nodes" type="criteriaHierarchyNodes" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaSetsHierarchy">
+        <xs:annotation>
+            <xs:documentation>A hierarchy of criteria sets.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="nodes" type="criteriaSetsHierarchyNodes" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaSetsHierarchyNodes">
+        <xs:annotation>
+            <xs:documentation/>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="node" type="criteriaSetHierarchyNode" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="criteriaSetHierarchyNode">
+        <xs:annotation>
+            <xs:documentation/>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="criteriaSetID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="nodes" type="criteriaSetsHierarchyNodes" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- mixed types for alternatives and criteria -->
+
+    <xs:complexType name="alternativesCriteriaValues">
+        <xs:annotation>
+            <xs:documentation>A crosstable alternatives x criteria.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="alternativeCriteriaValues" type="alternativeCriteriaValues" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativeCriteriaValues">
+        <xs:annotation>
+            <xs:documentation>A row in a crosstable alternatives x criteria.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="alternativeID" minOccurs="1" type="xs:string"/>
+            <xs:element name="criteriaValues" type="criteriaValues" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!-- categories -->
+
+    <xs:complexType name="categories">
+        <xs:sequence>
+            <xs:annotation>
+                <xs:documentation>Definition of the categories.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="category" type="category" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="category">
+        <xs:annotation>
+            <xs:documentation>Definition of a category. The id attribute is mandatory.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="active" type="xs:boolean" minOccurs="0" default="true">
+                <xs:annotation>
+                    <xs:documentation>Indicates whether a category is active or not in the calculations. By default, if the tag is not present, the category is considered to be active (true).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributesIDRequired"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesSets">
+        <xs:annotation>
+            <xs:documentation>A sequence of categories sets.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="categoriesSet" type="categoriesSet" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesSet">
+        <xs:annotation>
+            <xs:documentation>A set of categories, where each element can possibly be valued. An empty set of categories is obtained when no element is present.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="element" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="categoryID" type="xs:string"/>
+                        <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributesIDRequired"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesValues">
+        <xs:annotation>
+            <xs:documentation>A sequence of values related to categories.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="categoryValues" type="categoryValues" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesSetsValues">
+        <xs:annotation>
+            <xs:documentation>A sequence of values related to sets of categories.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="categoriesSetValues" type="categoriesSetValues" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoryValues">
+        <xs:annotation>
+            <xs:documentation>A value or values related to a category.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="categoryID" type="xs:string"/>
+            <xs:element name="values" type="values" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesSetValues">
+        <xs:annotation>
+            <xs:documentation>A value or values related to a set of categories.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="categoriesSetID" type="xs:string"/>
+            <xs:element name="values" type="values" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesMatrix">
+        <xs:annotation>
+            <xs:documentation>A matrix of values related to categories.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="row" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:annotation>
+                        <xs:documentation>A row of a matrix.</xs:documentation>
+                    </xs:annotation>
+                    <xs:sequence>
+                        <xs:element name="categoryID" type="xs:string"/>
+                        <xs:element name="column" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="categoryID" type="xs:string"/>
+                                    <xs:element name="values" type="values" minOccurs="1" maxOccurs="1"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesSetsMatrix">
+        <xs:annotation>
+            <xs:documentation>A matrix of values related to sets of categories.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="row" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:annotation>
+                        <xs:documentation>A row of a matrix.</xs:documentation>
+                    </xs:annotation>
+                    <xs:sequence>
+                        <xs:element name="categoriesSetID" type="xs:string"/>
+                        <xs:element name="column" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="categoriesSetID" type="xs:string"/>
+                                    <xs:element name="values" type="values" minOccurs="1" maxOccurs="1"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesLinearConstraints">
+        <xs:annotation>
+            <xs:documentation>Represents a set of linear constraints on the categories.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="variables" type="variables" minOccurs="0"/>
+            <xs:element name="constraints">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="constraint" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:annotation>
+                                    <xs:documentation>A linear constraint related to categories. It is constructed from a sum of elements, each element being composed of a reference to a category or a variable, and a multiplicative coefficient. The right hand side is specified separately, and the operator is either geq, leq or eq. Values can also be assigned to each constraint, to represent, e.g., a credibility of the constraint.</xs:documentation>
+                                </xs:annotation>
+                                <xs:sequence>
+                                    <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+                                    <xs:element name="elements" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="element" minOccurs="1" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:choice>
+                                                                <xs:element name="categoryID" type="xs:string"/>
+                                                                <xs:element name="variableID" type="xs:string"/>
+                                                            </xs:choice>
+                                                            <xs:element name="coefficient" type="numericValue"/>
+                                                        </xs:sequence>
+                                                        <xs:attributeGroup ref="defaultAttributes"/>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="operator" minOccurs="1">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="geq"/>
+                                                <xs:enumeration value="eq"/>
+                                                <xs:enumeration value="leq"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="rhs" type="numericValue"/>
+                                    <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+                                </xs:sequence>
+                                <xs:attributeGroup ref="defaultAttributes"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesSetsLinearConstraints">
+        <xs:annotation>
+            <xs:documentation>Represents a set of linear constraints on sets of categories.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="variables" type="variables" minOccurs="0"/>
+            <xs:element name="constraints">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="constraint" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:annotation>
+                                    <xs:documentation>A linear constraint related to sets of categories. It is constructed from a sum of elements, each element being composed of a reference to a category set or a variable, and a multiplicative coefficient. The right hand side is specified separately, and the operator is either geq, leq or eq. Values can also be assigned to each constraint, to represent, e.g., a credibility of the constraint.</xs:documentation>
+                                </xs:annotation>
+                                <xs:sequence>
+                                    <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+                                    <xs:element name="elements" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="element" minOccurs="1" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:choice>
+                                                                <xs:element name="categoriesSetID" type="xs:string"/>
+                                                                <xs:element name="variableID" type="xs:string"/>
+                                                            </xs:choice>
+                                                            <xs:element name="coefficient" type="numericValue"/>
+                                                        </xs:sequence>
+                                                        <xs:attributeGroup ref="defaultAttributes"/>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="operator" minOccurs="1">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="geq"/>
+                                                <xs:enumeration value="eq"/>
+                                                <xs:enumeration value="leq"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="rhs" type="numericValue"/>
+                                    <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+                                </xs:sequence>
+                                <xs:attributeGroup ref="defaultAttributes"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesProfiles">
+        <xs:annotation>
+            <xs:documentation>A sequence of category profiles</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="categoryProfile" minOccurs="0" maxOccurs="unbounded" type="categoryProfile"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoryProfile">
+        <xs:annotation>
+            <xs:documentation>Description of a category by a bounding profile or a central profile.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="categoryID" type="xs:string"/>
+            <xs:choice>
+                <xs:element name="central">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="alternativeID" type="xs:string"/>
+                            <xs:element name="values" type="values" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="bounding">
+                    <xs:complexType>
+                        <!-- At least one among (lowerBound, upperBound), or both -->
+                        <xs:choice>
+                            <xs:sequence>
+                                <xs:element name="lowerBound" type="categoryProfileBound"/>
+                                <xs:element name="upperBound" type="categoryProfileBound" minOccurs="0"/>
+                            </xs:sequence>
+                            <xs:element name="upperBound" type="categoryProfileBound"/>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoryProfileBound">
+        <xs:sequence>
+            <xs:element name="alternativeID" type="xs:string"/>
+            <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="alternativesAssignments">
+        <xs:annotation>
+            <xs:documentation>A sequence of assignments of alternatives to categories.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="alternativeAssignment" type="alternativeAssignment" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativeAssignment">
+        <xs:annotation>
+            <xs:documentation>An assignment of an alternative or a set of alternatives to a category, a set of categories or an interval of categories.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="alternativeID" type="xs:string"/>
+            <xs:choice>
+                <xs:element name="categoryID" type="xs:string"/>
+                <xs:element name="categoriesSetID" type="xs:string"/>
+                <xs:element name="categoriesInterval" type="categoriesInterval"/>
+            </xs:choice>
+            <xs:element name="values" type="values" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesInterval">
+        <xs:annotation>
+            <xs:documentation>An interval of categories.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <!-- At least one among (lowerBound, upperBound), or both -->
+            <xs:choice>
+                <xs:sequence>
+                    <xs:element name="lowerBound" type="categoriesIntervalBound"/>
+                    <xs:element name="upperBound" type="categoriesIntervalBound" minOccurs="0"/>
+                </xs:sequence>
+                <xs:element name="upperBound" type="categoriesIntervalBound"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="categoriesIntervalBound">
+        <xs:sequence>
+            <xs:element name="categoryID" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Other types -->
+    <xs:complexType name="scale">
+        <xs:annotation>
+            <xs:documentation>Evaluation scale. Choice between 3 types of scales: nominal, qualitative and quantitative.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="nominal" type="nominal"/>
+                <xs:element name="qualitative" type="qualitative"/>
+                <xs:element name="quantitative" type="quantitative"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="nominal">
+        <xs:annotation>
+            <xs:documentation>Type of nominal scales, consiting in unordered labels.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="labels">
+                <xs:complexType>
+                    <xs:annotation>
+                        <xs:documentation>The set of labels used by a nominal scale.</xs:documentation>
+                    </xs:annotation>
+                    <xs:sequence>
+                        <xs:element name="label" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="qualitative">
+        <xs:annotation>
+            <xs:documentation>Type of qualitative ordered levels. It consists in a preference direction and either classical ranked labels or fuzzy labels (via valued labels in both cases).</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="preferenceDirection" type="preferenceDirection" minOccurs="0"/>
+            <xs:choice>
+                <xs:element name="valuedLabels">
+                    <xs:complexType>
+                        <xs:annotation>
+                            <xs:documentation>Sequence of valued labels. Could either be labels to which are associated ranks, or fuzzy labels.</xs:documentation>
+                        </xs:annotation>
+                        <xs:sequence>
+                            <xs:element name="valuedLabel" type="valuedLabel" minOccurs="1" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="quantitative">
+        <xs:annotation>
+            <xs:documentation>Type of quantitative scales. It consists in a preference direction (min or max), and a minimal and maximal quantitative evaluations (both of which are optional).</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="preferenceDirection" type="preferenceDirection" minOccurs="0"/>
+            <!--  both min & max can be omitted -->
+            <xs:element name="minimum" type="numericValue" minOccurs="0"/>
+            <xs:element name="maximum" type="numericValue" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="preferenceDirection">
+        <xs:annotation>
+            <xs:documentation>Preferential direction on a given quantitative or qualitative scale: either "max" for a scale where the higher values are preferred, or "min" for a scale where the lower values are preferred.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="min"/>
+            <xs:enumeration value="max"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="numericValue">
+        <xs:annotation>
+            <xs:documentation>Restriction of the "value" type to simple values of type: integer, real, rational and NA.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="value">
+                <xs:sequence>
+                    <xs:choice>
+                        <xs:element name="integer" type="xs:int"/>
+                        <xs:element name="real" type="xs:double"/>
+                        <xs:element name="rational" type="rational"/>
+                        <xs:element name="NA" type="NA"/>
+                    </xs:choice>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="value">
+        <xs:annotation>
+            <xs:documentation>General value type.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="integer" type="xs:int"/>
+                <xs:element name="real" type="xs:double"/>
+                <xs:element name="interval" type="interval"/>
+                <xs:element name="rational" type="rational"/>
+                <xs:element name="label" type="xs:string"/>
+                <xs:element name="boolean" type="xs:boolean"/>
+                <xs:element name="NA" type="NA"/>
+                <xs:element name="fuzzyNumber" type="membershipFunction"/>
+                <xs:element name="valuedLabel" type="valuedLabel"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="values">
+        <xs:annotation>
+            <xs:documentation>Sequence of values.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="value" type="value" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="interval">
+        <xs:annotation>
+            <xs:documentation>An interval consists in a lower bound and an upper bound, both of which are values. Neither the lower bound not the upper bound are mandatory, which allows to define unbounded intervals.</xs:documentation>
+        </xs:annotation>
+        <!-- At least one among (lowerBound, upperBound), or both -->
+        <xs:choice>
+            <xs:sequence>
+                <xs:element name="lowerBound" type="intervalBound"/>
+                <xs:element name="upperBound" type="intervalBound" minOccurs="0"/>
+            </xs:sequence>
+            <xs:element name="upperBound" type="intervalBound"/>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="intervalBound">
+        <xs:annotation>
+            <xs:documentation>Bound of an interval.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="value">
+                <xs:attribute name="open" type="xs:boolean" default="false">
+                    <xs:annotation>
+                        <xs:documentation>If false (the default), the value is included within the interval, otherwise it is not.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="NA">
+        <xs:complexContent>
+            <xs:restriction base="xs:anyType"/>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="rational">
+        <xs:annotation>
+            <xs:documentation>Rational number described by the numerator and the denominator, which are both integers.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="numerator" type="xs:int"/>
+            <xs:element name="denominator" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="valuedLabel">
+        <xs:annotation>
+            <xs:documentation>Label to which is associated a value. Can be used to represent ranks of ordinal labels, or fuzzy labels for example. </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="label" type="xs:string"/>
+            <xs:element name="value" type="value"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="membershipFunction">
+        <xs:annotation>
+            <xs:documentation>Restriction of the "function" type to functions compatible with fuzzy numbers.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="function">
+                <xs:choice>
+                    <xs:element name="piecewiseLinear" type="piecewiseLinear"/>
+                </xs:choice>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="piecewiseLinear">
+        <xs:annotation>
+            <xs:documentation>Piecewise linear function defined by a sequence of segments.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="segment" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Segment, defined by two points: one for the head, one for the tail. An attribute ("open") in the head and the tail allows to specify if the point is included in the segment or not.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="head" type="nillableEndPoint">
+                            <xs:annotation>
+                                <xs:documentation>Head point of a segment. All heads except the first one can be nil (no content): in that case, it is equal to the previous segment's tail.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="tail" type="endPoint">
+                            <xs:annotation>
+                                <xs:documentation>Tail point of a segment..</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="point">
+        <xs:annotation>
+            <xs:documentation>Point defined by an abscissa and an ordinate.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="abscissa" type="value">
+                <xs:annotation>
+                    <xs:documentation>The abscissa of a point.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ordinate" type="value">
+                <xs:annotation>
+                    <xs:documentation>The ordinate of a point.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="endPoint">
+        <xs:annotation>
+            <xs:documentation>An end point for segments.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="point">
+                <xs:attribute name="open" type="xs:boolean" default="false">
+                    <xs:annotation>
+                        <xs:documentation>If false (the default), the enf point is excluded from the segment, otherwise it is part of the segment.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="nillableEndPoint">
+        <xs:annotation>
+            <xs:documentation>An end point for segments which may have no coordinates. The meaning of an end point with no coordinates is defined by its parent.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence minOccurs="0">
+            <xs:element name="abscissa" type="value">
+                <xs:annotation>
+                    <xs:documentation>The abscissa of a point.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ordinate" type="value">
+                <xs:annotation>
+                    <xs:documentation>The ordinate of a point.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="open" type="xs:boolean" default="false">
+            <xs:annotation>
+                <xs:documentation>If false (the default), the end point is excluded from the segment, otherwise it is part of the segment.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="function">
+        <xs:annotation>
+            <xs:documentation>A general function which can be of one of the following four types: either a constant, an affine function (defined by a slope and an intercept), a piecewise linear function (defined by a sequence of segments), or a set of points.</xs:documentation>
+        </xs:annotation>
+        <xs:choice>
+            <xs:element name="constant" type="numericValue"/>
+            <xs:element name="affine">
+                <xs:annotation>
+                    <xs:documentation>Affine function. Requires a slope and an intercept.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="slope" type="numericValue"/>
+                        <xs:element name="intercept" type="numericValue"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="piecewiseLinear" type="piecewiseLinear"/>
+            <xs:element name="discrete">
+                <xs:annotation>
+                    <xs:documentation>A discrete function defined by a sequence of points.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="point" type="point" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="performanceTable">
+        <xs:annotation>
+            <xs:documentation>A crosstable alternatives x criteria showing the performances of the alternatives on the criteria.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" minOccurs="0" type="description"/>
+            <xs:element name="alternativePerformances" minOccurs="0" maxOccurs="unbounded" type="alternativeOnCriteriaPerformances"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="alternativeOnCriteriaPerformances">
+        <xs:annotation>
+            <xs:documentation>The performances of an alternative on the criteria. Corresponds to a "row" in a performancetable.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="alternativeID" minOccurs="1" maxOccurs="1" type="xs:string"/>
+            <xs:element name="performance" minOccurs="1" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Evaluation of an alternative on a criterion. If the evaluation is not available, put NA.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="description" minOccurs="0" type="description"/>
+                        <xs:element name="criterionID" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                        <xs:element name="values" type="values" minOccurs="1" maxOccurs="1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="variable">
+        <xs:annotation>
+            <xs:documentation>
+                A variable (for linear constraints for example). The id is required to identify the variable.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributesIDRequired"/>
+    </xs:complexType>
+
+    <xs:complexType name="variables">
+        <xs:annotation>
+            <xs:documentation>A compound tag to store the definitions of the variables of a linear constraints system.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="variable" type="variable" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!-- Algorithms -->
+
+    <xs:complexType name="programParameters">
+        <xs:annotation>
+            <xs:documentation>Input parameters for a program.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="programParameter" type="programParameter" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="programParameter">
+        <xs:annotation>
+            <xs:documentation>A parameter for a program.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="values" type="values"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:complexType name="programExecutionResult">
+        <xs:annotation>
+            <xs:documentation>Output of programs.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="status" type="executionStatus" minOccurs="0"/>
+            <xs:element name="messages" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="message" type="message" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="defaultAttributes"/>
+    </xs:complexType>
+
+    <xs:simpleType name="executionStatus">
+        <xs:annotation/>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ok"/>
+            <xs:enumeration value="warning"/>
+            <xs:enumeration value="error"/>
+            <xs:enumeration value="terminated"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="message">
+        <xs:annotation>
+            <xs:documentation>XMCDA generic method message structure.</xs:documentation>
+        </xs:annotation>
+        <xs:all>
+            <xs:element name="description" type="description" minOccurs="0"/>
+            <xs:element name="text" type="xs:string"/>
+        </xs:all>
+        <xs:attributeGroup ref="defaultAttributes"/>
+        <xs:attribute name="level" type="messageLevel" default="info"/>
+    </xs:complexType>
+
+    <xs:simpleType name="messageLevel">
+        <xs:annotation>
+            <xs:documentation>.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="debug"/>
+            <xs:enumeration value="info"/>
+            <xs:enumeration value="warning"/>
+            <xs:enumeration value="error"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
