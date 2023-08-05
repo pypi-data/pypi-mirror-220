@@ -1,0 +1,11 @@
+loguru
+jieba
+pandas
+numpy
+six
+tqdm
+requests
+scikit-learn
+scipy
+networkx
+text2vec
