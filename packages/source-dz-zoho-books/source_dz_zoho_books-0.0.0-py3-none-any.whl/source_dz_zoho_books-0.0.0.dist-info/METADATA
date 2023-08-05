@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: source-dz-zoho-books
+Version: 0.0.0
+Summary: Source implementation for Dz Zoho Books.
+Home-page: UNKNOWN
+Author: Airbyte
+Author-email: contact@airbyte.io
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: airbyte-cdk (~=0.2)
+Provides-Extra: tests
+Requires-Dist: pytest (~=6.2) ; extra == 'tests'
+Requires-Dist: pytest-mock (~=3.6.1) ; extra == 'tests'
+Requires-Dist: connector-acceptance-test ; extra == 'tests'
+
+UNKNOWN
+

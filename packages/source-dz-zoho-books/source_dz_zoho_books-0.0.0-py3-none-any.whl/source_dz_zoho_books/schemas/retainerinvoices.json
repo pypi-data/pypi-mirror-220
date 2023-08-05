@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+      "retainerinvoice_id": {
+        "type": "integer"
+      },
+      "customer_name": {
+        "type": "string"
+      },
+      "retainerinvoice_number": {
+        "type": "string"
+      },
+      "customer_id": {
+        "type": "integer"
+      },
+      "status": {
+        "type": "string"
+      },
+      "reference_number": {
+        "type": "string"
+      },
+      "project_or_estimate_name": {
+        "type": "string"
+      },
+      "date": {
+        "type": "string",
+        "format": "date"
+      },
+      "currency_id": {
+        "type": "integer"
+      },
+      "currency_code": {
+        "type": "string"
+      },
+      "is_viewed_by_client": {
+        "type": "boolean"
+      },
+      "client_viewed_time": {
+        "type": "boolean"
+      },
+      "total": {
+        "type": "number"
+      },
+      "balance": {
+        "type": "number"
+      },
+      "created_time": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "last_modified_time": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "is_emailed": {
+        "type": "boolean"
+      },
+      "last_payment_date": {
+        "type": "string"
+      },
+      "has_attachment": {
+        "type": "boolean"
+      }
+    }
+  }
+  
