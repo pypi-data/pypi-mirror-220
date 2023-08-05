@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "turms"
+version = "0.4.3"
+description = "graphql-codegen powered by pydantic"
+authors = ["jhnnsrs <jhnnsrs@gmail.com>"]
+license = "CC BY-NC 3.0"
+readme = "README.md"
+packages = [{ include = "turms" }]
+homepage = "https://jhnnsrs.github.io/turms"
+repository = "https://github.com/jhnnsrs/turms"
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Code Generators",
+    "Typing :: Typed",
+    "Topic :: Utilities",
+    "Development Status :: 6 - Mature",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rich = "^11.0.0"
+graphql-core = "^3.2.0"
+pydantic = "^1.9.0"
+PyYAML = ">=5.3.0"
+black = { version = "^22.1.0", optional = true }
+isort = { version = "^5.10.1", optional = true }
+libcst = { version = "^0.4.9", optional = true }
+rich-click = ">=1.6"
+watchfiles = "^0.18.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-aiohttp = "^0.3.0"
+pytest-cov = "^3.0.0"
+tox = "^3.24.5"
+isort = "^5.10.1"
+black = "^22.1.0"
+pylint = "^2.12.2"
+autoflake = "^1.4"
+strawberry-graphql = "^0.151.0"
+libcst = "^0.4.9"
+requests = "^2.28.1"
+
+[tool.poetry.extras]
+watch = ["watchdog"]
+black = ["black"]
+isort = ["isort"]
+merge = ["libcst"]
+
+[tool.poetry.scripts]
+turms = "turms.cli.main:cli"
+
+
+[tool.poetry.group.dev.dependencies]
+libcst = "^0.4.9"
+ruff = "^0.0.257"
+pytest-snapshot = "^0.9.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.pydoc-markdown.loaders]]
+type = "python"
+search_path = ["turms"]
+
+[tool.pydoc-markdown.renderer]
+type = "docusaurus"
+docs_base_path = "website/docs"
