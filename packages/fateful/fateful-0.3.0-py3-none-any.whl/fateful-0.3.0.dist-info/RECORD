@@ -1,0 +1,14 @@
+fateful-0.3.0.dist-info/METADATA,sha256=ndMvInqAy6VZTYcjuDjZ6cK3OEVyt2AZMYwinUelo0E,6485
+fateful-0.3.0.dist-info/WHEEL,sha256=0QD4Fi8spmPDA9YIWsctxI6ukFf44Zgk0L9495lbqs0,90
+fateful/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fateful/http.py,sha256=9Mm9G1HNdL0rvPWNPuUKuvIMxxe9bx-jwtuuJqP5uQM,2750
+fateful/json.py,sha256=_8uHvujZ0y0mgHUS6Zjd2LtDdXetTRnrIK2DeMo2GHI,2053
+fateful/monad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fateful/monad/async_result.py,sha256=c20Y_yDZKwpNl_2mh90uAu4BcsqxhqVj6SSrBelxK2c,17438
+fateful/monad/container.py,sha256=SC7PhwkHUDw3K9MpoUI1GE9ADy_LTxKib_4YuBed4Zg,2148
+fateful/monad/effect.py,sha256=HVBFxjscHjdo_d1s-zxPyH4bScSgE1jM3yV1DTE9bcA,804
+fateful/monad/func.py,sha256=wMbtqycjrCmy4gTKh4ZlbHDAUVW_w3SFRnei7yPmhMg,6632
+fateful/monad/option.py,sha256=o6tWqWCc4iPokx5Gb5O-c_EFJDT7tzsysUEShH7j8_8,12595
+fateful/monad/result.py,sha256=w1yhTh-LlQXyvyWNczwuVFHwK0g7j3xvRcMjaurKwHs,7157
+fateful/py.typed.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fateful-0.3.0.dist-info/RECORD,,
