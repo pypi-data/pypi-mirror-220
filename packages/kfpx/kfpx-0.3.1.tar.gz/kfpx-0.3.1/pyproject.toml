@@ -1,0 +1,28 @@
+[project]
+name = "kfpx"
+version = "0.3.1"
+description = "Extends the kfp package"
+authors = [
+    { name = "Hao Xin", email = "haoxinst@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+dependencies = [
+    "kfp==1.8.22",
+]
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "black>=23.7.0",
+]
+
+[tool.rye.scripts]
+fmt = "black src"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

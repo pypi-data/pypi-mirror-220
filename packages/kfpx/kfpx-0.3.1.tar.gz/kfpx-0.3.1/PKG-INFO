@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kfpx
+Version: 0.3.1
+Summary: Extends the kfp package
+Author-email: Hao Xin <haoxinst@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: kfp==1.8.22
+Description-Content-Type: text/markdown
+
+
+## kfpx
+
+- Extends the [kfp](https://pypi.org/project/kfp) package.
