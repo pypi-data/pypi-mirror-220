@@ -1,0 +1,12 @@
+fuisce/_version.py,sha256=jfpxxup8_WijhRsk1sE1WuWsTrZLOofguKnpC74vx9w,160
+fuisce/database/__init__.py,sha256=qF4SkvGKmg_4msUbe_5fRVFt4Ls7OOIZmJMldupUvBI,120
+fuisce/database/interface.py,sha256=zm3qmVXknZDPJxdBbOFkYgUUiLlv-C0fdWAJqceD-3Y,6112
+fuisce/testing/__init__.py,sha256=ygm3FEjojMsfXJp7nbK7xQ8Kj_tF39xLPI-HWjoh-os,99
+fuisce/testing/config.py,sha256=GQH_W-u1kiXThYkl1DuaTeLZ-OJSoWx-S_2SteaQXS0,338
+fuisce/testing/manager.py,sha256=uYqUp3XKruEiF1TEGWfkYj1Zio7dqcweCWpSB2laKSo,8162
+fuisce-1.0.1.dist-info/METADATA,sha256=PSI3AsGbIpQgzHS_nk43Wqg08YH-t74PlBOmo1-aYtk,3657
+fuisce-1.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+fuisce-1.0.1.dist-info/entry_points.txt,sha256=fqTjmoU13EVA4lI61vACx77hzMmg1kx_4TSrwXXYdws,43
+fuisce-1.0.1.dist-info/licenses/COPYING,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+fuisce-1.0.1.dist-info/licenses/LICENSE,sha256=FgBl0xcC9943WVl3p8ym9UP6TVS0An3LgCkz9gYTCfo,149
+fuisce-1.0.1.dist-info/RECORD,,
