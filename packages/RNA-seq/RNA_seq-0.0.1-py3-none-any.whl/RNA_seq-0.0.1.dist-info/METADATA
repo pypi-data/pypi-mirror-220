@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: RNA-seq
+Version: 0.0.1
+Summary: RNA-seq pipeline from terminal
+Home-page: https://github.com/Ahmed-Ghobashi/RNA-seq
+Author: Ahmed Ghobashi
+Author-email: <ahmed.ghobashi.ag@gmail.com>
+License: UNKNOWN
+Keywords: python,RNA-seq package
+Platform: UNKNOWN
+Requires-Dist: Fastqc
+Requires-Dist: star
+Requires-Dist: subread
+
+Automation of RNA-seq from terminal. This package performs fastqc, generate genome index, aligning the genome and generating count matrix
+
