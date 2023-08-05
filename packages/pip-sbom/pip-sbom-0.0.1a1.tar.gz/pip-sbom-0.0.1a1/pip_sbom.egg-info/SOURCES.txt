@@ -1,0 +1,6 @@
+pip_sbom.py
+setup.py
+pip_sbom.egg-info/PKG-INFO
+pip_sbom.egg-info/SOURCES.txt
+pip_sbom.egg-info/dependency_links.txt
+pip_sbom.egg-info/top_level.txt
