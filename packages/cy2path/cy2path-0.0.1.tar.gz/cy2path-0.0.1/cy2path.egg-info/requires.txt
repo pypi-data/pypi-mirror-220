@@ -1,0 +1,8 @@
+scvelo
+seaborn
+scikit-learn>=1.3.0
+imageio==2.19.3
+tqdm
+hausdorff
+dtaidistance
+torch

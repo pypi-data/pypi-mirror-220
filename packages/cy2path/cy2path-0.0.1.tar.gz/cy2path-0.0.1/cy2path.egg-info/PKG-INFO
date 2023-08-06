@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cy2path
+Version: 0.0.1
+Summary: Lineage inference with factorial latent dynamic models trained on Markovian simulations of biological processes using single cell RNA sequencing data.
+Author: Revant Gupta
+Author-email: revant.gupta.93@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Keywords: Lineage inference,single-cell RNA sequencing,state space models,markov chain simulation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
