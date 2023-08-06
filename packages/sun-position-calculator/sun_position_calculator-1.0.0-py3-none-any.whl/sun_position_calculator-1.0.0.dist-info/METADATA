@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: sun-position-calculator
+Version: 1.0.0
+Summary: A Python library to calculate the sun's position and phases.
+Home-page: https://notabug.org/alimiracle/sun_position_calculator
+Author: Ali miracle
+Author-email: alimiracle@riseup.net
+License: UNKNOWN
+Keywords: sun position calculator astronomy phases python library
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Sun Position Calculator:
+
+The Sun Position Calculator is a Python library that provides a convenient way to calculate the azimuth and altitude of the sun for a given date, time, and location. It also allows you to determine various sun-related phases such as sunrise, sunset, dawn, dusk, and more based on different angles.
+
+## Installation:
+
+You can easily install the library via pip:
+
+```bash
+pip install sun-position-calculator
+```
+
+## Usage:
+
+Example 1: Calculate Sun Position
+
+```python
+import math
+from sun_position_calculator import SunPositionCalculator
+
+# Replace the latitude and longitude with your desired location
+latitude = 37.7749
+longitude = -122.4194
+
+# Replace the UNIX timestamp with the desired date and time
+unixtime_in_ms = 1679795200000  # Example: 10th May 2023, 12:00 PM (UTC)
+
+# Create an instance of the SunPositionCalculator
+calculator = SunPositionCalculator()
+
+# Calculate the sun position
+position = calculator.pos(unixtime_in_ms, latitude, longitude)
+azimuth = math.degrees(position.azimuth)
+altitude = math.degrees(position.altitude)
+
+print(f"Sun Azimuth: {azimuth:.2f} degrees")
+print(f"Sun Altitude: {altitude:.2f} degrees")
+```
+
+Example 2: Find Time of Sunrise
+
+```python
+from sun_position_calculator import SunPositionCalculator, SunPhase
+
+# Replace the latitude and longitude with your desired location
+latitude = 37.7749
+longitude = -122.4194
+
+# Replace the UNIX timestamp with the desired date
+unixtime_in_ms = 1679795200000  # Example: 10th May 2023, 12:00 PM (UTC)
+
+# Create an instance of the SunPositionCalculator
+calculator = SunPositionCalculator()
+
+# Find the time of sunrise at the given location
+sunrise_time = calculator.time_at_phase(unixtime_in_ms, SunPhase.sunrise(), latitude, longitude, height=0)
+
+print(f"Sunrise time: {sunrise_time}")
+```
+
+## Getting Help:
+
+So you need help.
+
+People can help you, but first help them help you, and don't waste their time.
+
+Provide a complete description of the issue.
+
+If it works on A but not on B and others have to ask you: "so what is different between A and B" you are wasting everyone's time.
+
+"hello", "please" and "thanks" are not swear words.
+
+## License:
+
+This library is distributed under the [GNU General Public License (GPL) version 3](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+You are free to use, modify, and distribute this library under the terms of the GPL v3. However, any derivative work based on this library must also be licensed under the GPL v3, and the source code of the derivative work must be made available to others.
+
+For more details, please refer to the [GPL v3 License](https://www.gnu.org/licenses/gpl-3.0.en.html) or see the [LICENSE](https://github.com/your_username/sun-position-calculator/blob/main/LICENSE) file.
+
+
