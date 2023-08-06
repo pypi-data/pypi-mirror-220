@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rtgui
+Version: 0.0.4
+Summary: Python package for signal plotting using tk
+Author: Antonio Prado
+Author-email: <jap2254@columbia.edu>
+Keywords: python,tkinter,plotting,gui
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+Python package for signal plotting using tk with real time capabilities
