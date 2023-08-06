@@ -1,0 +1,109 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * sale_stock_picking_return_invoicing
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-13 10:33+0000\n"
+"PO-Revision-Date: 2016-11-13 10:33+0000\n"
+"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2016\n"
+"Language-Team: Dutch (https://www.transifex.com/oca/teams/23907/nl/)\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: sale_stock_picking_return_invoicing
+#: selection:stock.picking,to_refund_lines:0
+msgid "Keep Line Value"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: selection:stock.picking,to_refund_lines:0
+msgid "No Refund In Sales Order"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model.fields,field_description:sale_stock_picking_return_invoicing.field_stock_move_origin_to_refund_so
+msgid "Origin To Refund in SO"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model.fields,field_description:sale_stock_picking_return_invoicing.field_stock_picking_to_refund_lines
+#: model:ir.ui.view,arch_db:sale_stock_picking_return_invoicing.view_picking_form
+msgid "Refund Options"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model,name:sale_stock_picking_return_invoicing.model_stock_return_picking
+msgid "Return Picking"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model.fields,field_description:sale_stock_picking_return_invoicing.field_sale_order_line_qty_returned
+msgid "Returned Qty"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model.fields,field_description:sale_stock_picking_return_invoicing.field_stock_return_picking_line_sale_order_id
+msgid "Sale order"
+msgstr "Verkooporder"
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model,name:sale_stock_picking_return_invoicing.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Verkooporderregel"
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model,name:sale_stock_picking_return_invoicing.model_stock_move
+msgid "Stock Move"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model.fields,help:sale_stock_picking_return_invoicing.field_stock_picking_to_refund_lines
+msgid ""
+"This field allow modify 'to_refund_so' field value in all stock moves from "
+"this picking after it has been confirmed.keep_line_value: keep the original "
+"value.\n"
+"to_refund_so: set all stock moves to True value and recompute delivered "
+"quantities in sale order.\n"
+"no_refund_so: set all stock moves to False value and recompute delivered "
+"quantities in sale order."
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model.fields,field_description:sale_stock_picking_return_invoicing.field_stock_return_picking_line_to_refund_so
+msgid "To Refund"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: selection:stock.picking,to_refund_lines:0
+msgid "To Refund In Sales Order"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model.fields,field_description:sale_stock_picking_return_invoicing.field_stock_move_to_refund_so
+msgid "To Refund in SO"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model,name:sale_stock_picking_return_invoicing.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model.fields,help:sale_stock_picking_return_invoicing.field_stock_move_to_refund_so
+#: model:ir.model.fields,help:sale_stock_picking_return_invoicing.field_stock_return_picking_line_to_refund_so
+msgid ""
+"Trigger a decrease of the delivered quantity in the associated Sale Order"
+msgstr ""
+
+#. module: sale_stock_picking_return_invoicing
+#: model:ir.model,name:sale_stock_picking_return_invoicing.model_stock_return_picking_line
+msgid "stock.return.picking.line"
+msgstr ""
