@@ -1,0 +1,8 @@
+README.md
+setup.py
+argify/__init__.py
+argify/argify.py
+argify.egg-info/PKG-INFO
+argify.egg-info/SOURCES.txt
+argify.egg-info/dependency_links.txt
+argify.egg-info/top_level.txt
