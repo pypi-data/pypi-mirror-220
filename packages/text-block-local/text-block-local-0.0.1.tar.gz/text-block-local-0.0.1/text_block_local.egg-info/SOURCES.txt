@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+CirclesTextBlockLocal/__init__.py
+CirclesTextBlockLocal/text_blocks.py
+tests/test_text_blocks.py
+text_block_local.egg-info/PKG-INFO
+text_block_local.egg-info/SOURCES.txt
+text_block_local.egg-info/dependency_links.txt
+text_block_local.egg-info/top_level.txt
