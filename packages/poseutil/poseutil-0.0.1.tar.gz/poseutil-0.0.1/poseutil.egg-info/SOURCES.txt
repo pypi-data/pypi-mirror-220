@@ -1,0 +1,6 @@
+setup.py
+poseutil.egg-info/PKG-INFO
+poseutil.egg-info/SOURCES.txt
+poseutil.egg-info/dependency_links.txt
+poseutil.egg-info/not-zip-safe
+poseutil.egg-info/top_level.txt
