@@ -1,0 +1,10 @@
+rdkit
+atomlite
+stk
+
+[dev]
+black
+ruff
+mypy
+build
+twine

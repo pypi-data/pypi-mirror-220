@@ -1,0 +1,16 @@
+.gitignore
+README.rst
+justfile
+pyproject.toml
+.github/workflows/publish_release.yaml
+.github/workflows/tests.yaml
+src/cage_json_extractor/__init__.py
+src/cage_json_extractor/cage_json_extractor.py
+src/cage_json_extractor/extract_cages.py
+src/cage_json_extractor/py.typed
+src/cage_json_extractor.egg-info/PKG-INFO
+src/cage_json_extractor.egg-info/SOURCES.txt
+src/cage_json_extractor.egg-info/dependency_links.txt
+src/cage_json_extractor.egg-info/entry_points.txt
+src/cage_json_extractor.egg-info/requires.txt
+src/cage_json_extractor.egg-info/top_level.txt
