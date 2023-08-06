@@ -1,0 +1,15 @@
+ckanext_metrics_dashboard-0.1.6-nspkg.pth,sha256=VaH--vNo0_vzXvZAeqyq-Bg6m47pBBRlxwvBj0KQxe0,544
+ckanext/metrics_dashboard/__init__.py,sha256=rczfMkJ9WhmppmFY59e787zpxbzP7RgmUejyvpfUiuE,200
+ckanext/metrics_dashboard/plugin.py,sha256=DL7yRibaiK9bCkvq75B6a2ayWrsby0MLFMyibsg73ys,789
+ckanext/metrics_dashboard/reports.py,sha256=J42VsYHZrS2Qbn4CwFKekHqVdN61JBrNLRESihcDNuU,5586
+ckanext/metrics_dashboard/templates/report/metrics_dashboard.html,sha256=zXmTJu50St0fWVrPbIAyruJZYRpl77RFSjsbX28olEw,4628
+ckanext/metrics_dashboard/templates/report/view.html,sha256=pMNC3l3w96DCOBAcfEuQ-ezAbaFQmy7_hSwim65TLT8,1802
+ckanext/metrics_dashboard/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/metrics_dashboard/tests/test_reports.py,sha256=50EqVuqoIfuwAedJzFP2GKZRBaLQlNJJi34qGJgVwoc,7241
+ckanext_metrics_dashboard-0.1.6.dist-info/LICENSE.md,sha256=gyuiBh5Wch7FbzSdrE-ivCdoPB6TenaAiAUPMCzXPKQ,1369
+ckanext_metrics_dashboard-0.1.6.dist-info/METADATA,sha256=S2uIZTy8lQQc_Mzdvs7ABCifJjnN0kAlzf_dIxKJh1o,3626
+ckanext_metrics_dashboard-0.1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ckanext_metrics_dashboard-0.1.6.dist-info/entry_points.txt,sha256=i_Gy1QugWFhAeSKoL__WH6LITfzB58pIrgXgf9Eg5Ms,104
+ckanext_metrics_dashboard-0.1.6.dist-info/namespace_packages.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
+ckanext_metrics_dashboard-0.1.6.dist-info/top_level.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
+ckanext_metrics_dashboard-0.1.6.dist-info/RECORD,,
