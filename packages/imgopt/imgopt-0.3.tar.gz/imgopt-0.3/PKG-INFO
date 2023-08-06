@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: imgopt
+Version: 0.3
+Summary: Compress & Optimize Images
+Home-page: UNKNOWN
+Author: Vinay Chaudhary
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+
+# ImgOpt - Compress & Optimize Images
+
+ImgOpt is a simple and very easy to use package to Compress and Optimize images.
+
+
+
+### Features:
++ Easy to Use
++ Standalone Package
++ Image Compression Options
++ No Need to use External APIs
++ No Need for Any API Key
+
+### Installation
+**Pip Command**
+
+```
+pip install imgopt
+```
+
+### How to use?
+
+**Import imgopt Package**
+
+```
+import imgopt
+```
+
+### InBuilt Functions:
+#### OptmizeImage Fuction:
+This function will compress and optimize the input image and return the output as an image. You can select your desired filename in the second parameter.
+
+```
+imgopt.OptmizeImage(image_path,output_path_with_extension)
+```
+
+```
+imgopt.OptmizeImage('pro.jpg','vinay.jpg')
+```
+If you don't pass any output filename, it will automatically generate a random filename with an extension.
+```
+imgopt.OptmizeImage('pro.jpg')
+```
+
+#### DynamicCompress Fuction:
+This function will compress and optimize the input image. It requires one more parameter, representing the percentage of compression. The function will return the output as an image. You can select your desired filename in the second parameter. All three parameters are mandatory when using this function.
+```
+imgopt.OptmizeImage(image_path,output_path_with_extension,compress_percent)
+```
+The value of Compress Percent must be between 10 and 100 (Type: int). A lower percentage will reduce the file size more.
+
+```
+imgopt.OptmizeImage('pro.jpg','vinay.jpg',75)
+```
+**Note:** Default Compress Percent is set to 80
+
+
+
+
+---
+
+### Code Examples
+```
+import imgopt
+
+imgopt.OptmizeImage('pro.jpg')
+
+imgopt.DynamicCompress('pro.jpg', 'hello.jpg',20)
+```
+
+### Support This Project
+[![paypal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/itsvinaychaudhary) 
+
+[![coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/vinay_dev)
+
+### Author
+The ImgOpt Package is created by [Vinay Chaudhary](https://buymeacoffee.com/vinay_dev). This Project is Powered by [Regem Enterprises](https://regem.in)
+
+
