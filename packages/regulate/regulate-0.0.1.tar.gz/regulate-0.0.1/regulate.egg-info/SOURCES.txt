@@ -1,0 +1,7 @@
+README
+setup.cfg
+setup.py
+regulate.egg-info/PKG-INFO
+regulate.egg-info/SOURCES.txt
+regulate.egg-info/dependency_links.txt
+regulate.egg-info/top_level.txt
