@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: revWenXin
+Version: 1.0.3
+Summary: WenXinAPI is a simple wrapper for the official WenXin API
+Home-page: https://github.com/umbrella-leaf/WenXinAPI
+Author: Zhongnuo Liu
+Author-email: 2313678365@qq.com
+License: Apache-2.0 license
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anyio (==3.7.1)
+Requires-Dist: certifi (==2023.5.7)
+Requires-Dist: exceptiongroup (==1.1.2)
+Requires-Dist: h11 (==0.14.0)
+Requires-Dist: httpcore (==0.17.3)
+Requires-Dist: httpx (==0.24.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: sniffio (==1.3.0)
+
+# WenXinAPI
+
+[![PyPi](https://img.shields.io/pypi/v/revWenXin.svg)](https://pypi.python.org/pypi/revWenXin)
+
+对百度文心一言API的简单封装，支持多用户上下文对话
+[github地址](https://github.com/umbrella-leaf/WenXinAPI)
+
+## 安装
+
+```
+python -m pip install --upgrade WenXinAPI
+```
+
+## 支持Python版本
+
+- 最小版本 - Python3.6
+- 推荐 - Python3.8+
+
+## 使用方法
+
+### 配置方法
+
+1. 在百度智能云的 [文心千帆平台](https://console.bce.baidu.com/ai/#/ai/wenxinworkshop/overview/index) 上申请使用资格
+2. 在控制台 [应用列表页面](https://console.bce.baidu.com/ai/#/ai/wenxinworkshop/app/list) 创建应用
+3. 获取并保存API_KEY和SECRET_KEY
+
+### 使用示例（异步流式)
+
+```python
+from WenXinAPI.V1 import ChatBot
+chatbot = ChatBot(
+    api_key="<your API_KEY>",
+    secret_key="<your SECRET_KEY>",
+    engine="<ENGINE you choose>"
+)
+print(await chatbot.ask("你好！"))
+```
+
+
+
+
