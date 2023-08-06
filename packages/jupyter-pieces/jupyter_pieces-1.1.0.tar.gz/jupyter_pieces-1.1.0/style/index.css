@@ -1,0 +1,7 @@
+@import 'base.css';
+@import 'icons.css';
+@import 'prism.css';
+@import 'images.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
