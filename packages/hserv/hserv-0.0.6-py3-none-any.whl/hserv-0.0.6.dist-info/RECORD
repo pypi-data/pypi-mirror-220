@@ -1,0 +1,11 @@
+hserv/__init__.py,sha256=nMXg9GFsk8gCcyBnh1MAeUPvo4Zcuv3sdwGHZrxfpPE,36
+hserv/__version__.py,sha256=r7RdUZ8L-U2X1JowFxFcw9H8Lppt32fdqqpV7hRvsw8,20
+hserv/server.py,sha256=IMtPJ8uvCe7UY4CnLrSRN4QBHsgXXakLMFCsI1WM0gg,5519
+hserv/supabase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hserv/supabase/config.py,sha256=vCshhd96p-ARF_uvg05005WJmyfcVamYRekkyxx7K0w,3054
+hserv/supabase/controller.py,sha256=LPhQmGNrkFQgZxv4zmUS36VLKl6ssGljmS5nv_3dAQw,10422
+hserv-0.0.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hserv-0.0.6.dist-info/METADATA,sha256=jw1Mp23ctuanmkkXw7LLsgRXfaGryFK-aW4P7givTUE,419
+hserv-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hserv-0.0.6.dist-info/top_level.txt,sha256=x5B_AinVlmY7qjPZV6F4lzkONkjxoullnstZ6GKW6aA,6
+hserv-0.0.6.dist-info/RECORD,,
