@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+pykrige
+plotly
+
+[dev]
+
+[docs]
