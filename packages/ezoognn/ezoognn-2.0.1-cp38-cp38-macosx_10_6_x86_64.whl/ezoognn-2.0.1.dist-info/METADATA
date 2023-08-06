@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ezoognn
+Version: 2.0.1
+Summary: eZoo GNN Python SDK
+Home-page: https://www.ezoodb.com
+Author: eZoo
+Author-email: ezoo@ezoodb.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: pyvis
+
+The Python SDK for loading data from eZoo graph and running GNN training.
+

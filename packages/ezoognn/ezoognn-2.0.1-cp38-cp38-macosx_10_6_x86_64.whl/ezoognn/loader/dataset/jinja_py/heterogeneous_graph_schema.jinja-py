@@ -1,0 +1,67 @@
+{
+    "db_name": "{{schema_json.db_name}}",
+    "is_basic": false,
+    "auto_load": true,
+    "node_cache": "auto",
+    "edge_cache": "auto",
+    "node_schema": [
+        {% for schema in schema_json.node_schema %}
+            {
+                "type": "{{schema.name}}",
+                "indexes": [
+                    {
+                        "name": "id",
+                        "type": "unique",
+                        "props": [
+                            "id"
+                        ]
+                    }
+                ],
+                "props": [
+                    {% for prop in schema.props %}
+                    {
+                        "name": "{{prop.name}}",
+                        "type": "{{prop.type}}",
+                        "default_value": "60"
+                        {%- if schema_json.cache_level == 1 -%}
+                        ,
+                        "cache_level": 1
+                        {% endif %}
+                    }{%- if prop.last_prop_no_tag == 0 -%}{% else %},{% endif %}
+                    {% endfor %}
+                ]
+            }{%- if schema.last_prop_no_tag == 0-%}{% else %},{% endif %}
+        {% endfor %}
+    ],
+    "edge_schema": [
+        {% for schema in schema_json.edge_schema %}
+        {
+            "type": "{{schema.edge_type}}",
+            "indexes": [
+                {% for index in schema.indexes %}
+                {
+                    "name": "{{index.name}}",
+                    "type": "unique",
+                    "props": [
+                        "{{index.name}}"
+                    ]
+                }{%- if index.last_prop_no_tag == 0 -%}{% else %},{% endif %}
+                {% endfor %}
+            ],
+            "props": [
+                {% for prop in schema.props %}
+                {
+                    "name": "{{prop.name}}",
+                    "type": "{{prop.type}}",
+                    "default_value": "0"
+                    {%- if schema_json.cache_level == 1 -%}
+                    ,
+                    "cache_level": 1
+                    {% endif %}
+                }{%- if prop.last_prop_no_tag == 0-%}{% else %},{% endif %}
+                {% endfor %}
+            ]
+        }{%- if schema.last_prop_no_tag == 0-%}{% else %},{% endif %}
+        {% endfor %}
+    ]
+}
