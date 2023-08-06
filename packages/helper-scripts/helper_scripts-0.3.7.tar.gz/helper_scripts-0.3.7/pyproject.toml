@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "helper_scripts"
+version = "0.3.7"
+authors = [
+  { name="Winston David Ssentongo", email="winstondavid96@gmail.com" },
+  { name="Samuel Kizza", email="SK8@gmail.com" },
+]
+description = "Database Helper Package"
+readme = "readme.md"
+requires-python = ">=3.5"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pandas",
+    "psycopg2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/winston1o1/helper-scripts.git"
