@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fermpy
+Version: 0.0.1
+Summary: Package for exactly solving low-dimensional fermionic Hamiltonians
+Project-URL: Homepage, https://github.com/emilfrost/fermpy
+Author-email: Emil Frost <emiljpfrost@gmail.com>
+License-File: LICENSE
+Keywords: Hamiltonian,condensed matter,exact diagonalization,fermion,physics,sparse
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: numpy>=1.20
+Requires-Dist: scipy>=1.10.0
+Description-Content-Type: text/markdown
+
+# FermPy
+A Python package for exactly solving low-dimensional fermionic Hamiltonians. It was developed with the intention of constructing and diagonalizing matrix representations of low-dimensional, interacting fermionic Hamiltonians, in particular effective (surrogate) models that describe the low-energy (sub-gap) physics of the superconducting Anderson impurity model (see the [arXiv preprint](https://arxiv.org/)).
+
+FermPy is based on [NumPy](https://numpy.org/) and [SciPy](https://scipy.org/). Small systems use *dense* NumPy arrays as operator representations while large systems employ *sparse* Scipy arrays.
+
+Functionality of this package includes:
+- Construction of matrix representations of operators (*H*, *S<sub>z</sub>*, etc.) from a basis (chosen from symmetry considerations)
+- Diagonalization (*numpy.linalg.eigh*, *scipy.sparse.linalg.eigh*) of operators
+- Calculating expectation values and thermal averages of operators
