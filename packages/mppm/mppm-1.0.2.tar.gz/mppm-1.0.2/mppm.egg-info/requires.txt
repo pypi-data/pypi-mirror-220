@@ -1,0 +1,6 @@
+pip
+crayons
+blindspin
+requests
+pick
+configparser
