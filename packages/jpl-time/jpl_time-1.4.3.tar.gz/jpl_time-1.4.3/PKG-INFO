@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: jpl_time
+Version: 1.4.3
+Summary: Time and Duration classes which use SPICE to perform conversions and math.
+Author: Forrest Ridenhour
+Author-email: Forrest.Ridenhour@jpl.nasa.gov
+License: Apache License, Version 2.0
+License-File: LICENSE.txt
