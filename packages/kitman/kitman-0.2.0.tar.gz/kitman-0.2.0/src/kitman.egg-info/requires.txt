@@ -1,0 +1,12 @@
+pydantic[email,orjson]
+pydantic-settings
+pydantic-extra-types
+ormar
+fastapi
+deepmerge
+httpx[http2]
+makefun
+redis
+hiredis
+deepdiff
+typer[all]
