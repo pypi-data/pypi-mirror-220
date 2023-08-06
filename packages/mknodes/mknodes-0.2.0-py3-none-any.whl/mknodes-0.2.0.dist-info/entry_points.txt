@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+linkreplacer = mknodes.__linkreplacer:LinkReplacerPlugin
