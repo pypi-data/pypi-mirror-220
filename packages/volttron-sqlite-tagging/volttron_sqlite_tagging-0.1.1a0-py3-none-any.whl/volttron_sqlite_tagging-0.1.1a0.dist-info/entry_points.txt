@@ -1,0 +1,3 @@
+[console_scripts]
+volttron-sqlite-tagging=tagging.sqlite.tagging:main
+
