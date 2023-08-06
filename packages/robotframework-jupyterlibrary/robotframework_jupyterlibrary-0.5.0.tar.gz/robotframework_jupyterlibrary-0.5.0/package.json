@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "prettier": {
+    "proseWrap": "always",
+    "singleQuote": true,
+    "printWidth": 88
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  },
+  "scripts": {
+    "prettier": "prettier --write --list-different \"./*.{json,md,yml}\" \"{.github,.binder,docs}/**/*.{json,md,yml,css}\""
+  }
+}

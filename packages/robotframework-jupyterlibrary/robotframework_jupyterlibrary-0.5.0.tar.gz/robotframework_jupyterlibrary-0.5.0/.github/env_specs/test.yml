@@ -1,0 +1,7 @@
+dependencies:
+  # the robot stack
+  - robotframework-pabot
+  # screenshots
+  - firefox
+  - geckodriver
+  - coverage

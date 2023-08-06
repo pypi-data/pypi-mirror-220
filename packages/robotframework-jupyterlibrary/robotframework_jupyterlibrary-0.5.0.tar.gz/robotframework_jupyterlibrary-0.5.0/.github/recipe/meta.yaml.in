@@ -1,0 +1,47 @@
+{% set version = "REPLACE_THIS_VERSION" %}
+
+package:
+  name: robotframework-jupyterlibrary
+  version: {{ version }}
+
+source:
+  # url:  https://pypi.io/packages/source/r/robotframework-jupyterlibrary/robotframework_jupyterlibrary-{{ version }}.tar.gz
+  url: REPLACE_THIS_PATH
+  sha256: REPLACE_THIS_SHA256
+
+build:
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - pip
+    - python >=3.8
+    - flit >=3.9,<4
+  run:
+    - python >=3.8
+    - robotframework >=5
+    - robotframework-seleniumlibrary >=5
+
+test:
+  requires:
+    - pip
+  imports:
+    - JupyterLibrary
+  commands:
+    - pip check
+
+about:
+  home: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: A Robot Framework library for testing Jupyter end-user applications and extensions
+  doc_url: https://robotframework-jupyterlibrary.readthedocs.io
+  doc_source_url: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary/tree/v{{ version }}/docs
+
+extra:
+  recipe-maintainers:
+    - martinRenou
+    - bollwyvl

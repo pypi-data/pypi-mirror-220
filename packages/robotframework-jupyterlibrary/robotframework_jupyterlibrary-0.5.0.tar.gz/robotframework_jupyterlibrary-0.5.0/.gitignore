@@ -1,0 +1,17 @@
+__pycache__/
+_artifacts/
+_lab/
+_robot_magic_*
+.doit*
+.envs/
+.ipynb_checkpoints/
+.pabotsuitenames
+*.egg-info
+*.html
+build/
+dist/
+envs/
+lib/
+node_modules/
+Untitled*.*
+.github/recipe/meta.yaml

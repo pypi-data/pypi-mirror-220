@@ -1,0 +1,185 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PIP_DISABLE_PIP_VERSION_CHECK: 1
+  PYTHONIOENCODING: utf-8
+  PYTHONUNBUFFERED: 1
+  ATEST_RETRIES: 2
+  CI: 1
+
+defaults:
+  run:
+    # NOTE: some key windows steps _need_ to be run with `cmd /C CALL {0}`
+    shell: bash -l {0}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: meta
+          environment-file: .github/locks/meta/linux-64/conda.lock
+          miniforge-variant: Mambaforge
+          use-mamba: true
+      - run: python dodo.py build || python dodo.py build
+      - uses: actions/upload-artifact@v3
+        with:
+          name: rfjl_${{ github.run_number }}_dist
+          path: ./dist
+      - name: Rename uncached conda packages
+        shell: bash
+        run: mv "${CONDA_PKGS_DIR}" "${CONDA_PKGS_DIR}_do_not_cache"
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: lint
+          environment-file: .github/locks/lint/linux-64/conda.lock
+          miniforge-variant: Mambaforge
+          use-mamba: true
+      - run: python dodo.py lint || python dodo.py lint
+      - name: Rename uncached conda packages
+        shell: bash
+        run: mv "${CONDA_PKGS_DIR}" "${CONDA_PKGS_DIR}_do_not_cache"
+
+  conda-build:
+    runs-on: ubuntu-latest
+    needs: [build, lint, docs]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: meta
+          environment-file: .github/locks/meta/linux-64/conda.lock
+          miniforge-variant: Mambaforge
+          use-mamba: true
+      - uses: actions/download-artifact@v3
+        with:
+          name: rfjl_${{ github.run_number }}_dist
+          path: ./dist
+      - run: python dodo.py conda_build || python dodo.py conda_build
+      - uses: actions/upload-artifact@v3
+        with:
+          name: rfjl_${{ github.run_number }}_conda-bld
+          path: ./dist/conda-bld
+      - name: Rename uncached conda packages
+        shell: bash
+        run: mv "${CONDA_PKGS_DIR}" "${CONDA_PKGS_DIR}_do_not_cache"
+
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: docs
+          environment-file: .github/locks/docs/linux-64/conda.lock
+          miniforge-variant: Mambaforge
+          use-mamba: true
+      - run: python dodo.py docs || python dodo.py docs
+      - uses: actions/upload-artifact@v3
+        with:
+          name: rfjl_${{ github.run_number }}_docs_${{ job.status }}
+          path: ./build/docs/html
+        if: always()
+      - name: Rename uncached conda packages
+        shell: bash
+        run: mv "${CONDA_PKGS_DIR}" "${CONDA_PKGS_DIR}_do_not_cache"
+
+  test:
+    name: |-
+      ${{ matrix.conda-subdir }}_${{ matrix.python-version }}_${{ matrix.lab-version }}
+    runs-on: ${{ matrix.vm }}
+    needs: [build]
+    env:
+      INSTALL_ARTIFACT: 1
+    strategy:
+      fail-fast: false
+      # TODO: consider restoring
+      # max-parallel: 8
+      matrix:
+        # The Matrix
+        #
+        # This is the single source-of-truth of what we currently support
+        # - the matrix (with excludes) is parsed in project.py
+        # - the excursions are in env_specs, e.g. lab1.yml
+        # - to regenerate the specs, requires `conda-lock`:
+        #
+        #   rm -rf .github/locks
+        #   doit -n4 lock
+        #
+        conda-subdir: [win-64, osx-64, linux-64]
+        python-version: [py3.8, py3.11]
+        lab-version: [lab3, lab4]
+        include:
+          - conda-subdir: linux-64
+            os: ubuntu
+            vm: ubuntu-latest
+          - conda-subdir: osx-64
+            os: macos
+            vm: macos-latest
+          - conda-subdir: win-64
+            os: windows
+            vm: windows-latest
+
+    steps:
+      - name: configure git
+        run: git config --global core.autocrlf false
+      - uses: actions/checkout@v3
+      - name: get conda lockfile
+        id: lock
+        run: |
+          echo "CI_LOCKFILE=${{
+            format(
+              '.github/locks/test/{0}/{1}/{2}/conda.lock',
+              matrix.conda-subdir,
+              matrix.python-version,
+              matrix.lab-version
+            ) }}" >> $GITHUB_ENV
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: test
+          environment-file: ${{ env.CI_LOCKFILE }}
+          miniforge-variant: Mambaforge
+          use-mamba: true
+      - if: always()
+        uses: actions/download-artifact@v3
+        with:
+          name: rfjl_${{ github.run_number }}_dist
+          path: ./dist
+      - name: doit (unix)
+        if: ${{ matrix.os != 'windows' }}
+        run: python dodo.py test || python dodo.py test
+      - name: doit (windows)
+        if: ${{ matrix.os == 'windows' }}
+        env:
+          CONDA_EXE: C:\Miniconda\envs\Script\conda.exe
+        run: call conda activate test && python dodo.py test || python dodo.py test
+        shell: cmd /C CALL {0}
+      - name: upload test output
+        uses: actions/upload-artifact@v3
+        with:
+          name: |
+            rfjl_${{ github.run_number }}_test_${{ job.status }}_${{ matrix.os }}_${{ matrix.python-version }}_${{ matrix.lab-version }}
+          path: |
+            ./build/test/output
+        if: always()
+      - name: Rename uncached conda packages
+        shell: bash
+        run: mv "${CONDA_PKGS_DIR}" "${CONDA_PKGS_DIR}_do_not_cache"

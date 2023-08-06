@@ -1,0 +1,16 @@
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  # enough stuff to run doit
+  - doit-with-toml
+  - pip
+  - pyyaml
+  - flit >=3.9,<4
+  - tomli
+  # really nothing for it
+  - nodejs >=18,<19
+  # hard deps
+  - robotframework >=5
+  - robotframework-seleniumlibrary >=4.5
