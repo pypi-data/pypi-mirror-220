@@ -1,0 +1,275 @@
+{#
+ Copyright (C) 2023, CERN
+ This software is distributed under the terms of the MIT
+ licence, copied verbatim in the file "LICENSE".
+ In applying this license, CERN does not waive the privileges and immunities
+ granted to it by virtue of its status as Intergovernmental Organization
+ or submit itself to any jurisdiction.
+#}
+
+{% extends "page.html" %}
+
+{% block title %}
+{{ project.name }} · {{ super() }}
+{% endblock title %}
+
+{% macro page_banner() %}
+<div class="row" style="padding-bottom: 3em; padding-top: 2em">
+  <div class="col-md-6">
+    <h1> {{ project.name }} {{ version }}</h1>
+    <br>
+    {% if latest_version == version %}
+    <span class="pip-command" id="pip-command">pip install {{ project.name }}
+      <a href="#" onClick="javascript: navigator.clipboard.writeText('python -m pip install {{ project.name }}=={{ version }}'); return false;"><i class="fa fad fa-clone fa-fw"></i></a>
+    </span>
+    {% else %}
+    <span class="pip-command" id="pip-command">pip install {{ project.name }}=={{ version }}
+      <a href="#" onClick="javascript: navigator.clipboard.writeText('python -m pip install {{ project.name }}=={{ version }}'); return false;"><i class="fa fad fa-clone fa-fw"></i></a>
+    </span>
+    {% endif %}
+  </div>
+
+  <div class="offset-md-2 col-md-4 text-end">
+    <br>
+    {% if latest_release == release %}
+    <a class="status-badge status-badge--good" href="">
+      <i class="fa fa-check fa-fw"></i>&nbsp
+        <span>Latest version</span>
+    </a>
+    {% else %}
+    <a class="status-badge status-badge--bad" href="{{ url_for('project_version', project_name=project.name, version=latest_version) }}">
+      <i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp
+        <span>Newer version available ({{ latest_release }})</span>
+    </a>
+    {% endif %}
+    <br><br>
+    <span data-source="release_date">
+        Released:
+        {% set release_date=metadata['info']['creation_date'] %}
+        {% if (release_date and release_date.year > 1990) %}
+            <!-- TODO: Show locale date -->
+            {{ release_date.strftime('%b %d, %Y') }}
+        {% else %}
+            Unknown
+        {% endif %}
+    </span>
+  </div>
+</div>
+{% endmacro %}
+
+
+{% block page_content %}
+        <section class="jumbotron jumbo-banner" id="page-banner">
+            <div class="container">
+            {{ page_banner() }}
+            </div>
+        </section>
+
+        <section class="jumbotron jumbo-separator" id="banner-split">
+            <div class="container">
+              <div data-source="summary">
+                  {{ metadata['info']['summary'] or 'No summary available' }}
+              </div>
+            </div>
+        </section>
+
+    <div class="container" id="page-content">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="d-grid gap-2 d-md-block page-navigation">
+            <strong>Navigation</strong>
+            <button class="btn btn-link col-md-12 rounded-0 description text-start" type="button" data-purpose="page-select">
+              <i class="fa fa-align-left fa-fw"></i>
+              Description
+            </button>
+            <button class="btn btn-link col-md-12 rounded-0 releases text-start" type="button" data-purpose="page-select">
+              <i class="fa fa-history fa-fw"></i>
+                Releases
+            </button>
+            <button class="btn btn-link col-md-12 rounded-0 files text-start" type="button" data-purpose="page-select">
+              <i class="fa fa-download fa-fw"></i>
+              Download files
+            </button>
+            <button class="btn btn-link col-md-12 rounded-0 dependencies text-start" type="button" data-purpose="page-select">
+              <i class="fa fa-sitemap fa-fw"></i>
+              Dependencies
+            </button>
+          </div>
+          <hr/>
+          <div id="project_urls">
+            <strong>Project Links</strong>
+              {% set icon_lookup={
+                'Documentation': 'fa-book',
+                "Source": "fa-code-branch",
+                "Source Code": "fa-code-branch",
+                "Code": "fa-code-branch",
+                "Tracker": "fa-bug",
+                "Issues": "fa-bug",
+                "Bug Tracker": "fa-bug",
+                "Discussions": "fa-comments",
+                "Changelog": "fa-scroll",
+                "Homepage": "fa-home",
+              } %}
+
+              {# URLS to be reversed as per https://stackoverflow.com/a/56243786/741316 #}
+              {% for name, url in metadata['info']['project_urls'].items() | reverse %}
+              {% set fa_icon=icon_lookup.get(name.title(), 'fa-link') %}
+                <button class="btn btn-link col-md-12 rounded-0 files text-start">
+                     <a href="{{ url }}">
+                         <i class="fa fa-align-left {{ fa_icon }}"></i>
+                            {{name}}
+                     </a>
+                </button>
+              {% endfor %}
+          </div>
+          <hr/>
+          <div>
+              <strong>Meta</strong>
+              {% if metadata['info']['author'] %}
+              <div data-source="author"><strong>Author: </strong> {{ metadata['info']['author'] }}</div>
+              {% endif %}
+              {% if metadata['info']['maintainer'] %}
+              <div data-source="maintainer"><strong>Maintainer: </strong> {{ metadata['info']['maintainer'] }}</div>
+              {% endif %}
+              {% if metadata['info']['requires_python'] %}
+              <div data-source="requires_python"><strong>Requires Python: </strong> {{ metadata['info']['requires_python'] }}</div>
+              {% endif %}
+          </div>
+          <hr/>
+          <div id="classifiers">
+              <strong>Classifiers</strong>
+              <br>
+
+              {% for classifier_header, classifiers in metadata['info']['classifier_groups'] %}
+              <br><h6>{{ classifier_header }}</h6>
+              <ul>
+              {% for classifier in classifiers %}
+               <li>{{ classifier.split('::', 1)[1] }}</li>
+              {% endfor %}
+              </ul>
+              {% endfor %}
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div id="description-page" data-purpose="page-switch" data-source="description">
+              {{ metadata['info']['description_html'] or 'Description not available' }}
+            </div>
+          </div>
+          <div id="releases-page" data-purpose="page-switch" data-source="releases">
+          {% for _version in releases|reverse %}
+            <a href="{{ url_for('project_version', project_name=project.name, version=_version) }}">
+                <div class="card" style="margin: 1em;">
+                  <div class="card-body">
+                    <span class="listing-icon">
+                      <i class="far fa-folder-open"></i>
+                    </span>
+                    {{ _version }}
+                  </div>
+                </div>
+            </a>
+          {% endfor %}
+          </div>
+          <div id="files-page" data-purpose="page-switch" data-source="files">
+            Download files for release:
+            <div id="project_files">
+               {% for file in metadata['releases'][version] %}
+                <a href="${file.url}">
+                 <div class="card" style="margin: 1em;">
+                  <div class="card-body">
+                    <span class="listing-icon">
+                      <i class="far fa-file"></i>
+                    </span>
+                    {{ file['filename'] }} ({{ fmt_size(file['size']) }})
+                  </div>
+                 </div>
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+          <div id="dependencies-page" data-purpose="page-switch">
+              {% if not metadata['info']['requires_dist'] %}
+                No dependencies
+              {% else %}
+                Dependencies:
+                <div>
+                   {% for requirement in metadata['info']['requires_dist'] %}
+                    <a href="{{ url_for('project', project_name=requirement.name) }}">
+                     <div class="card" style="margin: 1em;">
+                      <div class="card-body">
+                        <img src="{{ url_for('static', path='/images/python-logo-only.svg') }}" style="padding: 0 1em 0 0.5em; vertical-align: top; width: 64px;" >
+                        {{ requirement.name }} {% if requirement.__str__() != requirement.name %} ({{ requirement }}) {% endif %}
+                      </div>
+                     </div>
+                    </a>
+                  {% endfor %}
+                  {% if not metadata['info']['requires_dist'] %}
+                    No dependencies!
+                  {% endif %}
+                </div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock page_content %}
+
+
+{% block extra_footer %}
+<script src="{{ url_for('static', path='/js/simple-repository-browser.project.js') }}"></script>
+<script>
+  function humanFileSize(size) {
+      var i = Math.floor( Math.log(size) / Math.log(1024) );
+      return ( size / Math.pow(1024, i) ).toFixed(2) * 1 + ' ' + ['B', 'kB', 'MB', 'GB', 'TB'][i];
+  };
+
+function show_page(page_class){
+  $('button[data-purpose="page-select"]').addClass('btn-link').removeClass('btn-primary')
+  $('button[data-purpose="page-select"].' + page_class).addClass('btn-primary').removeClass('btn-link')
+
+  $('div[data-purpose="page-switch"]').addClass('d-none');
+  $('#' + page_class + '-page').removeClass('d-none').removeClass('d-none').removeClass('d-none');
+}
+
+$('button.releases').click(
+  function() {
+    show_page('releases');
+    history.replaceState( {} , 'Releases', '{{ url_for('project_version', project_name=project.name, version=version) }}/releases' );
+  }
+)
+
+$('button.description').click(
+  function() {
+    show_page('description');
+    history.replaceState( {} , 'Description', '{{ url_for('project_version', project_name=project.name, version=version) }}/description' );
+  }
+)
+
+$('button.files').click(
+  function() {
+    show_page('files');
+    history.replaceState( {} , 'Files', '{{ url_for('project_version', project_name=project.name, version=version) }}/files' );
+  }
+)
+
+$('button.dependencies').click(
+  function() {
+    show_page('dependencies');
+    history.replaceState( {} , 'Releases', '{{ url_for('project_version', project_name=project.name, version=version) }}/dependencies' );
+  }
+)
+
+  var url_parts = window.location.href.split('/')
+  last_part = url_parts[url_parts.length - 1]
+  if (last_part == 'files') {
+    show_page('files');
+  } else if (last_part == 'releases') {
+    show_page('releases');
+  } else if (last_part == 'dependencies') {
+    show_page('dependencies');
+  } else {
+    show_page('description');
+  }
+
+</script>
+{% endblock extra_footer %}
