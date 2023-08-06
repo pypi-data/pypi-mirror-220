@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: gammarer.aws-secure-frontend-web-app-cloudfront-distribution
+Version: 0.6.4
+Summary: AWS CloudFront distribution for frontend web app (spa) optimized.
+Home-page: https://github.com/yicr/aws-secure-frontend-web-app-cloudfront-distribution.git
+Author: yicr<yicr@users.noreply.github.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/yicr/aws-secure-frontend-web-app-cloudfront-distribution.git
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AWS Secure Frontend Web App CloudFront Distribution (for AWS CDK v2)
+
+AWS CloudFront distribution for frontend web app (spa) optimized.
+
+## Install
+
+### TypeScript
+
+```shell
+npm install @gammarer/aws-secure-frontend-web-app-cloudfront-distribution
+# or
+yarn add @gammarer/aws-secure-frontend-web-app-cloudfront-distribution
+```
+
+### Python
+
+```shell
+pip install gammarer.aws-secure-frontend-web-app-cloudfront-distribution
+```
+
+## Example
+
+```shell
+npm install @gammarer/aws-secure-frontend-web-app-cloudfront-distribution
+```
+
+```python
+import { SecureFrontendWebAppCloudFrontDistribution } from '@gammarer/aws-secure-frontend-web-app-cloudfront-distribution';
+
+new SecureFrontendWebAppCloudFrontDistribution(stack, 'SecureFrontendWebAppCloudFrontDistribution', {
+  accessLogBucket: new s3.Bucket(stack, 'LogBucket'),
+  certificate: new acm.Certificate(stack, 'Certificate', {
+    domainName: 'example.com',
+  }),
+  distributionDomainName: 'example.com',
+  originAccessIdentity: new cloudfront.OriginAccessIdentity(stack, 'OriginAccessIdentity'),
+  originBucket: new s3.Bucket(stack, 'OriginBucket'),
+});
+```
