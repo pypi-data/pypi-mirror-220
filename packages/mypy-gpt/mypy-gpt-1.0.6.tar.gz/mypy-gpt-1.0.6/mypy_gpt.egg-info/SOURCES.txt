@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+mypy_gpt/__init__.py
+mypy_gpt/__main__.py
+mypy_gpt/common.py
+mypy_gpt/guide.py
+mypy_gpt/linter.py
+mypy_gpt/mypygpt.py
+mypy_gpt.egg-info/PKG-INFO
+mypy_gpt.egg-info/SOURCES.txt
+mypy_gpt.egg-info/dependency_links.txt
+mypy_gpt.egg-info/requires.txt
+mypy_gpt.egg-info/top_level.txt

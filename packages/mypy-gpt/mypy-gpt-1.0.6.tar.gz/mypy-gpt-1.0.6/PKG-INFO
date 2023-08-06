@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mypy-gpt
+Version: 1.0.6
+Summary: Python minor issue resolver (mypy) using gpt by openai!
+Home-page: https://github.com/eyalk11/mypy-gpt
+Author: ekarni
+Author-email: eyalk5@gmail.com
+License:  AGPL-3.0 license
+License-File: LICENSE
+
+Solves mypy errors using guidance and GPT api. It runs mypy on targeted file and then uses gpt to try to fix the issues (espcially good for minor nagging issues). Displays a diff file for the required changes and ask you if you want to apply.
