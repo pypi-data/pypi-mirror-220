@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "aiodnsbl"
+version = "1.0.0"
+description = "Async DNSBL lists checker"
+authors = ["Manabu Niseki <manabu.niseki@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/ninoseki/aiodnsbl"
+repository = "https://github.com/ninoseki/aiodnsbl"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+aiodns = ">=3.0,<4.0"
+idna = ">=3.4,<4.0"
+
+[tool.poetry.group.dev.dependencies]
+autoflake = "^2.2"
+autopep8 = "^2.0"
+black = "^23.7"
+coveralls = "^3.3"
+flake8 = "^6.0"
+isort = "^5.12"
+mypy = "^1.4"
+pre-commit = "^3.3"
+pytest = "^7.2"
+pytest-asyncio = "^0.21"
+pytest-cov = "^4.0"
+pytest-randomly = "^3.13"
+pyupgrade = "^3.9"
+six = "^1.16.0"
+urllib3 = "^1.0"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.ruff]
+select = [
+  "E",   # pycodestyle errors
+  "W",   # pycodestyle warnings
+  "F",   # pyflakes
+  "C",   # flake8-comprehensions
+  "B",   # flake8-bugbear
+  "T20", # flake8-print
+]
+ignore = [
+  "E501", # line too long, handled by black
+]
