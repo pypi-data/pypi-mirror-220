@@ -1,0 +1,12 @@
+openfoodfacts/__init__.py,sha256=2w3Iu9ogP5sjbhhRNytJtj7GpEosBVUYfuKzLrZSYJ0,390
+openfoodfacts/api.py,sha256=ugTPnvBn6imV6SkR3g2HQyNCx_baM6HZE2FNN7ER43A,5559
+openfoodfacts/dataset.py,sha256=zEEA5h3Ws3sAJbfunk-gULf5jvMWk7J2c2dYqnSH7Ao,2891
+openfoodfacts/images.py,sha256=HpMytZmvv__iStOBK1Vu7zxn0iMDpc2kR5Z_D5xSW1E,4937
+openfoodfacts/ocr.py,sha256=Qq5sBjDZWy5L4ZyO6zrYrqxNgrkP-cUzbMqeZi9J3x4,36245
+openfoodfacts/taxonomy.py,sha256=WCn-sglXIef9bWRqSU9fQGXxZWoEMKzRBHyoWhDa7wg,10318
+openfoodfacts/types.py,sha256=Tju-Gc87NECsZQ-2jxns6l5pCsH5x4oyc4HK35P2nZI,10328
+openfoodfacts/utils.py,sha256=Gvb1Q0Lhy1buQVThuMMz_uXb_DigCr8ZRIRvcojkO6M,7195
+openfoodfacts-0.1.4.dist-info/LICENSE,sha256=-1gpZps828D72j3fnKNhcVC_fJbWZ81TvyOf-XI3awk,1182
+openfoodfacts-0.1.4.dist-info/METADATA,sha256=yeqkpeSkFfliRAeYqYqf84B4IAKrXvdG1899Hi5Xw9Q,3271
+openfoodfacts-0.1.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+openfoodfacts-0.1.4.dist-info/RECORD,,
