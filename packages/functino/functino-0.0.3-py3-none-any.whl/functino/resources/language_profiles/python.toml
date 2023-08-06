@@ -1,0 +1,7 @@
+name = "Python"
+language_id = "python"
+source_file_extension = "py"
+compile = false
+
+[command]
+default = ["python", "{source_file_path}"]
