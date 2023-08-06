@@ -1,0 +1,6 @@
+README.md
+setup.py
+kocoafab.egg-info/PKG-INFO
+kocoafab.egg-info/SOURCES.txt
+kocoafab.egg-info/dependency_links.txt
+kocoafab.egg-info/top_level.txt
