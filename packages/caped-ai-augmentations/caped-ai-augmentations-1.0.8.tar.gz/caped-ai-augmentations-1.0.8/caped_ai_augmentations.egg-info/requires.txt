@@ -1,0 +1,7 @@
+albumentations
+scipy
+opencv-python
+scikit-learn
+dask
+natsort
+photutils

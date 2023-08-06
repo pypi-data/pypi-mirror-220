@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+caped_ai_augmentations/AugmentTYXCsv.py
+caped_ai_augmentations/AugmentTZYXCsv.py
+caped_ai_augmentations/AugmentYX.py
+caped_ai_augmentations/AugmentYXC.py
+caped_ai_augmentations/AugmentZYX.py
+caped_ai_augmentations/__init__.py
+caped_ai_augmentations/_version.py
+caped_ai_augmentations/utils.py
+caped_ai_augmentations.egg-info/PKG-INFO
+caped_ai_augmentations.egg-info/SOURCES.txt
+caped_ai_augmentations.egg-info/dependency_links.txt
+caped_ai_augmentations.egg-info/requires.txt
+caped_ai_augmentations.egg-info/top_level.txt
