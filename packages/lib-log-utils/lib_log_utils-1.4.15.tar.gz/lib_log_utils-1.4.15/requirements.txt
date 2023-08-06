@@ -1,0 +1,7 @@
+## Project Requirements
+click
+coloredlogs
+cli_exit_tools
+lib_parameter
+lib_platform
+lib_programname
