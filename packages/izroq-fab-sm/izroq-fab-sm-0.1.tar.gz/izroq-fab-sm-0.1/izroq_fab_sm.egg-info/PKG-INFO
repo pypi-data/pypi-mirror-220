@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: izroq-fab-sm
+Version: 0.1
+Summary: Custom Izroq Security Manager for FAB Apps (Superset &amp; Airflow)
+Home-page: https://github.com/izroq/izroq_fab_sm
+Author: Izroq
+Author-email: office@izroq.com
+License: MIT

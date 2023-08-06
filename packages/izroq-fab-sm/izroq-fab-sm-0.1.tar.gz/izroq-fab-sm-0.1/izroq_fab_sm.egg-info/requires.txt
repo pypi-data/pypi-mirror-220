@@ -1,0 +1,2 @@
+flask-appbuilder>=3.0.0
+authlib>=1.0.0
