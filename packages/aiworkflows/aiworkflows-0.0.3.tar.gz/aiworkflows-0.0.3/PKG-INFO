@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aiworkflows
+Version: 0.0.3
+Summary: AI Workflows Python SDK
+Home-page: https://github.com/ai-workflows/sdk
+Author: Joseph Vitko
+Author-email: me@josephvitko.com
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: license.txt

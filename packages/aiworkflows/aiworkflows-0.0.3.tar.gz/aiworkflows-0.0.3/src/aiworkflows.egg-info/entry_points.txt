@@ -1,0 +1,2 @@
+[console_scripts]
+aiworkflows = aiworkflows.cli:main
