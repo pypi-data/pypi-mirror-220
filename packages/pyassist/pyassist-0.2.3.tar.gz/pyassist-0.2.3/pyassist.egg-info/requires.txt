@@ -1,0 +1,7 @@
+lxml
+pyloggerutils
+requests
+urllib3
+BeautifulSoup4
+webdriver_manager
+selenium
