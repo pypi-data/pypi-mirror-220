@@ -1,0 +1,12 @@
+odoo/addons/ssi_product_line_mixin/README.rst,sha256=Kkhq-PUk3--Anm1Ap7WK_3JxUk4orq6dXmfMEKPmH5g,1176
+odoo/addons/ssi_product_line_mixin/__init__.py,sha256=X3ayW9k4OH3xqib3X0KEzYY9_pqaAhP2YdhFFVEJSvo,181
+odoo/addons/ssi_product_line_mixin/__manifest__.py,sha256=T6TqA2KzbmhWev__awSR806owlYkBdKxxPBRkHm_CLg,534
+odoo/addons/ssi_product_line_mixin/menu.xml,sha256=PkrhEtNLT9HuuzC-kVJmbt8l80IxbhhbK_jhsjK3wL8,304
+odoo/addons/ssi_product_line_mixin/models/__init__.py,sha256=E53e7nJ11cJqF55hsrHcx6B9ftthis0FlpAQKZFQ8RU,193
+odoo/addons/ssi_product_line_mixin/models/mixin_product_line.py,sha256=kITQxkFRAVrJyh9tFyrRqQ-IQuvxVKwWvkNLFU774Jc,2316
+odoo/addons/ssi_product_line_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo/addons/ssi_product_line_mixin/views/mixin_product_line_mixin_views.xml,sha256=rFvs-iKzR4AsQHRR4h_jCubta4psyvHsgGwqkB2tLBo,2745
+odoo14_addon_ssi_product_line_mixin-14.0.1.0.1.dist-info/METADATA,sha256=usMG53X5GSNLtZHdtKe3bX1gDByS2IeOl3dMQb24bY4,1682
+odoo14_addon_ssi_product_line_mixin-14.0.1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_product_line_mixin-14.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_product_line_mixin-14.0.1.0.1.dist-info/RECORD,,
