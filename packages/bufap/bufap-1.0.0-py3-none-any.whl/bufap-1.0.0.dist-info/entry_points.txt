@@ -1,0 +1,2 @@
+[console_scripts]
+bufap-cli = bufap.cli:main
