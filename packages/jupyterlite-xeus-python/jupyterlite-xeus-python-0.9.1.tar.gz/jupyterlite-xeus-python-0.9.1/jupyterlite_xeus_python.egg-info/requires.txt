@@ -1,0 +1,5 @@
+traitlets
+jupyterlite-core>=0.1.0
+requests
+empack<4,>=3
+typer

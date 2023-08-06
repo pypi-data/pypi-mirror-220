@@ -1,0 +1,20 @@
+name: xeus-python-kernel-docs
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - pip
+  - click
+  - typer
+  - linkify-it-py
+  - myst-parser
+  - pydata-sphinx-theme
+  - yarn
+  - jupyterlab >=3.5.3,<3.6
+  - jupyterlite-core >=0.1.0,<0.2.0
+  - empack >=3,<4
+  - pip:
+    - jupyterlite-sphinx
+    - ..

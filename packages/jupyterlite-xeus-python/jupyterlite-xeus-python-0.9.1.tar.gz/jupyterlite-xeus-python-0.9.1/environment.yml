@@ -1,0 +1,15 @@
+name: xeus-python-kernel
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - jupyterlab >=3.6,<4
+  - traitlets
+  - requests
+  - typer
+  - pytest
+  - empack >=3,<4
+  - yarn =3
+  - pip:
+    - jupyterlite
