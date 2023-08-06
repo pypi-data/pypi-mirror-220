@@ -1,0 +1,6 @@
+include LICENSE
+include CHANGELOG
+include README.rst
+recursive-include include *.h
+
+graft vendor/source/igraph
