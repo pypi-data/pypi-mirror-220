@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unstac"
+version = "0.0.5"
+authors = [
+        {name = "Luka Antonić", email = "luka.olegsson@gmail.com"},
+]
+description = "Tool for unwrapping Spatiotemporal Asset Catalogs into GeoPackage"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = []
+dependencies = [
+             "pystac[orjson]",
+             "rich",
+             "typer",
+             "geopandas",
+             "shapely",
+]
+
+[project.scripts]
+unstac = "unstac:main"
+
+[tool.black]
+target-version = ['py310']
+
+[tool.isort]
+profile = 'black'

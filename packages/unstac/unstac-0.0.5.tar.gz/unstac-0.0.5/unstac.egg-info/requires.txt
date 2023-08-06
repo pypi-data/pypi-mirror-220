@@ -1,0 +1,5 @@
+pystac[orjson]
+rich
+typer
+geopandas
+shapely

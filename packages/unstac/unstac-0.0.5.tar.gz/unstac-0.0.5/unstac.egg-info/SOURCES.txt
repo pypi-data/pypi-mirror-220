@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+unstac/__init__.py
+unstac/__main__.py
+unstac.egg-info/PKG-INFO
+unstac.egg-info/SOURCES.txt
+unstac.egg-info/dependency_links.txt
+unstac.egg-info/entry_points.txt
+unstac.egg-info/requires.txt
+unstac.egg-info/top_level.txt
