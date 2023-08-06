@@ -1,0 +1,13 @@
+meld/__init__.py,sha256=LSZXjgJgRoxdx4fmV5ycfxoFweyc1u0dRgsa8dcFiZI,263
+meld/benchmark.py,sha256=fLUtDRdtBw18KX4V0cqRTTp6Q7DBvvRtdWMXZig93r8,6519
+meld/cluster.py,sha256=mJtjHwPMugTeHmp_6nC-0O5PK0pfK2GRpnlnlP0TL9M,12964
+meld/filter.py,sha256=pGkBSxXi_KWA8NXTAVLY1M4_iExysO_nzsnM3j_T8Tg,1795
+meld/meld.py,sha256=edxP65qn3OFUswv4x7Fw_OTyU2f97D1jNs_W8S3wOws,9244
+meld/utils.py,sha256=MAgCeR3MSy4kbKfDcSSfYi6xPhb8W6PoupImJaJWexw,1381
+meld/version.py,sha256=qP9L_DzyxmwKRI_k9dOiD_46b0sIJQww2lGwCH8P59c,78
+meld-1.0.2.dist-info/LICENSE,sha256=oHx-Ll8KVZOSlPGXJYVqV4V6p-QVVnSr_Z285EaQhPU,935
+meld-1.0.2.dist-info/LICENSE-GPL3.txt,sha256=8vKV38wEAez8SUyD92nXVA0VoUpkl814wVZ7YXvBai4,34539
+meld-1.0.2.dist-info/METADATA,sha256=ynws-kWTLUsj44WbCVmtNhJaT1Y19QU4ZFZ5zRBMiaE,5640
+meld-1.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+meld-1.0.2.dist-info/top_level.txt,sha256=_8TVm2TsnLKF9OoLaXmaqxLdBdSu-4q1aUxTY-oC7PU,5
+meld-1.0.2.dist-info/RECORD,,
