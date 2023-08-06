@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: sphinx-design-elements
+Version: 0.1.0
+Summary: A collection of composite web elements based on components from sphinx-design.
+Author-email: Andreas Motl <andreas.motl@panodata.org>
+License: MIT License Copyright (c) 2023 Andreas Motl
+        
+        Permission is hereby granted, free
+        of charge, to any person obtaining a copy of this software and associated
+        documentation files (the "Software"), to deal in the Software without
+        restriction, including without limitation the rights to use, copy, modify, merge,
+        publish, distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to the
+        following conditions:
+        
+        The above copyright notice and this permission notice
+        (including the next paragraph) shall be included in all copies or substantial
+        portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+        ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+        EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+        OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+        FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+        
+Project-URL: changelog, https://github.com/panodata/sphinx-design-elements/blob/main/CHANGES.md
+Project-URL: documentation, https://sphinx-design-elements.readthedocs.io/
+Project-URL: homepage, https://sphinx-design-elements.readthedocs.io/
+Project-URL: repository, https://github.com/panodata/sphinx-design-elements
+Keywords: extension,material design,sphinx,web components
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Documentation
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Text Processing :: Markup :: reStructuredText
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sphinx-design (<1)
+Provides-Extra: develop
+Requires-Dist: black (<24) ; extra == 'develop'
+Requires-Dist: docutils-stubs ; extra == 'develop'
+Requires-Dist: mypy (==1.4.1) ; extra == 'develop'
+Requires-Dist: poethepoet (<0.22) ; extra == 'develop'
+Requires-Dist: pyproject-fmt (<0.14) ; extra == 'develop'
+Requires-Dist: ruff (==0.0.278) ; extra == 'develop'
+Requires-Dist: validate-pyproject (<0.14) ; extra == 'develop'
+Provides-Extra: docs
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: myst-parser[linkify] (<3,>=0.18) ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Provides-Extra: release
+Requires-Dist: build (<1) ; extra == 'release'
+Requires-Dist: twine (<5) ; extra == 'release'
+Requires-Dist: minibump (<1) ; (python_version >= "3.10") and extra == 'release'
+Provides-Extra: test
+Requires-Dist: pytest (<8) ; extra == 'test'
+Requires-Dist: pytest-cov (<5) ; extra == 'test'
+Requires-Dist: pytest-regressions (<3) ; extra == 'test'
+
+# sphinx-design-elements
+
+» [Documentation]
+| [Changelog]
+| [PyPI]
+| [Issues]
+| [Source code]
+| [License]
+
+[![CI][gha-badge]][gha-link]
+[![Coverage Status][codecov-badge]][codecov-link]
+[![PyPI][pypi-badge]][pypi-link]
+
+
+## About
+
+A collection of composite web elements based on components from [sphinx-design].
+
+
+## Setup
+
+Install the package using `pip install sphinx-design-elements`, and add the
+extension to the list of `extensions` within your Sphinx configuration file
+`conf.py`.
+
+```python
+extensions = [
+    "sphinx_design",
+    "sphinx_design_elements",
+]
+```
+
+## Comparison to sphinx-design
+
+This package uses low-level components of [sphinx-design], in order to build more
+high-level elements on top.
+
+
+## Development
+
+In order to learn how to set up the project in development mode, please visit the
+[development documentation].
+
+## Acknowledgements
+
+Kudos to [Chris Sewell] and all contributors for conceiving and maintaining
+[MyST Parser] and [sphinx-design].
+
+
+
+[Changelog]: https://github.com/panodata/sphinx-design-elements/blob/main/CHANGES.md
+[Chris Sewell]: https://github.com/chrisjsewell
+[development documentation]: https://sphinx-design-elements.readthedocs.io/en/latest/sandbox.html
+[Documentation]: https://sphinx-design-elements.readthedocs.io/
+[Issues]: https://github.com/panodata/sphinx-design-elements/issues
+[License]: https://github.com/panodata/sphinx-design-elements/blob/main/LICENSE
+[MyST Parser]: https://myst-parser.readthedocs.io/
+[PyPI]: https://pypi.org/project/sphinx-design-elements/
+[Source code]: https://github.com/panodata/sphinx-design-elements
+[sphinx-design]: https://sphinx-design.readthedocs.io/
+
+[gha-badge]: https://github.com/panodata/sphinx-design-elements/actions/workflows/main.yml/badge.svg
+[gha-link]: https://github.com/panodata/sphinx-design-elements/actions/workflows/main.yml
+[codecov-badge]: https://codecov.io/gh/panodata/sphinx-design-elements/branch/main/graph/badge.svg
+[codecov-link]: https://codecov.io/gh/panodata/sphinx-design-elements
+[pypi-badge]: https://img.shields.io/pypi/v/sphinx-design-elements.svg
+[pypi-link]: https://pypi.org/project/sphinx-design-elements
