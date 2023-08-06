@@ -1,0 +1,12 @@
+foodunits/__init__.py,sha256=HnsYg-LyuZ-RwNCSOLhXtnm4NyO48Kv7ivVIt4yi4U8,238
+foodunits/base.py,sha256=wuxn5XBt5LSDPjhR5Jxa0qQGMTVlpoty7Aah0ScI6vs,8863
+foodunits/convertor.py,sha256=oRBcY3JrER0MDmyFpkbjm-pSLbmW6OQ9ZhgpPmZTG3A,7507
+foodunits/exceptions.py,sha256=3J-vjCjwTrzlo5HmKvcULiF8GhRQ8CWg-E27V61ypqE,1223
+foodunits/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foodunits/utils/units.py,sha256=IEU_3nynw-qcuNpolhLZJCnLJUVe64gEOGBCOAmc5ww,7775
+foodunits/utils/utils.py,sha256=c_jD_-VXwT_TyGtBprV7BRwEEnQXxhtlgj_wSCSQ0-s,9372
+foodunits/validator.py,sha256=Qx0nix0IuXapgDnmYIKpYcg7Xn5fYaIbwzQV518qIMg,1813
+foodunits-0.1.0.dist-info/LICENSE,sha256=HcgzcQarTOJKp4_bRo7ywqCl9_K9n0Y7rKacEkVCe6I,1068
+foodunits-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+foodunits-0.1.0.dist-info/METADATA,sha256=nYRXuBj_yM6ZgnEia1Fsh7Eyh-GTqhIC58fZE_B4rh4,3712
+foodunits-0.1.0.dist-info/RECORD,,
