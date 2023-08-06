@@ -1,0 +1,1 @@
+Slide = tuple[str, ...]
