@@ -1,0 +1,8 @@
+README.md
+setup.py
+hdb/__init__.py
+hdb/hdb.py
+hdb.egg-info/PKG-INFO
+hdb.egg-info/SOURCES.txt
+hdb.egg-info/dependency_links.txt
+hdb.egg-info/top_level.txt
