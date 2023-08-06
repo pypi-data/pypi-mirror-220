@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: jfricas
+Version: 2.0.0
+Summary: FriCAS Jupyter Kernel.
+Home-page: http://github.com/fricas/jfricas
+Author: Kurt Pagani, Ralf Hemmecke
+Author-email: jfricas@hemmecke.org
+License: BSD
+Keywords: fricas,jupyter,computer_algebra
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+===============================
+FriCAS Jupyter Kernel (jfricas)
+===============================
+
+This project implements a Jupyter kernel for `FriCAS`_ .
+
+Documentation: https://jfricas.readthedocs.io
+
+Git repository: https://github.com/fricas/jfricas
+
+:Authors:
+    Ralf Hemmecke,
+    Kurt Pagani
+
+    (and sundry other good-natured folks)
+
+:Version: 2.0.0 (22-Jul-2023)
+
+:License: `Simplified BSD License`_
+
+
+.. _FriCAS: https://github.com/fricas/fricas
+.. _Simplified BSD License: https://github.com/fricas/jfricas/blob/master/LICENSE

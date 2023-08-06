@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+jfricas/__init__.py
+jfricas/fricaskernel.py
+jfricas/webspad.lisp
+jfricas.egg-info/PKG-INFO
+jfricas.egg-info/SOURCES.txt
+jfricas.egg-info/dependency_links.txt
+jfricas.egg-info/not-zip-safe
+jfricas.egg-info/requires.txt
+jfricas.egg-info/top_level.txt
