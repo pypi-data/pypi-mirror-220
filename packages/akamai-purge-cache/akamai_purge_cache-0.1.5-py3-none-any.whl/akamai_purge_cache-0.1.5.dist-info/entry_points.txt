@@ -1,0 +1,3 @@
+[console_scripts]
+mgpurge=akamai-purge-cache.purge:mgpurge
+
