@@ -1,0 +1,15 @@
+dynrender_skia/Core.py,sha256=EuSQzDwaVGrJJfaC53vcP4kMiWtT3FJroi7ElTfww1g,2225
+dynrender_skia/DynAdditional.py,sha256=2M_4tqy199JiCNfTs6n4SaEJ91HtZN_YSO5kSjWtBuA,18382
+dynrender_skia/DynConfig.py,sha256=NnCoEpWnd1dSRRz5aN03tl_30gz8rnHIAIJl21iUS_4,5499
+dynrender_skia/DynHeader.py,sha256=mTFrUVK5CO9viODIRWiyHbQqrU9urJQl7YTAaErvd5w,11153
+dynrender_skia/DynMajor.py,sha256=YOHcFNUhXoQo3R-uCMCtKY2xibZX3Sz0cBOh8tKBHxA,28444
+dynrender_skia/DynRepost.py,sha256=mmkuVJZs5KPQMiwCFDJavwirr3CTequ2nsiqVacC82M,1204
+dynrender_skia/DynStyle.py,sha256=v7SyMdXSofC2W82kUf17fiGglrZRcH3xrLq5JrVpAts,849
+dynrender_skia/DynText.py,sha256=Qeh4yBgvcddxXo6uv6hqFste4H7DvGmh0MhL9X2fiSw,12798
+dynrender_skia/DynTools.py,sha256=JuNb0lLs_4axDqgarfmOFAc9VR0PlFFUq0Xvyl4RFt0,4084
+dynrender_skia/Static.zip,sha256=FrNSxTZPm8iKK97IeFlV8_RS3c7oivOFjNC6WEO8C7o,334112
+dynrender_skia/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dynrender_skia-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dynrender_skia-0.1.0.dist-info/METADATA,sha256=HaACciS3OnJndX5pmC5f9WiAZbniSdPBORwCo_7Jo90,2218
+dynrender_skia-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+dynrender_skia-0.1.0.dist-info/RECORD,,
