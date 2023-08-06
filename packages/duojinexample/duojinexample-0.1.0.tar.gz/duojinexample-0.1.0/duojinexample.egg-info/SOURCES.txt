@@ -1,0 +1,7 @@
+setup.py
+duojinexample.egg-info/PKG-INFO
+duojinexample.egg-info/SOURCES.txt
+duojinexample.egg-info/dependency_links.txt
+duojinexample.egg-info/top_level.txt
+example/__init__.py
+example/duojinexample.py
