@@ -1,0 +1,10 @@
+apprise==1.4.5
+aiosmtpd==1.4.4.post2
+PyYAML==6.0
+
+[testing]
+setuptools
+types-PyYAML
+pytest
+pytest-asyncio
+pytest-cov
