@@ -1,0 +1,10 @@
+stl_reader/__init__.py,sha256=HoDCL9rG1wtRiTuVzIWIsgRxOAmF3dDeG5y6Q3k8j8o,64
+stl_reader/_stlfile_wrapper.cp38-win_amd64.pyd,sha256=ckWJKRQ0SKR3WaVTIGdJ_ek0hID7zBdYQd7IOjdX1TY,59392
+stl_reader/_stlfile_wrapper.pyx,sha256=VV1QrxonFiWJxY7qj5FnLaK9q-5zGUYsLFndjSawkMQ,2736
+stl_reader/_version.py,sha256=KAP7gINHoNv78HTvxh19iYNfenS-fD5GdJCQsFg5A9c,222
+stl_reader/reader.py,sha256=tJe1v3HW7CyEKOMbcQYtWMi-1d1dp-mp5qOzVVo0AbM,3907
+stl_reader-0.1.0.dist-info/LICENSE,sha256=KiCRY3dz9L2GMJWFWggWS-5IKuk4_wo2sIKsAgG9YSM,1109
+stl_reader-0.1.0.dist-info/METADATA,sha256=inAbc_VvWJuPoxYPM0jCPdgRYtTIoUbAYk7tHS3xV_s,7307
+stl_reader-0.1.0.dist-info/WHEEL,sha256=F2aDWtWrilNM3-px1vBtJOEd7aRVTetQfFuDYmYbAUQ,100
+stl_reader-0.1.0.dist-info/top_level.txt,sha256=wHDCBPLLNrDW1qviBhCSXain939eteoaujMqpqdPTv0,11
+stl_reader-0.1.0.dist-info/RECORD,,
