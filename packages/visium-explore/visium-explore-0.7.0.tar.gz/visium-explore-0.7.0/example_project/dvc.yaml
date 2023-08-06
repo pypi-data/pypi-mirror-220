@@ -1,0 +1,42 @@
+stages:
+  download_iris_dataset:
+    cmd: python -m src.pipeline.download_iris_dataset.donwloading_iris_dataset 
+        --output-dir data/download_iris_dataset
+    deps:
+      - src/pipeline/download_iris_dataset
+    outs:
+      - data/download_iris_dataset
+
+  split_dataset:
+    cmd: python -m src.pipeline.split_dataset.splitting_dataset
+        --download-iris-dataset-dir data/download_iris_dataset
+        --output-dir data/split_dataset
+    deps:
+      - src/pipeline/split_dataset
+      - data/download_iris_dataset
+    outs:
+      - data/split_dataset
+    params:
+      - params.py:
+        - TEST_RATIO
+
+  train_model:
+    cmd: python -m src.pipeline.train_model.training_model
+        --split-dataset-dir data/split_dataset
+        --output-dir data/train_model
+    deps:
+      - src/pipeline/train_model
+      - data/split_dataset
+    outs:
+      - data/train_model
+
+  evaluate_model:
+    cmd: python -m src.pipeline.evaluate_model.evaluating_model
+         --input-dir data/train_model
+         --output-dir data/evaluate_model
+    deps:
+      - src/pipeline/evaluate_model
+      - data/train_model
+      - data/split_dataset
+    outs:
+      - data/evaluate_model

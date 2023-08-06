@@ -1,0 +1,52 @@
+schema: '2.0'
+stages:
+  download_iris_dataset:
+    cmd: python -m src.pipeline.download_iris_dataset.donwloading_iris_dataset --output-dir
+      data/download_iris_dataset
+    deps:
+    - path: src/pipeline/download_iris_dataset
+      md5: d1383350da6061cb9d26baaf0c07c2af.dir
+      size: 478
+      nfiles: 1
+    outs:
+    - path: data/download_iris_dataset
+      md5: fc6043c69c317327714aaae7781dac3a.dir
+      size: 5629
+      nfiles: 1
+  split_dataset:
+    cmd: python -m src.pipeline.split_dataset.splitting_dataset --download-iris-dataset-dir
+      data/download_iris_dataset --output-dir data/split_dataset
+    deps:
+    - path: data/download_iris_dataset
+      md5: fc6043c69c317327714aaae7781dac3a.dir
+      size: 5629
+      nfiles: 1
+    - path: src/pipeline/split_dataset
+      md5: c2923e7d6ab1b142698d0fd5a4328031.dir
+      size: 748
+      nfiles: 1
+    params:
+      params.py:
+        TEST_RATIO: 0.2
+    outs:
+    - path: data/split_dataset
+      md5: 11c47efee01ccdfc3df20aff14ffeaca.dir
+      size: 12487
+      nfiles: 2
+  train_model:
+    cmd: python -m src.pipeline.train_model.training_model --split-dataset-dir data/split_dataset
+      --output-dir data/train_model
+    deps:
+    - path: data/split_dataset
+      md5: 11c47efee01ccdfc3df20aff14ffeaca.dir
+      size: 12487
+      nfiles: 2
+    - path: src/pipeline/train_model
+      md5: e449711a1f00d969670ae95bc6b341da.dir
+      size: 776
+      nfiles: 1
+    outs:
+    - path: data/train_model
+      md5: a7a024c4bf4b3e26e7098613bb841418.dir
+      size: 993
+      nfiles: 1

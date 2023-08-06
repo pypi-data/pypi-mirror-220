@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+typer = "*"
+scikit-learn = "*"
+dvc = "*"
+"streamlit" = "*"
+"plotly" = "*"
+"pydantic" = "*"
+"pyyaml" = "*"
+setuptools-scm = "*"
+
+[dev-packages]
+pre-commit = "*"
+visiumlint = "*"
+semver = "*"
+build = "*"
+twine = "*"
+
+[requires]
+python_version = "3.9"

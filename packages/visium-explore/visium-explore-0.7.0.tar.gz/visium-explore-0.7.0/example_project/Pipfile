@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+explore = {path = "..", editable = true}
+typer = "*"
+scikit-learn = "*"
+dvc = "*"
+
+[dev-packages]
+pre-commit = "*"
+visiumlint = "*"
+
+[requires]
+python_version = "3.9"
