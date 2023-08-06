@@ -1,0 +1,1 @@
+from .._agg import _y532T as gauss_laguerre
