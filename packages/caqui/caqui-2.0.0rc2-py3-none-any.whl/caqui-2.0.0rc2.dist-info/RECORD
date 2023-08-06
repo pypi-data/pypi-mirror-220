@@ -1,0 +1,12 @@
+caqui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+caqui/asynchronous.py,sha256=VsZMH3unJo5Edm68jGgyIuEjz1cEnFR39sFc2zahbS4,27242
+caqui/by.py,sha256=gdfY6p-oIPUmvJXffW-rt1TSRDPETjiByTIGyeFwcIY,262
+caqui/caqui.py,sha256=KBCcaF62PchlyWQJu1Gpqs5VTUpAQ2wxCx7EanrpakY,7075
+caqui/constants.py,sha256=J4zEQEiZLR5k9WdEyB6x-IVcNdo_M5eptXUW_eoyaJw,169
+caqui/exceptions.py,sha256=O_VX5-HlUhlm39ADqEENvKiIAjBaJir07FXIq4B5jg8,42
+caqui/helper.py,sha256=Iual20gi-BN47KHEeA1jEjTWajh8cWUuAsBqwS_BDMY,508
+caqui/synchronous.py,sha256=M8SFyJMSRaH2sKK_Fe_IzDwLcK-HxZ5kk9nFpMcjY4U,26490
+caqui-2.0.0rc2.dist-info/METADATA,sha256=TI3Dv6B_0IU7Xqoz5cIRtjtc8zIgy-0oFha-YmwLjIc,11133
+caqui-2.0.0rc2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+caqui-2.0.0rc2.dist-info/licenses/LICENSE,sha256=0KPO_xf1TCrHl0HA4lNdOEoO_9BTHoGROYnzpZPJJDM,1072
+caqui-2.0.0rc2.dist-info/RECORD,,
