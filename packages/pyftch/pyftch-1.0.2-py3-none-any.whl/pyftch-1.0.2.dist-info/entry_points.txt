@@ -1,0 +1,2 @@
+[console_scripts]
+pyftch = pyftch.__main__:main
