@@ -1,0 +1,56 @@
+{
+    "catalog": [
+        [
+            "2",
+            1609455600000,
+            0.05,
+            0.05,
+            10.0,
+            6.5
+        ]
+    ],
+    "catalog_id": "cat",
+    "compute_stats": true,
+    "date_accessed": "2023-07-19 14:25:04.843270+00:00",
+    "end_time": "2020-12-31 23:00:00+00:00",
+    "filename": null,
+    "filters": [
+        "origin_time < 1640991600000.0",
+        "origin_time >= 1609455600000.0",
+        "magnitude >= 1.0",
+        "magnitude < 10.0"
+    ],
+    "format": null,
+    "max_latitude": 0.05,
+    "max_longitude": 0.05,
+    "max_magnitude": 6.5,
+    "metadata": {},
+    "min_latitude": 0.05,
+    "min_longitude": 0.05,
+    "min_magnitude": 6.5,
+    "name": "Mock catalogue",
+    "region": {
+        "class_id": "CartesianGrid2D",
+        "dh": 0.1,
+        "name": "/home/pciturri/PycharmProjects/floatcsep/tests/artifacts/regions/mock_region",
+        "polygons": [
+            {
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "lat": 0.0,
+                "lon": 0.1
+            },
+            {
+                "lat": 0.1,
+                "lon": 0.1
+            },
+            {
+                "lat": 0.1,
+                "lon": 0.0
+            }
+        ]
+    },
+    "start_time": "2020-12-31 23:00:00+00:00"
+}

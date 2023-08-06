@@ -1,0 +1,14 @@
+numpy
+dateparser
+docker
+flake8
+gitpython
+h5py
+matplotlib
+pycsep
+pyshp
+pyyaml
+requests
+seaborn
+tables
+xmltodict
