@@ -1,0 +1,5 @@
+[console_scripts]
+functinoc = functino.gui:run
+
+[gui_scripts]
+functino = functino.gui:run

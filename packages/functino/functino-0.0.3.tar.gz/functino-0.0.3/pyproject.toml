@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]
+
+[tool.setuptools.package-data]
+"functino.resources" = ["**"]
+
+[project]
+name = "functino"
+version = "0.0.3"
+authors = [
+    { name="David Scholberg", email="recombinant.vector@gmail.com" },
+]
+description = "Simple graphical code editor and runner for throwaway code"
+license = { text = "BSD-2-Clause license" }
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: C",
+    "Programming Language :: C++",
+    "Programming Language :: JavaScript",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Ruby",
+    "Programming Language :: Rust",
+    "Topic :: Software Development",
+    "Topic :: Text Editors",
+]
+keywords = [
+    "text editor",
+    "coding",
+    "software development",
+    "gui",
+    "qt",
+    "scintilla",
+    "c",
+    "c++",
+    "javascript",
+    "nodejs",
+    "python",
+    "ruby",
+    "rust",
+]
+dependencies = [
+    "PyQt6",
+    "PyQt6-QScintilla",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "docformatter",
+    "flake8",
+    "pre-commit",
+    "pyinstaller",
+]
+
+[project.gui-scripts]
+functino = "functino.gui:run"
+
+# This is mainly for debugging on windows so that we can see stderr.
+[project.scripts]
+functinoc = "functino.gui:run"
+
+[project.urls]
+"Source Code" = "https://github.com/davidscholberg/functino"
