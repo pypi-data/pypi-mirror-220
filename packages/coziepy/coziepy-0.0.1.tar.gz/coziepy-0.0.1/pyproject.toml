@@ -1,0 +1,30 @@
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coziepy"
+version = "0.0.1"
+#dynamic = ["dependencies"]
+authors = [
+  { name="Mario Frei", email="mario.frei@gmx.net" },
+]
+description = "A package for processing and visualizing data collected with the Cozie-Apple app"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[tools.setuptools]
+packages = ["coziepy"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+"Homepage" = "https://www.cozie-apple.app/"
+"Bug Tracker" = "https://github.com/cozie-app/cozie-wizard/issues"
