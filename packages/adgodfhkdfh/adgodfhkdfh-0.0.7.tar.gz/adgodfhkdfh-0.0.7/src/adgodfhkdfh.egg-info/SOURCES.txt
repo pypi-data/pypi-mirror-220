@@ -1,0 +1,6 @@
+setup.py
+src/adgodfhkdfh.py
+src/adgodfhkdfh.egg-info/PKG-INFO
+src/adgodfhkdfh.egg-info/SOURCES.txt
+src/adgodfhkdfh.egg-info/dependency_links.txt
+src/adgodfhkdfh.egg-info/top_level.txt
