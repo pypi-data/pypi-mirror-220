@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: bamboo-crawler
+Version: 0.1.5
+Summary: a hobby crawler
+Home-page: https://github.com/kitsuyui/bamboo-crawler
+Author: Yui Kitsu
+Author-email: kitsuyui+github@kitsuyui.com
+License: BSD-3-Clause
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: cssselect
+Requires-Dist: lxml
+Requires-Dist: requests
+Requires-Dist: PyYAML
+Requires-Dist: SQLAlchemy
+Requires-Dist: jinja2
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: nose ; extra == 'dev'
+Requires-Dist: pyformat ; extra == 'dev'
+Requires-Dist: moto[server] ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: httpbin ; extra == 'dev'
+
+# Bamboo Crawler
+
+[![Python](https://img.shields.io/pypi/pyversions/bamboo-crawler.svg)](https://badge.fury.io/py/tbamboo-crawler)
+[![PyPI version](https://img.shields.io/pypi/v/bamboo-crawler.svg)](https://pypi.python.org/pypi/bamboo-crawler/)
+[![codecov](https://codecov.io/gh/kitsuyui/bamboo-crawler/branch/main/graph/badge.svg?token=s7NTzwl5fl)](https://codecov.io/gh/kitsuyui/bamboo-crawler)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
+A Hobby Crawler.
+It is almost under construction.
+
+# Usage
+
+## Installation
+
+```console
+$ pip install bamboo-crawler
+```
+
+## Run
+
+```
+$ bamboo --recipe recipe.yml
+```
+
+## Recipe
+
+```YAML
+mytask:
+  input:
+    type: ConstantInputter
+    options:
+      value: http://httpbin.org/robots.txt
+  process:
+    type: HTTPCrawler
+  output:
+    type: StdoutOutputter
+```
+
+# License
+
+BSD-3-Clause License
