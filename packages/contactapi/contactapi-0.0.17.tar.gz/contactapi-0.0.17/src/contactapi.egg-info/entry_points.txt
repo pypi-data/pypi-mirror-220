@@ -1,0 +1,2 @@
+[console_scripts]
+contactapi = src.__main__:run
