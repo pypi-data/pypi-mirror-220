@@ -1,0 +1,13 @@
+mwedittypes/__init__.py,sha256=UdhiFrd_w706tZsirZIX76LrzlKOvHNgFYYT2vyslvs,345
+mwedittypes/constants.py,sha256=sWSZm9DNjWDB_ryCxvXE7bson0Roxx1l9ed54mO6eHw,25561
+mwedittypes/mwedittypes.py,sha256=_1AoUvNfFkIgkJYRZiItyoFsu7oJLdBm2Xp7CSFGh4E,1166
+mwedittypes/node_differ.py,sha256=eCX56amZPxl7lzcbS-MuQfeUBu3DBG_fXG00ukEgxr4,19924
+mwedittypes/simple_differ.py,sha256=MwWomEPStItcxCS6jo5ZbpikiikP-79FZDuY4uRgUqg,12757
+mwedittypes/tokenizer.py,sha256=zoLEH6AidNX6CsVKB3hCZXsdSuIx4Li-FUbi0lqZtHE,6134
+mwedittypes/tree_differ.py,sha256=sQkSxJ5HuAGbnxPueiOJXnQgNM6c824JZgqV6IGEfMM,33357
+mwedittypes/utils.py,sha256=jrLLDBu8NshvQ0PYDaIvoWZJ9xRY8XvuJLsFGy-U6vs,7976
+mwedittypes-2.1.1.dist-info/LICENSE,sha256=XctpqRz-PMBsHW44TN0mHALwaPibMQASYiIXyXEFu6U,1062
+mwedittypes-2.1.1.dist-info/METADATA,sha256=-Y1agamIrm4kuQEnbCTZnX_ppdh6eUB6w9NLUH1b8H0,11514
+mwedittypes-2.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mwedittypes-2.1.1.dist-info/top_level.txt,sha256=0EHANVQZQXsfMNGqF7M8B39Aq16PFDUNOAWwnOJVGVY,12
+mwedittypes-2.1.1.dist-info/RECORD,,
