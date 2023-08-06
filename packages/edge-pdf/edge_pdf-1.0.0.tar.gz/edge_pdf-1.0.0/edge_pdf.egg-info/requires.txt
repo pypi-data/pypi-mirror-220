@@ -1,0 +1,4 @@
+PyMuPDF==1.22.5
+colorlog==6.7.0
+pandas==2.0.3
+openpyxl==3.1.2

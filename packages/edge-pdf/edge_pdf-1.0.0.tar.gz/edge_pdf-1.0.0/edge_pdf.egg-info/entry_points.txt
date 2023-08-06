@@ -1,0 +1,3 @@
+[console_scripts]
+annot_export = edge_pdf.annot_read:annot_export
+
