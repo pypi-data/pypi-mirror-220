@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+django_excel_response/__init__.py
+django_excel_response/excel_response.py
+django_excel_response2.egg-info/PKG-INFO
+django_excel_response2.egg-info/SOURCES.txt
+django_excel_response2.egg-info/dependency_links.txt
+django_excel_response2.egg-info/requires.txt
+django_excel_response2.egg-info/top_level.txt
+tests/test_django_excel_response2.py
