@@ -1,0 +1,16 @@
+newrelic_telemetry_sdk/__init__.py,sha256=FnEju_dQOxrlAYdP-3XwQfOlGRFzy4cDsYLTP2IuWGg,1588
+newrelic_telemetry_sdk/batch.py,sha256=pgak135fz4oiKkJ88M3TQvu_e8pVGl0CIbzgHbIqqAA,2634
+newrelic_telemetry_sdk/client.py,sha256=G7R_MxsBqaPG1HiIIhZ-FLbC7QkXJRZnI9RWgCYQ60k,11688
+newrelic_telemetry_sdk/event.py,sha256=XhVsukOTkeXeg6aQEYY40WTEIlk9pnI7YeOHYpYPReI,1660
+newrelic_telemetry_sdk/harvester.py,sha256=FvO_x-QW47IHSa90ZJ1T0zo78gvJIdgYoMwQdosi4DI,4641
+newrelic_telemetry_sdk/log.py,sha256=ieBof9dcfIQkXHSogSSGl5XkLQPjzq0hcbMdvW9z_MM,4704
+newrelic_telemetry_sdk/metric.py,sha256=OLVWYBJu7u1C_tGUHhR2W9KafKftOrv1_fFSR8Z2l88,5826
+newrelic_telemetry_sdk/metric_batch.py,sha256=4rLzirSM7lVVMauFYBkfYxCTTrg902L3Ljfw9ljWeaY,5431
+newrelic_telemetry_sdk/span.py,sha256=5bxmSIIUXxk8dFDgYiA8abAvnBxY3m4iEPSx2tVOAGc,3191
+newrelic_telemetry_sdk/version.py,sha256=4ztJTOtqgiOdvQ2i0IaYDd66pjLfyiGaaADiMRE68lA,116
+newrelic_telemetry_sdk-0.5.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+newrelic_telemetry_sdk-0.5.0.dist-info/METADATA,sha256=8v8HxEN1hGkLfmozXlN2dPxqt0yNUDhbj-KugPGujjg,9144
+newrelic_telemetry_sdk-0.5.0.dist-info/THIRD_PARTY_NOTICES.rst,sha256=sk2g71u-GB2ozp60yBPk0roTuczI-ITQYLkRTlnfsUA,610
+newrelic_telemetry_sdk-0.5.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+newrelic_telemetry_sdk-0.5.0.dist-info/top_level.txt,sha256=upXLBvE8stfSMo3mK6ZIAarfnDgVNc3kwr203DS46t4,23
+newrelic_telemetry_sdk-0.5.0.dist-info/RECORD,,
