@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="dark_true_moon.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.8649832"
+     inkscape:cx="267.71536"
+     inkscape:cy="336.30215"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient4313"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4311" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1" />
+  <path
+     style="color:#000000;fill:#000000;-inkscape-stroke:none"
+     d="m 90.606642,99.964937 c 6.596686,0 11.970698,-5.374017 11.970698,-11.970703 0,-0.118444 0.005,-0.274046 -0.002,-0.462891 v -0.002 -0.002 c -0.038,-0.997655 -0.19954,-1.958371 -0.46679,-2.876953 l -0.95313,-3.277344 -0.96679,3.275391 c -1.216671,4.124449 -5.049651,7.146484 -9.582035,7.146484 -4.532385,0 -8.365352,-3.022031 -9.582032,-7.146484 l -0.96679,-3.275391 -0.95313,3.277344 c -0.31024,1.066345 -0.46875,2.188284 -0.46875,3.34375 0,6.596686 5.374015,11.970703 11.970702,11.970703 z m 0,-2 c -5.27817,0 -9.476279,-4.119375 -9.835939,-9.304687 2.170951,3.10371 5.775737,5.134765 9.835939,5.134765 4.060201,0 7.664989,-2.031054 9.835938,-5.134765 -0.35966,5.185312 -4.557769,9.304687 -9.835938,9.304687 z"
+     id="Oscu_Apog" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.06468;stroke-dasharray:none;stroke-opacity:1"
+     d="M 47.496893,69.764518 V 93.301017"
+     id="path6855" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.3095;stroke-dasharray:none;stroke-opacity:1"
+     d="M 50.839003,90.170628 H 71.443171"
+     id="path6857" />
+</svg>
