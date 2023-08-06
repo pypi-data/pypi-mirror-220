@@ -1,0 +1,4 @@
+stim
+pymatching>=2.0.1
+ldpc
+sinter>=1.11
