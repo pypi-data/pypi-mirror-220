@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+IIMIND/__init__.py
+IIMIND/a.py
+IIMIND.egg-info/PKG-INFO
+IIMIND.egg-info/SOURCES.txt
+IIMIND.egg-info/dependency_links.txt
+IIMIND.egg-info/requires.txt
+IIMIND.egg-info/top_level.txt
