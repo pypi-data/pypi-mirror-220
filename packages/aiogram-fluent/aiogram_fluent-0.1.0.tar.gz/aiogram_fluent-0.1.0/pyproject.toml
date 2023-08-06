@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "aiogram-fluent"
+version = "0.1.0"
+description = ""
+authors = ["Alex Root Junior <jroot.junior@gmail.com>"]
+readme = "README.md"
+packages = [{include = "aiogram_fluent"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
