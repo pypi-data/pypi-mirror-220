@@ -1,0 +1,32 @@
+# package management
+pip
+setuptools
+wheel
+build
+twine
+pip-audit
+
+# tests
+pytest
+pytest-mock
+pytest-cov
+tblib
+tox
+coverage
+hypothesis
+
+# linters
+black
+ruff
+
+# type checking
+mypy
+pylint
+types-dateparser
+types-PyYAML
+types-requests
+types-backports
+types-urllib3
+
+# docs
+pdoc
