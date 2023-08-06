@@ -1,0 +1,80 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_sale_order_load
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-14 15:31+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: pos_sale_order_load
+#: model_terms:ir.ui.view,arch_db:pos_sale_order_load.view_order_tree
+msgid "Choose"
+msgstr "Charger dans Pdv"
+
+#. module: pos_sale_order_load
+#. openerp-web
+#: code:addons/pos_sale_order_load/static/src/js/SaleOrderLoadButton.js:0
+#, python-format
+msgid "Confirm Sale Order Load"
+msgstr "Confirmer le chargement de la commande"
+
+#. module: pos_sale_order_load
+#: model:ir.model.fields,field_description:pos_sale_order_load.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: pos_sale_order_load
+#: model:ir.model.fields,field_description:pos_sale_order_load.field_sale_order__id
+msgid "ID"
+msgstr "ID"
+
+#. module: pos_sale_order_load
+#: model:ir.model.fields,field_description:pos_sale_order_load.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: pos_sale_order_load
+#. openerp-web
+#: code:addons/pos_sale_order_load/static/src/xml/SaleOrderLoadButton.xml:0
+#, python-format
+msgid "Load Order"
+msgstr "Charger une commande"
+
+#. module: pos_sale_order_load
+#: model_terms:ir.ui.view,arch_db:pos_sale_order_load.view_order_tree
+msgid "Load in point of sale"
+msgstr "Charger dans le point de vente"
+
+#. module: pos_sale_order_load
+#. openerp-web
+#: code:addons/pos_sale_order_load/static/src/js/pos_sale_order_load.js:0
+#, python-format
+msgid "SO Loaded"
+msgstr "Commande chargée"
+
+#. module: pos_sale_order_load
+#: model:ir.model,name:pos_sale_order_load.model_sale_order
+msgid "Sales Order"
+msgstr "Commande"
+
+#. module: pos_sale_order_load
+#. openerp-web
+#: code:addons/pos_sale_order_load/static/src/js/SaleOrderLoadButton.js:0
+#, python-format
+msgid ""
+"Warning, you are going to load and edit an existing order.\n"
+"Once saved, the content of the initial order will be lost."
+msgstr ""
+"Attention, vous allez charger et éditer une commande existante.\n"
+"Une fois sauvegardé, le contenu de la commande initiale sera perdu."
