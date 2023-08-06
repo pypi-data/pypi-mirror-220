@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/bergwerkapp.egg-info/PKG-INFO
+src/bergwerkapp.egg-info/SOURCES.txt
+src/bergwerkapp.egg-info/dependency_links.txt
+src/bergwerkapp.egg-info/top_level.txt
+src/indeed/__init__.py
+src/indeed/functions.py
