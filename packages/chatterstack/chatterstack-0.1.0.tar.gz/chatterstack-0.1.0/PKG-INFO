@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: chatterstack
+Version: 0.1.0
+Summary: A custom class to manage a list of dictionaries representing a conversation, specifically for ChatGPT models like gpt-3.5-turbo and gpt-4.
+Home-page: https://github.com/dschil138/chatterstack
+Author: David Schiller
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
