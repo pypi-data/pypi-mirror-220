@@ -1,0 +1,14 @@
+README.md
+setup.py
+pandaplyr.egg-info/PKG-INFO
+pandaplyr.egg-info/SOURCES.txt
+pandaplyr.egg-info/dependency_links.txt
+pandaplyr.egg-info/requires.txt
+pandaplyr.egg-info/top_level.txt
+src/__init__.py
+src/pandaplyr.py
+src/utils.py
+src/data/student_grades.csv
+src/data/subject_categories.csv
+src/data/titanic.csv
+tests/test_pyplyr.py
