@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: replize
+Version: 0.1.1
+Summary: Tools to create REPL interfaces
+Home-page: UNKNOWN
+Author: OtoSense
+License: apache-2.0
+Description: 
+        # replize
+        Tools to create REPL interfaces
+        
+        
+        To install:	```pip install replize```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
