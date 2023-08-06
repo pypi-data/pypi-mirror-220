@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: tencentcloud-dlc-provider
+Version: 0.0.3
+Requires-Dist: apache-airflow (>=2.0.0)
+Requires-Dist: tencentcloud-sdk-python (>=3.0.901)
+
