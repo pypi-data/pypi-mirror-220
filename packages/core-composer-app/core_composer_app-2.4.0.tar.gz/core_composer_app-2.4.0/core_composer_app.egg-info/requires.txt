@@ -1,0 +1,5 @@
+Django
+djangorestframework
+django-simple-menu
+core-main-app==2.4.*
+xml-utils==1.21.*
