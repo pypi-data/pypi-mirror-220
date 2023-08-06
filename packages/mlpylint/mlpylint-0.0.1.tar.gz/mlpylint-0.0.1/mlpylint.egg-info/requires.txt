@@ -1,0 +1,5 @@
+astroid>=2.15.1
+colorama
+
+[dev]
+pytest>=7.2.2
