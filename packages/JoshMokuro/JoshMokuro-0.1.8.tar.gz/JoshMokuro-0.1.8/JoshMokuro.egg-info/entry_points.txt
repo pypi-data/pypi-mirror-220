@@ -1,0 +1,2 @@
+[console_scripts]
+JoshMokuro = mokuro.__main__:main
