@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=DbsJEs92d0-cIYHMUX8sOBKCqmRIFFcHQfUbC-e-guI,630
+tencentcloud/sqlserver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/sqlserver/v20180328/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/sqlserver/v20180328/errorcodes.py,sha256=BlaYjElfOP_1O14KpNgnK_mR8Go2bkOOY2dFGs_MHDc,9722
+tencentcloud/sqlserver/v20180328/models.py,sha256=8K6fRkXvXVDy2a5i69XWH3pIXQjQVwcywtbmVnytBF4,572158
+tencentcloud/sqlserver/v20180328/sqlserver_client.py,sha256=JhSD6na9o6XLvVrD0N3n_wxTEe_77p2AhdgG_YVROQI,109131
+tencentcloud_sdk_python_sqlserver-3.0.939.dist-info/METADATA,sha256=vZD65vfhOSiwrDmFS_hhlbtNlbANnRlZodBPPySXAhk,1462
+tencentcloud_sdk_python_sqlserver-3.0.939.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tencentcloud_sdk_python_sqlserver-3.0.939.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_sqlserver-3.0.939.dist-info/RECORD,,
