@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pgaspect/__init__.py
+pgaspect/aspectwindow.py
+pgaspect.egg-info/PKG-INFO
+pgaspect.egg-info/SOURCES.txt
+pgaspect.egg-info/dependency_links.txt
+pgaspect.egg-info/requires.txt
+pgaspect.egg-info/top_level.txt
