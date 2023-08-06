@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+flask_uploads.py
+setup.py
+Flask_Uploads_WCL.egg-info/PKG-INFO
+Flask_Uploads_WCL.egg-info/SOURCES.txt
+Flask_Uploads_WCL.egg-info/dependency_links.txt
+Flask_Uploads_WCL.egg-info/not-zip-safe
+Flask_Uploads_WCL.egg-info/requires.txt
+Flask_Uploads_WCL.egg-info/top_level.txt
