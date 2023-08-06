@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mcu-geo-utils
+Version: 0.1
+Summary: variaty of geo-related tools
+Author: Martin Conur
+Author-email: martincontrerasur@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# geo_utils
+Personal library designed to easily perform geo-related tasks, such as OSM data extraction and other demographic data analysis.
