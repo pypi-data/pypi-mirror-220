@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pixeo
+Version: 1.0.0
+Summary: An automated game scripting framework
+Home-page: https://github.com/furacas/pixeo
+Author: furacas
+Author-email: s.furacas@outlook.com
+Description-Content-Type: text/markdown
+
+# Pixeo
+ An automated game scripting framework
