@@ -1,0 +1,10 @@
+stl_reader-0.1.0.dist-info/RECORD,,
+stl_reader-0.1.0.dist-info/LICENSE,sha256=vd7mCpPqO6GR8Mre_4wW1713FTXMtkt2YK-tGEViOhw,1088
+stl_reader-0.1.0.dist-info/WHEEL,sha256=SdS6if6-uCozRXZ5GMXYH2j8iojAu9bSvihUMOitgnA,113
+stl_reader-0.1.0.dist-info/top_level.txt,sha256=wHDCBPLLNrDW1qviBhCSXain939eteoaujMqpqdPTv0,11
+stl_reader-0.1.0.dist-info/METADATA,sha256=09G_yTkFAlz-NxHgkgXbBLMaTTqpHXqaSm3gVGt5r-s,7065
+stl_reader/_version.py,sha256=YzgvyXLBcHPyQip3Z86mwQGFv-ZRsBRYABhp51szSiY,212
+stl_reader/_stlfile_wrapper.pyx,sha256=CQdyG6rzjpUgj_S_izYA0cY6n86KSd2wOn-IoQNNNhA,2646
+stl_reader/__init__.py,sha256=Iq5-zuTiEvFvVWgYAS-CZx_tu_lcvsyGp4rADIR1jic,63
+stl_reader/reader.py,sha256=lWpP8yWCxOHalRC8x3JgqVkoa4x-k1D7G1AYxGp6Hpc,3771
+stl_reader/_stlfile_wrapper.cpython-38-darwin.so,sha256=htN7aamFnOR1O9K0atK1Z51pivquAzkMErwTqSI1xS8,220178
