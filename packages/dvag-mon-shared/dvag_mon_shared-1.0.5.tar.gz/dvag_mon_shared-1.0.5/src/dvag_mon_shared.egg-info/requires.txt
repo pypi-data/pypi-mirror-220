@@ -1,0 +1,11 @@
+azure-identity
+azure-core
+azure-keyvault-secrets
+azure-monitor-query
+DateTime
+pandas
+prometheus-client
+dataclasses
+python-dateutil
+pytimeparse
+azure-storage-blob
