@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "elpepetst"
+version = "0.0.1"
+description = "Elpepe test package"
+authors = ["atlasfoo"]
+license = "ISC"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+
+[tool.poetry.scripts]
+elpepe = "elpepe.main:test_pkg_function"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
