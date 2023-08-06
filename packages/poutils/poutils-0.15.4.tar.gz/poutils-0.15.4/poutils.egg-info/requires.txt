@@ -1,0 +1,7 @@
+powrap==1.0.1
+pospell==1.3
+pogrep==0.1.4
+potodo==0.21.3
+pomerge==0.1.4
+padpo==0.11.0
+sphinx-lint==0.6.8
