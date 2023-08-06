@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: sardine-web
+Version: 1.0.0.post1
+Summary: Official web editor plugin for sardine-system
+Author: Raphaël Forment, thegamecracks
+Author-email: raphael.forment@gmail.com
+License: GPL-3.0-only
+Project-URL: Homepage, https://sardine.raphaelforment.fr
+Project-URL: Documentation, https://sardine.raphaelforment.fr
+Project-URL: Source Code, https://github.com/sardine-system/sardine-web
+Project-URL: Bug Tracker, https://github.com/sardine-system/sardine-web/issues
+Keywords: algorave,live-coding,music,patterns
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: MIDI
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# sardine-web
+
+The official web editor plugin for the [sardine-system] library!
+
+## Installation
+
+If you already have sardine-system v0.4.0+ installed or you are fine with
+the stable version of Sardine, you can go straight to installing
+this package from [PyPI]:
+
+```sh
+pip install sardine-web
+```
+
+If you do want the Sardine development version, install the repository before
+this package following their [installation guide]:
+
+```sh
+pip install git+https://github.com/Bubobubobubobubo/sardine
+pip install sardine-web
+```
+
+If you want to install the development version of *this* repository,
+make sure you have [Node.js] and [Yarn] installed:
+
+```sh
+pip install git+https://github.com/sardine-system/sardine-web
+```
+
+## Usage
+
+Documentation: https://sardine.raphaelforment.fr/editors/fishery.html
+
+This adds a `sardine web` command to Sardine to start the web editor.
+
+[sardine-system]: https://github.com/Bubobubobubobubo/sardine
+[PyPI]: https://pypi.org/project/sardine-web/
+[installation guide]: https://sardine.raphaelforment.fr/installation.html
+[Node.js]: https://nodejs.org/
+[Yarn]: https://yarnpkg.com/
