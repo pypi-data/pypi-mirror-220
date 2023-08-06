@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+aiohttp==3.8.4
+aiohttp_socks==0.8.0
+aiosmtplib==2.0.2
+dnspython==2.4.0
+requests_html==0.10.0
+tqdm==4.65.0

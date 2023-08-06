@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+mailcat_ict.egg-info/PKG-INFO
+mailcat_ict.egg-info/SOURCES.txt
+mailcat_ict.egg-info/dependency_links.txt
+mailcat_ict.egg-info/requires.txt
+mailcat_ict.egg-info/top_level.txt
