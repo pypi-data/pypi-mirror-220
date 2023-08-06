@@ -1,0 +1,16 @@
+browsr/__init__.py,sha256=lqJO6Hsu67SMgzd99ohiaMVysbo7hGXP5u9UPp28y6I,146
+browsr/__main__.py,sha256=WQ_eAylKnIr0aRd79Cwj7XawWPt6KH-FZf-Kpq41jcw,102
+browsr/_base.py,sha256=jsH3j0VvxwdFo2Mc7z6r4ZFNNreU01sL-MmhD5aHG80,8278
+browsr/_cli.py,sha256=3djlyIIraJdq0KBzK7NLNgWLzDe5N1BWVQCq1rRab1M,4005
+browsr/_config.py,sha256=LVvUATo7NDE_l7PhkLZxdM0URwHO-znos9fbKocVisM,1023
+browsr/_tools.py,sha256=PBqDbC9SSgUmt3t3oN4QLuAONJkdm6nDkp344HVOujU,1115
+browsr/_utils.py,sha256=aKg6-OANKUGDd72tOEeNuaR_SLIliK0sL5Y8C8wRdSs,6243
+browsr/_version.py,sha256=MKwnTKZSzPwhuEG_KYgZHgVsWQu293BTO8MrkqbJmHs,154
+browsr/browsr.css,sha256=nJQM9ePBev7iY1QuL2G8hpAXOJwuxEbN7B_IlWiYof4,965
+browsr/browsr.py,sha256=AhU4i6m7322vOW2d7BF02z7c4W0nfrKZeYI5e5bKWBg,14486
+browsr/universal_directory_tree.py,sha256=LU_lmZ_pFDSc9PIknz7gVsT0dOutOrkthMwkgSpfAWg,2095
+browsr-1.13.0.dist-info/METADATA,sha256=qvb_4oqNE3RzcJiN5ehPhwBoWWiiixU-rDAHFaBMm8U,4789
+browsr-1.13.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+browsr-1.13.0.dist-info/entry_points.txt,sha256=ujBdiKnxtOLACnSNrARI1lnmegfZjvOKUmqDKjeE12s,50
+browsr-1.13.0.dist-info/licenses/LICENSE,sha256=qwaQCv8zjtFwHkw7N0MTPchlOQKl28GpmZY3EpIkFGQ,1109
+browsr-1.13.0.dist-info/RECORD,,
