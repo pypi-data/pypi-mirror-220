@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "plink_pipelines"
+version = "0.1.7-alpha"
+description = ""
+authors = ["Arnor Sigurdsson <arnor-sigurdsson@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^2.0.3"
+py = "^1.10.0"
+luigi = "^3.0.3"
+aislib = "^0.1.6-alpha.0"
+bed-reader = "^0.2.24"
+deeplake = "^3.0.13"
+# Freeze numpy due to some 1.24 compatibility issues
+numpy = "1.23.5"
+
+[tool.poetry.scripts]
+plink_pipelines = "plink_pipelines.make_dataset:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.2.5"
+tox = "^3.23.1"
+flake8 = "^4.0.1"
+jupyter = "^1.0.0"
+ipykernel = "^6.5.0"
+Sphinx = "^4.0.2"
+coverage = "^6.1.1"
+snakeviz = "^2.1.0"
+pytest-cov = "^3.0.0"
+pynvim = "^0.4.3"
+visidata = "^2.4"
+pre-commit = "^2.13.0"
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
