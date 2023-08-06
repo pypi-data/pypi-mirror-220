@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "libprocess"
+version = "0.1.0"
+description = ""
+authors = ["Yu Zhang <yuzhang94@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+libquery = "^0.1.0"
+jsonschema = "^4.18.3"
+tqdm = "^4.65.0"
+nltk = "^3.8.1"
+html2text = "^2020.1.16"
+langcodes = "^3.3.0"
+imagehash = "^4.3.1"
+langdetect = "^1.0.9"
+language-data = "^1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
