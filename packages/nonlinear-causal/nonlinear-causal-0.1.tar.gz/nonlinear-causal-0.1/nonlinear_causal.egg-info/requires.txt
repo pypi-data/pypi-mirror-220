@@ -1,0 +1,6 @@
+hachibee-sphinx-theme
+numpy
+pandas
+scipy
+sklearn
+sliced
