@@ -1,0 +1,15 @@
+upf_tools/__init__.py,sha256=0UJhEEnETMAj2sFhKmqe2TjDBLmCLmdrhqc2hxN-hSs,182
+upf_tools/__main__.py,sha256=hTflJSYHSgF364jrCdve_VS2uXlWjTCt9mvQ5Z6_iHc,326
+upf_tools/api.py,sha256=k0jrFkkTf2yUh3CAibb8oVd6bO6YLR_VASi8ChfEzSg,42
+upf_tools/cli.py,sha256=mkj4_5mzLT8yAeFArYti0p3Vp-04sHAx49EVhMJj6EQ,1449
+upf_tools/pseudopotential.py,sha256=V0TVoenlQfx34uMC3Xo0YTpupizD_Pw2-lJ2pzmUZ3w,5039
+upf_tools/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+upf_tools/v1.py,sha256=B_YMAIAYES6OrNJ1zDb1cU61RWII9sEvMZ9SoNsQfBc,5486
+upf_tools/v2.py,sha256=fYUyFgaHi_TxwI-HM847rqqT8g2ZwQ6SzOYv4pxCa8w,2485
+upf_tools/version.py,sha256=a38rE31pI4FvS4bbeK4j-1Y-JVbnWbfH6Bi7ROuShe4,1012
+upf_tools-0.0.1.dist-info/LICENSE,sha256=YTWBCC5UHAdXq6Z280Q8fRidObvL2k4r1b-pwSnMV8k,1072
+upf_tools-0.0.1.dist-info/METADATA,sha256=UuyJ0C-W3aHu2TNXovaBQw2bbi_0Bu7YU-q4Mzd0Pv8,8654
+upf_tools-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+upf_tools-0.0.1.dist-info/entry_points.txt,sha256=_DJZnni1pqyUhDhlyphZW57Ia_FC0RB2nOrNolmTFxI,49
+upf_tools-0.0.1.dist-info/top_level.txt,sha256=NQO5iY3PWN0-Wfido2lgCuVuVl_AvNmMeI1VBSW3x7E,10
+upf_tools-0.0.1.dist-info/RECORD,,
