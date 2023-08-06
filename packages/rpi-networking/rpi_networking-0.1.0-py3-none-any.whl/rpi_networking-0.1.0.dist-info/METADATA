@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rpi-networking
+Version: 0.1.0
+Summary: Control wifi, hotspot and hostname of Raspberry Pi
+Home-page: https://pypi.org/project/rpi-networking/
+License: MIT
+Keywords: raspberry-pi,python,python3,raspberry-pi,rpi,raspberrypi,raspbian,raspberry-pi-zero-w,rpi-zero-w,rpi4,linux,debian
+Author: Mark Parker
+Author-email: mark@parker-programs.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Documentation, https://github.com/MarkParker5/rpi-networking/blob/master/README.md
+Project-URL: Repository, https://github.com/MarkParker5/rpi-networking
+Description-Content-Type: text/markdown
+
+# rpi-networking
+Control wifi, hotspot and hostname of Raspberry Pi
+
