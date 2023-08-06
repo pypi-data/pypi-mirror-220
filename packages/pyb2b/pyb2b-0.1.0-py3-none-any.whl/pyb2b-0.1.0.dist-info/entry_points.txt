@@ -1,0 +1,3 @@
+[console_scripts]
+b2b_airac=b2b.console.airac:main
+
