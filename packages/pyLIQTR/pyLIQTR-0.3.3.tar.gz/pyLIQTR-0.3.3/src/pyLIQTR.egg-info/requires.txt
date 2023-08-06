@@ -1,0 +1,9 @@
+cirq-core
+numpy
+pandas
+scipy
+matplotlib
+tqdm
+openfermion
+portalocker
+ply
