@@ -1,0 +1,10 @@
+sphinx_astrorefs/__init__.py,sha256=AFdPh13uSmfTIXKVABQX-dfD3kdE04suq3psR5_IlKw,1018
+sphinx_astrorefs/pybtex_astro.py,sha256=bjLCnF3rouBRL5Wes3p5_NyIqTN312rP-wcI2NLbIp4,10904
+sphinx_astrorefs/reformat.py,sha256=2pHBYh9G74ntXlqCGqjxZAJyfcujFy8oHFx7hvX36Fk,9439
+sphinx_astrorefs/resolve_aas.py,sha256=ouPptd12bP7nT6xePaG2GUHEowbDHFdnrJeoo06n6ss,3576
+sphinx_astrorefs/_static/sphinx_astrorefs.css,sha256=3Cps8FNwfWZ7Mn6UpxLKv9EJtwiiGzenb22GtzOz4tE,526
+sphinx_astrorefs-0.9.dist-info/LICENSE,sha256=IkF7fQMeqLEa2YYnuY6AlZYdJF4PunruIgCfPEokIFk,1064
+sphinx_astrorefs-0.9.dist-info/METADATA,sha256=a0KuuYVP6_YXBr6BkuhQjDXlraTEn432RfZJKeWka8g,4132
+sphinx_astrorefs-0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sphinx_astrorefs-0.9.dist-info/top_level.txt,sha256=piPC3u0YrkJzlH_LDnexV48mICcK5OIUVx8cDT8LEOw,17
+sphinx_astrorefs-0.9.dist-info/RECORD,,
