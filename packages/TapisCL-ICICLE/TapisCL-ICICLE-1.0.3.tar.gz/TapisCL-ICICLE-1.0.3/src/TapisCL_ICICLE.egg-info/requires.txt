@@ -1,0 +1,12 @@
+pydantic==1.10.4
+pyfiglet==0.8.post1
+tapipy
+pyperclip
+py2neo
+psycopg2-binary
+prompt_toolkit
+TapisFederatedAuthClientAPI
+requests
+questionary==1.10.0
+
+[dev]
