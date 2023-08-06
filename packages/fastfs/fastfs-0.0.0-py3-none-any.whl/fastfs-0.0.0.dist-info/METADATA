@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fastfs
+Version: 0.0.0
+Summary: FastFS is a comprehensive and efficient Python library designed to bridge the gap in Python's file management capabilities. It encapsulates powerful features for reading, writing, and managing data across a variety of file formats and for handling complex directory structures.
+Home-page: http://github.com/breisoft/fastfs
+Author: Josh Breidinger
+Author-email: company@breisoft.com
+
