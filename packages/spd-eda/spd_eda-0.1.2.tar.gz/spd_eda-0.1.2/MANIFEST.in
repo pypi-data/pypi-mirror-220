@@ -1,0 +1,3 @@
+# MANIFEST.in
+
+include src/spd_eda/hh_batch/config/*.csv
