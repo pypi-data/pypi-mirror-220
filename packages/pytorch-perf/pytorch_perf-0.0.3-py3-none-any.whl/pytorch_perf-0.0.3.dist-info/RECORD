@@ -1,0 +1,9 @@
+torchperf/__init__.py,sha256=NRUip1jGji77mIbVFAPbphv_T2IyM1zrQQ0xxEFHmJE,160
+torchperf/info.py,sha256=BeJmfgRB_zsqd7djC5ckRFz6T-yg4bOcE-O00QYoIq0,1225
+torchperf/measure.py,sha256=OCEECmhjNsvc_AFJ3VK0zFy-Bb12oMJnzP62JHbCz0M,1188
+torchperf/recipe.py,sha256=b_tndXFwAMCgwUO4uPyOFULwxK8LA9ZB5AJg_ZRoDZQ,2589
+pytorch_perf-0.0.3.dist-info/LICENSE,sha256=nzbjQ0KZIQacZc35tw5o3MXnaKOKWcEXMT-VKVdKSMo,1488
+pytorch_perf-0.0.3.dist-info/METADATA,sha256=YUahY2og9D07lMzh_HDI0bZ7zsY2EdYkzJ7KzIM70xs,1885
+pytorch_perf-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytorch_perf-0.0.3.dist-info/top_level.txt,sha256=B_-URNLf6tm4VxvdYTJk4Emo54Ls5P_uxYdJ2EiRYc4,10
+pytorch_perf-0.0.3.dist-info/RECORD,,
