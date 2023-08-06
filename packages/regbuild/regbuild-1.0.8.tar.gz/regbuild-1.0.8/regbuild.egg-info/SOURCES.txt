@@ -1,0 +1,10 @@
+setup.py
+regbuild/__init__.py
+regbuild/_regex_core.py
+regbuild/regex.py
+regbuild/test_regex.py
+regbuild.egg-info/PKG-INFO
+regbuild.egg-info/SOURCES.txt
+regbuild.egg-info/dependency_links.txt
+regbuild.egg-info/requires.txt
+regbuild.egg-info/top_level.txt
