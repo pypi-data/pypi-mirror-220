@@ -1,0 +1,14 @@
+[console_scripts]
+configure_invokeai.py = invokeai.frontend.install:invokeai_configure
+invokeai = invokeai.frontend.legacy_launch_invokeai:main
+invokeai-configure = invokeai.frontend.install:invokeai_configure
+invokeai-merge = invokeai.frontend.merge:invokeai_merge_diffusers
+invokeai-metadata = invokeai.frontend.CLI.sd_metadata:print_metadata
+invokeai-migrate3 = invokeai.backend.install.migrate_to_3:main
+invokeai-model-install = invokeai.frontend.install:invokeai_model_install
+invokeai-node-cli = invokeai.app.cli_app:invoke_cli
+invokeai-node-web = invokeai.app.api_app:invoke_api
+invokeai-ti = invokeai.frontend.training:invokeai_textual_inversion
+invokeai-update = invokeai.frontend.install:invokeai_update
+invokeai-web = invokeai.app.api_app:invoke_api
+textual_inversion.py = invokeai.frontend.training:invokeai_textual_inversion
