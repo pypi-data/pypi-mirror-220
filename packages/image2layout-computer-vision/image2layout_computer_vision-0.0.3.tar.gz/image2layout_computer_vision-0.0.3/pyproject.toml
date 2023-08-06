@@ -1,0 +1,21 @@
+[build-system]
+requires = [ "setuptools", "torch", "torchvision", "opencv-python", "scikit-learn", "Pillow", "numpy", "pandas", "datasets", "transformers" ]
+
+[project]
+name = "image2layout_computer_vision"
+version = "0.0.3"
+authors = [
+  { name="Felix Do", email="felix.do.1030@gmail.com" },
+]
+description = "image processing and stuff"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com"
+"Bug Tracker" = "https://github.com"
