@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/epiclean/__init__.py
+src/epiclean/clean_epigraphia.py
+src/epiclean/cleaner.py
+src/epiclean.egg-info/PKG-INFO
+src/epiclean.egg-info/SOURCES.txt
+src/epiclean.egg-info/dependency_links.txt
+src/epiclean.egg-info/top_level.txt
