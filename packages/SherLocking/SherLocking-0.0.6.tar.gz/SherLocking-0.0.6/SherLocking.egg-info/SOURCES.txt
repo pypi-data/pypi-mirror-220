@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+SherLocking/__init__.py
+SherLocking/__main__.py
+SherLocking/activation.py
+SherLocking/config.py
+SherLocking/file.py
+SherLocking.egg-info/PKG-INFO
+SherLocking.egg-info/SOURCES.txt
+SherLocking.egg-info/dependency_links.txt
+SherLocking.egg-info/requires.txt
+SherLocking.egg-info/top_level.txt
