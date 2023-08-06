@@ -1,0 +1,19 @@
+Release 0.3
+-----------------------------
+* added extendable connections
+
+
+Release 0.2.1
+-----------------------------
+* added missing migration
+
+
+Release 0.2
+-----------------------------
+* added fixtures
+* cleaned migrations
+
+
+Release 0.1
+-----------------------------
+* initial release
