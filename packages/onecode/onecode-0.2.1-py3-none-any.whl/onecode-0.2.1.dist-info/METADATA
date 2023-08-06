@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: onecode
+Version: 0.2.1
+Summary: Python skeleton and library for OneCode projects
+Home-page: https://github.com/deeplime-io/onecode
+License: MIT
+Keywords: onecode,procedures
+Author: DeepLime
+Author-email: contact@deeplime.io
+Requires-Python: >=3.7,<3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Code Generators
+Provides-Extra: developer
+Provides-Extra: docs
+Provides-Extra: tech-expert
+Requires-Dist: altair (<5) ; extra == "tech-expert" or extra == "developer"
+Requires-Dist: astunparse (>=1.6.3,<2.0.0)
+Requires-Dist: datatest (>=0.11.1,<0.12.0) ; extra == "developer"
+Requires-Dist: flufl.lock (>=7.1.1,<8.0.0)
+Requires-Dist: griffe (==0.25.0) ; extra == "docs"
+Requires-Dist: inquirerpy (>=0.3.3,<0.4.0)
+Requires-Dist: markdown-katex (==202112.1034) ; extra == "docs"
+Requires-Dist: mike (==1.1.2) ; extra == "docs"
+Requires-Dist: mkdocs (==1.4.2) ; extra == "docs"
+Requires-Dist: mkdocs-jupyter (==0.21.0) ; extra == "docs"
+Requires-Dist: mkdocs-material (==8.5.10) ; extra == "docs"
+Requires-Dist: mkdocstrings (==0.19.0) ; extra == "docs"
+Requires-Dist: mkdocstrings-python (==0.7.1) ; extra == "docs"
+Requires-Dist: onecode-pycg (>=0.0.7,<0.0.8)
+Requires-Dist: pandas (>=1.4.0)
+Requires-Dist: pyarrow (>=6.0.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Requires-Dist: pydash (>=5.1.0,<6.0.0)
+Requires-Dist: pytest (>=6.0.2,<7.0.0) ; extra == "developer"
+Requires-Dist: pytest-cov (>=2.10.1,<3.0.0) ; extra == "developer"
+Requires-Dist: pytest-xdist (>=3.1.0,<4.0.0) ; extra == "developer"
+Requires-Dist: python-slugify (>=6.1.2,<7.0.0)
+Requires-Dist: streamlit (>=1.12.0,<1.18) ; extra == "tech-expert" or extra == "developer"
+Requires-Dist: streamlit-image-select (>=0.5.1,<0.6.0) ; extra == "tech-expert" or extra == "developer"
+Requires-Dist: streamlit-option-menu (>=0.3.2,<0.4.0) ; extra == "tech-expert" or extra == "developer"
+Requires-Dist: streamlit_tree_select (>=0.0.5,<0.0.6) ; extra == "tech-expert" or extra == "developer"
+Requires-Dist: toml (>=0.10.2,<0.11.0) ; extra == "developer"
+Requires-Dist: typeguard (>=2.13.3,<3.0.0)
+Requires-Dist: yaspin (>=2.1.0,<3.0.0)
+Project-URL: Documentation, https://deeplime-io.github.io/onecode
+Project-URL: Repository, https://github.com/deeplime-io/onecode
+Description-Content-Type: text/markdown
+
+![onecode_logo](https://github.com/deeplime-io/onecode/raw/main/docs/assets/onecode.jpg)
+
+![GitHub release](https://img.shields.io/github/v/release/deeplime-io/onecode?sort=semver)
+![PyPI - License](https://img.shields.io/pypi/l/onecode)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/onecode)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/deeplime-io/onecode/validation.yml?event=push&label=test%20status)
+![Windows supported](https://img.shields.io/badge/platform-linux-%23f2c300?logo=linux)
+![Linux supported](https://img.shields.io/badge/platform-windows-%230072c9?logo=windows)
+[![Maintainability](https://api.codeclimate.com/v1/badges/df236aa4b4ab765ba7db/maintainability)](https://codeclimate.com/github/deeplime-io/onecode/maintainability)
+[![Coverage](https://codecov.io/gh/deeplime-io/onecode/branch/main/graph/badge.svg?token=BF54VNGWM5)](https://codecov.io/gh/deeplime-io/onecode)
+
+
+---
+## Manifesto
+Whether we are in the industry, academia, or simply in our everyday-life, we find ourselves encountering 3 categories of profiles no matter what the topic:
+
+- people who love to write code but don’t necessarily have an application for it (a.k.a. the **developers**). Their pain point is usually finding something useful to create as well as a mass of people to actually use it on a regular basis (a.k.a. the developers’ dream).
+
+- people who actually have problems to solve but don’t even know how it’s possible to do something about it computerwise-speaking (a.k.a. the **experts**). Most of the time a simple solution (e.g. an Excel macro) does the trick: they may be mind-blown and very grateful about it for “saving their life” (a.k.a. the developers’ greatest disappointment, as developers would have loved to create a brand-new cloud-based fully automated web-app synchronized with your phone ready to welcome a million users). Their pain point is finding someone who can identify the root cause of the issues and solve it.
+
+- people who started as **experts** and have an affinity for technology (a.k.a. the **tech-savvy/data scientists**). They are genuinely interested in programming and usually start with high-level languages such as Python or JavaScript. Very quickly, they write applications that solve their problems and are super happy to share what they have done and how. They have a foot in both worlds: eventually go further and further down to the dark-side... Their pain point? Writing low-hanging fruit solutions may seem easy at first, but when it comes to create a complete application, deploy it and scale it, things get out-of-hands.
+
+- actually we have a 4th category, people who don’t care at all about it (a.k.a. the vast majority, e.g. my spouse). Developers can’t stop themselves for trying and trying to convince they should be in the **experts** or **tech-savvy/data scientists** category (believe me, I keep trying every time, and 10 years later, it still doesn’t work). Do yourself a favor, just accept it and move on. So, if you’re in that bucket, I guess you can close this page and skip the reading unless you want to know why developers suffer from not being understood.
+
+## [Getting started](https://deeplime-io.github.io/onecode)
+

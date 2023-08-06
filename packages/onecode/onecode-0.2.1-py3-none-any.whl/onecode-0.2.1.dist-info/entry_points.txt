@@ -1,0 +1,6 @@
+[console_scripts]
+onecode-add=onecode.cli.add:main
+onecode-create=onecode.cli.create:main
+onecode-extract=onecode.cli.extract:main
+onecode-start=onecode.cli.start:main
+
