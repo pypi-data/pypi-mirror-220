@@ -1,0 +1,3 @@
+allianceauth>=3.0
+django-eveuniverse>=1.0.0
+allianceauth-app-utils>=1.18.0
