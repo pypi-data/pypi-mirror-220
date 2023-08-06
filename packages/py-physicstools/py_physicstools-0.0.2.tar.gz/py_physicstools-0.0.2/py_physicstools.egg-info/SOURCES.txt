@@ -1,0 +1,5 @@
+setup.py
+py_physicstools.egg-info/PKG-INFO
+py_physicstools.egg-info/SOURCES.txt
+py_physicstools.egg-info/dependency_links.txt
+py_physicstools.egg-info/top_level.txt
