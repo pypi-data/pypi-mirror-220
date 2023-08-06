@@ -1,0 +1,6 @@
+include jdDesktopEntryEdit/translations/*.ts
+include jdDesktopEntryEdit/version.txt
+include jdDesktopEntryEdit/Icon.svg
+include jdDesktopEntryEdit/data/*
+include BuildBackend.py
+global-include *.ui
