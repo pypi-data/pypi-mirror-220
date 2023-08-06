@@ -1,0 +1,7 @@
+eventio
+h5py
+ipympl
+jupyter
+matplotlib
+numpy>=1.21
+scipy
