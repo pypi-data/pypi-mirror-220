@@ -1,0 +1,9 @@
+click
+matplotlib
+openai
+pandas
+pinecone-client
+plotly
+python-dotenv
+scipy
+scikit-learn
