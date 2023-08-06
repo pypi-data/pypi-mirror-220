@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: swarms
+Version: 1.0.8
+Summary: Swarms - Pytorch
+Home-page: https://github.com/kyegomez/swarms
+Author: Kye Gomez
+Author-email: kye@apac.ai
+License: MIT
+Keywords: artificial intelligence,deep learning,optimizers,Prompt Engineering
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: transformers
+Requires-Dist: openai
+Requires-Dist: langchain
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Requires-Dist: asyncio
+Requires-Dist: nest-asyncio
+Requires-Dist: bs4
+Requires-Dist: playwright
+Requires-Dist: duckduckgo-search
+Requires-Dist: faiss-cpu
+Requires-Dist: wget (==3.2)
+Requires-Dist: accelerate
+Requires-Dist: addict
+Requires-Dist: albumentations
+Requires-Dist: basicsr
+Requires-Dist: controlnet-aux
+Requires-Dist: diffusers
+Requires-Dist: einops
+Requires-Dist: gradio
+Requires-Dist: imageio
+Requires-Dist: imageio-ffmpeg
+Requires-Dist: kornia
+Requires-Dist: numpy
+Requires-Dist: omegaconf
+Requires-Dist: open-clip-torch
+Requires-Dist: opencv-python
+Requires-Dist: prettytable
+Requires-Dist: safetensors
+Requires-Dist: streamlit
+Requires-Dist: test-tube
+Requires-Dist: timm
+Requires-Dist: torchmetrics
+Requires-Dist: webdataset
+Requires-Dist: yapf
+Requires-Dist: wolframalpha
+Requires-Dist: wikipedia (==1.4.0)
+Requires-Dist: httpx
+Requires-Dist: ggl
+Requires-Dist: gradio-tools
+Requires-Dist: arxiv
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: beautifulsoup4 (==4.11.2)
+Requires-Dist: O365
+Requires-Dist: pytube
+Requires-Dist: pydub
+Requires-Dist: llama-index
+Requires-Dist: fastapi (==0.94.1)
+Requires-Dist: pydantic (==1.10.6)
+Requires-Dist: tenacity (==8.2.2)
+Requires-Dist: python-dotenv
+Requires-Dist: boto3
+Requires-Dist: uvicorn (==0.21.1)
+Requires-Dist: jinja2 (==3.1.2)
+Requires-Dist: python-multipart (==0.0.6)
+Requires-Dist: celery (==5.2.7)
+Requires-Dist: redis (==4.5.4)
+Requires-Dist: sentencepiece
+Requires-Dist: bitsandbytes (==0.37.2)
+Requires-Dist: psycopg2-binary (==2.9.5)
+Requires-Dist: google-search-results (==2.4.2)
+Requires-Dist: black (==23.1.0)
+Requires-Dist: Pillow
+Requires-Dist: selenium
+Requires-Dist: tiktoken
+Requires-Dist: espnet (==202301)
+Requires-Dist: espnet-model-zoo (==0.1.7)
+Requires-Dist: flask (==2.2.3)
+Requires-Dist: flask-cors (==3.0.10)
+Requires-Dist: waitress (==2.1.2)
+Requires-Dist: asteroid
+Requires-Dist: speechbrain
+Requires-Dist: typeguard
+Requires-Dist: pytesseract
+Requires-Dist: huggingface-hub
+Requires-Dist: fastapi-cache
+Requires-Dist: fastapi-limiter
+
