@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: exoml
+Version: 0.0.4
+Summary: ExoML tools for exoplanet detections
+Author-email: Martín Dévora-Pajares <mdevorapajares@protonmail.com>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: keras
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-addons
+Requires-Dist: ellc
+Requires-Dist: lcbuilder
+Requires-Dist: dearwatson
+Requires-Dist: ruamel.yaml
+Requires-Dist: debugpy
+Requires-Dist: pydot
+Requires-Dist: graphviz
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: foldedleastsquares
+
+# exoml
+ML POCs and projects for Exoplanets

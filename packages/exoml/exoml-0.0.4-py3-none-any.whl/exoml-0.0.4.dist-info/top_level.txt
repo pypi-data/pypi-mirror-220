@@ -1,0 +1,8 @@
+curve_prioritizer
+detrend
+ete6
+iatson
+ml
+preparation
+q1_q17
+tests
