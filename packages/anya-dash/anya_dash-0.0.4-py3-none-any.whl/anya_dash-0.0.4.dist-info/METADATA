@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: anya-dash
+Version: 0.0.4
+Summary: A set of customized Plotly Dash components integrated with Ant Design and more
+Author: Anya Ip <anyakurapica@gmail.com>
+License: MIT
+Classifier: Framework :: Dash
+License-File: LICENSE
+
