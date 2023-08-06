@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: kappe
+Version: 0.8.2
+Summary: Converts ROS MCAPs
+Author: Marko Bausch
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Robot Framework :: Tool
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: mcap (>=0.3.0)
+Requires-Dist: mcap-ros1-support (>=0.6.0)
+Requires-Dist: mcap-ros2-support (>=0.3.0)
+Requires-Dist: numpy
+Requires-Dist: pydantic (<2.0.0,>=1.0.0)
+Requires-Dist: strictyaml
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: pyyaml (>=6.0.1)
+
+# MCAP kappe script
+
+## Usage
+
+- `kappe [-h] [--config CONFIG] [--version] [--overwrite] input output`
+
+## Message definition for ROS1 -> ROS2 conversion
+
+```bash
+git clone --depth=1 --branch=humble https://github.com/ros2/common_interfaces.git msgs/common_interfaces
+git clone --depth=1 --branch=humble https://github.com/ros2/example_interfaces.git msgs/example_interfaces
+git clone --depth=1 --branch=humble https://github.com/ros2/rcl_interfaces.git msgs/rcl_interfaces
+git clone --depth=1 --branch=humble https://github.com/ros2/geometry2.git msgs/geometry2
+```
+
+## Licenses
+
+- [pointcloud2.py](./src/kappe/utils/pointcloud2.py) based on [sensor_msgs_py/point_cloud2.py](https://github.com/ros2/common_interfaces/blob/rolling/sensor_msgs_py/sensor_msgs_py/point_cloud2.py) licensed [Apache License 2.0](https://raw.githubusercontent.com/ros2/common_interfaces/rolling/LICENSE)
