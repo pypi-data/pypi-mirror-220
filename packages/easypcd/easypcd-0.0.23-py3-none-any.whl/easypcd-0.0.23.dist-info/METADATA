@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: easypcd
+Version: 0.0.23
+Summary: a package for pcd
+Home-page: https://blog.csdn.net/qq_18566467?spm=1010.2135.3001.5343
+Author: GentleWang
+Author-email: 189030005@stu.just.edu.cn
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+### Easypcd使你更专注与代码本身，而不需要因为pcd格式所带来的烦恼。  
+
+#### 1、调用easypcd
+
+`from easypcd import easypcd`  
+`ep = easypcd()`
+
+**2、 读取pcd文件**  
+`pcd = ep.read_pcd("point.pcd")# 读取pcd文件  `  
+`print(“point indormation:”, pcd)# 打印所有信息  `  
+`print(“point:”, pcd.points)# 打印点云  `  
+
+**3、 写入pcd文件**  
+`ep.write_pcd(save_name="sample.pcd", points=pcd.points)`
+
+**必要参数：**  
+`save_name:保存的文件名`  
+`points：需要保存的点云数据`
+
+**可选参数**  
+`color：是否有颜色信息（True/False），默认False`  
+`normal：是否有向量信息（True/False），默认False`  
+`_SIZE：字节数量，默认为4`  
+`_TYPE：字符类型，默认为F`
+
+
