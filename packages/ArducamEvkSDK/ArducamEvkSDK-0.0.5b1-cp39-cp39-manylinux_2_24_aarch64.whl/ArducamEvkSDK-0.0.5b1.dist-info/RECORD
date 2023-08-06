@@ -1,0 +1,9 @@
+ArducamEvkSDK.pyi,sha256=hwLdtDZDYw2zw66hUaU5nrUqq_UA3TM8KMKa-TvbA-U,24402
+ArducamEvkSDK.cpython-39-aarch64-linux-gnu.so,sha256=_5Ysd2xOlkcjR-wtbLA1nCJJDPokjwuvuAIyfnsEatA,4856449
+ArducamEvkSDK.libs/libusb-1-8a1ba405.0.so.0.1.0,sha256=fePqtpxulfTY9GNAcqVSBskn7JYCm_WWxsngVzeD--A,200353
+ArducamEvkSDK.libs/libarducam_config_parser-c977d18c.so,sha256=21dO7Q4DEi14U2Fa-x4XFzQpgr2bEZ2IrSnpyFS_KnY,66617
+ArducamEvkSDK.libs/libudev-55ba923d.so.1.6.4,sha256=k8NxDtcX2ksERmowlFENa54mxU4snI56Uzso7lIXTUU,205985
+ArducamEvkSDK-0.0.5b1.dist-info/RECORD,,
+ArducamEvkSDK-0.0.5b1.dist-info/top_level.txt,sha256=oRzdx-nEfGVQM0iR9AEhkdJlzZqJYnVJbKMB6DD4PZY,14
+ArducamEvkSDK-0.0.5b1.dist-info/WHEEL,sha256=jqqnqb88opTI21_G0QEz_QTpBhauauJPf5ADtTGkx1k,113
+ArducamEvkSDK-0.0.5b1.dist-info/METADATA,sha256=F04oe8i71hGM53icRXEApjAjdXBPK-ljosozszuVyyU,119
