@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: deepcellpredictor
+Version: 0.9.5
+Summary: transfer learning approach
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: torch (==1.11.0)
+Requires-Dist: anndata (==0.8.0)
+Requires-Dist: pytorch-lightning (==1.7.7)
+Requires-Dist: scanpy (==1.9.1)
+Requires-Dist: scipy (==1.6)
+Requires-Dist: scvi-tools
+
+a transfer learning approach that explicitly models changes in transcriptional variance using a combination of variational autoencoders and normalizing flows
