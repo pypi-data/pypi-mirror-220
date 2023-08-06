@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fruitcraft
+Version: 0.0.3
+Summary: Full Python Wrapper for fruitcraft game API. By Mr.AW .
+Home-page: https://github.com/MrAwFruitly/FruitcraftClient-py
+Keywords: fruit,fruitcraft,fruit-craft,game-library
+Author: Mr. AW
+Author-email: mrawfruitly@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Persian
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.20.0)
+Requires-Dist: pydantic (>=1.8.2)
+Description-Content-Type: text/markdown
+
+# FruitcraftClient-py
+اسکریپت کامل فروت کرفت، همه ی متد های API پیاده سازی شده اند
+
