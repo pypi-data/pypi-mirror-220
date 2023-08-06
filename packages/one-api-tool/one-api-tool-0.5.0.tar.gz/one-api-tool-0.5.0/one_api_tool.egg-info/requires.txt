@@ -1,0 +1,9 @@
+pydantic
+openai
+anthropic
+requests
+httpx
+aiohttp
+tiktoken
+tokenizers
+docstring_parser
