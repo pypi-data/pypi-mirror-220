@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bren
+Version: 0.1.6
+Summary: A simple numpy based neural network library inspired by Tensorflow/Keras.
+Author: Om Panchal
+Author-email: om.panchal2022@gmail.com
+Maintainer: Om Panchal
+Maintainer-email: om.panchal2022@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: requests
+
+bren is a custom [numpy](https://numpy.org) based library, powered by automatic differentiation, inspired by [Tensorflow](https://www.tensorflow.org)/[Keras](https://keras.io), which allows users to build small scale simple neural networks. It's analogous yet simpler design to the Keras api allows users to produce, train and save their own models, with custom components, without having to learn an entirely new structure.
+
+
+
+bren is part of a sequence of neural network from scratch projects and a successor to the [neural-network-from-scratch-v2](https://github.com/OmPanchal/nn-from-scratch-2), with one major update being the integration of automatic differentitation. Automatic differentiation allows for the real-time determination of derivatives during back propagation and reduces the need for users to couple mathematical computation with derivatives as was required in the previous projects.
+
