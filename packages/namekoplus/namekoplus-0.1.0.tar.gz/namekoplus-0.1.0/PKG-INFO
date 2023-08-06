@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: namekoplus
+Version: 0.1.0
+Summary: A lightweight Python distributed microservice solution
+Home-page: https://github.com/Bryanthelol/namekoplus
+Author: Bryant He
+Author-email: bryantsisu@qq.com
+License: MIT
+Keywords: lightweight python distributed microservice solution
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
+Provides-Extra: apiflask
+Provides-Extra: rocketry
+Provides-Extra: gutter
+Provides-Extra: mysql
+Provides-Extra: dev
+License-File: LICENSE
+
+# namekoplus
+A lightweight Python distributed microservice solution
+
+## Document
+
+[中文文档](https://doc.bearcatlog.com/)
+
+## Command Line Tool Usage
+
+### Checkout Command
+
+```shell
+namekoplus --help
+```
+
+### Initialize a nameko service from templates
+
+```shell
+namekoplus init --directory <dir_name> --type <template_type>
+```
