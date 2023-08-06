@@ -1,0 +1,2 @@
+[console_scripts]
+print_bot_gen_1 = print_bot_gen_1:main
