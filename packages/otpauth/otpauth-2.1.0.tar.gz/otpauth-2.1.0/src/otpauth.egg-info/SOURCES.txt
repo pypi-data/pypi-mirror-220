@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+src/otpauth/__init__.py
+src/otpauth/core.py
+src/otpauth/py.typed
+src/otpauth/rfc4226.py
+src/otpauth/rfc6238.py
+src/otpauth.egg-info/PKG-INFO
+src/otpauth.egg-info/SOURCES.txt
+src/otpauth.egg-info/dependency_links.txt
+src/otpauth.egg-info/top_level.txt
+tests/test_hotp.py
+tests/test_misc.py
+tests/test_totp.py
