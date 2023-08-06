@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: geonevados
+Version: 0.0.2
+Summary: Tracking nevados.
+Home-page: https://github.com/jdavecas/geonevados
+Author: J. Daniel Velez
+Author-email: davelez@unc.edu
+License: MIT license
+Keywords: geonevados
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# geonevados
+
+
+[![image](https://img.shields.io/pypi/v/geonevados.svg)](https://pypi.python.org/pypi/geonevados)
+[![image](https://img.shields.io/conda/vn/conda-forge/geonevados.svg)](https://anaconda.org/conda-forge/geonevados)
+
+
+**Tracking nevados.**
+
+
+-   Free software: MIT license
+-   Documentation: https://jdavecas.github.io/geonevados
+    
+
+## Features
+
+-   TODO
