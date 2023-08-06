@@ -1,0 +1,15 @@
+hedges/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hedges/_version.py,sha256=sMiIvcLPHw1MxpF3NIYkHctwvACacK7iFCdRyLSvgFY,162
+hedges/bc.py,sha256=tCogWmDJwn_8SCOVHOksudloZ4SkRiXLfAXw18QS6AU,1519
+hedges/fluxes.py,sha256=OBrRm78UHJRdZ0WBIEygKq7PsrS3IWtt2ZVZGpJr3f0,679
+hedges/hyperbolic_solver_1d.py,sha256=p5jpQZTpdbJk4uQYt1AXLW9v3cMXS-sgyZpiIsbzTrA,15144
+hedges/main.ipynb,sha256=0qvCg0VHDNciwQc_y86HMejpYwk2pSufpfgC19t5fR0,191548
+hedges/main.py,sha256=lv2lGTNRfciZvVxBs31XM-T4DADiVyb2UrqYGW1EWiM,1467
+hedges/quadrature.py,sha256=e6f8msEzGlxoNAfYgRxK-hUpSlsJsCbsCxpciZ2eOnw,4976
+hedges/rk.py,sha256=VFFFFzXU6jVJdVQ_eopgh41SkcztfnVYvp5DzfInfG4,2993
+hedges/simulation.py,sha256=1dc9xb-lf2CB_6XuyX4IDsgZUKZUbN5HXxECPy6YGvQ,6060
+hedges/swe_1d.py,sha256=-86hDacMRcaRJmhrhTBHGAMMPcG7EbzERkWBmeVGasU,10270
+hedges-0.0.1a1.dist-info/METADATA,sha256=AyrHXco1dLSeVJCjYttSUN43FVzUHJEiUFxGznSGYlY,8273
+hedges-0.0.1a1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hedges-0.0.1a1.dist-info/top_level.txt,sha256=ONIMyvlMBsbAn5sz3DQdS87P8a5mRlAOf3T6ukkW3F0,7
+hedges-0.0.1a1.dist-info/RECORD,,
