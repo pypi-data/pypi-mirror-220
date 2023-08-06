@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: limitless-python
+Version: 1.0.0
+Home-page: https://github.com/jpbullalayao/limitless-python
+Author: Professor Ragna
+Author-email: professor.ragna@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+Python wrapper for the Limitless API
