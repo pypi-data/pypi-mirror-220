@@ -1,0 +1,9 @@
+genevector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genevector/data.py,sha256=lf0Rw-gyYAWCCa_hqYudiaKPkbzJCyf89WQLgVSzp2I,12190
+genevector/embedding.py,sha256=H705rU6LC4rSVk4XTHU3sROKm9FvqFnU7G3MyMYxQ3o,30338
+genevector/model.py,sha256=ty9JEeXr3yoqVtE6qyd_138Xg42mHW_wPAXXL3QQtZY,4870
+genevector-0.2.0.dist-info/LICENSE,sha256=q0ExUBQs2aR50xRSHvhF50JGLHKlY42llLNWNBg1Wck,1068
+genevector-0.2.0.dist-info/METADATA,sha256=W6hicxef4vuXgz0dAoHQrPCqx_EX9ZU0I7WoUwma3Kc,7162
+genevector-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+genevector-0.2.0.dist-info/top_level.txt,sha256=Hf8HQcQ3RPvypVizs0BXs6G4CxR6tYlr_DVwCwR2q48,11
+genevector-0.2.0.dist-info/RECORD,,
