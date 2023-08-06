@@ -1,0 +1,17 @@
+nsj_queue_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nsj_queue_lib/exception.py,sha256=ZX0IrGUT34whjtkuAa93b63jOm6msuTKACvSD588iVM,45
+nsj_queue_lib/lock_dao.py,sha256=bJn5aEGPoLjdD9s9x5CQeYbDc1c74IOTfP-sdLexuB0,1090
+nsj_queue_lib/main_thread.py,sha256=PvdjYdjCfeIiPSJ-u_0a-dV6wjurJqASbaQdqVqJ4d8,7337
+nsj_queue_lib/notify_thread.py,sha256=og0cUdz9okIOAahlFTDBdux8Qb7kWFNHBw8237trYyI,3938
+nsj_queue_lib/purge_thread.py,sha256=ZT1GYb5vvHgsyD6QWPNDw9MRbWhCNAEFiuMtaerDJpQ,3243
+nsj_queue_lib/queue_client.py,sha256=Wp_WeuVkqMdCUc0FJr0THAVFfUIPGH2SlvSLS4tCmB4,2879
+nsj_queue_lib/retry_thread.py,sha256=5P58RHc-TJiT2WLIt_ACm9cJzk7Q5PBXeyxjTz7VFkQ,4913
+nsj_queue_lib/retry_util.py,sha256=I1VPUqUmuuXgnkvtIZsG8rG9gpFYN_lg-ZiMlHZlk6g,3827
+nsj_queue_lib/settings.py,sha256=ouAcAaQ16Ir4SjaeCXKK83DHPgHGNUhngwHzNO5_-8Q,1824
+nsj_queue_lib/tarefa_dao.py,sha256=nrp6dGHuBumuMeExEKAZnxLABwoNPCflm5284fAJilM,7252
+nsj_queue_lib/worker_base.py,sha256=ZPIQ7bWET7g2vZOvSfdE90GplXGG3CcduxTbk_zVQfw,860
+nsj_queue_lib/worker_fila_teste.py,sha256=D-YTqc_ufTWgtcwIPazVqgvopyGBayOuXPmA3sCg-Ws,252
+nsj_queue_lib-0.1.3.dist-info/METADATA,sha256=HryLAfwObi5-rERDn3wGu-SO9wqCUySeoT2rKCuPZps,2660
+nsj_queue_lib-0.1.3.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+nsj_queue_lib-0.1.3.dist-info/top_level.txt,sha256=CiUVKShYi0B08B44Ju8uBX5DMyOttW5D0_dJo8DQy8E,14
+nsj_queue_lib-0.1.3.dist-info/RECORD,,
