@@ -1,0 +1,2 @@
+[console_scripts]
+sshoot = sshoot.main:sshoot
