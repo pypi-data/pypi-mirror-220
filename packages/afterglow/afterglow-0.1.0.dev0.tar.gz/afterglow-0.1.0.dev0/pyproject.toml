@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "afterglow"
+version = "0.1.0-dev0"
+description = "A configuration tool for ignition based systems"
+authors = ["James <james@dataligand.com>"]
+readme = "README.md"
+packages = [{include = "afterglow"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+bcrypt = "^4.0.1"
+asyncssh = "^2.13.1"
+structlog = "^23.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+toml = "^0.10.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
