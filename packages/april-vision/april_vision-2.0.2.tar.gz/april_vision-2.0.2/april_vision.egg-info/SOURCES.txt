@@ -1,0 +1,51 @@
+.flake8
+.gitignore
+LICENSE
+Makefile
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+.github/workflows/check.yml
+april_vision/__init__.py
+april_vision/_version.py
+april_vision/detect_cameras.py
+april_vision/frame_sources.py
+april_vision/marker.py
+april_vision/py.typed
+april_vision/utils.py
+april_vision/vision.py
+april_vision.egg-info/PKG-INFO
+april_vision.egg-info/SOURCES.txt
+april_vision.egg-info/dependency_links.txt
+april_vision.egg-info/entry_points.txt
+april_vision.egg-info/requires.txt
+april_vision.egg-info/top_level.txt
+april_vision/calibrations/Logitech B500.xml
+april_vision/calibrations/Logitech C270.xml
+april_vision/calibrations/Logitech C905.xml
+april_vision/calibrations/Logitech C920.xml
+april_vision/calibrations/__init__.py
+april_vision/cli/__init__.py
+april_vision/cli/annotate_image.py
+april_vision/cli/annotate_video.py
+april_vision/cli/calibrate.py
+april_vision/cli/camera_benchmark.py
+april_vision/cli/live.py
+april_vision/cli/marker_benchmark.py
+april_vision/cli/marker_generator.py
+april_vision/cli/utils.py
+april_vision/cli/vision_debug.py
+april_vision/cli/tools/__init__.py
+april_vision/cli/tools/family_details.py
+april_vision/cli/tools/list_cameras.py
+april_vision/examples/__init__.py
+april_vision/examples/camera.py
+april_vision/examples/py.typed
+april_vision/helpers/__init__.py
+april_vision/helpers/markers.py
+april_vision/helpers/py.typed
+april_vision/helpers/sender.py
+stubs/cv2/__init__.pyi
+stubs/pyquaternion/__init__.pyi
+stubs/pyquaternion/quaternion.pyi
