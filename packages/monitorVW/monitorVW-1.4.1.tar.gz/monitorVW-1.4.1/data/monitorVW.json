@@ -1,0 +1,41 @@
+{
+    "measurementInterval": 1800,
+    "weconUsername": "",
+    "weconPassword": "",
+    "weconSPin": "",
+    "weconCarId": "",
+    "InfluxOutput": true,
+    "InfluxURL": "",
+    "InfluxOrg": "",
+    "InfluxToken": "",
+    "InfluxBucket": "",
+    "InfluxTripBucket": "",
+    "csvOutput": false,
+    "csvFile": "tests/output/monitorVW.csv",
+    "carData": {
+        "tripDataShortTerm": {
+            "InfluxOutput": true,
+            "InfluxMeasurement": "tripShortTerm",
+            "InfluxTimeStart": "",
+            "InfluxDaysBefore": "5",
+            "csvOutput": false,
+            "csvFile": "tests/output/monitorVW_tripST.csv"
+        },
+        "tripDataLongTerm": {
+            "InfluxOutput": false,
+            "InfluxMeasurement": "tripLongTerm",
+            "InfluxTimeStart": "2022-10-01",
+            "InfluxDaysBefore": "",
+            "csvOutput": false,
+            "csvFile": "tests/output/monitorVW_tripLT.csv"
+        },
+        "tripDataCyclic": {
+            "InfluxOutput": false,
+            "InfluxMeasurement": "tripCyclic",
+            "InfluxTimeStart": "2022-10-01",
+            "InfluxDaysBefore": "",
+            "csvOutput": false,
+            "csvFile": "tests/output/monitorVW_tripCy.csv"
+        }
+    }
+}

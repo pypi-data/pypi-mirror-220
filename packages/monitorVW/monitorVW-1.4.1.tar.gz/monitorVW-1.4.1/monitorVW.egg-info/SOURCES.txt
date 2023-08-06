@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+data/monitorVW.json
+data/monitorVW.service
+monitorVW/__init__.py
+monitorVW/monitorVW.py
+monitorVW.egg-info/PKG-INFO
+monitorVW.egg-info/SOURCES.txt
+monitorVW.egg-info/dependency_links.txt
+monitorVW.egg-info/requires.txt
+monitorVW.egg-info/top_level.txt
+monitorVW/weconnect/NativeAPI.py
+monitorVW/weconnect/__init__.py
+monitorVW/weconnect/_version.py
+monitorVW/weconnect/vsr.py
