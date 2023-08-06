@@ -1,0 +1,10 @@
+nids_transformers/CORPUS.txt,sha256=KbWUEvy5pFDNAb0sRyDH3k9hXKiJjcivdN-sV74HCHU,5495089
+nids_transformers/KMEANS-CLUSTER-CENTERS.npy,sha256=aM1Aj5EDzjkbNkSKVRRjSLlSSJTOSFj4PGnzNEHC7Ls,1585280
+nids_transformers/NIDSTransformers.py,sha256=pkkl6fPBOMdTNzt4TxOSggIK2kEPzeb0t-WRajkSEaY,10009
+nids_transformers/SCALER.pkl,sha256=KK1G9JKdjSsiSix8GqiScjRAxJVV-_o7JFliTJCg3Ag,23489
+nids_transformers/TAGS-NAMES-EMBEDDINGS.npy,sha256=7kdUAwVMXQOZmrDApqTrcYfzNAWYxiZbi5zkbkABDSU,3170432
+nids_transformers/__init__.py,sha256=xjXxXbEsOXiIwTkFV0Emjdv0bdvZjSPTnomJzyhpBtk,35
+nids_transformers-0.0.5.dist-info/METADATA,sha256=pQzPPYKpoRQkIqKddxVJjQh1accM9wAd4Zed5Hocsgw,891
+nids_transformers-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nids_transformers-0.0.5.dist-info/top_level.txt,sha256=MoI68UVDrqco0UlWsQxqZFctc1H_mmlvY-lIY-m5ZVg,18
+nids_transformers-0.0.5.dist-info/RECORD,,
