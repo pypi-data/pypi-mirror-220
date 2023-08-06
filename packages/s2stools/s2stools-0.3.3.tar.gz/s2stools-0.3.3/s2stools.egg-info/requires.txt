@@ -1,0 +1,8 @@
+numpy
+scipy
+xarray
+tqdm
+matplotlib
+pandas
+dask
+ecmwf-api-client
