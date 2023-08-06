@@ -1,0 +1,3 @@
+[console_scripts]
+charge-power=charge_power.__main__:main
+
