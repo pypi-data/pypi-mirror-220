@@ -1,0 +1,7 @@
+numpy
+matplotlib
+csv
+time
+random
+scipy
+os
