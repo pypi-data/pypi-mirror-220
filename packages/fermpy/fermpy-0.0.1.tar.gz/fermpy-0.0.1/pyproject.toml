@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fermpy"
+version = "0.0.1"
+authors = [
+  { name="Emil Frost", email="emiljpfrost@gmail.com" },
+]
+description = "Package for exactly solving low-dimensional fermionic Hamiltonians"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["physics", "condensed matter", "fermion", "Hamiltonian", "exact diagonalization", "sparse"]
+dependencies = [
+  "numpy>=1.20",
+  "scipy>=1.10.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/emilfrost/fermpy"
