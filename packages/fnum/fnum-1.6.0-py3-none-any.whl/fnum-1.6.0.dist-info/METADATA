@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: fnum
+Version: 1.6.0
+Summary: Renames files in a directory using sequential integers
+Author-email: Matt Wisniewski <healthycrowd@mattw.life>
+License: MIT
+Project-URL: homepage, https://github.com/healthycrowd/fnum
+Keywords: fnum,cli,utility,file,rename,sequential,order
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8.0
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: pyyaml
+Requires-Dist: imeta (~=1.1)
+
