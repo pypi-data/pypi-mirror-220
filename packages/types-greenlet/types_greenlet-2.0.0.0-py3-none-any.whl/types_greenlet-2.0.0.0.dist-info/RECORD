@@ -1,0 +1,7 @@
+greenlet-stubs/METADATA.toml,sha256=k_ZfoNynt-SX18Ol56trFJ2Au0jtUkdaJGtLVI0Pv_4,86
+greenlet-stubs/__init__.pyi,sha256=SudlPBDsDMAP6EqLSfUlKw6VIdmGIbZ8fL79v1i1CyY,211
+greenlet-stubs/_greenlet.pyi,sha256=CnuNIek6wTEjEpg3qDwJAoeD3FVUbPb8mjBCE933x6c,3201
+types_greenlet-2.0.0.0.dist-info/METADATA,sha256=arQYuYqNoUWXuxMgj_A-PJLafY5B2dRjzn0DlR6LBN0,1371
+types_greenlet-2.0.0.0.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+types_greenlet-2.0.0.0.dist-info/top_level.txt,sha256=0wdwawKCa7M5SYPhIaoQy4MzE2_Aj6pj3y3LitY_7QE,15
+types_greenlet-2.0.0.0.dist-info/RECORD,,
