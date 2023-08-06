@@ -1,0 +1,2 @@
+[nbdev]
+findmycells = findmycells._modidx:d

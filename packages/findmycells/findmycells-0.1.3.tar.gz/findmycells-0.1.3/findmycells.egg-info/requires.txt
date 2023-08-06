@@ -1,0 +1,16 @@
+shapely>=1.8.0
+ipywidgets==7.6.5
+jupyterlab
+imageio==2.21.3
+scikit-image==0.19.3
+deepflash2==0.1.7
+cellpose>=2.0.5
+czifile
+roifile
+connected-components-3d
+ipyfilechooser
+wget
+jupyterlab-widgets==1.0.2
+
+[dev]
+nbdev
