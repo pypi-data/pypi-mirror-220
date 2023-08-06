@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: bridgeapi
+Version: 1.0.0b0
+Summary: Client for the Bridge open banking API aggregator
+Project-URL: Documentation, https://github.com/unknown/bridgeapi#readme
+Project-URL: Issues, https://github.com/unknown/bridgeapi/issues
+Project-URL: Source, https://github.com/unknown/bridgeapi
+Author-email: Alexandre Marty <alexandre@marty.in>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: pydantic
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# bridgeapi
+
+[![PyPI - Version](https://img.shields.io/pypi/v/bridgeapi.svg)](https://pypi.org/project/bridgeapi)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bridgeapi.svg)](https://pypi.org/project/bridgeapi)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install bridgeapi
+```
+
+## License
+
+`bridgeapi` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
