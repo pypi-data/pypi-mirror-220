@@ -1,0 +1,15 @@
+Code/Activity_TDCR.py,sha256=wcllEOJbeEOexAYzcFGQx2luIBhxSU3LtpEalRmNziw,11530
+Code/EfficiencyProfils.py,sha256=-ZUPva1dU7lMRcKbQAewX9QyiTDwCiNQDoaQiw7dOI4,4829
+Code/TDCRPy.py,sha256=J8Hoabv8H3gFn66AlnceZtl-cNyGM6EaPJiHCxKLiV4,23233
+Code/TDCR_model_lib.py,sha256=bF2S2L3L5c4y2Bg6G1tG1PVR7mJJ1L6UU7G0IEHNsTY,79829
+Code/TDCRoptimize.py,sha256=2CssmP_SZSe6C_Bkgei3hon21RPytH4DetMbXi-e6wk,3171
+Code/__init__.py,sha256=TTQEsZc2HFXwzr8NiFZnt95WoQ5ycVSGAQfJLywPtqM,87
+Code/decay.py,sha256=Lnq-kj-6Xs2Rw9w3Y3LlK_ffFip1QzemHdesiug0Wko,817
+Code/test.py,sha256=3r8LxXmQwlHNIefMswwUCy3OoHHKDVK8A3izerGT15U,292
+Code/test1.py,sha256=rGA9d1cgArhAfxRAAdtiz-vPGQ0Ns3HEdN8sCwydHYM,3250
+Code/decayData/__init__.py,sha256=wDAOWYD0eLxS5MLIXAlryPDDwkb8ynwWiVE_QYat9Rg,53
+TDCRPy-0.0.14.dist-info/LICENCE.md,sha256=fuYzrZRiOAjJBzA1tsGQwojCgGROArb2Ec48GDTjlWM,1086
+TDCRPy-0.0.14.dist-info/METADATA,sha256=PXsr_TXfoewNQxzrzJ0zmPxxO1kcvb9llje0UufDNPs,5633
+TDCRPy-0.0.14.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+TDCRPy-0.0.14.dist-info/top_level.txt,sha256=5dSMF0KOskVmT0QGz9KnqcD9Ccc2Dkq0Sa8FOZk-7Ck,5
+TDCRPy-0.0.14.dist-info/RECORD,,
