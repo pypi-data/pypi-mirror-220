@@ -1,0 +1,11 @@
+setup.py
+bwrc_discovery_server.egg-info/PKG-INFO
+bwrc_discovery_server.egg-info/SOURCES.txt
+bwrc_discovery_server.egg-info/dependency_links.txt
+bwrc_discovery_server.egg-info/requires.txt
+bwrc_discovery_server.egg-info/top_level.txt
+discovery_server/__init__.py
+discovery_server/user.py
+discovery_server/authentication/__init__.py
+discovery_server/authentication/user.py
+discovery_server/mock/__init__.py
