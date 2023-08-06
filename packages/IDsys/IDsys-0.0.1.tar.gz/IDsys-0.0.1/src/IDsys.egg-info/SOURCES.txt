@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/IDsys.egg-info/PKG-INFO
+src/IDsys.egg-info/SOURCES.txt
+src/IDsys.egg-info/dependency_links.txt
+src/IDsys.egg-info/top_level.txt
+src/mypackage/ID.py
+src/mypackage/__init__.py
+src/mypackage/main.py
