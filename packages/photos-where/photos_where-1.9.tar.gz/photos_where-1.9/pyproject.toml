@@ -1,0 +1,18 @@
+[project]
+name = "photos_where"
+version = "1.9"
+authors = [
+    { name="Visgean", email="visgean@gmail.com" },
+]
+description = "Analyze exif data"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/visgean/where"
+"Bug Tracker" = "https://github.com/visgean/where/issues"
