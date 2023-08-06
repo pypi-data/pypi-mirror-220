@@ -1,0 +1,17 @@
+curies/__init__.py,sha256=zw0J2QBF-IzZRlT3IHNvPkAAznEEdCexyQdn1lxQuo0,1015
+curies/__main__.py,sha256=PnQB8oQ9DccUNah0KQF8vtie8ur1BSpfPdnSWn3U_nM,146
+curies/api.py,sha256=8h829jJSX9J-TI22TfZ1J_4ozIamjRE3B_LgF2IPaFM,44826
+curies/cli.py,sha256=a25dUT91L-VeYzMjTJTmjLEj7KNy2l10OYHI4TpAh7I,5065
+curies/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+curies/sources.py,sha256=3TE3KS8LOVg2G1AFrWvt8cpzf7lXQ0r89Y675xqM97k,2033
+curies/version.py,sha256=9MfhjWn_puhKZs1sTU2TMa3kXiK9dTDZrZEbwEVnqls,255
+curies/web.py,sha256=ctK7XWvWdO599EYeSSxynhcMPEMXhUVJf1DBqrd4aQk,9669
+curies/mapping_service/__init__.py,sha256=5ZJ1vGFzmLgVgc8vyG4uo8sbjVsQrDNeo3elKOG0qLM,4478
+curies/mapping_service/api.py,sha256=7BZeWHW3hmTxv0gvfOpL1KR-IGOa-NfaK13iQtPS0rc,8224
+curies/mapping_service/rdflib_custom.py,sha256=eQl9N-eisGpy1sPXaCqZAFXUMQFpO3IZiEY0nldoIn4,3343
+curies/mapping_service/utils.py,sha256=bbteq1GdutTBVK6jVCbHLyplTk8grvTad3CgcmZJ3h8,4637
+curies-0.5.7.dist-info/LICENSE,sha256=ve6WiK7DUzD7fEkZ_ddqaiBSMNj9ib93QYZG5UsOAH0,1076
+curies-0.5.7.dist-info/METADATA,sha256=lXjitpm-5qln-yKJq89luJTrxus5eBxEtRFh3r8qsZU,12607
+curies-0.5.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+curies-0.5.7.dist-info/top_level.txt,sha256=c6fLHdQYwGgqBhtXVXYVfEN601WRKJRHKyAOtxflPw0,7
+curies-0.5.7.dist-info/RECORD,,
