@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+Discus.egg-info/PKG-INFO
+Discus.egg-info/SOURCES.txt
+Discus.egg-info/dependency_links.txt
+Discus.egg-info/requires.txt
+Discus.egg-info/top_level.txt
+discus/__init__.py
+discus/instances.py
+discus/instructions.py
+discus/openai_utils.py
