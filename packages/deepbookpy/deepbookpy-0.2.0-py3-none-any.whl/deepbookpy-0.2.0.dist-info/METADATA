@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: deepbookpy
+Version: 0.2.0
+Summary: Sui Deepbook Python SDK
+Author: andreidev1
+Author-email: andreid.dev@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pysui (>=0.29.0,<0.30.0)

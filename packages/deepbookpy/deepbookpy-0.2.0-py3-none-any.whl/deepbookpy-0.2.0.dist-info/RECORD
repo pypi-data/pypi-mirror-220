@@ -1,0 +1,10 @@
+deepbookpy/__init__.py,sha256=L4AlAlYaiMwVzlSWbyt0O6uRYNPIHh0Cdbnkqz47loc,42
+deepbookpy/deepbook_query.py,sha256=DYXpMOrHumn2QA7KHLKT7RaqNzQYOBpmH-sEAAgoL3E,6967
+deepbookpy/deepbook_sdk.py,sha256=JhijKrItds2YQDEDQQL0KDKcrd_YZbKq15l6G1zvPhE,19172
+deepbookpy/utils/constant.py,sha256=IIeKTUdZ9uet9JjNPs2b0JuJqo6fOWgcV_LgqlYembw,70
+deepbookpy/utils/normalizer.py,sha256=m6_fJUbe6p3TRRbl5vE3IwcMF18grh_LDcA4F1alciI,1195
+deepbookpy/version.py,sha256=qNVyvk5ZpoLeADOkuyys97CXOxVv3bKG_JN0D_CDeXY,47
+deepbookpy-0.2.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+deepbookpy-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+deepbookpy-0.2.0.dist-info/METADATA,sha256=OJ5Hud0-KtimI4ApeqrIYjXxbTU-NwMhnIIIt1JoZN4,310
+deepbookpy-0.2.0.dist-info/RECORD,,
