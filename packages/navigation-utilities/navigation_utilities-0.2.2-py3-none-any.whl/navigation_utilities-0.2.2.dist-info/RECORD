@@ -1,0 +1,12 @@
+navigation_utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+navigation_utilities/coordinate.py,sha256=nMYu-xF0HEU5bK_LTGPfBez3gjxxnc5kxADWMlQGF8Y,1455
+navigation_utilities/gngga.py,sha256=JHz8EqZp7oRJDNXE8quaPVaT3v2i0MeaDCY0sSCmWMo,4187
+navigation_utilities/nmea.py,sha256=opHZt_ds2dc3SEs308J3pbbr5nKKX8DCIE-M50MyLzs,1936
+navigation_utilities/oxts.py,sha256=VT82lqYvVCaWgnKCWAKQwJcw3Df5dxFeFGVRQ49Mqxo,2749
+navigation_utilities/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+navigation_utilities/utils/time.py,sha256=5eDPdqJ2y7qbHF9y3GOXjFpuiFf44Baz-Npnhm6DkBA,2567
+navigation_utilities-0.2.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+navigation_utilities-0.2.2.dist-info/METADATA,sha256=Wo9vLwhTmMy8kYZ07CkZlm5ytluTktc53vcHHKo4UzE,1131
+navigation_utilities-0.2.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+navigation_utilities-0.2.2.dist-info/top_level.txt,sha256=ujO7Fujd2VFPobGvGLuNXy9qOytxNOtvLOGGI7QG3Ug,21
+navigation_utilities-0.2.2.dist-info/RECORD,,
