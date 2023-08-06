@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="test_sequence_view_tree" model="ir.ui.view">
+        <field name="name">test.sequence.tree</field>
+        <field name="model">test.sequence</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="active" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="test_sequence_view_form" model="ir.ui.view">
+        <field name="name">test.sequence.form</field>
+        <field name="model">test.sequence</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_confirm"
+                        type="object"
+                        string="Confirm"
+                        class="oe_highlight"
+                        states="draft"
+                    />
+                    <button
+                        name="action_open"
+                        type="object"
+                        string="Open"
+                        class="oe_highlight"
+                        states="confirm"
+                    />
+                    <button
+                        name="action_done"
+                        type="object"
+                        string="Done"
+                        class="oe_highlight"
+                        states="open"
+                    />
+                    <button
+                        name="action_cancel"
+                        type="object"
+                        string="Cancel"
+                        class="oe_highlight"
+                        states="confirm,open"
+                    />
+                    <button
+                        name="action_restart"
+                        type="object"
+                        string="Restart"
+                        class="oe_highlight"
+                        states="cancel"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,confirm,open,done"
+                    />
+                </header>
+                <sheet>
+                <div class="oe_button_box" name="button_box">
+                </div>
+                <div class="oe_left" style="width: 500px;">
+                    <div class="oe_title" style="width: 500px;">
+                        <label for="name" />
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                </div>
+
+                <group>
+                    <group name="left">
+                        <field name="date" />
+                        <field name="partner_id" />
+                        <field name="active" />
+                    </group>
+                    <group name="right">
+
+                    </group>
+                </group>
+                <notebook>
+                    <page name="page_note" string="Notes">
+                        <field name="notes" nolabel="1" />
+                    </page>
+                    <page name="log" string="Logs">
+                        <group name="group_5" colspan="4" col="3">
+                            <group name="group_log_1" colspan="4" col="3">
+                                <field name="confirm_date" string="Confirmation" />
+                                <field name="confirm_user_id" nolabel="1" />
+                                <field name="open_date" string="Open" />
+                                <field name="open_user_id" nolabel="1" />
+                                <field name="done_date" string="Finish" />
+                                <field name="done_user_id" nolabel="1" />
+                                <field name="cancel_date" string="Cancellation" />
+                                <field name="cancel_user_id" nolabel="1" />
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+            </sheet>
+            <div class="oe_chatter">
+                <field name="message_follower_ids" widget="mail_followers" />
+                <field name="message_ids" widget="mail_thread" />
+            </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="test_sequence_action" model="ir.actions.act_window">
+        <field name="name">Test Sequence</field>
+        <field name="res_model">test.sequence</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="test_sequence_menu"
+        parent="ssi_sequence_mixin.root_sequence_template_menu"
+        action="test_sequence_action"
+        sequence="2"
+    />
+</odoo>
