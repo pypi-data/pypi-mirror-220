@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "slice_to_py_dist"
+version = "0.2.1"  # a placeholder; will be set dynamically by poetry-dynamic-versioning
+description = "Put a set of ZeroC/ICE slice files (.ice) into python distribution package."
+authors = ["Evgeny Klunko <eklunko@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+configargparse = "^1.5.5"
+toml = "^0.10.2"
+build = "^0.10.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+black = "^23.3.0"
+pylint = "^2.17.4"
+importlib-resources = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"  # "poetry.core.masonry.api"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+  "C0114",  # missing-module-docstring
+  "C0116",  # missing-function-docstring
+  "R0903",  # too-few-public-methods (for sqlalchemy tables and pydantic classes)
+  "R0801",  # Similar lines in 2 files
+  "C0115",  # missing-class-docstring (for api routes)
+  "C0103",  # invalid-name (for pydatic settings)
+  "W1203",  # logging-fstring-interpolation (Use lazy % or % formatting in logging functions)"
+]
+
+[tool.black]
+line-length = 120
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
