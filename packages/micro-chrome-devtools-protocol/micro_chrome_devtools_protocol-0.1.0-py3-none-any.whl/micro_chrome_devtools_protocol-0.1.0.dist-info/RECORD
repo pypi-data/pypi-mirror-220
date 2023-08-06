@@ -1,0 +1,9 @@
+ucdp/__init__.py,sha256=319iFgnToDpNzt4ELvOauVYCzOYr22e0pLSCPP7DiH4,62
+ucdp/data.py,sha256=3xQLU0yo61_K8HNxTBj61NBEQ87euC4gKEbgP2qgNKE,234
+ucdp/event.py,sha256=z4TMmuOPJvrk7qV-kyzWTQFSOzjlrp97BV-2LbeD6f8,98
+ucdp/ucdp.py,sha256=R2kkSU9aVvxaVsJss5NLPwWESfYG-C0SwtZ6zmyUfs0,2988
+micro_chrome_devtools_protocol-0.1.0.dist-info/LICENSE,sha256=AJyhJg7fXtOmIyc8DJTUUZSuK3dqjhgRisY-dRytskg,1074
+micro_chrome_devtools_protocol-0.1.0.dist-info/METADATA,sha256=Nfc1QHn0pQBTQ1maeMcMHdkbl5Mt3u4J-h9YQmTFKDQ,1031
+micro_chrome_devtools_protocol-0.1.0.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+micro_chrome_devtools_protocol-0.1.0.dist-info/top_level.txt,sha256=QHxPY01f4Yfo2ew80RnYLGL_mJgwYxb4kdJBTMz-1dw,5
+micro_chrome_devtools_protocol-0.1.0.dist-info/RECORD,,
