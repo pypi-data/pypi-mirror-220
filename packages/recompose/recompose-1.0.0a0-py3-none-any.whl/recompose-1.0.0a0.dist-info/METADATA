@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: recompose
+Version: 1.0.0a0
+Summary: Templated data recomposition
+Home-page: https://github.com/cariad/recompose
+Author: Cariad Eccleston
+Author-email: cariad@cariad.earth
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# recompose
+
+**recompose** is a Python package for templated data recomposition.
+
+## Author
+
+Hello! 👋 I'm **Cariad Eccleston**, and I'm a freelance Amazon Web Services architect, DevOps evangelist, and infrastructure and backend engineer by the beach in the United Kingdom.
+
+You can find me at [cariad.earth](https://cariad.earth), [github.com/cariad](https://github.com/cariad) and [linkedin.com/in/cariad](https://linkedin.com/in/cariad).
