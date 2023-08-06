@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pyeasyfuse
+Version: 2.0.0
+Summary: EasyFuse is a pipeline to detect fusion transcripts from RNA-seq data with high accuracy.
+License: LICENSE
+Keywords: bioinformatics,fusions,RNA-seq,transcriptomics
+Author: Patrick Sorn
+Author-email: patrick.sorn@tron-mainz.edu
+Requires-Python: >=3.7,<3.8
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: biopython (==1.73)
+Requires-Dist: bx-python (==0.8.2)
+Requires-Dist: gffutils (==0.10.1)
+Requires-Dist: logzero (==1.7.0)
+Requires-Dist: numpy (==1.21.6)
+Requires-Dist: pandas (==0.24.0)
+Requires-Dist: pysam (==0.15.2)
+Requires-Dist: pytz (==2022.7.1)
+Requires-Dist: xxhash (==1.4.3)
+Description-Content-Type: text/markdown
+
+# easyfuse-src
+
+This reposirory contains the python source code for the [EasyFuse](https://github.com/TRON-Bioinformatics/EasyFuse) pipeline. 
+
+Usage information and documentation is provided in the [EasyFuse repository](https://github.com/TRON-Bioinformatics/EasyFuse).
+
+
+### Citation
+
+If you use EasyFuse, please cite:  [Weber D, Ibn-Salem J, Sorn P, et al. Nat Biotechnol. 2022](https://doi.org/10.1038/s41587-022-01247-9)
+
