@@ -1,0 +1,106 @@
+===============
+odoo-tools-grap
+===============
+
+.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
+    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
+    :alt: License: AGPL-3
+
+.. image:: https://img.shields.io/badge/python-3.6-blue.svg
+    :alt: Python support: 3.6
+
+Installation
+============
+
+.. code-block:: shell
+
+    pip3 install odoo-tools-grap
+
+Usage
+=====
+
+Diff tools
+----------
+
+
+Based on a repos config file (``repos.yml file``, used by gitaggregate by
+exemple), this script will display the result of the ``git diff`` for each
+repository.
+
+.. code-block:: shell
+
+    odoo-tools-grap diff\
+        -c repos.yml
+
+Generate Odoo config Files
+--------------------------
+
+Base on a repos config file, (used by gitaggregate by exemple), template(s)
+of odoo config file, this script will generate a complete config file for Odoo
+with addons_path depending on the repos config file.
+
+.. code-block:: shell
+
+    odoo-tools-grap generate\
+        -c repos.yml\
+        -i ./template.config.cfg\
+        -o ./odoo.cfg
+
+Developement
+============
+
+.. code-block:: shell
+
+    # Pull Code
+    git clone https://gitlab.com/grap-rhone-alpes/odoo-tools-grap
+    cd odoo-tools-grap
+
+    # Create virtual env and activate it
+    virtualenv env --python=python3
+    . ./env/bin/activate
+
+    # Install dependencies
+    ./env/bin/pip install -r requirements.txt
+
+    # Run the script
+    python -m odoo_tools COMMAND OPTIONS
+
+Package deployment
+==================
+
+.. code-block:: shell
+
+    pip3 install --upgrade setuptools wheel
+    pip3 install  --upgrade twine
+
+    # Generate wheel and package
+    python3 setup.py sdist bdist_wheel
+
+    # Push on pyPi Test
+    twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+    # Push on pyPi Production
+    twine upload dist/*
+
+Roadmap / Know issues
+=====================
+
+* odoo-tools-grap diff tools will not works in a non french context, because
+  a test based on the result of ``git diff`` is hardcoded with french sentence.
+  It could be fixed by using git-python librairie, instead of calling
+  subprocess of ``git status``
+
+* Add tests.
+
+Credits
+=======
+
+Authors
+-------
+
+* GRAP, Groupement Régional Alimentaire de Proximité (http://www.grap.coop)
+
+Contributors
+------------
+
+* Sylvain LE GAL (https://www.twitter.com/legalsylvain)

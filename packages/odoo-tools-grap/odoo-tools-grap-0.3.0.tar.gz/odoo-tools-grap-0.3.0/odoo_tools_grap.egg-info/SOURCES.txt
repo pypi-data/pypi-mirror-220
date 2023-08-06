@@ -1,0 +1,10 @@
+README.rst
+setup.py
+odoo_tools/__init__.py
+odoo_tools/__main__.py
+odoo_tools_grap.egg-info/PKG-INFO
+odoo_tools_grap.egg-info/SOURCES.txt
+odoo_tools_grap.egg-info/dependency_links.txt
+odoo_tools_grap.egg-info/entry_points.txt
+odoo_tools_grap.egg-info/requires.txt
+odoo_tools_grap.egg-info/top_level.txt
