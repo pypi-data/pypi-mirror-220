@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bioconsertinc
+Version: 1.0.3
+Summary: BioConsert, c implementation
+Home-page: https://github.com/pierreandrieu/bioconsertinc
+Author: Pierre Andrieu
+Author-email: pierre.andrieu@lilo.org
+License: MIT
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: numpy (>=1.13)
+
+BioConsert algorithm, c implementation
