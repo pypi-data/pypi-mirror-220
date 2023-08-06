@@ -1,0 +1,10 @@
+jaims/__init__.py,sha256=-w66QhAW7tegtELGiFGfR-sC9D1eiVWCbbzJ12Yhhbc,169
+jaims/agent.py,sha256=UwZzw4sRhjIkdby9IhdWFudWbq0wEKsmDPBgJ3-jLmM,11006
+jaims/exceptions.py,sha256=USXadvzUSrw4U6GElLAdxZ6fLkiLVNLsyhTlPcEQ8Hw,1134
+jaims/function_handler.py,sha256=Ue8VO8f6uXpxjmO19zuTQ7FWnmZ6iEwf8I0etEIGE84,7636
+jaims/histroy_manager.py,sha256=l5R-12nGS3FfF7Z-JuqhIQ3z2uEWMvH5YiOGlq3g-u0,7698
+jaims/openai_wrappers.py,sha256=RQ-QERLFGu_S0_709T9LSPH7DNKxosPWPUwgsUMnHkY,3512
+jaims_py-0.0.2.dist-info/METADATA,sha256=WGwiPjPQqJG2NhT2lGkRMQJXFWQpXIHguw_lbZGhuEI,4248
+jaims_py-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jaims_py-0.0.2.dist-info/top_level.txt,sha256=ebAk2lxuw48ulICbhP7UYcFE0xLBX2-1Gn8YtOVz6M4,6
+jaims_py-0.0.2.dist-info/RECORD,,
