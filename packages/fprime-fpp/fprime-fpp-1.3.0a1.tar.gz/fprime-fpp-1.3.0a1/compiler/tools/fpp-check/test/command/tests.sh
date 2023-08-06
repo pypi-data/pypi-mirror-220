@@ -1,0 +1,17 @@
+tests="
+async_passive
+bad_opcode
+bad_priority
+duplicate_name
+duplicate_name_param_save
+duplicate_name_param_set
+duplicate_opcode_explicit
+duplicate_opcode_implicit
+duplicate_param
+missing_ports
+negative_opcode
+ok
+ref_params
+sync_priority
+sync_queue_full
+"

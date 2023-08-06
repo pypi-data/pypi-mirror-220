@@ -1,0 +1,24 @@
+#!/bin/sh -e
+
+export COMPILER_ROOT=$PWD/../../../..
+
+skip_xml_names="
+ArrayStruct1Array
+"
+
+for name in $skip_xml_names
+do
+  export SKIP_XML_FOR_$name=1
+done
+
+skip_cpp_names="
+BuiltInTypeArray
+ArrayStruct1Array
+"
+
+for name in $skip_cpp_names
+do
+  export SKIP_CPP_FOR_$name=1
+done
+
+sh ../scripts/check-xml.sh
