@@ -1,0 +1,94 @@
+# Smartplot
+
+This package provides a simple contextmanager which automatically saves data used to make matplotlib plots and automatically generates a script to reproduce the plot at a later stage.
+
+## Install
+
+`pip install smartplot`
+
+## Basic Usage
+
+A SmartPlotContext contextmanager can be used in conjunction with a *with* block as shown below. 
+
+```python
+from smartplot import SmartPlotContext
+
+
+with SmartPlotContext("./data-save-dir", locals(), overwrite=True) as spl:
+    spl.plot( ... )
+    ...
+    spl.title( ... )
+    spl.show()
+```
+
+The resulting context manager `spl` support all matplotlib.pyplot function calls.
+All calls made to `spl` are passed onto matplotlib.pyplot as-is and recorded.
+The data save directory is dynamically created if it does not exist and is populated with pickle files containing the data used to make the plot.
+The automatically generated `make_plot.py` script contains code which reloads all data and contains the necessary calls to matplotlib.pyplot used to create the original plot.
+This script may then be modified to adjust the plot.
+If the data save directory is not empty an exception is raised unless `overwrite=True`.
+Passing in `locals()` allows SmartPlotContext to infer the original variable names for the objects used for re-use in `make_plot.py`.
+
+Note that only calls directly to spl are recorded, if you use figures and axes directly, you're on your own for now.
+
+## Example Usage
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from smartplot import SmartPlotContext
+
+
+x_data = np.linspace(0, 2 * np.pi, 1000)
+y_data = np.sin(x_data)
+with SmartPlotContext("./data-save-dir", locals(), overwrite=True) as spl:
+    spl.plot(x_data, y_data, c='k', label='sin')
+    spl.plot(x_data, np.cos(x_data), c='b', label='cos')
+    spl.xlabel('xaxis')
+    spl.ylabel('yaxis')
+    spl.title('Title')
+    spl.legend()
+    spl.savefig('plot.pdf')
+    spl.show()
+```
+
+This will generate the following directory structure
+
+```
+data-save-dir/
+  make_plot.py
+  unnamed_arg.pkl
+  x_data.pkl
+  y_data.pkl
+```
+
+The contents of `make_plot.py` would be
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from smartplot import load_pickle
+
+
+x_data = load_pickle('x_data.pkl')
+y_data = load_pickle('y_data.pkl')
+unnamed_arg = load_pickle('unnamed_arg.pkl')
+
+plt.plot(x_data, y_data, c='k', label='sin')
+plt.plot(x_data, unnamed_arg, c='b', label='cos')
+plt.xlabel('xaxis')
+plt.ylabel('yaxis')
+plt.title('Title')
+plt.legend()
+plt.savefig('plot.pdf')
+plt.show()
+```
+
+which should perfectly reproduce the original plot.
+Note that the variable names `x_data` and `y_data` are arbitrary and were inferred by the SmartPlotContext using the locals() dict.
+Good code structure will always allow SmartPlotContext to infer the correct variable names.
+Anonymous arguments, such as the y data of the `np.cos` plot are simply saved and named "unnamed_arg" with an integer postfix if multiple unnamed arguments are present.
+
+## Misc
+
+Please report any bugs or feature requests to `jero.wilkinson@gmail.com`.
