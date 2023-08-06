@@ -1,0 +1,17 @@
+azure_speech_tools.tools.azure_speech_sr.azure_speech_sr:
+  function: azure_speech_sr
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    input_blob_url:
+      type:
+      - string
+    language:
+      default: en-US
+      type:
+      - string
+  module: azure_speech_tools.tools.azure_speech_sr
+  name: Azure AI Speech-To-Text Service
+  description: This tool uses the Azure AI services to convert audio from an Azure Blob storage account into the recognized text.
+  type: python
