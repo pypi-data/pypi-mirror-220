@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: WAVES
+Version: 0.0.0
+Summary: Wind Asset Value Estimation System
+Author: Rob Hammond
+Author-email: rob.hammond@nrel.gov
+Project-URL: Source, https://github.com/NREL/WAVES
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: all
+
+# WAVES: Wind Asset Value Estimation System
+
+Coming soon!
