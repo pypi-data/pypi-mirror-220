@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "notas-musicais-hcca"
+version = "0.1.0"
+description = ""
+authors = ["Henrique C. C. de Andrade <henrique.ccda@gmail.com>"]
+readme = "README.md"
+packages = [{include = "notas_musicais"}]
+classifiers = [
+    "Topic :: Education",
+    "Environment :: Console",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poerty.urls]
+"Documentação" = "https://notas-musicas.readthedocs.io/en/latest/"
+"Código" = "https://github.com/HenriqueCCdA/notas-musicas/"
+"Bug Tracker" = "https://github.com/HenriqueCCdA/notas-musicas/issues"
+
+
+[tool.poetry.scripts]
+notas-musicais = "notas_musicais.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.9.0"
+rich = "^13.4.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+blue = "^0.9.1"
+isort = "^5.12.0"
+taskipy = "^1.11.0"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.1.18"
+mkdocstrings = "^0.22.0"
+mkdocstrings-python = "^1.1.2"
+mkdocs-macros-plugin = "^1.0.2"
+
+
+[tool.poetry.group.docs.dependencies]
+jinja2 = "^3.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts= "--doctest-modules"
+
+[tool.isort]
+profile="black"
+line_length=79
+
+[tool.taskipy.tasks]
+lint = "blue --check --diff . && isort --check --diff ."
+docs = "mkdocs serve"
+pre_test = "task lint"
+test = "pytest -s -x --cov=notas_musicais -vv"
+post_test = "coverage html"
