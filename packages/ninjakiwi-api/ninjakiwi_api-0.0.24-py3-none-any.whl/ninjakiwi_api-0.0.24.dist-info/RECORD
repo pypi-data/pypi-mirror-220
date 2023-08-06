@@ -1,0 +1,17 @@
+ninjakiwi_api/API/BTD6/__init__.py,sha256=Yj40XqFdw_-uLavolO_wcjmcxZPI5y7mSLh1PFVDeA0,84
+ninjakiwi_api/API/BTD6/function.py,sha256=oyWLDQZU8CG5vXzyAm1MDHjcRNSxdcqVzGsej2r3LOU,6097
+ninjakiwi_api/API/BTDB2/__init__.py,sha256=Sth6HKl6C1du4XhMVqJ3AFNuCbaJHlg-os8Hfc3SXCw,85
+ninjakiwi_api/API/BTDB2/function.py,sha256=Tcj3OUfMep5QCZ2BcugyzEFD8rEvgI2IteV3jaEDDZk,2087
+ninjakiwi_api/API/__init__.py,sha256=y_0RI8P-Vcimx_O9PFByxr_l9PjqVGasgXqa_F5ABC8,184
+ninjakiwi_api/FUNCTIONS/ERROR/__init__.py,sha256=nBHdxgAld9UvDwdIPGWSqF11C8p29EIn9yzVaLEzklo,116
+ninjakiwi_api/FUNCTIONS/ERROR/function.py,sha256=ERljx054qqlJTCZCIBRbEkcX8uik3NE5CEecExCsJGM,1807
+ninjakiwi_api/FUNCTIONS/FETCH/__init__.py,sha256=Kf1_OIShhYAJgHyyPZdbDxSKy-3AuIFXvWFEjbvdYTA,108
+ninjakiwi_api/FUNCTIONS/FETCH/function.py,sha256=Ov3AIhEOzuQ3C0FGR7LHho40DK8e7x2U1n_bo1ITOvU,746
+ninjakiwi_api/FUNCTIONS/FETCH/model.py,sha256=qA8F4FME4jCtPwp6fYPCyrZCuXoxFIIWqqrEGwlxz8Q,2539
+ninjakiwi_api/FUNCTIONS/__init__.py,sha256=7t88oiQkfB2taAGj4h686ut1BE-9VTLrr5o5axYP-pE,157
+ninjakiwi_api/__init__.py,sha256=ZnuI7gc1hK-335hQnq0wjyPgJDX4MT1TwAIdxzF3YlI,185
+ninjakiwi_api/main.py,sha256=e6CQkX7S39keujfho2SDlVH2ea1cQJch0RBZhKvvwd4,3878
+ninjakiwi_api-0.0.24.dist-info/LICENSE,sha256=-IvZnPc4v-DHJV1iXJH0YQWjvFjNx06fEDGsrjQjiS4,1072
+ninjakiwi_api-0.0.24.dist-info/METADATA,sha256=FrxX9qc9kTIW3ZUstdH0u-9F4CXLBFmw-Nql8A_ga_s,7838
+ninjakiwi_api-0.0.24.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+ninjakiwi_api-0.0.24.dist-info/RECORD,,
