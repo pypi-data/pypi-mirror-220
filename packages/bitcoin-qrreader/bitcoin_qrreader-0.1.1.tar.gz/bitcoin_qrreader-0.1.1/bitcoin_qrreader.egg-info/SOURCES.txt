@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+bitcoin_qrreader/__init__.py
+bitcoin_qrreader/bitcoin_qr.py
+bitcoin_qrreader/bitcoin_qr_gui.py
+bitcoin_qrreader/qr_qui.py
+bitcoin_qrreader.egg-info/PKG-INFO
+bitcoin_qrreader.egg-info/SOURCES.txt
+bitcoin_qrreader.egg-info/dependency_links.txt
+bitcoin_qrreader.egg-info/requires.txt
+bitcoin_qrreader.egg-info/top_level.txt
