@@ -1,0 +1,3 @@
+[console_scripts]
+easy-fuse=pyeasyfuse.command_line:easy_fuse_cli
+
