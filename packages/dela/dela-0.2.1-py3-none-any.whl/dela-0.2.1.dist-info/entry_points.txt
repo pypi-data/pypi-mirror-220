@@ -1,0 +1,3 @@
+[console_scripts]
+dela=dela.__main__:main
+
