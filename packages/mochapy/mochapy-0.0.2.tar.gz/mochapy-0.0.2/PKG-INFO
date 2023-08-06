@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mochapy
+Version: 0.0.2
+Summary: TBD
+Project-URL: Homepage, https://github.com/gabrielgavrilov/mocha.py
+Author-email: Gabriel Gavrilov <gabriel.gavrilov02@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
