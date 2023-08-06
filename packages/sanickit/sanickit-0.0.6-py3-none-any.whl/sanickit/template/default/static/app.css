@@ -1,0 +1,8 @@
+h1 {
+  color: #ff2577;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
