@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vcc-utils
+Version: 100.1.1
+Summary: exploit test
+Author: linde12
+Author-email: lindeoscar@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# testing
+
