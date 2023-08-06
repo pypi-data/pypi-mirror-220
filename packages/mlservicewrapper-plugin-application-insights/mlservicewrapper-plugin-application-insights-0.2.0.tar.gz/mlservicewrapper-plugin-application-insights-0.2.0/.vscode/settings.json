@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "c:\\Source\\GitHub\\ml-service-wrapper\\ml-service-wrapper-plugin-application-insights\\.venv\\Scripts\\python.exe",
+    "files.exclude": {
+        "**/*.egg-info": true,
+        "**/__pycache__": true,
+        ".venv": true,
+        ".eggs": true
+    }
+}

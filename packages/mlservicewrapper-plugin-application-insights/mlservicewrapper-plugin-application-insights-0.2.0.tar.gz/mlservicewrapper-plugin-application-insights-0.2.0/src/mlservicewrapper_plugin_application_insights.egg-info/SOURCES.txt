@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+.github/dependabot.yml
+.github/workflows/release.yml
+.vscode/settings.json
+src/mlservicewrapper/plugin/application_insights/__init__.py
+src/mlservicewrapper_plugin_application_insights.egg-info/PKG-INFO
+src/mlservicewrapper_plugin_application_insights.egg-info/SOURCES.txt
+src/mlservicewrapper_plugin_application_insights.egg-info/dependency_links.txt
+src/mlservicewrapper_plugin_application_insights.egg-info/not-zip-safe
+src/mlservicewrapper_plugin_application_insights.egg-info/requires.txt
+src/mlservicewrapper_plugin_application_insights.egg-info/top_level.txt
