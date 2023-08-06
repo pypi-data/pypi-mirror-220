@@ -1,0 +1,10 @@
+tcp/__init__.py,sha256=kIxtRTZZK_7N-1u0BF5WogRfyJfHvrPIhrjiUFk_T7E,50
+tcp/client.py,sha256=tBCO0M94YBW4whx8KRU4yaYv74kyyLJFsmUnN7LjpLg,7971
+tcp/clientAPI.py,sha256=BDeavMxLvgwa7EOJGzXmxVHR1zYONEZLkJteIIjYMCM,1916
+tcp/utils.py,sha256=gwkSQ3vM0MWw_WTkhO4PagBXroi5mTbvwQMXadr1rfs,1036
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tcp_sdk-1.0.0.dist-info/LICENSE.txt,sha256=KkixByZXlGlAhSRZXC94wuAcqop-HJAsW_Th0YORIJY,90
+tcp_sdk-1.0.0.dist-info/METADATA,sha256=Apvddk_fbqYXwk-MmN4MBE6eZGA9JMqD2Muw7jS4cGA,1170
+tcp_sdk-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tcp_sdk-1.0.0.dist-info/top_level.txt,sha256=xJLqDc1_E9z8g3XG7MManrhnW74dY889RpROtbnfO0M,10
+tcp_sdk-1.0.0.dist-info/RECORD,,
