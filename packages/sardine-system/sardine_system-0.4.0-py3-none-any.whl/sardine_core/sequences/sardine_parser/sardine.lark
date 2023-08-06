@@ -1,0 +1,120 @@
+?start: pattern
+pattern: sum sum* -> return_pattern
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+// Rules concerning numbers ///////////////////////////////////////////////////
+
+?sum: product
+    | product "+" sum                  -> addition
+    | product "-" sum                  -> substraction
+    | product "%" sum                  -> modulo
+
+?product: atom
+     | product ">" atom                -> is_greater
+     | product "<" atom                -> is_smaller
+     | product ">=" atom               -> is_greater_or_equal
+     | product "==" atom               -> is_equal
+     | product "<=" atom               -> is_smaller_or_equal
+     | product "*" atom                -> multiplication
+     | product "/" atom                -> division
+     | product "//" atom               -> floor_division
+     | product "|" atom                -> choice
+     | product "~" atom                -> random_in_range
+     | product "!" atom                -> extend
+     | product "!!" atom               -> extend_repeat
+     | product "^" atom                -> chord_reverse
+     | product "&" atom                -> get_slice
+     | product "&&" atom               -> intersection
+     | product "||" atom               -> union
+     | product "^|" atom              -> xor
+
+
+?atom: NUMBER                          -> number
+     | function
+     | col
+     | patname
+     | "-" atom                        -> negation
+     | "rand"                          -> get_random_number
+     | "[" sum ":" sum "]"             -> generate_ramp
+     | "[" sum ":" sum "," sum  "]"    -> generate_ramp_with_range
+     | "[" sum ":" sum ";" sum  "]"    -> generate_ramp_with_interpolate
+     | "[" sum sum* "]"                -> make_list
+     | "[:" sum sum* ":]"              -> make_list_repeat
+     | "{" sum sum* "}"                -> make_chord
+     | SILENCE+                        -> silence
+     | "(" sum ")"
+
+///////////////////////////////////////////////////////////////////////////////
+
+// Rules functions ////////////////////////////////////////////////////////////
+
+?function: "(" NAME sum* (SPACE sum)* ("::" NAME atom)* ")" -> function_call
+
+
+// Rules concerning names /////////////////////////////////////////////////////
+
+?patname: name_sum
+
+?name_sum: name_product
+    | name_sum "!" sum                     -> extend
+    | name_sum "!!" sum                    -> extend_repeat
+    | name_sum "/" name_product            -> specify_address
+    | name_sum ":" sum                     -> assoc_sp_number
+
+?name_product: name_atom
+    | name_product "|" name_atom           -> choice
+
+?name_atom: NAME                           -> name
+    | "(" name_sum ")"
+    | "[" name_sum name_sum* "]"           -> make_list
+
+///////////////////////////////////////////////////////////////////////////////
+
+// Rules about notes /////////////////////////////////////////////////////////
+
+?col0 : note
+      | note "@" NAME             -> add_qualifier
+
+?col1 : col0
+      | col0 "^" sum              -> chord_reverse
+
+?col : col1
+
+
+// Add sugar for chord inversions
+
+?note0: NOTE                     -> make_note
+
+?note1: note0
+    | note0 "b"                  -> note_flat
+    | note0 "#"                  -> note_sharp
+
+?note2: note1
+    | note1 NUMBER               -> note_set_octave
+    | (note1|note2) "'"          -> note_octave_up
+    | (note1|note2) "_"          -> note_octave_down
+
+?note: note2                     -> finish_note
+
+///////////////////////////////////////////////////////////////////////////////
+
+// Tokens /////////////////////////////////////////////////////////////////////
+
+// Notes start with an uppercase letter, other names start with a lower case letter.
+// This helps disambiguating the syntax.
+NOTE: "A"|"La"|"B"|"Si"|"D"|"Re"|"Ré"|"C"|"Do"|"E"|"Mi"|"F"|"Fa"|"G"|"Sol"
+    | "Cb"|"Db"|"Eb"|"Fb"|"Gb"|"Ab"|"Bb"
+NAME: LCASE_LETTER (LETTER|DIGIT+)*
+
+SILENCE: "."
+
+SPACE: /[\s\t\f\r\n]/
+%ignore SPACE
+
+%import common.LCASE_LETTER
+%import common.UCASE_LETTER
+%import common.LETTER -> LETTER
+%import common.DIGIT  -> DIGIT
+%import common.NUMBER
