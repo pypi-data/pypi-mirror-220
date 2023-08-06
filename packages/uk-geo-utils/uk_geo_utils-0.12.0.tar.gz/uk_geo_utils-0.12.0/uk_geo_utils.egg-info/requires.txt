@@ -1,0 +1,7 @@
+Django<4.3,>=2.2
+psycopg2-binary
+
+[development]
+coveralls
+mkdocs
+black
