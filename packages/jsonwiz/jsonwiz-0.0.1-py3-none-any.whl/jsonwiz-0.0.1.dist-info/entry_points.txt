@@ -1,0 +1,2 @@
+[console_scripts]
+jsonwiz = jsonwiz.__init__:main
