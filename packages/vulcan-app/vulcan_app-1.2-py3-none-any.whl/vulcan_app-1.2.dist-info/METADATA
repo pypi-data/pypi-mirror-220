@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: vulcan-app
+Version: 1.2
+Summary: Vulcan's web application server.
+Home-page: https://github.com/vulcan-coalition/vulcan-app.git
+Author: Chatavut Viriyasuthee
+Author-email: chatavut@lab.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiofiles
+Requires-Dist: fastapi
+Requires-Dist: httpx (==0.23.3)
+Requires-Dist: pydantic
+Requires-Dist: PyJWT
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: requests-async
+Requires-Dist: SQLAlchemy
+Requires-Dist: PyDrive2
+Requires-Dist: pymongo
+Requires-Dist: boto3
+Requires-Dist: asyncpg
+Requires-Dist: shortuuid
+Requires-Dist: python-multipart
+Requires-Dist: sshtunnel (==0.4.0)
+
+# vulcan_web_application
+Vulcan coalition application package
