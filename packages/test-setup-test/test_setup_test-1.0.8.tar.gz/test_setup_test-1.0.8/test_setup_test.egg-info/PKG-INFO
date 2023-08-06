@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: test-setup-test
+Version: 1.0.8
+Summary: utils_bs_test
+Home-page: UNKNOWN
+Author: Divy TEST
+Author-email: divy.jain@bombaysoftwares.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/utils-bs-test
+Project-URL: Source Code, https://github.com/abc
+Project-URL: Documentation, https://github.com/abc
+Description: # Your Package
+        
+        Your Package Description
+        
+        ## Installation
+        
+        ```shell
+        pip install your_package
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
