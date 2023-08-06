@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: TiamoTools
+Version: 1.0.3
+Summary: 简化数据库连接、时间处理及log声明
+Home-page: UNKNOWN
+Author: wyl
+Author-email: <321081840@qq.com>
+License: UNKNOWN
+Description: 数据库：mongo、mysql、oracle、xugu；时间：格式化、转换、计算；log：声明
+Keywords: python,super,tools
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Requires: PyMySQL
+Requires: pymongo
+Requires: cx_Oracle
+Requires-Python: >=3.8
