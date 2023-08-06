@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: psyqlepg
+Version: 0.0.3
+Summary: Simple SQL library for psycopg3.
+Author-email: Damien Bezborodov <dbezborodov@gmail.com>
+Project-URL: Homepage, https://github.com/bezborodow/psyqlepg
+Project-URL: Bug Tracker, https://github.com/bezborodow/psyqlepg/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Psyqlepg: Basic Common SQL Queries for Psycopg
+
+ * [Psycopg Documentation](https://www.psycopg.org/psycopg3/docs/)
+
+## Development
+
+ * [Packaging](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
