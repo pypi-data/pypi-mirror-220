@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ir-client"
+version = "0.1.4"
+description = "Library to access the iRacing web API"
+authors = ["Sascha Lamp <sascha@lamp-online.de>"]
+license = "MIT License"
+packages = [{include = "ir_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+more-itertools = "^9.1.0"
+pytest = "^7.4.0"
+assertpy = "^1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+    "integration"
+]
+
+python_files = "test*.py it_*.py"
+python_classes = "Test IntegrationTest"
+python_functions = "test_* it_*"
