@@ -1,0 +1,10 @@
+dikicli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dikicli/__main__.py,sha256=I9NV9ENeOxSdyWKTB9m7t1aNKRBKGNxBubINaO6hxsE,37
+dikicli/cli.py,sha256=d3VwVuFDS-_IIlTFpVfOy7gUEdq0g0p59rwo2Progqo,4500
+dikicli/core.py,sha256=_VSKXnWpsXaK9h86QQWdO6v9FPC5BNbygNcZDNviTQc,17981
+dikicli/templates.py,sha256=PgiHw3FTcPvBkeTAzgcp-rbFK0c4g7TCXR5olRPw97c,838
+dikicli-0.5.0.dist-info/entry_points.txt,sha256=0Qi5aI2xjfp72Tf69nyMxmRtXbom0EMlIh0dFVPgg2o,41
+dikicli-0.5.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dikicli-0.5.0.dist-info/METADATA,sha256=3W5-LjL9Rot9aEA-OjYxpZqUMEEfh_R79gGP39aaRGs,1556
+dikicli-0.5.0.dist-info/LICENSE,sha256=C-_evP1CUscYJ8gIupl1VPFwplv4ERsYl_r1jHDkBcg,1067
+dikicli-0.5.0.dist-info/RECORD,,
