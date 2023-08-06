@@ -1,0 +1,105 @@
+    {%- if hints.description -%}
+    <p>{{ hints.description|safe }}</p>
+    {%- endif -%}
+
+    {%- if hints.parameters -%}
+    <div>
+        <h2 style="margin-bottom: 0.2em;">Parameters</h2>
+        {%- for param_name, param_hints in hints.parameters.items() if param_hints.optional == false  -%}
+        <span style="float:left">
+            {{ param_name }}*
+            {%- if 'type' in param_hints -%}
+            : <i>{{ param_hints.type }}</i>
+            {%- endif -%}
+        </span>
+        <span style="float: right">(*required)</span>
+        <br/>
+        {%- if 'description' in param_hints -%}
+        <p style='margin-left:2em'>
+            {{ param_hints.description }}
+        </p>
+        {%- endif -%}
+        {%- endfor -%}
+
+        {%- for param_name, param_hints in hints.parameters.items() if (param_hints.optional == true) or (param_hints.optional is undefined) -%}
+        <span style="float: left">
+            {{ param_name }}
+            {%- if 'type' in param_hints -%}
+            : <i>{{ param_hints.type }}</i>
+            {%- endif -%}
+        </span>
+        {%- if 'default' in param_hints -%}
+        <span style="float: right">(default: {{ param_hints.default }})</span>
+        {%- endif -%}
+        <br/>
+        {%- if 'description' in param_hints -%}
+        <p style='margin-left:2em'>
+            {{ param_hints.description }}
+        </p>
+        {%- endif -%}
+        {%- endfor -%}
+
+    </div>
+    {%- endif -%}
+
+    {%- if hints.inputs -%}
+    <div>
+        <h2 style="margin-bottom: 0.2em;">Inputs</h2>
+        {% for input in hints.inputs %}
+        <span style="float:left">
+            {%- if input.conditional -%}
+            [{{ input.name }}]
+            {%- else -%}
+            {{ input.name }}
+            {%- endif -%}
+            {%- if 'type' in input -%}
+            : <i>{{ input.type }}</i>
+            {%- endif -%}
+        </span>
+        <br/>
+        {%- if input.description -%}
+        <p style='margin-left:2em'>
+            {{ input.description }}
+        </p>
+        {%- endif -%}
+        {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+    {%- if hints.outputs -%}
+    <div>
+        <h2 style="margin-bottom: 0.2em;">Outputs</h2>
+        {% for output in hints.outputs %}
+        <span style="float:left">
+            {%- if output.conditional -%}
+            [{{ output.name }}]
+            {%- else -%}
+            {{ output.name }}
+            {%- endif -%}
+            {%- if 'type' in output -%}
+            : <i>{{ output.type }}</i>
+            {%- endif -%}
+        </span><br/>
+        {%- if output.description -%}
+        <p style='margin-left:2em'>
+            {{ output.description }}
+        </p>
+        {%- endif -%}
+        {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+    {%- if hints.references -%}
+    <p><strong>References</strong><br>
+        {% for reference in hints.references %}
+        <span>[{{ loop.index }}]</span>
+        <span style="margin-left: 1em">
+            {%- if reference is string -%}
+            {{ reference }}
+            {%- else -%}
+            <a href="{{ reference.url }}">{{ reference.text }}</a>
+            {%- endif -%}
+        </span><br>
+        {% endfor %}
+    </p>
+    {%- endif -%}
