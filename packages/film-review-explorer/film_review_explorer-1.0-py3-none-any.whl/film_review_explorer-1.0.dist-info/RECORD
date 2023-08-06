@@ -1,0 +1,8 @@
+film_review_explorer/__init__.py,sha256=pogNpdFygW__iqlg8Ue6FI1_3Ion_idV9ZTbjVekGhA,79
+film_review_explorer/dataframe_preprocessor.py,sha256=4KcKwXZHIE78rohUf-795mTFJBYdvHaVAi-eMkdnSXs,13889
+film_review_explorer/topic_modeler.py,sha256=D31uePIlfs4y5b7S_2FKFWRSW9XDYrQT7FKl4em5qUk,5909
+film_review_explorer-1.0.dist-info/LICENSE,sha256=-A-8Rv-2BUrH5WOawm28ngrHEr05MGswR-sId8HTGzI,1062
+film_review_explorer-1.0.dist-info/METADATA,sha256=aOWxmzk_zmY3Q7d2-6FS7zVrUeirTiKkAHulAjgsRaE,2902
+film_review_explorer-1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+film_review_explorer-1.0.dist-info/top_level.txt,sha256=CT67Z4VbGH41LzaPmFPKF0sqBEydk9SQ3CD62wmY43Y,21
+film_review_explorer-1.0.dist-info/RECORD,,

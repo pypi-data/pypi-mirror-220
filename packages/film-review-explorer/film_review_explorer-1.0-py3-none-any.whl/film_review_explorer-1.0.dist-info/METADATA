@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: film-review-explorer
+Version: 1.0
+Summary: A python package for exploring film reviews.
+Author-email: Chang Jianghan <jianghanchang@hotmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Pipje
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/pip-chang/film_review_explorer
+Keywords: film
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: spacy (>=3.5.0)
+Requires-Dist: pandas (>=2.0.1)
+Requires-Dist: pytest (>=7.2.1)
+Requires-Dist: seaborn (>=0.12.2)
+Requires-Dist: myst-parser (>=0.18.1)
+
+# Film Review Explorer - Textual Analysis of Chinese and English Film Reviews
+
+The film_review_explorer is a Python library for analyzing film reviews scraped from various websites with [this](https://github.com/pip-chang/film_review_scraper) library.
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install film_review_scraper.
+
+```bash
+pip install film_review_explorer
+```
+
+## Usage
+
+Please refer to the [demonstration](https://nbviewer.org/github/pip-chang/film_review_explorer/blob/main/demonstration.ipynb) for detailed usage.
+
+## Documentation
+
+ReadTheDocs: [film_review_explorer](https://film-review-explorer.readthedocs.io/en/latest/)
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Upcoming Updates:
+Topic Modeling & Visualization with LDA and BERTopic
+
+
