@@ -1,0 +1,10 @@
+metrics_miscellany/__init__.py,sha256=1r6Mm-RUrPXK4UnNx1L-KwUZ8BOK_I6ux2RH41WUwEU,45
+metrics_miscellany/estimators.py,sha256=k9Dm5ayspjWeh53YtVDMk6BMNPV3eIsx0INcybZSQdE,1799
+metrics_miscellany/random.py,sha256=_Jt9L71p2Tc_fH4k-WNzpQVcs4V76nkQZO3gtmFudHQ,606
+metrics_miscellany/tests.py,sha256=rrs7-uHKh-fmVrMBtPiWZcIWWIhArInMtfffu0Y03M8,6229
+metrics_miscellany/utils.py,sha256=wtxGtZy53RVaWXC2D7PFed83-ls4TqHW-VztoPaD2vY,1588
+Metrics_Miscellany-0.2.1.dist-info/LICENSE.txt,sha256=qImFXcRJwxIHS80FE7uOx6FhmLY8apd4Y12aR54QU7w,282
+Metrics_Miscellany-0.2.1.dist-info/METADATA,sha256=NbuRnRRs25M1flFZcFX562uIMiw9gLAG-y4EcB-1Pz0,396
+Metrics_Miscellany-0.2.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+Metrics_Miscellany-0.2.1.dist-info/top_level.txt,sha256=Pq6L_ZV2iZoEsw7DdAvxRYAh-bPx8VptD6Pn5p6QaPg,19
+Metrics_Miscellany-0.2.1.dist-info/RECORD,,
