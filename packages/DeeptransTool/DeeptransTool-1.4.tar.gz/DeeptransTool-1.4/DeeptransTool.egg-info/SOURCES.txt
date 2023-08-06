@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+DTT/__init__.py
+DTT/deepLTranslate.py
+DeeptransTool.egg-info/PKG-INFO
+DeeptransTool.egg-info/SOURCES.txt
+DeeptransTool.egg-info/dependency_links.txt
+DeeptransTool.egg-info/requires.txt
+DeeptransTool.egg-info/top_level.txt
