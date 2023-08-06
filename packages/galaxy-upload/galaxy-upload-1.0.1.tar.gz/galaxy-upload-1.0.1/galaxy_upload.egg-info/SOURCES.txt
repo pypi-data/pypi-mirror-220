@@ -1,0 +1,15 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+galaxy_upload/__init__.py
+galaxy_upload/history.py
+galaxy_upload/upload.py
+galaxy_upload.egg-info/PKG-INFO
+galaxy_upload.egg-info/SOURCES.txt
+galaxy_upload.egg-info/dependency_links.txt
+galaxy_upload.egg-info/entry_points.txt
+galaxy_upload.egg-info/requires.txt
+galaxy_upload.egg-info/top_level.txt

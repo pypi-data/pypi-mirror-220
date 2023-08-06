@@ -1,0 +1,3 @@
+[console_scripts]
+galaxy-history-search = galaxy_upload.history:main
+galaxy-upload = galaxy_upload.upload:main

@@ -1,0 +1,5 @@
+bioblend>=0.18.0
+click
+click-option-group
+rich
+tuspy!=1.0.1,>=1.0.0
