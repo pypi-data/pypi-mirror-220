@@ -1,0 +1,10 @@
+PandaPlyr/__init__.py,sha256=rpZW_sV_R8V4s4cZVQ2lkKjAC59I_uuz7U9YNRyyR_Q,170
+PandaPlyr/pandaplyr.py,sha256=CQA_Fq-XB0a58OjmZrUty98lRZg_AVTfKoJZcjiiCgI,21367
+PandaPlyr/utils.py,sha256=f7nTOKQE8NkpPdzvJdZyRWXdTRgQcgFxIUMsWe_Nm98,1273
+PandaPlyr/data/student_grades.csv,sha256=yKd8YDAe-bW-H5zQcNBXRxOcnk3l26iJvyYSZ1SFeWA,369
+PandaPlyr/data/subject_categories.csv,sha256=P_VqZqwwSkzFCH8K2zzwM3vxx2vr-aEv5rP8eQ_xOro,114
+PandaPlyr/data/titanic.csv,sha256=Q6-BoB8lp3ccmkKAmjFiX00N4_M1zfKZYfm6F5qGwT0,57910
+PandaPlyr-0.1.5.dist-info/METADATA,sha256=nI55L3DqRIGFbYEzhx3ac3Y2hRzDtA9wgfQ_xGSoeTY,14384
+PandaPlyr-0.1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+PandaPlyr-0.1.5.dist-info/top_level.txt,sha256=ZDzMYE-bjx6mKgzVs1d5RdbyWlU3FfaQWXKivEPLo9Y,10
+PandaPlyr-0.1.5.dist-info/RECORD,,
