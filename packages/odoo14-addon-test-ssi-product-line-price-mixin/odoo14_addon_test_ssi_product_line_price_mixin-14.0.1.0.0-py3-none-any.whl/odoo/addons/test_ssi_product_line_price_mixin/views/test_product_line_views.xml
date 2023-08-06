@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="test_product_line_price_view_tree_editable" model="ir.ui.view">
+    <field name="name">test.product tree editable</field>
+    <field name="model">test.product_line_price</field>
+    <field
+            name="inherit_id"
+            ref="ssi_product_line_price_mixin.mixin_product_line_price_view_tree_editable"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data />
+    </field>
+</record>
+
+<record id="test_product_line_price_view_tree_noneditable" model="ir.ui.view">
+    <field name="name">test.product tree noneditable</field>
+    <field name="model">test.product_line_price</field>
+    <field
+            name="inherit_id"
+            ref="ssi_product_line_price_mixin.mixin_product_line_price_view_tree_noneditable"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data />
+    </field>
+</record>
+
+<record id="test_product_line_price_view_form" model="ir.ui.view">
+    <field name="name">test.product form</field>
+    <field name="model">test.product_line_price</field>
+    <field
+            name="inherit_id"
+            ref="ssi_product_line_price_mixin.mixin_product_line_price_view_form"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data />
+    </field>
+</record>
+
+<record id="test_product_line_price_noneditable_action" model="ir.actions.act_window">
+    <field name="name">Test Non-Editable Product Lines</field>
+    <field name="res_model">test.product_line_price</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<record
+        id="test_product_line_price_noneditable_action_view_tree"
+        model="ir.actions.act_window.view"
+    >
+    <field name="sequence" eval="1" />
+    <field name="view_mode">tree</field>
+    <field name="act_window_id" ref="test_product_line_price_noneditable_action" />
+    <field name="view_id" ref="test_product_line_price_view_tree_noneditable" />
+</record>
+
+<record
+        id="test_product_line_price_noneditable_action_view_form"
+        model="ir.actions.act_window.view"
+    >
+    <field name="sequence" eval="2" />
+    <field name="view_mode">form</field>
+    <field name="act_window_id" ref="test_product_line_price_noneditable_action" />
+    <field name="view_id" ref="test_product_line_price_view_form" />
+</record>
+
+<menuitem
+        id="test_product_line_price_noneditable_menu"
+        name="Non-Editable Tests"
+        parent="ssi_product_line_price_mixin.menu_product_line_price"
+        action="test_product_line_price_noneditable_action"
+        sequence="101"
+    />
+
+<record id="test_product_line_price_editable_action" model="ir.actions.act_window">
+    <field name="name">Test Editable Product Lines</field>
+    <field name="res_model">test.product_line_price</field>
+    <field name="view_mode">tree</field>
+</record>
+
+<record
+        id="test_product_line_price_editable_action_view_tree"
+        model="ir.actions.act_window.view"
+    >
+    <field name="sequence" eval="1" />
+    <field name="view_mode">tree</field>
+    <field name="act_window_id" ref="test_product_line_price_editable_action" />
+    <field name="view_id" ref="test_product_line_price_view_tree_editable" />
+</record>
+
+<menuitem
+        id="test_product_line_price_editable_menu"
+        name="Editable Tests"
+        parent="ssi_product_line_price_mixin.menu_product_line_price"
+        action="test_product_line_price_editable_action"
+        sequence="102"
+    />
+</odoo>
