@@ -1,0 +1,7 @@
+setup.py
+custlib/__init__.py
+custlib/classlib.py
+custlib.egg-info/PKG-INFO
+custlib.egg-info/SOURCES.txt
+custlib.egg-info/dependency_links.txt
+custlib.egg-info/top_level.txt
