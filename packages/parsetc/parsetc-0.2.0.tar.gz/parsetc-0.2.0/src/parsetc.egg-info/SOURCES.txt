@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/parsetc/__init__.py
+src/parsetc/parsetc.py
+src/parsetc/terminals.json
+src/parsetc/translit.py
+src/parsetc.egg-info/PKG-INFO
+src/parsetc.egg-info/SOURCES.txt
+src/parsetc.egg-info/dependency_links.txt
+src/parsetc.egg-info/entry_points.txt
+src/parsetc.egg-info/requires.txt
+src/parsetc.egg-info/top_level.txt

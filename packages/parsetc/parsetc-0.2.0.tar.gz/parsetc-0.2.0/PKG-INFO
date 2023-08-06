@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: parsetc
+Version: 0.2.0
+Summary: Parse and convert between different Teochew phonetic spelling schemes.
+Author: Brandon Seah
+License: 
+         The MIT License (MIT)
+         Copyright (c) 2023 Brandon Seah
+         
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+         
+         The above copyright notice and this permission notice shall be included in all
+         copies or substantial portions of the Software.
+         
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+         EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+         MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+         IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+         DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+         OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+         OR OTHER DEALINGS IN THE SOFTWARE.
+        
+        
+Project-URL: source, https://github.com/learn-teochew/parsetc
+Project-URL: homepage, https://learn-teochew.github.io
+Keywords: Chinese,Teochew,romanization
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Parsing tools for Teochew phonetic spelling
+===========================================
+
+Parse and convert between different Teochew phonetic spelling schemes.
+
+
+Input formats
+-------------
+
+ * Geng'dang Pêng'im 廣東拼音 (`gdpi`)
+ * Gaginang Peng'im 家己儂拼音 (`ggn`)
+ * Gaginang Peng'im with coda `-n` allowed (nasalization written with `ñ`
+   instead) (`ggnn`)
+ * Dieghv 潮語 (`dieghv`);
+   [(source)](https://kahaani.github.io/gatian/appendix1/index.html)
+
+
+Output formats
+--------------
+
+`gdpi`, `ggnn`, plus:
+
+ * Tie-tsiann-hue 潮正會, also known as Tie-lo 潮羅 (`tlo`);
+   [(source)](http://library.hiteo.pw/book/wagpzbkv.html)
+ * Duffus system (`duffus`);
+   [(source)](https://archive.org/details/englishchinesev00duffgoog)
+ * Teochew Sinwenz (`sinwz`);
+   [(source)](http://eresources.nlb.gov.sg/newspapers/Digitised/Page/nysp19391115-1.1.22)
+ * Traditional initial-final categories (`15`) from 《彙集雅俗通十五音》 also
+   known as 《擊木知音》, based on the analysis by 徐宇航
+   「《擊木知音》音系之再研究」 (2014)
+
+Orthographic conventions for input text
+---------------------------------------
+
+ * Text must be in lower case
+ * Syllables may be written with or without tone numbers
+ * Syllables may be combined into words for legibility
+ * If syllables are combined into words, they must have tone numbers (e.g.
+   `diê5ziu1`), or use a syllable separator character if tone numbers are
+   omitted (e.g. `diê-ziu` or `pêng'im`). This is either a hyphen or single
+   apostrophe. This is because of ambiguous parsings, e.g. `pê-ngi-m` instead
+   of `pêng-im`, which in general can only be dealt with by usage frequency,
+   which is not available.
+
+
+Running the script
+------------------
+
+Python 3 is required.
+
+`parsetc` requires [`lark`](https://lark-parser.readthedocs.io/en/latest/) v0.11.3; it has not yet been updated to work with the latest `lark` release.
+
+Install with `pip` from source code (this repository):
+
+```
+pip install .
+```
+
+Install latest release with `pip` from PyPI:
+
+```
+pip install parsetc
+```
+
+See help message:
+
+```
+parsetc --help
+```
+
+Input text is read from STDIN, no line breaks.
+
+```
+# output in Tie-lo
+echo 'ua2 ain3 oh8 diê5ghe2, ain3 dan3 diê5ziu1 uê7.' | parsetc -i gdpi -o tlo
+# all available output romanizations
+echo 'ua2 ain3 oh8 diê5ghe2, ain3 dan3 diê5ziu1 uê7.' | parsetc -i gdpi --all
+```
+
+Testing with provided example text:
+
+```
+cat ./test.dieghv.txt | parsetc -i dieghv --all
+```

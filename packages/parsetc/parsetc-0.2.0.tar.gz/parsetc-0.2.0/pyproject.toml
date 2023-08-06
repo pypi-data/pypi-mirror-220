@@ -1,0 +1,41 @@
+[project]
+name = "parsetc"
+version = "0.2.0"
+description = "Parse and convert between different Teochew phonetic spelling schemes."
+authors = [
+  { name="Brandon Seah" },
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.6"
+dependencies = [
+  "lark == 0.11.3",
+  "importlib-resources",
+]
+keywords = ["Chinese", "Teochew", "romanization"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: Chinese (Traditional)",
+  "Topic :: Text Processing :: Linguistic"
+]
+
+[project.urls]
+source = "https://github.com/learn-teochew/parsetc"
+homepage = "https://learn-teochew.github.io"
+
+[project.scripts]
+parsetc = "parsetc.parsetc:main"
+
+[build-system]
+requires = ["setuptools >= 61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+parsetc = ["terminals.json"]
