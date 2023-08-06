@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: xfact
+Version: 0.4.65
+Summary: xfact
+Author: James Thorne
+Author-email: james@jamesthorne.com
+Requires-Python: >=3.8
+
+readme
