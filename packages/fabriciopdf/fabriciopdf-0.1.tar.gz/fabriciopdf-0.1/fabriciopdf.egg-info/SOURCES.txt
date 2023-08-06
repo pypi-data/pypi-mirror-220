@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fabriciopdf/__init__.py
+fabriciopdf/pdf2image.py
+fabriciopdf/pdf2text.py
+fabriciopdf.egg-info/PKG-INFO
+fabriciopdf.egg-info/SOURCES.txt
+fabriciopdf.egg-info/dependency_links.txt
+fabriciopdf.egg-info/top_level.txt
