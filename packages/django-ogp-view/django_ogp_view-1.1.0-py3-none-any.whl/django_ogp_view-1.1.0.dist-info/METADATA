@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: django-ogp-view
+Version: 1.1.0
+Summary: Open Graph Protocol for Django
+Project-URL: Homepage, https://github.com/taogya/DjangoOgpView
+Project-URL: Bug Tracker, https://github.com/taogya/DjangoOgpView/issues
+Author-email: Taogya <132679709+taogya@users.noreply.github.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023, Taogya
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# django-ogp-view
+ViewクラスにOGP (The Open Graph protocol)を適応させるライブラリです。  
+本ライブラリのViewMixinを継承させることで、ogp metaタグの実装が簡略化できます。  
+画面ごとにカスタマイズすることもできます。  
+SEO (Search Engine Optimization)対策に最適です。  
+
+## 導入
+1. ライブラリをインストールする。
+    ```sh
+    pip install django-ogp-view
+     or
+    pip install git+https://github.com/taogya/DjangoOgpView.git
+    ```
+1. settings.pyに以下を追加する。
+    ```python
+    INSTALLED_APPS = [
+        :
+        'django_ogp'
+    ]
+    OGP_SITE_PROPERTY_MODEL = 'django_ogp.OgpSiteProperty'
+    OGP_LOCALE_MASTER_MODEL = 'django_ogp.OgpLocaleMaster'
+    OGP_MIMETYPE_MASTER_MODEL = 'django_ogp.OgpMimeTypeMaster'
+    ```
+1. migrateを行う。
+    ```python
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+1. OGP用のプロパティを設定する。
+    - OgpSiteProperty  
+    サイト内共通のプロパティ。
+    - OgpBasicProperty  
+    ページごとのプロパティ。
+    - OgpCustomProperty  
+    カスタムプロパティ。  
+    JSONで指定する。  
+    JSONについて, keyはpropertyの名称, valueはcontentの値で指定する。  
+1. ViewにOgpViewMixinを継承し, 割り当てるプロパティのレコードを割り当てる。
+    ```python
+    from django.views import View
+    from django_ogp.view import OgpViewMixin
+    from django_ogp.models import OgpBasicProperty
+
+    class YourView(View, OgpViewMixin):
+        ogp = OgpBasicProperty.objects.first()
+        :
+    ```
+1. 以下のようにhtmlファイルにdjango_ogp用のタグを追加する。
+    ```html
+    {% load django_ogp %}
+    <!DOCTYPE html>
+    <html lang="en" prefix="{{ view.ogp_global_prefix }}">
+    <head prefix="{{ view.ogp_prefix }}">
+        {% add_ogp_meta %}
+        :
+    ```
+
+## Models
+![django_ogp_er_](/resources/django_ogp_er.png)
+
+## 補足
+- [マイグレーションファイル](django_ogp/migrations/0001_initial.py) にはマスターデータ自動生成スクリプトが含まれています。  
+不要なデータがありましたら, 管理者画面にて削除するか[マイグレーションファイル](django_ogp/migrations/0001_initial.py)を修正してください。
+- 以下のモデルは`swappable`なモデルです。
+    - OgpSiteProperty
+    - OgpLocaleMaster
+    - OgpMimeTypeMaster

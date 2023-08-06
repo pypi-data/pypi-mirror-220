@@ -1,0 +1,73 @@
+{% load django_ogp %}
+{% if ogp %}
+  {% comment %}===== OgpBasicProperty =================================================={% endcomment %}
+  {% if ogp.site %}
+    <meta property="og:site_name" content="{{ ogp.site.name }}" />
+  {% endif %}
+  {% if ogp.title %}
+    <meta property="og:title" content="{{ ogp.title }}" />
+  {% endif %}
+  {% if ogp.type %}
+    <meta property="og:type" content="{{ ogp.type }}" />
+  {% endif %}
+  {% if ogp.url %}
+    <meta property="og:url" content="{{ ogp.url }}" />
+  {% endif %}
+  {% if ogp.description %}
+    <meta property="og:description" content="{{ ogp.description }}" />
+  {% endif %}
+  {% if ogp.determiner %}
+    <meta property="og:determiner" content="{{ ogp.determiner.value }}" />
+  {% endif %}
+  {% comment %}===== OgpLocaleMaster =================================================={% endcomment %}
+  {% if ogp.locales.count == 1 %}
+    {% for locale in ogp.locales.all %}
+      <meta property="og:locale" content="{{ locale.name }}" />
+    {% endfor %}
+  {% else %}
+    {% for locale in ogp.locales.all %}
+      <meta property="og:locale:alternate" content="{{ locale.name }}" />
+    {% endfor %}
+  {% endif %}
+  {% comment %}===== OgpMediaProperty =================================================={% endcomment %}
+  {% for media in ogp.medias.all %}
+    {% if media.url %}
+      <meta property="og:{{ media.media_type }}" content="{{ media.url }}" />
+      <meta property="og:{{ media.media_type }}:url" content="{{ media.url }}" />
+    {% endif %}
+    {% if media.secure_url %}
+      <meta property="og:{{ media.media_type }}:secure_url" content="{{ media.secure_url }}" />
+    {% endif %}
+    {% if media.type %}
+      <meta property="og:{{ media.media_type }}:type" content="{{ media.type.name }}" />
+    {% endif %}
+    {% if media.media_type != 'audio' %}
+      {% if media.alt %}
+        <meta property="og:{{ media.media_type }}:alt" content="{{ media.alt }}" />
+      {% endif %}
+      {% if media.width %}
+        <meta property="og:{{ media.media_type }}:width" content="{{ media.width }}" />
+      {% endif %}
+      {% if media.height %}
+        <meta property="og:{{ media.media_type }}:height" content="{{ media.height }}" />
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% comment %}===== OgpCustomProperty =================================================={% endcomment %}
+{% if ogp_custom %}
+  {% if not ogp %}
+    {% if ogp_custom.site %}
+      <meta property="og:site_name" content="{{ ogp_custom.site_name }}" />
+    {% endif %}
+    {% if ogp_custom.type %}
+      <meta property="og:type" content="{{ ogp_custom.type }}" />
+    {% endif %}
+    {% if ogp_custom.url %}
+      <meta property="og:url" content="{{ ogp_custom.url }}" />
+    {% endif %}
+  {% endif %}
+  {% for key, value in ogp_custom.property.items %}
+    <meta property="og:{{ key }}" content="{{ value }}" />
+  {% endfor %}
+{% endif %}

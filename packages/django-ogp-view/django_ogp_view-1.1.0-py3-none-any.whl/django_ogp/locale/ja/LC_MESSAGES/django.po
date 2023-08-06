@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-23 02:55+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: models/masters.py:32
+msgid "locale"
+msgstr "ロケール"
+
+#: models/masters.py:40
+msgid "locale master"
+msgstr "ロケールマスタ"
+
+#: models/masters.py:41
+msgid "locale masters"
+msgstr "ロケールマスタ"
+
+#: models/masters.py:48 models/properties.py:56
+msgid "mime type"
+msgstr "MIMEタイプ"
+
+#: models/masters.py:56
+msgid "mime type master"
+msgstr "MIMEタイプマスタ"
+
+#: models/masters.py:57
+msgid "mime type masters"
+msgstr "MIMEタイプマスタ"
+
+#: models/properties.py:13
+msgid "name"
+msgstr "名称"
+
+#: models/properties.py:22
+msgid "site property"
+msgstr "サイトプロパティ"
+
+#: models/properties.py:23
+msgid "site properties"
+msgstr "サイトプロパティ"
+
+#: models/properties.py:40
+msgid "media type"
+msgstr "メディアタイプ"
+
+#: models/properties.py:44
+msgid "media url"
+msgstr "メディアURL"
+
+#: models/properties.py:48
+msgid "media secure url"
+msgstr "メディアセキュアURL"
+
+#: models/properties.py:59
+msgid "media description"
+msgstr "メディア説明"
+
+#: models/properties.py:63
+msgid "media width [px]"
+msgstr "メディア幅 [px]"
+
+#: models/properties.py:65 models/properties.py:70
+msgid "0 is not generate."
+msgstr "0の場合, 生成しない"
+
+#: models/properties.py:68
+msgid "media height [px]"
+msgstr "メディア高さ [px]"
+
+#: models/properties.py:77
+msgid "media property"
+msgstr "メディアプロパティ"
+
+#: models/properties.py:78
+msgid "media properties"
+msgstr "メディアプロパティ"
+
+#: models/properties.py:86 models/properties.py:137
+msgid "site info"
+msgstr "サイト情報"
+
+#: models/properties.py:89
+msgid "title"
+msgstr "タイトル"
+
+#: models/properties.py:93 models/properties.py:108 models/properties.py:140
+msgid "type"
+msgstr "タイプ"
+
+#: models/properties.py:97 models/properties.py:144
+msgid "site url"
+msgstr "サイトURL"
+
+#: models/properties.py:102
+msgid "description"
+msgstr "説明"
+
+#: models/properties.py:115
+msgid "locales"
+msgstr "ロケール"
+
+#: models/properties.py:120
+msgid "medias"
+msgstr "メディア"
+
+#: models/properties.py:128
+msgid "basic property"
+msgstr "ベーシックプロパティ"
+
+#: models/properties.py:129
+msgid "basic properties"
+msgstr "ベーシックプロパティ"
+
+#: models/properties.py:149
+msgid "property"
+msgstr "プロパティ"
+
+#: models/properties.py:156
+msgid "custom property"
+msgstr "カスタムプロパティ"
+
+#: models/properties.py:157
+msgid "custom properties"
+msgstr "カスタムプロパティ"
