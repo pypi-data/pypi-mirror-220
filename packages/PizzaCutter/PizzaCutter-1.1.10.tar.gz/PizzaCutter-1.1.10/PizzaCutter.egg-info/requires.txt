@@ -1,0 +1,15 @@
+click
+cli_exit_tools
+pathlib3x
+
+[test]
+coverage
+flake8
+coloredlogs
+pytest-runner
+codecov
+pytest
+readme_renderer
+pytest-cov
+black
+mypy
