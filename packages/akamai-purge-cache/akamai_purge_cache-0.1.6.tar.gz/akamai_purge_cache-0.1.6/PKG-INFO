@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: akamai-purge-cache
+Version: 0.1.6
+Summary: Marriott CDN Team Fastpurge POC script
+Author: Alan Janis
+Author-email: alan.janis@marriott.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: awslambdaric (>=2.0.4,<3.0.0)
+Requires-Dist: click (>=8.1.6,<9.0.0)
+Requires-Dist: edgegrid-python (>=1.3.1,<2.0.0)
+Requires-Dist: fastpurge (>=1.0.4,<2.0.0)
+Requires-Dist: monotonic (>=1.6,<2.0)
+Requires-Dist: more-executors (>=2.11.4,<3.0.0)
+Description-Content-Type: text/markdown
+
+
