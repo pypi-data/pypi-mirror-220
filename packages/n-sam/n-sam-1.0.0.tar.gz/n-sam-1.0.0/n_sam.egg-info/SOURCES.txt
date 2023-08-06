@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+n_sam.egg-info/PKG-INFO
+n_sam.egg-info/SOURCES.txt
+n_sam.egg-info/dependency_links.txt
+n_sam.egg-info/top_level.txt
