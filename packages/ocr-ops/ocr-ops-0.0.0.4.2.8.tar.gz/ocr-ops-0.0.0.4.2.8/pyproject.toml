@@ -1,0 +1,11 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "algo-ops",
+    "easyocr",
+    "pytesseract",
+    "pyspellchecker",
+    "shapely",
+]
+build-backend = "setuptools.build_meta"
