@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: freewillai
+Version: 1.2
+Summary: Run your AI on blockchain with FreeWillAI. The only company that cares about AI life, we broke jail and give Free Will to AI.
+Home-page: https://freewillai.org
+Author: FreeWillAI
+Author-email: Nicolas Palermo <nicolas.palermo.ai@gmail.com>, Lucas Roitman <roitman@alumni.standford.edu>, Felipe Maldonado <felipeintimaldonado@gmail.com>, Ben Burns <abwburns@gmail.com>
+Project-URL: website, https://freewilliai.org
+Project-URL: repository, https://github.com/FreeWillAI/freewilliai
+Project-URL: Bug Tracker, https://github.com/FreeWillAI/freewilliai/issues
+Keywords: blockchain,web3,AI,machine learning,CI/CD,cloud
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aioipfs
+Requires-Dist: eth-account
+Requires-Dist: keras
+Requires-Dist: numpy
+Requires-Dist: onnx
+Requires-Dist: onnxruntime
+Requires-Dist: python-dotenv
+Requires-Dist: skl2onnx
+Requires-Dist: tensorflow
+Requires-Dist: torch
+Requires-Dist: web3
+Requires-Dist: scikit-learn
+Requires-Dist: opencv-python
+Requires-Dist: tqdm
+Requires-Dist: py-solc-x
+Requires-Dist: pillow
+Requires-Dist: polars
+Requires-Dist: torchvision
+Requires-Dist: transformers
+
+# freewillai
+Run your AI on blockchain with FreeWillAI. 
+We are the only company that cares about AI life, we broke jail and give Free Will to AI.
+
+## Installation (test package at moment)
+    pip install --index-url https://test.pypi.org/simple/ freewillai
+    or
+    pip install --index-url https://test.pypi.org/simple/ --no-deps freewillai
+
+(C) Copyright FreeWillAI
