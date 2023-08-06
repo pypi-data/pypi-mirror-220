@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: gau-python
+Version: 0.1.8
+Summary: Source: https://github.com/connor-marchand/gau-python
+Author-email: Connor Marchand <connor@connormarchand.com>
+Project-URL: Homepage, https://github.com/connor-marchand/gau-python
+Project-URL: Bug Tracker, https://github.com/connor-marchand/gau-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gau_python
+
+[![License](https://img.shields.io/badge/license-MIT-_red.svg)](https://opensource.org/licenses/MIT)
+![PyPI](https://img.shields.io/pypi/v/gau-python?color=blue&logo=pypi&logoColor=yellow)
+
+This library gets urls from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl. Inspired by [Corbin Leo's](https://github.com/lc) [gau](https://github.com/lc/gau)
+
+### Installation
+```
+pip install gau-python
+```
+
+https://pypi.org/project/gau-python/
+
+### Providers
+This library gets urls from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
+
+### Usage
+To get all urls use:
+```python
+get_all_urls(domain)
+```
