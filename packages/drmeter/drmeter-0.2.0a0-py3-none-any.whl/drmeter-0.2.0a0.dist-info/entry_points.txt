@@ -1,0 +1,3 @@
+[console_scripts]
+drmeter=drmeter.cli:main
+
