@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+InvoiceExtractor.egg-info/PKG-INFO
+InvoiceExtractor.egg-info/SOURCES.txt
+InvoiceExtractor.egg-info/dependency_links.txt
+InvoiceExtractor.egg-info/entry_points.txt
+InvoiceExtractor.egg-info/requires.txt
+InvoiceExtractor.egg-info/top_level.txt
+invoice_extractor/__init__.py
+invoice_extractor/extract.py
+invoice_extractor/main.py
