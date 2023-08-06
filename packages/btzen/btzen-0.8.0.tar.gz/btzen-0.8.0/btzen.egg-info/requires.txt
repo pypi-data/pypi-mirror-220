@@ -1,0 +1,4 @@
+
+[tests]
+mypy==1.4.1
+pytest-cov
