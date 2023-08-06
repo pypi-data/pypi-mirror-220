@@ -1,0 +1,13 @@
+lib_platform
+
+[test]
+readme_renderer
+mypy
+pytest-runner
+black
+flake8
+coloredlogs
+coverage
+pytest
+pytest-cov
+codecov
