@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "py2-package-finder"
+version = "v1.0.0"
+description = "A simple tool to help you find versions of packages that are compatible with Python 2."
+authors = ["Adam McKay <adam@beepboop.digital>"]
+readme = "README.md"
+packages = [
+    {include = "py2_package_finder", from = "src"},
+]
+repository = "https://github.com/Beep-Boop-Digital/Python-2-Package-Finder"
+
+[tool.poetry.scripts]
+py2-package-finder = "py2_package_finder.__main__:app"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+requests = "^2.31.0"
+typer = "^0.9.0"
+rich = "^13.4.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["setuptools", "poetry_core>=1.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.coverage.run]
+source = ['src']
+
+[tool.isort]
+profile = "black"

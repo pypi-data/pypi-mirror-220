@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: py2-package-finder
+Version: 1.0.0
+Summary: A simple tool to help you find versions of packages that are compatible with Python 2.
+Home-page: https://github.com/Beep-Boop-Digital/Python-2-Package-Finder
+Author: Adam McKay
+Author-email: adam@beepboop.digital
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Project-URL: Repository, https://github.com/Beep-Boop-Digital/Python-2-Package-Finder
+Description-Content-Type: text/markdown
+
+# Python 2 Package Finder
+
+If you're unlucky enough to still work on a legacy Python 2 codebase you may have to add new packages to your project, however all maintained packages have dropped support for Python 2 years ago. This tool will automatically find the last version of a package that was flagged as supporting a specific version of Python.
+
+## Install
+
+The recommended way to install is to use `pipx`:
+
+```pipx install py2-package-finder```
+
+## Usage
+
+```py2-package-finder [PACKAGE_NAME]```
+
+You can specify a different Python version using
+
+```py2-package-finder --python 3.4 [PACKAGE_NAME]```
+
