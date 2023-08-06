@@ -1,0 +1,10 @@
+gptfunctionutil/__init__.py,sha256=t8Hfi_zn9UNSdYm8oEhjielZyKnIgA9Rr-iWBJbEX5w,1061
+gptfunctionutil/converter.py,sha256=dR3pEtkgYkY0gHWCZhh3zrKh6wXmdJkiHdzdHA5MpD8,10001
+gptfunctionutil/errors.py,sha256=ckrAeWNXRENzMEWjAPYqmXQMNu9RPhnKKpqhIqbqpDY,2079
+gptfunctionutil/functionlib.py,sha256=Bg5DhNLGBEjI7mLRxtyXJc782GpLwd2CgLtQ7LlsBAM,16870
+gptfunctionutil/functionlib_discord.py,sha256=RFcVHoueG74L2tToJbKPW5FXePGFjAqRPKdmtYCOfes,13176
+gptfunctionutil-0.2.1.dist-info/LICENSE,sha256=lDjSFlESjPjufsL2OfQQVKN7gvY9EcKLVnCW-nP4Asg,1071
+gptfunctionutil-0.2.1.dist-info/METADATA,sha256=uNrf_60ax8h8hBKAXANPkPiolIxr8MPHEh6MH89XW8A,7366
+gptfunctionutil-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gptfunctionutil-0.2.1.dist-info/top_level.txt,sha256=WiUwLWIENbFIOfypKyZB7nA_PtMKNrGLjm-NJJKNxQg,16
+gptfunctionutil-0.2.1.dist-info/RECORD,,
