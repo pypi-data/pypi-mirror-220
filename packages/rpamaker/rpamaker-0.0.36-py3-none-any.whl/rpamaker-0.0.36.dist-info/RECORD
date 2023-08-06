@@ -1,0 +1,10 @@
+rpamaker/RPA.py,sha256=lYXv6CZVyr1buwTxwDMmVzci9pJIDPN92G5hX6Dvto0,156
+rpamaker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rpamaker/listener.py,sha256=e-ILmJeubBjutA9R_tI7clD8HD68FY8-iRp19zXgCmc,4051
+rpamaker/orquestador.py,sha256=mNZZtb2_1U2J1jsEajCzk1Ik6HPlmL8tkNuviosEYvo,6496
+rpamaker/utils.py,sha256=CiYNnolI6Ldh6n3KEtpduSycfPhNAcd_fZbuACNszq8,5764
+rpamaker/workspace_api.py,sha256=p6ApKSmvnsMgZYHvC_57r7COgX7T2g6f0J3QUnfyddY,5136
+rpamaker-0.0.36.dist-info/METADATA,sha256=UjmkmsTfFqeNSJWczwV8yDAI1BHbaDm0A6ny8so-pNc,634
+rpamaker-0.0.36.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+rpamaker-0.0.36.dist-info/top_level.txt,sha256=cdbKMdVsS4mi-hoxOalnMZumiQC96brtmAV4BvK5RpU,9
+rpamaker-0.0.36.dist-info/RECORD,,
