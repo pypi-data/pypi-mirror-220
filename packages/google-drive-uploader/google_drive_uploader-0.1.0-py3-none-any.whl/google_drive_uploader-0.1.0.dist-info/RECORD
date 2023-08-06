@@ -1,0 +1,7 @@
+main.py,sha256=01tbTpkmf6rH2VX4POWf0LqmUfn5WjSYl3WnAvGIJbk,321
+src/upload.py,sha256=gKPlB69y5JRAbNrSKB-KyexhKIO2en0eySifJIk4Cjo,3185
+src/utils/get_creds.py,sha256=LXMPofgeEU1Qj7BxuZZv2DCpZ-3nV8G_61x5y0V7rd4,1039
+src/utils/get_service.py,sha256=NnFR-GP8AcIBrkH05xbLxtVvrNRc3SfrDhgrcuBp-3o,380
+google_drive_uploader-0.1.0.dist-info/METADATA,sha256=DJuVl7A2rcNdt0qzbasjiLjOwFZkaIOxPqKdDG2NPm4,1938
+google_drive_uploader-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+google_drive_uploader-0.1.0.dist-info/RECORD,,
