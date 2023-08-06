@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/dfu/__init__.py
+src/dfu/dfu_cc_pb2.py
+src/nrf_pk/__init__.py
+src/nrf_pk/__main__.py
+src/nrf_pk/find_pk.py
+src/nrf_pk.egg-info/PKG-INFO
+src/nrf_pk.egg-info/SOURCES.txt
+src/nrf_pk.egg-info/dependency_links.txt
+src/nrf_pk.egg-info/entry_points.txt
+src/nrf_pk.egg-info/requires.txt
+src/nrf_pk.egg-info/top_level.txt

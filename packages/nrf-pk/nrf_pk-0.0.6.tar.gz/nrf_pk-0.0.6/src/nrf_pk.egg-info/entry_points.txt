@@ -1,0 +1,2 @@
+[console_scripts]
+nrf-find-pk = nrf_pk.find_pk:find_pk
