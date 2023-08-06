@@ -1,0 +1,6 @@
+README.md
+setup.py
+kubitdb.egg-info/PKG-INFO
+kubitdb.egg-info/SOURCES.txt
+kubitdb.egg-info/dependency_links.txt
+kubitdb.egg-info/top_level.txt
