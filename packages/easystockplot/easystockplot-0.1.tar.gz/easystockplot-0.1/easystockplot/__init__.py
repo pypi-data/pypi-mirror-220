@@ -1,0 +1,1 @@
+from easystockplot.stockplot import StockPlot
