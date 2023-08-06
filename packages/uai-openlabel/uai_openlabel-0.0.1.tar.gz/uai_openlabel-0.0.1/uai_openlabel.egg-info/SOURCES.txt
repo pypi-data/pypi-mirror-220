@@ -1,0 +1,6 @@
+pyproject.toml
+uai_openlabel/__init__.py
+uai_openlabel.egg-info/PKG-INFO
+uai_openlabel.egg-info/SOURCES.txt
+uai_openlabel.egg-info/dependency_links.txt
+uai_openlabel.egg-info/top_level.txt

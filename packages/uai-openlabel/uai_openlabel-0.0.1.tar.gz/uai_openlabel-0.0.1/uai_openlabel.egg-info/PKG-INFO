@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: uai-openlabel
+Version: 0.0.1
+Summary: a package
+Author-email: Coffeechili <coffee@chi.li>
+Requires-Python: >=3.8
