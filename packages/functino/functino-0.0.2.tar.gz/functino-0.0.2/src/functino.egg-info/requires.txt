@@ -1,0 +1,8 @@
+PyQt6
+PyQt6-QScintilla
+
+[dev]
+black
+docformatter
+flake8
+pre-commit
