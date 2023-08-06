@@ -1,0 +1,6 @@
+h5py
+scipy
+hdf5plugin
+
+[:platform_system != "Darwin" and platform_machine != "arm64"]
+pyfftw
