@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+start_selenium_webdriver/__init__.py
+start_selenium_webdriver/webdriver_startup.py
+start_selenium_webdriver.egg-info/PKG-INFO
+start_selenium_webdriver.egg-info/SOURCES.txt
+start_selenium_webdriver.egg-info/dependency_links.txt
+start_selenium_webdriver.egg-info/requires.txt
+start_selenium_webdriver.egg-info/top_level.txt
