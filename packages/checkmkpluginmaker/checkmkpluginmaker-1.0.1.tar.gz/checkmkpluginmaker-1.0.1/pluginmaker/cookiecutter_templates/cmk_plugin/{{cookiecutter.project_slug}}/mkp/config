@@ -1,0 +1,28 @@
+{
+    'author': '{{cookiecutter.author_name}} <{{cookiecutter.email}}>',
+    'description': '{{cookiecutter.mkp_description}}',
+    'download_url': '{{cookiecutter.mkp_download_url}}',
+    'files': {
+        'agent_based': ['service_{{cookiecutter.agent_id}}.py'],
+        'agents': ['special/agent_{{cookiecutter.agent_id}}'],
+        'alert_handlers': [],
+        'bin': [],
+        'checkman': [],
+        'checks': ['agent_{{cookiecutter.agent_id}}'],
+        'doc': [],
+        'gui': [],
+        'inventory': [],
+        'lib': [],
+        'locales': [],
+        'mibs': [],
+        'notifications': [],
+        'pnp-templates': [],
+        'web': ['plugins/wato/{{cookiecutter.agent_id}}_register.py']
+    },
+    'name': '{{cookiecutter.agent_id}}',
+    'title': '{{cookiecutter.mkp_title}}',
+    'version': '{{cookiecutter.mkp_version}}',
+    'version.min_required': '{{cookiecutter.mkp_version_min_required}}',
+    'version.packaged': '{{cookiecutter.mkp_version_packaged}}',
+    'version.usable_until': '{{cookiecutter.mkp_version_usable_until}}'
+}

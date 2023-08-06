@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "checkmkpluginmaker"
+version = "1.0.1"
+description = ""
+authors = ["NhanDD3 <nhandd3@fpt.com>"]
+readme = "README.md"
+packages = [{include = "pluginmaker"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "^3.2.2"
+pylint = {extras = ["spelling"], version = "^2.17.2"}
+pytest = "^7.3.1"
+pytest-asyncio = "^0.21.0"
+bump2version = "^1.0.1"
+mkdocs = "^1.4.2"
+mkdocstrings = "^0.21.2"
+mkdocs-material = "^9.1.6"
+mkdocs-autorefs = "^0.4.1"
+mkdocs-monorepo-plugin = "^1.0.4"
+mkdocs-glightbox = "^0.3.2"
+psutil = "^5.9.4"
+cookiecutter = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+welcome = "pluginmaker:welcome"
+create-cmk-plugin = "pluginmaker:create_cmk_plugin"
+
+
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+target-version = ['py37', 'py38', 'py39', 'py310']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]

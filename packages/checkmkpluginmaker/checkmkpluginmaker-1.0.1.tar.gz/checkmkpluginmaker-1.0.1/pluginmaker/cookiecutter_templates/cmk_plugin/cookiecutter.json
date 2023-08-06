@@ -1,0 +1,23 @@
+{
+    "project_name": "Name of the project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "project_short_description": "A short description of the project",
+    "author_name": "NhanDD3",
+    "email": "hp.duongducnhan@gmail.com",
+
+    "agent_id": "allowed a-z | A-Z | _ and 8 <= length <=30",
+    "service_name": "Your service name",
+    "wato_title": "Your wato title",
+    "wato_description": "Plugin Description displayed on UI",
+
+    "cmk_dev_site": "mysite",
+    "cmk_dev_hostname": "ABC",
+
+    "mkp_title": "CheckMK Package Title",
+    "mkp_description": "",
+    "mkp_download_url": "http://example.com/",
+    "mkp_version": "1.0.0",
+    "mkp_version_min_required": "2.1.0p27",
+    "mkp_version_packaged": "2.1.0p27",
+    "mkp_version_usable_until": "2.2.999"
+}
