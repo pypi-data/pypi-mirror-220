@@ -1,0 +1,3 @@
+[console_scripts]
+terminal2048=terminal2048.term_2048:main
+
