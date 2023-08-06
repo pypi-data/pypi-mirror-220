@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: PharmaPy
+Version: 0.0.1
+Summary: A package utilizing Named-Entity Recognition (NER) model to identify prescription drugs present in a provided text sample
+Author-email: Ronoy Sarkar <ronoysarkar.mail@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: torch
+Requires-Dist: transformers
+Description-Content-Type: text/markdown
+
+# PharmaPy
+
+This is a python package that provides functionality for a Named-Entity Recognition (NER) model 
+to identify names of pharmaceutical drugs within a text sample.
+
+
+## Installation
+
+The package can be installed from the command line with the following command
+
+> pip install drug-list-ner
+
+## Sample Usage
+
+`from pharmapy import request`
+`sampletext = "After surgery, David was given oxycodone for pain, prednisone to reduce inflammation, and benazepril for blood pressure control."`
+`request.get(sampletext)`
+
+
