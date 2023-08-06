@@ -1,0 +1,13 @@
+contactapi/__init__.py,sha256=mAgTUX9y0tYNAA0L1TYhrf22nlF-WGCdbY02-7QW6v4,21
+contactapi/__main__.py,sha256=VXuXqtwn8jVNLXBKxVnbk44UG65y6jHHaW0aZeVP_SU,162
+contactapi/config.py,sha256=SRNQsFnEvKhqUZZ0vmxK3xJeuthjpa8_XwlbpZAdumE,776
+contactapi/crud.py,sha256=d6PUfswccJ-mYpMFYmWhXoLKeA32hfeCHTGR2MX4vtI,941
+contactapi/main.py,sha256=PAjib3RHj5EbJy41JYeOcN3dbSnT6dPk3oYOW4SBgjM,226
+contactapi/models.py,sha256=hrGeSb3ER5yn2T_byDoK2Fm3UnOvI-G4_p7k1vQ7wsw,238
+contactapi/router.py,sha256=yznzi0X6HTsfewrgPwaG7qrR36Q1kP20TJq41Kbp078,1355
+contactapi/schemas.py,sha256=LzZWK7wNJzBqL35pETLxf_-TMslhBzNanYVvqq9CODo,323
+contactapi-0.0.20.dist-info/METADATA,sha256=PjeZigoNfG_jp8VgOHXwsY5AFhYIBSV0rfIz2WQ2j4w,965
+contactapi-0.0.20.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+contactapi-0.0.20.dist-info/entry_points.txt,sha256=pBQQXoh9qQbOGR1Cr1qnpPThPDSUcvDHUE3NONqq3Yk,55
+contactapi-0.0.20.dist-info/top_level.txt,sha256=8M4pMWgmez0_bf5Hr3VJ-43imxe0YYB4MC4IlVj_i3Y,11
+contactapi-0.0.20.dist-info/RECORD,,
