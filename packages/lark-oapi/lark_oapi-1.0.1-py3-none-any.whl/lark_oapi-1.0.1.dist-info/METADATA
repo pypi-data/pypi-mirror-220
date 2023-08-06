@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lark-oapi
+Version: 1.0.1
+Summary: Lark OpenAPI SDK for Python
+Home-page: https://github.com/larksuite/oapi-sdk-python
+Author: Wenbo Mao
+Author-email: maowenbo@bytedance.com
+Keywords: Lark,OpenAPI
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+
