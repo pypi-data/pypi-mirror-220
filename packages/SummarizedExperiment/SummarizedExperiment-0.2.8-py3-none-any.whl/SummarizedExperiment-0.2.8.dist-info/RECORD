@@ -1,0 +1,16 @@
+summarizedexperiment/BaseSE.py,sha256=QXqsiOlOnP_pDs-8--C77fm5v_H5QaKflQiI4RQsyjY,17750
+summarizedexperiment/RangeSummarizedExperiment.py,sha256=bgkwBN0B8Qfm-CkROYjeCbFx5NsfEjr9Bz1TpT49RHc,22285
+summarizedexperiment/RangedSummarizedExperiment.py,sha256=LzDV-i-oQP4kF-GbhnG1k91BZ54L-4JC1Gu78UotSW0,358
+summarizedexperiment/SummarizedExperiment.py,sha256=0pL801h7LGQGvCFVZbKAGjNqHMnv8xaPql7gLRHRKIc,2735
+summarizedexperiment/__init__.py,sha256=3JO7DepvJm7qsBR3A27yB2ExWLVCAlWVhahlbxrl6ss,828
+summarizedexperiment/_slicer_utils.py,sha256=xXxkxZBlYWy7SjJQtBdNyd8wv2dQY9XqJKcuUnYuA2c,1687
+summarizedexperiment/_type_checks.py,sha256=DyLICiAzv0rC7qGo7NYsFFY-aKVHnNy7cfOS28dUTco,2068
+summarizedexperiment/_types.py,sha256=L2rxVlNj4L9AStHLhWzCxafF8SZM-BHjXhWscViYJms,627
+summarizedexperiment/dispatchers/__init__.py,sha256=c_jwaiOWvGZL38OSdL3LG0I9TkkQxdSPaeHqlNTUiiQ,97
+summarizedexperiment/dispatchers/colnames.py,sha256=kIaFv4ggRAymt5aWfxz_1gUOX_XhklsZ1A68e3MOxD0,1433
+summarizedexperiment/dispatchers/rownames.py,sha256=_sSDAPHVBvnpjhWj5yJcZ1cP0OLFRYsnloyCOQTnNI8,1427
+SummarizedExperiment-0.2.8.dist-info/LICENSE.txt,sha256=pkwgQ8WMTR1-Qa0qwIaBf5I1-8OGN1B20E_eeDg-bqc,1082
+SummarizedExperiment-0.2.8.dist-info/METADATA,sha256=ISHe9xPguvp1hhrT_DQfDXKg5E0wXos5R-yMtD9DNlM,2844
+SummarizedExperiment-0.2.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+SummarizedExperiment-0.2.8.dist-info/top_level.txt,sha256=B2YgdKBS0dzi3xJ-PivIeXaVQVvoxx3Rs5GQilRferc,21
+SummarizedExperiment-0.2.8.dist-info/RECORD,,
