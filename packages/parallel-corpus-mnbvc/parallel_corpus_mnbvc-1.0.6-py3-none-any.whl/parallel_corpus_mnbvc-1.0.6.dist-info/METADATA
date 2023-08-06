@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: parallel-corpus-mnbvc
+Version: 1.0.6
+Summary: parallel corpus dataset from the pypi repository of the mnbvc project
+Home-page: https://github.com/liyongsea/parallel_corpus_mnbvc
+Author: ranWang
+Author-email: redamancy0326@gmail.com
+License-File: LICENSE
+Requires-Dist: datasets (==2.10)
+Requires-Dist: transformers (==4.20.0)
+Requires-Dist: sentencepiece
+Requires-Dist: lxml
+Requires-Dist: wandb
+Requires-Dist: scikit-learn
+Requires-Dist: pylcs
+Requires-Dist: tiktoken
+
