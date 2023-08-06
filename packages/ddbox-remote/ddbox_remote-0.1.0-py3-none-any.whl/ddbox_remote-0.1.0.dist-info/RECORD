@@ -1,0 +1,11 @@
+ddbox_remote/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddbox_remote/configs.py,sha256=CHLCfCI95EnOhh4-JxwiHPc0jdZeqBRdmqnLR8RRwHs,73
+ddbox_remote/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddbox_remote/data/torch.py,sha256=FoWMosNc1VkrKOUhSXCC8zaVrk3im9cxPXTrDqZdo54,1702
+ddbox_remote/data/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddbox_remote/data/utils/loaders.py,sha256=RIDOVvHE1BCmuK5yLWenysnLir4OT5UqbaTEh5YgXeM,4490
+ddbox_remote/submissions.py,sha256=wT_u1yBHmfSCnhqCGSeTkAFvnQ4bKlQwiVLBKVNH50c,3217
+ddbox_remote/utils.py,sha256=ZmKYNIqNFd-UOjYoGwX6xWZrWZxQ4TKK6qx2afguYE0,1265
+ddbox_remote-0.1.0.dist-info/METADATA,sha256=RDGjeapOkX-AhIhBERe-XUKXlM9ZXRHrBPUXGdQHvqg,581
+ddbox_remote-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+ddbox_remote-0.1.0.dist-info/RECORD,,
