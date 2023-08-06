@@ -1,0 +1,4 @@
+[console_scripts]
+create-cmk-plugin=pluginmaker:create_cmk_plugin
+welcome=pluginmaker:welcome
+
