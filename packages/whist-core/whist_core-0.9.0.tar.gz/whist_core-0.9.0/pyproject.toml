@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "whist-core"
+# remember to also update the version in __init__.py!
+version = "0.9.0"
+description = "Whist rules implementation"
+authors = ["Whist-Team"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Whist-Team/Whist-Core"
+repository = "https://github.com/Whist-Team/Whist-Core"
+documentation = "https://whist-core.readthedocs.io"
+keywords = ["game", "whist"]
+classifiers = [
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Whist-Team/Whist-Core/issues"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = ">=1.10,<3.0"
+deprecation = "^2.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4"
+pytest-cov = "^4.1"
+pytest-asyncio = "^0.21"
+flake8 = "^6.0"
+flake8-docstrings = "^1.7"
+pylint = "^2.17"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
