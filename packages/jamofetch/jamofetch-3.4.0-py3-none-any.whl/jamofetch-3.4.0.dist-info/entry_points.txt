@@ -1,0 +1,3 @@
+[console_scripts]
+jamofetch=jamofetch.jamofetch:cli
+
