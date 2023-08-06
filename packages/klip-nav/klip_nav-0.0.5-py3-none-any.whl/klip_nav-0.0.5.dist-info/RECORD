@@ -1,0 +1,9 @@
+klip_nav/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klip_nav/main.py,sha256=zhBN8bGvEjVGgZqZ3ye9vfub_RGkVA2ZMKz3AAY3fiA,432
+klip_nav/tui.py,sha256=SFmfNGDezhcVVhqZuzEQx-djQqL4Y9harsCVCZPap1k,5128
+klip_nav/utils.py,sha256=cJstgvV1VUkIjufgVBB3tFjZoyw0mRWn-E-rJnlg2-w,1674
+klip_nav-0.0.5.dist-info/METADATA,sha256=faXNrP06Y5tDhfk8R2DfcfXDyNdzWYam_SNiS4I-oss,1668
+klip_nav-0.0.5.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+klip_nav-0.0.5.dist-info/entry_points.txt,sha256=fJ2YFL281aGLs6a3edLIv7EZXgDH9RltWZPA5A4_O8M,48
+klip_nav-0.0.5.dist-info/licenses/LICENCE,sha256=7-q5OqivFAPXQRO5FGwkxHgeY8i3cp91sDKUoO9yJrQ,1071
+klip_nav-0.0.5.dist-info/RECORD,,

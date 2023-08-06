@@ -1,0 +1,2 @@
+[console_scripts]
+klip_nav = klip_nav.main:main

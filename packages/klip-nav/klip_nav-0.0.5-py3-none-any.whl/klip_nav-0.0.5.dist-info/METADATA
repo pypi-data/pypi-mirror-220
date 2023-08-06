@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: klip_nav
+Version: 0.0.5
+Summary: Python TUI for navigating kindle clippings
+Project-URL: Homepage, https://github.com/skogsgren/klip-nav
+Project-URL: Bug Tracker, https://github.com/skogsgren/klip-nav/issues
+Author-email: skogsgren <6107181+skogsgren@users.noreply.github.com>
+License-File: LICENCE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: clipboard~=0.0.4
+Requires-Dist: urwid~=2.1.2
+Provides-Extra: test
+Requires-Dist: coverage[toml]~=7.1; extra == 'test'
+Requires-Dist: pytest-cov~=4.0; extra == 'test'
+Requires-Dist: pytest~=7.2; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Kindle cLIPpings NAVigator
+
+![build status](https://github.com/skogsgren/klip_nav/workflows/Run%20tests/badge.svg)
+
+![](https://raw.githubusercontent.com/skogsgren/klip_nav/main/img/screenshot1.png)
+
+Opinionated TUI Python program to explore Kindle clippings on a book-to-book
+basis.
+
+It was written to encompass my workflow where I need easy access to
+copy-to-clipboard for note/highlight contents (useful for making flashcards).
+
+![](https://raw.githubusercontent.com/skogsgren/klip_nav/main/img/screenshot2.png)
+
+## Installation
+
+```
+pip install klip_nav
+```
+
+or if on a distro without global `pip` (like Debian Bookworm) use a helper
+like `pipx`:
+
+```
+pipx install klip_nav
+```
+
+## Usage
+
+```
+klip_nav CLIPPINGS_FILE
+```
+
+## Keybindings
+
+Vim keybindings (`hjkl`/`u`/`d`) or arrow keys if using keyboard, `Enter` to
+select, `q` to quit. The mouse can also be used to scroll and click through
+entries.
