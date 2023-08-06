@@ -1,0 +1,9 @@
+datasets
+numpy
+pytorch_metric_learning
+PyYAML
+tensorboardX
+torch>=1.7
+torchvision
+tqdm
+transformers
