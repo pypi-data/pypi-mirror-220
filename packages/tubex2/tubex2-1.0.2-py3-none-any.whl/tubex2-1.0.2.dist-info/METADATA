@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: tubex2
+Version: 1.0.2
+Summary: Quick and easy-to-use package that allows downloading videos from YouTube both synchronously and asynchronously
+Project-URL: Homepage, https://github.com/Alsond5/tubex2
+Author: Alson5
+License-Expression: Unlicense
+License-File: LICENSE
+Keywords: async,download,youtube
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: httpx[http2]
+Description-Content-Type: text/markdown
+
+# tubex2
+
+tubex2 is a Python library for download video from YouTube.
+
+## Features
+asynchronous video download
+
+set the number of chunks
+
+faster than other video download packages
+
+get video url
+
+many new features are under development
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install tubex2.
+
+```bash
+py -m pip install tubex2
+```
+
+## Usage
+
+```python
+from tubex2 import YouTube
+import asyncio
+
+async def get_video():
+     url = "youtube-video-url"
+
+     #create YouTube object
+     yt = YouTube(url)
+
+     #get stream
+     stream = yt.streams.all().first()
+
+     #download video
+     await stream.download(num_chunks=10)
+
+asyncio.run(get_video())
+```
