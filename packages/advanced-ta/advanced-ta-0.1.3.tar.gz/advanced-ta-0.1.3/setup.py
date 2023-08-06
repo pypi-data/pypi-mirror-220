@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['advanced_ta', 'advanced_ta.LorentzianClassification']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['TA-Lib>=0.4.24,<0.5.0',
+ 'mplfinance>=0.12.9-beta.7,<0.13.0',
+ 'numpy>=1.25.1,<2.0.0',
+ 'pandas>=2.0.3,<3.0.0',
+ 'python-dotenv>=1.0.0,<2.0.0',
+ 'scikit-learn>=1.3.0,<2.0.0']
+
+setup_kwargs = {
+    'name': 'advanced-ta',
+    'version': '0.1.3',
+    'description': 'Python implementation of Lorentzian Classification algorithm.',
+    'long_description': 'This module is a python implementation of Lorentzian Classification algorithm developed by @jdehorty in pinescript. The original work can be found here - https://www.tradingview.com/script/WhBzgfDu-Machine-Learning-Lorentzian-Classification/\n\n## Prerequisites\n> Ensure that [TA-Lib](https://ta-lib.org/hdr_dw.html) is downloaded and built for your platform. Set `TA_INCLUDE_PATH` and `TA_LIBRARY_PATH` as mentioned in [ta-lib-python](https://github.com/TA-Lib/ta-lib-python#installation). TA-Lib package itself will be installed as a dependency of `advanced-ta`.\n\n## Usage\n\nAt the most simplest, you can just do this:\n```python\nfrom advanced_ta import LorentzianClassification\n.\n.\n    # df here is the dataframe containing stock data as [[\'open\', \'high\', \'low\', \'close\', \'volume\']]. Notice that the column names are in lower case.\n    lc = LorentzianClassification(df)\n    lc.dump(\'output/result.csv\')\n    lc.plot(\'output/result.jpg\')\n.\n.\n```\n\nFor advanced use, you can do:\n```python\nfrom advanced_ta import LorentzianClassification\nimport TA-Lib as ta\n.\n.\n    # df here is the dataframe containing stock data as [[\'open\', \'high\', \'low\', \'close\', \'volume\']]. Notice that the column names are in lower case.\n    lc = LorentzianClassification(\n        df,\n        features=[\n            LorentzianClassification.Feature("RSI", 14, 2),  # f1\n            LorentzianClassification.Feature("WT", 10, 11),  # f2\n            LorentzianClassification.Feature("CCI", 20, 2),  # f3\n            LorentzianClassification.Feature("ADX", 20, 2),  # f4\n            LorentzianClassification.Feature("RSI", 9, 2),   # f5\n            ta.MFI(df[\'open\'], df[\'high\'], df[\'low\'], df[\'close\'], df[\'volume\']) #f6\n        ],\n        settings=LorentzianClassification.Settings(\n            source=\'close\',\n            neighborsCount=8,\n            maxBarsBack=2000,\n            useDynamicExits=False\n        ),\n        filterSettings=LorentzianClassification.FilterSettings(\n            useVolatilityFilter=True,\n            useRegimeFilter=True,\n            useAdxFilter=False,\n            regimeThreshold=-0.1,\n            adxThreshold=20,\n            kernelFilter = LorentzianClassification.KernelFilter(\n                useKernelSmoothing = False\n                lookbackWindow = 8\n                relativeWeight = 8.0\n                regressionLevel = 25\n                crossoverLag = 2\n            )\n        ))\n    lc.dump(\'output/result.csv\')\n    lc.plot(\'output/result.jpg\')\n.\n.\n```',
+    'author': 'Loki Arya',
+    'author_email': 'loki.arya+osdev@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://bitbucket.org/lokiarya/advanced-ta',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.10,<4.0',
+}
+
+
+setup(**setup_kwargs)
