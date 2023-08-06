@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: plink-pipelines
+Version: 0.1.7a0
+Summary: 
+Author: Arnor Sigurdsson
+Author-email: arnor-sigurdsson@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aislib (>=0.1.6-alpha.0,<0.2.0)
+Requires-Dist: bed-reader (>=0.2.24,<0.3.0)
+Requires-Dist: deeplake (>=3.0.13,<4.0.0)
+Requires-Dist: luigi (>=3.0.3,<4.0.0)
+Requires-Dist: numpy (==1.23.5)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: py (>=1.10.0,<2.0.0)
