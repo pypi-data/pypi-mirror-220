@@ -1,0 +1,16 @@
+{
+  myNotifications: whoAmI {
+    person {
+      notifications {
+        id
+        title
+        description
+        link
+        icon
+        created
+        sender
+        read
+      }
+    }
+  }
+}
