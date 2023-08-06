@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: seqdatasets
+Version: 0.1.2
+Summary: Datasets for benchmarking, testing and developing in EUGENe
+Author: adamklie
+Author-email: aklie@ucsd.edu
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: seqdata (>=0.1.1,<0.2.0)
+Requires-Dist: wget (==3.2)
+Description-Content-Type: text/markdown
+
+# SeqDatasets
+
