@@ -1,0 +1,16 @@
+aiopypiserver/__init__.py,sha256=sJBBhTNCzEeme24CJDk50ujeu0PFYLZy9ljqS6OncHM,109
+aiopypiserver/__main__.py,sha256=1O_LUd7o3fKuHcRQw4q84RJDRGEUsyz5V_FC1N_6r4A,112
+aiopypiserver/webserver.py,sha256=OLB_QXfWkCB14a-RLCcMZZapmbtdqc5dR4ZW9dIx-eM,10554
+aiopypiserver/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiopypiserver/assets/grids-responsive-min.css,sha256=6YCxnKHnbrEl6JRkP6Q1A7lmkz0hhN-LfVfeMsKatEE,14282
+aiopypiserver/assets/index.html,sha256=694q65FnFJRGm8esAsr1KtSoFfU_G9tkEDYuTJyxChU,2311
+aiopypiserver/assets/list.html,sha256=QQACCSeYckYcZTpeHhgBKak98seArZ8k3MJ0Xhv_I5c,169
+aiopypiserver/assets/pure-min.css,sha256=AXV9_14XTNljCQp7u3n02VIiYAICq8ocXkc11rvMlSw,15721
+aiopypiserver/assets/styles.css,sha256=P-uQmb8kWkeKH0nuHXNqVA7vCdsGnAnmOBe-i3ih0Bs,2192
+aiopypiserver/assets/__pycache__/__init__.cpython-311.pyc,sha256=DEeokO-MaR6dPVJpkO-4YX_vMVteZeYhLLE8t5NOxYs,197
+aiopypiserver-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aiopypiserver-0.0.5.dist-info/METADATA,sha256=EwAhJ43k4KC9EQQ7EawVypfYJZH5oxPTVXSbZH2iHGo,2502
+aiopypiserver-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aiopypiserver-0.0.5.dist-info/entry_points.txt,sha256=UBisf5JsPejMfTFgRqF8xG_9b6HrRcL1Wwf1062eIzs,64
+aiopypiserver-0.0.5.dist-info/top_level.txt,sha256=XVrZNLnwMvzbPjdKBiuJIQ--Raj-MiMjZIWFbVjhOBM,14
+aiopypiserver-0.0.5.dist-info/RECORD,,
