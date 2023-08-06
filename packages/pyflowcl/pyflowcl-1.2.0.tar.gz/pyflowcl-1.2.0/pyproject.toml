@@ -1,0 +1,93 @@
+[tool.poetry]
+name = "pyflowcl"
+version = "1.2.0"
+description = "Cliente para comunicacion con flowAPI-3 de flow.cl"
+authors = [
+    "Mario Hernandez <yo@mariofix.com>"
+]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/mariofix/pyflowcl"
+documentation = "https://mariofix.github.io/pyflowcl/"
+homepage = "https://www.flow.cl/docs/api.html"
+keywords = [
+    "plataforma de pagos",
+    "pagos",
+    "pagar",
+    "cobrar",
+    "ecommerce",
+    "tarjetas",
+    "credito",
+    "debito",
+    "redcompra",
+    "webpay",
+    "visa",
+    "mastercard",
+    "transbank",
+]
+classifiers=[
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+packages = [
+    {include = "pyflowcl"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.8.5"
+certifi = "*"
+requests = "2.31.0"
+openapi3 = "1.8.1"
+python-fsutil = "0.10.0"
+python-slugify = "8.0.1"
+pyyaml = "6.0.1"
+typer = {extras = ["all"], version = "^0.9.0"}
+
+[tool.poetry.scripts]
+flow-cli = "pyflowcl.cli:app"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+coverage = "^7.2.7"
+black = "^23.7.0"
+mkdocs = {version = "^1.4.3", extras = ["i18n"]}
+mkdocs-material = "^9.1.19"
+mkdocstrings = {version = "^0.22.0", extras = ["python"]}
+mkdocs-git-authors-plugin = "^0.7.2"
+pre-commit = "^3.3.3"
+mkdocs-markdownextradata-plugin = "^0.2.5"
+mdx-include = "^1.4.2"
+pillow = "^10.0.0"
+cairosvg = "^2.7.0"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra"
+testpaths = [
+    "tests",
+]
+python_files =[
+    "test*.py"
+]
+
+[tool.black]
+line-length = 119
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+py_version = 38
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
