@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyfsd
+Version: 0.0.0.dev2
+Summary: An implementation of protocol 9 of FSD based on Python & Twisted.
+Author-Email: gamecss <52902973+gamecss@users.noreply.github.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8.1
+Requires-Dist: twisted>=22.10.0
+Requires-Dist: loguru>=0.7.0
+Requires-Dist: haversine>=2.8.0
+Requires-Dist: tomli>=2.0.1; python_version < "3.11"
+Requires-Dist: metar>=1.10.0
+Requires-Dist: mkdocs-material>=9.1.18; extra == "docs"
+Requires-Dist: mkdocstrings[python]>=0.22.0; extra == "docs"
+Requires-Dist: mkdocs-minify-plugin>=0.6.4; extra == "docs"
+Provides-Extra: docs
+Description-Content-Type: text/markdown
+
+# PyFSD
+基于Twisted的[FSD](https://github.com/kuroneko/fsd)协议9的实现。  
+[使用&插件开发文档](https://gamecss.github.io/pyfsd)
+
+## Todo
+### 多服务器协议
+一点还没做啊!谁会需要多服务器啊???
+
+## 开源协议
+MIT License  
+Copyright (c) 2023 gamecss  
+无附加条款。
