@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Flask-SQL-Pro
+Version: 2.2
+Summary: 旨在为写sql的程序拆分sql语句出程序中,分类管理。目前支持增删改查、分页、事务,以及flask项目中多数据库连接。
+Author: miaokela
+Author-email: 2972799448@qq.com
+Maintainer: miaokela
+Maintainer-email: 2972799448@qq.com
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+
+示例: https://www.cnblogs.com/miaokela/articles/17571427.html
