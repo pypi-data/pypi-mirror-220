@@ -1,0 +1,17 @@
+gdxcc
+pandas>=0.20.1
+numpy>=1.7
+
+[admin]
+pytest
+ghp-import
+numpydoc
+pandoc
+sphinx
+sphinx_rtd_theme
+twine
+setuptools
+wheel
+
+[test]
+pytest
