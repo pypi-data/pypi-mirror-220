@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/data_management/__init__.py
+src/data_management/transform_data.py
+src/three_functions_convert_data_learning_reason.egg-info/PKG-INFO
+src/three_functions_convert_data_learning_reason.egg-info/SOURCES.txt
+src/three_functions_convert_data_learning_reason.egg-info/dependency_links.txt
+src/three_functions_convert_data_learning_reason.egg-info/requires.txt
+src/three_functions_convert_data_learning_reason.egg-info/top_level.txt
+tests/test_convolution2d.py
+tests/test_transpose2d.py
+tests/test_window1d.py

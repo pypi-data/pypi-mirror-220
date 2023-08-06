@@ -1,0 +1,11 @@
+numpy>=1.25.1
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest

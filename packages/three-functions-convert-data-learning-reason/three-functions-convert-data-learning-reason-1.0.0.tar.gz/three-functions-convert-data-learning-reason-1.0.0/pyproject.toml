@@ -1,0 +1,32 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "three-functions-convert-data-learning-reason"
+version = "1.0.0"
+description = "Three functions for learning to publish package in PyPi"
+readme = "README.md"
+authors = [{ name = "The great student", email = "mail.not.work@mail.com" }]
+license = { file = "LICENSE" }
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+keywords = ["transpose2d", "window1d", "convolution2d"]
+dependencies = [
+    "numpy >= 1.25.1",
+    'tomli; python_version < "3.11"',
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/TuringCollegeSubmissions/vipranc-DE2.1"
