@@ -1,0 +1,1 @@
+from .._agg import _Dj5RU as gauss_laguerre
