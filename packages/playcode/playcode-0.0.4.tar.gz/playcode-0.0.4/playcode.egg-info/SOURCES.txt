@@ -1,0 +1,8 @@
+README
+setup.py
+playcode/__init__.py
+playcode/test.py
+playcode.egg-info/PKG-INFO
+playcode.egg-info/SOURCES.txt
+playcode.egg-info/dependency_links.txt
+playcode.egg-info/top_level.txt
