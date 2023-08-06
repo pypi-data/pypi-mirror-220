@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ultralytics-copy
+Version: 0.0.1.dev0
+Author: Ultralytics_copy
+Author-email: qsliang456@163.com
+Project-URL: Bug Reports, https://github.com/ultralytics/ultralytics/issues
+Project-URL: Funding, https://ultralytics.com
+Project-URL: Source, https://github.com/ultralytics/ultralytics
+Keywords: machine-learning,deep-learning,vision,ML,DL,AI,YOLO,YOLOv3,YOLOv5,YOLOv8,HUB,Ultralytics_copy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ultralytics
