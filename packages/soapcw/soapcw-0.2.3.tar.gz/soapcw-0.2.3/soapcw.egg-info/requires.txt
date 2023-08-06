@@ -1,0 +1,8 @@
+cython
+matplotlib
+numpy
+torch
+torch-summary
+scipy
+lalsuite
+regex
