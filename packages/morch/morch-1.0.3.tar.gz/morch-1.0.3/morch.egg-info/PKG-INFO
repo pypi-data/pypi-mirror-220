@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: morch
+Version: 1.0.3
+Summary: SAGA Python Microservice Orchestrator
+Home-page: https://github.com/hasanisaeed/morch
+Author: Saeed Hasani Borzadaran
+Author-email: hassanisaeed19@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/hasanisaeed/morch/issues/new
+Keywords: microservice,saga,patterns,microservice patterns,saga pattern
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Microservice Orchestration (morch)
+
+### Installation:
+
+```bash
+pip install morch
+```
+
+### Usage:
+    coming soon...
+
+### Description:
+Microservice orchestration architecture provides a robust framework for building and managing complex applications. By leveraging independent services and a centralized orchestrator, you can achieve scalability, fault tolerance, and maintainability. Refer to Chris Richardson's book [Microservices Patterns](https://microservices.io/index.html) for more in-depth guidance on this architecture.
+
+---
+
+### Credit:
+This project has been inspired by [saga framework](https://github.com/absent1706/saga-framework) and the book [Microservices Patterns](https://www.amazon.com/Microservices-Patterns-examples-Chris-Richardson/dp/1617294543) written by Chris Richardson.
+
+
