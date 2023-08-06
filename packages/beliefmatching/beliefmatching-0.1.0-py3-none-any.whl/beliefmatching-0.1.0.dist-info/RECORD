@@ -1,0 +1,9 @@
+beliefmatching/__init__.py,sha256=z--am5lMSyauvvrq_ZTGfvJ5uJJs7ZUghRUb-YzuqWI,95
+beliefmatching/_version.py,sha256=zkpxhBmJQVpC6oMcx9o93DLIuq4aFSFNCjGSgasHmew,43
+beliefmatching/belief_matching.py,sha256=BfvpKWcEIrnp9cIwvDSTVlY7V5oSKCXWtFuaB5Oc_to,13872
+beliefmatching/sinter_belief_matching.py,sha256=BGWCNi64MZcVXtJj3_2u3pXzo55nS6cHndOq7_2vOnU,3280
+beliefmatching-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+beliefmatching-0.1.0.dist-info/METADATA,sha256=76XHsTJPi9k9mRaau2FAgyk19w31IUlRRmu34am_3TY,4773
+beliefmatching-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+beliefmatching-0.1.0.dist-info/top_level.txt,sha256=eIiuBAX5FAuTtiI5k85KCuZrKw017PStib1xKDoqP0U,15
+beliefmatching-0.1.0.dist-info/RECORD,,
