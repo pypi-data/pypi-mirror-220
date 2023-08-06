@@ -1,0 +1,12 @@
+translator/__init__.py,sha256=BZQyS5JMhv8UaE-lRWR75dbHtN0dp2ZmehyRUdQWnw8,140
+translator/__main__.py,sha256=nK8smoEG8xMoBv4V-4Cz6Svzf1fwRqfGl12NoS5g62g,165
+translator/language.py,sha256=R9vB7I_G6a6MuZ2KZBqDyTd-f6e2B6NavlA741IY0yE,3038
+translator/main.py,sha256=v5OSbSvKUUL_ZS13xf4bveBEtoneYkrFbgxcGXbaC9g,29259
+translator/translate.py,sha256=dkMqil53opqbaNT2twyKwLCnZcb-v2bXE3HE05egmBs,2058
+translator/utils.py,sha256=DfgkyOvv5KnGldcUWIjNa6Evq-wOTuxFsvB1WONqp_8,714
+interpres-0.3.3b6.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+interpres-0.3.3b6.dist-info/METADATA,sha256=K5YEUpKiNgddez50qBvIL0XrF12qcKHKzQZzyEMhJDo,12257
+interpres-0.3.3b6.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+interpres-0.3.3b6.dist-info/entry_points.txt,sha256=5CFO8JavMl6drGdQqS6TNfK3t8pQe-cJqIT8IUw-79E,51
+interpres-0.3.3b6.dist-info/top_level.txt,sha256=TstlcpN5V_LQaCMBHw2BiRQXtexg1Cq7SC8lIwymH_c,11
+interpres-0.3.3b6.dist-info/RECORD,,
