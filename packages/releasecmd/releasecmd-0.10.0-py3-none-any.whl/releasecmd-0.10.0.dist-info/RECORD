@@ -1,0 +1,8 @@
+releasecmd/__init__.py,sha256=v4ab1D1yLIhrpfVqaF00wwM5ouvz7rog0I2l_XH5xH0,9344
+releasecmd/__version__.py,sha256=TiuaB8U-iLbenKgEo6ISdo5fqnC3SG_tbfYAamwzgFs,202
+releasecmd/_retry.py,sha256=z8ueHvIK4W8TWAyA6uHag7oX0fn-jPJqDbE6xAjeNv8,971
+releasecmd-0.10.0.dist-info/LICENSE,sha256=_P6W-Psb80eKUcgo5_ev7gFQDOHC1DRdBS7bhYvgUic,1074
+releasecmd-0.10.0.dist-info/METADATA,sha256=uCvbmdaEvCagEWj2k2lO50dzzsvrU4PYEnxKBZKddzg,5196
+releasecmd-0.10.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+releasecmd-0.10.0.dist-info/top_level.txt,sha256=arejOuPGxF5_dy-lBmMIpAprj7i_5DkvRJNwBWiJZMU,11
+releasecmd-0.10.0.dist-info/RECORD,,
