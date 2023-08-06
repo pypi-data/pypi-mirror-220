@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+superneuromat/neuromorphicmodel.py
+superneuromat.egg-info/PKG-INFO
+superneuromat.egg-info/SOURCES.txt
+superneuromat.egg-info/dependency_links.txt
+superneuromat.egg-info/requires.txt
+superneuromat.egg-info/top_level.txt

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: superneuromat
+Version: 0.1
+Summary: A matrix-based simulation framework for neuromorphic computing.
+Home-page: https://github.com/ORNL/superneuromat
+Download-URL: https://github.com/ORNL/superneuromat/archive/refs/tags/v_01.tar.gz
+Author: Prasanna Date, Chathika Gunaratne, Shruti Kulkarni, Robert Patton, Mark Coletti
+Author-email: datepa@ornl.gov
+License: BSD 3-Clause
+Project-URL: Source, https://github.com/ORNL/superneuromat
+Keywords: Neuromorphic Computing,Neuromorphic Simulator,Neuromorphic Algorithms,Fast Neuromorphic Simulator,Matrix-Based Neuromorphic Simulator,Numpy Neuromorphic Simulator
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A matrix-based simulation framework for neuromorphic computing.
