@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: firefox-bookmarks
+Version: 0.2.0
+Summary: Manage your Firefox bookmarks with ease
+Home-page: https://github.com/BURG3R5/firefox-bookmarks
+License: AGPL-3.0-or-later
+Keywords: firefox,bookmarks,browser,util
+Author: Aditya Rajput
+Author-email: adiraj20072002@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Database
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: peewee (>=3.16.2,<4.0.0)
+Project-URL: Documentation, https://github.com/BURG3R5/firefox-bookmarks
+Project-URL: Repository, https://github.com/BURG3R5/firefox-bookmarks
+Description-Content-Type: text/markdown
+
+# firefox-bookmarks
+
+Manage your Firefox bookmarks with ease
+
+## installation
+
+```shell
+pip install firefox-bookmarks
+```
+
+## examples
+
+See [the examples directory](https://github.com/BURG3R5/firefox-bookmarks/tree/main/examples)
+
+## license
+
+Copyright (C) 2023 Aditya Rajput & other contributors
+
+This software is licensed under the **Affero GPL v3**. You should have received [a copy](https://github.com/BURG3R5/firefox-bookmarks/blob/main/LICENSE) of the Affero GPL v3 along with this program. If not, you can visit the original [here](https://www.gnu.org/licenses/agpl-3.0.html#license-text).
+
