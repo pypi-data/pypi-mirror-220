@@ -1,0 +1,8 @@
+tasq_client/__init__.py,sha256=I0ik-_c0hcVKUgx7QsE3YnoCQyAVMFKKOzoLt-jNFtE,277
+tasq_client/check_type.py,sha256=lEys9wV_8xMnDVbJptG5VcIAZ_Dbr85wQYYKtfaZqrk,2583
+tasq_client/check_type_test.py,sha256=bvhVaO-Bu18aI3J4Kxnb0H27fzDCKkTHVBWhjJMFMis,1433
+tasq_client/client.py,sha256=lhe8JGtE1yTIRKaOo7dsYtjA_53FLLFd2Zg_WZuMcPo,11907
+tasq_client_python-0.1.11.dist-info/METADATA,sha256=ml42pPibRFo1Oa0eMaMqgxKXqSpYEhK5LXb9ZEWUTW4,88
+tasq_client_python-0.1.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tasq_client_python-0.1.11.dist-info/top_level.txt,sha256=JUs_FTRfs_ggMu8zusU5CSXgAl-JHhrjMXxuZay-B58,12
+tasq_client_python-0.1.11.dist-info/RECORD,,
