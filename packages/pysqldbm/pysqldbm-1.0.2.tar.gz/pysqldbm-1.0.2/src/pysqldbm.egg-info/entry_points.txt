@@ -1,0 +1,2 @@
+[console_scripts]
+sqldbm = pysqldbm_cli.run:run
