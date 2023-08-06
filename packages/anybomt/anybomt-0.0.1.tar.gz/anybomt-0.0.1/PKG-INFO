@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: anybomt
+Version: 0.0.1
+Summary: Uma biblioteca para facilitar sua jornada em matematica
+Author: AnyBoMath
+Author-email: bidjorys@gmail.com
+License: MIT License
+Keywords: math,sympy,numpy,anybomt,Anybo
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+DescriÃ§Ã£o para o PyPI:
+
+# Anybomt - Biblioteca C para EstatÃ­stica
+
+A biblioteca **Anybomt** Ã© uma implementaÃ§Ã£o em C de diversas funÃ§Ãµes estatÃ­sticas e matemÃ¡ticas, projetada para ser usada em conjunto com o Python. Ela oferece um conjunto de funÃ§Ãµes eficientes para cÃ¡lculos estatÃ­sticos, como mÃ©dia, mediana, moda, desvio padrÃ£o, regressÃ£o linear, coeficiente de correlaÃ§Ã£o e muito mais.
+
+A biblioteca possui uma interface C que pode ser carregada no Python usando a biblioteca **ctypes**, permitindo que vocÃª utilize todas as funcionalidades de forma simples e rÃ¡pida.
+
+## Principais FunÃ§Ãµes DisponÃ­veis
+
+A **Anybomt** oferece um conjunto de funÃ§Ãµes estatÃ­sticas e matemÃ¡ticas essenciais para anÃ¡lises e cÃ¡lculos numÃ©ricos. Algumas das principais funÃ§Ãµes disponÃ­veis incluem:
+
+- **MÃ©dia**: `media(*args)` - Calcula a mÃ©dia dos valores passados como argumentos.
+- **Mediana**: `mediana(*args)` - Calcula a mediana dos valores passados como argumentos.
+- **Moda**: `moda(*args)` - Calcula a moda dos valores passados como argumentos.
+- **Desvio PadrÃ£o**: `desvio_padrao(*args)` - Calcula o desvio padrÃ£o dos valores passados como argumentos.
+- **RegressÃ£o Linear**: `regressao_linear(x, y)` - Calcula a regressÃ£o linear entre dois arrays de nÃºmeros `x` e `y`.
+- **Coeficiente de CorrelaÃ§Ã£o**: `coeficiente_correlacao(x, y)` - Calcula o coeficiente de correlaÃ§Ã£o entre dois arrays de nÃºmeros `x` e `y`.
+- **Intervalo de ConfianÃ§a**: `intervalo_confianca(dados, nivel_confianca)` - Calcula o intervalo de confianÃ§a para uma amostra de dados e um determinado nÃ­vel de confianÃ§a.
+- **Coeficiente de Assimetria**: `coeficiente_assimetria(*args)` - Calcula o coeficiente de assimetria dos valores passados como argumentos.
+- **Curtose**: `curtose(*args)` - Calcula a curtose dos valores passados como argumentos.
+- **AnÃ¡lise de VariÃ¢ncia (ANOVA)**: `analise_variancia(*args)` - Realiza a anÃ¡lise de variÃ¢ncia para um conjunto de amostras.
+
+## Como Instalar
+
+Para instalar a biblioteca **Anybomt**, vocÃª pode usar o gerenciador de pacotes `pip`:
+
+```bash
+pip install anybomt
+```
+
+## Como Usar
+
+ApÃ³s a instalaÃ§Ã£o, vocÃª pode importar as funÃ§Ãµes da biblioteca em seu cÃ³digo Python:
+
+```python
+import anybomt
+
+# Exemplo: calcular a mÃ©dia de um conjunto de valores
+dados = [10.2, 12.5, 15.8, 20.1, 18.6]
+media = anybomt.media(*dados)
+print(f"MÃ©dia: {media}")
+
+# Exemplo: calcular a regressÃ£o linear entre dois arrays de nÃºmeros
+x = [1.0, 2.0, 3.0, 4.0, 5.0]
+y = [2.5, 3.8, 4.9, 6.2, 7.6]
+a, b = anybomt.regressao_linear(x, y)
+print(f"Coeficiente 'a': {a}")
+print(f"Coeficiente 'b': {b}")
+```
+
+## Nota
+
+A biblioteca **Anybomt** foi desenvolvida em C e possui uma interface Python usando a biblioteca `ctypes`. Ã‰ importante garantir que a biblioteca C (`anybomt.so`) esteja disponÃ­vel no diretÃ³rio correto antes de executar os cÃ³digos Python.
+
+## ReferÃªncias
+
+Para mais informaÃ§Ãµes e detalhes sobre cada funÃ§Ã£o disponÃ­vel na biblioteca **Anybomt**, consulte a documentaÃ§Ã£o oficial.
+
+## LicenÃ§a
+
+A biblioteca **Anybomt** Ã© distribuÃ­da sob a LicenÃ§a MIT. VocÃª pode encontrar mais informaÃ§Ãµes na licenÃ§a incluÃ­da no pacote.
