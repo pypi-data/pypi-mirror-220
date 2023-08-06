@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+selectable_text/SelectableText.py
+selectable_text/__init__.py
+selectable_text/_imports_.py
+selectable_text/metadata.json
+selectable_text/package-info.json
+selectable_text/selectable_text.min.js
+selectable_text/selectable_text.min.js.map
+selectable_text.egg-info/PKG-INFO
+selectable_text.egg-info/SOURCES.txt
+selectable_text.egg-info/dependency_links.txt
+selectable_text.egg-info/top_level.txt
