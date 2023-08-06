@@ -1,0 +1,4 @@
+pop>=23.0.0
+pop-config<13.0.0,>=12.0.1
+idem>=23.0.0
+idem-aiohttp>=3.0.0
