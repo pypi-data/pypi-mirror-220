@@ -1,0 +1,11 @@
+README.md
+setup.py
+minecraftschematics/__init__.py
+minecraftschematics/schematic.py
+minecraftschematics/utils.py
+minecraftschematics.egg-info/PKG-INFO
+minecraftschematics.egg-info/SOURCES.txt
+minecraftschematics.egg-info/dependency_links.txt
+minecraftschematics.egg-info/requires.txt
+minecraftschematics.egg-info/top_level.txt
+tests/test_schematic.py
