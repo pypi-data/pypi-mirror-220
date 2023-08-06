@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: typed-out
+Version: 0.0.1
+Summary: Learn by Type
+Home-page: UNKNOWN
+Author: Horw (Igor Udot)
+Author-email: <horw7001@gmail.com>
+License: UNKNOWN
+Keywords: python,wpm,typing
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+
+
+# TYPED OUT
+Typing in and measure your WPM(word per minute) speed
+
+
