@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: corcli
+Version: 0.0.7
+Summary: A simple CLI client for Cortex
+Home-page: https://github.com/0xFustang/corcli
+Author: 0xFustang
+Author-email: 0xFustang@proton.me
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cortex4py
+Requires-Dist: inquirer
+Requires-Dist: requests
+
+# corcli
+
+A simple CLI tool for Cortex
+

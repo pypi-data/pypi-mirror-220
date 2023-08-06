@@ -1,0 +1,10 @@
+ccli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccli/__main__.py,sha256=Qldmf5rxkKhB5Rc4XtGuVLITsMsG1Cb5DjBjc-g3iqw,6413
+ccli/analyzer.py,sha256=GJ8jRcwUwRd3EPLrMDVJ44TuQC86otJktEcw0AUGq3s,2195
+ccli/cortex.py,sha256=S0pY6Is2QyFIT2BKZMr_DbDQUGUI0VJLasT-JQQTJ6M,5301
+corcli-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+corcli-0.0.7.dist-info/METADATA,sha256=Tu3QvCrHoueeiCu4Axd3tmb6Rdq0ZtT5OQLC-TbKRDk,388
+corcli-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+corcli-0.0.7.dist-info/entry_points.txt,sha256=QYLop4B3pVvSwRieIlI3yMSJ80-MSCh3oA6pr77_adg,44
+corcli-0.0.7.dist-info/top_level.txt,sha256=0TIdHlr1PyaNXAEt3seh3hOHCNghMfQLhpYJxaMewug,5
+corcli-0.0.7.dist-info/RECORD,,
