@@ -1,0 +1,11 @@
+extendable_pydantic_patcher.pth,sha256=hU6xnnK9Yuw8k_c5VlHFIPNWMoaH1CzZtfVsaYiKDM4,34
+extendable_pydantic/__init__.py,sha256=ApYOMVOOAQ88rgubt5xwcGPhSiVr1MLENBJ2sjvDDNI,163
+extendable_pydantic/_patch.py,sha256=42SicPqcTDxx8jfvPom0dU2iCLQfqLrKDSAhRYf1qPk,2661
+extendable_pydantic/main.py,sha256=Gi_r8cno1f6o77lpj7UzTvkFVqx72iiLc0WkRAvKx5o,6136
+extendable_pydantic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extendable_pydantic/utils.py,sha256=l_FD-njhwW8EjSjSzHQCZ3FzZvAzsy2zW47hty3dsus,4718
+extendable_pydantic/version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+extendable_pydantic-1.0.0.dist-info/METADATA,sha256=ebwQF5_1LkwEUEdU9T4r4VadDG3bLtDjRE1K3ZUYzYI,3763
+extendable_pydantic-1.0.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+extendable_pydantic-1.0.0.dist-info/licenses/LICENSE,sha256=8_UCfE117MDa7UOF_B6YbGKxwsbCPjzhn40G0iZa0Bo,1080
+extendable_pydantic-1.0.0.dist-info/RECORD,,
