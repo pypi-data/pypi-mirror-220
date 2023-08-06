@@ -1,0 +1,13 @@
+kiri_walkgame/__init__.py,sha256=OJz59dmkPKMUKgO3uMjThsdOL2b_lMIxX1gPIwW8hG4,6610
+kiri_walkgame/__main__.py,sha256=WqfHP_j9yum2kMOABnF33NywZHCC7TCGQ8dg07nSoPk,177
+kiri_walkgame/characters.py,sha256=derZPrU9i2DVC7B8JIo5cW74X8weTMNgZF_BkoNDOPg,3098
+kiri_walkgame/output.py,sha256=qNGngQfkHAFDxGti1e-GPZgdVmkvzQ7kNXKym0v5qhQ,838
+kiri_walkgame/shortcuts.py,sha256=rmbwJp86D8xFEzdeVPHjntY5vq3Iuz2XZ4R8KUYaSuk,1625
+kiri_walkgame/sources/box.png,sha256=5iZ8TwGB5EABPZzO80Cb9sa0NiSxRAaa-xhwMAYN5ZU,337
+kiri_walkgame/sources/kiri/run.png,sha256=oHY0PUvaJTMLAQVmlqabiXBlS0-QtsACa5JTofVqcsw,703
+kiri_walkgame/sources/kiri/stand.png,sha256=FlyRmB6WEXIdEJULs_Dtkn2T_mAT3JeYKVRvC9l-xys,647
+kiri_walkgame/sources/logo.png,sha256=i38KGGgUPslDxgpPtsNflVRVOb7LviFJVJVKJSoJ120,97861
+kiri_walkgame-1.0.0.dist-info/LICENSE,sha256=hysBEr67NmDxeqxpkc-juor-K_yK5N5gy02eP0SPJIw,1068
+kiri_walkgame-1.0.0.dist-info/METADATA,sha256=dZlpS0z_vkAPR02MQsIq2smAKlElbNEMPbGDafvae48,1096
+kiri_walkgame-1.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+kiri_walkgame-1.0.0.dist-info/RECORD,,
