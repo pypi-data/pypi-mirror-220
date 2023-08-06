@@ -1,0 +1,34 @@
+# GeoInsight API python package
+
+To get started with the GeoInsight API head over to [geoinsight.ai](https://geoinsight.ai) and create an account. You will get an **GeoInsight Personal Token (GPT)** and an **API Private Key (APK)**.
+
+## Install
+
+To install the package just run a regular `pip install`
+
+
+```python
+pip install geoinsight
+```
+
+Then import the package like this.
+
+
+```python
+import geoinsight
+```
+
+The GeoInsight package come with an `api` class to access the endpoints and a `util` class with aditional useful functions. You can initialize both like this:
+
+
+```python
+api=geoinsight.api()
+util=geoinsight.util()
+```
+
+Now use the **GeoInsight Personal Token (GPT)** and **API Private Key (APK)**.
+
+
+```python
+api.set_access_token(_gpt='GPT',_apk='APK')
+```
