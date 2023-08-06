@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hifibgc
+Version: 0.1.0
+Summary: Detect Biosynthetic Gene Clusters (BGCs) in HiFi metagenomic data
+Home-page: 
+Author: Amit Yadav
+Author-email: ayamitjyoti12@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# HiFiBGC
+
+Detect Biosynthetic Gene Clusters (BGCs) in HiFi metagenomic data
