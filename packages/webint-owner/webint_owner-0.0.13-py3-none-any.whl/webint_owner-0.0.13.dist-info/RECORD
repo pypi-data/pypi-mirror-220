@@ -1,0 +1,12 @@
+webint_owner/__init__.py,sha256=liFsS_RIKviIL2CBm2V6wJ-Ntee9kDSR7nmUeJSra6c,7827
+webint_owner/templates/__init__.py,sha256=c-XzEcqgNTUTmCzo34CHtzilgkq1dF1UCew1uvogcCQ,37
+webint_owner/templates/claim.html,sha256=csUeUzPtVNixMJD6rHrfQZdK3YXDD6eLIqEdVm0NlJo,261
+webint_owner/templates/claimed.html,sha256=-z-KJsR5vP0sGWsSvfyRC4-_2K3cc0CtKI3XiLNxYqo,425
+webint_owner/templates/index.html,sha256=XV8u40cQc1MUtfpzWI_ezE7m0wmLT2tCGr8mVTpRLIk,484
+webint_owner/templates/signin.html,sha256=8qor0okhjKoO2oiUQ_WJvD06rV1HCt6K5uUJtAzlma0,246
+webint_owner/templates/signout.html,sha256=-bELs1qzaJmlBKycwM9_4BmMkLS8GdOSPAgbhfycsBo,88
+webint_owner/templates/unauthorized.html,sha256=SUyETrRnJwhjZD7MCWaaCjATi9hhD4X2fqqyeLXI968,149
+webint_owner-0.0.13.dist-info/METADATA,sha256=d6VL6BRioRfDO5lbd7QQNpCBF8wAk6tFLa3MqUztXFw,376
+webint_owner-0.0.13.dist-info/entry_points.txt,sha256=o3hx6gS1MlTYAsAy6xGm3nypLE02i7meJp62ejtz5-U,34
+webint_owner-0.0.13.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+webint_owner-0.0.13.dist-info/RECORD,,
