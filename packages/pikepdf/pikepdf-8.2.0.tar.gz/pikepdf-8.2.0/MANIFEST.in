@@ -1,0 +1,6 @@
+include src/core/*.h
+graft tests
+prune tests/resources/private
+prune .github
+prune build-scripts
+global-exclude *.py[cod]
