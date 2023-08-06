@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+setup.py
+Uiadmin_FastApi.egg-info/PKG-INFO
+Uiadmin_FastApi.egg-info/SOURCES.txt
+Uiadmin_FastApi.egg-info/dependency_links.txt
+Uiadmin_FastApi.egg-info/not-zip-safe
+Uiadmin_FastApi.egg-info/requires.txt
+Uiadmin_FastApi.egg-info/top_level.txt
+uiadmin_fastapi/CoreController.py
+uiadmin_fastapi/Uiadmin.py
+uiadmin_fastapi/__init__.py
+uiadmin_fastapi/utils.py
+uiadmin_fastapi/util/__init__.py
+uiadmin_fastapi/util/xybuilder/XyBuilderForm.py
+uiadmin_fastapi/util/xybuilder/XyBuilderList.py
+uiadmin_fastapi/util/xybuilder/__init__.py
