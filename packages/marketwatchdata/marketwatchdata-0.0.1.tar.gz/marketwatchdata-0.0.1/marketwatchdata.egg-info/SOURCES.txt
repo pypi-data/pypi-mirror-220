@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+marketwatchdata/MarketWatch.py
+marketwatchdata/__init__.py
+marketwatchdata.egg-info/PKG-INFO
+marketwatchdata.egg-info/SOURCES.txt
+marketwatchdata.egg-info/dependency_links.txt
+marketwatchdata.egg-info/requires.txt
+marketwatchdata.egg-info/top_level.txt
+tests/__init__.py
+tests/test_func.py
