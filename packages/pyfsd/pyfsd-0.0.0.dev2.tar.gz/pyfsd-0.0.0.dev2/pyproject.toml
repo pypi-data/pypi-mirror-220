@@ -1,0 +1,85 @@
+[project]
+name = "pyfsd"
+dynamic = []
+description = "An implementation of protocol 9 of FSD based on Python & Twisted."
+authors = [
+    { name = "gamecss", email = "52902973+gamecss@users.noreply.github.com" },
+]
+dependencies = [
+    "twisted>=22.10.0",
+    "loguru>=0.7.0",
+    "haversine>=2.8.0",
+    "tomli>=2.0.1; python_version<'3.11'",
+    "metar>=1.10.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+requires-python = ">=3.8.1"
+readme = "README.md"
+version = "0.0.0.dev2"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+docs = [
+    "mkdocs-material>=9.1.18",
+    "mkdocstrings[python]>=0.22.0",
+    "mkdocs-minify-plugin>=0.6.4",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.3.0",
+    "flake8>=6.0.0",
+    "isort>=5.12.0",
+    "mypy-zope>=0.9.1",
+    "mypy>=1.0.1",
+    "flake8-pyi>=23.6.0",
+]
+
+[tool.pdm.scripts]
+start = "twistd -n pyfsd"
+
+[tool.pdm.build]
+includes = [
+    "pyfsd/",
+    "twisted/",
+]
+
+[tool.pdm.version]
+source = "call"
+getter = "versioneer:get_version"
+write_to = "pyfsd/_version.py"
+write_template = "__version__ = \"{}\"\n"
+
+[tool.isort]
+profile = "black"
+
+[tool.pyright]
+exclude = [
+    "**/__pycache__",
+    "__pypackages__",
+    ".venv",
+    ".git",
+]
+
+[tool.versioneer]
+VCS = "git"
+style = "pep440"
+versionfile_source = "NONE"
+versionfile_build = "NONE"
+tag_prefix = ""
+parentdir_prefix = "pyfsd-"
+
+[build-system]
+requires = [
+    "pdm-backend",
+    "versioneer[toml]>=0.29",
+]
+build-backend = "pdm.backend"
