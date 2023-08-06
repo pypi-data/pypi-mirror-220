@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: horn-py
+Version: 0.6.5
+Summary: A Flask scaffolding tool
+Project-URL: Documentation, https://bigfang.github.io/horn-py
+Project-URL: Source code, https://github.com/bigfang/horn-py
+Author-email: bigfang <bitair@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Requires-Dist: copier>=8.1.0
+Requires-Dist: docopt>=0.6
+Requires-Dist: inflection>=0.5.1
+Requires-Dist: pampy>=0.3.0
+Requires-Dist: toml>=0.10.2
+Description-Content-Type: text/markdown
+
+# ![flask](chili.png)  Horn: A Flask scaffolding tool
+
+[![PyPI - License](https://img.shields.io/pypi/l/horn-py.svg)](https://pypi.org/project/horn-py)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/horn-py.svg)](https://pypi.org/project/horn-py)
+[![PyPI - Implementation](https://img.shields.io/pypi/implementation/horn-py.svg)](https://pypi.org/project/horn-py)
+[![PyPI](https://img.shields.io/pypi/v/horn-py.svg)](https://pypi.org/project/horn-py)
+[![Build Status](https://travis-ci.org/bigfang/horn-py.svg?branch=master)](https://travis-ci.org/bigfang/horn-py)
+[![Codecov](https://img.shields.io/codecov/c/gh/bigfang/horn-py.svg)](https://codecov.io/gh/bigfang/horn-py)
+
+
+## Installation
+
+```console
+$ pip install horn-py
+```
+
+
+## Usage
+
+```text
+
+Usage:
+  horn new <target> [--app=<app> --proj=<proj> --pypi=<pypi> --bare]
+  horn new <target> <from> [<checkout>] [--json=<json>] [-f=PATH | --file=PATH]
+  horn gen api <module> <table> <fields>...
+  horn gen model <module> <table> <fields>...
+  horn gen schema <module> (<fields>... | --model=<model> | <fields>...  --model=<model>)
+  horn -h | --help
+  horn --version
+
+Options:
+  --app=<app>               App name [default: app].
+  --proj=<proj>             Project name.
+  --pypi=<pypi>             Pypi domain.
+  --bare                    Bare project.
+
+  --json=<json>             Json string [default: {}].
+  -f=PATH, --file=PATH      Json file PATH.
+
+  --model=<model>           Schema baseed on model.
+
+  -h, --help                Show this screen.
+  --version                 Show version.
+
+Examples:
+  horn new tmp/foo_bar --app foobar --proj FooBar
+  horn new tmp/foo_bar https://github.com/bigfang/drf-starter.git --json '{"app":"someapp"}'
+  horn gen api Post posts title:string:uniq content:text:nonull author:ref:users
+  horn gen model Post posts title:string:uniq:index content:string:nonull author:ref:users:nonull
+  horn gen schema Post title:string content:string author:nest:user
+
+Notes:
+  Model attrs:  uniq => unique=True, nonull => nullable=False,
+                index => index=True, default:val => default=val
+  Schema attrs: dump => dump_only, load => load_only, exclude => exclude,
+                required => required=True, none => allow_none=True
+```
