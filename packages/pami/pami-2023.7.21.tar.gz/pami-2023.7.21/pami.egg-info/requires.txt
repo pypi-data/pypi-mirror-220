@@ -1,0 +1,16 @@
+psutil
+pandas
+plotly
+matplotlib
+resource
+validators
+urllib3
+Pillow
+numpy
+
+[gpu]
+cupy
+pycuda
+
+[spark]
+pyspark
