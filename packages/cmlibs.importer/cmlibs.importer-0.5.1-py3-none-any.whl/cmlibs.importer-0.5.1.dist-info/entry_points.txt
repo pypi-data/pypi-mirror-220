@@ -1,0 +1,3 @@
+[console_scripts]
+importer_app = cmlibs.importer.main:main
+
