@@ -1,0 +1,7 @@
+README.md
+setup.py
+satsure_ds_utils.egg-info/PKG-INFO
+satsure_ds_utils.egg-info/SOURCES.txt
+satsure_ds_utils.egg-info/dependency_links.txt
+satsure_ds_utils.egg-info/requires.txt
+satsure_ds_utils.egg-info/top_level.txt

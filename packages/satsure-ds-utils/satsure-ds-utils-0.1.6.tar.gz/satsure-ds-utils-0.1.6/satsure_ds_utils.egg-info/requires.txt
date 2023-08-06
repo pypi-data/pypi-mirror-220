@@ -1,0 +1,6 @@
+rasterio
+geopandas
+fiona
+scikit-image
+pandas
+numpy

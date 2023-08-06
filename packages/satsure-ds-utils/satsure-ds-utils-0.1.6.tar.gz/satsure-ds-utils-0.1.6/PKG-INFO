@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: satsure-ds-utils
+Version: 0.1.6
+Summary: Common Utilities for SatSure Data Science Team.
+Home-page: https://satsure-ds-utils.readthedocs.io/
+Author: SatSure DS Team
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Satsure DS Common Utils
+
+Repository containing common utilities used across the data science team of SatSure.
+
+# Folders & Files:
+- `./satsure_ds_utils`: Core components of DS Utils.
+- `./examples`: Folder containing examples
+- `main.py`: main file for testing.
+- `requirements.txt`: Python requirements file.
+- `setup.py`: Setup file for pip wheel.
+
+# List of Algorithms/Operations:
+- Split Raster
+- Join Raster
+- Array to Raster
+- FastTile
+- FastTile NDVI
+- LULC Area
+- Village Geo Area
+- Clip to Boundary
