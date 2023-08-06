@@ -1,0 +1,7 @@
+pydantic
+requests
+simpleaichat
+python-telegram-bot
+pyyaml
+fastapi
+uvicorn[standard]

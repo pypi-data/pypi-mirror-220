@@ -1,0 +1,63 @@
+# SahayakAI
+Using AI to solve some of the India specific problems
+
+## Design
+You can see the high level design in this [Miro Board](https://miro.com/app/board/uXjVM61FLNk=/?share_link_id=389475655874)
+
+## Demo
+<img src="demo.gif" width="350" height="400"/>
+
+## Installation
+
+**Step 1:** Create a python virtual environment. We recommend using either **anaconda** or **venv**.
+
+Create and activate virtual environment using anaconda:
+
+```
+conda create --name sahayakAI python=3.10
+conda activate sahayakAI
+```
+
+Create and activate virtual environment using venv:
+
+```
+virtualenv -p <path/to.python> <your_env_name>
+source <your_env_name>/bin/activate
+```
+
+**Step 2:** After creating and activating the virtual environment, we need to install all the dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+## Usage
+**Step 1:** Create a telegram bot
+
+**Step 2:** Set the `TELEGRAM_BOT_TOKEN` as an environment variable or inside `sahayak/common/config.yaml`
+
+**Step 3:** Set your `OPENAI_API_KEY` as an environment variable or inside `sahayak/common/config.yaml`
+
+**Step 4:** Set your `RAPID_API_KEY` as an environment variable or inside `sahayak/rahiAI/config.yaml`
+
+**Step 5:** Run the telegram bot using the below command:
+
+```
+python bot.py
+```
+
+
+## TODO Tasks
+- Update README
+- Add unit tests
+- Integrate Langchain and deprecate Simpleaichat
+- Proper error/exception handling
+
+## Key Contributors
+- **Abhijeet Dubey**
+- **Abhishek Bagade**
+- **Nithin Sethumadhavan**
+- **Vineet Singh**
+
+## References
+1. https://github.com/minimaxir/simpleaichat
