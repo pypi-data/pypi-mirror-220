@@ -1,0 +1,78 @@
+{
+  "LockingChain": {
+    "Endpoint": {
+      "Host": "127.0.0.1",
+      "JsonRPCPort": 5001
+    },
+    "DoorAccount": {
+      "Address": "rEbXsTWsEruE1BTWRrdf1YXwqPNQNR52Ut",
+      "Seed": "snAromiwya8qxcSJrtUoLXkAV5XTC",
+      "KeyType": "secp256k1"
+    },
+    "BridgeIssue": {"currency": "XRP"},
+    "WitnessRewardAccounts": [
+      "rEv3Xxis6pm9xBLqgcJb2cRRGc2YAUJSZn",
+      "rKhMiXZ6aKMGc5ezWaKTyvo4HufyAmjeag",
+      "r4dgAWSTpUfELmizi1Bb6419aEvyqZSV87",
+      "r99UVqnThwtUjRmy2K8mC6JwixDp4JRUPs",
+      "r9XAeqBNgZecRA8qfmTmwCsDVSQ3KVTJfr"
+    ],
+    "WitnessSubmitAccounts": [
+      "rEv3Xxis6pm9xBLqgcJb2cRRGc2YAUJSZn",
+      "rKhMiXZ6aKMGc5ezWaKTyvo4HufyAmjeag",
+      "r4dgAWSTpUfELmizi1Bb6419aEvyqZSV87",
+      "r99UVqnThwtUjRmy2K8mC6JwixDp4JRUPs",
+      "r9XAeqBNgZecRA8qfmTmwCsDVSQ3KVTJfr"
+    ]
+  },
+  "IssuingChain": {
+    "Endpoint": {
+      "Host": "127.0.0.1",
+      "JsonRPCPort": 5003
+    },
+    "DoorAccount": {
+      "Address": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+      "Seed": "snoPBrXtMeMyMHUVTgbuqAfg1SUTb",
+      "KeyType": "secp256k1"
+    },
+    "BridgeIssue": {"currency": "XRP"},
+    "WitnessRewardAccounts": [
+      "rEv3Xxis6pm9xBLqgcJb2cRRGc2YAUJSZn",
+      "rKhMiXZ6aKMGc5ezWaKTyvo4HufyAmjeag",
+      "r4dgAWSTpUfELmizi1Bb6419aEvyqZSV87",
+      "r99UVqnThwtUjRmy2K8mC6JwixDp4JRUPs",
+      "r9XAeqBNgZecRA8qfmTmwCsDVSQ3KVTJfr"
+    ],
+    "WitnessSubmitAccounts": [
+      "rEv3Xxis6pm9xBLqgcJb2cRRGc2YAUJSZn",
+      "rKhMiXZ6aKMGc5ezWaKTyvo4HufyAmjeag",
+      "r4dgAWSTpUfELmizi1Bb6419aEvyqZSV87",
+      "r99UVqnThwtUjRmy2K8mC6JwixDp4JRUPs",
+      "r9XAeqBNgZecRA8qfmTmwCsDVSQ3KVTJfr"
+    ]
+  },
+  "Witnesses": {
+    "SignerList": [
+      {
+        "Account": "rpPzXoALdeZKNVuFVfG1VrecbjgorkbDvx",
+        "Weight": 1
+      },
+      {
+        "Account": "rDdwf7PFDvvmNWgxL15mUFPQKjFw4mMtSk",
+        "Weight": 1
+      },
+      {
+        "Account": "rENCNCA5XRiTbX1oBrpqjvXx2L7RkwXMVQ",
+        "Weight": 1
+      },
+      {
+        "Account": "rh4hRuHKS8ncF3eYW3taEqnkGy3qf33eBE",
+        "Weight": 1
+      },
+      {
+        "Account": "rKNujhTnuSy1bSS8Zfc2hVM2FG5mBKNwxt",
+        "Weight": 1
+      }
+    ]
+  }
+}
