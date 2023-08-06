@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/imsosorry/__init__.py
+src/imsosorry/uwuification.py
+src/imsosorry.egg-info/PKG-INFO
+src/imsosorry.egg-info/SOURCES.txt
+src/imsosorry.egg-info/dependency_links.txt
+src/imsosorry.egg-info/requires.txt
+src/imsosorry.egg-info/top_level.txt
+tests/test_uwuification.py

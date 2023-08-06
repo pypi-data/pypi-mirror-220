@@ -1,0 +1,15 @@
+
+[dev]
+pip-tools
+pre-commit
+black
+ruff
+
+[docs]
+sphinx
+furo
+sphinx-autoapi
+releases
+
+[tests]
+pytest

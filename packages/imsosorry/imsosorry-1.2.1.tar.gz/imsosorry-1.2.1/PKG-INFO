@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: imsosorry
+Version: 1.2.1
+Summary: Sometimes it can be necessary to call upon the ancient arts...
+Author-email: Bradley Reynolds <bradley.reynolds@darbia.dev>
+License: MIT
+Project-URL: repository, https://github.com/letsbuilda/imsosorry/
+Project-URL: documentation, https://docs.letsbuilda.dev/imsosorry/
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: tests
+Provides-Extra: docs
+License-File: LICENSE
+
+# I'm so sorry
+
+Sometimes it can be necessary to call upon the ancient arts...
+
+A module to uwuify strings of text.
+
+## Installation
+
+You can install `imsosorry` through PyPi using
+```sh
+$ pip install imsosorry
+```
+
+or, by installing the development version through GitHub.
+```sh
+$ pip install git+https://github.com/letsbuilda/imsosorry
+```
+
+### Example usage
+
+```py
+import imsosorry
+
+print(imsosorry.uwuify("i'm very sorry"))
+```
