@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+torch
+anndata
+pytorch_lightning
+typing
+scanpy
+scipy
+scvi
