@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+harpia/__init__.py
+harpia.egg-info/PKG-INFO
+harpia.egg-info/SOURCES.txt
+harpia.egg-info/dependency_links.txt
+harpia.egg-info/requires.txt
+harpia.egg-info/top_level.txt
+harpia/tropomi/__init__.py
+harpia/tropomi/no2/__init__.py
+harpia/tropomi/no2/converter.py
+harpia/tropomi/no2/lib/raster_template_130w60w20n55n_005.tif
+harpia/tropomi/no2/lib/raster_template_130w60w20n55n_010.tif
+harpia/tropomi/no2/lib/raster_template_130w60w20n55n_025.tif
+harpia/tropomi/no2/lib/raster_template_130w60w20n55n_050.tif
+harpia/tropomi/no2/lib/raster_template_130w60w20n55n_100.tif
