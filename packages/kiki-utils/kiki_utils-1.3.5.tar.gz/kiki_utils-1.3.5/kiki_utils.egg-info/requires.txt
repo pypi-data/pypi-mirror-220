@@ -1,0 +1,12 @@
+aiofiles
+aioshutil
+loguru
+orjson
+pycryptodomex
+pyopenssl
+
+[:platform_system == "Linux"]
+python-magic
+
+[:platform_system == "Windows"]
+python-magic-bin
