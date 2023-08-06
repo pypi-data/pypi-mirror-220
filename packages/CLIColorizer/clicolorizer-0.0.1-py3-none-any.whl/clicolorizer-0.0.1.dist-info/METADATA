@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: CLIColorizer
+Version: 0.0.1
+Summary: A simple way to color and style CLI text in Python.
+Project-URL: Homepage, https://github.com/davebowlin/Colorizer
+Author-email: Dave Bowlin <davebowlin@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# CLIColorizer
+
+## A very simple way to add color to your Python CLI apps.
+
+
+#
+# Example uses:
+
+
+## Create an instance of the CLIColorizer class
+import CLIColorizer
+ color = CLIColorizer()
+##
+## Example usage
+print(f"{color.yellow}Hello, World!{color.reset}")
+
+print(f"{color.blink}{color.yellow}{color.red_bg}Hello, world!{color.reset}")
+
+print_colored_text("Hello, World!", "yellow")
+
+print_colored_text("This is a test.", "red")
+
+print_colored_text("The sky is blue.", "blue")
+
+print_colored_text("I love Python.", "white")
+
+##
+# Caveats:
+
+ Not all escape codes work with all terminals. Be sure to test your terminal with the styles you  would like to use.
