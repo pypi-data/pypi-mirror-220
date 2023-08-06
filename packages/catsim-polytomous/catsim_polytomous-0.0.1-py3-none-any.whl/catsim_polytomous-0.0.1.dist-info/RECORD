@@ -1,0 +1,16 @@
+catsim_poly_debug.py,sha256=qNF2W5XtA0HToXDymLm0OVkjbPUDJTQOxjw6lLRqYGc,1749
+catsim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+catsim/cat.py,sha256=hrpm5NSXqolDA-F9vhqexBfgrDxe7_C4CXCvWCM2ipA,7346
+catsim/estimation.py,sha256=xqAPYc61R4dOgz53loLgj3I9C9A8X10qKq1fphnZiIU,15351
+catsim/initialization.py,sha256=nuRKGJMHhDR_JMRnRbVTrYDpIkdtKNRnWGaxJOeYIn4,2416
+catsim/irt.py,sha256=V3J9GrkKWJw5FHhjCMXjK9bLapVbBVoPsxk5LJsAp7A,19665
+catsim/plot.py,sha256=_vI3am0-MJRupDc4DEwfhWJePt9HmrJlSxI1jPlC1wE,15726
+catsim/selection.py,sha256=1q0q9LlPS61Lw1lAGyREQAYSfZ1NB1NgaRvDBDohPtQ,42332
+catsim/simulation.py,sha256=-JjabYROt9QLyb-5G8xFNUNspGl8tFCGxCpcw6IzXPk,19931
+catsim/stopping.py,sha256=49R7PSxlZS8bL3xNnZSbXWeH5Xu65NKGG1JZmy0-y4Q,2963
+catsim_polytomous-0.0.1.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+catsim_polytomous-0.0.1.dist-info/COPYING.LESSER,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+catsim_polytomous-0.0.1.dist-info/METADATA,sha256=1R76InBjo18ZxaaCXzZNmU_YZwZAeOjU9hC05gaNB0o,17219
+catsim_polytomous-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+catsim_polytomous-0.0.1.dist-info/top_level.txt,sha256=Mmy1j4d6wz7YU-wzDU4hXxTnTGc8M2Hr8CagkIvw2hM,25
+catsim_polytomous-0.0.1.dist-info/RECORD,,
