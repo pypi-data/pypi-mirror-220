@@ -1,0 +1,8 @@
+chassis/protos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chassis/protos/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chassis/protos/v1/model_grpc.py,sha256=esnhnUzMiPBe7ndTIXpEuXEiEXzNHvdPt6YwzBru3ac,2595
+chassis/protos/v1/model_pb2.py,sha256=FcMBMm29kaaEQ5ZDvMJ4YCFqFL3MCm20lZGb5EFZojc,11418
+chassisml_protobuf-3.0.0.dist-info/METADATA,sha256=pC8EaxKQ6yl_XvjEpS35CR1-6eCBJtC7ZiOHregzTdQ,115
+chassisml_protobuf-3.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chassisml_protobuf-3.0.0.dist-info/top_level.txt,sha256=bmtMgtu3VmbLDygnVDYSn8yiAV39SAW5KjP9jBvF8Yc,8
+chassisml_protobuf-3.0.0.dist-info/RECORD,,

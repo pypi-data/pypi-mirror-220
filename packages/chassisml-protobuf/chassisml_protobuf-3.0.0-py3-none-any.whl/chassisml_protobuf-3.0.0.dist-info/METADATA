@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: chassisml-protobuf
+Version: 3.0.0
+Requires-Dist: protobuf (<4)
+Requires-Dist: grpclib
+
