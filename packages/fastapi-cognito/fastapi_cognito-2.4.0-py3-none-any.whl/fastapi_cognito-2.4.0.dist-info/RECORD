@@ -1,0 +1,10 @@
+fastapi_cognito/__init__.py,sha256=__ZWLDvr4UdMV_XB_MV35bD4y02CYDhetJEQCcr0RKg,176
+fastapi_cognito/exceptions.py,sha256=k5OnsEfeu-Zrtj7NxOZ1A3eYjWUP4Pdeg1LYcVfeJqw,525
+fastapi_cognito/fastapi_cognito.py,sha256=JkZ1zW_s2LXq8Po2xmVxaUGYP-SCR4C2djZXonTBIp0,9290
+fastapi_cognito/models.py,sha256=sGnnoDMyulVTgg8jjYDEzjbOiq4oK5tI0YS1MSITYPE,527
+fastapi_cognito/settings_parsers.py,sha256=_bp0mU7FNaUqRwXa7sm1aCr9NiWS0UMJvAJ4Oi75yls,1490
+fastapi_cognito-2.4.0.dist-info/LICENSE.txt,sha256=NPNqzW1vxv0xgdt8XcD3fWXQ5MrVQpmu8uaUaAOatoc,1073
+fastapi_cognito-2.4.0.dist-info/METADATA,sha256=CNNWldDh7aWv7HGGmDqpjCVjtrFZJYn2Km-WyoL-9nQ,4850
+fastapi_cognito-2.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fastapi_cognito-2.4.0.dist-info/top_level.txt,sha256=F1LVaZIBkLezGbU7NYxvrlz0c5BZzmqmlCrinFB8UrU,16
+fastapi_cognito-2.4.0.dist-info/RECORD,,
