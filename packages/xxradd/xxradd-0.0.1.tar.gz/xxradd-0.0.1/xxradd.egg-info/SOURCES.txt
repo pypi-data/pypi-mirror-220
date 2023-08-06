@@ -1,0 +1,5 @@
+setup.py
+xxradd.egg-info/PKG-INFO
+xxradd.egg-info/SOURCES.txt
+xxradd.egg-info/dependency_links.txt
+xxradd.egg-info/top_level.txt
