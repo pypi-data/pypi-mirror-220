@@ -1,0 +1,8 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from plotagain import load_pickle
+
+
+{load_variables_code}
+
+{do_plot_code}

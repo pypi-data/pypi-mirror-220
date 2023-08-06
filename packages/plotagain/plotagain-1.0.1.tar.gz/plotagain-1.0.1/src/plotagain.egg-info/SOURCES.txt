@@ -1,0 +1,17 @@
+.gitignore
+README.md
+bitbucket-pipelines.yml
+pyproject.toml
+requirements.txt
+src/plotagain/__init__.py
+src/plotagain/iddict.py
+src/plotagain/pyplotcall.py
+src/plotagain/saveplotcontext.py
+src/plotagain/script_template.txt
+src/plotagain/utils.py
+src/plotagain.egg-info/PKG-INFO
+src/plotagain.egg-info/SOURCES.txt
+src/plotagain.egg-info/dependency_links.txt
+src/plotagain.egg-info/requires.txt
+src/plotagain.egg-info/top_level.txt
+tests/test_nothing.py
