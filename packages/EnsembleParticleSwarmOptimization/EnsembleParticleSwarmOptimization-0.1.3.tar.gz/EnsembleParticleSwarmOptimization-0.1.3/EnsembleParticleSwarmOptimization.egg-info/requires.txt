@@ -1,0 +1,9 @@
+numpy>=1.15.0
+scipy
+pandas
+matplotlib
+scikit-learn
+seaborn
+pathos
+dill
+kneed
