@@ -1,0 +1,11 @@
+codecheck:
+  image: registry.gitlab.com/empaia/integration/ci-docker-images/test-runner
+  tags:
+    - empaia-parallel
+  before_script:
+    - poetry install
+  script:
+    - poetry run black --check .
+    - poetry run isort --check .
+    - poetry run pycodestyle *.py
+    - poetry run pylint *.py
