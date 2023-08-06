@@ -1,0 +1,9 @@
+degiroasync>=0.20.0
+
+[dev]
+pytest>=7.0.1
+coverage>=6.3
+flake8>=4.0.1
+mypy>=0.931
+ipython
+ipdb
