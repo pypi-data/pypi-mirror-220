@@ -1,0 +1,6177 @@
+{
+  "src/lib/components/AnyaCommon/AnyaButton.react.js": {
+    "description": "An Ant Design Button component\nSee https://ant.design/components/button",
+    "displayName": "AnyaButton",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Content to be displayed on the button"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'ghost'",
+              "computed": false
+            },
+            {
+              "value": "'dashed'",
+              "computed": false
+            },
+            {
+              "value": "'link'",
+              "computed": false
+            },
+            {
+              "value": "'text'",
+              "computed": false
+            },
+            {
+              "value": "'default'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Setting the overall style of the button (optional options are primary, ghost\ndashed, link, text, default; default is default)",
+        "defaultValue": {
+          "value": "'primary'",
+          "computed": false
+        }
+      },
+      "danger": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Set the danger status of button",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "success": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Set the success status of button, green",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "pink": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "if the button is in pink"
+      },
+      "info": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "if the button is an info button (blue)"
+      },
+      "href": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "href if the button is set to a link"
+      },
+      "target": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "target of the link, e.g., \"_blank\"",
+        "defaultValue": {
+          "value": "'_blank'",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Setting whether the button should be rendered as a disabled state, default is false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "shape": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'circle'",
+              "computed": false
+            },
+            {
+              "value": "'round'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Setting the shape of the button (circle: circle, round: rounded rectangle; default is not set, i.e., normal rectangle)"
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'middle'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Setting the size of the button, available options are 'small', 'middle', and 'large'; default is 'middle'",
+        "defaultValue": {
+          "value": "'small'",
+          "computed": false
+        }
+      },
+      "n_clicks": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Recording the number of times the button has been clicked since rendering, default is 0",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "debounceWait": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Used to set the debounce waiting duration (in milliseconds) for n_clicks listener update; default is 0",
+        "defaultValue": {
+          "value": "200",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/AnyaCommon/AnyaIcon.react.js": {
+    "description": "An Ant Design Icon component\nSee https://ant.design/components/icon",
+    "displayName": "AnyaIcon",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Content to be displayed on the button"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "icon": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies the icon type."
+      },
+      "nClicks": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Records the number of times the button has been clicked since rendering, default is 0.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/AnyaCommon/AnyaTag.react.js": {
+    "description": "An Ant Design Tag component\nSee https://ant.design/components/tag",
+    "displayName": "AnyaTag",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Content to be displayed on the tag"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color of the tag"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "href": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "href if the tag is set to a link"
+      },
+      "target": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "target of the link, e.g., \"_blank\"",
+        "defaultValue": {
+          "value": "'_blank'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaConfig/AnyaExecuteJs.react.js": {
+    "description": "An feffery-utils-components components",
+    "displayName": "AnyaExecuteJs",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "jsString": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "JS in string"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/AnyaConfig/AnyaTheme.react.js": {
+    "description": "An Ant Design ConfigProvider\nSee https://ant.design/docs/react/customize-theme",
+    "displayName": "AnyaTheme",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Child components inside the space"
+      },
+      "colorPrimary": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Primary color",
+        "defaultValue": {
+          "value": "'#6366f1'",
+          "computed": false
+        }
+      },
+      "colorSuccess": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Success color",
+        "defaultValue": {
+          "value": "'#13c2b7'",
+          "computed": false
+        }
+      },
+      "colorWarning": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Warning color",
+        "defaultValue": {
+          "value": "'#faad14'",
+          "computed": false
+        }
+      },
+      "colorInfo": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Info color",
+        "defaultValue": {
+          "value": "'#6366f1'",
+          "computed": false
+        }
+      },
+      "colorTextBase": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Text color",
+        "defaultValue": {
+          "value": "'#424245'",
+          "computed": false
+        }
+      },
+      "colorBgLayout": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Layout background color",
+        "defaultValue": {
+          "value": "'#f0f2f5'",
+          "computed": false
+        }
+      },
+      "colorBgContainer": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Container background color",
+        "defaultValue": {
+          "value": "'#ffffff'",
+          "computed": false
+        }
+      },
+      "fontSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Font size",
+        "defaultValue": {
+          "value": "12",
+          "computed": false
+        }
+      },
+      "fontFamily": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Font family",
+        "defaultValue": {
+          "value": "\"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'\"",
+          "computed": false
+        }
+      },
+      "wireframe": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Wireframe",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaDataDisplay/AnyaCard.react.js": {
+    "description": "An Ant Design Card component\nSee https://ant.design/components/card",
+    "displayName": "AnyaCard",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Content to be displayed on the card"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "type": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Card style type, can be set to inner or not set"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "headStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style of card header"
+      },
+      "bodyStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style of card body"
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'default'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Size of card. default | small",
+        "defaultValue": {
+          "value": "'default'",
+          "computed": false
+        }
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Title of the card"
+      },
+      "extraLinkText": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Extra link to be displayed on the top right corner - text.\nIt will not be displayed if the title is missing or a cover\nimage is enabled."
+      },
+      "extraLinkHref": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Extra link to be displayed on the top right corner - href"
+      },
+      "extraLinkStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Extra link to be displayed on the top right corner - CSS style"
+      },
+      "hoverable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Lift up when hovering card",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "coverImgSrc": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Url of the cover image if applicable. The extra link is not avaialbe when\na cover image is used",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "imgStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "CSS style of cover image"
+      }
+    }
+  },
+  "src/lib/components/AnyaDataDisplay/AnyaCollapse.react.js": {
+    "description": "An Ant Design collapse component\nSee https://ant.design/components/collapse\nAdapted from feffery-antd-components",
+    "displayName": "AnyaCollapse",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Children of the collapose item"
+      },
+      "title": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Title of the panel"
+      },
+      "isOpen": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If it is open",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "bordered": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to display the border of the collapse item",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "showArrow": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If false, panel will not show arrow icon. If false, collapsible can't be set as icon",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "ghost": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Ghost mode of the collapse item",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "collapsible": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'header'",
+              "computed": false
+            },
+            {
+              "value": "'disabled'",
+              "computed": false
+            },
+            {
+              "value": "'icon'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Whether the object is collapsible"
+      },
+      "forceRender": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to render when the object is collpased",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "'isOpen'",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "['isOpen']",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'local'",
+              "computed": false
+            },
+            {
+              "value": "'session'",
+              "computed": false
+            },
+            {
+              "value": "'memory'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "'local'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaDataDisplay/AnyaModal.react.js": {
+    "description": "An Ant Design Modal component\nSee https://ant.design/components/modal",
+    "displayName": "AnyaModal",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component"
+      },
+      "className": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Child components"
+      },
+      "title": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Title"
+      },
+      "visible": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the component is visible",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Width of the modal"
+      },
+      "transitionType": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'none'",
+              "computed": false
+            },
+            {
+              "value": "'fade'",
+              "computed": false
+            },
+            {
+              "value": "'zoom'",
+              "computed": false
+            },
+            {
+              "value": "'zoom-big'",
+              "computed": false
+            },
+            {
+              "value": "'zoom-big-fast'",
+              "computed": false
+            },
+            {
+              "value": "'slide-up'",
+              "computed": false
+            },
+            {
+              "value": "'slide-down'",
+              "computed": false
+            },
+            {
+              "value": "'slide-left'",
+              "computed": false
+            },
+            {
+              "value": "'slide-right'",
+              "computed": false
+            },
+            {
+              "value": "'move-up'",
+              "computed": false
+            },
+            {
+              "value": "'move-down'",
+              "computed": false
+            },
+            {
+              "value": "'move-left'",
+              "computed": false
+            },
+            {
+              "value": "'move-right'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Transition animation: 'fade'\u3001'zoom'\u3001'zoom-big'\u3001'zoom-big-fast'\u3001'zoom-up'\u3001\n'zoom-down'\u3001'zoom-left'\u3001'zoom-right'\u3001'slide-up'\u3001'slide-down'\u3001'slide-left'\u3001\n'slide-right'\u3001'move-up'\u3001'move-down'\u3001'move-left'\u3001'move-right'",
+        "defaultValue": {
+          "value": "'fade'",
+          "computed": false
+        }
+      },
+      "closable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the modal is closable",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "closeIconType": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'outlined'",
+              "computed": false
+            },
+            {
+              "value": "'two-tone'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Close icon type",
+        "defaultValue": {
+          "value": "'default'",
+          "computed": false
+        }
+      },
+      "zIndex": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Z-index",
+        "defaultValue": {
+          "value": "1000",
+          "computed": false
+        }
+      },
+      "bodyStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Body style"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/AnyaDataDisplay/AnyaTable.react.js": {
+    "description": "An Ant Design Table component\nSee https://ant.design/components/table",
+    "displayName": "AnyaTable",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component"
+      },
+      "className": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "columns": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "exact",
+            "value": {
+              "title": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "func"
+                  },
+                  {
+                    "name": "node"
+                  }
+                ],
+                "required": true
+              },
+              "dataIndex": {
+                "name": "string",
+                "required": true
+              },
+              "group": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "arrayOf",
+                    "value": {
+                      "name": "string"
+                    }
+                  }
+                ],
+                "required": false
+              },
+              "renderOptions": {
+                "name": "exact",
+                "value": {
+                  "renderType": {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "'row-merge'",
+                        "computed": false
+                      }
+                    ],
+                    "required": false
+                  }
+                },
+                "required": false
+              },
+              "key": {
+                "name": "string",
+                "required": false
+              },
+              "colSpan": {
+                "name": "number",
+                "required": false
+              },
+              "rowSpan": {
+                "name": "object",
+                "required": false
+              },
+              "colSpanRow": {
+                "name": "object",
+                "required": false
+              },
+              "className": {
+                "name": "object",
+                "required": false
+              },
+              "fixed": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'left'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'right'",
+                    "computed": false
+                  }
+                ],
+                "required": false
+              },
+              "align": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'left'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'center'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'right'",
+                    "computed": false
+                  }
+                ],
+                "required": false
+              },
+              "width": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ],
+                "required": false
+              },
+              "hidden": {
+                "name": "bool",
+                "required": false
+              },
+              "filterResetToDefaultFilteredValue": {
+                "name": "bool",
+                "required": false
+              },
+              "ellipsis": {
+                "name": "any",
+                "required": false
+              },
+              "sorter": {
+                "name": "any",
+                "required": false
+              },
+              "render": {
+                "name": "any",
+                "required": false
+              },
+              "onCell": {
+                "name": "any",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "Columns"
+      },
+      "data": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "objectOf",
+            "value": {
+              "name": "union",
+              "value": [
+                {
+                  "name": "arrayOf",
+                  "value": {
+                    "name": "any"
+                  }
+                },
+                {
+                  "name": "node"
+                },
+                {
+                  "name": "string"
+                },
+                {
+                  "name": "number"
+                },
+                {
+                  "name": "exact",
+                  "value": {
+                    "content": {
+                      "name": "union",
+                      "value": [
+                        {
+                          "name": "number"
+                        },
+                        {
+                          "name": "string"
+                        }
+                      ],
+                      "required": false
+                    },
+                    "rowSpan": {
+                      "name": "number",
+                      "required": false
+                    },
+                    "key": {
+                      "name": "string",
+                      "required": false
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "required": false,
+        "description": "Column data"
+      },
+      "bordered": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Bordered"
+      },
+      "maxHeight": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Set max height"
+      },
+      "maxWidth": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Set max width"
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Size",
+        "defaultValue": {
+          "value": "'small'",
+          "computed": false
+        }
+      },
+      "pagination": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "exact",
+              "value": {
+                "position": {
+                  "name": "enum",
+                  "value": [
+                    {
+                      "value": "'topLeft'",
+                      "computed": false
+                    },
+                    {
+                      "value": "'topCenter'",
+                      "computed": false
+                    },
+                    {
+                      "value": "'topRight'",
+                      "computed": false
+                    },
+                    {
+                      "value": "'bottomLeft'",
+                      "computed": false
+                    },
+                    {
+                      "value": "'bottomCenter'",
+                      "computed": false
+                    },
+                    {
+                      "value": "'bottomRight'",
+                      "computed": false
+                    }
+                  ],
+                  "required": false
+                },
+                "pageSize": {
+                  "name": "number",
+                  "required": false
+                },
+                "current": {
+                  "name": "number",
+                  "required": false
+                },
+                "showSizeChanger": {
+                  "name": "bool",
+                  "required": false
+                },
+                "pageSizeOptions": {
+                  "name": "arrayOf",
+                  "value": {
+                    "name": "number"
+                  },
+                  "required": false
+                },
+                "showTotal": {
+                  "name": "bool",
+                  "required": false
+                },
+                "showQuickJumper": {
+                  "name": "bool",
+                  "required": false
+                },
+                "showTotalPrefix": {
+                  "name": "string",
+                  "required": false
+                },
+                "showTotalSuffix": {
+                  "name": "string",
+                  "required": false
+                },
+                "hideOnSinglePage": {
+                  "name": "bool",
+                  "required": false
+                },
+                "simple": {
+                  "name": "bool",
+                  "required": false
+                },
+                "disabled": {
+                  "name": "bool",
+                  "required": false
+                },
+                "size": {
+                  "name": "enum",
+                  "value": [
+                    {
+                      "value": "'default'",
+                      "computed": false
+                    },
+                    {
+                      "value": "'small'",
+                      "computed": false
+                    }
+                  ],
+                  "required": false
+                },
+                "total": {
+                  "name": "number",
+                  "required": false
+                }
+              }
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Config of pagination. You can ref table pagination config or full pagination document, hide it by setting it to false",
+        "defaultValue": {
+          "value": "{\n    defaultPageSize: 20,\n    hideOnSinglePage: true,\n    showSizeChanger: false\n}",
+          "computed": false
+        }
+      },
+      "cellUpdateOptimize": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to allow cell content rendering",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/AnyaDataDisplay/AnyaTabs.react.js": {
+    "description": "An Ant Design Tag component\nSee https://ant.design/components/tabs",
+    "displayName": "AnyaTabs",
+    "methods": [],
+    "props": {
+      "items": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "exact",
+            "value": {
+              "label": {
+                "name": "node",
+                "required": false
+              },
+              "key": {
+                "name": "string",
+                "required": false
+              },
+              "children": {
+                "name": "node",
+                "required": false
+              },
+              "disabled": {
+                "name": "bool",
+                "required": false
+              },
+              "forceRender": {
+                "name": "bool",
+                "required": false
+              },
+              "closable": {
+                "name": "bool",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "Tab items"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'line'",
+              "computed": false
+            },
+            {
+              "value": "'card'",
+              "computed": false
+            },
+            {
+              "value": "' editable-card'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Type of the tabs, only card and line types are avaialable at this moment",
+        "defaultValue": {
+          "value": "'card'",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Preset tab bar size",
+        "defaultValue": {
+          "value": "'small'",
+          "computed": false
+        }
+      },
+      "defaultActiveKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Initial active TabPane's key, if activeKey is not set"
+      },
+      "activeKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Current TabPane's key"
+      },
+      "disabledTabKeys": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Array of keys of tabs to be disabled"
+      },
+      "tabPosition": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'top'",
+              "computed": false
+            },
+            {
+              "value": "'left'",
+              "computed": false
+            },
+            {
+              "value": "'right'",
+              "computed": false
+            },
+            {
+              "value": "'bottom'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Position of tabs",
+        "defaultValue": {
+          "value": "'top'",
+          "computed": false
+        }
+      },
+      "centered": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Centers tabs",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "tabBarGutter": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The gap between tabs"
+      },
+      "itemContent": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to display children content under each item, defaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Content to display if itemContent is set to false"
+      },
+      "wrapperStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style of the entire wrapper if itemContent is set to false"
+      },
+      "childCardBorder": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the child card bordy should have borders",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "childCardStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style of the child card body",
+        "defaultValue": {
+          "value": "{borderTop: 0}",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/AnyaDataEntry/AnyaCheckbox.react.js": {
+    "description": "An Ant Design Checkbox component\nSee https://ant.design/components/checkbox\nAdapted from feffery-antd-components",
+    "displayName": "AnyaCheckbox",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component id."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Text content of the inline text."
+      },
+      "className": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "CSS class name."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If disable checkbox",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "label": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Label of the checkbox"
+      },
+      "checked": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If the box is checked",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "indeterminate": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "The indeterminate checked state of checkbox",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "'checked'",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "['checked']",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'local'",
+              "computed": false
+            },
+            {
+              "value": "'session'",
+              "computed": false
+            },
+            {
+              "value": "'memory'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "'local'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaDataEntry/AnyaCheckboxGroup.react.js": {
+    "description": "An Ant Design Checkbox component\nSee https://ant.design/components/checkbox\nAdapted from feffery-antd-components",
+    "displayName": "AnyaCheckboxGroup",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component id."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Text content of the inline text."
+      },
+      "className": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "CSS class name."
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to disable the checkbox group",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "options": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "exact",
+            "value": {
+              "label": {
+                "name": "node",
+                "required": false
+              },
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ],
+                "required": false
+              },
+              "disabled": {
+                "name": "bool",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "Checkbox options"
+      },
+      "value": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "union",
+            "value": [
+              {
+                "name": "string"
+              },
+              {
+                "name": "number"
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Selected value"
+      },
+      "includeSelectAll": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether include select all"
+      },
+      "selectAll": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether select all",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "'value'",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "['value']",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'local'",
+              "computed": false
+            },
+            {
+              "value": "'session'",
+              "computed": false
+            },
+            {
+              "value": "'memory'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "'local'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaDataEntry/AnyaDateRangePicker.react.js": {
+    "description": "An Ant Date Picker component\nSee https://ant.design/components/date-picker\nAdapted from feffery-antd-components",
+    "displayName": "AnyaDateRangePicker",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "format": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Date format"
+      },
+      "picker": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'date'",
+              "computed": false
+            },
+            {
+              "value": "'week'",
+              "computed": false
+            },
+            {
+              "value": "'month'",
+              "computed": false
+            },
+            {
+              "value": "'quarter'",
+              "computed": false
+            },
+            {
+              "value": "'year'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Precision",
+        "defaultValue": {
+          "value": "'date'",
+          "computed": false
+        }
+      },
+      "firstDayOfWeek": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Define first day of week"
+      },
+      "disabled": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "bool"
+          }
+        },
+        "required": false,
+        "description": "Disable the component",
+        "defaultValue": {
+          "value": "[false, false]",
+          "computed": false
+        }
+      },
+      "showTime": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "exact",
+              "value": {
+                "defaultValue": {
+                  "name": "arrayOf",
+                  "value": {
+                    "name": "string"
+                  },
+                  "required": false
+                },
+                "format": {
+                  "name": "string",
+                  "required": false
+                }
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Allow time display",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'middle'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Size",
+        "defaultValue": {
+          "value": "'middle'",
+          "computed": false
+        }
+      },
+      "bordered": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the box should be bordered",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "placeholder": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Placeholder"
+      },
+      "placement": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'bottomLeft'",
+              "computed": false
+            },
+            {
+              "value": "'bottomRight'",
+              "computed": false
+            },
+            {
+              "value": "'topLeft'",
+              "computed": false
+            },
+            {
+              "value": "'topRight'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The position where the selection box pops up",
+        "defaultValue": {
+          "value": "'bottomLeft'",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Select date trange"
+      },
+      "defaultValue": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Default data values"
+      },
+      "defaultPickerValue": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Default picker value"
+      },
+      "disabledDatesStrategy": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "exact",
+            "value": {
+              "mode": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'eq'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'ne'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'le'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'lt'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'ge'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'gt'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'in'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'not-in'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'in-enumerate-dates'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'not-in-enumerate-dates'",
+                    "computed": false
+                  }
+                ],
+                "required": false
+              },
+              "target": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'day'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'month'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'quarter'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'year'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'dayOfYear'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'dayOfWeek'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'specific-date'",
+                    "computed": false
+                  }
+                ],
+                "required": false
+              },
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "arrayOf",
+                    "value": {
+                      "name": "number"
+                    }
+                  },
+                  {
+                    "name": "arrayOf",
+                    "value": {
+                      "name": "string"
+                    }
+                  }
+                ],
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "Disable date strategy"
+      },
+      "open": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether it is open"
+      },
+      "status": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'error'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Status"
+      },
+      "allowClear": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow clear",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "readOnly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "To set the container of the floating layer, while the default is to create a div element in body"
+      },
+      "popupContainer": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'parent'",
+              "computed": false
+            },
+            {
+              "value": "'body'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "To set the container of the floating layer, while the default is to create a div element in body",
+        "defaultValue": {
+          "value": "'body'",
+          "computed": false
+        }
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "'value'",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "['value']",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'local'",
+              "computed": false
+            },
+            {
+              "value": "'session'",
+              "computed": false
+            },
+            {
+              "value": "'memory'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "'local'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/AnyaDataEntry/AnyaInput.react.js": {
+    "description": "An Ant Design input component\nSee https://ant.design/components/input\nAdapted from feffery-antd-components",
+    "displayName": "AnyaInput",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "mode": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'search'",
+              "computed": false
+            },
+            {
+              "value": "'text-area'",
+              "computed": false
+            },
+            {
+              "value": "'password'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Mode of the input",
+        "defaultValue": {
+          "value": "'default'",
+          "computed": false
+        }
+      },
+      "autoComplete": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'off'",
+              "computed": false
+            },
+            {
+              "value": "'on'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Autocomplete",
+        "defaultValue": {
+          "value": "'on'",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Disable the input object",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'middle'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Size of the input box",
+        "defaultValue": {
+          "value": "'middle'",
+          "computed": false
+        }
+      },
+      "bordered": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to show the border of the input box",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "placeholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Placehoder of the inputbox"
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Value entered"
+      },
+      "defaultValue": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Default value"
+      },
+      "md5Value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "md5 value"
+      },
+      "debounceValue": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "debounce value"
+      },
+      "passwordUseMd5": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Passowrd mode to use md5 value",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "debounceWait": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "debounce wait",
+        "defaultValue": {
+          "value": "200",
+          "computed": false
+        }
+      },
+      "addonBefore": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Ojbect (e.g, icon) before"
+      },
+      "addonAfter": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Ojbect (e.g, icon) after"
+      },
+      "prefix": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Prefix inside the input box"
+      },
+      "suffix": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "suffix inside the input box"
+      },
+      "maxLength": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Max lenghth of the entry"
+      },
+      "showCount": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to show character count",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "countFormat": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Mode of showcount"
+      },
+      "autoSize": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "exact",
+              "value": {
+                "minRows": {
+                  "name": "number",
+                  "required": false
+                },
+                "maxRows": {
+                  "name": "number",
+                  "required": false
+                }
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Autosize",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "nSubmit": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Record the number of times the submit button is clicked",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "nClicksSearch": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Record the number of times the search button is clicked",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "status": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'error'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Set validation status"
+      },
+      "allowClear": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Auto clear",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "readOnly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Read only mode"
+      },
+      "emptyAsNone": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Differentiate '' and null",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "'value'",
+                "computed": false
+              },
+              {
+                "value": "'md5Value'",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "['value', 'md5Value']",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'local'",
+              "computed": false
+            },
+            {
+              "value": "'session'",
+              "computed": false
+            },
+            {
+              "value": "'memory'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "'local'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaDataEntry/AnyaInputNumber.react.js": {
+    "description": "An Ant Design InputNumber component\nSee https://ant.design/components/input-number\nAdapted from feffery-antd-components",
+    "displayName": "AnyaInputNumber",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "addonBefore": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The label text displayed before (on the left side of) the input field"
+      },
+      "addonAfter": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The label text displayed after (on the right side of) the input field"
+      },
+      "prefix": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The prefix icon for the Input"
+      },
+      "controls": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to show +- controls, or set custom arrows icon",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "keyboard": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If enable keyboard behavior",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "min": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The max value"
+      },
+      "max": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The min value"
+      },
+      "step": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The number to which the current value is increased or decreased. It can be an integer or decimal"
+      },
+      "precision": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The precision of input value. Will use formatter when config of formatter"
+      },
+      "stringMode": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Set value as string to support high precision decimals. Will return string value by onChange",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If disable the input",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'middle'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of input box",
+        "defaultValue": {
+          "value": "'middle'",
+          "computed": false
+        }
+      },
+      "bordered": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether has border style",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "placeholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Placeholder"
+      },
+      "value": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The current value"
+      },
+      "defaultValue": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The initial value"
+      },
+      "debounceValue": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Debounce value"
+      },
+      "debounceWait": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Debounce waiting time",
+        "defaultValue": {
+          "value": "200",
+          "computed": false
+        }
+      },
+      "nSubmit": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "No. of times submitted",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "status": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'error'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Status"
+      },
+      "readOnly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Read only"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "'value'",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "['value']",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'local'",
+              "computed": false
+            },
+            {
+              "value": "'session'",
+              "computed": false
+            },
+            {
+              "value": "'memory'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "'local'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaDataEntry/AnyaRadioGroup.react.js": {
+    "description": "An Ant Design Divder component\nSee https://ant.design/components/radio\nAdapted from feffery-antd-components",
+    "displayName": "AnyaRadioGroup",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "direction": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'vertical'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Direction of the radio group",
+        "defaultValue": {
+          "value": "'horizontal'",
+          "computed": false
+        }
+      },
+      "options": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "exact",
+            "value": {
+              "label": {
+                "name": "node",
+                "required": false
+              },
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ],
+                "required": false
+              },
+              "disabled": {
+                "name": "bool",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "Array of options"
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Disable the radio group",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'large'",
+              "computed": false
+            },
+            {
+              "value": "'middle'",
+              "computed": false
+            },
+            {
+              "value": "'small'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Size of the radio group",
+        "defaultValue": {
+          "value": "'small'",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Selected value"
+      },
+      "defaultValue": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Default selected value"
+      },
+      "optionType": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'button'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Set Radio optionType",
+        "defaultValue": {
+          "value": "'default'",
+          "computed": false
+        }
+      },
+      "buttonStyle": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'outline'",
+              "computed": false
+            },
+            {
+              "value": "'solid'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The style type of radio button, outline | solid",
+        "defaultValue": {
+          "value": "'outline'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "'value'",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "['value']",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'local'",
+              "computed": false
+            },
+            {
+              "value": "'session'",
+              "computed": false
+            },
+            {
+              "value": "'memory'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "'local'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaDataEntry/AnyaSelect.react.js": {
+    "description": "An Ant Design Select component\nSee https://ant.design/components/select\nAdapted from feffery-antd-components",
+    "displayName": "AnyaSelect",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "options": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "union",
+            "value": [
+              {
+                "name": "exact",
+                "value": {
+                  "label": {
+                    "name": "node",
+                    "required": true
+                  },
+                  "value": {
+                    "name": "union",
+                    "value": [
+                      {
+                        "name": "string"
+                      },
+                      {
+                        "name": "number"
+                      }
+                    ],
+                    "required": true
+                  },
+                  "disabled": {
+                    "name": "bool",
+                    "required": false
+                  }
+                }
+              },
+              {
+                "name": "exact",
+                "value": {
+                  "group": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "options": {
+                    "name": "arrayOf",
+                    "value": {
+                      "name": "exact",
+                      "value": {
+                        "label": {
+                          "name": "node",
+                          "required": true
+                        },
+                        "value": {
+                          "name": "union",
+                          "value": [
+                            {
+                              "name": "string"
+                            },
+                            {
+                              "name": "number"
+                            }
+                          ],
+                          "required": true
+                        },
+                        "disabled": {
+                          "name": "bool",
+                          "required": false
+                        }
+                      }
+                    },
+                    "required": false
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Options",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "listHeight": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "List height",
+        "defaultValue": {
+          "value": "256",
+          "computed": false
+        }
+      },
+      "mode": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'multiple'",
+              "computed": false
+            },
+            {
+              "value": "'tags'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Selection mode"
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If disable the select component",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'middle'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Sice of the component",
+        "defaultValue": {
+          "value": "'middle'",
+          "computed": false
+        }
+      },
+      "bordered": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Border of the select box",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "placeholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Placeholder text"
+      },
+      "placement": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'bottomLeft'",
+              "computed": false
+            },
+            {
+              "value": "'bottomRight'",
+              "computed": false
+            },
+            {
+              "value": "'topLeft'",
+              "computed": false
+            },
+            {
+              "value": "'topRight'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The position where the selection box pops up",
+        "defaultValue": {
+          "value": "'bottomLeft'",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "union",
+              "value": [
+                {
+                  "name": "string"
+                },
+                {
+                  "name": "number"
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Selected value"
+      },
+      "defaultValue": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "union",
+              "value": [
+                {
+                  "name": "string"
+                },
+                {
+                  "name": "number"
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Initial selected option"
+      },
+      "maxTagCount": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "'responsive'",
+                  "computed": false
+                }
+              ]
+            }
+          ]
+        },
+        "required": false,
+        "description": "Max tag count"
+      },
+      "status": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'error'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Set validation status"
+      },
+      "optionFilterProp": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'value'",
+              "computed": false
+            },
+            {
+              "value": "'label'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Which prop value of option will be used for filter if filterOption is true.\nIf options is set, it should be set to label",
+        "defaultValue": {
+          "value": "'label'",
+          "computed": false
+        }
+      },
+      "searchValue": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The current input \"search\" text"
+      },
+      "optionFilterMode": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'case-insensitive'",
+              "computed": false
+            },
+            {
+              "value": "'case-sensitive'",
+              "computed": false
+            },
+            {
+              "value": "'regex'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Option filter mode",
+        "defaultValue": {
+          "value": "'case-insensitive'",
+          "computed": false
+        }
+      },
+      "debounceSearchValue": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Debounce search value"
+      },
+      "debounceWait": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Debounce wait",
+        "defaultValue": {
+          "value": "200",
+          "computed": false
+        }
+      },
+      "autoSpin": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Auto spin",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "autoClearSearchValue": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the current search will be cleared on selecting an item.\nOnly applies when mode is set to multiple or tags",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "emptyContent": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Empty contnet"
+      },
+      "loadingEmptyContent": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Load empty content",
+        "defaultValue": {
+          "value": "<div style={{display: 'flex', justifyContent: 'center'}}>\n    <Spin />\n</div>",
+          "computed": false
+        }
+      },
+      "dropdownBefore": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Ojbect (e.g, icon) before the dropdown"
+      },
+      "dropdownAfter": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Ojbect (e.g, icon) after the dropdown"
+      },
+      "allowClear": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow content to be cleared",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "readOnly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Readonly"
+      },
+      "popupContainer": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'parent'",
+              "computed": false
+            },
+            {
+              "value": "'body'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Continer of the popup",
+        "defaultValue": {
+          "value": "'body'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "'value'",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "['value']",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'local'",
+              "computed": false
+            },
+            {
+              "value": "'session'",
+              "computed": false
+            },
+            {
+              "value": "'memory'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "'local'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaDataEntry/AnyaSlider.react.js": {
+    "description": "An Ant Design slider component\nSee https://ant.design/components/slider\nAdapted from feffery-antd-components",
+    "displayName": "AnyaSlider",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "railStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "The style of slider rail (the background)"
+      },
+      "vertical": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Vertical mode",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "range": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Dual thumb mode",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "min": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The maximum value the slider can slide to",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "max": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The minimum value the slider can slide to",
+        "defaultValue": {
+          "value": "100",
+          "computed": false
+        }
+      },
+      "step": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The granularity the slider can step through values. Must greater than 0, and be divided by (max - min) . When marks no null, step can be null",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "marks": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Tick mark of Slider, type of key must be number, and must in closed interval [min, max], each mark can declare its own style"
+      },
+      "tooltipVisible": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to display tooltop"
+      },
+      "tooltipPrefix": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Tooltip prefix",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "tooltipSuffix": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Tooltip suffix",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Disable the component",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "number"
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Value"
+      },
+      "defaultValue": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "number"
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Default value"
+      },
+      "popupContainer": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'parent'",
+              "computed": false
+            },
+            {
+              "value": "'body'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The DOM container of the Tooltip, the default behavior is to create a div element in body",
+        "defaultValue": {
+          "value": "'body'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "'value'",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "['value']",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'local'",
+              "computed": false
+            },
+            {
+              "value": "'session'",
+              "computed": false
+            },
+            {
+              "value": "'memory'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "'local'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaDataEntry/AnyaSwitch.react.js": {
+    "description": "An Ant Design Swith component\nSee https://ant.design/components/switch",
+    "displayName": "AnyaSwitch",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to disable the switch component",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "checked": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Determine whether the Switch is checked"
+      },
+      "checkedChildren": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content to be shown when the state is checked"
+      },
+      "unCheckedChildren": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content to be shown when the state is unchecked"
+      },
+      "size": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'small'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The size of the Switch, options: default small",
+        "defaultValue": {
+          "value": "'default'",
+          "computed": false
+        }
+      },
+      "loading": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Loading state of switch",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "'checked'",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "['checked']",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'local'",
+              "computed": false
+            },
+            {
+              "value": "'session'",
+              "computed": false
+            },
+            {
+              "value": "'memory'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "'local'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaGrid/AnyaCol.react.js": {
+    "description": "An Antd Design Col component\nhttps://ant.design/components/grid",
+    "displayName": "AnyaCol",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Id of the col"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content"
+      },
+      "className": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "CSS classname of the col"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "CSS style of the col"
+      },
+      "span": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Raster number of cells to occupy, 0 corresponds to"
+      },
+      "offset": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The number of cells to offset Col from the left",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "order": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Raster order",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "flex": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Flex layout style"
+      },
+      "xs": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "object"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "screen < 576px and also default setting, could be a span value or an object containing above props"
+      },
+      "sm": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "object"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "screen \u2265 576px, could be a span value or an object containing above props"
+      },
+      "md": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "object"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "screen \u2265 768px, could be a span value or an object containing above props"
+      },
+      "lg": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "object"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "screen \u2265 992px, could be a span value or an object containing above props"
+      },
+      "xl": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "object"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "screen \u2265 1200px, could be a span value or an object containing above props"
+      },
+      "xxl": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "object"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "screen \u2265 1600px, could be a span value or an object containing above props"
+      }
+    }
+  },
+  "src/lib/components/AnyaGrid/AnyaRow.react.js": {
+    "description": "An Antd Design Row component\nhttps://ant.design/components/grid",
+    "displayName": "AnyaRow",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Id of the row"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content"
+      },
+      "className": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "CSS classname of the row"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "CSS style of the row"
+      },
+      "align": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'top'",
+              "computed": false
+            },
+            {
+              "value": "'middle'",
+              "computed": false
+            },
+            {
+              "value": "'bottom'",
+              "computed": false
+            },
+            {
+              "value": "'stretch'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Vertical alignment: top | middle | bottom | stretch",
+        "defaultValue": {
+          "value": "'middle'",
+          "computed": false
+        }
+      },
+      "gutter": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "number"
+              }
+            },
+            {
+              "name": "exact",
+              "value": {
+                "xs": {
+                  "name": "number",
+                  "required": false
+                },
+                "sm": {
+                  "name": "number",
+                  "required": false
+                },
+                "md": {
+                  "name": "number",
+                  "required": false
+                },
+                "lg": {
+                  "name": "number",
+                  "required": false
+                },
+                "xl": {
+                  "name": "number",
+                  "required": false
+                },
+                "xxl": {
+                  "name": "number",
+                  "required": false
+                }
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Spacing between grids, could be a number or a object like { xs: 8, sm: 16, md: 24}.\nOr you can use array to make horizontal and vertical spacing work at the same time [horizontal, vertical]"
+      },
+      "justify": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'start'",
+              "computed": false
+            },
+            {
+              "value": "'end'",
+              "computed": false
+            },
+            {
+              "value": "'center'",
+              "computed": false
+            },
+            {
+              "value": "'space-around'",
+              "computed": false
+            },
+            {
+              "value": "'space-between'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Horizontal arrangement"
+      },
+      "wrap": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Auto wrap line"
+      }
+    }
+  },
+  "src/lib/components/AnyaLayout/AnyaAffix.react.js": {
+    "description": "An Ant Design Affix component\nSee https://ant.design/components/affix",
+    "displayName": "AnyaAffix",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Child components inside the layout"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "offsetBottom": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Offset from the bottom of the viewport (in pixels)"
+      },
+      "offsetTop": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Offset from the top of the viewport (in pixels)",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "target": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies the scrollable area DOM node"
+      }
+    }
+  },
+  "src/lib/components/AnyaLayout/AnyaContent.react.js": {
+    "description": "An Ant Design Content component\nSee https://ant.design/components/layout",
+    "displayName": "AnyaContent",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component"
+      },
+      "backgroundColor": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Background color",
+        "defaultValue": {
+          "value": "'#fff'",
+          "computed": false
+        }
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Child components inside the layout"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "contentStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style for the content"
+      }
+    }
+  },
+  "src/lib/components/AnyaLayout/AnyaDivider.react.js": {
+    "description": "An Ant Design Divder component\nSee https://ant.design/components/divider\nAdapted from feffery-antd-components",
+    "displayName": "AnyaDivider",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component id."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Text content of the inline text."
+      },
+      "className": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "CSS class name."
+      },
+      "innerTextOrientation": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "\"left\"",
+              "computed": false
+            },
+            {
+              "value": "\"center\"",
+              "computed": false
+            },
+            {
+              "value": "\"right\"",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Text alignment of the inline text. Possible values are 'left', 'center', and 'right'. Default is 'center'.",
+        "defaultValue": {
+          "value": "\"left\"",
+          "computed": false
+        }
+      },
+      "isDashed": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether to render the divider as dashed line. true for dashed line, false for solid line. Default is false.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "direction": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "\"horizontal\"",
+              "computed": false
+            },
+            {
+              "value": "\"vertical\"",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Direction of the divider. Possible values are 'horizontal' and 'vertical'. Default is 'horizontal'.",
+        "defaultValue": {
+          "value": "\"horizontal\"",
+          "computed": false
+        }
+      },
+      "fontSize": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Font size of the inline text. Accepts valid font-size values in CSS."
+      },
+      "lineColor": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color of the divider. Accepts valid color values in CSS.",
+        "defaultValue": {
+          "value": "\"lightgrey\"",
+          "computed": false
+        }
+      },
+      "fontStyle": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Font style of the inline text. Accepts valid font-style values in CSS."
+      },
+      "fontWeight": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Font weight of the inline text. Accepts valid font-weight values in CSS."
+      },
+      "fontFamily": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Font family of the inline text. Accepts valid font-family values in CSS."
+      },
+      "fontColor": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color of the inline text. Accepts valid color values in CSS."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/AnyaLayout/AnyaFooter.react.js": {
+    "description": "An Ant Design Sider component\nSee https://ant.design/components/layout",
+    "displayName": "AnyaFooter",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Child components inside the layout"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "textAlign": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'start'",
+              "computed": false
+            },
+            {
+              "value": "'center'",
+              "computed": false
+            },
+            {
+              "value": "'end'",
+              "computed": false
+            },
+            {
+              "value": "'justify'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "textAlign, in start|center|end|justify",
+        "defaultValue": {
+          "value": "'center'",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaLayout/AnyaHeader.react.js": {
+    "description": "An Ant Design Header component\nSee https://ant.design/components/layout",
+    "displayName": "AnyaHeader",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Child components inside the layout"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component"
+      },
+      "backgroundColor": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Background color",
+        "defaultValue": {
+          "value": "'#fff'",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "collapseBtnId": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "ID of the collapase button if applicable"
+      },
+      "collapsible": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the sider is collapsible if applicable",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "collapsed": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If the sider is collapsed",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isClicked": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the sider collapsed button is clicked"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/AnyaLayout/AnyaLayout.react.js": {
+    "description": "An Ant Design Layout component\nSee https://ant.design/components/layout",
+    "displayName": "AnyaLayout",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Child components inside the layout"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "hasSider": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether contain Sider in children, don't have to assign it normally.\nUseful in ssr avoid style flickering",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaLayout/AnyaSider.react.js": {
+    "description": "An Ant Design Sider component\nSee https://ant.design/components/layout",
+    "displayName": "AnyaSider",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Child components inside the layout"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "backgroundColor": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Background color"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "collapsed": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "To set the current status",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "defaultCollapsed": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "To set the initial status",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "collapsedWidth": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Width of the collapsed sidebar, by setting to 0 a special trigger will appear",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "collapsible": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether can be collapsed",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "reverseArrow": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Reverse direction of arrow, for a sider that expands from the right",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "theme": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'light'",
+              "computed": false
+            },
+            {
+              "value": "'dark'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Color theme of the sidebar",
+        "defaultValue": {
+          "value": "'light'",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Width of the sidebar",
+        "defaultValue": {
+          "value": "300",
+          "computed": false
+        }
+      },
+      "breakpoint": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'xs'",
+              "computed": false
+            },
+            {
+              "value": "'sm'",
+              "computed": false
+            },
+            {
+              "value": "'md'",
+              "computed": false
+            },
+            {
+              "value": "'lg'",
+              "computed": false
+            },
+            {
+              "value": "'xl'",
+              "computed": false
+            },
+            {
+              "value": "'xxl'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Breakpoints of the responsive layout"
+      },
+      "isFixed": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the sider is fixed"
+      },
+      "offsetTop": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Offset from the top of the viewport (in pixels) if the sider is fixed"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/AnyaLayout/AnyaSpace.react.js": {
+    "description": "An Ant Design Space component\nSee https://ant.design/components/space",
+    "displayName": "AnyaSpace",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Child components inside the space"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "size": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "'small'",
+                  "computed": false
+                },
+                {
+                  "value": "'middle'",
+                  "computed": false
+                },
+                {
+                  "value": "'large'",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Space Size, large, middle and small or an integer",
+        "defaultValue": {
+          "value": "'small'",
+          "computed": false
+        }
+      },
+      "align": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'start'",
+              "computed": false
+            },
+            {
+              "value": "'end'",
+              "computed": false
+            },
+            {
+              "value": "'center'",
+              "computed": false
+            },
+            {
+              "value": "'baseline'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Config item align. start | end |center |baseline",
+        "defaultValue": {
+          "value": "'start'",
+          "computed": false
+        }
+      },
+      "direction": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'vertical'",
+              "computed": false
+            },
+            {
+              "value": "'horizontal'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The space direction vertical | horizontal",
+        "defaultValue": {
+          "value": "'horizontal'",
+          "computed": false
+        }
+      },
+      "wrap": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Auto wrap line, when horizontal effective",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaNav/AnyaMenu.react.js": {
+    "description": "An Ant Design Menu Component\nhttps://ant.design/components/menu\nAdapted form https://github.com/CNFeffery/feffery-antd-components/blob/main/src/lib/components/AntdMenu.react.js",
+    "displayName": "AnyaMenu",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component"
+      },
+      "className": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "key": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique ID of the menu item"
+      },
+      "menuItems": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Menu items"
+      },
+      "mode": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'vertical'",
+              "computed": false
+            },
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'inline'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Type of menu: vertical | horizontal | inline",
+        "defaultValue": {
+          "value": "'vertical'",
+          "computed": false
+        }
+      },
+      "theme": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'light'",
+              "computed": false
+            },
+            {
+              "value": "'dark'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Color theme of the menu: light | dark",
+        "defaultValue": {
+          "value": "'light'",
+          "computed": false
+        }
+      },
+      "currentKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Key of currently the selected menu item"
+      },
+      "openKeys": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Array with the keys of currently opened sub-menus"
+      },
+      "defaultOpenKeys": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Array with the keys of default opened sub-menus"
+      },
+      "defaultSelectedKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Key of default selected menu item"
+      },
+      "renderCollapsedButton": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Render collapsed button",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "popupContainer": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'parent'",
+              "computed": false
+            },
+            {
+              "value": "'body'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Popup menu",
+        "defaultValue": {
+          "value": "'body'",
+          "computed": false
+        }
+      },
+      "inlineCollapsed": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether the inline menu is collapsed",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`."
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "'currentKey'",
+                "computed": false
+              },
+              {
+                "value": "'openKeys'",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "['currentKey', 'openKeys']",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'local'",
+              "computed": false
+            },
+            {
+              "value": "'session'",
+              "computed": false
+            },
+            {
+              "value": "'memory'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "'local'",
+          "computed": false
+        }
+      },
+      "isTopNav": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether it is a top menu",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/AnyaTypography/AnyaParagraph.react.js": {
+    "description": "An Ant Design Pragraph component\nSee https://ant.design/components/typography",
+    "displayName": "AnyaParagraph",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component id."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the paragraph."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS class name."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Custom CSS styles."
+      },
+      "code": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether to render the content in code mode."
+      },
+      "copyable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether the content can be quickly copied."
+      },
+      "strikethrough": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether to render the content with strikethrough mode."
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether the content is disabled."
+      },
+      "mark": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether to add mark style."
+      },
+      "strong": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether the content should be bold."
+      },
+      "italic": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether the content should be italic."
+      },
+      "underline": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether to add underline."
+      },
+      "type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            },
+            {
+              "value": "'danger'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Sets the text status type for rendering. Possible options are 'secondary', 'success', 'warning', and 'danger'. Default is no status."
+      }
+    }
+  },
+  "src/lib/components/AnyaTypography/AnyaText.react.js": {
+    "description": "An Ant Design Text component\nSee https://ant.design/components/typography",
+    "displayName": "AnyaText",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component id."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the paragraph."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS class name."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Custom CSS styles."
+      },
+      "code": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether to render the content in code mode."
+      },
+      "copyable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether the content can be quickly copied."
+      },
+      "strikethrough": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether to render the content with strikethrough mode."
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether the content is disabled."
+      },
+      "mark": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether to add mark style."
+      },
+      "strong": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether the content should be bold."
+      },
+      "italic": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether the content should be italic."
+      },
+      "underline": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether to add underline."
+      },
+      "type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            },
+            {
+              "value": "'danger'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Sets the text status type for rendering. Possible options are 'secondary', 'success', 'warning', and 'danger'. Default is no status."
+      }
+    }
+  },
+  "src/lib/components/AnyaTypography/AnyaTitle.react.js": {
+    "description": "An Ant Design Title component\nSee https://ant.design/components/typography",
+    "displayName": "AnyaTitle",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Child components inside the layout"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS classes to be added to the component"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline CSS style"
+      },
+      "level": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Sets the level of the title. Possible values are integers between 1 and 5, corresponding to h1 to h5.\nDefault is 1.",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "strikethrough": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether to render the content with strikethrough mode."
+      },
+      "strong": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether the content should be bold."
+      },
+      "italic": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether the content should be italic."
+      },
+      "underline": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Sets whether to add underline."
+      },
+      "type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            },
+            {
+              "value": "'danger'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Sets the text status type for rendering. Possible options are 'secondary', 'success', 'warning', and 'danger'. Default is no status."
+      }
+    }
+  }
+}
