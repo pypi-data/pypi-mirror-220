@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: syndesi-drivers
+Version: 0.1.0
+Summary: Syndesi drivers
+Author: Sebastien Deriaz
+Author-email: sebastien.deriaz1@gmail.com
+Keywords: python,syndesi,drivers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# Syndesi drivers Python package
+
+This package contains all the official Syndesi Drivers
+
+## Driver structure
+
+```python
+class DeviceName(Interfaces):
+    def __init__(self, adapter : IAdapter) -> None:
+        """
+        Device description
+        """
+        super().__init__()
+
+        # Check the adapter type here
+        assert isinstance(adapter, ...), "Invalid adapter"
+
+        # Use a protocol
+        self._prot = SCPI(adapter)
+        #self._prot = Raw(adapter)
+
+    # Declare a method
+    def my_method(self) -> int:
+        """
+        Method description
+        """
+        self._prot.write('...')
+        data = self._prot.read('...')
+        return int(data)
+```
