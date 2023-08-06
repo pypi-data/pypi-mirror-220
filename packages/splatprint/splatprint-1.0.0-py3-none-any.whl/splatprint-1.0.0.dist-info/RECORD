@@ -1,0 +1,12 @@
+splatprint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+splatprint/macropreview.py,sha256=gZXcPhIADPhr7dBSOxWBsne1bqGEyqRPyUyKAeP2pjA,3187
+splatprint/printpost.py,sha256=4fqwcXuYwqxn09RyhjweXZXDPH3pTbQMGs96CbYO6es,9675
+splatprint/repairpost.py,sha256=tMWQe2hOUEnbBM2ZmLCMmg4BOmLoImcZsSM3AQ9MQJQ,2408
+splatprint/splatprint.py,sha256=GvwqkrrmZE4z9u1fBzBuC5hS9PfbE8l_2Zw3wAFS_k8,8980
+splatprint/test.py,sha256=0vRU6sZ1OW1jh0P3cOYGDE2NFDny2dg2yVQ1MvZbHdc,154
+splatprint-1.0.0.dist-info/LICENSE.md,sha256=w1mqAnj-CP1Zo1gsvvE6qtgHVlnQf-n2si8jCXom-e0,1086
+splatprint-1.0.0.dist-info/METADATA,sha256=8KrFtIc3IIpKx1mArtCmrVIopqAVW_7ze8mfHRSK3bs,291
+splatprint-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+splatprint-1.0.0.dist-info/entry_points.txt,sha256=eBzMBdg0bzdGA9lXyeZoaloh9XnuxnlayrNxBy8ohJ0,58
+splatprint-1.0.0.dist-info/top_level.txt,sha256=-XIYZ9R3toKd9VFn4tuoiYa-A9ykEzXaPyoTEH5UDIw,11
+splatprint-1.0.0.dist-info/RECORD,,
