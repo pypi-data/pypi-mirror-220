@@ -1,0 +1,2 @@
+"""Configuration of Python Applications
+"""

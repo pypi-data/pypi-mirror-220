@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "subconfig"
+version = "0.0.1"
+authors = [
+  { name="Mike Müller", email="mmueller@python-academy.de" },
+]
+description = "Configuration of Python Applications"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pya/subconfig"
+"Bug Tracker" = "https://github.com/pya/subconfig/issues"
+
+[project.optional-dependencies]
+build = [
+    "hatch",
+    "build",
+    "twine",
+]
+tests = [
+  "coverage",
+  "pytest",
+]
+
+[tool.hatch.build.targets.sdist]
+packages = ["src/subconfig"]
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "/src/subconfig",
+]
+packages = ["src/subconfig"]
+
+[tool.hatch.build]
+dev-mode-dirs = ["./src"]
