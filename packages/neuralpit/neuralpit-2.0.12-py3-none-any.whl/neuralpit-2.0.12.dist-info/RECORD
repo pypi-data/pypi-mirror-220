@@ -1,0 +1,8 @@
+neuralpit/__init__.py,sha256=-fNuubYhRSJ9J-a6TF1Q-kQV6UXCq3ZIQ4BCcN_hmpc,620
+neuralpit/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neuralpit/services/conversation.py,sha256=PpA2Ad92TJRjMrpp60aAfXyhF6c55oBfqQL8YfkK-q8,3878
+neuralpit/services/conversion.py,sha256=rIKrDpB_OcmOdWQ9DJMq0O6QpUMoTBujzR7OfVlJEc4,571
+neuralpit-2.0.12.dist-info/METADATA,sha256=DT7EfrypSMPNgMqA-NJcRg0IaJst3DGseVRUUSy_g0E,854
+neuralpit-2.0.12.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+neuralpit-2.0.12.dist-info/top_level.txt,sha256=5Ep7fj5dDur6viEbz4i-oz3cQEtttDXtrKl3Olmc49U,10
+neuralpit-2.0.12.dist-info/RECORD,,
