@@ -1,0 +1,13 @@
+protocards/__init__.py,sha256=WNSNN_vb-smZXAhwU1_m7rTL8xESMI8TJdUudxENYC8,118
+protocards/base.py,sha256=1-ctOLC3oS7_0JbaOwbeI--IgK21G-A82hWikYp-cAk,2536
+protocards/cribbage.py,sha256=7rfZzX7av9SFPflUCECeIhYKfi1a2m_lawNxn6YP17c,4334
+protocards/standard.py,sha256=5ZXIsgsaRdu_kHZnLWXaVZ1y5umI18JWyFUItvf-IP8,3523
+protocards/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protocards/tests/test_base.py,sha256=Ik4StjfE40RFMGNveHAwvub8XIRra5WlQMRVpq3i70I,1780
+protocards/tests/test_cribbage.py,sha256=wBgCuGeqDS_a5SB8_hO2gQSXnDTo0eBr3QnQGvpxzzA,5163
+protocards/tests/test_standard.py,sha256=P-ISuPcKBN_RFO4P3z0wWcJ2PD2kM-jZu164PnRuetQ,2565
+protocards-0.2.0.dist-info/LICENSE,sha256=JMZMwSw2o68jlYDK0JphH1EKpHDdGVlqCIIzrKi_u6U,1067
+protocards-0.2.0.dist-info/METADATA,sha256=5bTtDGYIrO-YgLWgGjnw3MIeZ7qFk2-PTJnuoJngM9g,4809
+protocards-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+protocards-0.2.0.dist-info/top_level.txt,sha256=JNGt5v_jg61AvQa8ZLRTWAoogOl4AOzJMDV2agqHYHQ,11
+protocards-0.2.0.dist-info/RECORD,,
