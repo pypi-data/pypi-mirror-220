@@ -1,0 +1,19 @@
+from setuptools import setup
+
+setup(
+    name="pymoises",
+    version="1.0.2",
+    description="Callings from moises endpoints...",
+    author="Platimex",
+    packages=[
+        "pymoises", 
+        "pymoises.dto", 
+        "pymoises.dto.input", 
+        "pymoises.dto.input.customer",
+        "pymoises.dto.input.transaction",
+        "pymoises.dto.output",
+        "pymoises.dto.output.customer",
+        "pymoises.dto.output.transaction",
+        ],
+    install_requires=['requests', 'marshmallow'],
+)
