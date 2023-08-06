@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: garth
+Version: 0.1.11
+Summary: Garmin SSO auth
+Author-Email: Matin Tamizi <mtamizi@duck.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: requests>=2.27.0
+Description-Content-Type: text/markdown
+
+# Garth
+
+Garmin SSO auth
