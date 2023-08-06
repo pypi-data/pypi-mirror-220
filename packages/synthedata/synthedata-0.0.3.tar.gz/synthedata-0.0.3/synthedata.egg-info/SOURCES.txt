@@ -1,0 +1,8 @@
+README.md
+setup.py
+synthedata/__init__.py
+synthedata/datacreator.py
+synthedata.egg-info/PKG-INFO
+synthedata.egg-info/SOURCES.txt
+synthedata.egg-info/dependency_links.txt
+synthedata.egg-info/top_level.txt
