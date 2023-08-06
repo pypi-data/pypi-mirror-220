@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+hello_world_iddy.egg-info/PKG-INFO
+hello_world_iddy.egg-info/SOURCES.txt
+hello_world_iddy.egg-info/dependency_links.txt
+hello_world_iddy.egg-info/top_level.txt
+test_package/__init__.py
+test_package/hello_world_iddy.py
