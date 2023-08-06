@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple_html_table"
+authors = [
+    {name = "Gavin Burnell", email = "g.burnell@leeds.ac.uk"},
+]
+description = "Simple way to create HTML tables with support for rowspan and colspan attributes."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["html", "table"]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "simple_html_table.__version__"}
+
+[project.urls]
+"Homepage" = "https://github.com/gb119/simple_html_table"
