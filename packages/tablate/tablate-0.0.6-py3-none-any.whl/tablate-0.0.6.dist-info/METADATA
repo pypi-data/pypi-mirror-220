@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tablate
+Version: 0.0.6
+Summary: An ASCII plain text table renderer.
+Author-email: Guy de Winton <guy@codehippie.io>
+Project-URL: Homepage, https://gitlab.com/guydewinton/tablate
+Project-URL: Bug Tracker, https://gitlab.com/guydewinton/tablate/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
