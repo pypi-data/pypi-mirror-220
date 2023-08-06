@@ -1,0 +1,14 @@
+artorias/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+artorias/utils/__init__.py,sha256=XYm3Wk4Uee8rGVOiCJ8n4sJCWOJOR9owoPGUlfA56a8,822
+artorias/web/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artorias/web/flask/__init__.py,sha256=3NFdbRIvWM9nDv4K4CF7LZ_mokyYuRiDDnqwlX3Bhvc,23
+artorias/web/flask/app.py,sha256=5vJNvz8Z27wnzMWSJ3dwXsHk5GXn6ukKC9bKsjzo2Go,3457
+artorias/web/flask/celery.py,sha256=UTA5gpPzGXmPQ5ES0y-DvBm-02zFIZffufFUVvf-hRo,489
+artorias/web/flask/exts.py,sha256=De_0h9WfdS6aP2HD-V0iNslelW37gE48Hvj4swWQnVU,208
+artorias/web/flask/json.py,sha256=Zv1agMOMA3lv3cWyyK2NKlPBDtJGjdGEMvaR-UhnZX0,120
+artorias/web/flask/settings.py,sha256=8Gpkcj-7SWrm6TJytneM-d8bvvSfDofVH8z9Ekb3R-Y,445
+artorias/web/flask/sqlalchemy.py,sha256=3rX8G-qyI0d-5PfjN3p8ga0jx8Etm8ZlsjFLLBuStCs,657
+artorias/web/flask/utils.py,sha256=s_EnR8E1Ue9-RxXwc7MKRxwD8F_d7WLRPZSiMDmcYCA,773
+artorias-0.1.2.dist-info/METADATA,sha256=0YCeJ5d90pwdSENseAyoH7L-9H3tFWwHizT0V0cpQ1A,826
+artorias-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+artorias-0.1.2.dist-info/RECORD,,
