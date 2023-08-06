@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+example_package_edubarse_remo/__init__.py
+example_package_edubarse_remo/ejemplo.py
+example_package_edubarse_remo/question2.py
+example_package_edubarse_remo.egg-info/PKG-INFO
+example_package_edubarse_remo.egg-info/SOURCES.txt
+example_package_edubarse_remo.egg-info/dependency_links.txt
+example_package_edubarse_remo.egg-info/top_level.txt
