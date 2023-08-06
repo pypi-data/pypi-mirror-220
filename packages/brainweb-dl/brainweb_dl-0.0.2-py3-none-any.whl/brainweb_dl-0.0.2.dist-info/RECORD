@@ -1,0 +1,13 @@
+brainweb_dl/__init__.py,sha256=Gi91N3HcP_u6JPo5RJ-9bOAQ2qHy-NP8VGV1sjiQ8H8,795
+brainweb_dl/_brainweb.py,sha256=-R-PMgL9AtONCQRtFld8rSFc629lHCp94FMPr7YuiUI,13839
+brainweb_dl/_version.py,sha256=akDh8M63SIkUdcs4zBTuYU7Q6eQspZu0Ii2tOpXGYNc,160
+brainweb_dl/cli.py,sha256=rkdNJ_aL07MeOpxlAFnuhwdc2dXFV9zaw7EtRl0Hoow,2637
+brainweb_dl/mri.py,sha256=Se1u5_NqBx4AZrrREHlPbRJsi8pjtznKnp7HoejYf8k,4082
+brainweb_dl/data/brainweb1_tissues.csv,sha256=RUzG7KJeZo7CIe4IFTv0xRnzpmjK3C0YyrkTk42U5zw,303
+brainweb_dl/data/brainweb20_tissues.csv,sha256=HGnX7H58Kxw4cHM6pAymNmbPoHqE1wemSlkJ_L_grEM,501
+brainweb_dl-0.0.2.dist-info/LICENSE,sha256=54A0-aMN_VGWVzQfgeazYgKbXseUqTgH9AMf5LTU-Vc,1077
+brainweb_dl-0.0.2.dist-info/METADATA,sha256=yONK2OUHUFttpiFM653XCD6sUYKxTqUuW158fmJoRr0,6704
+brainweb_dl-0.0.2.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+brainweb_dl-0.0.2.dist-info/entry_points.txt,sha256=G6Xowu4OIjb1qmo_GLNbmNxxsavj93mXYjOGJ1FaIHE,53
+brainweb_dl-0.0.2.dist-info/top_level.txt,sha256=9iR5XkLU_NSYoS_dQC9t0kwT2mDb5Rx2pc-78pQNUlE,12
+brainweb_dl-0.0.2.dist-info/RECORD,,
