@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+test.py
+ntlmail/__init__.py
+ntlmail/smtp.py
+ntlmail.egg-info/PKG-INFO
+ntlmail.egg-info/SOURCES.txt
+ntlmail.egg-info/dependency_links.txt
+ntlmail.egg-info/top_level.txt
