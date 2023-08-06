@@ -1,0 +1,5 @@
+setup.py
+Hitech_Python_Coder.egg-info/PKG-INFO
+Hitech_Python_Coder.egg-info/SOURCES.txt
+Hitech_Python_Coder.egg-info/dependency_links.txt
+Hitech_Python_Coder.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Hitech_Python_Coder
+Version: 0.0.1
+Summary: physicstools
+Author: M.veeraragavan
+Author-email: ratnabala555@gmail.com
+Keywords: arithmetic,math,mathematics,python,veer,hitech,hitech_coder,physics,equations,conversions,readable
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package to perform several physics related equations
