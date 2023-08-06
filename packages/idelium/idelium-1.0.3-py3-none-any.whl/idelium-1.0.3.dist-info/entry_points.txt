@@ -1,0 +1,2 @@
+[console_scripts]
+idelium = idelium._internal.main:main
