@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+cvision/__init__.py
+cvision/cvision.py
+cvision.egg-info/PKG-INFO
+cvision.egg-info/SOURCES.txt
+cvision.egg-info/dependency_links.txt
+cvision.egg-info/top_level.txt
