@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/WenXinAPI/V1.py
+src/WenXinAPI/__init__.py
+src/WenXinAPI/typings.py
+src/WenXinAPI/version.py
+src/revWenXin.egg-info/PKG-INFO
+src/revWenXin.egg-info/SOURCES.txt
+src/revWenXin.egg-info/dependency_links.txt
+src/revWenXin.egg-info/requires.txt
+src/revWenXin.egg-info/top_level.txt
