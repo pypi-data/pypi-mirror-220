@@ -1,0 +1,12 @@
+djangondor/__about__.py,sha256=4jGGtedm6qgfHGqPdEaRVHfnfUowbxWMIx0fSBagjn0,133
+djangondor/__init__.py,sha256=iUZAK-PnHK9mIzFfc3cCRbbzUN2x73WbYy9K8RgkoMo,111
+djangondor/collections.py,sha256=Un0RASL4n3PVl-oSIhRRpU2Ql7BcUlAQXiB8dFdE5aw,645
+djangondor/requests.py,sha256=UgNt-zaPpQb570MOLo5uNH0dvNjN21jAJ8gshny0X4M,2800
+djangondor/time.py,sha256=3sIdtyfLWZPKt7E3_xxMVnWp5pHWfKZ0oqQdpGxM85Q,909
+djangondor/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangondor/templatetags/djangondor_collection_tags.py,sha256=dfDOy6B_EyfK_sZKP3Nda4e1g7kmC60yYFZ_zYnqMmw,410
+djangondor/templatetags/djangondor_path_tags.py,sha256=uon9MsLZVNmoGey7PRHoytrz-KhfD63hqXBCQTtXuXw,1601
+djangondor-0.0.4.dist-info/METADATA,sha256=FvQ4SCBROu1G8PA-0has7n1AO_w_TPdnRlTduyAY1XI,2804
+djangondor-0.0.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+djangondor-0.0.4.dist-info/licenses/LICENSE.txt,sha256=r0tENPK0oBZ-8lAajPEz4VDdiZ2SbHf0WuVU-gw6-ug,1103
+djangondor-0.0.4.dist-info/RECORD,,
