@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+foundation_model_package.egg-info/PKG-INFO
+foundation_model_package.egg-info/SOURCES.txt
+foundation_model_package.egg-info/dependency_links.txt
+foundation_model_package.egg-info/entry_points.txt
+foundation_model_package.egg-info/top_level.txt
+foundation_model_pkg/__init__.py
+foundation_model_pkg/tools/__init__.py
+foundation_model_pkg/tools/foundation_model.py
+foundation_model_pkg/tools/utils.py
+foundation_model_pkg/yamls/foundation_model.yaml
+tests/__init__.py
+tests/test_my_tool_1.py
