@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: inscode-api
+Version: 0.4
+Summary: A library for interacting with the INSCODE API
+Home-page: UNKNOWN
+Author: yanhui
+Author-email: yanhui@csdn.net
+License: MIT
+Description: # INSCODE API Python Library
+        
+        This is a Python library for interacting with the INSCODE API.
+        
+        ## Installation
+        
+        You can install the library using `pip`:
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
