@@ -1,0 +1,14 @@
+entityshape/__init__.py,sha256=7bITJq_ynUY9Cjv3_kOOOzzXwK9e3eMMea86GrTHDy4,2353
+entityshape/enums.py,sha256=1b3LZ1420ERFpHztePMr12OwcRB7EyJuPLIRg5L4fmA,538
+entityshape/exceptions.py,sha256=K_nuCT4lnD0qoz3fZwBtjQgmoCVFFQSQc9AA6-z9E9E,167
+entityshape/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entityshape/models/compareshape.py,sha256=MB6t5-PFLB5T1VzCiMfonkFj9gEic7gnAPgQGL6c-xE,12458
+entityshape/models/property_value.py,sha256=w8eL0G67UsIgs9C4XGshXL0peztfAngOIR3KxePssH8,245
+entityshape/models/result.py,sha256=izNqu3gkwJncNx1zHXmSAd4AI0WjOHZNuDBGLZhXUWA,8659
+entityshape/models/result_property.py,sha256=G6aznvX6q1F6UJZiC0br5IM_Ovvu11TPdB8_tHQGLNo,172
+entityshape/models/shape.py,sha256=azwpPame7nXkJucEsRy8P2RZqT5msgSYTCCOxnql5Vc,14070
+entityshape/models/statement_value.py,sha256=mlQBzSuogYmjNchHXT-FE5nzNTIpkMH-goIHsA0H1FU,377
+entityshape-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+entityshape-0.1.1.dist-info/METADATA,sha256=BNWhJn5nAxJ0nj__3DHXeq4hyMgPSMrs0_6wFqj0D0g,5037
+entityshape-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+entityshape-0.1.1.dist-info/RECORD,,
