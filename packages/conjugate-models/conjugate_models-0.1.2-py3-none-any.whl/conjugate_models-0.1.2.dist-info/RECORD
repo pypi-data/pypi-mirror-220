@@ -1,0 +1,11 @@
+conjugate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conjugate/_typing.py,sha256=AiMS8Ek6p_vGQ-59XUEKibPpEHbjFDhuDbCmA2IRYkg,602
+conjugate/distributions.py,sha256=D7FSCj2_ONUFbLqV1LQurk8TULIEWz5Gk5K4JgADJu0,7113
+conjugate/models.py,sha256=2OF6BKy50m4wjyQxoJOYWgj76ncvJEssdfBZFzPe-Do,5587
+conjugate/plot.py,sha256=n-TlwXeSDOBp8sAvvKVGJ9OrAeorGgqpUEfiWnl4RTI,5569
+conjugate/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conjugate/slice.py,sha256=i-1veyILuYV_shSfAP10Mh4h2NwQLHFGQ0lLjiDPD10,428
+conjugate_models-0.1.2.dist-info/LICENSE,sha256=dC1BuNHBb5qsK4nDA0C4clRupZzgbcbJROnWrmAfUfg,1066
+conjugate_models-0.1.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+conjugate_models-0.1.2.dist-info/METADATA,sha256=UY2033Wpru557iC06WsTNrzO2xkMmU5LjLRwbsV8iS0,2538
+conjugate_models-0.1.2.dist-info/RECORD,,
