@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+vf_flags.egg-info/PKG-INFO
+vf_flags.egg-info/SOURCES.txt
+vf_flags.egg-info/dependency_links.txt
+vf_flags.egg-info/requires.txt
+vf_flags.egg-info/top_level.txt
+vfflags/__init__.py
+vfflags/py.typed
