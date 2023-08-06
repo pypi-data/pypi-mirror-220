@@ -1,0 +1,9 @@
+[project]
+name = "code_fmt_tools"
+version = "0.0.4"
+authors = []
+description = "code parser tools"
+readme = "README.md"
+
+[project.urls]
+"Homepage" = "https://github.com/ecustwm"
