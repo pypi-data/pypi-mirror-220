@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: midi_const
+Version: 0.1.0
+Summary: Python MIDI constants.
+Author-email: Raphaël Doursenaud <rdoursenaud@gmail.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Multimedia :: Sound/Audio :: MIDI
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Project-URL: Home, https://github.com/ematech/midi_const
