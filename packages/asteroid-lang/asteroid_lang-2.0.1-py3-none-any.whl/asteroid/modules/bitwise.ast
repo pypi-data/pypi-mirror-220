@@ -1,0 +1,175 @@
+------------------------------------------------------------------
+-- bitwise.ast
+--
+-- Defines bitwise operations
+--
+-- (c) University of Rhode Island
+------------------------------------------------------------------
+
+------------------------------------------------------------------
+function band
+------------------------------------------------------------------
+ -- Bitwise AND
+with(x:%integer, y:%integer) do return escape
+"
+global __retval__
+x_val = state.symbol_table.lookup_sym('x')
+y_val = state.symbol_table.lookup_sym('y')
+
+__retval__ = ('integer', x_val[1] & y_val[1])
+"
+end
+
+------------------------------------------------------------------
+function bor
+------------------------------------------------------------------
+ -- Bitwise OR
+with(x:%integer, y:%integer) do return escape
+"
+global __retval__
+x_val = state.symbol_table.lookup_sym('x')
+y_val = state.symbol_table.lookup_sym('y')
+
+__retval__ = ('integer', x_val[1] | y_val[1])
+"
+end
+
+------------------------------------------------------------------
+function bnot
+------------------------------------------------------------------
+ -- Bitwise NOT
+with(x:%integer) do return escape
+"
+global __retval__
+x_val = state.symbol_table.lookup_sym('x')
+
+__retval__ = ('integer', ~x_val[1])
+"
+end
+
+------------------------------------------------------------------
+function bxor
+------------------------------------------------------------------
+ -- Bitwise XOR
+with(x:%integer, y:%integer) do return escape
+"
+global __retval__
+x_val = state.symbol_table.lookup_sym('x')
+y_val = state.symbol_table.lookup_sym('y')
+
+__retval__ = ('integer', x_val[1] ^ y_val[1])
+"
+end
+
+------------------------------------------------------------------
+function blshift
+------------------------------------------------------------------
+ -- Bitwise left shift
+with(x:%integer, y:%integer) do return escape
+"
+global __retval__
+x_val = state.symbol_table.lookup_sym('x')
+y_val = state.symbol_table.lookup_sym('y')
+
+__retval__ = ('integer', x_val[1] << y_val[1])
+"
+end
+
+------------------------------------------------------------------
+function brshift
+------------------------------------------------------------------
+ -- Bitwise right shift
+with(x:%integer, y:%integer) do return escape
+"
+global __retval__
+x_val = state.symbol_table.lookup_sym('x')
+y_val = state.symbol_table.lookup_sym('y')
+
+__retval__ = ('integer', x_val[1] >> y_val[1])
+"
+end
+
+------------------------------------------------------------------
+function blrotate
+------------------------------------------------------------------
+-- Bitwise left rotate
+with(x:%integer, i:%integer) do return escape
+"
+global __retval__
+x_val = state.symbol_table.lookup_sym('x')[1]
+i_val = state.symbol_table.lookup_sym('i')[1]
+
+# Convert the number to an array of bits
+bitstr = bin(x_val)[2:]
+
+final = bitstr[i_val:] + bitstr[:i_val]
+final = int(final, 2)
+
+__retval__ = ('integer', final)
+"
+end
+
+------------------------------------------------------------------
+function brrotate
+------------------------------------------------------------------
+-- Bitwise right rotate
+with(x:%integer, i:%integer) do return escape
+"
+global __retval__
+x_val = state.symbol_table.lookup_sym('x')[1]
+i_val = state.symbol_table.lookup_sym('i')[1]
+
+# Convert the number to an array of bits
+bitstr = bin(x_val)[2:]
+
+# Use the negative of the index for the right rotation
+final = bitstr[-i_val:] + bitstr[:-i_val]
+final = int(final, 2)
+
+__retval__ = ('integer', final)
+"
+end
+
+------------------------------------------------------------------
+function bsetbit
+------------------------------------------------------------------
+-- Set the ith bit
+with(x:%integer, i:%integer) do return escape
+"
+global __retval__
+x_val = state.symbol_table.lookup_sym('x')[1]
+i_val = state.symbol_table.lookup_sym('i')[1]
+
+final = ((1 << i_val) | x_val)
+__retval__ = ('integer', final)
+"
+end
+
+------------------------------------------------------------------
+function bclearbit
+------------------------------------------------------------------
+-- Clear the ith bit
+with(x:%integer, i:%integer) do return escape
+"
+global __retval__
+x_val = state.symbol_table.lookup_sym('x')[1]
+i_val = state.symbol_table.lookup_sym('i')[1]
+
+final = (x_val & (~(1 << i_val - 1)))
+__retval__ = ('integer' , final)
+"
+end
+
+------------------------------------------------------------------
+function bsize
+------------------------------------------------------------------
+-- Get the bit size
+with(x:%integer) do return escape
+"
+global __retval__
+x_val = state.symbol_table.lookup_sym('x')[1]
+
+__retval__ = ('integer', x_val.bit_length())
+"
+end
+
