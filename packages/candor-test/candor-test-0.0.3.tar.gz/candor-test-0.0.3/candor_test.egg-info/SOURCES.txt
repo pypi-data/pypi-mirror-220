@@ -1,0 +1,7 @@
+README.md
+setup.py
+candor_test.egg-info/PKG-INFO
+candor_test.egg-info/SOURCES.txt
+candor_test.egg-info/dependency_links.txt
+candor_test.egg-info/requires.txt
+candor_test.egg-info/top_level.txt
