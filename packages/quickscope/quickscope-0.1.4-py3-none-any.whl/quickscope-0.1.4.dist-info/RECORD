@@ -1,0 +1,11 @@
+quickscope/__init__.py,sha256=VHAgrS3k1sK80e-qYToIIdIZiYMIIx3mUW3vgRu9xAo,62
+quickscope/__main__.py,sha256=RqGxJ3lBVMYTmAXYPks3lufZ8GdA3yZcK-XzNySAscE,34
+quickscope/common.py,sha256=UC9IacocgaHG08y8NFORJu5dklQA6zdTUHXxSjMVIeY,2576
+quickscope/shooter.py,sha256=vOg2OXzAW-yNBT9tqwoa2GfR-VbHT9E7c9hcrdCOvMU,19251
+quickscope/statuspage.py,sha256=bGEFcRHAORZrFwveFOrWgLpEJars_lvX2PrEl1Rw378,12729
+quickscope/tracker.py,sha256=dLkClIkLdSmnfNMyZ17OZe23GfiMCDhSadw5nkXfOzk,11434
+quickscope-0.1.4.dist-info/METADATA,sha256=6TU9reVUf1lFSKJ4VE-r5GUVxh94LhmYbVEn_ReLKAs,1789
+quickscope-0.1.4.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+quickscope-0.1.4.dist-info/entry_points.txt,sha256=6l4e_CPCz71ya696VaXbTohA59oy6keg1ga5A20vLV4,55
+quickscope-0.1.4.dist-info/top_level.txt,sha256=ogxKQprZdJ9ca_vhYY972WN2XiXjRv2sS6NP7rSNKns,11
+quickscope-0.1.4.dist-info/RECORD,,
