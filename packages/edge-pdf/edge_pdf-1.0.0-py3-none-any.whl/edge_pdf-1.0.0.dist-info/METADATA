@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: edge-pdf
+Version: 1.0.0
+Summary: pdf工具库
+Home-page: https://github.com/edgeriver/Pdf_highlight.git
+Author: wangwl
+Author-email: 643176574@qq.com
+License: BSD (3-clause)
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6, <=3.12
+Requires-Dist: PyMuPDF (==1.22.5)
+Requires-Dist: colorlog (==6.7.0)
+Requires-Dist: pandas (==2.0.3)
+Requires-Dist: openpyxl (==3.1.2)
+
+UNKNOWN
+
