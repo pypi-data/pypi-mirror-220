@@ -1,0 +1,6 @@
+scrapli[asyncssh]==2023.01.30
+scrapli-community==2023.01.30
+
+[dev]
+black==22.6.0
+ruff==0.0.241
