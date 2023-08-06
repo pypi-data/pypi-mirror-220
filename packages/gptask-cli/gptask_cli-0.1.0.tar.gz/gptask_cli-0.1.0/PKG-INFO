@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gptask-cli
+Version: 0.1.0
+Summary: 
+Author: Calum Bird
+Author-email: calum@trelent.net
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.6,<9.0.0)
+Requires-Dist: openai (>=0.27.8,<0.28.0)
+Description-Content-Type: text/markdown
+
+poetry build
+poetry install
+python3 -m pip install --force-reinstall dist/gptask_cli-0.1.0-py3-none-any.whl
+
