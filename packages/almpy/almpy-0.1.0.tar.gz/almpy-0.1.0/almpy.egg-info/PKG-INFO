@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: almpy
+Version: 0.1.0
+Summary: Geo package htat generate base model and make geological shift
+Home-page: https://github.com/almpyAll/almpy
+Author: Almaz Abdulhakov
+Author-email: ekzis1984@gmail.com
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Geo package htat generate base model and make geological shift
