@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "libgal"
+version = "0.0.14"
+authors = [
+  { name="Jean Manuel González Mejía", email="ebrainding@gmail.com" },
+]
+
+license = { file = "LICENSE.txt" }
+
+description = "Librería para la simplificación del código en diversos proyectos de Python"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "selenium>=4.0.0",
+	"Brotli",
+    "python-dotenv>=0.10.2",
+	"teradatasqlalchemy",
+	"bs4"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jeanmgonzalez/libgal"
+"Bug Tracker" = "https://github.com/jeanmgonzalez/libgal/issues"
