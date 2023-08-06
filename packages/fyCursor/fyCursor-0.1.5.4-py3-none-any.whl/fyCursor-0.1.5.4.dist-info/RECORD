@@ -1,0 +1,11 @@
+fyCursor/__init__.py,sha256=rXiK6jTcS9npKCxtnykq9om15kn7IYxIuC59t8m2KVY,1693
+fyCursor/__main__.py,sha256=OzPsagXYu-q1UpYGz2n5qoYjmLtZA4vaEfTTb04sb5o,1776
+fyCursor/sql_types.py,sha256=MNjHc2E1HwSNa2VosZA5UfBlwMDf6z2DeRFZz1BQXkE,259
+fyCursor/core/__init__.py,sha256=7mSsblFk0oLN0JJaalxl6XvrgScmLCPrfxwTWPZmFQQ,220
+fyCursor/core/core.py,sha256=FANMS5r4D4oWZFdjjdGN2r9dTOQorqwbKTQCz705Yfc,9257
+fyCursor/core/fields.py,sha256=ffSaOMfl5KyPNayqcF2wdw1ZNcTDVY7skM3oc2t2Ddk,866
+fyCursor-0.1.5.4.dist-info/LICENSE,sha256=Y5Ng4C6VlMpll-WvYpHfpfi5M0WEPJoVCfvz6UUSB50,1067
+fyCursor-0.1.5.4.dist-info/METADATA,sha256=4FWdAehpTbcWbaQjbATadz5yalkWy5_tn-wEiWfLupo,1160
+fyCursor-0.1.5.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fyCursor-0.1.5.4.dist-info/top_level.txt,sha256=qDeUaVwrY-X5RSO3_KtekhEFFvqDjJeoRT3owkGs9Sg,9
+fyCursor-0.1.5.4.dist-info/RECORD,,
