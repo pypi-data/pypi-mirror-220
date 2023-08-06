@@ -1,0 +1,1249 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+import argparse
+import json
+import lzma
+import os
+import shutil
+import signal
+import subprocess
+import sys
+import tempfile
+import time
+import xml.etree.ElementTree as ET
+import zipfile
+from pathlib import Path
+
+import requests
+from appdirs import user_cache_dir, user_data_dir
+
+__version__ = '1.3.1'
+
+APK_TOOL_VERSION = '2.8.0'
+APK_SIGNER_VERSION = '1.3.0'
+
+# noinspection SpellCheckingInspection
+
+
+class BColors:
+    COLOR_BLUE = '\033[94m'
+    COLOR_RED_BG = '\033[101m'
+    COLOR_RED = '\033[91m'
+    COLOR_GREEN = '\033[92m'
+    COLOR_BOLD = '\033[1m'
+    COLOR_ENDC = '\033[0m'
+
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+
+# noinspection PyBroadException,SpellCheckingInspection
+class ExternalDependencies:
+    def __init__(self) -> None:
+        self.dependencies = {}
+        self.required_dependencies = {}
+
+    def add_depedency(self, name, path=None, required=True):
+        path = path or shutil.which(name)
+        if required:
+            self.required_dependencies[name] = bool(path)
+        if not path:
+            return None
+        self.dependencies[name] = path
+        return path
+
+    def get_depedency(self, name):
+        if name not in self.dependencies:
+            return None
+        return self.dependencies[name]
+
+    def has_satisfied_required_dependencies(self):
+        for i in self.required_dependencies.values():
+            if not i:
+                return False
+        return True
+
+    def __getattr__(self, name):
+        return self.get_depedency(name.replace('_', '-'))
+
+
+# noinspection PyBroadException,SpellCheckingInspection
+class Patcher:
+
+    dependencies_manager = None
+
+    apk_file_path = None
+    apk_tmp_dir = None
+
+    appname = 'apkpatcher'
+    appauthor = 'nitanmarcel'
+
+    data_dir = user_data_dir(appname, appauthor)
+    if not os.path.exists(data_dir):
+        os.makedirs(data_dir)
+    cache_dir = user_cache_dir(appname, appauthor)
+    if not os.path.exists(cache_dir):
+        os.makedirs(cache_dir)
+
+    is_bundle = False
+
+    VERBOSITY_LOW = 1   # only 'error' and 'done' messages
+    VERBOSITY_MID = 2   # 'adding' messages too
+    VERBOSITY_HIGH = 3  # all messages
+    VERBOSITY = VERBOSITY_LOW
+
+    ARCH_ARM = 'arm'
+    ARCH_ARM64 = 'arm64'
+    ARCH_X86 = 'x86'
+    ARCH_X64 = 'x64'
+
+    DEFAULT_GADGET_NAME = 'libfrida-gadget.so'
+    DEFAULT_CONFIG_NAME = 'libfrida-gadget.config.so'
+    DEFAULT_HOOKFILE_NAME = 'libhook.js.so'
+
+    CONFIG_BIT = 1 << 0
+    AUTOLOAD_BIT = 1 << 1
+
+    INTERNET_PERMISSION = 'android.permission.INTERNET'
+
+    def __init__(self, apk_file_path=None):
+        self.apk_file_path = apk_file_path
+
+    def set_verbosity(self, verbosity_level):
+        self.VERBOSITY = verbosity_level
+
+    def print_info(self, msg):
+        if self.VERBOSITY >= self.VERBOSITY_HIGH:
+            sys.stdout.write(BColors.COLOR_BLUE +
+                             '[*] {0}\n'.format(msg) + BColors.ENDC)
+
+    def print_done(self, msg):
+        if self.VERBOSITY >= self.VERBOSITY_LOW:
+            sys.stdout.write(BColors.COLOR_GREEN +
+                             '[+] {0}\n'.format(msg) + BColors.ENDC)
+
+    def print_warn(self, msg):
+        if self.VERBOSITY >= self.VERBOSITY_LOW:
+            sys.stdout.write(BColors.COLOR_RED +
+                             '[-] {0}\n'.format(msg) + BColors.ENDC)
+
+    def update_apkpatcher_gadgets(self):
+        frida_version = self.get_frida_version()
+        self.print_info(
+            'Updating frida gadgets according to your frida version: {0}'.format(frida_version))
+
+        github_link = 'https://api.github.com/repos/frida/frida/releases'
+
+        response = requests.get(github_link).text
+        releases = json.loads(response)
+
+        release_link = None
+
+        for release in releases:
+            if release['tag_name'] == frida_version:
+                release_link = release['url']
+                break
+
+        response = requests.get(release_link).text
+        release_content = json.loads(response)
+
+        assets = release_content['assets']
+
+        list_gadgets = []
+        for asset in assets:
+            if 'gadget' in asset['name'] and 'android' in asset['name']:
+                gadget = dict()
+                gadget['name'] = asset['name']
+                gadget['url'] = asset['browser_download_url']
+
+                list_gadgets.append(gadget)
+
+        gadgets_folder = os.path.join(self.data_dir, 'gadgets')
+        target_folder = os.path.join(gadgets_folder, frida_version)
+
+        if not os.path.isdir(target_folder):
+            os.makedirs(target_folder)
+
+        downloaded_files = []
+        for gadget in list_gadgets:
+            gadget_file_path = os.path.join(target_folder, gadget['name'])
+
+            if os.path.isfile(gadget_file_path.replace('.xz', '')):
+                print(f'{gadget["name"]} already exists. Skipping.')
+            else:
+                self.download_file(gadget['url'], gadget_file_path)
+                downloaded_files.append(gadget_file_path)
+
+        print('Extracting downloaded files...')
+
+        for downloaded_file in downloaded_files:
+            with lzma.open(downloaded_file) as f, open(downloaded_file.replace(".xz", ""), "wb") as outfile:
+                outfile.write(f.read())
+
+        print('Done! Gadgets were updated')
+
+        return True
+
+    def download_file(self, url, target_path):
+        file_name = target_path.split('/')[-1]
+        response = requests.get(url, stream=True)
+        response.raise_for_status()
+        total_length = response.headers.get('content-length')
+        total_length = int(total_length)
+
+        with open(target_path, 'wb') as f:
+            downloaded = 0
+
+            if self.VERBOSITY >= self.VERBOSITY_HIGH:
+                sys.stdout.write('\r{0}[+] Downloading {1} - 000 %%{2}'
+                                 .format(BColors.COLOR_BLUE, file_name, BColors.COLOR_ENDC))
+
+                sys.stdout.flush()
+
+            for chunk in response.iter_content(chunk_size=1024):
+                if chunk:
+                    downloaded += len(chunk)
+                    percentage = int(downloaded * 100 / total_length)
+
+                    if self.VERBOSITY >= self.VERBOSITY_HIGH:
+                        sys.stdout.write('\r{0}[+] Downloading {1} - {2:03d} %%{3}'
+                                         .format(BColors.COLOR_BLUE, file_name, percentage, BColors.COLOR_ENDC))
+
+                        sys.stdout.flush()
+
+                    f.write(chunk)
+
+        if self.VERBOSITY >= self.VERBOSITY_HIGH:
+            sys.stdout.write('\n')
+
+    def check_and_download_tools(self):
+        apktool_path = os.path.join(
+            self.data_dir, 'apktool_{0}.jar'.format(APK_TOOL_VERSION))
+        if not os.path.isfile(apktool_path):
+            old_apktool = Path(self.data_dir).glob('apktool*.jar')
+            for i in old_apktool:
+                self.print_info(
+                    'Remove outdated apktool {0}'.format(os.path.basename(i)))
+            apktool_uri = 'https://github.com/iBotPeaches/Apktool/releases/download/v{0}/apktool_{1}.jar'.format(
+                APK_TOOL_VERSION, APK_TOOL_VERSION)
+            self.download_file(apktool_uri, apktool_path)
+        self.dependencies_manager.add_depedency('apktool', apktool_path)
+
+        apksigner_path = os.path.join(
+            self.data_dir, 'uber-apk-signer-{0}.jar'.format(APK_SIGNER_VERSION))
+        if not os.path.isfile(apksigner_path):
+            old_apksigner = Path(self.data_dir).glob('uber-apk-signer-*.jar')
+            for i in old_apksigner:
+                self.print_info(
+                    'Remove outdated uber-apk-signer {0}'.format(os.path.basename(i)))
+            apksigner_uri = 'https://github.com/patrickfav/uber-apk-signer/releases/download/v{0}/uber-apk-signer-{1}.jar'.format(
+                APK_SIGNER_VERSION, APK_SIGNER_VERSION)
+            self.download_file(apksigner_uri, apksigner_path)
+        self.dependencies_manager.add_depedency(
+            'uber-apk-signer', apksigner_path)
+
+    def get_arch(self, abi=None):
+        if self.dependencies_manager.adb and abi is None:
+            self.print_info('Trying to identify the right frida-gadget...')
+            self.print_info('Waiting for device...')
+            os.system('adb wait-for-device')
+            abi = subprocess.check_output(
+                ['adb', 'shell', 'getprop ro.product.cpu.abi']).decode('utf-8').strip()
+        if abi not in ['armeabi-v7a', 'arm64', 'x86', 'x86_64']:
+            self.print_warn(
+                'Architecture {0} if not one of the supported architectures arm64-v8a, arm64, x86, x86_64'.format(abi))
+            sys.exit(0)
+        if abi in ['armeabi-v7a']:
+            return self.ARCH_ARM
+        if abi in ['arm64']:
+            return self.ARCH_ARM64
+        if abi in ['x86']:
+            return self.ARCH_X86
+        if abi in ['x64']:
+            return self.ARCH_X64
+
+    def get_recommended_gadget(self, abi=None):
+        ret = None
+
+        if self.dependencies_manager.adb and abi is None:
+            self.print_info('Trying to identify the right frida-gadget...')
+            self.print_info('Waiting for device...')
+            os.system('adb wait-for-device')
+            abi = subprocess.check_output(
+                ['adb', 'shell', 'getprop ro.product.cpu.abi']).decode('utf-8').strip()
+        elif not abi:
+            self.print_warn(
+                'Can\'t automatically detect device architecture. Use the --arch argument instead. (missing adb command)')
+            sys.exit(1)
+        else:
+            if abi not in ['arm64-v8a', 'arm64', 'x86', 'x86_64']:
+                self.print_warn(
+                    'Architecture {0} if not one of the supported architectures arm64-v8a, arm64, x86, x86_64'.format(abi))
+                sys.exit(0)
+
+        self.print_info('The abi is {0}'.format(abi))
+
+        frida_version = self.get_frida_version()
+        gadgets_folder = os.path.join(self.data_dir, 'gadgets')
+        target_folder = os.path.join(gadgets_folder, frida_version)
+
+        if not os.path.isdir(target_folder):
+            self.update_apkpatcher_gadgets()
+        dir_list = os.listdir(target_folder)
+        gadget_files = [f for f in dir_list if os.path.isfile(
+            os.path.join(target_folder, f))]
+        if abi in ['armeabi', 'armeabi-v7a']:
+            for gadget_file in gadget_files:
+                if 'arm' in gadget_file and '64' not in gadget_file:
+                    full_path = os.path.join(target_folder, gadget_file)
+                    ret = full_path
+                    break
+
+        elif abi == 'arm64-v8a' or 'arm64' in abi:
+            for gadget_file in gadget_files:
+                if 'arm64' in gadget_file:
+                    full_path = os.path.join(target_folder, gadget_file)
+                    ret = full_path
+                    break
+
+        elif abi == 'x86':
+            for gadget_file in gadget_files:
+                if 'i386' in gadget_file:
+                    full_path = os.path.join(target_folder, gadget_file)
+                    ret = full_path
+                    break
+
+        elif abi == 'x86_64':
+            for gadget_file in gadget_files:
+                if 'x86_64' in gadget_file:
+                    full_path = os.path.join(target_folder, gadget_file)
+                    ret = full_path
+                    break
+
+        if ret is None:
+            self.print_warn('No recommended gadget file was found.')
+        else:
+            self.print_info(
+                'Architecture identified ({0}). Gadget was selected.' .format(abi))
+
+        return ret
+
+    def extract_apk(self, apk_path, destination_path, extract_resources=True):
+        if extract_resources:
+            self.print_info('Extracting {0} (with resources) to {1}'.format(
+                apk_path, destination_path))
+            subprocess.check_output([self.dependencies_manager.java, '-jar',
+                                    self.dependencies_manager.apktool, '-f', 'd', apk_path, '-o', destination_path])
+        else:
+            self.print_info('Extracting {0} (without resources) to {1}'.format(
+                apk_path, destination_path))
+            subprocess.check_output([self.dependencies_manager.java, '-jar',
+                                    self.dependencies_manager.apktool, '-f', '-r', 'd', apk_path, '-o', destination_path])
+
+    def extract_bundle(self, xapk_path):
+        tmp_dir = tempfile.gettempdir()
+        xapk_name = os.path.basename(xapk_path)
+        tmp_path = os.path.join(tmp_dir, xapk_name)
+        manifest_path = os.path.join(tmp_path, 'manifest.json')
+        base_apk = None
+        if not os.path.exists(tmp_path):
+            os.mkdir(tmp_path)
+        self.print_info(
+            'Extracting bundle {0} to {1}'.format(xapk_path, tmp_path))
+        with zipfile.ZipFile(xapk_path) as zip:
+            zip.extractall(tmp_path)
+        with open(manifest_path, 'r') as manifest_file:
+            manifest = json.load(manifest_file)
+            for apk in manifest['split_apks']:
+                if apk['id'] == 'base':
+                    base_apk = os.path.join(tmp_path, apk['file'])
+        if not base_apk:
+            self.print_warn('Failed to find base apk')
+            os.rmdir(tmp_path)
+            sys.exit(1)
+
+        self.print_info('Found base apk {0}'.format(
+            os.path.basename(base_apk)))
+        return base_apk
+
+    def has_permission(self, manifest_path, permission_name):
+        if not os.path.isfile(manifest_path):
+            self.print_warn(
+                "Couldn't find the Manifest file. Something is wrong with the apk!")
+
+            return False
+        tree = ET.parse(manifest_path)
+        root = tree.getroot()
+
+        namespaces = {'android': 'http://schemas.android.com/apk/res/android'}
+
+        for elem in root.findall('uses-permission', namespaces):
+            permission = elem.get('{%s}name' % namespaces['android'])
+            if permission == permission_name:
+                self.print_info(
+                    f'The apk has the permission "{permission_name}"')
+                return True
+        self.print_info(
+            f"The apk doesn't have the permission '{permission_name}'")
+        return False
+
+    def get_entrypoint_class_name(self, manifest_path):
+        if not os.path.isfile(manifest_path):
+            self.print_warn(
+                "Couldn't find the Manifest file. Something is wrong with the apk!")
+
+            return None
+        tree = ET.parse(manifest_path)
+        root = tree.getroot()
+
+        namespaces = {'android': 'http://schemas.android.com/apk/res/android'}
+
+        main_action = "android.intent.action.MAIN"
+
+        for activity in root.findall("./application/activity", namespaces):
+            for intent_filter in activity.findall("intent-filter", namespaces):
+                for action in intent_filter.findall("action", namespaces):
+                    if action.get("{%s}name" % namespaces["android"]) == main_action:
+                        return activity.get("{%s}name" % namespaces["android"])
+        self.print_warn(
+            'Something was wrong, couldn\'t find the launchable-activity.')
+        return None
+
+    def get_entrypoint_smali_path(self, base_path, entrypoint_class):
+        files_at_path = os.listdir(base_path)
+        entrypoint_final_path = None
+
+        for file in files_at_path:
+            if file.startswith('smali'):
+                entrypoint_tmp = os.path.join(
+                    base_path, file, entrypoint_class.replace('.', '/') + '.smali')
+
+                if os.path.isfile(entrypoint_tmp):
+                    entrypoint_final_path = entrypoint_tmp
+                    break
+
+        if entrypoint_final_path is None:
+            self.print_warn('Couldn\'t find the application entrypoint')
+        else:
+            self.print_info('Found application entrypoint at {0}'.format(
+                entrypoint_final_path))
+
+        return entrypoint_final_path
+
+    def create_temp_folder_for_apk(self, apk_path):
+        system_tmp_dir = tempfile.gettempdir()
+        apkpatcher_tmp_dir = os.path.join(system_tmp_dir, 'apkptmp')
+
+        apk_name = apk_path.split('/')[-1]
+
+        final_tmp_dir = os.path.join(
+            apkpatcher_tmp_dir, apk_name.replace('.apk', '').replace('.', '_'))
+
+        if os.path.isdir(final_tmp_dir):
+            self.print_info('App temp dir already exists. Removing it...')
+            shutil.rmtree(final_tmp_dir)
+
+        os.makedirs(final_tmp_dir)
+
+        return final_tmp_dir
+
+    def insert_frida_loader(self, entrypoint_smali_path, frida_lib_name='frida-gadget'):
+        partial_injection_code = '''
+    const-string v0, "<LIBFRIDA>"
+
+    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+
+        '''.replace('<LIBFRIDA>', frida_lib_name)
+
+        full_injection_code = '''
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    const-string v0, "<LIBFRIDA>"
+
+    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+
+    return-void
+.end method
+        '''.replace('<LIBFRIDA>', frida_lib_name)
+
+        with open(entrypoint_smali_path, 'r') as smali_file:
+            content = smali_file.read()
+
+            if 'frida-gadget' in content:
+                self.print_info(
+                    'The frida-gadget is already in the entrypoint. Skipping...')
+                return False
+
+            direct_methods_start_index = content.find('# direct methods')
+            direct_methods_end_index = content.find('# virtual methods')
+
+            if direct_methods_start_index == -1 or direct_methods_end_index == -1:
+                self.print_warn('Could not find direct methods.')
+                return False
+
+            class_constructor_start_index = content.find('.method static constructor <clinit>()V',
+                                                         direct_methods_start_index, direct_methods_end_index)
+
+            if class_constructor_start_index == -1:
+                has_class_constructor = False
+            else:
+                has_class_constructor = True
+
+            class_constructor_end_index = -1
+            if has_class_constructor:
+                class_constructor_end_index = content.find('.end method',
+                                                           class_constructor_start_index, direct_methods_end_index)
+
+            if has_class_constructor and class_constructor_end_index == -1:
+                self.print_warn('Could not find the end of class constructor.')
+                return False
+
+            prologue_start_index = -1
+            if has_class_constructor:
+                prologue_start_index = content.find('.prologue',
+                                                    class_constructor_start_index, class_constructor_end_index)
+
+            no_prologue_case = False
+            locals_start_index = -1
+            if has_class_constructor and prologue_start_index == -1:
+                no_prologue_case = True
+
+                locals_start_index = content.find('.locals ',
+                                                  class_constructor_start_index, class_constructor_end_index)
+
+            if no_prologue_case and locals_start_index == -1:
+                self.print_warn(
+                    'Has class constructor. No prologue case, but no "locals 0" found.')
+                return False
+
+            locals_end_index = -1
+            if no_prologue_case:
+                locals_end_index = locals_start_index + len('locals X')
+
+            prologue_end_index = -1
+            if has_class_constructor and prologue_start_index > -1:
+                prologue_end_index = prologue_start_index + \
+                    len('.prologue') + 1
+
+            if has_class_constructor:
+                if no_prologue_case:
+                    new_content = content[0:locals_end_index]
+
+                    if content[locals_end_index] == '0':
+                        new_content += '1'
+                    else:
+                        new_content += content[locals_end_index]
+
+                    new_content += '\n\n    .prologue'
+                    new_content += partial_injection_code
+                    new_content += content[locals_end_index+1:]
+                else:
+                    new_content = content[0:prologue_end_index]
+                    new_content += partial_injection_code
+                    new_content += content[prologue_end_index:]
+            else:
+                tmp_index = direct_methods_start_index + \
+                    len('# direct methods') + 1
+                new_content = content[0:tmp_index]
+                new_content += full_injection_code
+                new_content += content[tmp_index:]
+
+        # The newContent is ready to be saved
+
+        with open(entrypoint_smali_path, 'w') as smali_file:
+            smali_file.write(new_content)
+
+        self.print_info(
+            'Frida loader was injected in the entrypoint smali file!')
+
+        return True
+
+    def set_extract_native_libs(self, manifest_path):
+        if not os.path.isfile(manifest_path):
+            print("Couldn't find the Manifest file. Something is wrong with the apk!")
+            return
+
+        tree = ET.parse(manifest_path)
+        root = tree.getroot()
+
+        namespaces = {'android': 'http://schemas.android.com/apk/res/android'}
+
+        application_node = root.find('application', namespaces)
+
+        if application_node is not None:
+            extract_native_libs = application_node.get(
+                '{%s}extractNativeLibs' % namespaces['android'])
+            if extract_native_libs is not None and extract_native_libs == "false":
+                self.print_info(
+                    'Setting extractNativeLibs to true. https://github.com/iBotPeaches/Apktool/issues/3081')
+                application_node.set('{%s}extractNativeLibs' %
+                                     namespaces['android'], 'true')
+                tree.write(manifest_path, encoding='utf-8',
+                           xml_declaration=True)
+
+    def fix_target_sdk(self, apk_path, manifest_path):
+        if not os.path.isfile(manifest_path):
+            print("Couldn't find the Manifest file. Something is wrong with the apk!")
+            return
+
+    def get_arch_by_gadget(self, gadget_path):
+        if 'arm' in gadget_path and '64' not in gadget_path:
+            return self.ARCH_ARM
+
+        elif 'arm64' in gadget_path:
+            return self.ARCH_ARM64
+
+        elif 'i386' in gadget_path or ('x86' in gadget_path and '64' not in gadget_path):
+            return self.ARCH_X86
+
+        elif 'x86_64' in gadget_path:
+            return self.ARCH_X64
+
+        else:
+            return None
+
+    def create_lib_arch_folders(self, base_path, arch):
+        # noinspection PyUnusedLocal
+        sub_dir = None
+        sub_dir_2 = None
+
+        libs_path = os.path.join(base_path, 'lib/')
+
+        if not os.path.isdir(libs_path):
+            self.print_info('There is no "lib" folder. Creating...')
+            os.makedirs(libs_path)
+
+        if arch == self.ARCH_ARM:
+            sub_dir = os.path.join(libs_path, 'armeabi')
+            sub_dir_2 = os.path.join(libs_path, 'armeabi-v7a')
+
+        elif arch == self.ARCH_ARM64:
+            sub_dir = os.path.join(libs_path, 'arm64-v8a')
+
+        elif arch == self.ARCH_X86:
+            sub_dir = os.path.join(libs_path, 'x86')
+
+        elif arch == self.ARCH_X64:
+            sub_dir = os.path.join(libs_path, 'x86_64')
+
+        else:
+            self.print_warn(
+                "Couldn't create the appropriate folder with the given arch.")
+            return []
+
+        if not os.path.isdir(sub_dir):
+            self.print_info('Creating folder {0}'.format(sub_dir))
+            os.makedirs(sub_dir)
+
+        if arch == self.ARCH_ARM:
+            if not os.path.isdir(sub_dir_2):
+                self.print_info('Creating folder {0}'.format(sub_dir_2))
+                os.makedirs(sub_dir_2)
+
+        if arch == self.ARCH_ARM:
+            return [sub_dir, sub_dir_2]
+
+        else:
+            return [sub_dir]
+
+    def delete_existing_gadget(self, arch_folder, delete_custom_files=0):
+        gadget_path = os.path.join(arch_folder, self.DEFAULT_GADGET_NAME)
+
+        if os.path.isfile(gadget_path):
+            os.remove(gadget_path)
+
+        if delete_custom_files & self.CONFIG_BIT:
+            config_file_path = os.path.join(
+                arch_folder, self.DEFAULT_CONFIG_NAME)
+
+            if os.path.isfile(config_file_path):
+                os.remove(config_file_path)
+
+        if delete_custom_files & self.AUTOLOAD_BIT:
+            hookfile_path = os.path.join(
+                arch_folder, self.DEFAULT_HOOKFILE_NAME)
+
+            if os.path.isfile(hookfile_path):
+                os.remove(hookfile_path)
+
+    def insert_shared_lib(self, base_path, lib_path, lib_name, arch):
+        arch_folders = self.create_lib_arch_folders(base_path, arch)
+        if not arch_folders:
+            self.print_warn(
+                'Some error occurred while creating the libs folders')
+            return False
+        for folder in arch_folders:
+            target_path = os.path.join(folder, lib_name)
+            self.print_info('Copying shared library to {}'.format(target_path))
+            shutil.copyfile(lib_path, target_path)
+        return True
+
+    def insert_frida_lib(self, base_path, gadget_path, config_file_path=None, auto_load_script_path=None):
+        arch = self.get_arch_by_gadget(gadget_path)
+        arch_folders = self.create_lib_arch_folders(base_path, arch)
+
+        if not arch_folders:
+            self.print_warn(
+                'Some error occurred while creating the libs folders')
+            return False
+
+        for folder in arch_folders:
+            if config_file_path and auto_load_script_path:
+                self.delete_existing_gadget(
+                    folder, delete_custom_files=self.CONFIG_BIT | self.AUTOLOAD_BIT)
+
+            elif config_file_path and not auto_load_script_path:
+                self.delete_existing_gadget(
+                    folder, delete_custom_files=self.CONFIG_BIT)
+
+            elif auto_load_script_path and not config_file_path:
+                self.delete_existing_gadget(
+                    folder, delete_custom_files=self.AUTOLOAD_BIT)
+
+            else:
+                self.delete_existing_gadget(folder, delete_custom_files=0)
+
+            target_gadget_path = os.path.join(folder, self.DEFAULT_GADGET_NAME)
+
+            self.print_info('Copying gadget to {0}'.format(target_gadget_path))
+
+            shutil.copyfile(gadget_path, target_gadget_path)
+
+            if config_file_path:
+                target_config_path = target_gadget_path.replace(
+                    '.so', '.config.so')
+
+                self.print_info(
+                    'Copying config file to {0}'.format(target_config_path))
+                shutil.copyfile(config_file_path, target_config_path)
+
+            if auto_load_script_path:
+                target_autoload_path = target_gadget_path.replace(
+                    self.DEFAULT_GADGET_NAME, self.DEFAULT_HOOKFILE_NAME)
+
+                self.print_info(
+                    'Copying auto load script file to {0}'.format(target_autoload_path))
+                shutil.copyfile(auto_load_script_path, target_autoload_path)
+
+        return True
+
+    def repackage_apk(self, base_apk_path, apk_name, target_file=None, bundle_path=None, use_aapt2=False):
+        if target_file is None:
+            current_path = os.getcwd()
+            if bundle_path:
+                target_file = os.path.join(
+                    current_path, apk_name.replace('.xapk', '_patched.xapk'))
+            else:
+                target_file = os.path.join(
+                    current_path, apk_name.replace('.apk', '_patched.apk'))
+
+            if os.path.isfile(target_file):
+                timestamp = str(time.time()).replace('.', '')
+                if bundle_path:
+                    new_file_name = target_file.replace(
+                        '.xapk', '_{0}.xapk'.format(timestamp))
+                else:
+                    new_file_name = target_file.replace(
+                        '.apk', '_{0}.apk'.format(timestamp))
+                target_file = new_file_name
+
+        self.print_info('Repackaging apk to {0}'.format(target_file))
+        self.print_info('This may take some time...')
+
+        if bundle_path:
+            apktool_build_cmd = [self.dependencies_manager.java, '-jar',
+                                 self.dependencies_manager.apktool, 'b', '-o', bundle_path, base_apk_path, '-f']
+        else:
+            apktool_build_cmd = [self.dependencies_manager.java, '-jar',
+                                 self.dependencies_manager.apktool, 'b', '-o', target_file, base_apk_path, '-f']
+        if use_aapt2:
+            apktool_build_cmd.append('--use-aapt2')
+
+        subprocess.check_output(apktool_build_cmd)
+        if bundle_path:
+            bundle_dir = os.path.dirname(bundle_path)
+            self.sign_and_zipalign(bundle_dir)
+        else:
+            self.sign_and_zipalign(target_file)
+
+        if bundle_path:
+            bundle_dir_path = os.path.dirname(bundle_path)
+            with zipfile.ZipFile(target_file, 'w', zipfile.ZIP_DEFLATED) as zip:
+                for foldername, subfolders, filenames in os.walk(bundle_dir_path):
+                    for filename in filenames:
+                        absolute_path = os.path.join(foldername, filename)
+                        relative_path = os.path.relpath(
+                            absolute_path, bundle_dir_path)  # use relative path
+                        # remove folder hierarchy
+                        zip.write(absolute_path, arcname=relative_path)
+
+        return target_file
+
+    def create_security_config_xml(self, base_path):
+        res_path = os.path.join(base_path, 'res')
+
+        # Probably this if statement will never be reached
+        if not os.path.isdir(res_path):
+            self.print_info('Resources path not found. Creating one...')
+
+            os.makedirs(res_path)
+
+        xml_path = os.path.join(res_path, 'xml')
+
+        if not os.path.isdir(xml_path):
+            self.print_info('res/xml path not found. Creating one...')
+
+            os.makedirs(xml_path)
+
+        netsec_path = os.path.join(xml_path, 'network_security_config.xml')
+
+        if os.path.isfile(netsec_path):
+            self.print_warn(
+                'The network_security_config.xml file already exists!')
+            self.print_warn(
+                'I will try to delete it and create a new one. This can introduce some bug!')
+
+            with open(netsec_path, 'r') as netsec_file:
+                contents = netsec_file.read()
+                self.print_warn(
+                    'Original network_security_config.xml file content:\n{0}'.format(contents))
+
+            os.remove(netsec_path)
+
+        with open(netsec_path, 'w') as netsec_file:
+            security_content = '''<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+<base-config cleartextTrafficPermitted="true">
+    <trust-anchors>
+        <certificates src="system" />
+        <certificates src="user" />
+    </trust-anchors>
+</base-config>
+</network-security-config>
+            '''
+
+            netsec_file.write(security_content)
+
+        self.print_info('The network_security_config.xml file was created!')
+
+    def inject_user_certificates_label(self, base_dir):
+        self.print_info(
+            'Injecting Network Security label to accept user certificates...')
+
+        manifest_path = os.path.join(base_dir, 'AndroidManifest.xml')
+
+        if not os.path.isfile(manifest_path):
+            self.print_warn(
+                "Couldn't find the Manifest file. Something is wrong with the apk!")
+
+            return False
+
+        with open(manifest_path, 'r') as manifest_file:
+            manifest_content = manifest_file.read()
+
+            start_application_tag = manifest_content.find('<application ')
+            end_application_tag = manifest_content.find(
+                '>', start_application_tag)
+
+        new_manifest = manifest_content[:end_application_tag]
+        new_manifest += ' android:networkSecurityConfig="@xml/network_security_config"'
+        new_manifest += manifest_content[end_application_tag:]
+
+        with open(manifest_path, 'w') as manifest_file:
+            manifest_file.write(new_manifest)
+
+        self.print_info('The Network Security label was added!')
+
+    def has_user_certificates_label(self, base_path):
+        manifest_path = os.path.join(base_path, 'AndroidManifest.xml')
+
+        if not os.path.isfile(manifest_path):
+            self.print_warn(
+                "Couldn't find the Manifest file. Something is wrong with the apk!")
+
+            return False
+
+        with open(manifest_path, 'r') as manifest_file:
+            manifest_content = manifest_file.read()
+
+            has_netsec_label = manifest_content.find(
+                'network_security_config') != -1
+
+        return has_netsec_label
+
+    def enable_user_certificates(self, base_path):
+        if not self.has_user_certificates_label(base_path):
+            self.inject_user_certificates_label(base_path)
+
+        self.create_security_config_xml(base_path)
+
+    def inject_permission_manifest(self, base_dir, permission):
+        self.print_info(
+            'Injecting permission {0} in Manifest...'.format(permission))
+
+        permission_tag = '<uses-permission android:name="{0}"/>'.format(
+            permission)
+        manifest_path = os.path.join(base_dir, 'AndroidManifest.xml')
+
+        if not os.path.isfile(manifest_path):
+            self.print_warn(
+                "Couldn't find the Manifest file. Something is wrong with the apk!")
+
+            return False
+
+        f = open(manifest_path, 'r')
+        manifest_content = f.read()
+        f.close()
+
+        start_manifest_tag = manifest_content.find('<manifest ')
+
+        if start_manifest_tag == -1:
+            self.print_warn('Something wrong with Manifest file')
+
+            return False
+
+        end_manifest_tag = manifest_content.find('>', start_manifest_tag)
+
+        if end_manifest_tag == -1:
+            self.print_warn('Something wrong with Manifest file')
+
+            return False
+
+        new_manifest = manifest_content[:end_manifest_tag + 1] + '\n'
+        new_manifest += '    '  # indent
+        new_manifest += permission_tag
+        new_manifest += manifest_content[end_manifest_tag + 1:]
+
+        f = open(manifest_path, 'w')
+        f.write(new_manifest)
+        f.close()
+
+    def get_codeshare(self, uri):
+        if uri.endswith('/'):
+            uri = uri[:len(uri) - 1]
+        project_url = f"https://codeshare.frida.re/api/project/{uri}/"
+        target_path = os.path.join(
+            tempfile.gettempdir(), uri.split('/', 1)[-1] + '.js')
+        self.download_file(project_url, target_path)
+        with open(target_path, 'r') as js:
+            content = json.loads(js.read())
+        with open(target_path, 'w') as js:
+            js.write(content['source'])
+        return target_path
+
+    def remove_old_signature(self, apkfile):
+        tmp_zip = os.path.join(os.path.dirname(apkfile), 'tmp.zip')
+        with zipfile.ZipFile(apkfile, 'r') as zin:
+            with zipfile.ZipFile(tmp_zip, 'w') as zout:
+                for item in zin.infolist():
+                    if not str(item.filename).startswith('META-INF'):
+                        zout.writestr(item.filename, zin.read(item))
+        os.remove(apkfile)
+        os.rename(tmp_zip, apkfile)
+
+    def sign_and_zipalign(self, apk_path):
+        self.print_info('Signing apk files...')
+
+        subprocess.call('{0} -jar {1} -a {2} --allowResign --overwrite'.format(self.dependencies_manager.java,
+                        self.dependencies_manager.uber_apk_signer, apk_path), shell=True, stdout=subprocess.DEVNULL)
+        idsig_files = Path(apk_path).glob('*.idsig')
+        for i in idsig_files:
+            os.remove(i)
+
+        self.print_info('The APK files were signed and optimized!')
+
+    def get_frida_version(self):
+        if self.dependencies_manager.frida:
+            return subprocess.check_output([self.dependencies_manager.frida, '--version']).strip().decode('utf-8')
+        self.print_info(
+            'Frida not installed. Using latest version from github')
+        release_uri = f"https://api.github.com/repos/frida/frida/releases/latest"
+        response = requests.get(release_uri)
+        json = response.json()
+        return json['tag_name']
+
+    @staticmethod
+    def get_int_frida_version(str_version):
+        version_split = str_version.split('.')
+
+        if len(version_split) > 3:
+            version_split = version_split[0:3]
+
+        while len(version_split) < 3:
+            version_split.append('0')
+
+        return int(''.join(["{num:03d}".format(num=int(i)) for i in version_split]))
+
+    def min_frida_version(self, min_version):
+        frida_version = self.get_frida_version()
+
+        if self.get_int_frida_version(frida_version) < self.get_int_frida_version(min_version):
+            return False
+
+        return True
+
+    def get_default_config_file(self):
+        config = '''
+{
+    "interaction": {
+        "type": "script",
+        "address": "127.0.0.1",
+        "port": 27042,
+        "path": "./libhook.js.so"
+    }
+}
+        '''
+
+        path = os.path.join(self.cache_dir, 'generatedConfigFile.config')
+        f = open(path, 'w')
+
+        f.write(config)
+        f.close()
+
+        return path
+
+
+def signal_handler(_signal_id, _frame):
+    print('\n' + BColors.COLOR_RED +
+          'YOU PRESSED CTRL+C! Exiting now...' + BColors.ENDC)
+
+    sys.exit(1)
+
+
+# noinspection SpellCheckingInspection
+def main():
+    patcher = Patcher()
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '-a', '--apk', help='Specify the apk you want to patch')
+    parser.add_argument('-g', '--gadget', help='Specify the frida-gadget file')
+    parser.add_argument(
+        '--arch', help='Force architecture to inject frida gadget for. Supported arches: arm64-v8a, arm64, x86, x86_64')
+    parser.add_argument('--autoload-script', help='Auto load script')
+    parser.add_argument("--codeshare", help='Auto load script from codeshare')
+    parser.add_argument('-v', '--verbosity',
+                        help='Verbosity level (0 to 3). Default is 3')
+    parser.add_argument('--update-gadgets',
+                        help='Update frida-gadgets', action='store_true')
+    parser.add_argument('--use-aapt2', help='Use aapt2 with apktool',
+                        action='store_true')
+
+    parser.add_argument('-e', '--enable-user-certificates', help='Add some configs in apk to accept user certificates',
+                        action='store_true')
+
+    parser.add_argument('--prevent-frida-gadget',
+                        help='Does not insert frida gadget', action='store_true')
+    parser.add_argument(
+        '-l', '--lib', help="Inject a shared library in place of frida gadget")
+    parser.add_argument('-w', '--wait-before-repackage', help='Waits for your OK before repackage the apk',
+                        action='store_true')
+
+    parser.add_argument('-o', '--output-file',
+                        help='Specify the output file (patched)')
+
+    parser.add_argument(
+        '--version', help='Display information about the version', action='store_true')
+
+    group = parser.add_argument_group('Execute command before repackage')
+    group.add_argument('-x', '--exec-before-repackage',
+                       help='Specify a command to execute before repackage')
+
+    group.add_argument('--pass-temp-path', help='Should I pass the apk folder as parameter to your command?',
+                       action='store_true')
+
+    args = parser.parse_args()
+
+    if len(sys.argv) == 1:
+        parser.print_help()
+
+        return 1
+
+    dependencies_manager = ExternalDependencies()
+
+    if args.version:
+        patcher.set_verbosity(patcher.VERBOSITY_HIGH)
+        patcher.print_done('apkpatcher {0}'.format(__version__))
+        return 1
+
+    if not dependencies_manager.add_depedency('java'):
+        patcher.print_warn('java is not installed')
+        return 1
+
+    dependencies_manager.add_depedency('frida', required=False)
+    dependencies_manager.add_depedency('adb', required=False)
+
+    if not dependencies_manager.has_satisfied_required_dependencies():
+        patcher.print_warn('One or more dependencies were not satisfied.')
+        return
+
+    patcher.dependencies_manager = dependencies_manager
+
+    if args.verbosity:
+        patcher.set_verbosity(int(args.verbosity))
+    else:
+        patcher.set_verbosity(patcher.VERBOSITY_HIGH)
+
+    if args.update_gadgets:
+        patcher.update_apkpatcher_gadgets()
+
+        return 0
+
+    if not args.apk:
+        parser.print_help()
+
+        return 1
+
+    else:
+        if not os.path.isfile(args.apk):
+            patcher.print_warn(
+                "The file {0} couldn't be found!".format(args.apk))
+
+            return 1
+
+    gadget_to_use = None
+    if not args.prevent_frida_gadget:
+        if args.gadget:
+            gadget_to_use = args.gadget
+
+        else:
+            gadget_to_use = patcher.get_recommended_gadget(abi=args.arch)
+
+        if gadget_to_use is None or not os.path.isfile(gadget_to_use):
+            patcher.print_warn('Could not identify the gadget!')
+
+            return 1
+
+    patcher.check_and_download_tools()
+
+    # THE APK PATCHING STARTS HERE
+
+    apk_file_path = args.apk
+    apk_file_name = os.path.basename(apk_file_path)
+    if apk_file_path.endswith('.xapk'):
+        patcher.is_bundle = True
+        apk_file_path = patcher.extract_bundle(apk_file_path)
+    temporary_path = patcher.create_temp_folder_for_apk(apk_file_path)
+
+    patcher.extract_apk(apk_file_path, temporary_path, extract_resources=True)
+
+    manifest_path = os.path.join(temporary_path, 'AndroidManifest.xml')
+
+    has_internet_permission = False
+    if not args.prevent_frida_gadget:
+        has_internet_permission = patcher.has_permission(
+            manifest_path, patcher.INTERNET_PERMISSION)
+
+    if not args.prevent_frida_gadget and not has_internet_permission:
+        patcher.inject_permission_manifest(
+            temporary_path, patcher.INTERNET_PERMISSION)
+
+    if args.enable_user_certificates:
+        patcher.enable_user_certificates(temporary_path)
+
+    if not args.prevent_frida_gadget and not args.lib:
+        # START --[ INJECTING FRIDA LIB FILE AND SMALI CODE ]--
+        entrypoint_class = patcher.get_entrypoint_class_name(manifest_path)
+        entrypoint_smali_path = patcher.get_entrypoint_smali_path(
+            temporary_path, entrypoint_class)
+
+        patcher.insert_frida_loader(entrypoint_smali_path)
+
+        if args.autoload_script or args.codeshare:
+            if not patcher.min_frida_version('10.6.33'):
+                patcher.print_warn(
+                    'Autoload is not supported in this version of frida. Update it!')
+                return 1
+
+            script_file = args.autoload_script or patcher.get_codeshare(
+                args.codeshare)
+
+            if not os.path.isfile(script_file):
+                patcher.print_warn(
+                    'The script {0} was not found.'.format(script_file))
+
+                return 1
+
+            default_config_file = patcher.get_default_config_file()
+            patcher.insert_frida_lib(temporary_path, gadget_to_use,
+                                     config_file_path=default_config_file, auto_load_script_path=script_file)
+
+        else:
+            patcher.insert_frida_lib(temporary_path, gadget_to_use)
+            # END --[ INJECTING FRIDA LIB FILE AND SMALI CODE ]--
+
+    elif args.lib:
+        lib_file = args.lib
+        if not os.path.isfile(lib_file):
+            patcher.print_warn('Library {0} was not found.'.format(lib_file))
+        lib_name, lib_ext = os.path.basename(lib_file).rsplit('.', 1)
+        lib_path = os.path.abspath(args.lib)
+        entrypoint_class = patcher.get_entrypoint_class_name(manifest_path)
+
+        entrypoint_smali_path = patcher.get_entrypoint_smali_path(
+            temporary_path, entrypoint_class)
+        arch = patcher.get_arch(abi=args.arch)
+        patcher.insert_shared_lib(
+            temporary_path, lib_path, lib_name + '.' + lib_ext, arch)
+        patcher.insert_frida_loader(entrypoint_smali_path, lib_name)
+
+    if args.wait_before_repackage:
+        patcher.print_info(
+            'Apkpatcher is waiting for your OK to repackage the apk...')
+
+        answer = input(BColors.COLOR_BLUE +
+                       '[*] Are you ready? (y/N): ' + BColors.ENDC)
+
+        while answer.lower() != 'y':
+            answer = input(BColors.COLOR_BLUE +
+                           '[*] Are you ready? (y/N): ' + BColors.ENDC)
+
+    if args.exec_before_repackage:
+        if args.pass_temp_path:
+            if 'TMP_PATH_HERE' in args.exec_before_repackage:
+                command_to_execute = args.exec_before_repackage.replace(
+                    'TMP_PATH_HERE', temporary_path)
+
+            else:
+                command_to_execute = '{0} {1}'.format(
+                    args.exec_before_repackage, temporary_path)
+        else:
+            command_to_execute = '{0}'.format(args.exec_before_repackage)
+
+        print(BColors.COLOR_RED + '[!] Provided shell command: {0}'.format(
+            command_to_execute) + BColors.COLOR_ENDC)
+        answer = input(
+            BColors.COLOR_RED + '[!] Are you sure you want to execute it? (y/N) ' + BColors.ENDC)
+
+        if answer.lower() == 'y':
+            patcher.print_info('Executing -> {0}'.format(command_to_execute))
+            os.system(command_to_execute)
+
+    patcher.set_extract_native_libs(manifest_path)
+
+    if patcher.is_bundle:
+        output_file_path = patcher.repackage_apk(
+            temporary_path, apk_file_name, target_file=args.output_file, bundle_path=apk_file_path, use_aapt2=args.use_aapt2)
+    else:
+        output_file_path = patcher.repackage_apk(
+            temporary_path, apk_file_name, target_file=args.output_file, use_aapt2=args.use_aapt2)
+
+    patcher.print_done(
+        'The temporary folder was not deleted. Find it at {0}'.format(temporary_path))
+    patcher.print_done('Your file is located at {0}.'.format(output_file_path))
+
+    return 0
+
+
+if __name__ == '__main__':
+    signal.signal(signal.SIGINT, signal_handler)
+    main()
