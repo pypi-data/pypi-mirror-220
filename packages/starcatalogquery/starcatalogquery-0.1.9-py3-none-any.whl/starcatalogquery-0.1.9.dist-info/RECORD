@@ -1,0 +1,17 @@
+starcatalogquery/__init__.py,sha256=F5XhiD_gjaRsVVK_KfSD9ZkmgQnoNiJQqIMoMsceHRY,33
+starcatalogquery/catalog_check.py,sha256=GIjZgERg7Q6qhwyfzHOxut95KjmJGwq-M0SJVUFMLY8,6049
+starcatalogquery/catalog_download.py,sha256=sy316_xRn5CBVsqQAYmXSOSXx5bvBaU9Ewmwxt24vOM,6727
+starcatalogquery/catalog_query.py,sha256=HOilEP_Xyxo9BRDW06gFfu1YgyIO60FZinOBy1bIfDg,16654
+starcatalogquery/classes.py,sha256=Af_XqANH3ISI0B8JXB342J2edgSR_Dm5H_dTK0lJdIo,50509
+starcatalogquery/invariantfeatures.py,sha256=iJG2K3R4BcbAqkX0I-P0nQYR4Xeo2UpPaQuEqx4CP58,3078
+starcatalogquery/tiles_draw.py,sha256=GGFtw8GNY67eTS-RzOG_RH-amS0wjlm8Dx844LblYXI,5684
+starcatalogquery/wcs.py,sha256=gtHOyg7Y51Icc3uAfA_uX3YznXqYbhtSKwVDcO1gIcg,1978
+starcatalogquery/utils/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+starcatalogquery/utils/df2info.py,sha256=_eQENb_DxX5Q5EGxbanJuo9nQKBm-A6Tz8pEsLFinxI,612
+starcatalogquery/utils/starcatalog_statistic.py,sha256=LSjhB0jEsxzZmkXcB7NoVDXOorWB71DAPYg1HWWUREQ,4274
+starcatalogquery/utils/try_download.py,sha256=y9pJKNuJuSR9YOJOneUEDii6rkASSizthKU7BIu5Hn4,467
+starcatalogquery-0.1.9.dist-info/LICENSE,sha256=1mo8gGwn9nEfzoruoWYAD1ttN40DofMYGQNef1rsytY,1068
+starcatalogquery-0.1.9.dist-info/METADATA,sha256=UKw376_2VCJdhBmtz4T9zodx5p-f_c57yuVXa84n3qM,12920
+starcatalogquery-0.1.9.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+starcatalogquery-0.1.9.dist-info/top_level.txt,sha256=xZmWsZTK993L9eaiWI9PM0exXZiKw-64leh_79J2M9U,17
+starcatalogquery-0.1.9.dist-info/RECORD,,
