@@ -1,0 +1,28 @@
+# Testing the gated_gcn model with the PCQMv2 dataset on IPU.
+constants:
+  name: &name neurips2023_small_data_gated_gcn
+  config_override: "expts/neurips2023_configs/config_small_gcn.yaml"
+
+architecture:
+  pre_nn_edges:   # Set as null to avoid a pre-nn network
+    out_dim: 32
+    hidden_dims: 128
+    depth: 2
+    activation: relu
+    last_activation: none
+    dropout: 0.18
+    normalization: layer_norm
+    last_normalization: layer_norm
+    residual_type: none
+
+
+  gnn:  # Set as null to avoid a post-nn network
+    layer_type: 'pyg:gated-gcn' #pyg:gine #'pyg:gps' # pyg:gated-gcn, pyg:gine,pyg:gps
+
+trainer:
+  logger:
+    name: *name
+    project: *name
+  model_checkpoint:
+    dirpath: models_checkpoints/neurips2023-small-gated-gcn/
+    filename: *name
