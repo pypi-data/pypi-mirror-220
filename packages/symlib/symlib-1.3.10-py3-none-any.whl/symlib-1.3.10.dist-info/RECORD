@@ -1,0 +1,11 @@
+symlib/__init__.py,sha256=qhhIRPkRkZjXht8bxdKyfTMSsKQ_dPWLE_UYP62w2Rc,1715
+symlib/file_management.py,sha256=FujVkcovdYOb6-MRCuu6XQQwjK3l-uRK7ThVgntlZcY,7006
+symlib/lib.py,sha256=YZQsoSo8YZGqpU_99Ukcroi2xaH9zbmspAsRzdop0Nc,58601
+symlib/match.py,sha256=Vgo0HXo8W4ttxl8sDeFfVtkKcNao_7_vAAgnm2MXSB4,9008
+symlib/star_tagging.py,sha256=NpOtNV59L8-Fd--Z49fFuWXbo6GRle3EpUf2aIOkjyc,36177
+symlib/util.py,sha256=JmpPtU5xfqs96VaoFooJQU0k0LabKs6VwaTO12dI8dw,9979
+symlib-1.3.10.dist-info/LICENSE,sha256=5Kao6uuJ59zTGJ507bcJAaSig1WGST9hKBASahQdzIo,1071
+symlib-1.3.10.dist-info/METADATA,sha256=MPwYvKwX6Ft7xdVbA0HU5MnkWmWUIPz24HjYBSXqMG8,879
+symlib-1.3.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+symlib-1.3.10.dist-info/top_level.txt,sha256=tjePFZp-EIYINS8mQ1JKK6l3KqF8rntUQepjfX77K6s,7
+symlib-1.3.10.dist-info/RECORD,,
