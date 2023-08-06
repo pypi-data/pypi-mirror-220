@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-dall-e
+Version: 0.6
+Summary: A nonebot2 plugin that uses a key pool and key polling technology to manage API calls effectively.
+Home-page: https://github.com/Rockytkg/nonebot_plugin_dall-e
+Author: Join-liu
+Author-email: 2696916846@qq.com
+License: Apache License 2.0
+Keywords: nonebot2 plugin
+License-File: LICENSE
+Requires-Dist: nonebot2
+Requires-Dist: openai
+Requires-Dist: pillow
+Requires-Dist: aiohttp
+Requires-Dist: httpx
+Requires-Dist: nonebot-adapter-onebot
+
