@@ -1,0 +1,4 @@
+microlearn-llm-factory
+langchain
+openai
+python-dotenv
