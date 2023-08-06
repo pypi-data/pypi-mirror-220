@@ -1,0 +1,12 @@
+disopy/__init__.py,sha256=nFLpT2PbC5wVje-3XePxGMP-UrJV6HFAnWvlY9wuPNM,117
+disopy/authentication.py,sha256=L9zghBvqcUby8ORSDikcJOwT-aApJmEmut0fjdbMnog,360
+disopy/discord.py,sha256=5AgpgGmczbsYiSLrs-gDvyQ2aP-I1rOuYO4zB88WTGw,15061
+disopy/main.py,sha256=Dyinc7sb--TMm_KUVylps9gQYUTfXyEX2SwNaNTZkPo,2449
+disopy/messages.py,sha256=Pl4YpXCI9gwg4ZHzeAvN9J2DiswbeKxc0hln3A9krOM,523
+disopy/queue.py,sha256=kX5PgihjGrVu6DqdzTQzRTLA_Kvlvt5m1cbM81VxDco,2206
+disopy/subsonic.py,sha256=E-vEiK85u4B8p2nF1oQQg_8zT5ebXJTfSvm-yygHg24,6246
+disopy-1.0.0.dist-info/LICENSE.txt,sha256=11cuTfQrs0bP-JFszp-v1ucujf_nW_KF7cvns-ecJMo,1061
+disopy-1.0.0.dist-info/METADATA,sha256=84-MGE4doLbctjn3otmUteHBOpc5kzCUcNqJ2-MX-io,3039
+disopy-1.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+disopy-1.0.0.dist-info/entry_points.txt,sha256=Oaba7N3hm4FgzOc9VvO0aIWCU1sVMIGaatt_-06zXYE,43
+disopy-1.0.0.dist-info/RECORD,,

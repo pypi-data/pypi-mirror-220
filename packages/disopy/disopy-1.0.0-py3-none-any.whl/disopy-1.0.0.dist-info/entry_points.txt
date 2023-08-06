@@ -1,0 +1,3 @@
+[console_scripts]
+disopy=disopy.main:main
+
