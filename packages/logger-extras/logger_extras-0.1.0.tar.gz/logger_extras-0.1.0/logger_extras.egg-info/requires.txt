@@ -1,0 +1,15 @@
+
+[dev]
+flake8
+isort
+mypy
+build
+pytest
+pytest-cov
+types-paho-mqtt
+
+[dev:python_version < "3.10"]
+typing-extensions
+
+[mqtt]
+paho-mqtt<2,>=1.6
