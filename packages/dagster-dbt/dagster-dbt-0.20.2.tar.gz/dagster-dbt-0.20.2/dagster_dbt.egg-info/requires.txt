@@ -1,0 +1,12 @@
+dagster==1.4.2
+dbt-core<1.6
+Jinja2
+networkx
+requests
+rich
+typer
+
+[test]
+dbt-duckdb
+dagster-duckdb
+dagster-duckdb-pandas
