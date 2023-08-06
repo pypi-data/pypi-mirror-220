@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/chonker/__init__.py
+src/chonker/chonker.py
+src/chonkify.egg-info/PKG-INFO
+src/chonkify.egg-info/SOURCES.txt
+src/chonkify.egg-info/dependency_links.txt
+src/chonkify.egg-info/top_level.txt
+test/test_chonker.py
