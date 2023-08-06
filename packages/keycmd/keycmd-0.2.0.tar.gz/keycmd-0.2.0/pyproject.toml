@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "keycmd"
+version = "0.2.0"
+description = ""
+authors = ["Korijn van Golen <korijn.vangolen@zimmerbiomet.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+keyring = "~24.2.0"
+tomli = "^2.0.1"
+shellingham = "^1.5.0.post1"
+
+[tool.poetry.scripts]
+keycmd = 'keycmd.__main__:main'
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.278"
+black = "^23.7.0"
+twine = "^4.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = [
+	"E",  # pycodestyle
+	"F",  # pyflakes
+	"I",  # isort
+	"N",  # pep8-naming
+	"ARG",  # flake8-unused-arguments
+	"T10",  # flake8-debugger
+	"RUF",  # Ruff-specific rules
+]
+
+[tool.ruff.isort]
+force-sort-within-sections = true
+order-by-type = false
+lines-after-imports = 2
+
+# example config for development and testing
+[tool.keycmd.keys]
+ARTIFACTS_TOKEN = { credential = "azure@poetry-repository-main", username = "azure" }
+ARTIFACTS_TOKEN_B64 = { credential = "azure@poetry-repository-main", username = "azure", b64 = true }
