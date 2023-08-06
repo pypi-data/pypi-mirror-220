@@ -1,0 +1,1 @@
+COVERT_SERVER_URL = 'https://covert-server.as.r.appspot.com'
