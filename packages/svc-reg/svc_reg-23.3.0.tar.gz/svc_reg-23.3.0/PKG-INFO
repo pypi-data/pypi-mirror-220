@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: svc-reg
+Version: 23.3.0
+Summary: A Service Registry for Dependency Injection
+Project-URL: Changelog, https://github.com/hynek/svc-reg/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://github.com/hynek/svc-reg/blob/main/README.md
+Project-URL: Source, https://github.com/hynek/svc-reg
+Project-URL: Funding, https://github.com/sponsors/hynek
+Author-email: Hynek Schlawack <hs@ox.cx>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: dependency injection
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Requires-Dist: attrs
+Provides-Extra: dev
+Requires-Dist: flask; extra == 'dev'
+Requires-Dist: svc-reg[tests,typing]; extra == 'dev'
+Requires-Dist: tox>4; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: pytest-asyncio; extra == 'tests'
+Requires-Dist: sybil; extra == 'tests'
+Provides-Extra: typing
+Requires-Dist: flask; extra == 'typing'
+Requires-Dist: mypy>=1.4; extra == 'typing'
+Description-Content-Type: text/markdown
+
+
+# A Service Registry for Dependency Injection
+
+> **Warning**
+> ☠️ Not ready yet! ☠️
+>
+> This project is only public to [gather feedback](https://github.com/hynek/svc-reg/discussions), and everything can and will change until the project is proclaimed stable.
+>
+> Currently only [**Flask** support](#flask) is production-ready, but API details can still change.
+>
+> At this point, it's unclear whether this project will become a "proper Hynek project".
+> I will keep using it for my work projects, but whether this will grow beyond my personal needs depends on community interest.
+
+*svc-reg* is a [service locator](https://en.wikipedia.org/wiki/Service_locator_pattern) for Python that lets you register factories for types/interfaces and then imperatively request instances of those types with **automatic cleanup** and **health checks**.
+
+**This allows you to configure and manage resources in *one central place* and access them all in a *consistent* way.**
+
+In practice that means that at runtime, you say, for example, "*Give me a database connection*!", and *svc-reg* will give you whatever you've configured it to return when asked for a database connection.
+This can be an actual database connection or it can be a mock object for testing.
+
+If you like the [*Dependency Inversion Principle*](https://en.wikipedia.org/wiki/Dependency_inversion_principle) (aka "*program against interfaces, not implementations*"), you would register concrete factories for abstract interfaces[^abstract].
+
+[^abstract]: In Python usually a [`Protocol`](https://docs.python.org/3/library/typing.html#typing.Protocol) or an [Abstract Base Class](https://docs.python.org/3.11/library/abc.html).
+
+That:
+
+- enables **dependency injection**,
+- simplifies **testing**,
+- unifies **cleanups**,
+- and allows for **easy health** checks across *all* resources.
+
+No global mutable state is necessary – but possible for extra comfort.
+
+The goal is to minimize your business code to:
+
+```python
+def view(request):
+    db = request.services.get(Database)
+    api = request.services.get(WebAPIClient)
+```
+
+or even:
+
+```python
+def view():
+    db = services.get(Database)
+    api = services.get(WebAPIClient)
+```
+
+The latter already works with [Flask](#flask).
+
+And you set it up like this:
+
+```python
+engine = create_engine("postgresql://localhost")
+
+def engine_factory():
+    with engine.connect() as conn:
+        yield Database(conn)
+
+registry = svc_reg.Registry()
+registry.register_factory(Database, create_database)
+```
+
+The generator-based setup and cleanup may remind you of [Pytest fixtures](https://docs.pytest.org/en/stable/explanation/fixtures.html).
+
+Unlike typical dependency injection that passes your dependencies as arguments, the active obtainment of resources by calling `get()` when you *know* you're going to need it avoids the conundrum of either having to pass a factory (e.g., a connection pool -- which also puts the onus of cleanup on you), or eagerly creating resources that are never used.
+
+*svc-reg* comes with **full async** support via a-prefixed methods (i.e. `aget()` instead of `get()`, et cetera).
+
+---
+
+For now, please refer to the [GitHub README](https://github.com/hynek/svc-reg/blob/main/README.md) for latest documentation.
+
+
+## Release Information
+
+### Added
+
+- Async method `Container.aget()`.
+  This was necessary for generator-based cleanups.
+  It works with sync factories too, so you can use it universally in async code.
+- Async method `ServicePing.aping()`.
+  It works with sync factories and pings too, so you can use it universally in async code.
+  [#4](https://github.com/hynek/svc-reg/pull/4)
+
+
+### Changed
+
+- Switched the cleanup mechanism from passing a function to allowing the factory to be a generator that yields the resource and can clean up after the `yield`.
+  Just like Pytest fixtures.
+  [#3](https://github.com/hynek/svc-reg/pull/3)
+
+
+---
+
+[→ Full Changelog](https://github.com/hynek/svc-reg/blob/main/CHANGELOG.md)
+
+
+## Credits
+
+*svc-reg* is written by [Hynek Schlawack](https://hynek.me/) and distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+The development is kindly supported by my employer [Variomedia AG](https://www.variomedia.de/) and all my amazing [GitHub Sponsors](https://github.com/sponsors/hynek).
