@@ -1,0 +1,16 @@
+ciopath/LICENSE,sha256=eSiIxE5S7RlI78VJUCpgrHNe5ZkosDjX4mPy6IDuo1c,1079
+ciopath/README.md,sha256=VY8a4lP2JTmkTSxI3XdLa-ElcrvbcBIh1Fhf4r8lcfQ,267
+ciopath/VERSION,sha256=f70hDr7BH2WpcZDvkAeVxLjaOAWvP1objR0nJVaykso,5
+ciopath/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ciopath/gpath.py,sha256=eG45cWxbkn047p2csOTbugzOTCOO8GvPtnYuYF4cbcc,8586
+ciopath/gpath_list.py,sha256=WkA2ez7WGmzDRsjqouzjLwrelPu5ePwM4sO_60dkN2g,8118
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_gpath.py,sha256=ka39L4ZQe21bvu6nAHfXGANVwbOVOW8NOjxWD1RnLqU,18769
+tests/test_gpath_list.py,sha256=rIrfsDivdjYCceC7vpsKstwfwpXKdheMhaxTYAy9Xkc,17802
+tests/mocks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/mocks/glob.py,sha256=J2MH7nqi6NJOHuGdVWxhfeBd700_Ckj6cLh_8jSNkfg,215
+ciopath-1.1.0.dist-info/LICENSE,sha256=eSiIxE5S7RlI78VJUCpgrHNe5ZkosDjX4mPy6IDuo1c,1079
+ciopath-1.1.0.dist-info/METADATA,sha256=MmmskE-Ns9N_UkTp_TM7o0yJfgrzuc4b9ZzS_O38jBo,686
+ciopath-1.1.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+ciopath-1.1.0.dist-info/top_level.txt,sha256=jlAevoBgLzsiEDz5HwgHIFykfmrjdQBKTlvPeF0YqEw,14
+ciopath-1.1.0.dist-info/RECORD,,
