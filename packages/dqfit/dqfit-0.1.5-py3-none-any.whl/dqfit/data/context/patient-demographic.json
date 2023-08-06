@@ -1,0 +1,35 @@
+{
+    "key": "patient-demographic",
+    "dim": [
+        {
+            "path": "Patient.gender",
+            "W": 5
+        },
+        {
+            "path": "Patient.birthDate",
+            "W": 10
+        },
+        {
+            "path": "Patient.telecom",
+            "W": 1
+        },
+        {
+            "path": "Patient.address",
+            "W": 1
+        },
+        {
+            "path": "Patient.communication",
+            "W": 1
+        },
+        {
+            "path": "Patient.identifier",
+            "W": 1
+        },
+        {
+            "path": "Patient.name",
+            "W": 1
+        }
+    ],
+    "min_date": "2016-01-01",
+    "code": []
+}
