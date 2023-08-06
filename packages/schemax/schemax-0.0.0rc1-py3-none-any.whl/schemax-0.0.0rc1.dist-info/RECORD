@@ -1,0 +1,11 @@
+schemax/__init__.py,sha256=WZQK93QoTFShwaOcQKQ5IVecr9m-TaKpy72ie94D8q0,888
+schemax/_from_json_schema.py,sha256=aXsF-wI4p6j4RY4FfJe9595H3E6HYmmGXXnrTfRt3zc,5105
+schemax/_translator.py,sha256=Ili0yvb1kGYEoe3kS2gKEmH2aFsjddkTQoiSGA9Jjkg,7387
+schemax/_version.py,sha256=aVnC6Ex_pTCvckCkkK0VkNpSVCugI5kqTxrvjIDITjo,22
+schemax/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schemax/supported_props.py,sha256=RDW2JYht1j0wDk6GsEIF-RFbx1rlkhba55Wm1PANJV4,417
+schemax-0.0.0rc1.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+schemax-0.0.0rc1.dist-info/METADATA,sha256=-HKSOF2jIC_HwqACPOAdK7fvRB-FT6py-pl1a2-VEqY,7381
+schemax-0.0.0rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+schemax-0.0.0rc1.dist-info/top_level.txt,sha256=GS7YK_QA5u6Fwy4DCk1qx687r8COAg5FMRTsCAMfZCw,8
+schemax-0.0.0rc1.dist-info/RECORD,,
