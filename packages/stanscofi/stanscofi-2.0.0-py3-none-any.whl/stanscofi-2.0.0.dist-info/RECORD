@@ -1,0 +1,11 @@
+stanscofi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stanscofi/datasets.py,sha256=5MgWBGmcn7z-QgDDc_OySI6qfR0aODwIzSBBwyeRwD8,27484
+stanscofi/models.py,sha256=piCwl1UYpRb358yR4gVDCVMAHIwYz1UDUf05tFEtTIs,17051
+stanscofi/preprocessing.py,sha256=05up_LUbEC5TlXxACqz1H1zkxAQVj59kmTNExwvQQn0,19372
+stanscofi/training_testing.py,sha256=QYFD-1ZEzvumn3Qpjf01jJHIpL5IaAu2m57dUW57-hg,20417
+stanscofi/utils.py,sha256=8QpCpBxK22ylT4FwRsbq3FAVhg5GOLyFPlYhUsbjGa0,20459
+stanscofi/validation.py,sha256=PkFlkMN3GULf-C19t9QbW_-Yh5Z_MCoJ3M6us8FBn8Q,13228
+stanscofi-2.0.0.dist-info/METADATA,sha256=N0gkMyZ1qlv4gFloHtKGHx_uFOoPZd2JWkED-NPrXv4,7012
+stanscofi-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+stanscofi-2.0.0.dist-info/top_level.txt,sha256=MvqJdIctoP38vl_ojMPI-3dJ4MJKc1lOBIDk8Nxj_H8,10
+stanscofi-2.0.0.dist-info/RECORD,,
