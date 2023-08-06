@@ -1,0 +1,9 @@
+astropy
+numpy
+matplotlib
+pandas
+regions
+getpass
+spectral_cube
+scipy
+reproject
