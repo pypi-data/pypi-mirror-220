@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "pxgpt"
+version = "0.0.0rc0"
+description = "Your personal, powerful and private GPT."
+authors = ["pwwang <pwwang@pwwang.com>"]
+license = "Apache License 2.0"
+readme = "README.md"
+exclude = ["pxgpt/frontend/[!build]*", "pxgpt/frontend/index.html"]
+
+[tool.poetry.build]
+generate-setup-file = true
+
+[tool.poetry.dependencies]
+python = "^3.9"
+langchain = "^0.0.232"
+chromadb = "^0.3.29"
+argx = "^0.2.9"
+prompt-toolkit = "^3.0.39"
+quart = "^0.18.4"
+gpt4all = { version = "^1.0.3", optional = true }
+llama-cpp-python = { version = "^0.1.70", optional = true }
+python-simpleconf = { version = "^0.6.0", extras = ["yaml"] }
+# sentence-transformers = "^2.2.2"
+openai = { version = "^0.27.8", optional = true }
+
+[tool.poetry.extras]
+gpt4all = ["gpt4all"]
+llama-cpp = ["llama-cpp-python"]
+openai = ["openai"]
+all = ["gpt4all", "llama-cpp-python", "openai"]
+
+[tool.poetry.scripts]
+pxgpt = "pxgpt.cli:main"
+
+[tool.poetry.dev-dependencies]
+llama-cpp-python = { path = "./llama-cpp-python" }
+gpt4all = { path = "./gpt4all/gpt4all-bindings/python" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
