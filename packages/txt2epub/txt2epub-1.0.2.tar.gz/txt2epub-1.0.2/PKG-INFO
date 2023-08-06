@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: txt2epub
+Version: 1.0.2
+Summary: A simple TXT to ePub converter
+Keywords: ebook
+Home-page: https://github.com/k4yt3x/txt2epub/
+Author-Email: K4YT3X <i@k4yt3x.com>
+License: GPL-2.0-only
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Project-URL: Homepage, https://github.com/k4yt3x/txt2epub/
+Requires-Python: >=3.8
+Requires-Dist: langdetect>=1.0.0
+Requires-Dist: ebooklib>=0.18
+Requires-Dist: PyQt6>=6.5.0
+Description-Content-Type: text/markdown
+
+# TXT2EPUB
+
+A simple tool for converting TXT books into ePub.
+
+## Installation
+
+```shell
+pip install txt2epub
+```
+
+## Usage
+
+You may convert a file from the command line:
+
+```shell
+txt2epub convert -i <input> -o <output>
+```
+
+...or using the GUI:
+
+```shell
+txt2epub gui
+```
