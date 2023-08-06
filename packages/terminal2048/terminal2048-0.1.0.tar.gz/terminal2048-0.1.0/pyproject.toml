@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "terminal2048"
+version = "0.1.0"
+description = "2048 for the terminal. Inspired by Gabriele Cirulli's 2048."
+authors = ["Evan Jones <evan_jones@mac.com>"]
+readme = "README.md"
+packages = [{include = "terminal2048"}]
+
+[tool.poetry.scripts]
+terminal2048 = 'terminal2048.term_2048:main'
+
+[tool.poetry.dependencies]
+python = "^3.10"
+blessed = "^1.20.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
