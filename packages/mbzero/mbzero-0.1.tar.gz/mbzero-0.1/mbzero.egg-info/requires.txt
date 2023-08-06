@@ -1,0 +1,7 @@
+
+[lint]
+flake8>=3.5.0
+flake8-simplify
+
+[test]
+pytest>=4.6
