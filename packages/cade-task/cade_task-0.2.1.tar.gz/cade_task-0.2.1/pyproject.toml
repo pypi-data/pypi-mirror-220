@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "cade-task"
+version = "0.2.1"
+description = "A loose wrapper around reminders-cli"
+readme = "README.md"
+authors = ["Cade Ekblad-Frank <cade@e-f.me>"]
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/cadeef/cade-task"
+
+[tool.poetry.scripts]
+task = 'cade_task.cli:main'
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.5"
+tablib = {extras = ["cli"], version = "^3.5.0"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry>=1.5.1"]
+build-backend = "poetry.masonry.api"
