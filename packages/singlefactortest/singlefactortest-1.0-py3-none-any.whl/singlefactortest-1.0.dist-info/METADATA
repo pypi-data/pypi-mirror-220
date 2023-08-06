@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: singlefactortest
+Version: 1.0
+Summary: 单因子的测试（日级别）
+Home-page: https://github.com/Masteryeda
+Author: IDEA_Wenzhi
+Author-email: 1259429314@qq.com
+Maintainer: IDEA_Wenzhi
+Maintainer-email: 1259429314@qq.com
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: statsmodels
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Requires-Dist: baostock
+
+11111
