@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: langfuse
+Version: 0.0.37
+Summary: A client library for accessing langfuse
+License: MIT
+Author: langfuse
+Author-email: developers@langfuse.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: attrs (>=21.3.0)
+Requires-Dist: httpx (>=0.15.4,<0.25.0)
+Requires-Dist: pydantic (==1.10.7)
+Requires-Dist: pytest (>=7.4.0,<8.0.0)
+Requires-Dist: pytest-asyncio (>=0.21.1,<0.22.0)
+Requires-Dist: pytest-timeout (>=2.1.0,<3.0.0)
+Requires-Dist: python-dateutil (>=2.8.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Langfuse Python SDK
+
+[![PyPI Version](https://img.shields.io/pypi/v/hy.svg)](https://pypi.python.org/pypi/langfuse) [![MIT License](https://img.shields.io/badge/License-MIT-red.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+
+```
+pip install langfuse
+```
+
+Full documentation: https://docs.langfuse.com/sdk/python
+
+
+## Development
+
+### Update openapi spec
+1. Generate Fern Python SDK in [langfuse](https://github.com/langfuse/langfuse) and copy the files generated in `generated/python` into the `langfuse/api` folder in this repo.
+2. Rebuild and deploy the package to PyPi.
+
+### Deployment
+1. poetry version patch
+2. poetry build
+3. poetry publish
+
