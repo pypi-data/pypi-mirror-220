@@ -1,0 +1,48 @@
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coziepy"
+version = "0.0.2"
+authors = [
+  { name="Mario Frei", email="mario.frei@gmx.net" },
+]
+description = "A package for processing and visualizing data collected with the Cozie-Apple app"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "arrow >= 1.2.3",
+    "DateTime >= 5.2",
+    "fastparquet >= 2023.7.0",
+    "influxdb >= 5.3.1",
+    "matplotlib >= 3.7.2",
+    "matplotlib-inline >= 0.1.6",
+    "numpy >= 1.25.1",
+    "packaging >= 23.1",
+    "pandas >= 2.0.3",
+    "plotly >= 5.15.0",
+    "pyarrow >= 12.0.1",
+    "pytz >= 2023.3",
+    "requests >= 2.31.0",
+    "seaborn >= 0.12.2",
+]
+
+[project.urls]
+homepage = "https://www.cozie-apple.app/"
+repository = "https://github.com/cozie-app/cozie-wizard/issues"
+
+[tools.setuptools]
+packages = ["coziepy"]
+
+[tool.setuptools.packages.find]
+exclude = [
+  "examples*"
+]
+# exluding /test here didn't work. Hence it is excluded using the MANIFEST.in file
