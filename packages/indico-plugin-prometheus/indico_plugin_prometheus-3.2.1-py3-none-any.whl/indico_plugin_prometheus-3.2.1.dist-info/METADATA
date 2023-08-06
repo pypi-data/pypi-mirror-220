@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: indico-plugin-prometheus
+Version: 3.2.1
+Summary: Prometheus metrics in Indico servers
+Home-page: https://github.com/indico/indico-plugins
+Author: Indico Team
+Author-email: indico-team@cern.ch
+License: MIT
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <3.12,>=3.9.0
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Requires-Dist: indico (>=3.2)
+Requires-Dist: prometheus-client (==0.17.1)
+
+# Indico Prometheus Plugin
+
+This plugin exposes a `/metrics` endpoint which provides Prometheus-compatible output.
+
+![](https://raw.githubusercontent.com/indico/indico-plugins/master/prometheus/screenshot.png)
+
+## prometheus.yml
+```yaml
+scrape_configs:
+  - job_name: indico_stats
+    metrics_path: /metrics
+    scheme: https
+    static_configs:
+      - targets:
+        - yourindicoserver.example.com
+    # it is recommended that you set a bearer token in the config
+    authorization:
+        credentials: xxxxxx
+    # this is only needed in development setups
+```
+
+If you're doing development you may want to add this under `scrape_configs`:
+```yaml
+    tls_config:
+      insecure_skip_verify: false
+```
+
+## Changelog
+
+### 3.2.1
+
+- Support Python 3.11
+- Use latest prometheus-client library
+
+### 3.2
+
+- Initial release for Indico 3.2
