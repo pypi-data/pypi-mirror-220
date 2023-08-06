@@ -1,0 +1,4 @@
+pluggy
+pytest
+selenium
+setuptools
