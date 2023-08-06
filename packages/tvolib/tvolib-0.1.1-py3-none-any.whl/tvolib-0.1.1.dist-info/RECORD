@@ -1,0 +1,10 @@
+tvolib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tvolib/mpl_utils/__init__.py,sha256=BC4rg_bxqkBIr4gKjN6YLNVpipt7OuiZC6rz9nG8asE,140
+tvolib/mpl_utils/_draw.py,sha256=vvKUhTIz-1DjwgEesQ5S9j5FD0Mw1E1MMEdw-AGsIqo,2067
+tvolib/mpl_utils/_format.py,sha256=Ca7W0ea48a1c0ENF6hZPQo_UFRPxNho432nZryFddsc,526
+tvolib/mpl_utils/_setup.py,sha256=SXX1g5WI4N07hZ2aDWBei-BzYC_h17kF96ko6-bMes0,898
+tvolib/mpl_utils/data/mpl_utils.mplstyle,sha256=g0LKuBw5A2nW6TXxw9JyTxnu00JyOox51YJBxrr19Cw,25742
+tvolib-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tvolib-0.1.1.dist-info/METADATA,sha256=DyQ-asZFFUD0EQFZD2K1sXNpKL9a5Y3dR6MlrCejZ2Y,1222
+tvolib-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+tvolib-0.1.1.dist-info/RECORD,,
