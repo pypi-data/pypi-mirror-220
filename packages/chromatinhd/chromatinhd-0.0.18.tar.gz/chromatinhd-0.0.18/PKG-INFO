@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: chromatinhd
+Version: 0.0.18
+Summary: High-definition modeling of (single-cell) chromatin + transcriptomics data
+Author-email: Wouter Saelens <wouter.saelens@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/DeplanckeLab/ChromatinHD
+Project-URL: Bug Tracker, https://github.com/DeplanckeLab/ChromatinHD/issues
+Keywords: bioinformatics,chromatin accessibility,transcriptomics
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.md
+
+<p align="center">
+  <a href="https://deplanckelab.github.io/ChromatinHD/">
+    <img src="https://raw.githubusercontent.com/DeplanckeLab/ChromatinHD/main/docs/source/static/logo.png" width="300" />
+  </a>
+</p>
+
+Documentation is available at https://deplanckelab.github.io/ChromatinHD/
