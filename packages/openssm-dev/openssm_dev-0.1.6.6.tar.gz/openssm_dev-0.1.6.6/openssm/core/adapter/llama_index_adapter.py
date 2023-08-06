@@ -1,0 +1,124 @@
+"""Llama Index adapter."""
+
+
+from dataclasses import dataclass
+from itertools import chain
+from typing import Any, Optional
+from llama_index.indices.base import BaseIndex
+from llama_index.indices.query.base import BaseQueryEngine
+from llama_index.indices.vector_store.base import VectorStoreIndex
+from llama_index.readers.schema import Document
+from openssm.core.adapter.base_adapter import BaseAdapter
+from openssm.core.backend.abstract_backend import AbstractBackend
+from openssm.core.backend.document_backend import DocumentBackend
+
+
+class LlamaIndexAdapter(BaseAdapter):
+    """
+    The LlamaIndexAdapter is a concrete implementation of the AbstractAdapter
+    that uses LlamaIndex.
+    """
+
+    def __init__(self, backends: Optional[list[AbstractBackend]] = None):
+        """Initializes the LlamaIndexAdapter with a specific LlamaIndex."""
+        super().__init__(backends)
+        self.llama_tuples = []
+
+        # TODO: refactor
+        _llama_documents: list[Document] = list(chain.from_iterable(backend._llama_load_documents()
+                                                for backend in backends
+                                                if isinstance(backend, DocumentBackend)))
+        self.vector_store_index = VectorStoreIndex.from_documents(documents=_llama_documents,
+                                                                  show_progress=True)
+        self.chat_engine = self.vector_store_index.as_chat_engine()
+
+    def __repr__(self) -> str:
+        """Return Adapter instance's string representation."""
+        return 'LlamaIndexAdapter'
+
+    @dataclass
+    class _LlamaTuple:
+        index: Optional[BaseIndex] = None
+        query_engine: Optional[BaseQueryEngine] = None
+
+    def _get_llama_tuples(self) -> list[_LlamaTuple]:
+        if self.llama_tuples is None:
+            self.llama_tuples = []
+        return self.llama_tuples
+
+    def _get_indexes(self) -> list[BaseIndex]:
+        indexes = [lt.index for lt in self._get_llama_tuples()]
+        return indexes
+
+    def _get_query_engines(self) -> list[BaseQueryEngine]:
+        query_engines = [lt.query_engine for lt in self._get_llama_tuples()]
+        return query_engines
+
+    def _query_llama(self, query: str) -> list[Any]:
+        responses = []
+        # pylint: disable=invalid-name
+        for qe in self._get_query_engines():
+            response = qe.query(query)
+            responses.append(response)
+        return responses
+
+    def add_backend(self, backend: AbstractBackend):
+        """
+        Add a backend to the list of backends.
+        Also connect it appropriately to the LlamaIndex.
+        """
+        super().add_backend(backend)
+        self.backends.append(backend)
+
+    def list_facts(self):
+        """Lists all known facts."""
+        # Query the index for documents classified as facts
+        return self._query_llama("list all facts")
+
+    def list_inferencers(self):
+        """Lists all known inferencers."""
+        # Query the index for documents classified as inferencers
+        return self._query_llama("list all inferencers")
+
+    def list_heuristics(self):
+        """Lists all known heuristics."""
+        # Query the index for documents classified as heuristics
+        return self._query_llama("list all heuristics")
+
+    def select_facts(self, criteria):
+        """Selects or searches for facts based on provided criteria."""
+        # Query the index for facts matching the criteria
+        return self._query_llama(
+            f"list all facts matching criteria: {criteria}")
+
+    def select_inferencers(self, criteria):
+        """Selects or searches for inferencers based on provided criteria."""
+        # Query the index for inferencers matching the criteria
+        return self._query_llama(
+            f"list all inferencers matching criteria: {criteria}")
+
+    def select_heuristics(self, criteria):
+        """Selects or searches for heuristics based on provided criteria."""
+        # Query the index for heuristics matching the criteria
+        return self._query_llama(
+            f"list all heuristics matching criteria: {criteria}")
+
+    def infer(self, input_facts):
+        """Makes inferences based on the provided input facts."""
+        # Query the index and retrieve relevant inferencers
+        results = self._query_llama((
+            f"infer an appropriate conclusion"
+            f"from the following inputs:{input_facts}"))
+        # This is a simple example and may need to be enhanced
+        # based on how the inference process should work
+        return results
+
+    def solve_problem(self, problem_description):
+        """Solves a problem based on the provided description."""
+        # Use the problem description to query index
+        # and retrieve relevant heuristics
+        results = self._query_llama(
+            f"problem: {problem_description}")
+        # This is a simple example and may need to be enhanced
+        # based on how the problem-solving process should work
+        return results
