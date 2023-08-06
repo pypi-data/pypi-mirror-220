@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: navigation-utilities
+Version: 0.2.2
+Summary: Collection of utilities for driverless navigation systems and gnss tools
+Author-email: Pablo Dorrio Vazquez <pablo.dorrio.vazquez@gmail.com>
+Project-URL: Homepage, https://github.com/pablodorrio/navigation-utilities
+Project-URL: Bug Tracker, https://github.com/pablodorrio/navigation-utilities/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Navigation Utilities
+
+Navigation Utilities is a Python library for dealing with driverless navigation systems, it is focused on gnss coordinates.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install navigation-utilities.
+
+```bash
+pip install navigation-utilities
+```
+
+## Usage
+
+```python
+import navigation_utilities
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
