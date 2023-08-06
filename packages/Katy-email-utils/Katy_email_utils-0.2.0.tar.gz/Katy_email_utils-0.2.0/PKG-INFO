@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: Katy_email_utils
+Version: 0.2.0
+Summary: A library for email address validation and formatting.
+Author: Katayoun
+License-File: LICENSE

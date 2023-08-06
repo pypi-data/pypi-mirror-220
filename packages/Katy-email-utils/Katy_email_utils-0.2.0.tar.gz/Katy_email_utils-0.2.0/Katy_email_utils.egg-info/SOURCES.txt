@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+Katy_email_utils.egg-info/PKG-INFO
+Katy_email_utils.egg-info/SOURCES.txt
+Katy_email_utils.egg-info/dependency_links.txt
+Katy_email_utils.egg-info/top_level.txt
+formatting/__init__.py
+formatting/email_formatter.py
+katy_email_utils/__init__.py
+validation/__init__.py
+validation/email_validator.py

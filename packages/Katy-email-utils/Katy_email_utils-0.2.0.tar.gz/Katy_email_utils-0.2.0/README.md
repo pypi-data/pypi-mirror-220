@@ -1,0 +1,1 @@
+This library does very simple verification and formatting of email addresses.
