@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: responsecurve
+Version: 0.0.5
+Summary: A library for detecting response curves in time series data.
+Author: Ishan Ramrakhiani
+Author-email: ishanramrakhiani@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ResponseCurve.py
+
+ResponseCurve.py is a Python library for detecting response curves in time series data. It uses a combination of statistical and machine learning techniques to identify patterns in the data that correspond to changes in the underlying system.
+
+## Installation
+
+You can install ResponseCurve.py using pip install responsecurve
+
+
+ResponseCurve.py requires several external dependencies, including pandas, numpy, scipy, matplotlib, and scikit-learn, which will be installed automatically when you install the library.
+
+## Documentation Overview
+
+ResponseCurve Module
+
+This module provides tools for detecting response curves in time series data.
+
+Functions:
+- `detect_response_curve(data: List[float]) -> Tuple[float, float]`: Detects a response curve in the given data and returns the slope and intercept of the curve.
+- `plot_response_curve(data: List[float], response_curve: Tuple[float, float]) -> None`: Plots the given data and response curve.
+- `detect_response_curves(data: List[float]) -> List[Tuple[float, float]]`: Detects all response curves in the given data and returns a list of tuples containing the slope and intercept of each curve.
+- `plot_response_curves(data: List[float], response_curves: List[Tuple[float, float]]) -> None`: Plots the given data and response curves.
+- `detect_response_curve_with_noise(data: List[float], noise: float) -> Tuple[float, float]`: Detects a response curve in the given noisy data and returns the slope and intercept of the curve.
+- `detect_response_curves_with_noise(data: List[float], noise: float) -> List[Tuple[float, float]]`: Detects all response curves in the given noisy data and returns a list of tuples containing the slope and intercept of each curve.
+- `detect_response_curve_with_outliers(data: List[float], outliers: List[float]) -> Tuple[float, float]`: Detects a response curve in the given data with outliers and returns the slope and intercept of the curve.
+- `detect_response_curves_with_outliers(data: List[float], outliers: List[float]) -> List[Tuple[float, float]]`: Detects all response curves in the given data with outliers and returns a list of tuples containing the slope and intercept of each curve.
+- `generate_synthetic_data(num_points: int, num_curves: int, noise: float) -> Tuple[List[float], Tuple[float, float]]`: Generates synthetic data with the given parameters and returns the data and response curve.
+- `plot_synthetic_data(data: List[float], response_curve: Tuple[float, float]) -> None`: Plots the given synthetic data and response curve.
+- `plot_synthetic_data_with_noise(data: List[float], response_curve: Tuple[float, float], noise: float) -> None`: Plots the given synthetic data and response curve with added noise.
+- `plot_synthetic_data_with_outliers(data: List[float], response_curve: Tuple[float, float], outliers: List[float]) -> None`: Plots the given synthetic data and response curve with added outliers.
+
+Inputs:
+- `data`: A list of floats representing the time series data.
+- `noise`: A float representing the amount of noise to add to the data.
+- `outliers`: A list of floats representing the outliers to add to the data.
+- `num_points`: An integer representing the number of points to generate in the synthetic data.
+- `num_curves`: An integer representing the number of response curves to generate in the synthetic data.
+
+Outputs:
+- `slope`: A float representing the slope of the response curve.
+- `intercept`: A float representing the intercept of the response curve.
+- `response_curve`: A tuple containing the slope and intercept of the response curve.
+- `response_curves`: A list of tuples containing the slope and intercept of each response curve.
+
+## Usage
+
+To use ResponseCurve.py, simply import the functions or classes you need into your Python code. Here's an example of how to use the `detect_response_curves` function:
+
+```python
+from responsecurve import detect_response_curves
+
+# Load time series data from a file
+data = load_data('data.csv')
+
+# Detect response curves in the data
+response_curves = detect_response_curves(data)
+
+# Print the start and end points of each response curve
+for curve in response_curves:
+    print('Start:', curve[0], 'End:', curve[1])
+```
+
+ResponseCurve.py also includes a ResponseCurveDetector class that provides a higher-level interface for detecting response curves. Below is an example of how to use the ResponseCurveDetector class:
+
+```python
+from responsecurve import ResponseCurveDetector
+
+# Create a detector object with default parameters
+detector = ResponseCurveDetector()
+
+# Load time series data from a file
+data = load_data('data.csv')
+
+# Detect response curves in the data
+detector.detect(data)
+
+# Visualize the data and the detected response curves
+detector.plot()
+```
+
+For more information on how to use ResponseCurve.py, please refer to the documentation above.
+
+## Contributing
+
+If you find a bug or have a feature request, please open an issue on GitHub. If you would like to contribute to the development of ResponseCurve.py, please submit a pull request.
+
+## License
+
+ResponseCurve.py is licensed under the MIT License. See LICENSE for more information.
