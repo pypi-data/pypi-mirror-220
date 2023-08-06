@@ -1,0 +1,3 @@
+include pdsniff/requirements.txt
+include pdsniff/thirdparty.json
+include pdsniff/README.MD

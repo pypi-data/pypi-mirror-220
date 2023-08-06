@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pdsniff/README.MD
+pdsniff/__init__.py
+pdsniff/requirements.txt
+pdsniff/thirdparty.json
+pdsniff.egg-info/PKG-INFO
+pdsniff.egg-info/SOURCES.txt
+pdsniff.egg-info/dependency_links.txt
+pdsniff.egg-info/requires.txt
+pdsniff.egg-info/top_level.txt
