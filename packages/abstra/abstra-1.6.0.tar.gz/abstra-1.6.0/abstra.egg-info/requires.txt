@@ -1,0 +1,15 @@
+setuptools
+requests
+validators
+multipart
+progress
+colour
+colorama
+websocket-client
+fire
+jedi
+simplejson
+Flask
+flask-cors
+flask-sock
+PyJWT
