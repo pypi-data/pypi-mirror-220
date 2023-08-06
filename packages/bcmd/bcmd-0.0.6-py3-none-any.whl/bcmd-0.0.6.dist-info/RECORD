@@ -1,0 +1,10 @@
+bcmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bcmd/dev.py,sha256=wtQQhopJ5JYUhuswurrxlEo_he3qH7gJToO0zqtU740,473
+bcmd/main.py,sha256=rTmx4RTMHE7Nhf9szB6o35AvTq_VyhRqJ0VFKdk3jbA,259
+bcmd/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bcmd/tasks/time.py,sha256=7V84QJe5WmftYNP3_3-h-yV_H3L0-b5MhBXtmhVbvCg,2476
+bcmd-0.0.6.dist-info/METADATA,sha256=0fByf2SjaIg8UZWFhTJdkFmZLhZR2WKhL5J0PX97DAw,649
+bcmd-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bcmd-0.0.6.dist-info/entry_points.txt,sha256=8dC6AVfmZjcQ9l5fIYf2QWc2CvIJr0UWQH1BA4ev_sg,39
+bcmd-0.0.6.dist-info/top_level.txt,sha256=-KrvhhtBcYsm4XhcjQvEcFbBB3VXeep7d3NIfDTrXKQ,5
+bcmd-0.0.6.dist-info/RECORD,,
