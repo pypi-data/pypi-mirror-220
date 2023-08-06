@@ -1,0 +1,4 @@
+pillow
+pycryptodome
+pytesseract
+Requests
