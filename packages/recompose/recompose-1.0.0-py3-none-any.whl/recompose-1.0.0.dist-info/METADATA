@@ -1,0 +1,168 @@
+Metadata-Version: 2.1
+Name: recompose
+Version: 1.0.0
+Summary: Templated data recomposition
+Home-page: https://github.com/cariad/recompose
+Author: Cariad Eccleston
+Author-email: cariad@cariad.earth
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Recompose
+
+**Recompose** is a Python package for recomposing data by following instructional schemas.
+
+Full documentation is online at [cariad.github.io/recompose](https://cariad.github.io/recompose/).
+
+## Example
+
+For example, the code below describes a dataset with groups of people with specific careers, and a schema that reduces the list of firefighters down to a single object.
+
+```python
+from recompose import transform, CursorSchema
+
+data = {
+    "2023-06-04": {
+        "groups": {
+            "chefs": [
+                {
+                    "name": "Alice"
+                },
+                {
+                    "name": "Bob"
+                }
+            ],
+            "firefighters": [
+                {
+                    "name": "Daniel"
+                },
+                {
+                    "name": "Esther"
+                }
+            ],
+            "zookeepers": [
+                {
+                    "name": "Gregory"
+                },
+                {
+                    "name": "Harold"
+                }
+            ]
+        }
+    },
+    "2023-06-05": {
+        "groups": {
+            "chefs": [
+                {
+                    "name": "Jet"
+                },
+                {
+                    "name": "Karen"
+                }
+            ],
+            "firefighters": [
+                {
+                    "name": "Mater"
+                },
+                {
+                    "name": "Nigel"
+                }
+            ],
+            "zookeepers": [
+                {
+                    "name": "Peter"
+                },
+                {
+                    "name": "Quentin"
+                }
+            ]
+        }
+    }
+}
+
+schema: CursorSchema = {
+    "version": 1,
+    "on": "each-value",
+    "perform": {
+        "path": "groups",
+        "cursor": {
+            "perform": {
+                "path": "firefighters",
+                "cursor": {
+                    "perform": "list-to-object",
+                }
+            }
+        }
+    }
+}
+
+transformed = transform(schema, data)
+
+print(transformed)
+```
+
+```json
+{
+    "2023-06-04": {
+        "groups": {
+            "chefs": [
+                {
+                    "name": "Alice"
+                },
+                {
+                    "name": "Bob"
+                }
+            ],
+            "firefighters": {
+                "name": "Daniel"
+            },
+            "zookeepers": [
+                {
+                    "name": "Gregory"
+                },
+                {
+                    "name": "Harold"
+                }
+            ]
+        }
+    },
+    "2023-06-05": {
+        "groups": {
+            "chefs": [
+                {
+                    "name": "Jet"
+                },
+                {
+                    "name": "Karen"
+                }
+            ],
+            "firefighters": {
+                "name": "Mater"
+            },
+            "zookeepers": [
+                {
+                    "name": "Peter"
+                },
+                {
+                    "name": "Quentin"
+                }
+            ]
+        }
+    }
+}
+```
+
+## Author
+
+Hello! 👋 I'm **Cariad Eccleston**, and I'm a freelance Amazon Web Services architect, DevOps evangelist, and infrastructure and backend engineer by the beach in the United Kingdom.
+
+You can find me at [cariad.earth](https://cariad.earth), [github.com/cariad](https://github.com/cariad) and [linkedin.com/in/cariad](https://linkedin.com/in/cariad).
