@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: voxface
+Version: 2023.7.20.1
+Summary: Fast MRI face voxelator
+Home-page: https://github.com/jmtyszka/voxface
+Author: Julian Michael Tyszka
+Author-email: jmt@caltech.edu
+Project-URL: Bug Reports, https://github.com/jmtyszka/voxface/issues
+Project-URL: Funding, http://conte.caltech.edu/
+Project-URL: Source, https://github.com/jmtyszka/voxface/
+Keywords: neuroimaging MRI Nifti deface deidentify
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Voxface
+
+Fast voxelation of the face in 3D structural MRI data combining spline downsampling with nearest-neighbor upsampling to
+deidentify the face while retaining some signal intensity to guide whole-head registration.
+
+## Installation
+
+### Latest Version
+2023.7.20.1
+
+### GitHub Installation
+
+1. Clone this branch to your local system
+   ```
+   % git clone https://github.com/jmtyszka/voxface.git
+   ```
+2. Install to your local Python 3 environment
+   ```
+   % cd voxface
+   % [sudo] python3 setup.py install
+   ```
+   
+### PyPI Installation
+
+1. Install the latest Python 3 version of *voxface* from PyPI
+    ```
+    % [sudo] pip3 install voxface
+    ```
+
+### Typical Performance
+Face voxelation of a typical 1 mm isotropic T1w image takes 5 - 6 seconds on a 3.2 GHz 6-Core Intel Core i7 Mac Mini.
