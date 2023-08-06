@@ -1,0 +1,4 @@
+allianceauth~=3.5.0
+graphene-django~=3.0.0
+django-graphql-jwt~=0.3.0
+allianceauth-app-utils~=1.15
