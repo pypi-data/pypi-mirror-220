@@ -1,0 +1,11 @@
+openai
+tiktoken
+anthropic==0.3.5
+ai21
+cohere
+aleph-alpha-client
+huggingface_hub
+google-cloud-aiplatform
+prettytable
+einops
+accelerate
