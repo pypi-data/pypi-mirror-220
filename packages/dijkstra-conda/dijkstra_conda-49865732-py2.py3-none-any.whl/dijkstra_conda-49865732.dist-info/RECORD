@@ -1,0 +1,9 @@
+dijkstra_conda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dijkstra_conda/cli.py,sha256=-j7c4kGWGtgNbGQvTIKZYTO1Fac3cOGrP-1mvvSAiPw,1371
+dijkstra_conda/ig_path.py,sha256=BbQeUY2Eaq90HpXI4pNwMA9J4eIySYppsMLUO8GzM64,8207
+dijkstra_conda-49865732.dist-info/LICENSE,sha256=8IsEnBSgpnxotylEDOpsHUmD-k9sgSJfozH2o7tq4zU,1091
+dijkstra_conda-49865732.dist-info/METADATA,sha256=Bepf8zL_WTeLHtWc-jfnOIct9L_q0kZMPEIQGb-FF3M,1166
+dijkstra_conda-49865732.dist-info/WHEEL,sha256=k3vXr0c0OitO0k9eCWBlI2yTYnpb_n_I2SGzrrfY7HY,110
+dijkstra_conda-49865732.dist-info/entry_points.txt,sha256=gTO2wtkBzaGjxnfCq0vLWKD_7F-Pj01ysW9McKd2lyI,55
+dijkstra_conda-49865732.dist-info/top_level.txt,sha256=-9wR5Cr9kj65VCRWfMfDjH-gjikZ_1LPPlwGYJvdGKo,15
+dijkstra_conda-49865732.dist-info/RECORD,,
