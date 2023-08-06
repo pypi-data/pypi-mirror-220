@@ -1,0 +1,18 @@
+[project]
+name = "sdrf"
+version = "0.1.0"
+authors = [
+  { name="Hussein Anabtawi", email="husainanabtawi2001@hotmail.com" },
+]
+description = "Simple rest framework is an abstraction for building rest api with well written documentations"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hus201/sdrf"
+"Bug Tracker" = "https://github.com/hus201/sdrf/issues"
