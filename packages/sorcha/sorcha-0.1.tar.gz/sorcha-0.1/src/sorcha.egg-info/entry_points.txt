@@ -1,0 +1,8 @@
+[console_scripts]
+createResultsSQLDatabase = sorcha.utilities.createResultsSQLDatabase:main
+createTemporaryDatabases = sorcha.utilities.createTemporaryDatabases:main
+makeConfigOIF = sorcha.utilities.makeConfigOIF:main
+makeConfigSorcha = sorcha.utilities.makeConfigPP:main
+makeMultiConfigOIF = sorcha.utilities.makeMultiConfigOIF:main
+makeSLURMscript = sorcha.utilities.makeSLURMscript:main
+sorcha = sorcha.sorcha:main
