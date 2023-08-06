@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: indico-plugin-payment-sixpay
+Version: 3.2.1
+Summary: SIXPay/Saferpay payments for Indico event registration fees
+Home-page: https://github.com/indico/indico-plugins
+Author: Max Fischer, Martin Claus and Indico Team (CERN)
+Author-email: indico-team@cern.ch
+License: MIT
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <3.12,>=3.9.0
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Requires-Dist: indico (>=3.2)
+Requires-Dist: iso4217 (==1.6.20180829)
+
+# SIXPay-Saferpay Payment Plugin
+
+This plugin provides a payment option for Indico's payment module using the
+SIXPay Saferpay API.
+
+When used, the user will be sent to Saferpay to make the payment, and afterwards
+they are automatically sent back to Indico.
+
+## Changelog
+
+### 3.2.1
+
+- Support Python 3.11
+
+### 3.2
+
+- Update translations
+
+### 3.1.2
+
+- Fix error after successful payment if background confirmation already happened
+
+### 3.1.1
+
+- Ignore pending transactions once they expired
+
+### 3.1
+
+- Adapt to Indico 3.1 changes
+
+### 3.0
+
+- Initial release for Indico 3.0
+
+## Credits
+
+Originally developed by Max Fischer for Indico 1.2 and 2.x. Updated to use the
+latest SIXPay API by Martin Claus. Adapted to Indico 3.0 and Python 3 by the
+CERN Indico Team.
