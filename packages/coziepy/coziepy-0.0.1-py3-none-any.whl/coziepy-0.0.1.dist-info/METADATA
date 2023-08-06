@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: coziepy
+Version: 0.0.1
+Summary: A package for processing and visualizing data collected with the Cozie-Apple app
+Author-email: Mario Frei <mario.frei@gmx.net>
+Project-URL: Homepage, https://www.cozie-apple.app/
+Project-URL: Bug Tracker, https://github.com/cozie-app/cozie-wizard/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Under Construction 
+This package is in the early development stage. Use at your own risk.
+
+# What is it?
+CoziePy is a Python package to retrieve, process, and visualize data collected witht the [Cozie Apple app](https://cozie-apple.app/). It aims to make the handling aof Cozie data easier.
+
+# Where to get it?
+TBD
+
+# How to use it?
+TBD
+
+# License
+TBD
+
+# Getting Help
+TBD
