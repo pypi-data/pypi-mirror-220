@@ -1,0 +1,11 @@
+README.md
+cli.py
+key_rotator.py
+key_rotator_test.py
+setup.py
+aws_key_rotator_project.egg-info/PKG-INFO
+aws_key_rotator_project.egg-info/SOURCES.txt
+aws_key_rotator_project.egg-info/dependency_links.txt
+aws_key_rotator_project.egg-info/entry_points.txt
+aws_key_rotator_project.egg-info/requires.txt
+aws_key_rotator_project.egg-info/top_level.txt

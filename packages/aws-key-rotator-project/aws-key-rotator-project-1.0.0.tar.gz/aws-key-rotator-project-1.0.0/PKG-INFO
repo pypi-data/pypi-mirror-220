@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: aws-key-rotator-project
+Version: 1.0.0
+Summary: An AWS key rotator. Currently only provides key deletion functionality. Rotates based on age and usernames passed. Check help of CLI tool with aws-key-rotator -h.
+Author: Barton Elles
+Requires-Python: >3.10.0
