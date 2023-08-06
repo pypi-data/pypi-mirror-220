@@ -1,0 +1,42 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+readme.md
+setup.cfg
+setup.py
+nics/__main__.py
+nics.egg-info/PKG-INFO
+nics.egg-info/SOURCES.txt
+nics.egg-info/dependency_links.txt
+nics.egg-info/entry_points.txt
+nics.egg-info/requires.txt
+nics.egg-info/top_level.txt
+nics/main/__init__.py
+nics/main/constants.py
+nics/main/cmd_init/__init__.py
+nics/main/cmd_init/ensure_nics_env_can_be_installed.py
+nics/main/cmd_init/get_user_details.py
+nics/main/cmd_init/print_outro.py
+nics/main/cmd_init/loading/__init__.py
+nics/main/cmd_init/loading/copy_template.py
+nics/main/cmd_init/loading/settings_writer.py
+nics/main/cmd_init/loading/workflow_writer.py
+nics/main/cmd_upgrade/__init__.py
+nics/main/cmd_upgrade/checks.py
+nics/main/cmd_upgrade/gather_settings.py
+nics/main/cmd_upgrade/where_is_the_container.py
+nics/main/template/404.md
+nics/main/template/favicon.svg
+nics/main/template/settings.txt
+nics/main/template/tree/1 - Page1.md
+nics/main/template/tree/8 - Changelog.md
+nics/main/template/tree/9 - About.md
+nics/main/template/tree/index.md
+nics/main/template/tree/2 - Pages/logo200.png
+nics/main/template/tree/2 - Pages/page.md
+nics/main/template/tree/7 - FAQs/1 - Question1.md
+nics/main/template/tree/7 - FAQs/index.md
+nics/main/utils/ensure_a_git_repo.py
+nics/main/utils/favicon_maker.py
+nics/main/utils/is_nics_initialized.py
+nics/main/utils/page404_maker.py
