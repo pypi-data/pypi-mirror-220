@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyne_script/__init__.py
+src/pyne_script/series.py
+src/pyne_script_utilities.egg-info/PKG-INFO
+src/pyne_script_utilities.egg-info/SOURCES.txt
+src/pyne_script_utilities.egg-info/dependency_links.txt
+src/pyne_script_utilities.egg-info/requires.txt
+src/pyne_script_utilities.egg-info/top_level.txt
