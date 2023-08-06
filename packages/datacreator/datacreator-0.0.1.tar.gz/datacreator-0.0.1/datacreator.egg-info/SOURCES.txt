@@ -1,0 +1,8 @@
+README.md
+setup.py
+datacreator/__init__.py
+datacreator/datacreator.py
+datacreator.egg-info/PKG-INFO
+datacreator.egg-info/SOURCES.txt
+datacreator.egg-info/dependency_links.txt
+datacreator.egg-info/top_level.txt
