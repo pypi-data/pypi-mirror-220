@@ -1,0 +1,16 @@
+dreimac/__init__.py,sha256=ZzrAqJZvS8Xgu0hKxkJPmDV5fPCWybVaywl8EoTArYQ,423
+dreimac/_version.py,sha256=uY3cMAMpdqMKE578vu86FHlJK6FgmnTzyGQFF28Mpx0,23
+dreimac/circularcoords.py,sha256=WpwNfvatoEGeb3P-jpvD3vKYxMDaJjvf_FZ_HCB5e10,2799
+dreimac/combinatorial.py,sha256=MCaNvlDMm-yee3E_1NebH2BL9Yc4dpFe27nowQmxsF0,1436
+dreimac/complexprojectivecoords.py,sha256=SnmNdP95kpJD8ODt3b5XjDnR5JL75hQ-qWcFA6LCgUQ,12592
+dreimac/emcoords.py,sha256=PY8lbn2fRF10_sWvXgUwh95KK2BFGkGOKGSWt74lxmw,7511
+dreimac/lenscoords.py,sha256=umPuR83Eq1OlXbFdzgUkM9VS2eaxtFggxK_9xHZAI90,3816
+dreimac/plotting_utils.py,sha256=-m4M0-th9JVrh-K1a0miA5Ide6Lu5dVYoCkJ_dYTAu4,11637
+dreimac/projectivecoords.py,sha256=lURW1F8BcMnIr3u6Wy-wEGSk8XG_hcz-JfXW1JSgDBA,3763
+dreimac/toroidalcoords.py,sha256=n1IzWSuBUutishGXJBIzI5sHUOuOorPVSbE0JzUSqO4,15431
+dreimac/utils.py,sha256=eEyde2Qk0chDPNYzn_ZugdhOwD0GWThvoWH9euUuJvw,55831
+dreimac-0.3.0.dist-info/LICENSE,sha256=wPp0U9zrGYEV9N2T2X7JIOXacWbdYEJ5Iy9uMZMkdEs,11577
+dreimac-0.3.0.dist-info/METADATA,sha256=bjt18jEdEpNkKILoEqV333HQ2BWuuSlgVJfW3d7DbsU,6233
+dreimac-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dreimac-0.3.0.dist-info/top_level.txt,sha256=XcQSjCF8YYFFY5SfuFBTROK0JNiZ6fyTJdokDsbFV9E,8
+dreimac-0.3.0.dist-info/RECORD,,
