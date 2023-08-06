@@ -1,0 +1,4 @@
+include SCALER.pkl
+include CORPUS.txt
+include KMEANS-CLUSTER-CENTERS.npy
+include TAGS-NAMES-EMBEDDINGS.npy
