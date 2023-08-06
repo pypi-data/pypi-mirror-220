@@ -1,0 +1,5 @@
+alibabacloud_dingtalk
+alibabacloud_tea_openapi
+alibabacloud_tea_util
+digiCore
+k3cloud_webapi_sdk
