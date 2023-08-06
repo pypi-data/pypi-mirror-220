@@ -1,0 +1,6 @@
+ginga
+astropy
+six
+pillow
+configobj
+hcam_widgets>=1.1.0
