@@ -1,0 +1,3 @@
+[console_scripts]
+ppgee=ppgee.__main__:main
+
