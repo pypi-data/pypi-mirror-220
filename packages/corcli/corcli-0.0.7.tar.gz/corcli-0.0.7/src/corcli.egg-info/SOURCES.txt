@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/ccli/__init__.py
+src/ccli/__main__.py
+src/ccli/analyzer.py
+src/ccli/cortex.py
+src/corcli.egg-info/PKG-INFO
+src/corcli.egg-info/SOURCES.txt
+src/corcli.egg-info/dependency_links.txt
+src/corcli.egg-info/entry_points.txt
+src/corcli.egg-info/requires.txt
+src/corcli.egg-info/top_level.txt
