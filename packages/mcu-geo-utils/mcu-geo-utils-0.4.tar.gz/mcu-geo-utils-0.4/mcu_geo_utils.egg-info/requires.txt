@@ -1,0 +1,4 @@
+pandas>=1.0
+geopandas==0.10.1
+shapely==2.0.1
+osmnx==1.5.1
