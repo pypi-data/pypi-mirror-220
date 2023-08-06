@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: collect_utils
+Version: 0.0.1
+Summary: utils for collect program.
+Home-page: https://github.com/yunsansheng/collect-utils
+Author: henry.wang
+Author-email: shanandone@qq.com
+License: MIT Licence
+Keywords: pip3,collect_utils,henry
+Platform: any
+
+utils for collect program.
