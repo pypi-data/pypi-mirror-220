@@ -1,0 +1,14 @@
+LICENCE.txt
+README.md
+setup.cfg
+setup.py
+astrotitles/__init__.py
+astrotitles/cli.py
+astrotitles/transcriber.py
+astrotitles/utils.py
+astrotitles.egg-info/PKG-INFO
+astrotitles.egg-info/SOURCES.txt
+astrotitles.egg-info/dependency_links.txt
+astrotitles.egg-info/entry_points.txt
+astrotitles.egg-info/requires.txt
+astrotitles.egg-info/top_level.txt
