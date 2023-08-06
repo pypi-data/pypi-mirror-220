@@ -1,0 +1,15 @@
+smile_id_core/BusinessVerification.py,sha256=_sxIuJ1yCB1sebtYj1ByY0oB5WDTpZht6uuxNsqC6Iw,3137
+smile_id_core/IdApi.py,sha256=0Ul7vAIUBbXf2artyMaTaSX7omA_NJWOjVMTcfb24NY,3657
+smile_id_core/ServerError.py,sha256=RZEuNfxmy5QI7xeVIXVubih2t5MuXX_qnYVCFPKcO4Q,223
+smile_id_core/Signature.py,sha256=uYrYB_JdFO16_KNfZbf3WFcr1aYNeE_GDNyZupciNFc,2369
+smile_id_core/Utilities.py,sha256=Qu2clfo-BbMLvpgYA0Kx6K0oLYmvyAotGg850d2rxgA,14727
+smile_id_core/WebApi.py,sha256=IIohSABv1YXckHnZ1ZEmj5g8eCiJKTqwmCwaXBS0VUs,12058
+smile_id_core/__init__.py,sha256=BzpUV61P5r13kZ9_3tC9KAtmxw-NGJjBLRVrCDNzPEA,662
+smile_id_core/base.py,sha256=LKua22eQl_m513gZMUgxQMei36PBtgqg-gJXFdKrmLU,1019
+smile_id_core/constants.py,sha256=Zsu1Bh9bjltZy_dN3JmDYyToYKPlvzcu5EFeD4tAgK4,2125
+smile_id_core/image_upload.py,sha256=rL1xY7sq8YWGNr68ROurZK_2xeKrpJ045kaZYCaIV80,8523
+smile_id_core/types.py,sha256=falZosnXt8V1Ko5NbZC2tvzp1MCSts0Vs520vNgp9i8,811
+smile_id_core-2.1.0.dist-info/LICENSE,sha256=RRe8tKBonBb60tbYmZsWl-5gfn1joh9nI_oC2AU1jnA,1071
+smile_id_core-2.1.0.dist-info/METADATA,sha256=uKT6G3wT5Xs64pajJpRTff8H9CbL-GDbb5b6k70mEE0,4910
+smile_id_core-2.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+smile_id_core-2.1.0.dist-info/RECORD,,
