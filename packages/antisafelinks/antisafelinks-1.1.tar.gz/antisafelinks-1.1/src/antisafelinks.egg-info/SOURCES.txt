@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/antisafelinks/__init__.py
+src/antisafelinks/safelink_decoder.py
+src/antisafelinks.egg-info/PKG-INFO
+src/antisafelinks.egg-info/SOURCES.txt
+src/antisafelinks.egg-info/dependency_links.txt
+src/antisafelinks.egg-info/entry_points.txt
+src/antisafelinks.egg-info/top_level.txt

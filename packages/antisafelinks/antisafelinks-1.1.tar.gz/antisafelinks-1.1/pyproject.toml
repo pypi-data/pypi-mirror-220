@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "antisafelinks"
+version = "1.1"
+authors = [{name="Benito Marcote", email="benito.marcote@icloud.com"}]
+description = "Removes the Microsoft SafeLinks from emails or Maildir folders"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX",
+    "Environment :: Console",
+    "Development Status :: 4 - Beta",
+]
+scripts = {antisafelinks = "antisafelinks:main"}
+
+
+[project.urls]
+"Homepage" = "https://github.com/bmarcote/antisafelinks"
+"Bug Tracker" = "https://github.com/bmarcote/antisafelinks/issues"
+
