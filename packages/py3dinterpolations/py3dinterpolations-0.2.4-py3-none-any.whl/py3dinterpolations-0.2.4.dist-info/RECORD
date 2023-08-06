@@ -1,0 +1,17 @@
+py3dinterpolations/__init__.py,sha256=Nrnozs7pzAEotWrggt6KCPRqFlXgfk1rMNMOTsjfpag,362
+py3dinterpolations/core/__init__.py,sha256=lpqVj93Nix4fyAegzQVpvvc8I0w-TgHyWVhbP0Bnmms,613
+py3dinterpolations/core/grid3d.py,sha256=y4nkWtjz3X-HQAYFxzbHsZBIYKqvFbkovTZzrtDnbtQ,6597
+py3dinterpolations/core/griddata.py,sha256=-93zqJaQqw7oi79Zse8cf993F2ACGi3zeWDlfzMqU3c,4891
+py3dinterpolations/modelling/__init__.py,sha256=IUEUsuR-ReuzGEHO_3L-fz70VXReS56HLyhTvYyp3nk,2089
+py3dinterpolations/modelling/modeler.py,sha256=I56M5-oQ4JGZT5HFnuCwcvqBvq6Cg3SAYQ8GHGIXxvk,4004
+py3dinterpolations/modelling/preprocessing.py,sha256=B_WJOq1ZbTveWxpONvIpdtKkwx6fi2HVTMPhExSsDSI,5325
+py3dinterpolations/modelling/models/__init__.py,sha256=idXlaFpOj9JC12OlpOM0AWy4Ed1Visq6-GZYwofQ45s,2717
+py3dinterpolations/modelling/models/deterministic.py,sha256=BOQz___sJNfXd0oz1XHwQLqh9Sq5-KLMi0Au344Kmdg,1502
+py3dinterpolations/modelling/models/idw.py,sha256=Mc8asWtcDcRrsYzdM1EwGa952yO1AeOcXBCHiW4kSrU,3595
+py3dinterpolations/plotting/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py3dinterpolations/plotting/plotting.py,sha256=Z6Bb9E1NsUlpPtTeUN97qKqMhQwVwPWM0buGGzB8gWM,4249
+py3dinterpolations-0.2.4.dist-info/LICENSE,sha256=UeAT7mCI6rPXQl_p8Zi6RXfXuldIErFbeohK-PVBlIY,1071
+py3dinterpolations-0.2.4.dist-info/METADATA,sha256=WJDm0e5OPkjjkF1jPOW3sjgimozGkIE7YSSOBnk5pMY,2698
+py3dinterpolations-0.2.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+py3dinterpolations-0.2.4.dist-info/top_level.txt,sha256=oB9b79yg301kzxtYdEeJMgZSC3uzMg7U935wV6AeA1M,19
+py3dinterpolations-0.2.4.dist-info/RECORD,,
