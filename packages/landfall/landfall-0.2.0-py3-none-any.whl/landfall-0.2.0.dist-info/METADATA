@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: landfall
+Version: 0.2.0
+Summary: Easy to use functions to plot geospatial data on maps using staticmaps.
+Author: Odos Matthews
+License: MIT
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: py-staticmaps
+Requires-Dist: more-itertools
+Requires-Dist: tinytim
+Requires-Dist: range-key-dict
+Requires-Dist: distinctipy
+Provides-Extra: testing
+Requires-Dist: mypy (>=0.910) ; extra == 'testing'
+Requires-Dist: flake8 (>=3.9) ; extra == 'testing'
+Requires-Dist: tox (>=3.24) ; extra == 'testing'
+Requires-Dist: pytest (==6.2.5) ; extra == 'testing'
+Requires-Dist: pytest-cov (==2.12.1) ; extra == 'testing'
+
