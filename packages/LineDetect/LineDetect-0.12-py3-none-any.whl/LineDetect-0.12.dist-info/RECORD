@@ -1,0 +1,10 @@
+LineDetect/__init__.py,sha256=RBaBH30Jsg7Jo9Lpe-WkeLO88Vh8kpA2bAAn7FaK0nY,26
+LineDetect/continuum_finder.py,sha256=DUKESl3CWCSRqvBFoYBBkDAV1FjaUB5aswxrSYl11W0,19096
+LineDetect/detect_elements.py,sha256=ERTTnDT95MAjTx7TdahzMb4fFd0vxpssHiN9Y5xA520,9551
+LineDetect/feature_finder.py,sha256=FbXO1UV8Udq0Qgo0vH2l9ECrRP-0G-4dlI3IT2ESqpA,14286
+LineDetect/spectra_processor.py,sha256=mhnabacUnpWL9ZK5m7IWchB4VVsjsDEz6NJGJMa5VlI,35977
+LineDetect-0.12.dist-info/LICENSE.txt,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+LineDetect-0.12.dist-info/METADATA,sha256=4szbBvhTSyr_AU0f1HOLAaSTckYqYNI8uLyJYIc-Er4,775
+LineDetect-0.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+LineDetect-0.12.dist-info/top_level.txt,sha256=Pdk0CdTJyJ1_YS_HFWEpVA1_H4N6TzdDEwKuN6joz2w,11
+LineDetect-0.12.dist-info/RECORD,,
