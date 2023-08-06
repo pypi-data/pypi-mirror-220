@@ -1,0 +1,15 @@
+cartuli/__init__.py,sha256=QbHG3EwXNbmgnYqd8NJIRI_8oT0MUApvtowowZzZdgs,867
+cartuli/__main__.py,sha256=D-d2dBAjsfL_rXFBGsJN9L5t-1jQByEgQMgbak3GPe4,2094
+cartuli/card.py,sha256=EnUMNUqTSZFZ1rXgG4ZSExVvTX75m5oaE4cBNkG6XWE,4132
+cartuli/deck.py,sha256=yrb2fPCcFMqj0_G7vB262BStUAvqZbKctXgVgHrYVEY,2879
+cartuli/definition.py,sha256=NCwiQgYgRnRQO-3Up2EtwsjON2Ajtn7NThBeMMyOjgk,4584
+cartuli/filters.py,sha256=0LxBfrHSAtKqWr3QLaddFUJmTQJLj321b__BjYPI_Ak,1328
+cartuli/measure.py,sha256=gT1yQ6QlvwepFqkj1aQLvBqNcqRjBCzNNu0ud27rdnA,3723
+cartuli/processing.py,sha256=dVgrahnTPYW63nQs-pY-PYkEJVJ4dlQozCzsnbxegLI,1939
+cartuli/sheet.py,sha256=ZnI7s0dqmg645lNxgtfwPyJoB55-NJbTWyyoJEksKwA,13514
+cartuli-0.1.0b0.dist-info/LICENSE.txt,sha256=l2KK_rxg8Cb1wrJddJHEalxO5h9pPnz6B_vSwDYFl5s,7652
+cartuli-0.1.0b0.dist-info/METADATA,sha256=IR3RsLAlU-sZT3oK0KHs_pGY__DPNN1WsDT0AvgDIxQ,944
+cartuli-0.1.0b0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cartuli-0.1.0b0.dist-info/entry_points.txt,sha256=_AXUodXJtgOsXOXp5cjMYx5dg6-j6JwJ26wErWLue7E,50
+cartuli-0.1.0b0.dist-info/top_level.txt,sha256=Vw52vPb4Qfv4kiRJ7nPH96n_IaYy971rb6FiXOceZfI,8
+cartuli-0.1.0b0.dist-info/RECORD,,
