@@ -1,0 +1,11 @@
+bcmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bcmd/dev.py,sha256=wtQQhopJ5JYUhuswurrxlEo_he3qH7gJToO0zqtU740,473
+bcmd/main.py,sha256=rTmx4RTMHE7Nhf9szB6o35AvTq_VyhRqJ0VFKdk3jbA,259
+bcmd/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bcmd/tasks/mirrors.py,sha256=awCUsLZ90DrjBGyDPiMQG3VWsLM7aE78TOU87ncoLeA,1320
+bcmd/tasks/time.py,sha256=zTaKJjZQVIyEm5Wj8S1Z6aOwu1SUGkperYPc3sau1YI,2380
+bcmd-0.0.7.dist-info/METADATA,sha256=IkF5GJdYC-XwUgpOL7x9kVjxG3Vouo27Y_nMAKBCWKQ,643
+bcmd-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bcmd-0.0.7.dist-info/entry_points.txt,sha256=rHJrP6KEQpB-YaQqDFzEL2v88r03rxSfnzAayRvAqHU,39
+bcmd-0.0.7.dist-info/top_level.txt,sha256=-KrvhhtBcYsm4XhcjQvEcFbBB3VXeep7d3NIfDTrXKQ,5
+bcmd-0.0.7.dist-info/RECORD,,
