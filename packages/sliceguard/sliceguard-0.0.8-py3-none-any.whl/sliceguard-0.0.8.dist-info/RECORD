@@ -1,0 +1,11 @@
+sliceguard/__init__.py,sha256=MxlqJeWpdN1zyUQLaCbVksS4btea1WWAL00F06HYLKI,44
+sliceguard/detection.py,sha256=SYF8akfOXvS6-d4pesx75UY75gVsNjI-jip1-ehoC18,10000
+sliceguard/embedding_utils.py,sha256=ejiR2LdR4Ug9lOLApNnlVi_lw_Uh02BlxT1N445qSr8,4985
+sliceguard/explanation.py,sha256=3ocSzc74bRsung5Dm2r4RFb9xXf9WdRMr-xxAF5qZIY,4378
+sliceguard/sliceguard.py,sha256=Wu8HttZeTc5AnuHAEVi9rQLG1AmTm-289f-ncT8J8nw,11179
+sliceguard/utils.py,sha256=ExRRyL2L8E_hMtOKFF4uznFgf0uGeCkm0b9puHeNxJE,8800
+sliceguard-0.0.8.dist-info/LICENSE,sha256=YcW9m2kYltTRwN90BIOXxlHkcF7lKWJT1IpscjsMqr4,1065
+sliceguard-0.0.8.dist-info/METADATA,sha256=4CCjH_qjE6WnQ1ApbX78hLjPUXazW3Q44Lj49J0hfuQ,4779
+sliceguard-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sliceguard-0.0.8.dist-info/top_level.txt,sha256=3NJWwDJuXl7Bqxfyov31jz_Mf4sBLVZjFHpxXtD1eaI,11
+sliceguard-0.0.8.dist-info/RECORD,,
