@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: micropython_hints
+Version: 0.0.6
+Summary: MicroPython type hints
+Home-page: https://github.com/miaobuao/micropython_hints
+Author: miaobuao
+Author-email: miaobuao@outlook.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# MicroPython TypeHints
+
+**Please operate with caution when using command!!!**
+
+**s使用指令时保持清醒, 按照提示操作!!!**
+
+**否则会误删文件!!!**
+
+## Usage
+
+在当前路径创建模板文件:
+
+```sh
+build-hints
+```
+
+移除当前路径中的模板文件:
+
+```sh
+remove-hints
+```
