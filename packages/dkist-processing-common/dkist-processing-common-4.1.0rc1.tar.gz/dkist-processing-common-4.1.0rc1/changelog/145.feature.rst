@@ -1,0 +1,1 @@
+New Buds and Flower to parse per-readout exposure time and number of readouts per FPA.
