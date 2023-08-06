@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+nonebot_plugin_kanonbot/__init__.py
+nonebot_plugin_kanonbot.egg-info/PKG-INFO
+nonebot_plugin_kanonbot.egg-info/SOURCES.txt
+nonebot_plugin_kanonbot.egg-info/dependency_links.txt
+nonebot_plugin_kanonbot.egg-info/requires.txt
+nonebot_plugin_kanonbot.egg-info/top_level.txt
