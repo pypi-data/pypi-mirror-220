@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+scripts/shtop
+shtop/__init__.py
+shtop/tui.py
+shtop.egg-info/PKG-INFO
+shtop.egg-info/SOURCES.txt
+shtop.egg-info/dependency_links.txt
+shtop.egg-info/top_level.txt
