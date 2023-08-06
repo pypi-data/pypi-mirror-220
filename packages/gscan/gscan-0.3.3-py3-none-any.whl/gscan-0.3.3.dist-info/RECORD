@@ -1,0 +1,16 @@
+gscan/__init__.py,sha256=bw9CQKwXqUwzK8O-wHW6FLptfZ1nU2nzYkelM5_E2cU,48
+gscan/__version__.py,sha256=-GWF0tJEcNN3aYD30Oaj4tLRXIpbIYtE0-3_X26SIjY,103
+gscan/main.py,sha256=VPX0Lb3zWKOR1HNntRx2NIekvOg6NSYEX5tH66TXVw4,949
+gscan/bin/gscan-darwin-amd64,sha256=_Mif-Vj4sSC-fM9FLl5jydN98VRVLqe2Dfpr6ZwpfuA,11997368
+gscan/bin/gscan-darwin-arm64,sha256=ttu6TopiH5-nkDFAJUvQD78-VIUkChIul__C71DRjLk,12092322
+gscan/bin/gscan-linux-386,sha256=5cvaTyGh1NKBJ5LFd6Uh3fs1cjDo2OBpErvE9ze5fgg,11996708
+gscan/bin/gscan-linux-amd64,sha256=h8R8pBVTY-nxL2O1TYyvxRsWK6Jf2cApZc5nMHlXMi0,12138456
+gscan/bin/gscan-linux-arm64,sha256=urhihWVR1m4s_d8wTnUb6XVvmyq74pb04GM-aRF7RgQ,11847512
+gscan/bin/gscan-windows-386.exe,sha256=OoaITDVyrzc6iw-xy6pSxVHzZ2frdk9ivN777gFFzto,16218112
+gscan/bin/gscan-windows-amd64.exe,sha256=uNAoxwKDa8YaAojvUi-G9Gr7-nNrJHm7XJnInhCEOhs,15769600
+gscan-0.3.3.dist-info/LICENSE,sha256=ZLiuJp4Xy-0W4V5PvnESeKWao6y2oJ1iKnIDLw4z_5I,1068
+gscan-0.3.3.dist-info/METADATA,sha256=GTnSgubdJQC4gIwGkS0KTPYWR6rBZfQ68MFbGi0CnKM,8764
+gscan-0.3.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gscan-0.3.3.dist-info/entry_points.txt,sha256=dgd-Zfm9rV_M9wsno2he9FolgAjGUrx6PelZD-Rz3Ao,42
+gscan-0.3.3.dist-info/top_level.txt,sha256=CJehqGa81zi-4S0w3PNLxPn2z2uzyfWQFupw946Hsyo,6
+gscan-0.3.3.dist-info/RECORD,,
