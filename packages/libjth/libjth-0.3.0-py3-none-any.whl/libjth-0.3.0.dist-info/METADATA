@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: libjth
+Version: 0.3.0
+Summary: J.T. Hartzfeld's Personal Library. You might find it useful, too.
+Project-URL: Homepage, https://github.com/jthfoss/libjth
+Project-URL: Bug Tracker, https://github.com/jthfoss/libjth/issues
+Author-email: "J.T. Hartzfeld" <jth@jthmedia.com>
+License-Expression: MIT
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: auto-all>=1.4.1
+Description-Content-Type: text/markdown
+
+#libjth (python)
+This is a collection of code that I have found useful in my 
+tinkerings, perhaps you'll find it useful, too.
+
+## Installation
+
+```sh
+pip install libjth
+```
+
+## Usage
+Use pydoc to peruse the package.  Everything included should be well
+documented.
