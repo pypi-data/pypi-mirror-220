@@ -1,0 +1,20 @@
+[project]
+name = "contactapi"
+version = "0.0.20"
+description = "Just a demo project"
+readme = "README.md"
+requires-python = ">=3.10"
+
+keywords = ["fastapi", "project"]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlalchemy"
+]
+
+[project.scripts]
+contactapi = "contactapi.__main__:run"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
