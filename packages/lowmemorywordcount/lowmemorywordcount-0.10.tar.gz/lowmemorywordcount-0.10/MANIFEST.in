@@ -1,0 +1,3 @@
+include lowmemorywordcount/requirements.txt
+include lowmemorywordcount/thirdparty.json
+include lowmemorywordcount/README.MD

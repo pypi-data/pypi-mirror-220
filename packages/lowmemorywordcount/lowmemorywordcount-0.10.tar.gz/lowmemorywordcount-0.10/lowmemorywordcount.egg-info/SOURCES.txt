@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+lowmemorywordcount/README.MD
+lowmemorywordcount/__init__.py
+lowmemorywordcount/requirements.txt
+lowmemorywordcount/thirdparty.json
+lowmemorywordcount.egg-info/PKG-INFO
+lowmemorywordcount.egg-info/SOURCES.txt
+lowmemorywordcount.egg-info/dependency_links.txt
+lowmemorywordcount.egg-info/requires.txt
+lowmemorywordcount.egg-info/top_level.txt
