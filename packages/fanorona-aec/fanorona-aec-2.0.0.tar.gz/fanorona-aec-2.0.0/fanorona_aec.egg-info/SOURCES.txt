@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+fanorona_aec/__init__.py
+fanorona_aec/fanorona_v1.py
+fanorona_aec.egg-info/PKG-INFO
+fanorona_aec.egg-info/SOURCES.txt
+fanorona_aec.egg-info/dependency_links.txt
+fanorona_aec.egg-info/requires.txt
+fanorona_aec.egg-info/top_level.txt
+tests/test_fanorona_env.py
+tests/test_move.py
+tests/test_state.py
+tests/test_utils.py
