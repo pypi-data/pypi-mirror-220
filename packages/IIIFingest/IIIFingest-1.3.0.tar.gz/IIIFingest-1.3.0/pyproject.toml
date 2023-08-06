@@ -1,0 +1,18 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools>=42", "wheel"] # PEP 508 specifications.
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+# will not convert single-quote strings to double-quote
+skip-string-normalization = true
+
+[tool.isort]
+# play nice with black formatter
+# see https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
+profile = "black"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+pythonpath = "src"
