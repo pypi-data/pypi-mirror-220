@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tesseract-robotics-viewer
+Version: 0.2.4
+Summary: Tesseract Viewer Python Library
+Home-page: http://robotraconteur.com/
+Author: John Wason
+Author-email: wason@wasontech.com
+License: Apache-2.0
+Requires-Dist: numpy
+Requires-Dist: tesseract-robotics (>=0.2.0)
+Requires-Dist: opencv-contrib-python
+
+Tesseract Robotics viewer package for Python
