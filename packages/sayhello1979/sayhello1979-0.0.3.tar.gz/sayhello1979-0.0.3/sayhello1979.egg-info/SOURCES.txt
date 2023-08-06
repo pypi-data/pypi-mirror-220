@@ -1,0 +1,8 @@
+setup.py
+sayhello1979/__init__.py
+sayhello1979/hello.py
+sayhello1979.egg-info/PKG-INFO
+sayhello1979.egg-info/SOURCES.txt
+sayhello1979.egg-info/dependency_links.txt
+sayhello1979.egg-info/not-zip-safe
+sayhello1979.egg-info/top_level.txt
