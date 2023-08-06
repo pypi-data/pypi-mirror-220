@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+CloudEdgeAssetsOptimizer.egg-info/PKG-INFO
+CloudEdgeAssetsOptimizer.egg-info/SOURCES.txt
+CloudEdgeAssetsOptimizer.egg-info/dependency_links.txt
+CloudEdgeAssetsOptimizer.egg-info/requires.txt
+CloudEdgeAssetsOptimizer.egg-info/top_level.txt
