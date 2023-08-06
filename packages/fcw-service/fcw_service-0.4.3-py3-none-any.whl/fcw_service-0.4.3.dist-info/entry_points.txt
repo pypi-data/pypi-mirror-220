@@ -1,0 +1,3 @@
+[console_scripts]
+fcw_service=fcw_service.interface:main
+
