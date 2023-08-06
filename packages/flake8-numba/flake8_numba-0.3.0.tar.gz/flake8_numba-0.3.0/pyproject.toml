@@ -1,0 +1,95 @@
+[tool.poetry]
+name = "flake8_numba"
+version = "0.3.0"
+description = "Perform checks over numba usage"
+authors = ["Manuel Floriano Vázquez <mflovaa@gmail.com>"]
+readme = "README.md"
+packages = [{include = "flake8_numba"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numba = "*"
+
+[tool.poetry.plugins."flake8.extension"]
+NBA = 'flake8_numba.plugin:Plugin'
+
+[tool.poetry.dev-dependencies]
+poetry = "*"
+pytest = "*"  # Testing
+pytest-clarity = "*"  # Much better output when pytest called with -vv
+pytest-deadfixtures = "*"  # Check for unused fixtures
+pytest-cov = "*"  # Test coverage
+ruff = "*"  # Static linter
+mypy = "*"  # Static type checker
+black = "*"  # Autoformatter
+colorama = "*"  # Colored outputs
+types-colorama = "*"  # Stubs for Colorama
+toml = "*"  # Parse toml files
+types_toml = "*"  # Stubs for toml
+click = "*"  # Input argument parser
+codespell = "*"  # Spell checker
+yamllint = "*"  # Check quality or bugs for yaml files
+pyanalyze = "*"  # Dynamically check python code
+types-PyYaml = "*"  # Stubs for yaml
+typing_extensions = "*"
+astpretty = "*"
+flake8 = "*"  # For testing the plugin
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Config for developer tools
+[tool.black]
+line-length = 90
+target-version = ["py39"]
+exclude = ".venv|data/"
+
+
+[tool.mypy]
+exclude = [".venv", "data"]
+python_version = "3.9"
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+norecursedirs = ".venv"
+testpaths = ["tests"]
+# Coverage is lowered down till there are rules implemented
+addopts = "--cov=flake8_numba --cov-report term-missing --cov-fail-under=80"
+
+[tool.codespell]
+skip = '.venv'
+
+[tool.ruff]
+line-length = 90
+target-version = "py39"
+exclude = [".venv", "data"]
+select = ["F", "E", "I", "N", "D", "UP", "YTT", "ASYNC", "BLE", "B", "A", "C4", "DTZ", "T10", "DJ", "EXE", "ISC", "ICN", "G", "PIE", "PYI", "PT", "Q", "RSE", "RET", "SLF", "SIM", "TID", "INT", "ARG", "TD", "FIX", "PD", "PGH", "PL", "FLY", "NPY", "AIR", "RUF"]
+ignore = ["SIM102", "EM101", "PLR", "D100", "D103", "C419", "PGH003", "RUF001", "PD901", "C405", "PLC1901", "UP015", "PLC0414", "I001", "D104", "D102", "PT006", "D101"]
+
+[tool.ruff.pydocstyle]
+convention = "google"  # Docstring convention. Accepts: "google", "numpy", or "pep257".
+
+[tool.ruff.flake8-pytest-style]
+fixture-parentheses = false
+
+[tool.ruff.per-file-ignores]
+"tests/test_utils/test_utils.py" = ["ARG001", "ARG002"]
+"tests/test_rules/test_nba2.py" = ["ARG001", "ARG002"]
+"tests/test_rules/test_nba1.py" = ["ARG001", "ARG002"]
+"tests/test_rules/test_nba0.py" = ["ARG001", "ARG002"]
+
+[tool.pyanalyze]
+# Manually parsed by `check_code.py` as this is not supported by `pyanalyze` yet.
+import_failed = true
+method_first_arg = true
+unhashable_key = true
+not_callable = true
+add_import = true
+# incompatible_override = true  # Bug
+unused_assignment = true
+invalid_import = true
+override_does_not_override = true
+undefined_name = true
+invalid_override_decorator = true
