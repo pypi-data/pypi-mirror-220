@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_jupyrdf_jupyter_forcegraph=self.webpackChunk_jupyrdf_jupyter_forcegraph||[]).push([[65],{7065:(e,c,p)=>{p.r(c),p.d(c,{default:()=>r});const r=p.p+"17e39eaabb5df4765fecce87d9be9205a40ee1843668e172cc2b7c62d5859008.js"}}]);
+//# sourceMappingURL=65.b572ef9747c1599b51f3.js.map?v=b572ef9747c1599b51f3
