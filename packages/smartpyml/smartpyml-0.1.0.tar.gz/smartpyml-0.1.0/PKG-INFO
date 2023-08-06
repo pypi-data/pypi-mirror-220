@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: smartpyml
+Version: 0.1.0
+Summary: smartpyml: A Comprehensive Machine Learning Library
+Home-page: https://github.com/srikresna/smartpyml
+Author: srikresna
+Author-email: srikresna383@gmail.com
+Keywords: machine learning,data science,automl,ai
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+smartpyml is a comprehensive machine learning library that empowers developers and data scientists to easily apply classical machine learning algorithms and time series analysis techniques. It provides a collection of user-friendly functions and tools for data preprocessing, model training, evaluation, and prediction, making it suitable for both beginners and experienced practitioners in the field of data science and artificial intelligence.
+
+Main Features:
+- A wide range of classical machine learning algorithms
+- Time series analysis and forecasting capabilities
+- User-friendly interfaces for easy implementation
+- Data preprocessing utilities for feature engineering
+- Model evaluation and performance metrics
+- Support for both numerical and categorical data
+
+- WARNING: This library is still in development and may contain bugs.
+For more information and examples, visit the GitHub repository: https://github.com/srikresna/smartpyml
