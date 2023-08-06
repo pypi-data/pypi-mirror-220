@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+mongoy/mongoy.egg-info/PKG-INFO
+mongoy/mongoy.egg-info/SOURCES.txt
+mongoy/mongoy.egg-info/dependency_links.txt
+mongoy/mongoy.egg-info/requires.txt
+mongoy/mongoy.egg-info/top_level.txt
