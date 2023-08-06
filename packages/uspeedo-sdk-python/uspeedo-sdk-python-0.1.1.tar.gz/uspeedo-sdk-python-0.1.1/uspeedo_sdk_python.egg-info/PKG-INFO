@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: uspeedo-sdk-python
+Version: 0.1.1
+Summary: USpeedo Service Development Kit - Python
+Home-page: https://github.com/uspeedo/uspeedo-sdk-python
+Author: uspeedo
+Author-email: support@uspeedo.com
+License: Apache License 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: doc
+Provides-Extra: dev
+Provides-Extra: ci
+License-File: LICENSE
+
+
+<h1 align="center">USpeedo SDK Python</h1>
+
+<p align="center">
+<a href="https://pypi.python.org/pypi/uspeedo-sdk-python/"><img src="https://img.shields.io/pypi/v/uspeedo-sdk-python.svg" alt="Latest Stable Version"></a>
+<a href="https://img.shields.io/pypi/pyversions/uspeedo-sdk-python/"><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/uspeedo-sdk-python"></a>
+</p>
+
+USpeedo SDK is a Python client library for accessing the USpeedo API.
+
+This client can run on Linux, macOS and Windows.
+
+- Website: https://www.uspeedo.com/
+- Free software: Apache 2.0 license
+- [Documentation](https://docs.uspeedo.com)
