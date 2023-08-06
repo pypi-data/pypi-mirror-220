@@ -1,0 +1,13 @@
+uiadmin_fastapi/CoreController.py,sha256=0n01rvBnZdritVFkaYIbiTzBgFPki0IZo6qkZz_0fqU,10004
+uiadmin_fastapi/Uiadmin.py,sha256=iGQWuqrTzQwfin173oWv4DG_PjpKP9738V9tEsD2l6A,1419
+uiadmin_fastapi/__init__.py,sha256=gmiXBlF-4hC23ifttIptdV6YgSHKi-Clvok6GUz-TZg,366
+uiadmin_fastapi/utils.py,sha256=U67PWtTVgYeml266fxQLy5jQIjVvZli6wt1Q0cxwMnY,1466
+uiadmin_fastapi/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uiadmin_fastapi/util/xybuilder/XyBuilderForm.py,sha256=nJFJYHhMpQev4VdvT5o2yl-I78yxFYHJ7-evLKcmIjU,5842
+uiadmin_fastapi/util/xybuilder/XyBuilderList.py,sha256=BVksTXdsYqdIoVYVz31ck8cEi0kUdjFJ3R3af6oXYG0,7650
+uiadmin_fastapi/util/xybuilder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Uiadmin_FastApi-1.0.3.dist-info/LICENSE.md,sha256=tuFooj0BXYAc2AUycBETweBnhbfwh6rIkZk9tbdp0xI,8
+Uiadmin_FastApi-1.0.3.dist-info/METADATA,sha256=90Qp6-aXojGpPiD7Yqtkwd-sMrVL91EtCJ7Lv4tJ1Uc,8216
+Uiadmin_FastApi-1.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Uiadmin_FastApi-1.0.3.dist-info/top_level.txt,sha256=ckMFk-C6vgmr69ERQUUaLGIWVRJxJBtSlfl4QtpLF30,16
+Uiadmin_FastApi-1.0.3.dist-info/RECORD,,
