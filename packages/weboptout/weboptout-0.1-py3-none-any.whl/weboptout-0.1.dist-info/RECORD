@@ -1,0 +1,12 @@
+weboptout/__init__.py,sha256=gjRR-CjdA9oq6ubV4NdieoK9KR5FPK7JbtaWYEcaMKY,181
+weboptout/client.py,sha256=qfgGmhWMKk8yND6F5BBmWPq5pbLk9HSVsGgFB5UYn5w,615
+weboptout/config.py,sha256=jP8o4yz4c2gATynvRRkutHfSbh2bMcIufq-qGELIQyQ,1421
+weboptout/html.py,sha256=VsaF4qkhp3AphdSDOUuqWmDMbcMjnv7bNidBUOzsJo4,3282
+weboptout/http.py,sha256=0UbblgWqfMmEPKV3wa4_DoSPkkw7WH1Px78AkpFr-_4,5716
+weboptout/types.py,sha256=gI1cHNE7IIxkhkjBTY1ee-k5PVcYXjYFR5fVejS0fUw,1415
+weboptout/utils.py,sha256=0Wvw9HxhkiU2_2gOxx5YsD7CO6zqY2v3lkmpjjtdJsI,1656
+weboptout/web.py,sha256=xj7sbehpGk8UGFhdrMOm8lkOqXKCg7Yu4Zx71HESqJI,879
+weboptout-0.1.dist-info/LICENSE,sha256=v4mrhxGK3Go_0aIrVelIBdZajDua1kbjzXlBiZY8-tc,1076
+weboptout-0.1.dist-info/METADATA,sha256=FL87vAsCCwA0KSV9Tc5J0aTn3MQzJAHDlplksA5GQXg,829
+weboptout-0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+weboptout-0.1.dist-info/RECORD,,
