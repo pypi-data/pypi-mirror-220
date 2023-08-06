@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: elefanto-webkassa
+Version: 0.4.1
+Summary: 
+Author: Zhanibek
+Author-email: gglassota2@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cryptography (>=41.0.2,<42.0.0)
+Requires-Dist: django (>=4.0.0,<5.0.0)
+Requires-Dist: django-crontab (>=0.7.1,<0.8.0)
+Requires-Dist: djangorestframework (>=3.14.0,<4.0.0)
+Requires-Dist: httpx (>=0.24.1,<0.25.0)
+Description-Content-Type: text/markdown
+
+about
+=====
+
+integration with [webkassa.kz](https://webkassa.kz)
+
+# For contributors
+
+**NOTE:** After clone this repository you should run command:
+
+   ```bash
+   chmod ug+x.githooks/pre-commit
+   ```
+
+   ```bash
+   git config core.hooksPath .githooks
+   ````
+
+# For users
+
+setup
+=====
+install via pip:
+
+  ```bash
+  pip install elefanto-webkassa
+  ```
+
+install via poetry:
+
+  ```bash
+  poetry add elefanto-webkassa
+  ```
+
+Configs
+===
+add it to installed apps in django settings.py:
+
+```python
+INSTALLED_APPS = (
+    ...,
+    'webkassa',
+)
+```
+
+now add this to your settings.py:
+
+```python
+WEBKASSA_CONFIG = {
+    'api_key': 'YOUR_WEBKASSA_API_KEY',
+    'encryption_key': 'SOME_ECRYPTION_KEY',
+    'url': 'WEBKASSA_API_URL',
+}
+```
+
+***Note***
+you can generate `encryption_key` by this command in python shell
+
+```python
+import base64
+import os
+
+base64.urlsafe_b64encode(os.urandom(32))
+```
+
+Usage
+===
+after configure project, you should run `migrate`
+
+```python
+python
+manage.py
+migrate
+```
+
+then go to admin page, find `Webkassa accounts` in `WEBKASSA` app and add new account
+![img.png](assets/img.png)
+
+now you can use package
+
+```python
+from webkassa.services.manager import WebKassaManager
+
+...
+
+data = {
+    'OperationType': int,
+    'Positions': [
+        {
+            'Count': int,
+            'Price': float,
+            'TaxPercent': int,
+            'TaxType': int,
+            'PositionName': str,
+            'PositionCode': str,
+            'Discount': int,
+            'Markup': int,
+            'SectionCode': str,
+            'UnitCode': int,
+            ...    
+        }
+    ],
+    'Payments': [
+        {
+            'Sum': float,
+            'PaymentType': int
+        }
+    ],
+    'TicketModifiers': [
+        {
+            'Sum': int,
+            'Text': str,
+            'Type': int,
+            'TaxType': int,
+            'TaxPercent': int,
+            'Tax': float
+        }
+    ],
+    'Change': int,
+    'RoundType': int,
+    'CustomerEmail': str,
+    'ExternalOrderNumber': str,
+    'ExternalCheckNumber': str,
+    ...
+}
+
+manager = WebKassaManager(email='<Account email>', cashbox_unique_number='<Cashbox number>')
+ticket = manager.get_check(data)
+```
+`ticket` is instance of `webkassa.models.Check`, you can add it as `OneToOneField` on your payment model
+
+**Note** 
+`ExternalOrderNumber` should be pk of your payment instance, and will be unique to avoid ticket duplicates
+
+
+You can find list of tickets from admin page `Checks` in `WEBKASSA`
+![img.png](assets/img2.png)
+
+
+Also you can find error logs for integration. If for some reason error depends on package functionality please tell Джони ага 😜 or give him solution.
+
