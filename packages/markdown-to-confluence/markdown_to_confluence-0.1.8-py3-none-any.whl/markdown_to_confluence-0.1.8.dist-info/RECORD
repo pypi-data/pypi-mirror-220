@@ -1,0 +1,13 @@
+md2conf/__init__.py,sha256=uTqDmF5c_1XmdTGhWr2DWRIxwzrQIfa4g1VpA4I0XkA,402
+md2conf/__main__.py,sha256=KpdYWDr2xFQm7X8xcJTOSmPS0hsn8DD1Z7HJuhweLGw,2597
+md2conf/api.py,sha256=qomqdn8sztLe5jBaiqbA-YqSt7W3Kp_2K4-amJhMYK4,11946
+md2conf/application.py,sha256=UtMecrQ9ztjYv77RahW5hOIZHNzdCDodHmzkzLrY57g,3562
+md2conf/converter.py,sha256=JfvyLvAxPNedhDvvflBm3apvEq-9s7CuGZxdf6tmr9g,13150
+md2conf/entities.dtd,sha256=M6NzqL5N7dPs_eUA_6sDsiSLzDaAacrx9LdttiufvYU,30215
+md2conf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+markdown_to_confluence-0.1.8.dist-info/LICENSE,sha256=W_F6JttWaUq8-m1T7FrjMU0PYCTHYC-H4DUaPNZ7YGc,1077
+markdown_to_confluence-0.1.8.dist-info/METADATA,sha256=9fZb0eb1yeZ_9bMHfxrwE5wxSWub6GpYj8Lnn8aSKS0,7244
+markdown_to_confluence-0.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+markdown_to_confluence-0.1.8.dist-info/top_level.txt,sha256=_FJfl_kHrHNidyjUOuS01ngu_jDsfc-ZjSocNRJnTzU,8
+markdown_to_confluence-0.1.8.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+markdown_to_confluence-0.1.8.dist-info/RECORD,,
