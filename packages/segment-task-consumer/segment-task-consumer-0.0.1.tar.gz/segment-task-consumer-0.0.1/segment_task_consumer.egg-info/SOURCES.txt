@@ -1,0 +1,5 @@
+setup.py
+segment_task_consumer.egg-info/PKG-INFO
+segment_task_consumer.egg-info/SOURCES.txt
+segment_task_consumer.egg-info/dependency_links.txt
+segment_task_consumer.egg-info/top_level.txt
