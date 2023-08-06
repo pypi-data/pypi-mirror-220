@@ -1,0 +1,3 @@
+[console_scripts]
+atk-training-rin-q-basic=rin_db_exc.main_cli:app
+
