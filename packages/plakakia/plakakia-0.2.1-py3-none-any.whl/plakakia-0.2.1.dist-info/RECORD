@@ -1,0 +1,14 @@
+plakakia/__init__.py,sha256=KHBnwpRxWSNHJRKqMZ82CPIS8b-YlQ7Kw0kUDPRtbOw,124
+plakakia/config.yaml,sha256=ARv11iNDJLlA44TMEUG0tiR4fNcWjEpEC0j_0ihdVPM,1248
+plakakia/make_some_tiles.py,sha256=ITywjS44OeMkM3kwyiswL44jptRV2E2tA3mgqH2_mQM,2407
+plakakia/make_tiles.py,sha256=fV6FI97MAEYTziGIbfKuwtYf8PcIzZZwHN-3z8qmomo,2376
+plakakia/settings.py,sha256=mOJtJXv-SKWifRXZy_kdRPE_CXHkhdtuTHSr_1fLJWU,7931
+plakakia/utils_annotations.py,sha256=s69TFzZeHppDjDUHMvJSG_3c75xZdG-_nH_TxsZVRiE,10870
+plakakia/utils_images.py,sha256=f9LkeP6Lsx0Qc-Kx76H_DweeHY2LCkRBFKgPnSaCKec,1508
+plakakia/utils_tiling.py,sha256=t9TP_TG1YOIGCDbC6SLisTf-TxwvbrOGiMLaGiRTq7c,13565
+plakakia-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+plakakia-0.2.1.dist-info/METADATA,sha256=QU5KN75roIzn9H-BpkQCkNvoVnCgzwU6X6XrMFaDMG0,653
+plakakia-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+plakakia-0.2.1.dist-info/entry_points.txt,sha256=kdZ0Osi7aliTZh_V4jZclQY-jKgku_k67Pmlxits8E0,56
+plakakia-0.2.1.dist-info/top_level.txt,sha256=xhFVoD5IAMWSQauWxtp9PoUCmjluySsPIaN9Bbinv_A,9
+plakakia-0.2.1.dist-info/RECORD,,
