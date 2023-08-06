@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: booze
+Version: 0.1.0
+Summary: 
+Author: Itemize
+Author-email: itemizebi@itemize.com.br
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pytest (>=7.4.0,<8.0.0)
+Description-Content-Type: text/markdown
+
+
