@@ -1,0 +1,12 @@
+httpx
+fastapi
+pydantic
+python-jose
+
+[test]
+black
+mypy
+pytest
+pytest-cov
+pylint
+types-python-jose==3.3.4

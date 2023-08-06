@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+jwt_pydantic/__init__.py
+jwt_pydantic/main.py
+jwt_pydantic/middleware.py
+jwt_pydantic.egg-info/PKG-INFO
+jwt_pydantic.egg-info/SOURCES.txt
+jwt_pydantic.egg-info/dependency_links.txt
+jwt_pydantic.egg-info/requires.txt
+jwt_pydantic.egg-info/top_level.txt
+tests/test_jwt.py
+tests/test_middleware.py
