@@ -1,0 +1,3 @@
+[console_scripts]
+orchd-sdk = orchd_sdk.cli:cli
+
