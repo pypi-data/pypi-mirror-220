@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+pyswarming/__init__.py
+pyswarming/auto_differentiation.py
+pyswarming/behaviors.py
+pyswarming/swarm.py
+pyswarming.egg-info/PKG-INFO
+pyswarming.egg-info/SOURCES.txt
+pyswarming.egg-info/dependency_links.txt
+pyswarming.egg-info/requires.txt
+pyswarming.egg-info/top_level.txt
+tests/__init__.py
+tests/test_behaviors.py
+tests/test_swarm.py
