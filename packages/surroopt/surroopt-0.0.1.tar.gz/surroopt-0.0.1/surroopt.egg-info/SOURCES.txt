@@ -1,0 +1,7 @@
+README.md
+setup.py
+surroopt/__init__.py
+surroopt.egg-info/PKG-INFO
+surroopt.egg-info/SOURCES.txt
+surroopt.egg-info/dependency_links.txt
+surroopt.egg-info/top_level.txt
