@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: sklearn-mlmlm
+Version: 1.0.0a2
+Summary: A python and sklearn compatible implementation of ML-MLM.
+Author: Daniel E Fredriksen
+Author-email: dfredriksen@quantyra.org
+Requires-Python: >=3.10,<3.13
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Dist: joblib (>=1.3.1,<2.0.0)
+Requires-Dist: numpy (>=1.25.1,<2.0.0)
+Requires-Dist: scikit-learn (>=1.3.0,<2.0.0)
+Requires-Dist: scipy (>=1.11.1,<2.0.0)
+Description-Content-Type: text/x-rst
+
+.. -*- mode: rst -*-
+
+.. |ReadTheDocs| image:: https://readthedocs.org/projects/scikit-mlmlm/badge/?version=latest
+.. _ReadTheDocs: https://scikit-mlmlm.readthedocs.io/en/latest/?badge=latest
+
+scikit-mlmlm - A python and sklearn compatible implementation of ML-MLM.
+========================================================================
+
+`scikit-mlmlm` is a Python and scikit-learn compatible implementation of Minimal Learning Machine - Multi Label Classifier, based on the Arxiv paper `Minimal Learning Machine for Multi-Label Learning <https://arxiv.org/abs/2305.05518>`_ and the GitHub repository https://github.com/jookriha/ml-mlm.
+
+`Example Implementation: <https://colab.research.google.com/drive/1g5IpGNUSsZvE_bKCN3vXX8gxIRnjHmxC?usp=sharing>`_
+
+A quick demo can be found in `ml_mlmlm_demo.py` at the root of the project.
+
