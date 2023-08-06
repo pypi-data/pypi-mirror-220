@@ -1,0 +1,8 @@
+sqlite_migrate/__init__.py,sha256=o5ayb0js_uxs9EAJjlNhadTw8sLqhB6sdsRFdGLlddU,3084
+sqlite_migrate/sqlite_utils_plugin.py,sha256=EuFow9cYQGOsptXsHhZOqtE979EY9NsxZXfoHcGQAhc,3892
+sqlite_migrate-0.1a1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sqlite_migrate-0.1a1.dist-info/METADATA,sha256=utQvtWLgXbwqp0ZeRU47SbSQebex-pX3NSvnKhFh7pk,5007
+sqlite_migrate-0.1a1.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+sqlite_migrate-0.1a1.dist-info/entry_points.txt,sha256=NYA4QonJ_s_5Q105_ObdnwGGlGVMaPGdUc7cfwPVL8g,60
+sqlite_migrate-0.1a1.dist-info/top_level.txt,sha256=9qGo0vlRGfzwV_WP0_7vqIhL605pCgibfyl5kbX9t3M,15
+sqlite_migrate-0.1a1.dist-info/RECORD,,
