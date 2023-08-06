@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rondsspark
+Version: 0.0.4.18
+Summary: ronds spark sdk
+Home-page: UNKNOWN
+Author: dongyunlong
+Author-email: yunlong.dong@ronds.com.cn
+License: apache 3.0
+Platform: UNKNOWN
+Requires-Dist: cassandra-driver (==3.28.0)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: pyYAML (==6.0)
+Requires-Dist: confluent-kafka (==2.1.1)
+Requires-Dist: schedule (==1.1.0)
+Requires-Dist: wheel (==0.37.1)
+Requires-Dist: findspark (==2.0.1)
+Requires-Dist: importlib-resources (==5.4.0)
+
+UNKNOWN
+
+
