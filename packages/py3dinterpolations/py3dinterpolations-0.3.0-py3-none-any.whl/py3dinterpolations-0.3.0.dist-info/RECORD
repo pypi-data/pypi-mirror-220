@@ -1,0 +1,11 @@
+py3dinterpolations/__init__.py,sha256=IgpFZYntzYRpkeNVkCmrKfQIXbfxRKL4Q_D04e2E1Ms,374
+py3dinterpolations/core/__init__.py,sha256=lpqVj93Nix4fyAegzQVpvvc8I0w-TgHyWVhbP0Bnmms,613
+py3dinterpolations/core/grid3d.py,sha256=y4nkWtjz3X-HQAYFxzbHsZBIYKqvFbkovTZzrtDnbtQ,6597
+py3dinterpolations/core/griddata.py,sha256=lxURwj-SHG1KSn3h5D5rCkO0bezaCVKZSL2I75vlzSc,5068
+py3dinterpolations/plotting/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py3dinterpolations/plotting/plotting.py,sha256=BVT1fc1dKsc24KDnPiyJrqVlAuhGAa-K7LAXXr4S_VM,4241
+py3dinterpolations-0.3.0.dist-info/LICENSE,sha256=UeAT7mCI6rPXQl_p8Zi6RXfXuldIErFbeohK-PVBlIY,1071
+py3dinterpolations-0.3.0.dist-info/METADATA,sha256=Hnz1LZomLjh_XyL8HJl58WDbYHO3ThmujOBh3IX4YLg,2726
+py3dinterpolations-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+py3dinterpolations-0.3.0.dist-info/top_level.txt,sha256=oB9b79yg301kzxtYdEeJMgZSC3uzMg7U935wV6AeA1M,19
+py3dinterpolations-0.3.0.dist-info/RECORD,,
