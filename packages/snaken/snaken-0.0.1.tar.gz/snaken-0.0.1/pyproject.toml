@@ -1,0 +1,39 @@
+[project]
+name = "snaken"
+version = "0.0.1"
+description = "Normalise incoming data"
+authors = [
+    { name = "Doug Hudgeon", email = "doug.hudgeon@managedfunctions.com" },
+]
+packages = [
+    "snaked",
+]
+dependencies = [
+    "openai",
+    "openpyxl",
+    "pandas",
+    "pydantic",
+    "python-dotenv",
+    "pytz",
+    "PyYAML",
+    "xlrd",
+    "xmltodict",
+    "mocker",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.3.2",
+    "pytest-mock>=3.11.1",
+]
