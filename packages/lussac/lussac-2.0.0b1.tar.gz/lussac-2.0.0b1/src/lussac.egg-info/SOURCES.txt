@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/lussac/__init__.py
+src/lussac/main.py
+src/lussac.egg-info/PKG-INFO
+src/lussac.egg-info/SOURCES.txt
+src/lussac.egg-info/dependency_links.txt
+src/lussac.egg-info/entry_points.txt
+src/lussac.egg-info/requires.txt
+src/lussac.egg-info/top_level.txt
+tests/test_main.py
