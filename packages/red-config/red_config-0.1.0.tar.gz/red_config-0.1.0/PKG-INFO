@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: red_config
+Version: 0.1.0
+Summary: My custom configuration library. This is for my personal use, it will be maintained as I decide to spend time on it. I wouldn't use this in your own projects.
+Author-Email: redjax <none@none.com>
+License: MIT
+Project-URL: Repository, https://github.com/redjax/red-config
+Requires-Python: >=3.11
+Requires-Dist: pydantic>=2.0.3
+Requires-Dist: pydantic-settings>=2.0.2
+Description-Content-Type: text/markdown
+
+# red_config
+
+My custom configuration library. This is for my personal use, it will be maintained as I decide to spend time on it. I wouldn't use this in your own projects.

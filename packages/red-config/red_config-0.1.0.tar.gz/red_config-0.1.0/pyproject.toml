@@ -1,0 +1,50 @@
+[project]
+name = "red_config"
+version = "0.1.0"
+description = "My custom configuration library. This is for my personal use, it will be maintained as I decide to spend time on it. I wouldn't use this in your own projects."
+authors = [
+    { name = "redjax", email = "none@none.com" },
+]
+dependencies = [
+    "pydantic>=2.0.3",
+    "pydantic-settings>=2.0.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Repository = "https://github.com/redjax/red-config"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.scripts.check]
+cmd = "black ."
+
+[tool.pdm.scripts.format]
+cmd = "ruff check . --fix"
+
+[tool.pdm.scripts.start]
+shell = "cd app && pdm run python main.py"
+
+[tool.pdm.scripts.export]
+cmd = "pdm export --prod -o requirements.txt --without-hashes"
+
+[tool.pdm.scripts.export-dev]
+cmd = "pdm export -d -o requirements.dev.txt --without-hashes"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.7.0",
+    "ruff>=0.0.278",
+    "pytest>=7.4.0",
+]
+
+[python]
+PYTHON_KEYRING_BACKEND = "keyring.backends.null.Keyring"
