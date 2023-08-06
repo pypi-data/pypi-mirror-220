@@ -1,0 +1,78 @@
+foundation_model_pkg.tools.foundation_model.FoundationModel.foundation:
+  class_name: FoundationModel
+  function: foundation
+  inputs:
+    api:
+      enum:
+        - chat
+        - completon
+      type:
+        - string
+    chat_history:
+      default: "[]"
+      type:
+        - object
+    connection:
+      type:
+        - CustomConnection
+    deployment_name:
+      type:
+        - string
+    model_family:
+      enum:
+        - llama
+        - dolly
+        - gpt2
+      type:
+        - string
+    model_kwargs:
+      default: "{}"
+      type:
+        - object
+    prompt:
+      type:
+        - string
+  is_builtin: true
+  module: foundation_model_pkg.tools.foundation_model
+  name: FoundationModel.foundation
+  stage: test
+  type: action
+foundation_model_pkg.tools.foundation_model.foundation_model:
+  function: foundation_model
+  inputs:
+    api:
+      enum:
+        - chat
+        - completion
+      type:
+        - string
+    chat_history:
+      default: "[]"
+      type:
+        - object
+    connection:
+      type:
+        - CustomConnection
+    deployment_name:
+      type:
+        - string
+    model_family:
+      enum:
+        - llama
+        - dolly
+        - gpt2
+      type:
+        - string
+    model_kwargs:
+      default: "{}"
+      type:
+        - object
+    prompt:
+      type:
+        - string
+  is_builtin: true
+  module: foundation_model_pkg.tools.foundation_model
+  name: foundation_model
+  description: Tool to use Azure Foundation Models
+  stage: test
+  type: python
