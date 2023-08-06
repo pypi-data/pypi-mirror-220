@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: elefanto-webkassa
+Version: 0.2.3
+Summary: 
+Author: Zhanibek
+Author-email: gglassota2@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cryptography (>=41.0.2,<42.0.0)
+Requires-Dist: django (>=4.0.0,<5.0.0)
+Requires-Dist: djangorestframework (>=3.14.0,<4.0.0)
+Requires-Dist: httpx (>=0.24.1,<0.25.0)
+Description-Content-Type: text/markdown
+
+-----------------------
+
+   **NOTE:** After clone this repository you should run command:
+
+   ``chmod ug+x.githooks/pre-commit``
+
+   ``git config core.hooksPath .githooks``
