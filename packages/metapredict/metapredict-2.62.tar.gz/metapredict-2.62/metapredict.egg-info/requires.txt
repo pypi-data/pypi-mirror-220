@@ -1,0 +1,10 @@
+cython
+torch
+numpy
+matplotlib
+protfasta
+scipy
+urllib3
+tqdm
+alphaPredict==1.0
+getSequence>=1.6
