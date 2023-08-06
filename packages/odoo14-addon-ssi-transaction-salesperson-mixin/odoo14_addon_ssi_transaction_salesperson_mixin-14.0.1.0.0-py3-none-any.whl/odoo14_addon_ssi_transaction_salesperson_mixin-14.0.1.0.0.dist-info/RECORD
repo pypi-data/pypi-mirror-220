@@ -1,0 +1,10 @@
+odoo/addons/ssi_transaction_salesperson_mixin/README.rst,sha256=QtDH5cwENILxCTQKd19ULcLxxzZoGFY7EYDcAfN0O3M,1228
+odoo/addons/ssi_transaction_salesperson_mixin/__init__.py,sha256=X3ayW9k4OH3xqib3X0KEzYY9_pqaAhP2YdhFFVEJSvo,181
+odoo/addons/ssi_transaction_salesperson_mixin/__manifest__.py,sha256=DM1sSKhzluFcR2ChgDbWHRpk8QhWcrrlKuSzCLk7cWs,501
+odoo/addons/ssi_transaction_salesperson_mixin/models/__init__.py,sha256=KQteDtEmKDrQYsXbEY260DKQJEF51QNoCgQaPJn3-jQ,204
+odoo/addons/ssi_transaction_salesperson_mixin/models/mixin_transaction_salesperson.py,sha256=GKISn7mEz0I-Cnf3i5Ikpepc7RTtPOVoLiUWqpWAZdc,698
+odoo/addons/ssi_transaction_salesperson_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_transaction_salesperson_mixin-14.0.1.0.0.dist-info/METADATA,sha256=WwSzUSQG_4ir-dySbvTbemIthHH_QKsotcEuHF7OWsA,1858
+odoo14_addon_ssi_transaction_salesperson_mixin-14.0.1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_transaction_salesperson_mixin-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_transaction_salesperson_mixin-14.0.1.0.0.dist-info/RECORD,,
