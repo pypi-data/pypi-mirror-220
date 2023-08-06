@@ -1,0 +1,5 @@
+_skbuild
+dist
+python/CMakeFiles
+python/*.cmake
+python/src/drift_bytes.egg-info
