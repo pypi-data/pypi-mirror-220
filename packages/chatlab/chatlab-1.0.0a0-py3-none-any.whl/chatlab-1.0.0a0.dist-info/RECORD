@@ -1,0 +1,17 @@
+chatlab/__init__.py,sha256=IL8HzOXvDJLKvsb-L-ReDBCUBtjweOvJIqEQaHC4m5c,2324
+chatlab/_version.py,sha256=jsAyM396iWSIoZXQIOB3HUYumdxykZ5L7OOrIBwdYDM,28
+chatlab/builtins.py,sha256=xAkSoi1B3gmIaNgOO5aNrLbn10iVcl-rvPY451RNJys,588
+chatlab/conversation.py,sha256=lnVNNqJY_2QeWeTKa2Dng0A6c9P31-b-tsXf_eHbqwo,14242
+chatlab/decorators.py,sha256=iUsXiuOO_awq_4p2ZspqvDDWr7IY-RYa_P_3m0j8O2M,2358
+chatlab/display.py,sha256=X-yj1ixv00wZOpk4iwVUO5cwCNUM_99DT32BxwayXTU,8006
+chatlab/errors.py,sha256=05VyBgdMAwtqk6w4fa_aIAjGutJvn8G_fMqzXv1DPBA,114
+chatlab/markdown.py,sha256=WUFAndlmoTVZxvVrZgWcKusFduHG4p-vvncWHKAJXnk,3304
+chatlab/messaging.py,sha256=ZBqhrZ2IVxJD6XCjpakCHYg3EFZLI1jPi-yhXrNeqIU,3290
+chatlab/models.py,sha256=rSCmSH87N0SbBH7tC0ZUCkwm2Ijm4Nb5ohgryqzmy3s,1869
+chatlab/prompts.py,sha256=DloaLQOuod1PS-GVVrXFy3W3iYVLo9HYdwQWtkzn3IE,174
+chatlab/registry.py,sha256=xaStFipjFqXwiTpHNu7uYfhq27TLEPuzWaiGQEOH9cE,8158
+chatlab/shells/python.py,sha256=Qk0JsZCt_oBpKzeRLWEC3CpAU-AF6K1uWxFG9hO74rA,7177
+chatlab-1.0.0a0.dist-info/LICENSE,sha256=AjTO_LLrf8MSvwSPH6roR5Fs0W8L80vo63_svfIgmqo,1504
+chatlab-1.0.0a0.dist-info/METADATA,sha256=bmSDbfDJ4Wkoq_jLHkEMPaApZpAKKHVAGR1dIgl7MLE,8562
+chatlab-1.0.0a0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+chatlab-1.0.0a0.dist-info/RECORD,,
