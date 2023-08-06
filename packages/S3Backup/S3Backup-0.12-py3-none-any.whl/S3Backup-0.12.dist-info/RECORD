@@ -1,0 +1,10 @@
+S3Backup/__init__.py,sha256=KbR_9uj9hiunQws8QM2k3KgWdtzMTVdXdOnCqvYlLJo,5203
+S3Backup/config_loader.py,sha256=9OPNWPW_2UFqwmY9IgSjgApxJMGlMHdiT0dkeibT8KY,2508
+S3Backup/hash_file.py,sha256=a9C33kQlnd63V4zCCWIyKGv0PqLkGHzJFPiFCDMouPg,1992
+S3Backup/plan.py,sha256=aJIQsmgNibzvcLufxd1ATLCfYTmv4ZNZAfKl1R6YFvE,9484
+S3Backup-0.12.dist-info/AUTHORS,sha256=LWZ61OeA4x7ZaR6SGPiz5MzwmvVb49_vkBeWUPnARN8,67
+S3Backup-0.12.dist-info/LICENSE,sha256=hDLBr9wn4iFRDul1eUxK8oSC0uEg8coFCu1wbhEhX98,1105
+S3Backup-0.12.dist-info/METADATA,sha256=fYzz7-lPEOGx8Xdne566U5n2ANiWX1whjRpSt5PzfJU,5374
+S3Backup-0.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+S3Backup-0.12.dist-info/top_level.txt,sha256=BnSRRkFQmRYDaoKZkMceWycH2tiI3_SX2GhZrugHF-E,9
+S3Backup-0.12.dist-info/RECORD,,
