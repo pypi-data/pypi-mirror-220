@@ -1,0 +1,8 @@
+[project]
+name = "aveas_openlabel"
+version = "0.0.1"
+authors = [
+  { name="Coffeechili", email="coffee@chi.li" },
+]
+description = "a package"
+requires-python = ">=3.8"

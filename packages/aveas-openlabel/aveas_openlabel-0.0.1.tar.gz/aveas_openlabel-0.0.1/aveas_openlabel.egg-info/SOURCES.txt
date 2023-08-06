@@ -1,0 +1,6 @@
+pyproject.toml
+aveas_openlabel/__init__.py
+aveas_openlabel.egg-info/PKG-INFO
+aveas_openlabel.egg-info/SOURCES.txt
+aveas_openlabel.egg-info/dependency_links.txt
+aveas_openlabel.egg-info/top_level.txt
