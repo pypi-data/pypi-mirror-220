@@ -1,0 +1,4 @@
+Django>=3.2
+drf-schema-adapter>=3.0.0
+django-mathfilters>=1.0.0
+django-bootstrap-v5>=1.0.11
