@@ -1,0 +1,15 @@
+mbfxml2ex/__init__.py,sha256=RaANGbRu5e-vehwXI1-Qe2ggPPfs1TQaZj072JdbLk4,22
+mbfxml2ex/app.py,sha256=FTlab0X7cvkhy0VszROnDZgNMeQc8MseZDebH8uvyO8,4582
+mbfxml2ex/classes.py,sha256=06_vG69nv0ZJwjkGQyjbt3Lc4CWxuKgD7lkPFveuJ6U,14236
+mbfxml2ex/conversions.py,sha256=-Ze1mgnzyeL2leN-UTz2ZDQyVvnyJA9kAGA0Z7OQDWE,396
+mbfxml2ex/exceptions.py,sha256=cuOTORD4DmBWRGVXME8ist3N67np82XK5IvUpv3UwCg,279
+mbfxml2ex/parsers.py,sha256=jgGA84BrO_Sw2wr-A3uOKq1o9NtpdZBr51TPqVkAcUk,12063
+mbfxml2ex/templates.py,sha256=XPqmgC4-rFPmewCVluL1VHL0nH9hUgwUyTYxf9lDDwA,4528
+mbfxml2ex/utilities.py,sha256=BsmiypGD48aLWuTVZdIKZotpcm_vUVJPbczQyEibVBY,967
+mbfxml2ex/zinc.py,sha256=O-HbVXfxPKkVCfDdj8Y1slxl5pRaA0iEYYVCacpKBY0,16966
+mbfxml2ex-0.7.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mbfxml2ex-0.7.0.dist-info/METADATA,sha256=KRMbVefdwHxgLKdY8WepoR4Zi4Z6FRWA99DWOhUsw4M,1698
+mbfxml2ex-0.7.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mbfxml2ex-0.7.0.dist-info/entry_points.txt,sha256=FwId-QI2-Wxa0tpATd0GRrMTph28t2gnq9mfg7Rll28,59
+mbfxml2ex-0.7.0.dist-info/top_level.txt,sha256=u4fsTtUQ2_BnqLIlW5IuScPZKXv3Y_5kMpcpC-QrrJ4,10
+mbfxml2ex-0.7.0.dist-info/RECORD,,
