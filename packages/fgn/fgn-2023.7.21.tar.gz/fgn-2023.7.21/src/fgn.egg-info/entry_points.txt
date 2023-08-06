@@ -1,0 +1,2 @@
+[console_scripts]
+fgn = fgn.core.fgn_cli:fgn

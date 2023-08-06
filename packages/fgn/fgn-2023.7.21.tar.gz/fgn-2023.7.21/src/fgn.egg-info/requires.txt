@@ -1,0 +1,23 @@
+click
+pyfakefs
+rich
+openai
+watchdog
+pyperclip
+PyGithub
+pytest
+PyYAML
+distro
+markdown2
+lxml
+requests
+openai
+pytest-mock
+
+[:python_version < "3.11"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
