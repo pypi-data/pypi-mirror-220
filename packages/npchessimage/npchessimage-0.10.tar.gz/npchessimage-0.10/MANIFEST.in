@@ -1,0 +1,3 @@
+include npchessimage/requirements.txt
+include npchessimage/thirdparty.json
+include npchessimage/README.MD

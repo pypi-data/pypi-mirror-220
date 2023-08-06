@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+npchessimage/README.MD
+npchessimage/__init__.py
+npchessimage/requirements.txt
+npchessimage/thirdparty.json
+npchessimage.egg-info/PKG-INFO
+npchessimage.egg-info/SOURCES.txt
+npchessimage.egg-info/dependency_links.txt
+npchessimage.egg-info/requires.txt
+npchessimage.egg-info/top_level.txt
