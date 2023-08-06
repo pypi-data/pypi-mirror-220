@@ -1,0 +1,12 @@
+selenium
+libmagic
+Appium-Python-Client
+webdriver-manager
+Pillow
+Postpy2
+
+[dev]
+check-manifest
+
+[test]
+coverage
