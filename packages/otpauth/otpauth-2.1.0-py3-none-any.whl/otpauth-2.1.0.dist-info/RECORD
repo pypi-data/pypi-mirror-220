@@ -1,0 +1,10 @@
+otpauth/__init__.py,sha256=M8zpEkCUFHutrkJLo-knpB59EL9LA0ql8V9mANEHszI,351
+otpauth/core.py,sha256=3jUEN3Xr60I0v5MIdBeaDRXLu46d2NXfsPYFLBM2JSU,2906
+otpauth/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+otpauth/rfc4226.py,sha256=TuAla-ogbQHNYUacLENKG_Me1dbCu3gyqyljqz2DQeY,2392
+otpauth/rfc6238.py,sha256=6QHoWWOpguG62y760_-4Ux_XRBrMk6BeQy2pYuodIGg,2632
+otpauth-2.1.0.dist-info/LICENSE,sha256=ZQnYn2NdBu7WwTTyzxLAIzg7D6fQPacyJDlxRoQFDHo,1475
+otpauth-2.1.0.dist-info/METADATA,sha256=uogyUi6O-DNYbAdnrovTKNDKqZ1BqTHYdDGDJFOioN4,1916
+otpauth-2.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+otpauth-2.1.0.dist-info/top_level.txt,sha256=VgW5YC0HVnaFZ47Od2oK3c9L4hcQsXdm2JXIZD8e8kY,8
+otpauth-2.1.0.dist-info/RECORD,,
