@@ -1,0 +1,10 @@
+requests
+tqdm
+requests_toolbelt
+pydantic<2
+tabulate
+
+[models]
+pandas
+scikit-learn
+numpy
