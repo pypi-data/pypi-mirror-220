@@ -1,0 +1,17 @@
+README.md
+setup.py
+cosmicexcelchecker/__init__.py
+cosmicexcelchecker/_baseclass.py
+cosmicexcelchecker/conf.py
+cosmicexcelchecker/cosmic.py
+cosmicexcelchecker/errors.py
+cosmicexcelchecker/find.py
+cosmicexcelchecker/obf.py
+cosmicexcelchecker/openpyxltest.py
+cosmicexcelchecker/test.py
+cosmicexcelchecker/testaio.py
+cosmicexcelchecker.egg-info/PKG-INFO
+cosmicexcelchecker.egg-info/SOURCES.txt
+cosmicexcelchecker.egg-info/dependency_links.txt
+cosmicexcelchecker.egg-info/requires.txt
+cosmicexcelchecker.egg-info/top_level.txt
