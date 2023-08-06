@@ -1,0 +1,515 @@
+Metadata-Version: 2.1
+Name: anybomt
+Version: 0.2.0
+Summary: Uma biblioteca para facilitar sua jornada em matemática
+Author: AnyBoMath
+Author-email: bidjorys@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Biblioteca Python: AnyBomT
+
+## Descricao
+
+A biblioteca **AnyBomT** e uma colecao de funcoes uteis para calculos matematicos basicos. Ela foi desenvolvida para simplificar o uso de operacoes comuns, como calculo de fatorial, potencia, maximo, minimo, raiz quadrada e soma de numeros.
+
+## Instalacao
+
+Para instalar a biblioteca **AnyBomT**, voce pode utilizar o gerenciador de pacotes `pip`. Execute o seguinte comando:
+
+```bash
+pip install anybomt
+```
+
+## Como usar
+
+Apos a instalacao, voce pode importar as funcoes da biblioteca no seu codigo Python da seguinte maneira:
+
+```python
+from anybomt import fatorial, potencia, valor_maximo, valor_minimo, raiz_quadrada, somar
+```
+
+Agora, voce pode utilizar as funcoes em seu codigo para realizar os calculos necessarios.
+
+## Funcoes disponiveis
+
+Aqui estao as funcoes disponiveis na biblioteca **AnyBomT**:
+
+### Funcao `fatorial(n)`
+
+Calcula o fatorial de um numero inteiro `n`.
+
+```python
+resultado = fatorial(5)
+print(resultado)  # Output: 120
+```
+
+### Funcao `potencia(base, exponent)`
+
+Calcula a potencia de um numero inteiro `base` elevado a um expoente inteiro `exponent`.
+
+```python
+resultado = potencia(2, 3)
+print(resultado)  # Output: 8
+```
+
+### Funcao `valor_maximo(a, b)`
+
+Retorna o valor maximo entre dois numeros inteiros `a` e `b`.
+
+```python
+resultado = valor_maximo(10, 20)
+print(resultado)  # Output: 20
+```
+
+### Funcao `valor_minimo(a, b)`
+
+Retorna o valor minimo entre dois numeros inteiros `a` e `b`.
+
+```python
+resultado = valor_minimo(10, 20)
+print(resultado)  # Output: 10
+```
+
+### Funcao `raiz_quadrada(num)`
+
+Calcula a raiz quadrada de um numero.
+
+```python
+resultado = raiz_quadrada(16)
+print(resultado)  # Output: 4.0
+```
+
+### Funcao `somar(*args)`
+
+Realiza a soma de varios numeros.
+
+```python
+resultado = somar(1, 2, 3, 4, 5)
+print(resultado)  # Output: 15
+```
+
+`Trigonometria` na biblioteca **AnyBomT**:
+```python
+from anybomt import Trigonometria
+```
+
+## Classe `Trigonometria`
+
+A classe `Trigonometria` contem diversas funcoes para calculos trigonometricos e hiperbolicos:
+
+### Funcao `seno(angle)`
+
+Calcula o seno de um angulo em radianos.
+
+```python
+resultado = Trigonometria.seno(0.5)
+print(resultado)  # Output: 0.479425538604203
+```
+
+### Funcao `cosseno(angle)`
+
+Calcula o cosseno de um angulo em radianos.
+
+```python
+resultado = Trigonometria.cosseno(0.5)
+print(resultado)  # Output: 0.8775825618903728
+```
+
+### Funcao `tangente(angle)`
+
+Calcula a tangente de um angulo em radianos.
+
+```python
+resultado = Trigonometria.tangente(0.5)
+print(resultado)  # Output: 0.5463024898437905
+```
+
+### Funcao `cosseno_hiperbolico(num)`
+
+Calcula o cosseno hiperbolico de um numero.
+
+```python
+resultado = Trigonometria.cosseno_hiperbolico(2)
+print(resultado)  # Output: 3.7621956910836314
+```
+
+### Funcao `seno_hiperbolico(num)`
+
+Calcula o seno hiperbolico de um numero.
+
+```python
+resultado = Trigonometria.seno_hiperbolico(2)
+print(resultado)  # Output: 3.6268604078470186
+```
+
+### Funcao `tangente_hiperbolica(num)`
+
+Calcula a tangente hiperbolica de um numero.
+
+```python
+resultado = Trigonometria.tangente_hiperbolica(2)
+print(resultado)  # Output: 0.9640275800758169
+```
+
+### Funcao `arco_cosseno(num)`
+
+Calcula o arco cosseno de um numero.
+
+```python
+resultado = Trigonometria.arco_cosseno(0.5)
+print(resultado)  # Output: 1.0471975511965976
+```
+
+### Funcao `arco_seno(num)`
+
+Calcula o arco seno de um numero.
+
+```python
+resultado = Trigonometria.arco_seno(0.5)
+print(resultado)  # Output: 0.5235987755982989
+```
+
+### Funcao `arco_tangente(num)`
+
+Calcula o arco tangente de um numero.
+
+```python
+resultado = Trigonometria.arco_tangente(0.5)
+print(resultado)  # Output: 0.4636476090008061
+```
+
+### Funcao `arco_tangente2(y, x)`
+
+Calcula o arco tangente de um numero com dois argumentos (y, x).
+
+```python
+resultado = Trigonometria.arco_tangente2(1, 1)
+print(resultado)  # Output: 0.7853981633974483
+```
+
+## Como usar
+
+Apos a instalacao, voce pode importar as funcoes disponiveis no modulo `anybomt` para o seu codigo Python. Por exemplo:
+
+```python
+from anybomt import logaritmo_natural, logaritmo_base10, exponencial
+from anybomt import PI, PI_Long, E, E_long, Num_Au, Num_Au_long, Num_catalan, Num_catalan_long
+from anybomt import feigenbaum_delta, feigenbaum_delta_long, feigenbaum_alfa, feigenbaum_alfa_long, Constante_de_Brun
+```
+
+## Funcoes matematicas disponiveis
+
+- `logaritmo_natural(num)`: Calcula o logaritmo natural de um numero.
+- `logaritmo_base10(num)`: Calcula o logaritmo na base 10 de um numero.
+- `exponencial(num)`: Calcula a exponencial de um numero.
+- `PI()`: Retorna o valor de π (pi) com precisao de 20 casas decimais.
+- `PI_Long()`: Retorna o valor de π (pi) com maior precisao (200 casas decimais).
+- `E_long()`: Retorna o valor de e (constante de Euler) com maior precisao (200 casas decimais).
+- `E()`: Retorna o valor de e (constante de Euler) com precisao de 20 casas decimais.
+- `Num_Au_long()`: Retorna o numero aureo (razao aurea) com maior precisao (200 casas decimais).
+- `Num_Au()`: Retorna o numero aureo (razao aurea) com precisao de 20 casas decimais.
+- `Num_catalan()`: Retorna o numero de Catalan com precisao de 20 casas decimais.
+- `Num_catalan_long()`: Retorna o numero de Catalan com maior precisao (200 casas decimais).
+
+## Constantes matematicas disponiveis
+
+- `feigenbaum_delta()`: Retorna a constante de Feigenbaum (δ) com precisao de 20 casas decimais.
+- `feigenbaum_delta_long()`: Retorna a constante de Feigenbaum (δ) com maior precisao (200 casas decimais).
+- `feigenbaum_alfa()`: Retorna a constante de Feigenbaum (α) com precisao de 20 casas decimais.
+- `feigenbaum_alfa_long()`: Retorna a constante de Feigenbaum (α) com maior precisao (200 casas decimais).
+- `Constante_de_Brun()`: Retorna a constante de Brun com precisao de 200 casas decimais.
+
+## Funcoes adicionais
+
+Alem das funcoes matematicas e trigonometricas, a biblioteca **AnyBomT** tambem possui algumas funcoes adicionais para calculos simples:
+
+- `logaritmo_natural_mais_1(num)`: Calcula o logaritmo natural de um numero mais 1.
+- `modulo(num)`: Calcula o valor absoluto de um numero.
+- `logaritmo_base2(num)`: Calcula o logaritmo na base 2 de um numero.
+- `piso(num)`: Calcula o piso de um numero.
+- `arredondamento(num)`: Calcula o arredondamento de um numero para o inteiro mais proximo.
+- `teto_do_numero(num)`: Calcula o teto de um numero.
+
+## Resolucao de equacoes
+
+A biblioteca tambem fornece funcoes para resolver equacoes do primeiro e segundo grau e dar explicacoes passo a passo do calculo:
+
+- `equacaoPrimeiroGrauEx(a, b, c)`: Resolve uma equacao de primeiro grau e da uma explicacao detalhada do processo.
+- `equacaoSegundoGrauEx(a, b, c)`: Resolve uma equacao de segundo grau e da uma explicacao detalhada do processo.
+- `equacaoPrimeiroGrau(a, b, c)`: Resolve uma equacao de primeiro grau e retorna o valor de x.
+- `equacaoSegundoGrau(a, b, c)`: Resolve uma equacao de segundo grau e retorna as raizes reais
+
+# Estatistica
+
+A classe **Estatistica** e uma colecao de metodos para calculos estatisticos e analise de dados. Ela oferece funcoes para calcular a media, mediana, moda, desvio padrao, variancia, coeficiente de correlacao, regressao linear, intervalo de confiana, assimetria, curtose, entre outras medidas.
+
+## Instanciacao
+
+Para utilizar os metodos da classe **Estatistica**, voce deve criar uma instancia dela.
+
+```python
+from anybomt import Estatistica
+
+estatistica = Estatistica()
+```
+
+## Metodos disponiveis
+
+- `media(*args)`: Calcula a media dos valores passados como argumento.
+- `mediana(*args)`: Calcula a mediana dos valores passados como argumento.
+- `moda(*args)`: Calcula a moda dos valores passados como argumento.
+- `desvio_padrao(*args)`: Calcula o desvio padrao dos valores passados como argumento.
+- `desvio_medio(*args)`: Calcula o desvio medio dos valores passados como argumento.
+- `variancia(*args)`: Calcula a variancia dos valores passados como argumento.
+- `comparar(a, b)`: Compara duas listas de valores e retorna a diferena media entre eles.
+- `media_ponderada(valores, pesos)`: Calcula a media ponderada dos valores e pesos passados como argumento.
+- `media_geometrica(*args)`: Calcula a media geometrica dos valores passados como argumento.
+- `media_quadratica(*args)`: Calcula a media quadratica dos valores passados como argumento.
+- `intervalo_medio(*args)`: Calcula o intervalo medio dos valores passados como argumento.
+- `intervalo_medio_entre_dois_numeros(a, b)`: Calcula o intervalo medio entre dois numeros.
+- `amplitude(*args)`: Calcula a amplitude dos valores passados como argumento.
+- `quartis(*args)`: Calcula os quartis (Q1, Q2 e Q3) dos valores passados como argumento.
+- `amplitude_interquartil(*args)`: Calcula a amplitude interquartil dos valores passados como argumento.
+- `coeficiente_correlacao(x, y)`: Calcula o coeficiente de correlacao entre duas listas de valores.
+- `regressao_linear(x, y)`: Calcula a regressao linear entre duas listas de valores e retorna os coeficientes da reta (a e b).
+- `coeficiente_variacao(*args)`: Calcula o coeficiente de variacao dos valores passados como argumento.
+- `media_harmonica(*args)`: Calcula a media harmônica dos valores passados como argumento.
+- `distribuicao_frequencia(dados, num_classes)`: Calcula a distribuicao de frequencia para os dados passados como argumento e o numero de classes desejadas.
+- `intervalo_confianca(dados, nivel_confianca)`: Calcula o intervalo de confiana para uma amostra de dados e um determinado nivel de confiana.
+- `coeficiente_assimetria(*args)`: Calcula o coeficiente de assimetria dos valores passados como argumento.
+- `curtose(*args)`: Calcula a curtose dos valores passados como argumento.
+- `coeficiente_correlacao_pearson(x, y)`: Calcula o coeficiente de correlacao de Pearson entre duas listas de valores.
+- `teste_t(amostra1, amostra2)`: Realiza o teste t para comparar duas amostras.
+- `teste_qui_quadrado(freq_obs, freq_esp)`: Realiza o teste do qui-quadrado para comparar frequencias observadas e esperadas.
+- `analise_variancia(*args)`: Realiza a analise de variancia (ANOVA) para comparar medias de diferentes grupos.
+- `teste_normalidade(amostra, alpha=0.05)`: Realiza o teste de normalidade de Shapiro-Wilk para verificar se uma amostra segue uma distribuicao normal.
+- `teste_homogeneidade(*grupos, alpha=0.05)`: Realiza o teste de homogeneidade de variancias entre diferentes grupos.
+
+
+# Calculo
+
+A classe **Calculo** e uma colecao de metodos para calculos matematicos e simbolicos, como derivadas, integrais, limites, transformadas e outras operacoes matematicas.
+
+## Instanciacao
+
+Para utilizar os metodos da classe **Calculo**, voce deve criar uma instancia dela.
+
+```python
+from anybomt import Calculo
+
+calculo = Calculo()
+```
+
+## Metodos disponiveis
+
+- `derivada(expressao, variavel)`: Calcula a derivada de uma expressao em relacao a uma variavel.
+- `integral_definida(expressao, variavel, limite_inferior, limite_superior)`: Calcula a integral definida de uma expressao entre os limites especificados.
+- `integral_indefinida(expressao, variavel)`: Calcula a integral indefinida de uma expressao em relacao a uma variavel.
+- `limite(expressao, variavel, ponto)`: Calcula o limite de uma expressao quando a variavel se aproxima de um ponto especifico.
+- `derivada_parcial(expressao, variaveis)`: Calcula a derivada parcial de uma expressao em relacao a varias variaveis.
+- `laplace(expressao, variavel, s)`: Calcula a transformada de Laplace de uma expressao em relacao a uma variavel em dominio do tempo.
+- `inversa_laplace(expressao, s, t)`: Calcula a transformada inversa de Laplace de uma expressao em relacao a uma variavel em dominio da frequencia.
+- `transformada_fourier(expressao, variavel, w)`: Calcula a transformada de Fourier de uma expressao em relacao a uma variavel em dominio do tempo.
+- `inversa_fourier(expressao, w, t)`: Calcula a transformada inversa de Fourier de uma expressao em relacao a uma variavel em dominio da frequencia.
+- `soma_riemann(expressao, variavel, limite_inferior, limite_superior, numero_particoes)`: Calcula a soma de Riemann de uma expressao entre os limites especificados usando somas de intervalos.
+- `produto_riemann(expressao, variavel, limite_inferior, limite_superior, numero_particoes)`: Calcula o produto de Riemann de uma expressao entre os limites especificados usando produtos de intervalos.
+- `limite_lateral(expressao, variavel, ponto, lado='right')`: Calcula o limite lateral de uma expressao quando a variavel se aproxima de um ponto especifico.
+- `derivada_numerica_progressiva(expressao, variavel, ponto, h=1e-6)`: Calcula a derivada numerica progressiva de uma expressao em relacao a uma variavel em um ponto especifico.
+- `derivada_numerica_regressiva(expressao, variavel, ponto, h=1e-6)`: Calcula a derivada numerica regressiva de uma expressao em relacao a uma variavel em um ponto especifico.
+- `derivada_numerica_central(expressao, variavel, ponto, h=1e-6)`: Calcula a derivada numerica central de uma expressao em relacao a uma variavel em um ponto especifico.
+- `integral_numerica_trapezio(expressao, variavel, limite_inferior, limite_superior, numero_particoes)`: Calcula a integral numerica usando a regra do trapezio.
+- `integral_numerica_simpson(expressao, variavel, limite_inferior, limite_superior, numero_particoes)`: Calcula a integral numerica usando a regra de Simpson.
+- `serie_taylor(expressao, variavel, ponto, ordem)`: Calcula a serie de Taylor de uma expressao em relacao a uma variavel em torno de um ponto especifico ate uma determinada ordem.
+- `transformada_laplace(expressao, variavel, s)`: Calcula a transformada de Laplace de uma expressao em relacao a uma variavel em dominio do tempo (sem constantes de integracao).
+- `inversa_transformada_laplace(expressao, variavel, t)`: Calcula a transformada inversa de Laplace de uma expressao em relacao a uma variavel em dominio da frequencia.
+
+
+
+# Matrix
+
+A classe **Matrix** e uma implementacao simples de matrizes em Python, que permite a realizacao de operacoes basicas, como adicao, subtracao, multiplicacao, transposicao e calculo do determinante.
+
+## Instanciacao
+
+Para utilizar a classe **Matrix**, voce pode criar uma instancia fornecendo uma lista de listas que represente os elementos da matriz.
+
+```python
+from anybomt import Matrix
+
+data = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+matrix = Matrix(data)
+```
+
+## Metodos disponiveis
+
+- `__str__()`: Retorna uma representacao em string da matriz.
+- `__add__(other)`: Realiza a adicao de duas matrizes (ou matriz e escalar) com o mesmo tamanho.
+- `__sub__(other)`: Realiza a subtracao de duas matrizes (ou matriz e escalar) com o mesmo tamanho.
+- `__mul__(other)`: Realiza a multiplicacao de duas matrizes ou de uma matriz por um escalar.
+- `transpose()`: Retorna a matriz transposta.
+- `determinant()`: Calcula o determinante da matriz (somente para matrizes quadradas).
+
+## Observacoes
+
+- A adicao, subtracao e multiplicacao de matrizes so sao suportadas quando as matrizes tem o mesmo tamanho apropriado para cada operacao.
+- O calculo do determinante so e suportado para matrizes quadradas.
+- O calculo do determinante utiliza um algoritmo recursivo, o que pode nao ser eficiente para matrizes muito grandes.
+
+Suponha que queremos criar duas matrizes e realizar algumas operacoes basicas, como adicao, subtracao, multiplicacao e transposicao.
+
+```python
+# Importando a classe Matrix do arquivo anymatrix.py
+from anymatrix import Matrix
+
+# Criando duas matrizes como listas de listas
+matrix_data1 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+matrix_data2 = [
+    [9, 8, 7],
+    [6, 5, 4],
+    [3, 2, 1]
+]
+
+# Criando duas instancias da classe Matrix com as matrizes criadas acima
+matrix1 = Matrix(matrix_data1)
+matrix2 = Matrix(matrix_data2)
+
+# Imprimindo as matrizes
+print("Matriz 1:")
+print(matrix1)
+
+print("\nMatriz 2:")
+print(matrix2)
+
+# Realizando a adicao das matrizes
+addition_result = matrix1 + matrix2
+print("\nResultado da adicao:")
+print(addition_result)
+
+# Realizando a subtracao das matrizes
+subtraction_result = matrix1 - matrix2
+print("\nResultado da subtracao:")
+print(subtraction_result)
+
+# Realizando a multiplicacao das matrizes
+multiplication_result = matrix1 * matrix2
+print("\nResultado da multiplicacao:")
+print(multiplication_result)
+
+# Realizando a transposicao da matriz 1
+transpose_result = matrix1.transposta()
+print("\nResultado da transposicao da matriz 1:")
+print(transpose_result)
+
+# Calculando o determinante da matriz 1
+determinant_result = matrix1.determinante()
+print("\nDeterminante da matriz 1:")
+print(determinant_result)
+```
+
+Saida do codigo:
+
+```
+Matriz 1:
+1 2 3
+4 5 6
+7 8 9
+
+Matriz 2:
+9 8 7
+6 5 4
+3 2 1
+
+Resultado da adicao:
+10 10 10
+10 10 10
+10 10 10
+
+Resultado da subtracao:
+-8 -6 -4
+-2  0  2
+ 4  6  8
+
+Resultado da multiplicacao:
+30  24  18
+84  69  54
+138 114 90
+
+Resultado da transposicao da matriz 1:
+1 4 7
+2 5 8
+3 6 9
+
+Determinante da matriz 1:
+0
+```
+
+Neste exemplo, criamos duas matrizes (`matrix1` e `matrix2`) a partir de listas de listas. Em seguida, realizamos operacoes de adicao, subtracao e multiplicacao entre as matrizes. Tambem calculamos a transposta da `matrix1` e o determinante dela.
+
+Observe que o resultado do determinante da `matrix1` e zero. Isso ocorre porque a matriz `matrix1` nao e invertivel, ou seja, nao possui um determinante nao nulo, o que e um requisito para a existencia da matriz inversa.
+
+A classe **Matrix** fornece uma maneira simples de trabalhar com matrizes em Python e permite que voce realize operacoes basicas de forma direta e eficiente. Espero que este exemplo tenha sido util para demonstrar o uso da classe.
+
+
+**Descricao detalhada do pacote `anybomt` para publicacao no PyPI:**
+
+**Nome do pacote:** anybomt
+
+**Descricao:**
+`anybomt` e uma biblioteca Python que oferece diversas funcionalidades relacionadas à algebra linear, tornando-a uma ferramenta essencial para estudantes, engenheiros e cientistas que precisam realizar calculos matematicos envolvendo matrizes e sistemas lineares. A classe `AlgebraLinear` contem metodos estaticos para realizar operacoes basicas com matrizes, resolver sistemas de equacoes lineares, calcular a matriz inversa, elevar matrizes a uma potencia, calcular autovalores e autovetores, entre outros recursos avanados.
+
+**Caracteristicas principais:**
+
+1. **Multiplicacao de matriz por escalar:** O metodo `multiplicar_matriz_por_escalar(matriz, escalar)` permite multiplicar uma matriz por um escalar, ou seja, um numero real. Isso resulta em uma matriz em que cada elemento e multiplicado pelo valor do escalar. Essa operacao e util para ajustar o tamanho dos elementos da matriz, escalonar valores ou realizar outras transformacoes lineares.
+
+2. **Divisao de matriz por escalar:** O metodo `dividir_matriz_por_escalar(matriz, escalar)` realiza a divisao de cada elemento de uma matriz pelo valor do escalar fornecido. e importante notar que o escalar nao pode ser igual a zero, pois a divisao por zero e indefinida em matematica.
+
+3. **Multiplicacao de matriz por vetor:** Atraves da funcao `multiplicar_matriz_por_vetor(matriz, vetor)`, e possivel multiplicar uma matriz por um vetor. O numero de colunas da matriz deve ser igual ao tamanho do vetor para que a operacao seja valida. Esse calculo e comumente usado em varias aplicacoes da algebra linear, como sistemas de equacoes lineares e transformacoes lineares.
+
+4. **Resolucao de sistemas de equacoes lineares utilizando matrizes:** O metodo `resolver_sistema_linear(coeficientes, constantes)` permite resolver um sistema de equacoes lineares utilizando matrizes. Esse e um metodo eficiente para encontrar as solucoes de sistemas complexos de equacoes simultaneas.
+
+5. **Calculo da matriz inversa:** A funcao `matriz_inversa(matriz)` determina a matriz inversa para matrizes quadradas. A matriz inversa e uma ferramenta poderosa na algebra linear, pois permite resolver sistemas de equacoes lineares, calcular determinantes, entre outras aplicacoes.
+
+6. **Elevacao de matriz a uma potencia inteira:** O metodo `potencia_matriz(matriz, potencia)` permite elevar matrizes quadradas a uma potencia inteira. Essa operacao e util em diversos campos, como analise de series temporais, modelagem matematica e processamento de imagens.
+
+7. **Calculo de autovalores e autovetores de uma matriz:** O metodo `autovalores_autovetores(matriz)` permite calcular os autovalores e autovetores de uma matriz quadrada. Esses calculos tem aplicacoes importantes em diversas areas, como engenharia, ciencia da computacao e fisica.
+
+8. **Decomposicao LU de uma matriz:** A funcao `decomposicao_lu(matriz)` realiza a decomposicao LU de uma matriz quadrada em uma matriz triangular inferior e uma matriz triangular superior. Essa tecnica e amplamente utilizada em algoritmos numericos e metodos de resolucao de sistemas de equacoes lineares.
+
+9. **Decomposicao QR de uma matriz:** A funcao `decomposicao_qr(matriz)` efetua a decomposicao QR de uma matriz quadrada em uma matriz ortogonal e uma matriz triangular superior. Essa decomposicao e fundamental em muitos problemas de otimizacao e analise numerica.
+
+10. **Decomposicao de Cholesky de uma matriz simetrica positiva definida:** A funcao `decomposicao_cholesky(matriz)` realiza a decomposicao de Cholesky de uma matriz quadrada simetrica e positiva definida. Essa tecnica e especialmente util para resolver sistemas de equacoes lineares de forma eficiente.
+
+11. **Resolucao de sistemas de equacoes lineares usando o metodo de Gauss-Seidel:** O metodo `gauss_seidel(coeficientes, constantes, iteracoes=100, precisao=1e-9)` permite resolver sistemas de equacoes lineares de forma iterativa. Esse metodo e amplamente utilizado em problemas que exigem alto grau de precisao.
+
+12. **Interpolacao polinomial:** A funcao `interpolar_polinomial(pontos)` realiza a interpolacao polinomial de um conjunto de pontos utilizando o metodo de Lagrange. Esse recurso e util para aproximar funcoes desconhecidas a partir de um conjunto limitado de dados experimentais.
+
+13. **Ajuste de curvas por regressao linear:** A funcao `regressao_linear(pontos)` realiza o ajuste de curvas de um conjunto de pontos por uma reta utilizando regressao linear. Essa tecnica e util para modelar relacionamentos lineares entre variaveis.
+
+14. **Calculo de integrais definidas usando o metodo do trapezio:** O metodo `integracao_trapezio(funcao, limite_inferior, limite_superior, numero_trapezios)` permite calcular aproximadamente a integral definida de uma funcao utilizando a regra do trapezio. Essa tecnica e comumente usada em problemas de calculo integral.
+
+15. **Resolucao de equacoes diferenciais usando o metodo de Euler:** O metodo `metodo_euler(derivada, condicao_inicial, intervalo, passo)` possibilita resolver equacoes diferenciais de primeira ordem usando o metodo de Euler. Esse metodo numerico e valioso para simular sistemas dinamicos em diversas areas da ciencia e engenharia.
+
+**Observacoes:**
+- Cada funcao ou metodo possui uma descricao detalhada de seus parametros e retornos.
+- Alguns metodos estao marcados com comentarios como "Implementacao dos calculos dos autovalores e autovetores" e "Implementacao da decomposicao LU". Esses locais estao reservados para o desenvolvedor implementar as funcionalidades especificas.
+- A biblioteca `anybomt` e projetada para ser eficiente e de facil utilizacao, tornando as operacoes com matrizes e algebra linear acessiveis a todos os usuarios Python.
+
+**Autor:** [Seu Nome]
+
+**Licena:** [Licena do seu pacote (ex: MIT, BSD, Apache)]
