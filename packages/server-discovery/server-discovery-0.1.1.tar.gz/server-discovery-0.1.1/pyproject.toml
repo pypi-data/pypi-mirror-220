@@ -1,0 +1,7 @@
+[project]
+name = "server-discovery"
+version = "0.1.1"
+description = "Automatically find your server(s) by port on the local network"
+dependencies = ["pydantic", "netifaces"]
+readme = "README.md"
+urls = {"Homepage"="https://github.com/SamuLumio/server-discovery"}

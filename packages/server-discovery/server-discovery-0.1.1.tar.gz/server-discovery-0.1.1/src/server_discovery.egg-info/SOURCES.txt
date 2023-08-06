@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/server_discovery/__init__.py
+src/server_discovery/_broadcast.py
+src/server_discovery/_client.py
+src/server_discovery/_info_model.py
+src/server_discovery/_server.py
+src/server_discovery.egg-info/PKG-INFO
+src/server_discovery.egg-info/SOURCES.txt
+src/server_discovery.egg-info/dependency_links.txt
+src/server_discovery.egg-info/requires.txt
+src/server_discovery.egg-info/top_level.txt
