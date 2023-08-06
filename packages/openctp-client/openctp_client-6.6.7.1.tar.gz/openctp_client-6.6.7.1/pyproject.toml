@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "openctp-client"
+version = "6.6.7.1"
+authors = [
+    {name="Dennis Xie", email="dennisxie1992@outlook.com"}
+]
+description = "Clients of openctp-ctp"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pydantic>=2.0.3"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dennisxie/openctp-client"
+"Bug Tracker" = "https://github.com/dennisxie/openctp-client/issues"
