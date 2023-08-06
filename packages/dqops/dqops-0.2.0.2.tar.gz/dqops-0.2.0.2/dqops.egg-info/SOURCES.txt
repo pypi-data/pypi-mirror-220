@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+dqops/__init__.py
+dqops/__main__.py
+dqops/install.py
+dqops/py.typed
+dqops/startdqo.py
+dqops/version.py
+dqops.egg-info/PKG-INFO
+dqops.egg-info/SOURCES.txt
+dqops.egg-info/dependency_links.txt
+dqops.egg-info/entry_points.txt
+dqops.egg-info/requires.txt
+dqops.egg-info/top_level.txt
