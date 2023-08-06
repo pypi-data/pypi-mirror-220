@@ -1,0 +1,6 @@
+README.md
+framework_finder.egg-info/PKG-INFO
+framework_finder.egg-info/SOURCES.txt
+framework_finder.egg-info/dependency_links.txt
+framework_finder.egg-info/top_level.txt
+framework_finder.egg-info/zip-safe
