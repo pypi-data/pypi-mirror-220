@@ -1,0 +1,8 @@
+LICENCE.txt
+README.md
+pyproject.toml
+particleShield.egg-info/PKG-INFO
+particleShield.egg-info/SOURCES.txt
+particleShield.egg-info/dependency_links.txt
+particleShield.egg-info/top_level.txt
+particleShield/src/particleShield.py
