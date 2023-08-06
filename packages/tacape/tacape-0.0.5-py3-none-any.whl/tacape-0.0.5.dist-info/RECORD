@@ -1,0 +1,17 @@
+tacape/__init__.py,sha256=djG1eYXbcqwm5Gr_K3wQSs9MlzmDkePC1hp4OP0HGKA,232
+tacape/logo.py,sha256=tdtlyP3-qkmrWodSjxazRQRw101ok6sRV9lMYkDTgS4,266
+tacape/run_classifier.py,sha256=Vgb0vZaD7WmpdfNBR4JmMx8gWdYOUKaTzobus7zJcbo,1872
+tacape/run_generator.py,sha256=-MiEYFb5DED3vXEpS5v6_8ZetMzw_ie0LyayoOBQ8T4,4736
+tacape/train_classifier.py,sha256=U0-nT0LYroMjj4kt2MjNOnAIweezttyqWKrxJIQhv5Y,3810
+tacape/train_generator.py,sha256=hB20eOpK0a7Pedh1vnWTJmhQotJNke2_Qwr_f5sKAso,3614
+tacape/models/__init__.py,sha256=B_zIwHcareHucr4JqgdnFAVvDfFijR__w-SsyunG2xw,30
+tacape/models/layers.py,sha256=xgp0RICRpUgrbn_18tsvaWkA_D_dZ8CLz43xRDggNCo,1530
+tacape/models/model.py,sha256=e8boh62n5oNWCIe2pawyiC5wYPqj7eWnaITujOwVZdY,1167
+tacape/utils/__init__.py,sha256=AQT2L8X2AdWB_Wk__JStBuwtUvfTGz8wTFcR94_81Zo,18
+tacape/utils/load.py,sha256=XknlskZOrjcd5Z5M9ER5yxzDLqhxiU5YAPp9s388JDg,321
+tacape-0.0.5.dist-info/LICENSE,sha256=lL6wJjUrwH3bCmb2msANo8SHV4OUCyoWfR9FeG-T4XU,1064
+tacape-0.0.5.dist-info/METADATA,sha256=leKJ0FVUhphIdRuJprBKkSTHGSZHGh7KBkhtQSl54d4,7907
+tacape-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tacape-0.0.5.dist-info/entry_points.txt,sha256=TfKUjYa52O20d8pXWYEm76xX5T7w0xm-V4d4pkUcSCc,215
+tacape-0.0.5.dist-info/top_level.txt,sha256=2LcJzKwy0vqun3FbnQSXQGlBqZdxGMypEu26pZtvWQ0,7
+tacape-0.0.5.dist-info/RECORD,,
