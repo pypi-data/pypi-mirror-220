@@ -1,0 +1,17 @@
+odoo/addons/ssi_print_mixin/README.rst,sha256=BflN7DjE_gSsrUyn9GE2Zi6J9Q_f7JPp2YbunGKUJew,1230
+odoo/addons/ssi_print_mixin/__init__.py,sha256=PTTeGJo3rtQXstsJ4EOolojTWpazqTm2vUhDwkVzIvw,194
+odoo/addons/ssi_print_mixin/__manifest__.py,sha256=QI64tVaR6J0kmDJ_gUpUsJwuZVT1fw0HqYKNGe6R-q0,619
+odoo/addons/ssi_print_mixin/models/__init__.py,sha256=UDEubdc_IpP5bNC1RgdZ34-nvQwEqTxlN8P5LmLaZ7k,218
+odoo/addons/ssi_print_mixin/models/ir_actions_report.py,sha256=RpS3izMywDn-fQpjnl-ro2bFJuBKEqylHxMEO9mCK6M,1072
+odoo/addons/ssi_print_mixin/models/mixin_print_document.py,sha256=C8ztGV9D-t4WaT0jnw7KgSmC9K85vxJCvLHzFxidsF8,1994
+odoo/addons/ssi_print_mixin/security/ir.model.access.csv,sha256=2ybN3lL07AwjrpiKoxtO6wbpBDrlO7CZ_pVoTLSP71g,164
+odoo/addons/ssi_print_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo/addons/ssi_print_mixin/templates/mixin_print_templates.xml,sha256=-SU-KKvWQgen8k8h1OFBz-kvvKkXt1ywT777iY5ovqw,445
+odoo/addons/ssi_print_mixin/views/ir_actions_report_views.xml,sha256=0V3goE9eMyl_CWrLmS1Wnvc0KIdLjvEQ3L9Gu44JzzI,831
+odoo/addons/ssi_print_mixin/wizards/__init__.py,sha256=y2PsmbHJBMrQsUJC9E4se3qGPD5FlHzEoJeYII_gNhg,194
+odoo/addons/ssi_print_mixin/wizards/base_print_document.py,sha256=DvApDnp6TpBB3o4o5c4S5WS2eykinnB-aixRmG_bLVs,2545
+odoo/addons/ssi_print_mixin/wizards/base_print_document.xml,sha256=XYjq8fanU1xK2AjoOS-3i9-Ale25SzfrCZsY81rvBHU,1510
+odoo14_addon_ssi_print_mixin-14.0.1.1.1.dist-info/METADATA,sha256=D-KOgp0-MEA_n4GS_M7P0tr107SnI4fdKS4dkQT6_mU,1729
+odoo14_addon_ssi_print_mixin-14.0.1.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_print_mixin-14.0.1.1.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_print_mixin-14.0.1.1.1.dist-info/RECORD,,
