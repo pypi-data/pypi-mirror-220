@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: trdate
+Version: 1.0.0
+Summary: A utility library for working with dates and time
+Home-page: https://github.com/miomelliot/trdate
+License: MIT
+Author: Ostrovsky Andrey Yuryevich
+Author-email: miomelliot@gmail.com
+Requires-Python: >=3.11.4,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Project-URL: Repository, https://github.com/miomelliot/trdate.git
