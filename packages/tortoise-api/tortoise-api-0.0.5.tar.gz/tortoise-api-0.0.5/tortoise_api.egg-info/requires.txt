@@ -1,0 +1,3 @@
+starlette
+tortoise-orm[asyncpg]
+python-dotenv
