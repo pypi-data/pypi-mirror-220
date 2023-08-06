@@ -1,0 +1,8 @@
+__title__ = 'compiledb-plus'
+__description__ = 'Tool for generating Clang JSON Compilation Database files for make-based build systems. A fork of https://github.com/nickdiego/compiledb'
+__url__ = 'https://github.com/maxnilz/compiledb-plus'
+__version__ = '1.0.0'
+__author__ = 'maxnilz'
+__author_email__ = 'maxnilz@gmail.com'
+__license__ = 'GPLv3'
+__copyright__ = 'Copyright 2017-2019 Nick Yamane, Copyright 2023 maxnilz'
