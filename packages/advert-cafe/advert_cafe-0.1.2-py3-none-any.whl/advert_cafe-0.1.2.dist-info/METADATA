@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: advert-cafe
+Version: 0.1.2
+Summary: 
+Author: George Pamfilis
+Author-email: gpamfilis@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: netifaces (>=0.11.0,<0.12.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+
