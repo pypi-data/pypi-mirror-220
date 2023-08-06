@@ -1,0 +1,17 @@
+aocd/__init__.py,sha256=MJHyAL-EHtNkGxyUGl7bXYghq1qHEwcuuiSoTxU0Wik,1113
+aocd/_ipykernel.py,sha256=dARQFeJ1gONUax0SD5ixnNVvF4k1O8Sp6CQ7PMalGGc,952
+aocd/cli.py,sha256=k_6tXE8ZZl5JKr6KR7btyEGPVUuWw3trWNo8DhY57Wc,3711
+aocd/cookies.py,sha256=LLaYL59_ZsVR1Y4Ti16HPy9Kop52m2oDXAbNeGvTcnU,4822
+aocd/examples.py,sha256=yM8AKeH3D-CdxuzLG6X4ZGOAZw2sAhnZGR7zBkKACOs,10847
+aocd/exceptions.py,sha256=oZZ66Ius94cR4Nkv9tPg3fXQgI31mRDkS2Ain040Trg,543
+aocd/get.py,sha256=YtSIStj2QmUs_XeVLGqtoJF3FJbsNESLUkddiXIOog4,6088
+aocd/models.py,sha256=_EYA82ifoAwC5JP8kGAg5xYnIiBN3xKVOjjUn4_51Vc,34840
+aocd/post.py,sha256=F969Vx3FY14ptYVvoGsBMOtex5_DbdBwy202S41dv84,2259
+aocd/runner.py,sha256=k638j_XSzFOI51QUWxQhZdBv7vv6ff3ZMJEdy1RHGU0,13237
+aocd/utils.py,sha256=xGDlmefzz0UwJ6PDEYnZZi6TxcIAj0roQJ3RbJqmRTw,8195
+advent_of_code_data-2.0.0.dist-info/LICENSE,sha256=sDdX5cBRRpk3rmZ8hbYEfAUIYRdDqrlXmChOUkqf62o,1066
+advent_of_code_data-2.0.0.dist-info/METADATA,sha256=sNOQP9A5WQVpXcs2qvAMVVjcyhXkg2TNaNg9cKw9iWs,12092
+advent_of_code_data-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+advent_of_code_data-2.0.0.dist-info/entry_points.txt,sha256=1NahRy1MigvHvwyoB4Kf01qdhwM2YMFGkb7dajDb-_o,136
+advent_of_code_data-2.0.0.dist-info/top_level.txt,sha256=b0LekMCmohqRoroBX-8FUneWDXflOzG2oHWB8EsgOSA,5
+advent_of_code_data-2.0.0.dist-info/RECORD,,
