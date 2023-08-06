@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: imgopt
+Version: 0.1
+Summary: Compress & Optimize Images
+Home-page: UNKNOWN
+Author: Vinay Chaudhary
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+UNKNOWN
+
