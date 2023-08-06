@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: smqpp
+Version: 0.1.3
+Summary: Smartseq2 preprocessing toolkit
+Home-page: https://github.com/SharonWang/smqpp
+Author: Xiaonan Wang
+Author-email: xw251@cam.ac.uk
+License: MIT
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: anndata
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: patsy
+Requires-Dist: umap-learn
+
