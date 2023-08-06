@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: yautil
+Version: 0.0.66
+Summary: Yet Another Python util.
+Home-page: https://github.com/dhkim09a/pyutil
+Author: Donghwi Kim
+Author-email: dhkim09@kaist.ac.kr
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
