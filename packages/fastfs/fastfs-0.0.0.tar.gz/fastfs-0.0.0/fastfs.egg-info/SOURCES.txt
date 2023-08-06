@@ -1,0 +1,5 @@
+setup.py
+fastfs.egg-info/PKG-INFO
+fastfs.egg-info/SOURCES.txt
+fastfs.egg-info/dependency_links.txt
+fastfs.egg-info/top_level.txt
