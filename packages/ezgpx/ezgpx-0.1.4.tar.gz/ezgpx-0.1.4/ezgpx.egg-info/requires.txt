@@ -1,0 +1,6 @@
+pandas
+matplotlib
+basemap
+gmplot
+folium
+pytest
