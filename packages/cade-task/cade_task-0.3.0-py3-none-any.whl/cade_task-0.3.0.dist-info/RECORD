@@ -1,0 +1,9 @@
+cade_task/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cade_task/__main__.py,sha256=Qd-f8z2Q2vpiEP2x6PBFsJrpACWDVxFKQk820MhFmHo,59
+cade_task/cli.py,sha256=hNLJs-N7ArSQznQJLjJVUf1A1n5jAHDMHIMkX4PqP78,3788
+cade_task/lib.py,sha256=Sa4POErhbgM5cJObUn7V3Pzg0CG9AaFYcVH5afYmDGE,4230
+cade_task-0.3.0.dist-info/LICENSE,sha256=lXS4BGVA9wgGSrRte2L3fYVue7Ukqg3eJ_arsAFLxNY,1074
+cade_task-0.3.0.dist-info/METADATA,sha256=5q36qeCiVsmhPGG1cN3-QlZIBN811ir20ji8JX1hJak,3252
+cade_task-0.3.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+cade_task-0.3.0.dist-info/entry_points.txt,sha256=DNOYe3NLq9z0lc-fe70s1d1JoghNBRO0gGrDkK8SHsY,42
+cade_task-0.3.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+task=cade_task.cli:app
+
