@@ -1,0 +1,5 @@
+setup.py
+segment_assignment.egg-info/PKG-INFO
+segment_assignment.egg-info/SOURCES.txt
+segment_assignment.egg-info/dependency_links.txt
+segment_assignment.egg-info/top_level.txt
