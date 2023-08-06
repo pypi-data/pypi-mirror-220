@@ -1,0 +1,5 @@
+recursive-include tdcrpy/decayData/All-nuclides_PenNuc.zip
+recursive-include tdcrpy/decayData/All-nuclides_BetaShape.zip
+recursive-include tdrcpy/Quenching/alpha_toulene.txt
+recursive-include tdrcpy/Quenching/TandataUG.txt
+recursive-include tdrcpy/MCNP-MATRIX/matrice/fichier/*.txt
