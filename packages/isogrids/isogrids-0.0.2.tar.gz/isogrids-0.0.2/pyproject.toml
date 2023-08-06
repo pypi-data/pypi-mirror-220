@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isogrids"
+version = "0.0.2"
+authors = [
+  { name="Isaac Remy", email="iremy@uw.edu" },
+]
+description = "A package that generates and visualizes simple simulation environments and their respective scene graphs for planning-algorithm development"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/isremy/isogrids"
+"Bug Tracker" = "https://github.com/isremy/isogrids"
