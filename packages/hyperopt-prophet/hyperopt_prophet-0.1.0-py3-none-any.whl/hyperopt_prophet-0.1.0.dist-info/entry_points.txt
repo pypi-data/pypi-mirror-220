@@ -1,0 +1,3 @@
+[console_scripts]
+hyperopt_prophet=hyperopt_prophet:entrypoint
+

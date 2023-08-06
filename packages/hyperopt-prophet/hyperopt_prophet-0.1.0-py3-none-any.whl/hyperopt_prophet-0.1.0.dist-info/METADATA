@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: hyperopt-prophet
+Version: 0.1.0
+Summary: Integration of prophet forecasting with hyperopt, mlflow
+License: MIT
+Author: Carlos D. Escobar-Valbuena
+Author-email: carlosdavidescobar@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cloudpickle (>=2.2.1,<3.0.0)
+Requires-Dist: cython (>=3.0.0,<4.0.0)
+Requires-Dist: hyperopt (>=0.2.7,<0.3.0)
+Requires-Dist: mlflow (>=2.5.0,<3.0.0)
+Requires-Dist: mlflowops (>=0.1.1,<0.2.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: prophet (>=1.1.4,<2.0.0)
+Requires-Dist: pydantic (>=2.0.3,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Hyperopt Prophet
+
+**Integration of prophet forecasting with hyperopt, mlflow**
+This implementation is based on the [Databricks AutoML](https://github.com/databricks/automl) repository.
+
+## Setup
+
+### Quick Install
+
+```shell
+python -m pip install hyperopt_prophet
+```
+
+### Build from source
+
+Clone the repository
+
+```shell
+git clone https://github.com/Broomva/hyperopt_prophet.git
+```
+
+Install the package
+
+``` shell
+cd hyperopt_prophet && make install
+```
+
+### Build manually
+
+After cloning, create a virtual environment
+
+```shell
+conda create -n hyperopt_prophet python=3.9
+conda activate hyperopt_prophet
+```
+
+Install the requirements
+
+```shell
+pip install -r requirements.txt
+```
+
+Run the python installation
+
+```shell
+python setup.py install
+```
+
+## Usage
+
+```python
+import hyperopt_prophet 
+```
+
+## Attribution
+
+Hyperopt Prophet builds upon the hard work of others. Here are the original leveraged repositories:
+
+- [Databricks AutoML](https://github.com/databricks/automl)
+
