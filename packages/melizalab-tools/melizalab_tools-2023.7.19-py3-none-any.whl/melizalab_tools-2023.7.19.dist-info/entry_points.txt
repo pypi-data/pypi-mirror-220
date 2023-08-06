@@ -1,0 +1,2 @@
+[console_scripts]
+group-kilo-spikes = dlab.kilo:run_group_spikes
