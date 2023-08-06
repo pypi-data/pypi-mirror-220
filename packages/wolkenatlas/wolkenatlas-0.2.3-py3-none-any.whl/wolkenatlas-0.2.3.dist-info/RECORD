@@ -1,0 +1,15 @@
+wolkenatlas/__init__.py,sha256=YZH2wBMsCQOsjogNxAglSc5JjqkVuj2ns6wpaFnV6Lg,69
+wolkenatlas/constants.py,sha256=NQdwIzZiq3lju3PC8_x8-zI5El1CuCBNDhaL2tPJyZQ,1391
+wolkenatlas/download.py,sha256=DesluBSzAy279s4h1KWGlgXg7djjzm1WYhYyY2gAc_E,6332
+wolkenatlas/embedding.py,sha256=hwxJ4JgMEP1EPNesIO1pFzux8D58AFvrkrhygtsqyTc,10285
+wolkenatlas/encoder.py,sha256=Y6oqHmbp8CY_p7d9q39QWB7AJM6e_62E8xUuGg9x_Pw,1849
+wolkenatlas/preprocessing.py,sha256=Drr4Sb86WVpTNuiPmFCSlrOXZglM5KjJpba_FB27sbQ,4682
+wolkenatlas/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wolkenatlas/util/data_processing.py,sha256=6LwfkE6U2nbGi7YLUB8MZL2K8wVSNavaiteg4TCks5s,6219
+wolkenatlas/util/file_processing.py,sha256=LdSlLaKWDycfaxIPFLXrZn_c5gVubDmgngmWi3VN0Bs,2249
+wolkenatlas-0.2.3.dist-info/LICENSE,sha256=9ag7w7vWOjXZA8mCQlz-lFcujWdNRH4S3v-zXvaKswQ,1063
+wolkenatlas-0.2.3.dist-info/METADATA,sha256=eXsGzcCe_mtOcDVGE2YtFr9m_JZ5A_kK-Po7OL6feNU,3350
+wolkenatlas-0.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+wolkenatlas-0.2.3.dist-info/entry_points.txt,sha256=xPp6vFitqG85D-kOcIEWjIZmvD2l53YiMbrwjZFpjZw,39
+wolkenatlas-0.2.3.dist-info/top_level.txt,sha256=3IXtZ7ZfeogBSWrQ7x6BoX3lNcLRZcaVMCGjO9Iovys,12
+wolkenatlas-0.2.3.dist-info/RECORD,,
