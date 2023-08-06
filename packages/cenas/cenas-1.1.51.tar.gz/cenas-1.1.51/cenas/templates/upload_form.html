@@ -1,0 +1,350 @@
+<!-- upload_form.html , change parameters on nextflow config file -->
+
+<!-- Sidebar -->
+<div id="sidebar">
+    <h3>Workflow Options</h3>
+    <ul>
+        <li><a href="#" onclick="showWorkflowSection('short-read-assembly')">Short Read Assembly</a></li>
+        <li><a href="#" onclick="showWorkflowSection('binning')">Binning</a></li>
+        <li><a href="#" onclick="showWorkflowSection('long-read-assembly')">Long Read Assembly</a></li>
+    </ul>
+</div>
+
+<!-- Short Read Assembly section -->
+<div id="short-read-assembly-section" style="display: none;">
+    
+    <!-- short read assembly -->
+    <label for="assembly-mode">Assembly Mode:</label>
+    <select id="assembly-mode" name="assembly-mode" onchange="showAssemblyOptions(this.value)">
+        <option value="default">Default</option>
+        <option value="regular">Regular</option>
+        <option value="no_mercy">No Mercy</option>
+    </select>
+    
+    <div id="assembly-options" style="display: none;">
+        <label for="min-kmer">Min-kmer:</label>
+        <input type="number" id="min-kmer" name="min-kmer" min="1">
+        <label for="max-kmer">Max-kmer:</label>
+        <input type="number" id="max-kmer" name="max-kmer" min="1">
+        <label for="kmer-step">Kmer-step:</label>
+        <input type="number" id="kmer-step" name="kmer-step" min="1">
+    </div>
+
+    <!-- Host-removal -->
+    <label for="host-removal">Host Contamination?</label>
+    <select id="host-removal" name="host-removal" onchange="showGenomeInput(this.value)">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+    </select>
+     
+    <div id="genome-input" style="display: none;">
+        <label for="genome-id">NCBI ID of the Genome:</label>
+        <input type="text" id="genome-id" name="genome-id">
+    </div>
+
+    <!-- Memory for bbwrap -->
+    <label for="mem">Memory for bbwrap: (e.g. 400 GB)</label>
+    <input type="text" id="mem" name="mem">
+
+    <!-- Threads to be run by the system -->
+    <label for="Threads">Number of threads to be used:</label>
+    <input type="number" id="Threads" name="Threads" min="1">
+
+    <!-- output folder -->
+    <label for="Output folder">Output folder:</label>
+    <input type="text" id="Output folder" name="Output folder">
+</div>
+     
+
+<!-- Binning section -->
+<div id="binning-section" style="display: none;">
+
+    <!-- Binning short reads (Memory) -->
+    <label for="Memory for SqueezeMeta (GB)">Memory for SqueezeMeta (GB)</label>
+    <input type="number" id="Memory-for-SqueezeMeta" name="Memory-for-SqueezeMeta">
+    
+
+    <!-- Database SqueezeMeta Management -->
+    <label for="squeeze-meta-database">SqueezeMeta Database:</label>
+    <select id="squeeze-meta-database" name="squeeze-meta-database" onchange="showDatabaseInput(this.value)">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+        <option value="Yes, but overwrite">Yes, but overwrite</option>
+    </select>
+
+    <div id="database-input">
+        <label for="database-dir">Database Directory:</label>
+        <input type="text" id="database-dir" name="database-dir">
+    </div>
+</div>
+
+<!-- Long Read Assembly section -->
+<div id="long-read-assembly-section" style="display: none;">
+        
+    <!-- Long reads -->
+    <!-- Parameters chopper (long reads) -->
+    <label for="minQ">minQ:</label>
+    <input type="number" id="minQ" name="minQ" min="1">
+
+    <label for="minL">minL:</label>
+    <input type="number" id="minL" name="minL" min="1">
+</div>
+
+<!-- Server Options and Submit Button -->
+<div id="server-options" style="display: none;">
+    <label for="server-address">Remote Server Address:</label>
+    <input type="text" id="server-address" name="server-address">
+    
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    
+    <!-- Move the "Submit" button inside the server-options div -->
+    <button type="submit" onclick="submitForm()">Submit</button>
+</div>
+
+
+
+<script>
+    // Function to show/hide workflow sections
+// Function to show/hide workflow sections
+function showWorkflowSection(section) {
+    // Hide all sections
+    document.getElementById("short-read-assembly-section").style.display = "none";
+    document.getElementById("binning-section").style.display = "none";
+    document.getElementById("long-read-assembly-section").style.display = "none";
+
+    // Show selected section
+    if (section === "short-read-assembly") {
+        document.getElementById("short-read-assembly-section").style.display = "block";
+    } else if (section === "binning") {
+        document.getElementById("binning-section").style.display = "block";
+    } else if (section === "long-read-assembly") {
+        document.getElementById("long-read-assembly-section").style.display = "block";
+    }
+    
+    // Reset form fields
+    resetForm();
+}
+
+// Function to reset form fields
+function resetForm() {
+    // Reset assembly options
+    document.getElementById("assembly-mode").value = "default";
+    document.getElementById("min-kmer").value = "";
+    document.getElementById("max-kmer").value = "";
+    document.getElementById("kmer-step").value = "";
+
+    // Reset binning options
+    document.getElementById("Memory-for-SqueezeMeta").value = "";
+    document.getElementById("squeeze-meta-database").value = "No";
+    document.getElementById("database-dir").value = "";
+
+    // Reset long read assembly options
+    document.getElementById("minL").value = "";
+    document.getElementById("minQ").value = "";
+
+    // Reset server options
+    document.getElementById("server-address").value = "";
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+}
+
+// Function to get the selected workflow
+function getSelectedWorkflow() {
+    var options = document.getElementsByName("workflow-options");
+    for (var i = 0; i < options.length; i++) {
+        if (options[i].checked) {
+            return options[i].value;
+        }
+    }
+    return null;
+}
+
+// Function to submit the form
+function submitForm() {
+        // Perform form submission logic
+
+        // Example: Access the values entered by the user
+        var selectedWorkflow = getSelectedWorkflow();
+
+        // Validate the selected workflow options
+        if (selectedWorkflow === "short-read-assembly") {
+            if (!validateShortReadAssemblyOptions()) {
+                return;
+            }
+        } else if (selectedWorkflow === "binning") {
+            if (!validateBinningOptions()) {
+                return;
+            }
+        } else if (selectedWorkflow === "long-read-assembly") {
+            if (!validateLongReadAssemblyOptions()) {
+                return;
+            }
+        }
+
+        // Call the function to show server options
+        showServerOptions();
+
+        // The form submission will happen when the "Submit" button inside server-options is clicked.
+        // You can remove the call to submitForm() from this function if you want to handle form submission differently.
+    }
+
+    // Function to show the server options
+    function showServerOptions() {
+        // Show server options and submit button
+        document.getElementById("server-options").style.display = "block";
+
+        // Show success message (optional, you can remove this line if you don't need the success message to appear immediately)
+        document.getElementById("success-message").style.display = "block";
+    }
+
+
+function validateBinningOptions() {
+
+        // validation of Memory for squeezemeta 
+        var memory = document.getElementById("Memory-for-SqueezeMeta").value;
+        if (memory === "") {
+            alert("Please fill in the Memory for SqueezeMeta option.");
+            return false;
+        }
+
+        var squeezeMetaDatabase = document.getElementById("squeeze-meta-database").value;
+        if (squeezeMetaDatabase === "Yes" || squeezeMetaDatabase === "Yes, but overwrite") {
+            var databaseDir = document.getElementById("database-dir").value;
+            if (databaseDir === "") {
+                alert("Please fill in the Database Directory option.");
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+// Function to validate the short read assembly options
+function validateShortReadAssemblyOptions() {
+        // Perform validation logic for the short read assembly options
+        // Return true if the options are valid, otherwise return false
+        // ...
+
+        // Example validation (dummy logic)
+        var assemblyMode = document.getElementById("assembly-mode").value;
+        if (assemblyMode === "") {
+            alert("Please select an Assembly Mode.");
+            return false;
+        }
+
+        var kmin = document.getElementById("min-kmer").value;
+        if (kmin === "") {
+            alert("Please fill in with a number");
+            return false;
+        }
+
+        var kmax = document.getElementById("max-kmer").value;
+        if (kmin === "") {
+            alert("Please fill in with a number");
+            return false;
+        }
+
+        var kstep = document.getElementById("kmer-step").value;
+        if (kstep === "") {
+            alert("Please fill in with a number");
+            return false;
+        }
+
+        var hostr = document.getElementById("host-removal").value;
+        if (hostr === "") {
+            alert("Please select yes or no");
+            return false;
+        }
+        
+        var genomeid = document.getElementById("genome-id").value;
+        if (genomeid === "") {
+            alert("Please fill in the genomeID")
+            return false;
+        }
+
+        var memm = document.getElementById("mem").value;
+        var memmPattern = /^\d+\sGB$/
+        if (memm === "") {
+            alert("Please fill in with the memory for bbwrap.sh e.g. 400 GB");
+            return false;
+        } else if (!memm.match(memPattern)) {
+            alert("Please enter the memory in the correct format (e.g., 400 GB).");
+            return false;
+        }
+        
+        var outputfolder = document.getElementById("Output folder").value;
+        if (outputfolder === "") {
+            alert("Please fill in the output folder")
+            return false;
+        }
+
+        return true;
+    }
+
+    // Function to validate the long read assembly options
+function validateLongReadAssemblyOptions() {
+        
+   
+        var minL = document.getElementById("minL").value;
+        if (minL === ""){
+            alert("Please fill in the minL option");
+            return false;
+        }
+
+        var minQ = document.getElementById("minQ").value;
+        if (minQ === "") {
+            alert("Please fill in the minQ option.");
+        return false;
+        }
+
+    return true;
+    }
+
+    
+    // Function to show the server options and submit button
+
+       // 4) Make an asynchronous request to the server. You can use JavaScript's XMLHttpRequest or the more modern fetch() API to send the form data to the server. This request can be used to send the data to a backend endpoint or trigger server-side processing 
+        // 5) Handle the server response. Once the server processes the request, you can handle the response.
+
+</script>
+
+<script>
+
+    // function for host removal input for short reads
+    function showGenomeInput(value) {
+        var genomeInput = document.getElementById("genome-input");
+        if (value === "Yes") {
+            genomeInput.style.display = "block";
+        } else {
+            genomeInput.style.display = "none";
+        }
+    }
+
+    // function for SqueezeMeta database management
+    function showDatabaseInput(value) {
+        var databaseInput = document.getElementById("database-input");
+    
+        if (value === "Yes, but overwrite") {
+            databaseInput.style.display = "block";
+            document.getElementById("overwrite-database").value = "true";
+        } else {
+            databaseInput.style.display = "block";
+            document.getElementById("overwrite-database").value = "false";
+        }
+    }
+
+    function showAssemblyOptions(value) {
+        var assemblyOptions = document.getElementById("assembly-options");
+
+        if (value === "regular" || value === "no_mercy") {
+            assemblyOptions.style.display = "block";
+        } else { 
+            assemblyOptions.style.display = "none";
+        }
+    }
+        
+</script>
