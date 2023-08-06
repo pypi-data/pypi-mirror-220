@@ -1,0 +1,23 @@
+name: example-environment
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - requests
+  # Jupyter
+  - jupyterlab=1.0
+  - nbconvert=5.5
+  - widgetsnbextension=3.5
+  # Python Kernel
+  - ipykernel=5.1
+  - ipywidgets=7.5
+  - ipyleaflet=0.11.1
+  - altair=3.1
+  - bqplot=0.11.6
+  - dask=2.1
+  - matplotlib=3.1
+  - python=3.7
+  - sympy=1.4
+  - pyyaml
+  - traittypes==0.2.1
+  - invoke=1.2
