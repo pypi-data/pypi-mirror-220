@@ -1,0 +1,6 @@
+setup.py
+dataset.sh.egg-info/PKG-INFO
+dataset.sh.egg-info/SOURCES.txt
+dataset.sh.egg-info/dependency_links.txt
+dataset.sh.egg-info/top_level.txt
+dataset_sh/__init__.py
