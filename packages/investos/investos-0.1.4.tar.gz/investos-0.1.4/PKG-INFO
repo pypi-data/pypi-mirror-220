@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: investos
+Version: 0.1.4
+Summary: For investors who want to focus on generating alpha
+Home-page: https://investos.io/
+License: Creative Commons Attribution-NonCommercial-ShareAlike (CC-BY-NC-SA)
+Keywords: investing,alpha,backtesting,portfolio,optimization
+Author: Charlie Reese
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: cvxpy (>=1.3.1,<2.0.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: pandas (>=2.0.1,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Documentation, https://investos.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/charliereese/investos
+Description-Content-Type: text/markdown
+
+# InvestOS
+
+**InvestOS** (/InvEst əʊˈes/) is a Python library for investors who want to focus on generating alpha. As it stands today, it provides reliable backtesting and portfolio optimization software for investors... but we have bigger ambitions!
+
+As mentioned in our [first blog article](https://blog.investos.io/why-we-created-investos/):
+
+> From the start, our goal has been to support all possible optimization strategies and backtesting requirements through flexible, extensible code, while prioritizing reliability and ease-of-use.
+> Once we feel we’ve achieved that goal as it pertains to portfolio optimization and backtesting, we plan to begin productizing other (non-IP) parts of investors’ alpha-generation process.
+
+For more information, visit [investos.io](https://investos.io).
+
