@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "gulf-id-scanner"
+version = "0.1.0b0"
+description = "Python websocket client for reading Gulf IDs"
+authors = ["Rami Mousleh <engrbm87@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/Gallagher-ME/gulf_id_scanner"
+repository = "https://github.com/Gallagher-ME/gulf_id_scanner/releases"
+packages = [{include = "gulf_id_scanner"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+websockets = "^11.0.3"
+aiohttp = "^3.8.4"
+orjson = "^3.9.2"
+typing-extensions = "^4.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.278"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
