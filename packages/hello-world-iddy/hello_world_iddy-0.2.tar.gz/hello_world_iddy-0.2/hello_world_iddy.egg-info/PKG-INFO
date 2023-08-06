@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hello-world-iddy
+Version: 0.2
+Summary: Test
+Home-page: https://github.com/iddy-ani/hello_world_iddy
+Author: Idriss Animashaun
+Author-email: idriss.animashaun@intel.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Test
