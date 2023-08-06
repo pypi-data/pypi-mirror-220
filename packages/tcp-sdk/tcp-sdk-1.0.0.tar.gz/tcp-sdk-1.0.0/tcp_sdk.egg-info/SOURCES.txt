@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+tcp/__init__.py
+tcp/client.py
+tcp/clientAPI.py
+tcp/utils.py
+tcp_sdk.egg-info/PKG-INFO
+tcp_sdk.egg-info/SOURCES.txt
+tcp_sdk.egg-info/dependency_links.txt
+tcp_sdk.egg-info/requires.txt
+tcp_sdk.egg-info/top_level.txt
+tests/__init__.py
