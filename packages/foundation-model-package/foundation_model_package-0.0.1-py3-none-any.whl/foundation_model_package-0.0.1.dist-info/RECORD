@@ -1,0 +1,11 @@
+foundation_model_pkg/__init__.py,sha256=SXUyE9hmQeYBcmIxmXrAZAIeYfMHAA7cy2vPwgRceTo,82
+foundation_model_pkg/tools/__init__.py,sha256=SXUyE9hmQeYBcmIxmXrAZAIeYfMHAA7cy2vPwgRceTo,82
+foundation_model_pkg/tools/foundation_model.py,sha256=87QauadUVLF-0XXDN50yYaIbe7432gFZf--foyJeWxI,6394
+foundation_model_pkg/tools/utils.py,sha256=RoAvedJ8icOuroMy2nh0p9KI9TAl5xz3h0r7fnlPqSU,524
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_my_tool_1.py,sha256=OnTQnZh7LnR_LKVtNv6qetRRuCNtmOW9x7PysSWT29Q,713
+foundation_model_package-0.0.1.dist-info/METADATA,sha256=xV8f0Kf2h42eWoZ4NI80Y_1rAH6h7ejW-cWDiOrAQ6w,137
+foundation_model_package-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+foundation_model_package-0.0.1.dist-info/entry_points.txt,sha256=PvP_FYy1aZoQdPluwT7IntjRLqPEhSojKibBYfrfD2o,87
+foundation_model_package-0.0.1.dist-info/top_level.txt,sha256=YL4aDo7wFj-nHSvOC1cPNg9xSFtiStxVGmANgri26Wk,27
+foundation_model_package-0.0.1.dist-info/RECORD,,
