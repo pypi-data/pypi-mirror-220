@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "charge-power"
+version = "0.1.0"
+description = "Small utility to track current charge/discharge wattage based on system sensors (Linux only)"
+authors = ["Aleksei Sokol <kanootoko@gmail.com>"]
+urls = { repository = "https://github.com/kanootoko/charge_power" }
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "charge_power" }]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rich = "^13.4.2"
+click = "^8.1.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+pylint = "^2.17.4"
+isort = "^5.12.0"
+pre-commit = "^3.3.3"
+
+[tool.poetry.scripts]
+charge-power = "charge_power.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ['py310']
+line_length = 120
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.isort]
+known_local_folder = "charge_power"
+lines_after_imports = 2
+multi_line_output = 3
+line_length = 120
+include_trailing_comma = true

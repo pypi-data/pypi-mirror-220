@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: charge-power
+Version: 0.1.0
+Summary: Small utility to track current charge/discharge wattage based on system sensors (Linux only)
+License: MIT
+Author: Aleksei Sokol
+Author-email: kanootoko@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.4,<9.0.0)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Project-URL: repository, https://github.com/kanootoko/charge_power
+Description-Content-Type: text/markdown
+
+# charge-power
+
+This is an utility to track power used or given to the laptop
