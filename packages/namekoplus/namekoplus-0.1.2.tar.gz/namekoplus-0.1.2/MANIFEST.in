@@ -1,0 +1,3 @@
+include *.py *.md
+recursive-include namekoplus/chassis *.py
+recursive-include namekoplus/templates *.py *.yml
