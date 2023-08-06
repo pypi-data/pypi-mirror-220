@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "EnvisionRiskRaaS"
+version = "1.0.0"
+authors = [
+  { name="Jonas Hal", email="jonas.hal@envisionrisk.com" },
+]
+description = "EnvisionRisk's Risk-as-a-service package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://www.envisionrisk.com/"
+"GitHub profile" = "https://github.com/EnvisionRisk"
