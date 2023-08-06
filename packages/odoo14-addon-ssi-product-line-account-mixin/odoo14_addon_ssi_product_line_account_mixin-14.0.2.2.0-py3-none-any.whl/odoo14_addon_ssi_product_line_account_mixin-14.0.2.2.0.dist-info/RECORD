@@ -1,0 +1,11 @@
+odoo/addons/ssi_product_line_account_mixin/README.rst,sha256=c47k5xAHmQRyY7tkD5zl5vaaUJ8sKQlHLduKDV7Shcw,1248
+odoo/addons/ssi_product_line_account_mixin/__init__.py,sha256=X3ayW9k4OH3xqib3X0KEzYY9_pqaAhP2YdhFFVEJSvo,181
+odoo/addons/ssi_product_line_account_mixin/__manifest__.py,sha256=0GqilWHmprQ1sDsZUviVOwHhMGWYfwpCZzJCkdt-oYg,619
+odoo/addons/ssi_product_line_account_mixin/menu.xml,sha256=h6B5lW9ppC4RsYm4t1lNkiP1DqpeMNFj_sCaAAn3ha4,356
+odoo/addons/ssi_product_line_account_mixin/models/__init__.py,sha256=lEHVyCpYmMXee_2dpmwbiUXy_0Yn3rBTKFLMPm7tRTk,201
+odoo/addons/ssi_product_line_account_mixin/models/mixin_product_line_account.py,sha256=rf4WzybZpORTssDaMqDlu0C0VLTMqn2t4zT3mSbPzLI,3388
+odoo/addons/ssi_product_line_account_mixin/views/mixin_product_line_mixin_views.xml,sha256=oOqCw4n6qYW_YGToTqsN9quNZ671Odi92S-W8U3Y7-M,4786
+odoo14_addon_ssi_product_line_account_mixin-14.0.2.2.0.dist-info/METADATA,sha256=fntQcnkU_IPhfmBPYMNXnO-wRtMF1rsJY7XYHKv99Lg,1896
+odoo14_addon_ssi_product_line_account_mixin-14.0.2.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_product_line_account_mixin-14.0.2.2.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_product_line_account_mixin-14.0.2.2.0.dist-info/RECORD,,
