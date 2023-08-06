@@ -1,0 +1,8 @@
+{
+    "urls": [
+        "https://a.tile.openstreetmap.org/{zoom}/{col}/{row}.png",
+        "https://b.tile.openstreetmap.org/{zoom}/{col}/{row}.png",
+        "https://c.tile.openstreetmap.org/{zoom}/{col}/{row}.png"
+    ],
+    "name": "openstreetmap"
+}

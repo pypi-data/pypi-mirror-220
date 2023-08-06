@@ -1,0 +1,9 @@
+{
+    "urls": [
+        "https://mt0.google.com/vt/lyrs=m&hl=en&x={col}&y={row}&z={zoom}&s=Ga",
+        "https://mt1.google.com/vt/lyrs=m&hl=en&x={col}&y={row}&z={zoom}&s=Ga",
+        "https://mt2.google.com/vt/lyrs=m&hl=en&x={col}&y={row}&z={zoom}&s=Ga",
+        "https://mt3.google.com/vt/lyrs=m&hl=en&x={col}&y={row}&z={zoom}&s=Ga"
+    ],
+    "name": "google-map"
+}

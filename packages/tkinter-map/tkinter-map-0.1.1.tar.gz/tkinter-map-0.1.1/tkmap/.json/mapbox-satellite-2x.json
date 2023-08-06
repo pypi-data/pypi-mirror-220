@@ -1,0 +1,10 @@
+{
+    "urls": [
+        "https://api.mapbox.com/v4/mapbox.satellite/{zoom}/{col}/{row}@2x.jpg?access_token={token}"
+    ],
+    "name": "mapbox-satellite-2x",
+    "token": "",
+    "username":"moustikitos",
+    "tile_w": 512,
+    "tile_h": 512
+}
