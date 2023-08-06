@@ -1,0 +1,64 @@
+[build-system]
+#requires = ["setuptools>=61.0"]
+#build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "sysml2py"
+version = "0.4.0"
+authors = [
+  { name="Christopher Cox", email="chris.cox@westfall.io" },
+]
+description = "SysML v2.0 Parser"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src/sysml2py", "src"]
+
+[tool.setuptools.package-data]
+grammar = ["*.tx"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[tool.semantic_release]
+branch = "main"
+version_variable = "pyproject.toml:version"
+version_source = "tag"
+commit_version_number = true # required for version_source = "tag"
+tag_commit = true
+commit_parser = "semantic_release.history.emoji_parser"
+patch_without_tag = true
+build_command = "pip install poetry && poetry build"
+#build_command = "pip install build && python -m build"
+
+[project.urls]
+"Homepage" = "https://github.com/Westfall-io/sysml2py"
+"Bug Tracker" = "https://github.com/Westfall-io/sysml2py/issues"
+
+[tool.poetry]
+name = "sysml2py"
+version = "0.4.0"
+description = ""
+authors = ["Christopher Cox <chris.cox@westfall.io>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+textx = "^3.1.1"
+astropy = "^5.3.1"
+pyyaml = "^6.0.1"
