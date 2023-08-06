@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: physical_sources
+Version: 0.7.5
+Summary: A collection of classes that can be used to build acoustic sources from the NOISEFILE format. It also contains classes to read the binary representations born from the author's dissertation
+Home-page: https://gitlab.com/physicalpropagation/physcial_sources
+Author: Dr. Frank Mobley
+Author-email: frank.mobley.1@afrl.af.mil
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# ![Image](./GhostEye.png "GhostEye") physical_sources
+
+This is a collection of classes meant to provide access to acoustic source levels that were contained within the initial
+release of the Counter Listener Acoustic Warfare Software (CLAWS). But with the changes to the releasibility of the code
+and data from CLAWS, a number of classes were removed from the distribution. 
+
+## NOISEFILE
+The _NOISEFILE_ representation of the various aircraft is retained, since these source descriptions are deemed unclassified
+and publically available through the various community noise releases. These data come as the static, ground-based measurements
+that define the semicircular data from the nose to the tail, on the left side of the aircraft. The second set of data exists
+within the flight database. This data is a collection of single spectra that were integrated as the __loudest__ portion of the
+over-flight data. As such, it provides an over-estimate at the majority of the locations around the aircraft.
+
+These datasets exist in a single library file, that can be loaded and then searched for the specific aircraft/power setting
+combination that is desired. Each element within the library exists as its own class that can be extracted and then saved
+externally as another file. These files can then be loaded without consideration for the remainder of the acoustic data.
+
+### Usage - Loading Flight NOISEFILE data extracted from the library previously
+    filename = str(Path(__file__).parents[3]) + "/_test data/physical_sources/acoustic_source/approach power.nf"
+    nfas = NoiseFileAcousticSource(filename)
+    s = SphericalCoordinate()
+
+    spl1 = nfas._sound_pressure_levels
+    spl2 = nfas.sound_pressure_level(s)
+
+
+
+# 2023
+## May
++ Creation of the package
++ Added functions for the plotting of the surface
++ Moved functions for calculating the harmonic series expansion from separate classes to functions in the harmonic series representation
+
+## June
++ Updated the class for reading the EEG data to obtain a Waveform object from the selected channel within the listing
++ Refactored the HarmonicSeries class to inherit from the ISphereSource interface.
+
+## July
++ Removed the EEG structure from the physical sources as many of the information that we are interested in exploring exists within MNE.
++ Increased version
