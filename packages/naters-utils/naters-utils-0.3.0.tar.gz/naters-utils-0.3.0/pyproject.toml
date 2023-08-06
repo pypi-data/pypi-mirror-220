@@ -1,0 +1,25 @@
+[project]
+name = "naters-utils"
+authors = [{name = "Nater0214", email = "gamer@nater0214.com"}]
+version = "0.3.0"
+requires-python = ">=3.7"
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+python_functions="*_test"
+pythonpath = [
+  "src"
+]
