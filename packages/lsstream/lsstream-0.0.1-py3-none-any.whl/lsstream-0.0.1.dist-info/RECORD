@@ -1,0 +1,12 @@
+lsstream/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lsstream/file_generation.py,sha256=EEM9oK0ikHt8Fgj4shmdftMz21Z7jTOdQyX15BW-7Zc,1118
+lsstream/main.py,sha256=b7Au4vn7ZUc1icRGw7JvKZTp4LtSU2J6GB7yXLksOSA,2303
+lsstream/prompts.py,sha256=VXuZt3k9-sahO2evnANLAr47qDdlozkvHrh0a7IkpZA,834
+lsstream/style.py,sha256=GF2CMHUj9Ws2bjeH9PZufAmGQa8uLiTGXS25cs1dk3k,215
+lsstream/template.py,sha256=z6JTxITfsOWW5cXBKOHU19-kwrNT9UxRo2gRalAd4Bo,164
+lsstream/test.py,sha256=VJiSiAgHIE1JD4uTLvV93-JKEQv38KWum34O6W_TBXw,278
+lsstream-0.0.1.dist-info/LICENSE,sha256=rZbpcFnfijRTdb-UYEdHTQW95kixfNOAdNdv0UVOlj0,1082
+lsstream-0.0.1.dist-info/METADATA,sha256=z1Yl7XSzMgYcQMTcgcUi4Hyyke6YyN7YdWFiCELDaF4,749
+lsstream-0.0.1.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+lsstream-0.0.1.dist-info/top_level.txt,sha256=P44iIs0YLPWBYvkQaNsqxKeBVSMNavufb_4kem6rn_M,9
+lsstream-0.0.1.dist-info/RECORD,,
