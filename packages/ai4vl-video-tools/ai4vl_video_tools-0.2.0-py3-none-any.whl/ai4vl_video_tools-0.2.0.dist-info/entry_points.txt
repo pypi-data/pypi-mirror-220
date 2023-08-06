@@ -1,0 +1,3 @@
+[console_scripts]
+video_tools=video_tools.__main__:main
+

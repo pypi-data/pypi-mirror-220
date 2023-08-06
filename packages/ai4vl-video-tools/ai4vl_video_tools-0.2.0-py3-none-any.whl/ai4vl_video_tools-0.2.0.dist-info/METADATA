@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: ai4vl-video-tools
+Version: 0.2.0
+Summary: 
+Author: Felix Rindt
+Author-email: felix@rindt.me
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: awesome-slugify (>=1.6.5,<2.0.0)
+Requires-Dist: ffmpeg-python (>=0.2.0,<0.3.0)
+Requires-Dist: natsort (>=8.4.0,<9.0.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+
+# ai4vl video tools
+
+Video handling tools for ai4vl.
+
+## Install it from PyPI
+
+```bash
+pip install ai4vl-video-tools
+```
+
+## Usage
+
+The tools expects a directory with video files as input and outputs a directory with the converted videos.
+The source directory must have the following structure:
+
+```bash
+source_dir
+└── some_study_name
+    ├── 1-1  # these are patient number - case number
+    │   ├── snipped01.mp4
+    │   ├── snipped02.mp4
+    │   └── snipped03.mp4
+    └── 2-2
+        └── snipped04.mp4
+```
+
+Run the help command to see the usage. A basic example is:
+
+```bash
+$ python -m video_tools -v aggregate -i tests/data/ -o tests/data/output -s 1
+```
+
