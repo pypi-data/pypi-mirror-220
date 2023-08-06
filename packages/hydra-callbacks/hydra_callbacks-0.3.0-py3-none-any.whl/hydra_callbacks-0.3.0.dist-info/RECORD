@@ -1,0 +1,10 @@
+hydra_callbacks/__init__.py,sha256=9GjTs6ZK8MWZA_RKm4xuRNFokfaGtfoZn9FHfBwfBk0,869
+hydra_callbacks/_version.py,sha256=jP37PbzC7u30hqoKJZ41NW3TgoVzxjYdLU5M0drm_y4,160
+hydra_callbacks/callbacks.py,sha256=aDRKJHAxxkCwTut31XA0QipvaoFdlaPoAmsuPNHv4fY,10437
+hydra_callbacks/logger.py,sha256=1VwyPZNaULvl7SvklEnPSsdurpUI9GG_bebsSylHBYg,1921
+hydra_callbacks/monitor.py,sha256=AWi0zwEcoJ31W51q8QEuVHqI_RR9YcWgbikCEsJW_fE,4714
+hydra_callbacks-0.3.0.dist-info/LICENSE,sha256=54A0-aMN_VGWVzQfgeazYgKbXseUqTgH9AMf5LTU-Vc,1077
+hydra_callbacks-0.3.0.dist-info/METADATA,sha256=lP1EGAMXFNjCYW1iKk_UcbU8oE23Zf80w_3YmXfevIM,4350
+hydra_callbacks-0.3.0.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+hydra_callbacks-0.3.0.dist-info/top_level.txt,sha256=PnhR-8MN0yon-SDyHjlYj29MXZWoynS2KXUvscubokA,16
+hydra_callbacks-0.3.0.dist-info/RECORD,,
