@@ -1,0 +1,5 @@
+setup.py
+segment_xandr_export.egg-info/PKG-INFO
+segment_xandr_export.egg-info/SOURCES.txt
+segment_xandr_export.egg-info/dependency_links.txt
+segment_xandr_export.egg-info/top_level.txt
