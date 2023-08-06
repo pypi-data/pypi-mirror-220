@@ -1,0 +1,21 @@
+[package]
+name = "ruff_python_trivia"
+version = "0.0.0"
+publish = false
+authors = ["Charlie Marsh <charlie.r.marsh@gmail.com>"]
+edition = "2021"
+rust-version = "1.70"
+homepage = "https://beta.ruff.rs/docs"
+documentation = "https://beta.ruff.rs/docs"
+repository = "https://github.com/astral-sh/ruff"
+license = "MIT"
+resolver = "2"
+
+[lib]
+
+[dependencies]
+ruff_text_size = { git = "https://github.com/astral-sh/RustPython-Parser.git", rev = "4d03b9b5b212fc869e4cfda151414438186a7779" }
+
+memchr = "2.5.0"
+smallvec = { version = "1.10.0" }
+unic-ucd-ident = "0.9.0"
