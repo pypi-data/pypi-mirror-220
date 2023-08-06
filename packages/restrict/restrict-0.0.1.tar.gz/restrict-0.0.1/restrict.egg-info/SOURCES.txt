@@ -1,0 +1,7 @@
+README
+setup.cfg
+setup.py
+restrict.egg-info/PKG-INFO
+restrict.egg-info/SOURCES.txt
+restrict.egg-info/dependency_links.txt
+restrict.egg-info/top_level.txt
