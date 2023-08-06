@@ -1,0 +1,5 @@
+asyncpg
+python-dotenv
+starlette
+tortoise-api-model
+uvicorn
