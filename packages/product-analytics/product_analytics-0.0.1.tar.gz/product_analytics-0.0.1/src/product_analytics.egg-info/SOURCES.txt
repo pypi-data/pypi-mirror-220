@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+src/product_analytics/__init__.py
+src/product_analytics/analytics.py
+src/product_analytics.egg-info/PKG-INFO
+src/product_analytics.egg-info/SOURCES.txt
+src/product_analytics.egg-info/dependency_links.txt
+src/product_analytics.egg-info/requires.txt
+src/product_analytics.egg-info/top_level.txt
+tests/test_analytics.py
