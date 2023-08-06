@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: iorclient
+Version: 0.0.3
+Summary: ior client sdk for ior standard
+Home-page: https://github.com/tzspace-ior/iorclient
+Author: Jie Guan
+Author-email: jguanisme@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# IOR SDK Document
+## IOR introduction
+
+> The full name of IOR is Internet of Rights, which mainly solves how to manage property rights, resource allocation, and teamwork on the Internet.<p>
+> IOR comes from the 3816 standard under the IEEE organization. It is the logical layer above the blockchain and an overall solution to solve practical problems in real-world scenarios.<p>
+> IOR project address:https://github.com/tzspace-ior/iorclient<p>
+> IOR zh document address:https://github.com/tzspace-ior/iorclient/blob/master/README_ZH.MD<p>
