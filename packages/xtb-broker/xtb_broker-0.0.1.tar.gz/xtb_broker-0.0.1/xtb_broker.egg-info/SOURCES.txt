@@ -1,0 +1,5 @@
+setup.py
+xtb_broker.egg-info/PKG-INFO
+xtb_broker.egg-info/SOURCES.txt
+xtb_broker.egg-info/dependency_links.txt
+xtb_broker.egg-info/top_level.txt
