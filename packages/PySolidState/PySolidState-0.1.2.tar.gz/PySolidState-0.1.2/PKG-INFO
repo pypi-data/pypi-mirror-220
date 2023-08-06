@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: PySolidState
+Version: 0.1.2
+Summary: PySolidState is a library developed to facilitate the study of solid-state materials, ranging from crystal structures to tight-binding models. It provides a set of tools and functionalities that enable researchers and students to analyze and simulate various aspects of the solid-state physics.
+Home-page: https://github.com/miguelta281/PySolidState
+Author: Jose Miguel Tarazona, Yerimi Gamboa Caballero, Felipe
+Author-email: makesens19@gmail.com
+License: GNU General Public License v3.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+<h1 align="center"> <a href="https://imgur.com/L01ipPl"><img src="https://i.imgur.com/L01ipPl.png" title="source: imgur.com" /></a>
+  
+<h1 align="center"> PySolidState (PySS) </h1>
+
+>PySS es una biblioteca desarrollada como una herramienta de apoyo para el estudio introductorio del estado sÃ³lido y los conceptos bÃ¡sicos de los materiales. Su enfoque principal es proporcionar apoyo visual y funcionalidades que permitan asentar los conceptos fundamentales en esta Ã¡rea de estudio, desde estructuras cristalinas hasta modelos de enlace fuerte. Con un conjunto de herramientas y funcionalidades, PySolidState permite a investigadores y estudiantes analizar y simular varios aspectos de la fÃ­sica del estado sÃ³lido. AdemÃ¡s, esta biblioteca se combina con notas de curso sobre estado sÃ³lido, lo que la convierte en un recurso bastante completo para el aprendizaje de la materia a nivel universitario. Gracias a su enfoque en la visualizaciÃ³n y el apoyo prÃ¡ctico, PySolidState se convierte en una valiosa herramienta que, junto con las notas de curso, ofrece una base sÃ³lida para comprender los principios y fundamentos del estado sÃ³lido.
+
+**Deployment**
+
+![PyPI](https://img.shields.io/pypi/v/PySolidState)
+
+## Recursos
+- DocumentaciÃ³n
+- Notas del curso de estado solido
+
+## InstalaciÃ³n
+Se recomienda utilizar pip para la instalaciÃ³n. AsegÃºrese de que la Ãºltima versiÃ³n estÃ© instalada, ya que PySS se actualiza con frecuencia:
+
+>Nota: Es importante antes de instalar la libreria PySolidState haber ejecutado la consola en modo administrador si se trabajara con jupyter notebook.
+
+ejecute los siguientes comando para la instalaciÃ³n:
+```python
+   pip install PySolidState    # Instalacion normal
+   pip install --upgrade PySolidState  # o actualizar si es necesario
+```
+**Dependencias Requeridas:**
+- Python 3.9+
+- matplotlib >=3.7.1
+- numpy>=1.24.3
+- mayavi>=4.7.2
+- scikit-spatial>=7.0.0
+
+## Uso
+### Crear Red (Create Lattice):
+Uno de los conceptos mas basico y fundamental en el estado solido es el de red, siendo las unicas posibles en formar estructuras cistalinas las redes de Bravais; para crea una de estas tenemos dos formas de hacerlo:
+
+**1)** Construyendo la red a partir de los parÃ¡metros ***System*** (nombre de una de las redes de Brabais),  ***structure_type*** (Si la red tiene centrada en las caras, centrada en el cuerpo o centrada en las bases) y ***dimension*** (dimensiÃ³n en la cual se creara la red 2D o 3D). A continuaciÃ³n se muestra un ejemplo de uso:
+```python
+from PySolidState.crystal_structure.lattice import Lattice  # Importamos el modulo estructura cristalina de la libreria junto al metodo lattices
+
+lattice = Lattice(system='cubic',structure_type='face_centered', dimension='3D') # Se crea la red
+lattice.plot()  # Se grafica la red
+```
+**2)** Construyendo la red a partir de los parÃ¡metros ***magnitude*** (tupla con la norma de cada uno de los vectores de la red a1, a2 y a3),  ***angles*** (tupla con los angulos que describen los vectores de la red (Gama, Alfa, Beta)) y ***dimension*** (dimensiÃ³n en la cual se creara la red 2D o 3D). A continuaciÃ³n se muestra un ejemplo de uso:
+```python
+from PySolidState.crystal_structure.lattice import Lattice  # Importamos el modulo estructura cristalina de la libreria junto al metodo lattices
+
+lattice = Lattice(magnitude=(1,1,1),angles=(90,90,90), dimension='3D') # Se crea la red
+lattice.plot()  # Se grafica la red
+```
+### Crear base (Create base):
+El otro concepto mÃ¡s bÃ¡sico es el de base, siendo esta base el conjunto de Ã¡tomos que se acomodan en cada punto de red para formar la estructura cristalina. A continuaciÃ³n se muestra un ejemplo de como crear esta base de Ã¡tomos:
+
+```python
+# Se importan los mÃ³dulos Lattice, Atom, Base
+from PySolidState.crystal_structure.lattice import Lattice
+from PySolidState.crystal_structure.atom import Atom
+from PySolidState.crystal_structure.base import Base
+
+#Se crean los Ã¡tomos que harÃ¡n parte de la base de Ã¡tomos
+atom2 = Atom(name='Na+', size= 0.2, color= 'orangered')
+atom1 = Atom(name='Cl-', size= 0.3, color= 'springgreen')
+
+#Se crea la red a la cual se acomodaran
+lattice = Lattice(system='cubic',structure_type='face_centered', dimension='3D')
+
+# Se crea la base de Ã¡tomos
+base = Base(lattice_vectors= lattice.vectors, atoms=[[atom1, [0,0,0]],[atom2, [0.5,0,0]],[atom2, [0,0.5,0]],[atom2, [0,0,0.5]]], dimension='3D')
+
+#Se grafica la base de atomos en un punto de red
+base.plot()
+```
+Como notamos en el ejemplo la clase Base se inicializa pasÃ¡ndole los vectores de la red, una lista que contiene listas de los Ã¡tomos creados, con su vector posiciÃ³n en la base a formar y la dimensiÃ³n en la que se describirÃ¡.
+
+### Crear estructurÃ¡ cristalina
+Con los dos conceptos previamente mostrados podemos formar lo que se conoce como estructura cristalina o cristal, siendo esta estructura la uniÃ³n de una red de Bravais con una base de Ã¡tomos, para ello a continuaciÃ³n se muestra un ejemplo de como construirla:
+
+```python
+# Se importan los modulos Lattice, Atom, Base y CristalStruture.
+%matplotlib widget
+from PySolidState.crystal_structure.lattice import Lattice
+from PySolidState.crystal_structure.atom import Atom
+from PySolidState.crystal_structure.base import Base
+from PySolidState.crystal_structure.crystalStructure import CrystalStructure
+
+#Se crean los Ã¡tomos que harÃ¡n parte de la base de Ã¡tomos.
+atom2 = Atom(name='Na+', size= 0.2, color= 'orangered')
+atom1 = Atom(name='Cl-', size= 0.3, color= 'springgreen')
+
+#Se crea la red de Bravais en la cual se acomodara la base de atomos.
+lattice = Lattice(system='cubic',structure_type='face_centered', dimension='3D')
+# Se crea la base de Ã¡tomos
+base = Base(lattice_vectors= lattice.vectors, atoms=[[atom1, [0,0,0]],[atom2, [0.5,0,0]],[atom2, [0,0.5,0]],[atom2, [0,0,0.5]]], dimension='3D')
+
+# Se crea la estructura cristalina o cristal uniendo la red y la base ya creadas
+crs = CrystalStructure(lattice=lattice, base=base, dimension='3D')
+#Se crea la figura de la red cristalina o cristal Na+Cl- (Cloruro de Sodio)
+crs.plot()
+```
+
