@@ -1,0 +1,7 @@
+osmpy/__init__.py,sha256=H2D9XxxPd3VGRUWP99dwIQj52sxGloK6am9imDioAPY,60
+osmpy/core.py,sha256=isAACMH8DWZhQLR5pamo58sqXwXbSg24CxOSCiWUuAY,5870
+osmpy/queries.py,sha256=96WlOgbwmDgd9k7fonJ70qUWpwFAZa33dXvPkg91kpY,2250
+osmpy-0.1.2.dist-info/LICENSE.md,sha256=2TokKU9GA0tB_mpjufV4Y1eCToatW5VTs8sIWVTbEok,1303
+osmpy-0.1.2.dist-info/METADATA,sha256=O5Otu9nH47ygVo5HvjXy6pEtMi4L4hheNkaEvZgZstU,4548
+osmpy-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+osmpy-0.1.2.dist-info/RECORD,,
