@@ -1,0 +1,12 @@
+kaiju_model/__init__.py,sha256=S8fabmHBIhc1vIb1axXUW4ToBnCSxlUEF4875FIi47A,94
+kaiju_model/fields.py,sha256=NKcbM3EJGZdSZIMr2gkFQzIHJfHlgdiyIvZ5tg8Ov8M,21343
+kaiju_model/model.py,sha256=GjaXAC797LNrtVD-CXB6O7G2ng05fScrkf3E90SC5II,18433
+kaiju_model/grid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaiju_model/grid/base.py,sha256=-RxkDq__VSR5w_yXCpa74LNAj-4BNr8NVheKae0rjUE,361
+kaiju_model/grid/constructor.py,sha256=e8m37QUuUxA_drXaFkXhtwBj7iVsQcoF2jr4t_H1WNY,10281
+kaiju_model/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaiju_model-2.0.3.dist-info/LICENSE,sha256=XIlN2qA8UqpBDA-PteoYP4hTU0qBW0G9PRB__khO2zc,610
+kaiju_model-2.0.3.dist-info/METADATA,sha256=9fjjTa7lgvl-ULiULKzp2NvzvKoClV0fxp9WEeiPgNo,2012
+kaiju_model-2.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+kaiju_model-2.0.3.dist-info/top_level.txt,sha256=3lm68s9XtN4zbuKIVlAbnzbqzxqSplKrNmLX6s2CD-Y,12
+kaiju_model-2.0.3.dist-info/RECORD,,

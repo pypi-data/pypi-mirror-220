@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: kaiju-model
+Version: 2.0.3
+Summary: Web interface related classes.
+Home-page: https://gitlab.com/kaiju-python/kaiju-model
+Author: antonnidhoggr@me.com
+Author-email: antonnidhoggr@me.com
+License: Apache Software License 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: kaiju-tools (<3,>=2)
+Provides-Extra: dev
+Requires-Dist: bump2version (>=1.0) ; extra == 'dev'
+Requires-Dist: pyroma (>=4.1) ; extra == 'dev'
+Requires-Dist: bandit (>=1.7) ; extra == 'dev'
+Requires-Dist: black (>=22.12) ; extra == 'dev'
+Requires-Dist: flake8 (>=6.0) ; extra == 'dev'
+Requires-Dist: pyproject-flake8 ; extra == 'dev'
+Requires-Dist: pre-commit (>=3.1) ; extra == 'dev'
+Requires-Dist: pydocstyle (>=6.2) ; extra == 'dev'
+Requires-Dist: setup-cfg-fmt (>=2.2) ; extra == 'dev'
+Requires-Dist: restructuredtext-lint (>=1.4) ; extra == 'dev'
+Requires-Dist: tox (>=3.28) ; extra == 'dev'
+Requires-Dist: tox-pyenv (>=1.1) ; extra == 'dev'
+Requires-Dist: pip-tools (>=6.13) ; extra == 'dev'
+Requires-Dist: pyupgrade (>=3.4) ; extra == 'dev'
+Requires-Dist: towncrier (>=23.6) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (>=7.2) ; extra == 'test'
+Requires-Dist: pytest-asyncio (>=0.20) ; extra == 'test'
+Requires-Dist: docker (>=6.0) ; extra == 'test'
+Requires-Dist: pytest-timeout (>=2.1) ; extra == 'test'
+Requires-Dist: pytest-aiohttp (>=1.0) ; extra == 'test'
+Requires-Dist: pytest-cov (>=4.1.0) ; extra == 'test'
+
