@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: anyBoNett
+Version: 0.0.4
+Summary: uma biblioteca pra facilitar pesquisas
+Author: AnyBoSOFT
+Author-email: bidjorys@gmail.com
+License: MIT License
+Keywords: ytl
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Minha Biblioteca
+
+## DescriÃ§Ã£o
+Minha Biblioteca Ã© uma ferramenta poderosa para fazer coisas incrÃ­veis na internet, como : pesquisas.
+
+## InstalaÃ§Ã£o
+Para instalar a biblioteca, execute o seguinte comando: "pip install anyBoNett==0.0.4"
+
+
+## Uso
+Aqui estÃ¡ um exemplo simples de como usar a biblioteca:
+
+```python
+import anybonett.NET as anybo
+
+print(anybo.search_wikipedia("Einstein", "pt", 3)) # O primero parametro e para a pesquisa, a segunda Ã© o idioma e o ultimo Ã© quantas linhas
+
+anybo.search_google("hello google") # Vai fazer uma pesquisa direta para google, pesquisando "hello google"
+
+anybo.search_youtube("hello youtube") # Vai fazer uma pesquisa direta para youtube, pesquisando "hello youtube"
+
+
+
+
