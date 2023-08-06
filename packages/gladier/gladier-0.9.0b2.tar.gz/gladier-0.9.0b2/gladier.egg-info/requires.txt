@@ -1,0 +1,4 @@
+globus-compute-sdk<3.0.0,>=2.0.1
+globus-automate-client<0.17,>=0.13
+packaging>=21.3
+fair-research-login>=0.2.6
