@@ -1,0 +1,8 @@
+numpy
+aiida-core
+scinode
+cloudpickle
+aiida-pseudo
+aiida-quantumespresso
+pytest
+pre-commit

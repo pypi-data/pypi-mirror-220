@@ -1,0 +1,75 @@
+# AiiDA-WorkTree
+
+[![Unit test](https://github.com/superstar54/aiida-worktree/actions/workflows/ci.yaml/badge.svg)](https://github.com/superstar54/aiida-worktree/actions/workflows/ci.yaml)
+
+Provides the third workflow component: `WorkTree`, to design flexible node-based workflows using AiiDA.
+
+
+In AiiDA, there are two workflow components: ``workfunction`` and ``WorkChain``. Here is a comparison between these three workflow components.
+
+
+| Component | Implementation | Automatic Checkpointing | Flexibility | Use Cases                                  |
+|-------------------|--------------------------|--------------------------------|-------------|--------------------------------------------|
+| workfunction      | Easy                     | No                             | High        | Short-running calculations                |
+| WorkChain         | Difficult                | Yes                            | Moderate    | Long-running calculations                 |
+| WorkTree          | Easy                     | Yes                            | Moderate        | Long-running calculations                  |
+
+
+
+## Installation
+
+```console
+    pip install --upgrade aiida-worktree
+```
+
+
+## Documentation
+Check the [docs](https://aiida-worktree.readthedocs.io/en/latest/) and learn about the features.
+
+## Examples
+
+Create nodes from `calcfunction`.
+
+```python
+from aiida_worktree import node
+from aiida.engine import calcfunction
+
+# define add calcfunction node
+@node(outputs = [["General", "sum"]])
+@calcfunction
+def add(x, y):
+    return x + y
+
+# define multiply calcfunction node
+@node(outputs = [["General", "product"]])
+@calcfunction
+def multiply(x, y):
+    return x*y
+
+```
+
+Create a worktree to link the nodes.
+
+```python
+from aiida_worktree import WorkTree
+from aiida import load_profile
+from aiida.orm import Float
+
+load_profile()
+nt = WorkTree("test_add_multiply")
+# create input float nodes
+float1 = nt.nodes.new("AiiDANode", value=Float(2.0).store())
+float2 = nt.nodes.new("AiiDANode", value=Float(3.0).store())
+float3 = nt.nodes.new("AiiDANode", value=Float(4.0).store())
+add1 = nt.nodes.new(add.identifier, name="add1")
+multiply1 = nt.nodes.new(multiply.identifier, name="multiply1")
+# link the output of float node to the input of add node
+nt.links.new(float1.outputs[0], add1.inputs["x"])
+nt.links.new(float2.outputs[0], add1.inputs["y"])
+nt.links.new(float3.outputs[0], multiply1.inputs["x"])
+nt.links.new(add1.outputs["sum"], multiply1.inputs["y"])
+nt.submit(wait=True)
+```
+
+## License
+[MIT](http://opensource.org/licenses/MIT)
