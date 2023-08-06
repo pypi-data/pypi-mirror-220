@@ -1,0 +1,15 @@
+fidel/README.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fidel/__init__.py,sha256=WjkewkZ_wd0FNqFYG0TXAMLwZ8ZcK6fGIcPkfwuq4c8,63
+fidel/main.py,sha256=gJERQ127d2Arz9kVNX3PQN0OKdw0mFVUcO_s_vzAtbo,2746
+fidel/data/word_list.txt,sha256=vdW04j17VTYf-OrVmQcl0NO8emqHI0b0mFjXgikk1No,857510
+fidel/helpers/filter.py,sha256=J9F8ez4fOsS_FI-IPhhlw5avcG8DsGw_E-qJRD9uV2Y,1181
+fidel/helpers/__pycache__/filter.cpython-310.pyc,sha256=qUiBrPsRFSFV2sXWaMziv_-4nCrl1WSbihiuMSikM5k,1524
+fidel/utilities/dictionary.py,sha256=RFWEaWT7EpCIu8SVyQAEFUHfQ88qmY2aHk__bic4h_8,3092
+fidel/utilities/word.py,sha256=KLrpesY4ksvS05aQ7akAOFlV4IlRyVin8QcLRrG1X18,3667
+fidel/utilities/__pycache__/dictionary.cpython-310.pyc,sha256=bpQLa7x36AzccIv5_B-NVjuSsqqz1Czot2irvHBnc-E,2310
+fidel/utilities/__pycache__/word.cpython-310.pyc,sha256=jJp_y2D9kSzT3VUcW2hkvmVLed7KvXfX6SonCA-SXYc,1950
+fidel-0.0.10.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+fidel-0.0.10.dist-info/METADATA,sha256=7u5aWl-uTwbw0zDbd_p30_vqIkKbjjGdzOIm51XbybE,5426
+fidel-0.0.10.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+fidel-0.0.10.dist-info/top_level.txt,sha256=vgIDa1Mlt1SQg_WQGoaKKjy7syC9L5I7YZEqfO-wv9I,6
+fidel-0.0.10.dist-info/RECORD,,
