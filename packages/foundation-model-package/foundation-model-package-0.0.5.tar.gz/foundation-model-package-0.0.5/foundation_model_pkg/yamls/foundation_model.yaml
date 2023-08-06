@@ -1,0 +1,39 @@
+foundation_model_pkg.tools.foundation_model.foundation_model:
+  function: foundation_model
+  inputs:
+    connection:
+      type:
+        - CustomConnection
+    api:
+      enum:
+        - chat
+        - completion
+      type:
+        - string
+    model_family:
+      enum:
+        - llama
+        - dolly
+        - gpt2
+      type:
+        - string
+    deployment_name:
+      type:
+        - string
+    prompt:
+      type:
+        - string
+    chat_history:
+      default: "[]"
+      type:
+        - list
+    model_kwargs:
+      default: "{}"
+      type:
+        - object
+  is_builtin: true
+  module: foundation_model_pkg.tools.foundation_model
+  name: Foundation Model
+  description: Tool to use Azure Foundation Models
+  stage: test
+  type: python
