@@ -1,0 +1,4 @@
+[console_scripts]
+nauto_click=nautobot_api_sandbox.click_ui:main
+nautobot_api_sandbox=nautobot_api_sandbox.nautobot_api_sandbox_ui:user_interface
+
