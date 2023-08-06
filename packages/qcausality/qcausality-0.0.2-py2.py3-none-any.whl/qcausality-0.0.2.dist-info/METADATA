@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: qcausality
+Version: 0.0.2
+Summary: A module for quantum causal discovery and modelling
+Keywords: Quantum,Causality,Process Tensor
+Author: Christina Giarmatzi
+Author-email: Alexei Gilchrist <alexei@entropy.energy>
+Maintainer-email: Alexei Gilchrist <alexei@entropy.energy>
