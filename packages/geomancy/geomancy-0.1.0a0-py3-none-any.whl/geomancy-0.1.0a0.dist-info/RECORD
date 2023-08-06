@@ -1,0 +1,14 @@
+geomancy/__init__.py,sha256=xOf8U-avqN6Pue-nQ_y64dLqxsrf38D2Cgk-L5Y327Y,62
+geomancy/checks/__init__.py,sha256=YKfIjnEYCdIW10A0u1buUJN2zY31SEeRodKaWY2aqh0,141
+geomancy/checks/base.py,sha256=lUuEEamC2BZyY-1zl-oFdtJKW9W9V-o9UBD0ezDcUkM,1684
+geomancy/checks/env.py,sha256=3OAeL3LKFOA5rp09AK_SKSYvDERRWeOChgwgfYYrsjg,3246
+geomancy/checks/utils.py,sha256=nyEg5FZaBmFWro-h5m0fATRm2xEof_9189Kao1dIkRs,215
+geomancy/cli/__init__.py,sha256=J8F7aFOGHt9hrhhYGR1Etrh1HpbLBv5mxp-wPsx8Qqc,117
+geomancy/cli/messages.py,sha256=ZdzLi0-ZTlLRaUgFihRlf_Uny5FltOolFKCGs4Hgcv0,1326
+geomancy/constructors/__init__.py,sha256=qTdisDJjf1wQiOb9wrYH34e2YFxMILxAK5z8xBvXwuk,67
+geomancy/constructors/dict.py,sha256=w8SE1bdlnFgrk9vZ4YnvfgjnWBIU16ZHeu4DRAOWrs4,2365
+geomancy-0.1.0a0.dist-info/LICENSE.md,sha256=hkZVnIZll7e_KNEQzeY94Y9tlzVL8iVZBTMBvDykksU,35142
+geomancy-0.1.0a0.dist-info/METADATA,sha256=F48ZNOqB9lwsJeoKqdGSxkWM_1PmbOTfW9OUNWMB3XA,632
+geomancy-0.1.0a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+geomancy-0.1.0a0.dist-info/top_level.txt,sha256=FeEg7AWCM70Vujq7WaIDfml9BkSNFlJo7Dysm4UoBEk,9
+geomancy-0.1.0a0.dist-info/RECORD,,

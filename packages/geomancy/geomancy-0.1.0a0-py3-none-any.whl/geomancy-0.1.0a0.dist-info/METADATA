@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: geomancy
+Version: 0.1.0a0
+Summary: A deployment environment validator
+Author: Justin Lorieau
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Provides-Extra: dev
+Requires-Dist: pytest (>=7.4) ; extra == 'dev'
+Requires-Dist: twine (>=4.0) ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+
+# geomancy
+
+Geomancy is a command line tool to validate and check development and deployment
+environments such has ``development``, ``staging``, ``testing`` and 
+``production``.
