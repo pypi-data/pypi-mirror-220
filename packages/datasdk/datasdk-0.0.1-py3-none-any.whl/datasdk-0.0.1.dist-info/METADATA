@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: datasdk
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/nuxion/datasdk#readme
+Project-URL: Issues, https://github.com/nuxion/datasdk/issues
+Project-URL: Source, https://github.com/nuxion/datasdk
+Author-email: Xavier Petit <nuxion@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Provides-Extra: jupyter
+Requires-Dist: jupyterlab~=3.6.2; extra == 'jupyter'
+Requires-Dist: jupytext~=1.14.5; extra == 'jupyter'
+Description-Content-Type: text/markdown
+
+# datasdk
+
+[![PyPI - Version](https://img.shields.io/pypi/v/datasdk.svg)](https://pypi.org/project/datasdk)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/datasdk.svg)](https://pypi.org/project/datasdk)
+
+-----
+
+## Description
+
+This is a template used to start python projects. 
+
+It can be used as if clonning the git repository, or using degit:
+
+```console
+degit https://github.com/nuxion/python-template <your-project-name>
+```
+
+After that run `rename.sh` script to refactor folders and names to the new one:
+
+```console
+./rename.sh <your-project-name>
+```
+
+## Features
+
+- Makefile for common tasks
+- Sphinx 
+- pytest
+- `.gitignore` for python + nodejs projects + emacs + vim + vscode (using topal gitignore generation tool)
+- jupyter as optional dependency + jupytext
+- linting tools
+
+## References
+
+- https://waylonwalker.com/hatch-version/
+
+## License
+
+`datasdk` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
