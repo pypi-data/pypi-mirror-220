@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: ase-stubs
+Version: 0.0.2
+Summary: Stub files for the Atomic Simulation Environment package.
+Home-page: https://gitlab.com/ugognw/python-comp-chem-utils
+License: LGPL-2.1-or-later
+Author: Ugochukwu Nwosu
+Author-email: ugognw@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Typing :: Stubs Only
+Requires-Dist: ase (>=3.22.1,<4.0.0)
+Project-URL: Repository, https://gitlab.com/ugognw/python-comp-chem-utils
+Description-Content-Type: text/x-rst
+
+=============
+ase-stubs
+=============
+
+This project provides stub files for ASE_ to be used by type-checkers such as Mypy_ or Pyright_.
+
+.. _Mypy: https://mypy.readthedocs.io/
+.. _Pyright: https://github.com/microsoft/pyright
+
+Requirements
+============
+
+* ASE_ (tools for atomistic simulations)
+
+.. _ASE: https://wiki.fysik.dtu.dk/ase/index.html
+
+Installation
+============
+
+::
+
+    $ pip install ase-stubs
+
+or, if you use poetry::
+
+    $ poetry add ase-stubs
+
+You can also install the in-development version with::
+
+    $ pip install git+ssh://git@gitlab.com:ugognw/ase-stubs.git
+
+or, similarly::
+
+    $ poetry add git+ssh://git@gitlab.com:ugognw/ase-stubs.git
+
