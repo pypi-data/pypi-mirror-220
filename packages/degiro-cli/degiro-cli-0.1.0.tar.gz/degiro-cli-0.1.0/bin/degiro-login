@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+
+if __name__ == '__main__':
+    import sys
+    import degirocli.login
+    res = degirocli.login.run_cli()
+    sys.exit(res)
