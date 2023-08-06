@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+package/__init__.py
+package/main.py
+spouk_firebird_utils.egg-info/PKG-INFO
+spouk_firebird_utils.egg-info/SOURCES.txt
+spouk_firebird_utils.egg-info/dependency_links.txt
+spouk_firebird_utils.egg-info/requires.txt
+spouk_firebird_utils.egg-info/top_level.txt
