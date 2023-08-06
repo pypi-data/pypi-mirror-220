@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tej-exchange-calendars
+Version: 0.0.4
+Summary: Modified exchange-calendars from exchange-calendars3.3.
+Home-page: https://api.tej.com.tw
+Author: tej
+Author-email: tej@tej.com.tw
+Maintainer: tej api Development Team
+Maintainer-email: tej@tej.com
+License: MIT
+Keywords: tej,big data,data,financial,economic,stock,TEJ
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: pandas (>=1.1)
+Requires-Dist: pyluach
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: toolz
+Requires-Dist: korean-lunar-calendar
+
+Modified exchange-calendars from exchange-calendars3.3.
