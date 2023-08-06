@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+kulipdf.egg-info/PKG-INFO
+kulipdf.egg-info/SOURCES.txt
+kulipdf.egg-info/dependency_links.txt
+kulipdf.egg-info/top_level.txt
