@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/brainfuk/pybf.py
+src/brainfuk.egg-info/PKG-INFO
+src/brainfuk.egg-info/SOURCES.txt
+src/brainfuk.egg-info/dependency_links.txt
+src/brainfuk.egg-info/entry_points.txt
+src/brainfuk.egg-info/requires.txt
+src/brainfuk.egg-info/top_level.txt

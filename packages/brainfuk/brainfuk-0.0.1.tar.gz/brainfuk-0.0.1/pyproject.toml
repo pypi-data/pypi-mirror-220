@@ -1,0 +1,22 @@
+[project]
+name = "brainfuk"
+authors = [{name = "Nater0214", email = "gamer@nater0214.com"}]
+version = "0.0.1"
+requires-python = ">=3.10"
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+dependencies = [
+    "naters-utils"
+]
+
+[project.scripts]
+pybf = "brainfuk.pybf:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
