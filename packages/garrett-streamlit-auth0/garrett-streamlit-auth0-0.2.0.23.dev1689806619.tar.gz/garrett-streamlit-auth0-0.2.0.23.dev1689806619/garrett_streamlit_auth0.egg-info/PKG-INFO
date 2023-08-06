@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: garrett-streamlit-auth0
+Version: 0.2.0.23.dev1689806619
+Home-page: https://github.com/chris-garrett/garrett-streamlit-auth0
+Author: 
+Author-email: 
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
