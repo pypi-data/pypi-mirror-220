@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: metricserverremote
+Version: 1.9
+Summary: Opale MetricServer remote Python API
+Home-page: http://www.opalesystems.com
+Author: Adnane BERRADA
+Author-email: support@opalesystems.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
