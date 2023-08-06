@@ -1,0 +1,13 @@
+pkgUdit/Names.csv,sha256=FHYqIO_gxJt7RxARqeVRimBIlmfJWWhQAuVeJDMUnyo,83
+pkgUdit/Places.csv,sha256=jGrg5105R4wsvny7jXV3iDHOio9DcYGkMV6aaNW27Qk,90
+pkgUdit/__init__.py,sha256=-ZcvFGgCph477y-ftVPaBL2cE5w8b4fET3CjmfwYlYg,40
+pkgUdit/d.py,sha256=lTH6mkTVdjo-pWVIa1DqVY2LoUrEoSafeRyyiHOPcJY,2874
+pkgUdit/pswdGen.py,sha256=-zI345pFjsQzxigaQRkr0-rR5C6xvS2IF5cAmcoL4q8,2610
+pkgUdit/test.py,sha256=cMuY1yyvn02-7msSQNLgC3GYap6wU7a9SCZTEFKCGdc,1021
+pkgUdit/data/names.csv,sha256=FHYqIO_gxJt7RxARqeVRimBIlmfJWWhQAuVeJDMUnyo,83
+pkgUdit/data/places.csv,sha256=jGrg5105R4wsvny7jXV3iDHOio9DcYGkMV6aaNW27Qk,90
+pkgUdit-1.1.5.2.dist-info/License.txt,sha256=umiMrW63yKv-kGd3xCvjaxuSzBivxQgd5oZLf7eL9Zk,1079
+pkgUdit-1.1.5.2.dist-info/METADATA,sha256=8cV2hiQg1WQ_MxPVgtmWQjio2M1bLYpt0PwuvPkivpY,354
+pkgUdit-1.1.5.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pkgUdit-1.1.5.2.dist-info/top_level.txt,sha256=6HDcohhlcW4NGgQUEahihS6gyf5t4TajlQuyJGMTe4c,8
+pkgUdit-1.1.5.2.dist-info/RECORD,,
