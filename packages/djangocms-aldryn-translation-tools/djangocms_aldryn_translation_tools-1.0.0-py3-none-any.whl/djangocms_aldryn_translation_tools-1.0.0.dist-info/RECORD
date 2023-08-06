@@ -1,0 +1,17 @@
+aldryn_translation_tools/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+aldryn_translation_tools/admin.py,sha256=-F17YKdX-9_67OInjukKH1aeapzmWgec0o3ne45HBcA,5281
+aldryn_translation_tools/models.py,sha256=teH-KTMDwK3MoKkYEoMYFvmyrm0TVKUD5Zs0RhKWsy0,10346
+aldryn_translation_tools/sitemaps.py,sha256=eNaUPmLKr3Y1E3s7V06AAqy5mS6kP8Snjr8IzNui2hk,1794
+aldryn_translation_tools/utils.py,sha256=J2qQwpEudslImBVslKUgKot2qavYyCYwX6Zs3WnB86o,2681
+aldryn_translation_tools/static/css/admin/all-translations-mixin.css,sha256=ibwjZn_3DEuGn2iPiXYIhv10mNkSoc17YLdoYBUHN9A,591
+test_addon/__init__.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+test_addon/cms_apps.py,sha256=7Ece43BYKHJCWfbYLdFIJXQ_jiiPdgK9i8tguNkS8dw,335
+test_addon/managers.py,sha256=RIwVv-5C1GVKpo3Oru9rpcH8p2w8Fo49qKajlMMGJtI,307
+test_addon/models.py,sha256=0jMscZk-IVvNgoK3xEAgiarsoVRtzIhnF1hO0cUg9d8,2600
+test_addon/urls.py,sha256=fNX0lJ32SL4shdysbLNRRg17lniW4S2lSsQMG0VLdNU,823
+test_addon/views.py,sha256=pbWm1AhpAYiHlUphUyl7b1AS3OMq66Zqcdz2gJbHq8k,546
+djangocms_aldryn_translation_tools-1.0.0.dist-info/LICENSE.txt,sha256=_vqfk2sG_CvTbLz5dZ47k-0t_NUWlCG0US2hSp9AIVs,1475
+djangocms_aldryn_translation_tools-1.0.0.dist-info/METADATA,sha256=trFrWc07lsGR9TI2NPJI3vyM-im9ivuQywc0igfV5P8,10217
+djangocms_aldryn_translation_tools-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+djangocms_aldryn_translation_tools-1.0.0.dist-info/top_level.txt,sha256=T1kgDjVq51D7MqwKeVvWyt1A22ktrN6bR-4rnj0rdGc,36
+djangocms_aldryn_translation_tools-1.0.0.dist-info/RECORD,,
