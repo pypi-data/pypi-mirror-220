@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+test/test_ubool.py
+test/test_ufloat.py
+test/test_uint.py
+uncertainty/__init__.py
+uncertainty/result.py
+uncertainty/ubool.py
+uncertainty/unumbers.py
+uncertainty/utypes.py
+uncertainty_datatypes.egg-info/PKG-INFO
+uncertainty_datatypes.egg-info/SOURCES.txt
+uncertainty_datatypes.egg-info/dependency_links.txt
+uncertainty_datatypes.egg-info/requires.txt
+uncertainty_datatypes.egg-info/top_level.txt
