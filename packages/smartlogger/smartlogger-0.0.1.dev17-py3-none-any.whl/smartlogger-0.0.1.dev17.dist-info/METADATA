@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: smartlogger
+Version: 0.0.1.dev17
+Summary: python logging client for SmartDash
+Home-page: https://github.com/notAI-tech/smartdash
+Author: BEDAPUDI PRANEETH
+Author-email: praneeth@bpraneeth.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: liteindex
+
+
+
+### Use SmartLogger in your code
+
+```python
+from smartlogger import SmartLogger
+
+logger = SmartLogger("examplePipelineName", save_to_dir="OPTIONAL_SAVE_DIR, defaults to ./")
+
+stage = logger.Stage(unique_id, stage_name, tags=optional_list_of_tags)
+# code block you want to log and time, eg: model inference/ db call/ pre/post processing code
+# stage.debug()/ info()/ exception (logs exc info)/ error
+# depending on whether it succeeded or not
+stage.success()
+stage.failed() 
+```
+
+```bash
+# Process to continuously upload logs to dash
+smartlogger --save_dir ./ --server_url "http://localhost:8080"
+```
