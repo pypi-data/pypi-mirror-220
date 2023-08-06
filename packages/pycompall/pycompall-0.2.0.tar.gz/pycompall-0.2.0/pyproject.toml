@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name= "pycompall"
+version = "0.2.0"
+authors = [
+    {name = "Kim Yongbeom", email = "yongbeom.kim@u.nus.edu"}
+]
+license = {file = "LICENSE"}
+description = "Pycompall is a wrapper around the default `compileall` Python utility to compile `.py` to `.pyc` files to provide a more configurable interface and as a build tool when configuring python files."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["obfuscation", "python-obfuscation", "python-compiler"]
+classifiers=[
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "click>=7.1.2",
+    "attrs>=22",
+]
+
+[project.urls]
+Homepage="https://github.com/Yongbeom-Kim/py-compiler"
+Repository="https://github.com/Yongbeom-Kim/py-compiler"
+
+[project.scripts]
+pycompall="pycompall:cli"
+
+[project.entry-points."application"]
+application = 'app.application'
+
+[tool.setuptools]
+packages = ["app"]
+py-modules = ["pycompall"]
