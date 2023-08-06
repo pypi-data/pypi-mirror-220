@@ -1,0 +1,10 @@
+afterglow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+afterglow/__main__.py,sha256=yD9Sug7Jk-D623-0GNWyCHtCwTW3ZYCWRdjXxjdEbqE,1007
+afterglow/child.py,sha256=YuZc9tya7NpeLL751RWewlBrOnlsTUe8An8eMoSiIQ8,8249
+afterglow/files.py,sha256=xHA6eTgmHWfDyAdSf732vyqukoVbP83zNVrRSGHs5pk,212
+afterglow/message.py,sha256=W9yHT4OL7hHog5sdeCKpX9cbYgDgBYENb1_-Pni-184,5279
+afterglow/parent.py,sha256=_qQwKAugtT9x8NYtc-pXF1gQb8PcmKtGYcrJ5fQueVE,4238
+afterglow-0.1.0.dev0.dist-info/LICENSE,sha256=L8vFn9ZHT3RRpTtzuzhkgDTutx_NNhMzCw_9YpbZR4Q,35129
+afterglow-0.1.0.dev0.dist-info/METADATA,sha256=RubaAJFpW6b9OsXwmzUsF89EvPoFPFu60JT_gWNe5l4,6283
+afterglow-0.1.0.dev0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+afterglow-0.1.0.dev0.dist-info/RECORD,,
