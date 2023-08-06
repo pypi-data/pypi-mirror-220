@@ -1,0 +1,4 @@
+vcarhilclient
+pytest
+allure-pytest
+PyMySQL
