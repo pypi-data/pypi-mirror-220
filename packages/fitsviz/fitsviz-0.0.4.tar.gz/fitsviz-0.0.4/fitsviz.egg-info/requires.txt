@@ -1,0 +1,9 @@
+poetry-core
+astropy
+bokeh
+click
+dask
+matplotlib
+numpy
+pandas
+photutils

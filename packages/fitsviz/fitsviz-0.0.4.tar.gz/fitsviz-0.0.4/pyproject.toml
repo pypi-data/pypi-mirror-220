@@ -1,0 +1,31 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ['setuptools>=68.0.0']
+
+[project]
+
+name = "fitsviz"
+version = "0.0.4"
+description = "Autodetection of sources and visualization of FITS files"
+
+authors = [
+    {name="Phani Velicheti",email = "phaniv@arizona.edu"}
+]
+
+readme = "README.md"
+requires-python = ">= 3.8, < 3.12"
+
+dependencies = [
+    'poetry-core',
+    'astropy',
+    'bokeh',
+    'click',
+    'dask',
+    'matplotlib',
+    'numpy',
+    'pandas',
+    'photutils',
+]
+
+
+
