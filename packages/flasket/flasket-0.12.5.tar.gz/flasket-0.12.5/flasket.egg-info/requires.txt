@@ -1,0 +1,11 @@
+attr
+torxtools>=1.0.2
+gunicorn
+flask_gordon>=0.7.3
+connexion[flask,swagger-ui]<3.0.0
+dash
+dash_bootstrap_components
+
+[celery]
+celery
+redis
