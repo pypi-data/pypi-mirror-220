@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+torch-sconce/__init__.py
+torch-sconce/sconce.py
+torch_sconce.egg-info/PKG-INFO
+torch_sconce.egg-info/SOURCES.txt
+torch_sconce.egg-info/dependency_links.txt
+torch_sconce.egg-info/top_level.txt
