@@ -1,0 +1,12 @@
+odoo/addons/test_ssi_product_line_mixin/README.rst,sha256=S8ba8ojKajnzYeZ0xeuClcrpsuNNtHl1ZNQZBnOkyyg,1228
+odoo/addons/test_ssi_product_line_mixin/__init__.py,sha256=8zIo3SAnL8bSDMH_emuY1fR-rFqf8gV4hPkZwcsY1yI,182
+odoo/addons/test_ssi_product_line_mixin/__manifest__.py,sha256=ImpF4K7JkMHzoq8tY4kt0c5YwHrb4GU5z_GrfvhJtJ0,654
+odoo/addons/test_ssi_product_line_mixin/models/__init__.py,sha256=N2IYjODrszw2oPImMJzFLomnMUwAcC5TuKvLzOavvJY,193
+odoo/addons/test_ssi_product_line_mixin/models/test_product_line.py,sha256=bCXkjfug5mpJjFT-gZPtxD0HKmmI9KAGTlAQkz0XoL8,338
+odoo/addons/test_ssi_product_line_mixin/security/ir.model.access.csv,sha256=UtRYUMohlkiWYRmNVJ-Gj-uO17v46d7IWylPyfCKCXw,171
+odoo/addons/test_ssi_product_line_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo/addons/test_ssi_product_line_mixin/views/test_product_line_views.xml,sha256=2Y01fpg0c_uUhhR-f-4wozpkmvQaR_bXfEGltjLEgyM,3492
+odoo14_addon_test_ssi_product_line_mixin-14.0.1.0.0.dist-info/METADATA,sha256=O9LKrmNEe6q4j6wAozsd2eQIJgr8pgWUEAlG9ZPUPLA,1803
+odoo14_addon_test_ssi_product_line_mixin-14.0.1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_test_ssi_product_line_mixin-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_test_ssi_product_line_mixin-14.0.1.0.0.dist-info/RECORD,,
