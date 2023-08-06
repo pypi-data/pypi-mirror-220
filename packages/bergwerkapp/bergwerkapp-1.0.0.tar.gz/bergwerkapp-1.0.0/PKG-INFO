@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bergwerkapp
+Version: 1.0.0
+Summary: A package to be used for Bergwer Digital Experiences AG
+Home-page: https://github.com/bergwerk-li/bergwerkapp
+Author: Stefan Zahnd
+Author-email: szahnd@gmail.com
+Project-URL: Bug Tracker, https://github.com/bergwerk-li/bergwerkapp/-/issues
+Project-URL: repository, https://github.com/bergwerk-li/bergwerkapp
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# bergwerkapp
+
+This package is used for software developed by Bergwerk Digital Experiences AG.
