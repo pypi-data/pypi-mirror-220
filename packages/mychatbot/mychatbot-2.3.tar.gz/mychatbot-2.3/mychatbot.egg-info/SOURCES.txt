@@ -1,0 +1,8 @@
+setup.py
+mychatbot/__init__.py
+mychatbot/ai.py
+mychatbot.egg-info/PKG-INFO
+mychatbot.egg-info/SOURCES.txt
+mychatbot.egg-info/dependency_links.txt
+mychatbot.egg-info/requires.txt
+mychatbot.egg-info/top_level.txt
