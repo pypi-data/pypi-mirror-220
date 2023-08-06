@@ -1,0 +1,16 @@
+embellish_folder/__init__.py,sha256=AJbJAkiS6X4p6uV57zFkv1yZChQR8Z42ESZM4XOoDGc,67
+embellish_folder/__main__.py,sha256=E6Gls0DNz8GQK2K-kOUIx8cYhgANW_CH54VKrfCfs14,52
+embellish_folder/api.py,sha256=DGZ-hvWAiJ5i7__0LyL9T3W_IoQZCnqA2QhYNoYOEuc,1966
+embellish_folder/app.py,sha256=Stm2i21Stj9wXpr735LN-CUJSzqfuay00KrLDpb2uEk,540
+embellish_folder/base_icons.py,sha256=6s_lxfy7B8Zcm9bsyAThCV1F2qGQ5BtTsyXIT-Q41-g,2399
+embellish_folder/cli.py,sha256=qvo7P3Jgt6RUof2P_LWF3A0ZSk1d6UYfYhfU47q0uFU,1919
+embellish_folder/fileicon.py,sha256=52MAimDLfIJkMOQ39I7KMmbhLGGkfdcomSEkmgG8BKg,3588
+embellish_folder/read.py,sha256=Yh8fU4YHGefRXHWtIwaBJ1lTAgHYPGRDrUwCRYGSgAw,485
+embellish_folder/version.py,sha256=k95mNYoL1gEwN1HaF1Q0mcH-auz5czspXdMOZa0zlbs,176
+embellish_folder/write.py,sha256=20vLuv1YIcoDQCdYvnY4P9zPziaxyPwbd-O6vFUu-5A,2348
+embellish_folder-0.11.0.dist-info/LICENSE.txt,sha256=xX84eR01hH52i2CsTnFPmsNt8VmtN2wxdMEeIerdIqg,1071
+embellish_folder-0.11.0.dist-info/METADATA,sha256=c5CNsoLJ4z4QLxeis0-CH1xBHHT9LidXmQ9ipVvcyzk,2577
+embellish_folder-0.11.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+embellish_folder-0.11.0.dist-info/top_level.txt,sha256=BCHvnpLvMi3b94oY9SAOYoxumJLgXX1UxIS6rpESdu0,17
+embellish_folder-0.11.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+embellish_folder-0.11.0.dist-info/RECORD,,
