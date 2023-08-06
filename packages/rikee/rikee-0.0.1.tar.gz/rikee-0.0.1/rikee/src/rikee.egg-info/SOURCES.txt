@@ -1,0 +1,8 @@
+README.md
+setup.py
+rikee/src/rikee.egg-info/PKG-INFO
+rikee/src/rikee.egg-info/SOURCES.txt
+rikee/src/rikee.egg-info/dependency_links.txt
+rikee/src/rikee.egg-info/top_level.txt
+rikee/src/rikee.py
+rikee/src/rikee.egg-info/SOURCES.txt
