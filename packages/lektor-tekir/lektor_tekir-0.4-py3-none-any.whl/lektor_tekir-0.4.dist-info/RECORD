@@ -1,0 +1,16 @@
+lektor_tekir/api.py,sha256=A2t3ZYTYBnJq9iriMHWO2LvRfwg7a1VQhLrT9iRM1MM,11279
+lektor_tekir/cli.py,sha256=vCVIzw8QA36uJ3C-z6U-wFKdYpq6RHXYOXlQXAcYCTY,1265
+lektor_tekir/dash.py,sha256=87-tbbro33vJ3Tjvq4AZpY0hyrrJTXLK371cHRAZqdA,2762
+lektor_tekir/static/htmx.min.js,sha256=_TRunIY51GJIk_xFXyQHoJtBgwFzbdGOu7B3ZGN_tHg,42819
+lektor_tekir/static/tekir-admin.css,sha256=VV4-d4Q8wAtqlFEGB5ztpYAsuuCHt-cF1o6k1jYnIEI,5577
+lektor_tekir/templates/tekir_base.html,sha256=RnQn-3y2r72g7l-6Wbrf2NoWa016SDboimaItrtDCKM,1805
+lektor_tekir/templates/tekir_content_edit.html,sha256=XwnMjqWugm6GRZ1o8EGIN7WSE9kagUwrRdOqTdsr9yA,1337
+lektor_tekir/templates/tekir_contents.html,sha256=jaXVflo1lhp2Abg7IjFN_RT3icNOklDw43cSYduIY5g,5608
+lektor_tekir/translations/tr/LC_MESSAGES/messages.mo,sha256=7LJta3yZkrnON3SmtN4UGk4_Nkmx-1xH0z2tHeelE0g,2980
+lektor_tekir/translations/tr/LC_MESSAGES/messages.po,sha256=QKlVUtM0fm9Qk6hteuXNeKDAz1VijFIILOdpo_ZZH3I,6632
+lektor_tekir-0.4.dist-info/LICENSE.txt,sha256=ZYTW9r_jD5Ln_BfijWaQ5Yci1eA_j1lJMVU_zZDL1qg,1491
+lektor_tekir-0.4.dist-info/METADATA,sha256=N48pJugtIxDKAM-E7eOBdou2pD9U6zzc9F-zxmB208A,4152
+lektor_tekir-0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lektor_tekir-0.4.dist-info/entry_points.txt,sha256=5hLnqRZDxZXRAcpsSnxy5IJYuJD9T5_mgbgQ3IJuqOE,55
+lektor_tekir-0.4.dist-info/top_level.txt,sha256=WxhFf9wz9HH3UsYk3F9cBGrxexJdm7DciJbnrp-3lqs,13
+lektor_tekir-0.4.dist-info/RECORD,,

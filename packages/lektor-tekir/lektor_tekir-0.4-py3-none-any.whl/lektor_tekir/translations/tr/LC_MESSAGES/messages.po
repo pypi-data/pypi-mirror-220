@@ -1,0 +1,254 @@
+# Turkish translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-07-19 22:05+0300\n"
+"PO-Revision-Date: 2023-06-25 21:11+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: tr\n"
+"Language-Team: tr <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: lektor_tekir/api.py:56 lektor_tekir/api.py:71 lektor_tekir/dash.py:39
+msgid "No output"
+msgstr "Çıktı yok"
+
+#: lektor_tekir/api.py:94 lektor_tekir/templates/tekir_fields.html:6
+#: lektor_tekir/templates/tekir_fields.html:8
+msgid "home"
+msgstr "ana sayfa"
+
+#: lektor_tekir/api.py:191
+msgid "No changes."
+msgstr "Değişiklik yok."
+
+#: lektor_tekir/api.py:194
+msgid "Content saved."
+msgstr "İçerik kaydedildi."
+
+#: lektor_tekir/api.py:210
+msgid "There are unsaved changes. Do you want to continue?"
+msgstr "Kaydedilmemiş değişiklikler var. Devam etmek istiyor musunuz?"
+
+#: lektor_tekir/api.py:248
+msgid "Deleted."
+msgstr "Silindi."
+
+#: lektor_tekir/api.py:282
+msgid "Every content item must have a title."
+msgstr "Her içerik unsurunun bir başlığı olması zorunludur."
+
+#: lektor_tekir/api.py:287
+msgid "A content item with this name already exists."
+msgstr "Bu isimde bir içerik unsuru zaten var."
+
+#: lektor_tekir/api.py:312 lektor_tekir/templates/tekir_contents.html:50
+#: lektor_tekir/templates/tekir_contents.html:84
+#: lektor_tekir/templates/tekir_contents.html:132
+#: lektor_tekir/templates/tekir_contents.html:149
+#: lektor_tekir/templates/tekir_fields.html:70
+msgid "Add"
+msgstr "Ekle"
+
+#: lektor_tekir/api.py:321
+msgid "An attachment with this name already exists for this item."
+msgstr "Bu içerik unsuru için bu isimde bir ek zaten var."
+
+#: lektor_tekir/templates/tekir_attachment_edit.html:9
+msgid "Size"
+msgstr "Boyutlar"
+
+#: lektor_tekir/templates/tekir_base.html:6
+#: lektor_tekir/templates/tekir_base.html:13
+msgid "Admin Panel"
+msgstr "Yönetim Paneli"
+
+#: lektor_tekir/templates/tekir_base.html:25
+msgid "Toggle light mode"
+msgstr "Aydınlık moda geç"
+
+#: lektor_tekir/templates/tekir_base.html:28
+msgid "Toggle dark mode"
+msgstr "Karanlık moda geç"
+
+#: lektor_tekir/templates/tekir_base.html:35
+msgid "main navigation"
+msgstr "ana navigasyon"
+
+#: lektor_tekir/templates/tekir_base.html:37
+msgid "Summary"
+msgstr "Özet"
+
+#: lektor_tekir/templates/tekir_base.html:38
+msgid "Content"
+msgstr "İçerik"
+
+#: lektor_tekir/templates/tekir_content_edit.html:13
+msgid "Save"
+msgstr "Kaydet"
+
+#: lektor_tekir/templates/tekir_content_edit.html:16
+msgid "Done"
+msgstr "Bitti"
+
+#: lektor_tekir/templates/tekir_content_edit.html:21
+msgid "Close"
+msgstr "Kapat"
+
+#: lektor_tekir/templates/tekir_content_edit.html:26
+msgid "Continue"
+msgstr "Devam et"
+
+#: lektor_tekir/templates/tekir_content_edit.html:27
+#: lektor_tekir/templates/tekir_content_edit.html:36
+#: lektor_tekir/templates/tekir_contents.html:133
+#: lektor_tekir/templates/tekir_contents.html:150
+#: lektor_tekir/templates/tekir_summary.html:54
+msgid "Cancel"
+msgstr "Vazgeç"
+
+#: lektor_tekir/templates/tekir_content_edit.html:35
+#: lektor_tekir/templates/tekir_contents.html:25
+#: lektor_tekir/templates/tekir_contents.html:62
+msgid "Select"
+msgstr "Seç"
+
+#: lektor_tekir/templates/tekir_contents.html:11
+msgid "Edit"
+msgstr "Düzenle"
+
+#: lektor_tekir/templates/tekir_contents.html:12
+msgid "View"
+msgstr "Görüntüle"
+
+#: lektor_tekir/templates/tekir_contents.html:14
+#: lektor_tekir/templates/tekir_summary.html:16
+msgid "Open in file manager"
+msgstr "Dosya yöneticisinde aç"
+
+#: lektor_tekir/templates/tekir_contents.html:18
+msgid "Subpages"
+msgstr "Altsayfalar"
+
+#: lektor_tekir/templates/tekir_contents.html:26
+#: lektor_tekir/templates/tekir_contents.html:125
+msgid "Name"
+msgstr "İsim"
+
+#: lektor_tekir/templates/tekir_contents.html:27
+msgid "Type"
+msgstr "Tip"
+
+#: lektor_tekir/templates/tekir_contents.html:43
+#: lektor_tekir/templates/tekir_contents.html:77
+msgid "Delete selected items"
+msgstr "Seçilenleri sil"
+
+#: lektor_tekir/templates/tekir_contents.html:46
+msgid "No subpages."
+msgstr "Altsayfa yok."
+
+#: lektor_tekir/templates/tekir_contents.html:55
+msgid "Attachments"
+msgstr "Ekler"
+
+#: lektor_tekir/templates/tekir_contents.html:63
+msgid "File name"
+msgstr "Dosya ismi"
+
+#: lektor_tekir/templates/tekir_contents.html:80
+msgid "No attachments."
+msgstr "Ek yok."
+
+#: lektor_tekir/templates/tekir_contents.html:90
+msgid "This operation will delete the following content items:"
+msgstr "Bu işlem aşağıdaki içerik unsurlarını silecek:"
+
+#: lektor_tekir/templates/tekir_contents.html:92
+msgid "Do you want to continue?"
+msgstr "Devam etmek istiyor musunuz?"
+
+#: lektor_tekir/templates/tekir_contents.html:95
+msgid "Yes, delete"
+msgstr "Evet, sil"
+
+#: lektor_tekir/templates/tekir_contents.html:96
+msgid "No, cancel"
+msgstr "Hayır, vazgeç"
+
+#: lektor_tekir/templates/tekir_contents.html:102
+msgid "Content Type"
+msgstr "İçerik Tipi"
+
+#: lektor_tekir/templates/tekir_contents.html:117
+msgid "Title"
+msgstr "Başlık"
+
+#: lektor_tekir/templates/tekir_contents.html:140
+msgid "File"
+msgstr "Dosya"
+
+#: lektor_tekir/templates/tekir_contents.html:141
+msgid "Use button to select file or drag and drop your file into this area."
+msgstr ""
+"Düğmeyi kullanarak dosyayı seçin ya da dosyayı sürükleyip bu alana "
+"bırakın."
+
+#: lektor_tekir/templates/tekir_fields.html:3
+msgid "You are here:"
+msgstr "Buradasınız:"
+
+#: lektor_tekir/templates/tekir_fields.html:88
+msgid "Delete"
+msgstr "Sil"
+
+#: lektor_tekir/templates/tekir_fields.html:89
+msgid "Move up"
+msgstr "Yukarı"
+
+#: lektor_tekir/templates/tekir_fields.html:90
+msgid "Move down"
+msgstr "Aşağı"
+
+#: lektor_tekir/templates/tekir_summary.html:5
+msgid "Number of Pages"
+msgstr "Sayfa Sayısı"
+
+#: lektor_tekir/templates/tekir_summary.html:10
+msgid "Output"
+msgstr "Çıktı"
+
+#: lektor_tekir/templates/tekir_summary.html:13
+msgid "Folder:"
+msgstr "Klasör:"
+
+#: lektor_tekir/templates/tekir_summary.html:20
+msgid "Time:"
+msgstr "Zaman:"
+
+#: lektor_tekir/templates/tekir_summary.html:24
+msgid "Clean"
+msgstr "Temizle"
+
+#: lektor_tekir/templates/tekir_summary.html:30
+msgid "Build"
+msgstr "Üret"
+
+#: lektor_tekir/templates/tekir_summary.html:34
+#: lektor_tekir/templates/tekir_summary.html:51
+msgid "Publish"
+msgstr "Yayımla"
+
+#: lektor_tekir/templates/tekir_summary.html:41
+msgid "Server"
+msgstr "Sunucu"
+

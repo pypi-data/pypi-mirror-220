@@ -1,0 +1,153 @@
+{% extends 'tekir_base.html' %}
+
+{% from 'tekir_fields.html' import render_breadcrumbs %}
+
+{% block body %}
+{{ render_breadcrumbs(record, ancestors) }}
+
+<div id="tekir-contents">
+  <div id="tekir-summary">
+    <h2 class="title">{{ record.title }}</h2>
+    <a class="button" href="{{ url_for('tekir_admin.edit_content', path=record.path) }}">{{ _('Edit') }}</a>
+    <a class="button" href="{{ record.path }}">{{ _('View') }}</a>
+    <button hx-get="{{ url_for('tekir_admin_api.open_folder', path=record.path) }}"
+        hx-swap="none">{{ _('Open in file manager') }}</button>
+  </div>
+
+  <section id="tekir-subpages">
+    <h2>{{ _('Subpages') }}</h2>
+    {% if record.children %}
+    <form id="delete-subpages" action="." method="POST">
+      <div class="field content-listing">
+        <table>
+          <thead>
+            <tr>
+              <th>{{ _('Select') }}</th>
+              <th>{{ _('Name') }}</th>
+              <th>{{ _('Type') }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in record.children %}
+            <tr>
+              <td><input type="checkbox" name="selected-items" value="{{ item.path }}"/></td>
+              <td><a href="{{ url_for('tekir_admin.contents', path=item.path) }}">{{ item._slug }}</a></td>
+              <td>{{ item.datamodel.name_i18n.get(g.lang_code, item.datamodel.name) }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <button class="delete-content" hx-post="{{ url_for('tekir_admin_api.check_delete') }}"
+          hx-target="#delete-items">{{ _('Delete selected items') }}</button>
+    {% else %}
+      <div class="field content-listing">
+        <p>{{ _('No subpages.') }}</p>
+      </div>
+    {% endif %}
+
+      <button id="add-subpage">{{ _('Add') }}</button>
+    </form>
+  </section>
+
+  <section id="tekir-attachments">
+    <h2>{{ _('Attachments') }}</h2>
+    {% if record.attachments %}
+    <form id="delete-attachments" action="." method="POST">
+      <div class="field content-listing">
+        <table>
+          <thead>
+            <tr>
+              <th>{{ _('Select') }}</th>
+              <th>{{ _('File name') }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in record.attachments %}
+            <tr>
+              <td><input type="checkbox" name="selected-items" value="{{ item.path }}"/></td>
+              <td><a href="{{ url_for('tekir_admin.edit_attachment', path=item.path) }}">{{ record.url_to(item) }}</a></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <button class="delete-content" hx-post="{{ url_for('tekir_admin_api.check_delete') }}"
+          hx-target="#delete-items">{{ _('Delete selected items') }}</button>
+    {% else %}
+      <div class="field content-listing">
+        <p>{{ _('No attachments.') }}</p>
+      </div>
+    {% endif %}
+
+      <button id="add-attachment">{{ _('Add') }}</button>
+    </form>
+  </section>
+</div>
+
+<dialog id="delete-confirm">
+  <p>{{ _('This operation will delete the following content items:') }}</p>
+  <ol id="delete-items"></ol>
+  <p>{{ _('Do you want to continue?') }}</p>
+  <button id="delete-continue"
+      hx-post="{{ url_for('tekir_admin_api.delete_content', lang=g.lang_code) }}"
+      hx-swap="none">{{ _('Yes, delete') }}</button>
+  <button id="delete-cancel">{{ _('No, cancel') }}</button>
+</dialog>
+
+<dialog id="add-subpage-form">
+  <form action="." method="POST">
+    <div class="field">
+      <label for="field-model">{{ _('Content Type') }}</label>
+
+      {% if (child_models | length) == 1 %}
+      {{ child_models[0].name_i18n.get(g.lang_code, child_models[0].name) }}
+      <input type="hidden" id="field-model" name="model" value="{{ child_models[0].id }}"/>
+      {% else %}
+      <select id="field-model" name="model" required>
+        {% for model in child_models %}
+        <option value="{{ model.id }}">{{ model.name_i18n.get(g.lang_code, model.name) }}</option>
+        {% endfor %}
+      </select>
+      {% endif %}
+    </div>
+
+    <div class="field">
+      <label for="field-title">{{ _('Title') }}</label>
+      <input type="text" id="field-title" name="title" required
+          hx-get="{{ url_for('tekir_admin_api.slug_from_title') }}"
+          hx-trigger="keyup delay:500ms changed"
+          hx-swap="none"/>
+    </div>
+
+    <div class="field">
+      <label for="field-slug">{{ _('Name') }}</label>
+      <input type="text" id="field-slug" name="slug"/>
+    </div>
+
+    <div class="warning" id="add-subpage-result"></div>
+    <button id="add-subpage-confirm"
+        hx-post="{{ url_for('tekir_admin_api.new_content', lang=g.lang_code, parent=record.path) }}"
+        hx-target="#add-subpage-result">{{ _('Add') }}</button>
+    <button id="add-subpage-cancel">{{ _('Cancel') }}</button>
+  </form>
+</dialog>
+
+<dialog id="add-attachment-form">
+  <form action="." method="POST" enctype="multipart/form-data">
+    <div class="field">
+      <label for="field-file">{{ _('File') }}</label>
+      <small>{{ _('Use button to select file or drag and drop your file into this area.') }}</small>
+      <input type="file" id="field-file" name="file" required/>
+    </div>
+
+    <div class="warning" id="add-attachment-result"></div>
+    <button id="add-attachment-confirm"
+        hx-encoding="multipart/form-data"
+        hx-post="{{ url_for('tekir_admin_api.new_attachment', lang=g.lang_code, parent=record.path) }}"
+        hx-target="#add-attachment-result">{{ _('Add') }}</button>
+    <button id="add-attachment-cancel">{{ _('Cancel') }}</button>
+  </form>
+</dialog>
+{% endblock %}
