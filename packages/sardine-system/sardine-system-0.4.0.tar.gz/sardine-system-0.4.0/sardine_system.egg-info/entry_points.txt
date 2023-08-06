@@ -1,0 +1,2 @@
+[console_scripts]
+sardine = sardine.__main__:run
