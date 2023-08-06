@@ -1,0 +1,8 @@
+aiobaseclient/__init__.py,sha256=Lk4a2pPCq1kS-yihjYdv__uBfZVYtxhNyY4XwAYD6to,110
+aiobaseclient/base.py,sha256=45aHLvyVigQR0aM0bKWMiLUX0WyE6gfgqVOyOCIHwG4,9501
+aiobaseclient/exceptions.py,sha256=pDKSsU-toJ_mPTRvmIIDX1mVstUSeQ-0urFvPj3-Scs,968
+aiobaseclient-0.2.5.dist-info/LICENSE,sha256=MqHL_mFbD3V6C3a0yCDSmTLHbBp0AXYWzcTCr3BN5Qk,1076
+aiobaseclient-0.2.5.dist-info/METADATA,sha256=mEAKjxS8gkBm4G4kSXFKOzQb7fCQpWZ1nV9LAywMYy0,616
+aiobaseclient-0.2.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aiobaseclient-0.2.5.dist-info/top_level.txt,sha256=uUC6plD0kY2qW0ps1aNFjKPZ9ttcxzwq4rmEU15xFkc,14
+aiobaseclient-0.2.5.dist-info/RECORD,,
