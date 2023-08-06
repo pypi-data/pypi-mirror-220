@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+scheck/__init__.py
+scheck/a.py
+scheck.egg-info/PKG-INFO
+scheck.egg-info/SOURCES.txt
+scheck.egg-info/dependency_links.txt
+scheck.egg-info/requires.txt
+scheck.egg-info/top_level.txt
