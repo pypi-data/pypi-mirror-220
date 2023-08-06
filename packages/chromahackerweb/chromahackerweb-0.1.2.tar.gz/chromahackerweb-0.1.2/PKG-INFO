@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: chromahackerweb
+Version: 0.1.2
+Summary: 
+Author: FaunuX
+Author-email: judahpspiegel@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: chromahacker (>=0.2.5,<0.3.0)
+Requires-Dist: flask (>=2.3.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# ChromaHacker
+
+ChromaHacker is a simple palettizer that takes in an image url and produces a version of the image using the specified palette.
+
+To use, simply run 
+`pipx install chromahackerweb`
+`chromahackerweb`
+
+See also: ![Lutgen](https://github.com/ozwaldorf/lutgen-rs), a similar project that was developed at around the same time as chromahacker.
+
+
