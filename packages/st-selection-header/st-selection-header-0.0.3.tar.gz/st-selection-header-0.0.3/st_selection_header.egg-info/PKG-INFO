@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: st-selection-header
+Version: 0.0.3
+Summary: Panel for changing data
+Home-page: 
+Author: Elliot Glas
+Author-email: elliot.glas@viscando.com
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+Panel for changing data
