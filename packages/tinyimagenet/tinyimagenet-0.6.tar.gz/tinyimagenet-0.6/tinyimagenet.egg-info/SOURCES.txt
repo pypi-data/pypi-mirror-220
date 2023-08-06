@@ -1,0 +1,11 @@
+LICENSE
+README.md
+imagenet1k.py
+setup.py
+tinyimagenet.py
+tinyimagenet.egg-info/PKG-INFO
+tinyimagenet.egg-info/SOURCES.txt
+tinyimagenet.egg-info/dependency_links.txt
+tinyimagenet.egg-info/requires.txt
+tinyimagenet.egg-info/top_level.txt
+tinyimagenet.egg-info/zip-safe
