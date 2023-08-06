@@ -1,0 +1,14 @@
+.gitignore
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/asyncoinpayments/__init__.py
+src/asyncoinpayments/coinpayments.py
+src/asyncoinpayments/errors.py
+src/asyncoinpayments/utils.py
+src/asyncoinpayments.egg-info/PKG-INFO
+src/asyncoinpayments.egg-info/SOURCES.txt
+src/asyncoinpayments.egg-info/dependency_links.txt
+src/asyncoinpayments.egg-info/requires.txt
+src/asyncoinpayments.egg-info/top_level.txt
