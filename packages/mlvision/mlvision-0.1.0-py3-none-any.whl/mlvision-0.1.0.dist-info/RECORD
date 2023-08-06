@@ -1,0 +1,13 @@
+mlvision/augmentation.py,sha256=4w4g4LjyZdfbhXsHfVEc57UK5TKHeqgcv1X0ZwzJtYk,606
+mlvision/datasets.py,sha256=4BmrQyOsbMVq2tHFoBYKwX8jo0wAbzYhQ_dbqXTHM_4,1210
+mlvision/distributed.py,sha256=tVSIMXLZuCnM9iBN4fLr27DD0x93wFTOoJiwlMY_DfA,1647
+mlvision/logger.py,sha256=pRn7kBtogRbrJjrRWXqOlEd1gKrAjdjwmPVKv3kDuI0,1716
+mlvision/models/__init__.py,sha256=8gq5dCyOLLfkuRGUo346c2OltIBB0gTS7ZdeKI91Vnk,375
+mlvision/models/cnn.py,sha256=8hwimpwnr3vHVgk2lBTyeHjzj0ThQDZBvOdgevS7VFw,2302
+mlvision/models/mobileone.py,sha256=x5CTr66pdS3i_a8lwTPkmoVymkp1rJbPcbQPnCDWwnc,15558
+mlvision/optim.py,sha256=e8-qxtWis0NABp6B0YOHBYzq4KMpEQ5jYB1RhTe50XU,1732
+mlvision/train.py,sha256=5IdTGSPiAJSrrRhJwnhy5uH_N0sbY4KtE6o1GJfBk9k,7077
+mlvision-0.1.0.dist-info/METADATA,sha256=nguw8pNu5b2DQoVYf1KAf5assd3ZS91uvB1P0mYMhm4,2086
+mlvision-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+mlvision-0.1.0.dist-info/entry_points.txt,sha256=ik9zINpNPho8bWoSiy7fZwvH-0slaCVd5rRXr6mBFpg,47
+mlvision-0.1.0.dist-info/RECORD,,
