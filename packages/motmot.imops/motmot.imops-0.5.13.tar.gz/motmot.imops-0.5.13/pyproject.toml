@@ -1,0 +1,20 @@
+[project]
+name = "motmot.imops"
+version = "0.5.13"
+description = "image format conversion (e.g. between MONO8, YUV422, and RGB)"
+readme = "README.md"
+requires-python = ">= 3.7"
+license.file = "LICENSE.txt"
+authors = [{ name = "Andrew Straw", email = "strawman@astraw.com" }]
+maintainers = [{ name = "Andrew Straw", email = "strawman@astraw.com" }]
+
+urls.homepage = "http://code.astraw.com/projects/motmot/imops.html"
+
+[build-system]
+# following advice in https://stackoverflow.com/a/66479252
+requires = [
+    "setuptools>=61",
+    "cython>=0.29,!=0.29.20",
+    "numpy",
+]
+build-backend = "setuptools.build_meta"
