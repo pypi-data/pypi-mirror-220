@@ -1,0 +1,14 @@
+gen3
+click
+orjson
+inflection
+fhir.resources
+PyJWT
+python-magic
+tqdm
+requests
+pydantic
+pydantic-yaml==0.11.2
+setuptools
+PyYAML
+fhir.resources
