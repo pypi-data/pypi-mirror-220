@@ -1,0 +1,16 @@
+dela/FileReader.py,sha256=6C8ldIann_Ws4MKTuWKWdXy-5J5ON3H_cb9IhZf8BiI,267
+dela/ListCommand.py,sha256=7oZoSfAiUjQEA8XfvF-BSEMDRdHCeCP9al40H_FH3CQ,2153
+dela/TagPresentation.py,sha256=RHy2zaWC7l7SSomF4tzptonuVCC7xP36f7XNLd-dAZU,204
+dela/TagsCommand.py,sha256=xVn1cxAXeYmpk-CXXra4fp0P8LV_My8vPtgpNPBGl9s,1893
+dela/Todo.py,sha256=RhgbvZ-yIm7_REIVIrEqIRFBDYjluyKd_oVjqzgt5FY,1131
+dela/TodoPresentation.py,sha256=DtQTUxyP22Bzfra7QbZNoSuZ3VS-HBWb1RlGuGC8PKk,677
+dela/TodoRepo.py,sha256=zldO0_AxQJ9cw5M0CAzB1346I7zZaOvYh5MAbDo6iIc,1439
+dela/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dela/__main__.py,sha256=Y3ExMK5wF7FCyLSx1TUYRWM8jNdXH0uO2_Zd5B54i6A,2953
+dela/comparators.py,sha256=pYiYU6dRbx9esP_CBQMZmvc6taHyKTrQZ6qgVH31S3w,426
+dela/filters.py,sha256=QjWcnrRsTp9Y70_GCx4ksxfkKxPqrYNDb_UOYl8ggsA,754
+dela/logger.py,sha256=6mT1flTnULsfIud1NIvQoPQYWjkyPRM24N7LL46U1-s,187
+dela-0.2.0.dist-info/METADATA,sha256=L6M-P-rRf7bU93Bm0PvaXt4OwRPfbiz7o1-6CS2k04I,3074
+dela-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+dela-0.2.0.dist-info/entry_points.txt,sha256=yFZd1Obo4hPiANmwnj2CZCGE9ZSz6IOWpHtbluCT3BE,43
+dela-0.2.0.dist-info/RECORD,,
