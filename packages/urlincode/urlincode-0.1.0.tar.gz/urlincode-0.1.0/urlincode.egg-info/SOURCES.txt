@@ -1,0 +1,5 @@
+setup.py
+urlincode.egg-info/PKG-INFO
+urlincode.egg-info/SOURCES.txt
+urlincode.egg-info/dependency_links.txt
+urlincode.egg-info/top_level.txt
