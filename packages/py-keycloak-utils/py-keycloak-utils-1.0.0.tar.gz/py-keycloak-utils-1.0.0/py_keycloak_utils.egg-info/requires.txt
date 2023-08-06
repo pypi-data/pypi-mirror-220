@@ -1,0 +1,2 @@
+flask<=2.2.3,>=2.0.0
+python-keycloak==3.3.0
