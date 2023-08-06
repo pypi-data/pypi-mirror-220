@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: event-dic
+Version: 0.1
+Summary: event_dic of 1step
+Home-page: 
+Author: jiao
+Author-email: 781933206@qq.com
+Maintainer: chen
+Maintainer-email: 
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
