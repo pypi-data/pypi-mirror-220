@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/scrit/__init__.py
+src/scrit/app.py
+src/scrit/audio.py
+src/scrit/config.py
+src/scrit/listener.py
+src/scrit/settings.json
+src/scrit.egg-info/PKG-INFO
+src/scrit.egg-info/SOURCES.txt
+src/scrit.egg-info/dependency_links.txt
+src/scrit.egg-info/entry_points.txt
+src/scrit.egg-info/requires.txt
+src/scrit.egg-info/top_level.txt
