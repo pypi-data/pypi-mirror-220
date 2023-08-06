@@ -1,0 +1,12 @@
+core_validator-0.0.1.dist-info/METADATA,sha256=3wQDzOVwXrft7Q9fcJv_yXeaBCabNZ6N30ZjoREa_ZQ,1943
+core_validator-0.0.1.dist-info/WHEEL,sha256=0QD4Fi8spmPDA9YIWsctxI6ukFf44Zgk0L9495lbqs0,90
+core_validator-0.0.1.dist-info/licenses/LICENSE,sha256=OFSOkgbgrfAJKhj_0HzV-6Y3P4S9rGBFBTyKtfPp1gA,1093
+core_validator/__init__.py,sha256=Iw9oaajme9Z8AGGuHqqF4IHJ3gF6UJCBAaPdXMruNaI,301
+core_validator/types.py,sha256=wehsFH1l2WdrIeS0OhurDvGfSY1TRSyfTBnFT4hHHmA,1306
+core_validator/utils.py,sha256=OUbR3IbAaQ0DL7wMekPFU_YMhP9exnebhLDLjWzvmKA,287
+core_validator/validator.py,sha256=tMUhpnwfnYEnBbAbbd34tKpE6ajxProj57mi7sMW-uo,3668
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/multiple_error.py,sha256=rmmaz5houkYbIOj6JIPdqNWBNxXr7qYQcoXCVcDDLFA,2366
+examples/single_error.py,sha256=MN1IrJROS9OxYLqNMLceSMmaqfFeIEjtHAMyfMpC2VQ,1914
+examples/types.py,sha256=t3wW7mmrw3yvJMBeyE2uBIcndrHTxjUgcnxAr14pLHQ,406
+core_validator-0.0.1.dist-info/RECORD,,
