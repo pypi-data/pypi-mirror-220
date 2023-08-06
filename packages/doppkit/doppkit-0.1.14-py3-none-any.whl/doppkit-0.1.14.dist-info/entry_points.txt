@@ -1,0 +1,3 @@
+[console_scripts]
+doppkit = doppkit.__main__:cli
+doppkit-gui = doppkit.__main__:gui
