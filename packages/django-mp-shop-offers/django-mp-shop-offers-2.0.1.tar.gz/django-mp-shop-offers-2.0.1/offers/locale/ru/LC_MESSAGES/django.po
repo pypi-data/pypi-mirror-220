@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-19 14:00+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: __init__.py:9
+msgid "Offers"
+msgstr "Ценовые предложения"
+
+#: admin.py:21
+msgid "View product"
+msgstr "Показать товар"
+
+#: admin.py:23 models.py:31
+msgid "Product"
+msgstr "Товар"
+
+#: forms.py:18
+msgid "Phone number could not start with `+3800`"
+msgstr "Телефон не может начинаться на `+3800`"
+
+#: lib.py:11
+msgid "New product price offer #{}"
+msgstr "Новое ценовое предложение товара #{}"
+
+#: models.py:15
+msgid "Not reviewed"
+msgstr "не просмотрено"
+
+#: models.py:16
+msgid "Processing"
+msgstr "В обработке"
+
+#: models.py:17
+msgid "Canceled"
+msgstr "Отказано"
+
+#: models.py:18
+msgid "Completed"
+msgstr "Выполнено"
+
+#: models.py:23
+msgid "User"
+msgstr "Пользователь"
+
+#: models.py:26
+msgid "Status"
+msgstr "Статус"
+
+#: models.py:34
+msgid "Name"
+msgstr "Имя"
+
+#: models.py:37
+msgid "Mobile phone"
+msgstr "Телефон"
+
+#: models.py:40 templates/offers/notifications/email.html:13
+msgid "Email"
+msgstr ""
+
+#: models.py:42 templates/offers/notifications/email.html:19
+msgid "Offer"
+msgstr "Предложение"
+
+#: models.py:44
+msgid "Date created"
+msgstr "Дата создания"
+
+#: models.py:51
+msgid "Product price offer"
+msgstr "Ценовое предложение"
+
+#: models.py:52
+msgid "Product price offers"
+msgstr "Ценовые предложения"
+
+#: templates/offers/notifications/email.html:5
+msgid "New price offer #"
+msgstr "Новое ценовое предложение товара #%s"
+
+#: templates/offers/notifications/email.html:7
+msgid "Product title"
+msgstr "Название товара"
+
+#: templates/offers/notifications/email.html:10
+msgid "Sender"
+msgstr "Отправитель"
+
+#: templates/offers/notifications/email.html:16
+msgid "Mobile"
+msgstr "Телефон"
+
+#: templates/offers/notifications/email.html:23
+msgid "Show offer in admin"
+msgstr "Показать предложение в админ зоне"
+
+#: templates/offers/notifications/email.html:26
+msgid "Show product on site"
+msgstr "Показать товар на сайте"
+
+#: templates/offers/price_offer_modal.html:14
+msgid "New price offer"
+msgstr "Новое ценовое предложение товара"
+
+#: templates/offers/price_offer_modal.html:23
+msgid "Cancel"
+msgstr "Отменить"
+
+#: templates/offers/price_offer_modal.html:26
+msgid "Send offer"
+msgstr "Отправить предложение"
+
+#: views.py:62
+msgid "Offer successfully sent"
+msgstr "Предложение успешно отправлено"
