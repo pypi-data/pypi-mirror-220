@@ -1,0 +1,13 @@
+plone.api
+plone.behavior
+plone.directives.form
+rwproperty
+setuptools
+zope.component
+zope.interface
+zope.schema
+
+[test]
+ecreall.helpers.testing
+plone.app.robotframework[debug]
+plone.app.testing
