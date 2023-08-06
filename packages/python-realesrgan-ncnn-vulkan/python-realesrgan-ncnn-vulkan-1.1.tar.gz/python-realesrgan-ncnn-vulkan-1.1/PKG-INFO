@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: python-realesrgan-ncnn-vulkan
+Version: 1.1
+Summary: Python wrapper of Real-ESRGAN-ncnn-vulkan
+Home-page: https://seprentes.github.io/
+Author: Özgür Ateş Fırat
+Author-email: ozgurafirat@proton.me
+License: MIT
+License-File: LICENSE.txt
