@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "docker-harbormaster"
+version = "0.3.1"
+description = "A supervisor for docker-compose apps."
+authors = ["Stavros Korokithakis <hi@stavros.io>"]
+repository = "https://gitlab.com/stavros/harbormaster"
+homepage = "https://gitlab.com/stavros/harbormaster"
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+
+[tool.poetry.scripts]
+harbormaster = "docker_harbormaster.cli:cli"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+PyYAML = ">=6.0.0"
+click = ">=8.1.3"
+attrs = ">=21.2.0"
+click-help-colors = ">=0.9.1"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=5.2"
+gitchangelog = {url = "https://github.com/sarnold/gitchangelog/releases/download/3.1.1/gitchangelog-3.1.1-py3-none-any.whl"}
+GitPython = ">=3.1.18"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
