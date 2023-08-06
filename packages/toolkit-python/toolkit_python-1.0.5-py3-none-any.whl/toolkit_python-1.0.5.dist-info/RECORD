@@ -1,0 +1,16 @@
+toolkit_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toolkit_python/generics/__init__.py,sha256=agesKkvlboZODBUFj1je0rjBo8TWgbeO0sYR-qIrICY,102
+toolkit_python/generics/app_generic_model.py,sha256=5g8mLf7Blj1e2LZPiFhpb02h1HyHwR8V2-FtxWJqMfE,611
+toolkit_python/generics/app_generic_service.py,sha256=mVHpGrciqs_WKabqzMqDsft7DL2vNiSO__6bXtSH8mk,3479
+toolkit_python/utils/__init__.py,sha256=r29bxjbHe56bEN_UyKd0dlyAAZ9HySqqEgFPlQu0YEc,287
+toolkit_python/utils/app_db_utils.py,sha256=nDHE1mW6EHVjXOODq3BD2h4Ugs8RiWtf1af5CuuTBXU,6485
+toolkit_python/utils/app_decorator_utils.py,sha256=srbxTVRUWDFKQBmfX6EzNEAGp6BIKjPjBCMX2-9mMHk,553
+toolkit_python/utils/app_errorhandler_utils.py,sha256=4NEwTN8VyvTnsaGSUrLL9rhCmiHw-CuyDt40hO-5DGs,4819
+toolkit_python/utils/app_exception_utils.py,sha256=rK-7M9fmdabUuerEYUXtXoFlejXQDBIl4mxYLxqA520,634
+toolkit_python/utils/app_resource_utils.py,sha256=soaRQ4BE0CFkOJE8fkw8JL721Th7YbSEBclNx9r1heM,887
+toolkit_python/utils/app_schema_field_utils.py,sha256=q95KuI93Rr6d_G9jgoKU-PuZ3IfKyF70XZ62fsxb5yo,1306
+toolkit_python/utils/app_validator_utils.py,sha256=OWO921aK6AmAdlchJpzERbrKWEZzJyi636wn5LCXaOo,1245
+toolkit_python-1.0.5.dist-info/METADATA,sha256=U5OCR6VbiH_RcgK-J_Lx3JRfrXNqsocsZh_09yX9w-I,191
+toolkit_python-1.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+toolkit_python-1.0.5.dist-info/top_level.txt,sha256=MT67A-uVxtGGp9QlTeteJcMR1rZDa6RE7ExMt4r4TZE,15
+toolkit_python-1.0.5.dist-info/RECORD,,
