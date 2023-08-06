@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: bb-connector
+Version: 0.0.2
+Summary: This project is a flask-service for calculating Bloomberg query's as a REST service.
+Author: Richard Maidorn
+Author-email: maidorn@orcacapital.de
+Project-URL: Source Code, https://gitlab.com/orca-capital/algo-trading/python/bb-connector
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bb-connector
+
+## About this Project
+
+This Project represents a flask service, which connects to bloomberg to get data from the API.
+
+The service has the following REST-endpoints:
+
+### /primary_exchange_securities:
+- this endpoint is used if you want to get all securities on the primary exchange
+
+
+### /fundamental_tickers:
+- this endpoint is used if you want to get all securities for a primary exchange on the remote market
+
+### /members:
+- this endpoint is used if you want ETF/Index constituents
+
+### /field:
+- this endpoint is used if you want a BDP request for a special security
