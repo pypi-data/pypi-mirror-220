@@ -1,0 +1,2 @@
+[console_scripts]
+invoice-extractor = invoice_extractor.main:cli
