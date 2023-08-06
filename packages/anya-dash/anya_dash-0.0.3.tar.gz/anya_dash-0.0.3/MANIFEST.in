@@ -1,0 +1,11 @@
+include anya_dash/anya_dash.min.js
+include anya_dash/anya_dash.min.js.map
+include anya_dash/async-*.js
+include anya_dash/async-*.js.map
+include anya_dash/*-shared.js
+include anya_dash/*-shared.js.map
+include anya_dash/metadata.json
+include anya_dash/package-info.json
+include README.md
+include LICENSE
+include package.json
