@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: infix-postfix
+Version: 1.2.0
+Summary: Converts Infix to Postfix and vice versa...
+Home-page: https://github.com/SoumadeepChoudhury/infixpostfix
+Author: Ahens | An Initiative to Initial (Soumadeep Choudhury)
+Author-email: ahensinitiative@gmail.com
+License: MIT
+Keywords: python,arithmetic,tools,arith-tools,arithmetic operations,Math,python3,pip,pip3,fibonacci,armstrong,boiled-egg,terrace,unique,amicable,infix,postfix,infix2postfix,infixtopostfix,infix-postfix,infix_postfix
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+<p>
+<image src="./res/banner.jpg"/><br>
+An application to convert infix to postfix and vice versa...</p>
+</div>
+
+# Key Features
+- Runs standalone
+- Converts Infix expression to postfix expression.
+- Converts postfix expression to infix expression.
+
+
+# Basic Requirements (Pre-installed)
+- Python 3.x
+- Windows OS or MacOS or Other Linux Distribution.
+
+
+# Installation
+- Open terminal/cmd in windows/macos respectively.
+- Run the command `pip install infix-postfix`.
+
+
+# Usage
+- To convert infix to postfix, run `infix-postfix --infix "${infix_expression}"`
+- To convert postfix to infix, run `infix-postfix --postfix "${postfix_expression}"`
+> NOTE : Double quotes ("") is must for writing the expression to get correct output..
+
+```
+How to write expressions? 
+- INFIX expression
+    - Correct Methods
+        - "( A+B)* C/D"
+        - "((A+B)*C/D+E^F)/G"
+        - "20.1 + (5 ^ 2 / 2)"
+        - "20.1 + ( 5 ^ 2 / 2)"
+        - etc...
+
+- POSTFIX ecpression
+    - Correct Methods
+        - "A B + C * D /"
+        - "A B C D + E F + * G / + * H *"
+        - "20.1 5 +"
+    - Wrong Methods
+        - "AB+C*D/"
+        - "ABCD+EF+*G/+*H*"
+        - "20.1 5+"
+        - "20 5+"
+    - In One line, You have to give spaces after every value
+```
+
+
+- To run this application in your own application or python script, run
+ 
+```python
+from infix_postfix.infix_postfix import infix,postfix
+$(variable) = $(infix/postfix){expression}
+print($(variable))
+```
+
+Example :- 
+
+
+
+<image src="./res/example.jpg" />
+
+# Contribution
+Anyone is free to contribute to this open source project. 🎉🎉
+
