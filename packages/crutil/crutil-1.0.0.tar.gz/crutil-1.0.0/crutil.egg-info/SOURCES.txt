@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+crutil/__init__.py
+crutil/crutil.py
+crutil/metadata.py
+crutil.egg-info/PKG-INFO
+crutil.egg-info/SOURCES.txt
+crutil.egg-info/dependency_links.txt
+crutil.egg-info/requires.txt
+crutil.egg-info/top_level.txt
