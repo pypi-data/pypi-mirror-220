@@ -1,0 +1,3 @@
+[console_scripts]
+BookerPdfTool = BookerPdfTool.__main__:main
+pdf-tool = BookerPdfTool.__main__:main

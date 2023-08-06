@@ -1,0 +1,9 @@
+requests
+pyquery
+imgyaso
+PyMuPdf
+img2pdf
+rarfile
+numpy
+opencv-python
+img2jb2pdf
