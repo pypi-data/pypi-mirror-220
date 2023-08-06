@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+ImgTiler/ImageTiler.py
+ImgTiler/__init__.py
+image_tiller.egg-info/PKG-INFO
+image_tiller.egg-info/SOURCES.txt
+image_tiller.egg-info/dependency_links.txt
+image_tiller.egg-info/requires.txt
+image_tiller.egg-info/top_level.txt
