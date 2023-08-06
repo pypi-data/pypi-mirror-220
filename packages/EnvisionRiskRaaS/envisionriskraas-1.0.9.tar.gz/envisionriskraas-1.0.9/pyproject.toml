@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "EnvisionRiskRaaS"
+version = "1.0.9"
+authors = [
+  { name="EnvisionRisk", email="support@envisionrisk.com" },
+]
+description = "EnvisionRisk improves market risk management by providing predictive analytics for risk quantification, aiding strategic decisions and risk mitigation."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"API webpage" = "https://www.linkedin.com/safety/go?url=https%3A%2F%2Fenvisionrisk.stoplight.io%2Fdocs%2Fapi-aleadomus-documentation%2Fcjr0z7gv4x6en-harnessing-advanced-tools-for-strategic-market-risk-management&trk=flagship-messaging-web&messageThreadUrn=urn%3Ali%3AmessagingThread%3A2-ZDc1YzY5ODEtYWNkMy00MDUwLThhMGUtN2YxMWZjYTQyNjUzXzAxMg%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_leia_profile_views%3BHqF4fDGaRb6atW5VqsXnFw%3D%3D"
+"Homepage" = "https://www.envisionrisk.com/"
