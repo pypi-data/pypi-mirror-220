@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dilated_attention_pytorch/__init__.py
+dilated_attention_pytorch/dilated_attention.py
+dilated_attention_pytorch/long_net.py
+dilated_attention_pytorch/transformer.py
+dilated_attention_pytorch.egg-info/PKG-INFO
+dilated_attention_pytorch.egg-info/SOURCES.txt
+dilated_attention_pytorch.egg-info/dependency_links.txt
+dilated_attention_pytorch.egg-info/requires.txt
+dilated_attention_pytorch.egg-info/top_level.txt
+tests/test_dilated_attention.py
+tests/test_long_net.py
