@@ -1,0 +1,11 @@
+brainchain/README.md,sha256=N1SkftWtiE8ireA1O8EmwbLRzFuS5cMYDFBmUHERWm4,1732
+brainchain/__init__.py,sha256=AOQiOiG9RUwGtvlFgVSviq7AktumCPqkw4cwvOsDfso,167
+brainchain/brainchain.py,sha256=FmJOOMRWe63kJurl0nG7y1qa3DqaIBE0RD2IM8mheAA,11485
+brainchain/carnivore.py,sha256=ZZzRILBObsPQgLAyjCobsOe6lFE1MzkCLvQ3K5IfbGQ,5579
+brainchain/coredata.py,sha256=_sresEZ7Tmc3ACTHMXQAgMrTgjZgqFWV4ssyDA93EE8,2243
+brainchain/factcheck.py,sha256=N-XBw4KBQ3Txst0R76hhMxriXLi0_boNotmKzuxhr_Q,665
+brainchain/requirements.txt,sha256=YvBjAs2tz_il-IbcCfJhPO1B_PBatl8_bLYr5wCxP4A,15070
+brainchain/sales_intel.py,sha256=yfa3rN02LX-35emypc5wbi7LnOYadFSya8fn2o2ss9M,6333
+brainchain-0.4.1.dist-info/METADATA,sha256=pkWQE2Ht4cPBYORku3k4osMDn0g4FRVbMTZiRxul_RQ,612
+brainchain-0.4.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+brainchain-0.4.1.dist-info/RECORD,,
