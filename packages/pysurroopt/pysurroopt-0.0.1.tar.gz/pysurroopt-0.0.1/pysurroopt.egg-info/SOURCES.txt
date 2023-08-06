@@ -1,0 +1,6 @@
+setup.py
+pysurroopt/__init__.py
+pysurroopt.egg-info/PKG-INFO
+pysurroopt.egg-info/SOURCES.txt
+pysurroopt.egg-info/dependency_links.txt
+pysurroopt.egg-info/top_level.txt
