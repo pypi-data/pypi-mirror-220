@@ -1,0 +1,10 @@
+shelchemy/__init__.py,sha256=T7ob1pDKTtVVpQudMyo7XgHcX4TtQ8vSaXIkcbpIhaI,501
+shelchemy/cache.py,sha256=Jc8bX2IYqHLhC8BVLYkd_R0eyK1WsgGxXyziaCnCQ88,8593
+shelchemy/lazy.py,sha256=JNRghtPRQGwj9-YW7nDOWq0IVulayuLe6THZ-18nJW0,1758
+shelchemy/locker.py,sha256=ksk3nuty4kOribshZ7WLwlXmhacbVzKvzMhKhlzdejM,5350
+shelchemy/scheduler.py,sha256=Qu4Jk-Icrdt331tT3s-Id_doMKk5YmuheMMM99XtzVo,2097
+shelchemy/sqla.py,sha256=NOlA6I8zZ2EAzeT4DV2myS_PoBRi9Y8ErsFphM9GqjU,333
+shelchemy-1.230706.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+shelchemy-1.230706.2.dist-info/METADATA,sha256=nK9Dd-810kf28cifaniZF3M6cbosXdGYh4TcLJDOw20,2128
+shelchemy-1.230706.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+shelchemy-1.230706.2.dist-info/RECORD,,
