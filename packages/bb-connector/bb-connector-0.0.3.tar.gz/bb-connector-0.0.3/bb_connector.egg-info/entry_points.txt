@@ -1,0 +1,2 @@
+[console_scripts]
+bb-connector = main.flask_service.main:main
