@@ -1,0 +1,38 @@
+package:
+  name: thermoblock
+
+  version: {{ GIT_DESCRIBE_TAG }}
+
+source:
+  path: ..
+
+requirements:
+  build:
+    - setuptools
+    - setuptools_scm
+  run:
+    - python>=3.10
+
+test:
+  imports:
+    - thermoblock
+  requires:
+    - pytest
+  source_files:
+    - pyproject.toml
+    - tests/
+  commands:
+    - python -m pytest tests
+
+build:
+  noarch: python
+  script:
+    - pip install .
+
+about:
+  home: https://github.com/physicscore/thermoblock
+  license: BSD-3-Clause
+  summary: Flux simulation toy building library.
+  description: Flux simulation toy building library.
+  dev_url: https://github.com/physicscore/thermoblock
+  doc_url: https://physicscore.github.io/thermoblock
