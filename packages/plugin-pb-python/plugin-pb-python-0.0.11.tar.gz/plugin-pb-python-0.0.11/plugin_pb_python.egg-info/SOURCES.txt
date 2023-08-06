@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cloudquery/plugin_v3/__init__.py
+cloudquery/plugin_v3/plugin_pb2.py
+cloudquery/plugin_v3/plugin_pb2.pyi
+cloudquery/plugin_v3/plugin_pb2_grpc.py
+plugin_pb_python.egg-info/PKG-INFO
+plugin_pb_python.egg-info/SOURCES.txt
+plugin_pb_python.egg-info/dependency_links.txt
+plugin_pb_python.egg-info/namespace_packages.txt
+plugin_pb_python.egg-info/not-zip-safe
+plugin_pb_python.egg-info/requires.txt
+plugin_pb_python.egg-info/top_level.txt
