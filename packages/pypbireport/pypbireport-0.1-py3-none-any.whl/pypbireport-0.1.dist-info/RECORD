@@ -1,0 +1,13 @@
+pypbireport/__init__.py,sha256=uItA6wY4-ItyfMZmcMtDkx8sO2f4oZ2y_g5IV9niNeo,815
+pypbireport/constants/bookmarks.py,sha256=6Kb7tLPdPhUELITfNDqBlQH1HLDguUyq4FYOqJZOAxM,99
+pypbireport/constants/charts.py,sha256=J3ZGYqPM2mTe5Gd8in5wmkMwlXsONPURm0qH2_eHqfw,644
+pypbireport/constants/shapes.py,sha256=xEnP3JNnEDIqD20IFHBkWr8Jr3l_HetUqshIcKTPhgY,85
+pypbireport/constants/structures.py,sha256=XQDgxTNo0pHkWj4ZZ9iqS0JVPrcf3pN4XylHvaefszM,2940
+pypbireport/functions/functions.py,sha256=uKk5xgnTFpEuaLtE141a99eZslQj2E9HHaoFLdd98bY,531
+pypbireport/pbi/pbifile.py,sha256=qKoMS8oP3Dm13JN8DY9Xu60u8tMlJj7cow4bLCTnAMc,4185
+pypbireport/pbi/pbireport.py,sha256=DsLNdPY9QMmxhXTNRK-naUZ3YZX1FWDKmAYmG7UeSMk,28954
+pypbireport-0.1.dist-info/LICENSE,sha256=1eJS2XnhJvYwjF8YkOUJ80J5wqgRy5dzMsGP9lsJYxs,1090
+pypbireport-0.1.dist-info/METADATA,sha256=fnRpOajLtC16XO2ChMl8b7KwmhyIlPOFGAizWsPBvl4,7860
+pypbireport-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pypbireport-0.1.dist-info/top_level.txt,sha256=X1o2Y_uBUTRIYwygR_wT86WEXcA7fTM8Th-AlKEzd0s,12
+pypbireport-0.1.dist-info/RECORD,,
