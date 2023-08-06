@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: djangoldp-babelfish
+Version: 0.0.2
+Summary: Djangoldp babelfish package which provides integration with the Babelfish API
+Home-page: https://git.startinblox.com/applications/ontochain/packages/djangoldp-babelfish.git
+Author: Startinblox
+Author-email: benoit@startinblox.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: djangoldp (~=0.5)
+Provides-Extra: dev
+Requires-Dist: factory-boy (>=2.11.0) ; extra == 'dev'
+
+UNKNOWN
+
