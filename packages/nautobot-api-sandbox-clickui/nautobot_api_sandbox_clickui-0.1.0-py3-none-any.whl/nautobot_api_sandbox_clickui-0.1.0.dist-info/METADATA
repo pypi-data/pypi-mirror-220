@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nautobot-api-sandbox-clickui
+Version: 0.1.0
+Summary: click UI for nautobot_api_sandbox package
+Author: tpayne0647
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.6,<9.0.0)
+Requires-Dist: pynautobot (>=1.5.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# nautobot-api-sandbox-clickUI
+Click user interface package for nautobot_api_sandbox
+
