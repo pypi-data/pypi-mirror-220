@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/CigarBreaker/CigarBreaker.py
+src/CigarBreaker/__init__.py
+src/FastaTransformer/FastaTransformer.py
+src/FastaTransformer/__init__.py
+src/FastaTransformer.egg-info/PKG-INFO
+src/FastaTransformer.egg-info/SOURCES.txt
+src/FastaTransformer.egg-info/dependency_links.txt
+src/FastaTransformer.egg-info/top_level.txt
