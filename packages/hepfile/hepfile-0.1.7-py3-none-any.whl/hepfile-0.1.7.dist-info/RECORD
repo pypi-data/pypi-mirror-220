@@ -1,0 +1,15 @@
+hepfile/__init__.py,sha256=TZh-BQfQVCRpUOI-evotncHF0CWSG7iT4r_8CWoAxQA,1276
+hepfile/_version.py,sha256=U2hbyTPRp-CX4Es6NG1lfO-qUY5LdYDnZSP2riRzc1s,76
+hepfile/awkward_tools.py,sha256=CpW3ZmCJY5rc_Aq2bIEtTA9Fg3d9W73QWNQeZaBq94Q,11564
+hepfile/constants.py,sha256=iwjsSNu9PevXQqKqfhx-sBzwRE2ShJkcjnsQhFpX2-Y,494
+hepfile/csv_tools.py,sha256=kAGOgE6JcZJMezHWaYOFZ12IjIHL4q4aCWXWPUa6Vro,1962
+hepfile/df_tools.py,sha256=byNoaXY12UjkHAn0DjeCFZSvSumw2Yb-y-K2F-k2BwE,8865
+hepfile/dict_tools.py,sha256=-fw1pIGbtiNuywURbRWhzEHieddAgfkUx9TobRg5Ino,7233
+hepfile/errors.py,sha256=fpAyBjvaBHLZpuykom2jr1HpJNlCACWQssPUiI5rPaA,1946
+hepfile/read.py,sha256=6y5seY0SXPRDFoyjIgI_0JRbG6TWMb4BWrNoIetCFjo,22150
+hepfile/write.py,sha256=0cCweUyo-c0lTqRmu8p2W42LYbhbtGEwpHvXLhbd3Lo,30022
+hepfile-0.1.7.dist-info/LICENSE,sha256=vpwCBlODszmsh6yVQFef0johFFf2zsPnH7Hh6CfhGi0,11389
+hepfile-0.1.7.dist-info/METADATA,sha256=PEI-w5v7DdLxyqff7rrpv778SsivKEPwN9Q-QD53uVg,23411
+hepfile-0.1.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hepfile-0.1.7.dist-info/top_level.txt,sha256=u-I5oENK6e6wRc5fb_BeK9cCNDzCo0WxRKf0A9HZSAQ,8
+hepfile-0.1.7.dist-info/RECORD,,
