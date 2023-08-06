@@ -1,0 +1,9 @@
+README.md
+setup.py
+version
+rust_dll_example/__init__.py
+rust_dll_example.egg-info/PKG-INFO
+rust_dll_example.egg-info/SOURCES.txt
+rust_dll_example.egg-info/dependency_links.txt
+rust_dll_example.egg-info/top_level.txt
+target/release/rust_dll_example.dll
