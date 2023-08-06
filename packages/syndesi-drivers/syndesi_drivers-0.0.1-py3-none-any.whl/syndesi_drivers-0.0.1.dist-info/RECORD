@@ -1,0 +1,16 @@
+syndesi_drivers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syndesi_drivers/instruments/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syndesi_drivers/instruments/multimeters/__init__.py,sha256=zJknbhyE8Z_ZXhUBaSs0p3YH0GWBPYy1jMggwqYz5IQ,786
+syndesi_drivers/instruments/multimeters/siglent/SDM3055.py,sha256=Vwzud1hjW7YfoEp9j2i--qjn_Jnm83GOy2hhRd11DF0,1886
+syndesi_drivers/instruments/multimeters/siglent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syndesi_drivers/instruments/oscilloscopes/__init__.py,sha256=-NnBVY9OP32NNfl6DDQUpDeg6BcFOmSOvkXL7hXHHWc,448
+syndesi_drivers/instruments/oscilloscopes/picoscope/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syndesi_drivers/instruments/oscilloscopes/siglent/SDS1102CML.py,sha256=2sToRdSJjXViBAsyPKfmJbCDSG0k39hJynq_FXUXdeo,3245
+syndesi_drivers/instruments/oscilloscopes/siglent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syndesi_drivers/instruments/powersupply/__init__.py,sha256=c8zxVi9UR1nzUqQ0MpQ38uiNYXEYI0oGtLVXBF21V30,1393
+syndesi_drivers/instruments/powersupply/siglent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syndesi_drivers/instruments/powersupply/siglent/siglentSPD3303x.py,sha256=I9mxLMKNHjBjeeRsHzSBC6oiiVP-tRbxuPLk83pepDM,2574
+syndesi_drivers-0.0.1.dist-info/METADATA,sha256=2qF1IJFYDmucr1kaFjB7OesSjjD0ONzxgQJ-ca3APJc,1201
+syndesi_drivers-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+syndesi_drivers-0.0.1.dist-info/top_level.txt,sha256=tLQLOpt3EXX8pVPDNnHD8HyMKYw6TNZq9T46GUNWcnc,16
+syndesi_drivers-0.0.1.dist-info/RECORD,,
