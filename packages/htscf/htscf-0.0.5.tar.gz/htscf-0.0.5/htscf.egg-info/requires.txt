@@ -1,0 +1,4 @@
+ase==3.22.1
+pymongo==4.4.1
+Requests==2.31.0
+setuptools==65.5.0
