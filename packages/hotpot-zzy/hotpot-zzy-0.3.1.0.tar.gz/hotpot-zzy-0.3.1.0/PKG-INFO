@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hotpot-zzy
+Version: 0.3.1.0
+Summary: A python package designed to communicate among various chemical and materials calculational tools
+Author-email: Zhiyuan Zhang <ZhiyuanZhang_scu@163.com>, Yue Dong <1320801310@qq.com>, Yuqing Qiu <2022223070045@stu.scu.edu.cn>
+Project-URL: Homepage, https://github.com/Zhang-Zhiyuan-zzy/hotpot
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Description-Content-Type: text/x-rst
+License-File: LICENSE
