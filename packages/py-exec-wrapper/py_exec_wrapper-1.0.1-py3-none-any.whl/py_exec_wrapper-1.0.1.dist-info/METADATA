@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: py-exec-wrapper
+Version: 1.0.1
+Summary: Binary file wrapper
+Author-email: myback <54638513+myback@users.noreply.github.com>
+License: MIT License
+        
+        Copyright (c) 2023 myback.space
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/myback/py-exec-wrapper
+Project-URL: Bug Tracker, https://github.com/myback/py-exec-wrapper/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-wrappers
+Python wrapper for binary files
+
+## Usage
+
+```python
+import wrapper
+
+class Helm(wrapper.ExecWrapper):
+    """
+    helm binary wrapper
+
+    helm = Helm(o='json')
+    resp = helm.ls() => `helm ls -o=json`
+    resp.raise_for_status()
+    print(resp.json)
+
+    helm = Helm()
+    helm.repo.add.bitnami('https://charts.bitnami.com/bitnami')
+
+    helm = Helm()
+    resp = helm.upgrade.redis('bitnami/redis', install=None, o='json')
+    # helm upgrade redis bitnami/redis --install -o json
+    # or same
+    resp = helm('upgrade', 'redis', 'bitnami/redis', '--install', o='json')
+    # helm upgrade redis bitnami/redis --install -o json
+    # or
+    resp = helm.upgrade.redis('bitnami/redis', i=None, o='json')
+    # helm upgrade redis bitnami/redis -i -o json
+    """
+
+    def __init__(self, **kwargs):
+        super().__init__('helm', **kwargs)
+
+    def __getattr__(self, item):
+        h = Helm(**self._parent_kwargs)
+        h._parent_attrs = self._parent_attrs.copy()
+        h._parent_attrs.append(item.replace('_', '-', -1))
+
+        return h
+
+    def _pre(self, args, kwargs):
+        ns = kwargs.pop('n', None)
+        if ns:
+            kwargs.setdefault('namespace', ns)
+```
