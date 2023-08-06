@@ -1,0 +1,2 @@
+[console_scripts]
+create-fastapi-app = cfa.cli:main_cli
