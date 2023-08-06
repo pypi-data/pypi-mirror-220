@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dbt-doris
+Version: 0.3.1
+Summary: The doris adapter plugin for dbt 
+Home-page: https://github.com/apache/doris/tree/master/extension/dbt-doris
+Author: long2ice,catpineapple,JNSimba
+Author-email: 1391869588@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7.2
+Requires-Dist: dbt-core (~=1.5.0)
+Requires-Dist: mysql-connector-python (<8.1,>=8.0.0)
+Requires-Dist: urllib3 (~=1.0)
+
+The doris adapter plugin for dbt 
+
+
