@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: starfall
+Version: 0.0.7
+Summary: An executor of Cron Job
+Home-page: https://github.com/parselife/starfall/tree/master/
+Author: Alex
+Author-email: yxfacw@163.com
+License: MIT License
+        
+        Copyright (c) 2023 Alex
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: Cron Job Executor
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<!--
+ * @Author: Alex
+ * @LastEditors: Alex yxfacw@163.com
+ * @Date: 2023-07-18 18:19:20
+ * @Description:  
+-->
+## Starfall
+
+原生 python3 定时调度执行器（适配 xxl-job）
+
+### 环境
+
+- python: 支持 python 3.9 +
+- OS:  windows、MacOS、Linux
+### 安装
+
+```python
+
+pip install starfall
+
+```
+
+### 使用
+
+安装依赖后，需要在工程目录下提供一个配置文件 `conf.ini`, 并在其中设置以下参数:
+
+```properties
+[Executor]
+PORT = 9002
+NAME = demo-py-executor
+ADMIN_URI = http://192.168.0.96:8088/job-admin
+ACCESS_TOKEN =
+```
+
+> 参数根据实际填写
+
+调用入口方法，启动服务：
+
+```python
+from starfall import init, start_serve
+import os
+
+PROJ_ROOT = os.path.dirname(os.path.abspath(__file__))
+print(f'root: {PROJ_ROOT}')
+
+init(PROJ_ROOT)
+start_serve()
+```
+
+查看控制台输出，看到 `server started...` 表示服务启动成功
+
+
+### 任务代码编写
+
+- 在工程目录下新建 `jobs` 文件夹 （文件夹名称必须固定）
+
+- 在`jobs`目录下新建任务代码
+
+- 一个job示例：
+
+```python
+from starfall.helper import get_logger
+
+def add(x, y):
+    logger = get_logger('demo.add')
+    logger.info(x+y)
+    return x+y
+```
+
+
+
+
+
