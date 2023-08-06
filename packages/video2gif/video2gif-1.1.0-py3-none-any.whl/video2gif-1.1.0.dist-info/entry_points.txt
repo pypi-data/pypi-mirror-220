@@ -1,0 +1,3 @@
+[console_scripts]
+video2gif=video2gif.main:run
+
