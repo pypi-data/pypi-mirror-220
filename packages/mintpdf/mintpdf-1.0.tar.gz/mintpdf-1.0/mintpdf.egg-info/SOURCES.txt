@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mintpdf/__init__.py
+mintpdf/pdf2image.py
+mintpdf/pdf2text.py
+mintpdf.egg-info/PKG-INFO
+mintpdf.egg-info/SOURCES.txt
+mintpdf.egg-info/dependency_links.txt
+mintpdf.egg-info/top_level.txt
