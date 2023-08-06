@@ -1,0 +1,3 @@
+web3==5.28.0
+merkletools==1.0.3
+pdfrw==0.3
