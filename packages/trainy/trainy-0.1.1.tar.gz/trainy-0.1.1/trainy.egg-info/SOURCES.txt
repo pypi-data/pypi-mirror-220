@@ -1,0 +1,15 @@
+README.md
+setup.py
+tests/test_client.py
+tests/test_init.py
+trainy/__init__.py
+trainy/cli.py
+trainy/constants.py
+trainy/httpd.py
+trainy/watcher.py
+trainy.egg-info/PKG-INFO
+trainy.egg-info/SOURCES.txt
+trainy.egg-info/dependency_links.txt
+trainy.egg-info/entry_points.txt
+trainy.egg-info/requires.txt
+trainy.egg-info/top_level.txt

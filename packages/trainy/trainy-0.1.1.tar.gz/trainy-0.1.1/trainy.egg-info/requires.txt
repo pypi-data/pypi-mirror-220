@@ -1,0 +1,5 @@
+wheel
+ray[default]==2.4.0
+torch>=2.0.0
+gpustat==1.0
+posthog
