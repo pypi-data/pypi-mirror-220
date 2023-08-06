@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+aptpandasai_cli.egg-info/PKG-INFO
+aptpandasai_cli.egg-info/SOURCES.txt
+aptpandasai_cli.egg-info/dependency_links.txt
+aptpandasai_cli.egg-info/entry_points.txt
+aptpandasai_cli.egg-info/top_level.txt
+pai/__init__.py
+pai/__main__.py
