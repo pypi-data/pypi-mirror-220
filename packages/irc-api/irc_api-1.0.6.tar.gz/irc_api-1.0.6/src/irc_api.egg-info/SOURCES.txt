@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/irc_api/__init__.py
+src/irc_api/bot.py
+src/irc_api/commands.py
+src/irc_api/history.py
+src/irc_api/irc.py
+src/irc_api/message.py
+src/irc_api.egg-info/PKG-INFO
+src/irc_api.egg-info/SOURCES.txt
+src/irc_api.egg-info/dependency_links.txt
+src/irc_api.egg-info/requires.txt
+src/irc_api.egg-info/top_level.txt
