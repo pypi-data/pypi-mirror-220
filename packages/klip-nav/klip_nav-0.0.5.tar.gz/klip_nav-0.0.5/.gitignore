@@ -1,0 +1,7 @@
+*.swp
+*.bak
+my-clippings.txt
+__pycache__
+.pytest_cache
+venv
+dist
