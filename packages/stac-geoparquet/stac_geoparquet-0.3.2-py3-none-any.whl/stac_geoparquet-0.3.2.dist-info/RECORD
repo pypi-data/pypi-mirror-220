@@ -1,0 +1,13 @@
+stac_geoparquet/__init__.py,sha256=u1O8pDKNuklcjsA1ipvquKC_hb1lYbzl9hUa_r_0dVE,199
+stac_geoparquet/_compat.py,sha256=yHBRfblUeoP1BgVJlLOPRmbZsGNfpz1SAQowsgMX8fc,143
+stac_geoparquet/cli.py,sha256=NXdFKa_qoKj6WJuGlyEbdOAkIXHnLE21AIpObRJ0oC0,3823
+stac_geoparquet/pc_runner.py,sha256=A0gyO4wdoJUYOvTE9s2-hTCBlu__5ZQD8Mh_sbxTtT0,4455
+stac_geoparquet/pgstac_reader.py,sha256=wQRHPFHtn49xOgN6-BVjGkWqAhLgN7PJwmVB3OjLJ0s,12086
+stac_geoparquet/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stac_geoparquet/stac_geoparquet.py,sha256=RBwr5Kg4tl1Qgn8_uOyKrJGnVqbhL7twjMPSVfP_sKk,4952
+stac_geoparquet/utils.py,sha256=hoM10-V0-j2uNoOlTAHCQSp9bDezoC7kIDSqK8GW1GI,2480
+stac_geoparquet-0.3.2.dist-info/entry_points.txt,sha256=VWP1oV5_Br9JaQlvpWbc55MLuMNV1HTFGkQVk9LwZhE,58
+stac_geoparquet-0.3.2.dist-info/LICENSE,sha256=y0NTSD0wStEdJmPcBE5zpuTfHAYMpU_VMGBvrQEOE-0,1081
+stac_geoparquet-0.3.2.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+stac_geoparquet-0.3.2.dist-info/METADATA,sha256=D1dk2nvFf8R_aoj9c9X5lx05a6XDKGn8V3YfTfIi6xc,3018
+stac_geoparquet-0.3.2.dist-info/RECORD,,
