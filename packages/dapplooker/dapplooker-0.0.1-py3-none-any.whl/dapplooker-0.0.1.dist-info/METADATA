@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dapplooker
+Version: 0.0.1
+Summary: A minimal, complete, python API for DappLooker
+Home-page: https://github.com/0xSumitBanik/dapplooker-py-sdk
+Author: Sumit Banik
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+UNKNOWN
+
