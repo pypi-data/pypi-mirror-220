@@ -1,0 +1,11 @@
+umapi_client/__init__.py,sha256=6_pzQlj6yvbX7TlNNbK07UGkUo2-kN-JXqEyAX-b-PQ,1644
+umapi_client/api.py,sha256=9cl6mgdMqzsMWq1eC5urAMU7oIwYDGcxAeGUTS0vRe0,12272
+umapi_client/auth.py,sha256=Y2CtNIVDzvsjrbNTHIECt-163_RUM0cuHP9Xg7Oyfts,4971
+umapi_client/connection.py,sha256=aQeKN7GyS8lJdUgdPkPiK0e9teRehFFU1FnEDQa38RU,24495
+umapi_client/error.py,sha256=a1Kt2dYimUi8cfPg8UOe-7r4LN9VsBG8ND-LpLrP9qc,2606
+umapi_client/functional.py,sha256=nb643iCDiaT1KD9nCJ9eM0vtZV3X_h9t01rWhfU9tI8,14377
+umapi_client/version.py,sha256=TMLTiS98mQsyKrz36ounj-O9Tc5Di1ylnO_1UujAmxM,1139
+umapi_client-3.0.1.dist-info/LICENSE,sha256=70GchqVJAzyyMG5Z__8MD63yEgzpgviXAOOH6-zt-Z4,1094
+umapi_client-3.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+umapi_client-3.0.1.dist-info/METADATA,sha256=yY0xv9bPmnjFjGW182S8L0KhD15UbUlOrQXYV_HsVyw,4002
+umapi_client-3.0.1.dist-info/RECORD,,
