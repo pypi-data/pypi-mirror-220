@@ -1,0 +1,16 @@
+s2clientprotocol-stubs/METADATA.toml,sha256=yjeYteeJHPvcQZ67MpIXu7sE-jdm_CptEcpjew3q_mo,113
+s2clientprotocol-stubs/build.pyi,sha256=G067UYiVTD-uRRjCl50wqqDr6x5F7uiaW8VyqUHxdLo,147
+s2clientprotocol-stubs/common_pb2.pyi,sha256=XXDi5PSyyxe6NX0jeLb6QnFCalHXOkB7xu53xC-mHqs,6565
+s2clientprotocol-stubs/data_pb2.pyi,sha256=cqUp28eN5jhrwOgp6mFQiBf_EfCDuRdgKjtqmxLyuDk,18952
+s2clientprotocol-stubs/debug_pb2.pyi,sha256=wvdz_AZmlR7ChdNb_A2b3lHVQgKRT6uvM0zf-QeWpzw,18423
+s2clientprotocol-stubs/error_pb2.pyi,sha256=a7xCmMSt1vDFaApZrBnO5J4a5ZmqLhZdJp0N4O8eyxs,24184
+s2clientprotocol-stubs/query_pb2.pyi,sha256=8upbsl3w9hMJhH_aFT2-jokVJkRLoI3e7eYsdY41aSk,9142
+s2clientprotocol-stubs/raw_pb2.pyi,sha256=C-j-C8raKl2N7yrZaN2Wrx3MNY_1IS_KHEx8GWa7B54,31822
+s2clientprotocol-stubs/sc2api_pb2.pyi,sha256=VFNza03py6vYv_uJVG1azKK-VL4ZYj4B_F5lDEyUNv8,96186
+s2clientprotocol-stubs/score_pb2.pyi,sha256=xpZODTuOpuVE6d5abD0PDlUjx13Kv7b1FJBuq01bam0,15558
+s2clientprotocol-stubs/spatial_pb2.pyi,sha256=yed2mozUvdhl6NpR9Vvhop2yC9kyNnEL_XCP7ejIv5s,23431
+s2clientprotocol-stubs/ui_pb2.pyi,sha256=STg-RtTQ7HTMYMmgejfBW1lDXgrNp0IylndHWrIwAFs,24710
+types_s2clientprotocol-5.0.0.1.dist-info/METADATA,sha256=oFEojmscMT9gzLB8-QP3ze6ypLWnD5-Rk2LXbEmJBrY,1457
+types_s2clientprotocol-5.0.0.1.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+types_s2clientprotocol-5.0.0.1.dist-info/top_level.txt,sha256=gChM4ib3VXjT0_SNufbQRifzl1archGkY2ssVEGg_tE,23
+types_s2clientprotocol-5.0.0.1.dist-info/RECORD,,
