@@ -1,0 +1,5 @@
+pop>=23.0.0
+idem>=23.0.0
+PyYaml>=6.0.1
+cryptography<42.0.0,>=40.0.0
+pyopenssl>=23.0.0
