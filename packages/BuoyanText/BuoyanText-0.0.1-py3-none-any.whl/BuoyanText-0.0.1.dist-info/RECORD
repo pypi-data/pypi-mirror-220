@@ -1,0 +1,12 @@
+BuoyanText/ByTextNorm.py,sha256=nbb5SDaTpztwrnZIKsAXxNguoD26J0Eoc7SRk6Yagco,8420
+BuoyanText/ByTextReader.py,sha256=SOYz2Jyo1d0gHcc9-5vCCeP73C-NEleUok4XwU7_R30,3300
+BuoyanText/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BuoyanText/contractions_English.json,sha256=bExQSpskbNvUatBb9_9Re-b3YjsE2BGsOymAPPvqSDI,3321
+BuoyanText/punctuation_Chinese.json,sha256=3aBQ-L-Wj8l-Uz3rPH24XqEWBHeTQHbiFGU6w-bBB08,144
+BuoyanText/stopwords_Chinese.json,sha256=lMXXiQnRkXn5DYoMZTVKZKr8tMdvY8Ht-1SgbHKUyDM,22250
+BuoyanText/stopwords_English.json,sha256=QvrvshMPG-q4fBOYLaV6sINJ0744mAvxCT9hzcmnPOU,2013
+BuoyanText-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+BuoyanText-0.0.1.dist-info/METADATA,sha256=u4WKV0uQ5pRaFBhQ5b6ZG6asdk2Aez6rpwchv6NM4xY,2258
+BuoyanText-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+BuoyanText-0.0.1.dist-info/top_level.txt,sha256=L5ixhT0OQsAgIvaC-9jjjI7EiIzTZTMG7hKG1r_Skvk,11
+BuoyanText-0.0.1.dist-info/RECORD,,
