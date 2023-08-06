@@ -1,0 +1,2 @@
+[console_scripts]
+periodicity = periodicity_detection.__main__:cli
