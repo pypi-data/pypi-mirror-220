@@ -1,0 +1,2 @@
+[console_scripts]
+mwj = mwjApiTest.manage:main
