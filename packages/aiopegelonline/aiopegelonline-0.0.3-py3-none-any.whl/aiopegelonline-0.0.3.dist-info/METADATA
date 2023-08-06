@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aiopegelonline
+Version: 0.0.3
+Summary: Asynchronous library to retrieve data from PEGELONLINE.
+Home-page: https://github.com/mib1185/aiopegelonline
+Author: mib1185
+License: Apache License 2.0
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+# aiopegelonline
+Asynchronous library to retrieve data from PEGELONLINE
