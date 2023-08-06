@@ -1,0 +1,15 @@
+image2layout_computer_vision/__init__.py,sha256=juKeWasWj735ffHUmd4_nDDWZ9d6BdbAbcPK0QtmhZc,340
+image2layout_computer_vision/color_extract/__init__.py,sha256=_-f-DNu0VjgiweOg6UAmnX6rtR1QYlx5mjciP-0IWWw,95
+image2layout_computer_vision/color_extract/main.py,sha256=2vV3DYOk2ZDjHC7lk-D0awQvQx2HKS1HPEOEB4RZ2g4,5044
+image2layout_computer_vision/ocr/__init__.py,sha256=eJpHxqxMEP03L5K6N_rdqDahGMLicuyv9rtcnUMOkac,143
+image2layout_computer_vision/ocr/imagebox.py,sha256=QrDdQLx9gWjieYM_teUkq9pdzyQzMK5L5m195V4ALVg,13036
+image2layout_computer_vision/ocr/main.py,sha256=FSeojITSkLmLhGPVlLjUVzJPCdQTgvd907DglmyVCcg,2332
+image2layout_computer_vision/ocr/model_layoutmlv2.py,sha256=WMo46sgp2jBmFtXKtiiF3PM3EtlNUu2cqfWG8o4LjHU,3584
+image2layout_computer_vision/utils/__init__.py,sha256=rm6jZJKJUycK6MRwVTErorJBhOL0WylcNpdCmiHXLFE,125
+image2layout_computer_vision/utils/color_system.py,sha256=l-MHBwWDzUnZXv4sYDIg-pL-8tTHX0Pc42ZF8JCmyJc,3972
+image2layout_computer_vision/utils/imaging.py,sha256=FVljT2Wv6GIrC_sRJbzIN0ACqJtpWEgUisVGLOtgl48,1398
+image2layout_computer_vision-0.0.5.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+image2layout_computer_vision-0.0.5.dist-info/METADATA,sha256=xbOk1B5O_QpyAawEMYXer5BYwjhBtDbsz39TS-MS-70,2319
+image2layout_computer_vision-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+image2layout_computer_vision-0.0.5.dist-info/top_level.txt,sha256=WACg35N9JP6b0Wv25OtjmfdF_up3uiq_N5d5LzGOaP8,29
+image2layout_computer_vision-0.0.5.dist-info/RECORD,,
