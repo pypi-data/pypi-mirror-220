@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mordredcommunity
+Version: 0.0.0a0
+Summary: Community-Maintained Version of mordred
+Author-email: Jackson Burns <jwburns@mit.edu>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/JacksonBurns/mordred-community
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: six (==1.*)
+Requires-Dist: numpy (==1.*)
+Requires-Dist: networkx (>=3)
+Provides-Extra: full
+Requires-Dist: pandas ; extra == 'full'
+Requires-Dist: tqdm ; extra == 'full'
+
