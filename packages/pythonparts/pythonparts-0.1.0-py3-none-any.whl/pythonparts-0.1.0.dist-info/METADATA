@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pythonparts
+Version: 0.1.0
+Summary: PythonParts library
+Author: Yaroslav Oliinyk
+License: MIT
+Requires-Dist: pytest (==7.4.0)
+Requires-Dist: openpyxl (==3.0.7)
+
