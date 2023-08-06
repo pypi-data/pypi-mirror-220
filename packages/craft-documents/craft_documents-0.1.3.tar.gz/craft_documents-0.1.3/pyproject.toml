@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "craft_documents"
+version = "0.1.3"
+description = "A template based command line utility to create exams or worksheets with LaTeX."
+authors = ["Tobias Hauser <apps.hausertobias@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+craft = "craft_documents.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.9.0"
+pathlib = "^1.0.1"
+pyinquirer = "^1.0.3"
+pyyaml = "^6.0"
+rich = "^13.4.2"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+pycodestyle = "^2.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
