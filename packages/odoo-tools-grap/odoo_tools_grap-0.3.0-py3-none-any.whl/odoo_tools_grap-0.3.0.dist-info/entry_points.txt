@@ -1,0 +1,3 @@
+[console_scripts]
+odoo-tools-grap = odoo_tools.__main__:main
+
