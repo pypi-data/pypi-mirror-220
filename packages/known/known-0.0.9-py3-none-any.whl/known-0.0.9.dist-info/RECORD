@@ -1,0 +1,10 @@
+known/__init__.py,sha256=TOD1Argia_F5OEdpP9h3PtRu9uFUIETfzrd2aKDRVZU,453
+known/basic.py,sha256=GIN_0CCNEZzodkD65VO8IGV31RUnZfPWTu2OG5emqHI,26381
+known/imgu.py,sha256=vf4-fAN9-Hc9pUrbWzk714shBzcjNgM52oWdGHggtJ0,6695
+known/mailer.py,sha256=H47ZxkoB0uCP_Bz9ek2PbwzAaqNu3wMGfCyUWpj8BmE,10365
+known/store.py,sha256=2pTHoBpBJ-k2txGjM_AT5iF0QOcHWQ8b-CABWfWaW6A,5849
+known-0.0.9.dist-info/LICENSE,sha256=29lyQZi4Ep2uj6FnE1vO0tbevKqF5_IKP4EfmosUH4I,1102
+known-0.0.9.dist-info/METADATA,sha256=neOZyNjK06Pd6UlW4gjSIqG8ucAzjfBo0eCpb8L31XY,265
+known-0.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+known-0.0.9.dist-info/top_level.txt,sha256=fNiiekLUsAhLtsamxH7noD56oi1k6VDWdvmnx6aPBNk,6
+known-0.0.9.dist-info/RECORD,,
