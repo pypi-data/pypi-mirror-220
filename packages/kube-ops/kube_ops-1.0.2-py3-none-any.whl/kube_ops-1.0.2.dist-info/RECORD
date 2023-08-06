@@ -1,0 +1,12 @@
+kube/__init__.py,sha256=C7bskcMvkVYH2EoqnLUWBnv3GvTab-fEP_aFolr3uNY,1310
+kube/api.py,sha256=EBURovq7vq7BAbQBVu2Ux5GlXQc6cWqCt912Ty8Ri1g,32538
+kube/common.py,sha256=XRpVZJz700HSeErD7gFc1dWzT5GQlrhB1jEuxQ48N0Q,2611
+kube/config.py,sha256=iVa7oi0Rn3HerTlfq0OLbd_GJYhzzubkbki9AL1Q8_U,5080
+kube/enums.py,sha256=egCkn8c3AJKzuYjKkbiX5re4J1z1rIiJc6WQcVvL9ug,1197
+kube/manifests.py,sha256=Xuftc2TeJ-F0HBSg8bQSr8RaKMntHC2Hv_rKTS6KMZI,19115
+kube/templates.py,sha256=9KcL3RUK9bexg6USf3Jp752bDND0pqzsZQSpd7A8ZtA,10932
+kube_ops-1.0.2.dist-info/LICENSE,sha256=4UMudA3MzI411FVQKHbbLdnwm2GjFrbv5LBNk5ZTT8Y,1069
+kube_ops-1.0.2.dist-info/METADATA,sha256=aTYSBVCPtEPCfjphUhYQUuL1kTg7M3rZ0gWwDWjeAMY,3425
+kube_ops-1.0.2.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+kube_ops-1.0.2.dist-info/top_level.txt,sha256=VviGlBjAU4SlS_NC5yQCpy0uOZb8yzwuA9KQU4Tvrgc,5
+kube_ops-1.0.2.dist-info/RECORD,,

@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: kube-ops
+Version: 1.0.2
+Summary: Kubernetes OOP
+Author-email: myback <54638513+myback@users.noreply.github.com>
+License: MIT License
+        
+        Copyright (c) 2023 myback.space
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/myback/kube-ops
+Project-URL: Bug Tracker, https://github.com/myback/kube-ops/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml (~=6.0.1)
+Requires-Dist: kubernetes (~=27.2.0)
+
+# kube-py
+Use OOP to manage Kubernetes objects 
+
+### Usages
+```python
+import kube
+
+# Make container
+container = kube.Container('nginx')
+container.set_image('nginx:alpine')
+
+# Add environment variables to from configmap
+## Make configmap
+cm = kube.ConfigMap('nginx')
+cm.set_data(NGINX_ENTRYPOINT_QUIET_LOGS='true')
+
+## Make env from configmap
+env = kube.env_from_configmap(cm.name)
+container.add_env_from(env)
+
+# Add port to container
+container.add_port('http', 80)
+
+# Make deployment
+deploy = kube.Deployment('nginx-test', container)
+deploy.set_pod_labels(key='value', app='nginx', name='nginx-test')
+deploy.add_volume_to_container(container.name, kube.empty_dir(), '/mnt')
+
+# Add volume from secret with cert and private key
+with open('server.crt') as f:
+    crt = f.read()
+
+with open('server.key') as f:
+    key = f.read()
+
+## Make secret with type kubernetes.io/tls
+sec = kube.SecretTLS('nginx')
+sec.set(crt, key)
+
+## Add secret as volume
+sec_vol = kube.volume_from_secret(sec.name)
+deploy.add_volume_to_container(sec.name, sec_vol, '/etc/nginx/certs')
+
+# Disable service link in pod's containers
+deploy.enable_service_links(False)
+
+# Add service and link by selector
+selector = {'app': 'nginx', 'name': 'nginx-test'}
+deploy.set_selector_match_labels(**selector)
+
+## Make service
+svc = kube.Service('www-nginx')
+svc.add_port('http', 80, 'http')
+svc.set_type(kube.ServiceType.ClusterIP)
+svc.set_selector(**selector)
+
+# Create objects in Kubernetes
+k = kube.KubeApi()
+k.secret_create(sec.manifest)
+k.configmap_create(cm.manifest)
+k.deployment_create(deploy.manifest)
+k.service_create(svc.manifest)
+```
