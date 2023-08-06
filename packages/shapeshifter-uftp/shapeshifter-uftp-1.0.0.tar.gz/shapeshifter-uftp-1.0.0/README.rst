@@ -1,0 +1,28 @@
+Shapeshifter library for Python
+===============================
+
+This is a Python implementation of the ShapeShifter UFTP protocol.
+
+Installation
+------------
+
+.. code-block:: python3
+
+    pip install shapeshifter-uftp
+
+
+Overview
+--------
+
+This library implements the full UFTP protocol that you can use for Shapeshifter communications. It implements all three roles: Distribution System Operator (**DSO**), Aggregator (**AGR**) and Common Reference Operator (**CRO**) in both directions (client and service).
+
+Features of this package:
+
+- Building, parsing and validation of the XML messages
+- Signing and verifying of the XML messages using signatures
+- DNS for service discovery and key retrieval
+- Convenient clients for each role-pair
+- Convenient services for each role
+- JSON-serializable dataclasses for easy transport to other systems
+- Fully internal queing system for full-duplex communication with minimal user code required
+
