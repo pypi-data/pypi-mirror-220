@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+voxface/__init__.py
+voxface/__main__.py
+voxface.egg-info/PKG-INFO
+voxface.egg-info/SOURCES.txt
+voxface.egg-info/dependency_links.txt
+voxface.egg-info/entry_points.txt
+voxface.egg-info/top_level.txt
+voxface/templates/ConteCore2_50_2mm_deface_mask.nii.gz
+voxface/templates/ConteCore2_50_T1w_2mm.nii.gz
