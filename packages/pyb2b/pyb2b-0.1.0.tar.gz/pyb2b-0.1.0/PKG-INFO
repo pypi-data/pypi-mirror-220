@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyb2b
+Version: 0.1.0
+Summary: Python API to EUROCONTROL NM B2B services
+License: MIT
+Author: Xavier Olive
+Author-email: git@xoolive.org
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: pyopenssl (>=23.2.0,<24.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: requests-pkcs12 (>=1.10)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Python API to EUROCONTROL NM B2B services
+
