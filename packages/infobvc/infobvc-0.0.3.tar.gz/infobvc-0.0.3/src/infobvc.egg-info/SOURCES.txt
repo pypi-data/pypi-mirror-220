@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/infobvc/__init__.py
+src/infobvc/core.py
+src/infobvc.egg-info/PKG-INFO
+src/infobvc.egg-info/SOURCES.txt
+src/infobvc.egg-info/dependency_links.txt
+src/infobvc.egg-info/requires.txt
+src/infobvc.egg-info/top_level.txt
