@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tej-exchange-calendars
+Version: 0.0.2
+Summary: Modified exchange-calendars from exchange-calendars3.3.
+Home-page: https://api.tej.com.tw
+Author: tej
+Author-email: tej@tej.com.tw
+Maintainer: tej api Development Team
+Maintainer-email: tej@tej.com
+License: MIT
+Keywords: tej,big data,data,financial,economic,stock,TEJ
+Requires-Python: >=3.8
+
+Modified exchange-calendars from exchange-calendars3.3.
