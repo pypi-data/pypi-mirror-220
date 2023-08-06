@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=67.8.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "metamaterialanalysiscode"
+version = "1.0"
+license = {file = "LICENSE"}
+authors = [
+  { name="Manuel Sánchez García", email="msg.aerospace@gmail.com" },
+]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24.0",]
+description = "Package that cretaes metamaterial FEM models"
+readme = "README.md"
+classifiers = [
+	"Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+	"Topic :: Scientific/Engineering",
+]
+keywords = ["MAC", "Preprocessing", "Metamaterial", "FEM"]
+
+[project.urls]
+"ETSIAE" = "https://www.etsiae.upm.es/"
+"LinkedIn" = "https://www.linkedin.com/in/manuel-s%C3%A1nchez-garc%C3%ADa-8aa683232/"
+"GitHub" = "https://github.com/ManuelSG96/MAC"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
