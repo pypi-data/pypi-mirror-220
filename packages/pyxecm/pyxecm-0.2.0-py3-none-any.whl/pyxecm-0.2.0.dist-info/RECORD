@@ -1,0 +1,17 @@
+pyxecm/__init__.py,sha256=b8LJObme2b7hYKiidtYhEvrUQHy75rdXda5y1ha4UbU,241
+pyxecm/customizer.py,sha256=AjKvaYrr70ERzxp9v2032BLhf58gThb10-BCVPx0xNQ,59539
+pyxecm/k8s.py,sha256=Ic5nlZZJi-1aU2dX343cYrFVh_kagnymHLt8ktkP_2Q,33679
+pyxecm/m365.py,sha256=gt7KTfV57VfpsFK7VrQBC-6bagkSHWmtH5l_enRPYrw,77601
+pyxecm/otac.py,sha256=341Gv0JFSJaMOSET72YwWEYp0ToMkIkzUgk4RKh-Lxs,9541
+pyxecm/otcs.py,sha256=ojx0nGM85hKoph2OD_IN-yMGlnBHU2wasBpfGwJo-QE,256630
+pyxecm/otds.py,sha256=dr7kNGV7uIbXZJ6QsRPm-R1Ioe-2p121U2oRvLh2jKw,129336
+pyxecm/otiv.py,sha256=HrBoU_92ShEaLL7G9ZnteFD9qGFHoZx7rdL1P4-atDU,1605
+pyxecm/otpd.py,sha256=h7tI-nR5dU8avH-KPNRT0HC-eDns18lsCYXzF_X2XQM,10227
+pyxecm/payload.py,sha256=R9Y0eT6gPpwJntxqcLnqGbjG1P7jfkRvYe3CT7ykTeA,289068
+pyxecm/sap.py,sha256=2dwqRH7llMJaTD5_hKl434LtLZ675AOR2T0MbaLX_wM,5907
+pyxecm/translate.py,sha256=1BArzYPHD5DZ4cUA2edUju1uGtrus608DX1vr3iAsXs,2705
+pyxecm-0.2.0.dist-info/LICENSE,sha256=z5DWWd5cHmQYJnq4BDt1bmVQjuXY1Qsp6y0v5ETCw-s,11360
+pyxecm-0.2.0.dist-info/METADATA,sha256=ufY-KG2aWMhIkGFvuXlys1e_lqIigUGFsa8TNQ227cs,1799
+pyxecm-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyxecm-0.2.0.dist-info/top_level.txt,sha256=TGak3_dYN67ugKFbmRxRG1leDyOt0T7dypjdX4Ij1WE,7
+pyxecm-0.2.0.dist-info/RECORD,,
