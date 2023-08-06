@@ -1,0 +1,16 @@
+hugging_py_face/__about__.py,sha256=Sf_QYNA36ZV0EvZ4uXAeP5qZii9XscxBbbYD9d9ubtc,466
+hugging_py_face/__init__.py,sha256=TVe-uvj_STYorsMIeYO0GuOe6CorNUqfSb_nj1ab-xM,676
+hugging_py_face/audio_processing.py,sha256=8S40bBoZJg7i77T7t2PGpMposLG9wbe3IelbxoO1zyA,3927
+hugging_py_face/base_api.py,sha256=yk2CFti-1u3Xaj6Y1dfnwcqU-UYNeXteyK2RcDhVLJs,1058
+hugging_py_face/computer_vision.py,sha256=xAdmdH8wm1Y2FETJ3J2X1Kkt9ICA-vgznQ4_S7GRPpw,2852
+hugging_py_face/config_parser.py,sha256=WgS9vAIgu9z6t5V7eMfVJCIp6Wz5bOld1MRHzxKZsF8,320
+hugging_py_face/exceptions.py,sha256=E8BUV-bmOfX0JmkXNq9TxEy4BHfZJu_ZfnmubPp-jpI,171
+hugging_py_face/multimedia_processing.py,sha256=WBJDDvX9u6UOxG9SfJLkw6WQ6Ws29fuxS4_Dx59Cy8U,2483
+hugging_py_face/nlp.py,sha256=GSvxP_yM64n135JjUMUGAGyJmPC19DHoYLt5fWu_Wg4,27325
+hugging_py_face/config/config.yaml,sha256=GYIw7gtglEEmixQfX6m30lCweDpIoPpo4NrJHjSMRhQ,875
+hugging_py_face/config/logging.yaml,sha256=Qmfiz0DrO08MXjyHEVakOVVOQDb_PsqVycXM9oKFauk,265
+hugging_py_face-0.5.2.dist-info/LICENSE.txt,sha256=t1tvGCPc0TNOnxArYtuEwoDZ40qml-LjCJ-YfM_a--w,35824
+hugging_py_face-0.5.2.dist-info/METADATA,sha256=ukq0eJfm7dy3Epnrf7NMryXpbHH0UpYbT5Vdk90vSB8,5445
+hugging_py_face-0.5.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hugging_py_face-0.5.2.dist-info/top_level.txt,sha256=sYsvv0H857hVBFvJPNUVqd5Lh67H7DAeG1oXFBdG_B8,16
+hugging_py_face-0.5.2.dist-info/RECORD,,
