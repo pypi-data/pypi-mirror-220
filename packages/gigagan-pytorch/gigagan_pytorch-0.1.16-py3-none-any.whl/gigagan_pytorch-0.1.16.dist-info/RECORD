@@ -1,0 +1,13 @@
+gigagan_pytorch/__init__.py,sha256=zi14O5KfDfVzD-FN5Jo6BrpCmopCU3x4lAK4wmoTri4,517
+gigagan_pytorch/attend.py,sha256=gTUnyfISLYicvpO21P-wr2776xTVtF9pOLhgEX_2Ggw,2934
+gigagan_pytorch/data.py,sha256=dmDAvcUpusfvYeDutDwTbKs2NGcOgxAZ0fZQxANVw-k,3136
+gigagan_pytorch/gigagan_pytorch.py,sha256=_65RUDTZcV2ugU__17xKKp6sIhmj5Nf0Z8N4pa0IRkc,75837
+gigagan_pytorch/open_clip.py,sha256=epe58W3zAXQmfsuvn9e1ejnEb2wEdJ5wHSP1xPF7RlY,4617
+gigagan_pytorch/optimizer.py,sha256=9uUM_4udqOa3j0i5IX0yqX9NX8xVXXs4W8YAWutZEt8,953
+gigagan_pytorch/unet_upsampler.py,sha256=Vcs6f1HsHtP9UIksa3DgexUEWL25sxWOKq8C920vD-s,17852
+gigagan_pytorch/version.py,sha256=JRH-_uJEaTwF8Esv7XxA4i4didfrBylVkMwGtZ3sDFc,23
+gigagan_pytorch-0.1.16.dist-info/LICENSE,sha256=JCo3d2HvOFPGYvaXfnYX4-qjRyQvVElop5ZRITXMg-U,1066
+gigagan_pytorch-0.1.16.dist-info/METADATA,sha256=50evWcsmdV0dYljatLYaqYxG0CogRP0lxrT0U2k2K0g,913
+gigagan_pytorch-0.1.16.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gigagan_pytorch-0.1.16.dist-info/top_level.txt,sha256=TnueKFpJolLxWceQ4uC8N8CQhJdhPedOKdPLVcRpLRA,16
+gigagan_pytorch-0.1.16.dist-info/RECORD,,
