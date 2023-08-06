@@ -1,0 +1,14 @@
+{% load cache %}
+{% cache 36000 related_post_by_tags_block pk %}
+<div>
+      <h2 class="text-gray-800 text-lg font-medium mb-2">{{title}}</h2>
+        <ul class="list-disc pl-4">
+{%for item in page_obj%}
+
+    <li class="mb-2">
+        <a href="{% url 'detail_view' item.pk %}" class="">{{item|truncatechars:32}}</a>
+    </li>
+{%endfor%}
+  </ul>
+</div>
+{% endcache %}
