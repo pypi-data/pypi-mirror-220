@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dct-package
+Version: 0.2.0
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+### Header
+Nothing fancy.
+
+#### Version: 0.1.0
