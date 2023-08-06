@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: velait-api
+Version: 0.5.4
+License: LICENSE.md
+Description-Content-Type: text/markdown
+Requires-Dist: django
+Requires-Dist: djangorestframework
+Requires-Dist: djangorestframework-camel-case
+Requires-Dist: drf-yasg
+Requires-Dist: django-safedelete
+Requires-Dist: django-auditlog
+Requires-Dist: django-defender
+
