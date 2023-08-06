@@ -1,0 +1,10 @@
+dataclass_codec/__init__.py,sha256=1KsF4WrDksBk97cmk6xXHsgayXVZSWjCGOO1HaR3oUg,340
+dataclass_codec/decode.py,sha256=Psk4TBpeDuLMdlx2AhSsCD8_Z3dPSByKOWFGbEgSaZU,18862
+dataclass_codec/encode.py,sha256=WAtxhEeNkeVdLGKb-rTWvdsCJC-r4DRlJOCXmw0OxR0,2929
+dataclass_codec/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataclass_codec/tests/test_dataclass_codec.py,sha256=RJV2z-kI6BebZn0V4rEHVPLZKU4aH8zamUryo4czdmE,23303
+dataclass_codec/tests/test_python3_9.py,sha256=2jOgyckgscr0vW35kDvkeRC89QP23p0l4_a6a_8ys9w,845
+dataclass_codec/types_predicates.py,sha256=RwiMV9YgdHYlU15JtHq0vpXWza2JCxoicI5qLa_z2io,436
+dataclass_codec-0.5.6.dist-info/METADATA,sha256=2cxIpOScaslnY_EleFstP0ZjcnHmzEmQ725T-PGJRyg,10596
+dataclass_codec-0.5.6.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+dataclass_codec-0.5.6.dist-info/RECORD,,
