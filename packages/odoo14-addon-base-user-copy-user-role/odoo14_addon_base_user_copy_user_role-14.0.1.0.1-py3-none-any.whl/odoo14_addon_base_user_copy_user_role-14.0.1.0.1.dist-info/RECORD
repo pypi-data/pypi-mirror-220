@@ -1,0 +1,12 @@
+odoo/addons/base_user_copy_user_role/README.rst,sha256=IkBaYoug0Qx8XpRooakcv0yFraG0vsR9cz1HaBOFzGk,3391
+odoo/addons/base_user_copy_user_role/__init__.py,sha256=cT3WwaKz0scGi74Ag5B-bfZ3tpXx0vvYxhAcfH2CsXE,174
+odoo/addons/base_user_copy_user_role/__manifest__.py,sha256=k01NkWMhr9vvPwEGE9gOxoN8coAo8gahZ2Eox4TpTcE,623
+odoo/addons/base_user_copy_user_role/security/ir.model.access.csv,sha256=9CvanXXZ38dDXbyKCazwljNUOrEs3bYPY1UPim0fwsE,175
+odoo/addons/base_user_copy_user_role/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo/addons/base_user_copy_user_role/wizards/__init__.py,sha256=pWmKuHvdCkK4Qld5MDqCIA7CstEpKIZ0-WR8WAY8grw,147
+odoo/addons/base_user_copy_user_role/wizards/base_copy_user_role.py,sha256=gXcy8GzMXpj243QGQ6_vIcTyt5uZoI9gZ2CvzMCvK68,2069
+odoo/addons/base_user_copy_user_role/wizards/base_copy_user_role.xml,sha256=lJblZwAMxSmqjOaKWFPs7P722CFAhPH65A2LlWeAa1o,1755
+odoo14_addon_base_user_copy_user_role-14.0.1.0.1.dist-info/METADATA,sha256=II-8Urzw2u10KruUfWS2Ri0n1nyXd8aAcH5v4h6f_YI,3933
+odoo14_addon_base_user_copy_user_role-14.0.1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_base_user_copy_user_role-14.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_base_user_copy_user_role-14.0.1.0.1.dist-info/RECORD,,
