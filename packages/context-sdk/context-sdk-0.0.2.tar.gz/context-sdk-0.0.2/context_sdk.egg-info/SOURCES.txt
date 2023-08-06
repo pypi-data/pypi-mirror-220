@@ -1,0 +1,8 @@
+README.md
+setup.py
+context/__init__.py
+context_sdk.egg-info/PKG-INFO
+context_sdk.egg-info/SOURCES.txt
+context_sdk.egg-info/dependency_links.txt
+context_sdk.egg-info/top_level.txt
+tests/test_search.py
