@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cre
+Version: 0.4.2
+Summary: A rule engine for Python powered by numba.
+Home-page: https://github.com/DannyWeitekamp/Cognitive-Rule-Engine
+Author: Daniel Weitekamp
+Author-email: dannyweitekamp@gmail.com
+License: MIT
+Keywords: rule engine,expert system,production rules
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: cloudpickle
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-benchmark ; extra == 'dev'
+
+CRE is a high-performance forward-chaining rule engine for Python built with the numba just-in-time compiler toolset.
