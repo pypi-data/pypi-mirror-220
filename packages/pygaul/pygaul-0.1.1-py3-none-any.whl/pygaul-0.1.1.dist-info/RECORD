@@ -1,0 +1,7 @@
+pygaul/__init__.py,sha256=rJKMlKC_dev-LNWmG3JGCuZ2N1N0CHhcPRaHkbYI-6M,8613
+pygaul/data/gaul_continent.json,sha256=RQvxHC1j9VhpFUFT1OfpiHagYBYrM2UoygDu0WJTbkw,131
+pygaul/data/gaul_database.parquet,sha256=aXUolG2k2QweBw8ovxEV-oCmJXfRwWvMrBTxjy1irs0,705454
+pygaul-0.1.1.dist-info/METADATA,sha256=uPDd97WS9RS3GGlZym2rIACvU2yoTpqOL6P1mUEWXEg,4268
+pygaul-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pygaul-0.1.1.dist-info/top_level.txt,sha256=Q_zOrL7oPkW2_zO_JmXwIif5NZi3AinAzqIy-VjtHkU,7
+pygaul-0.1.1.dist-info/RECORD,,
