@@ -1,0 +1,15 @@
+jupyter_ai_magics/__init__.py,sha256=4kX-btqhkbcZzvymPacCPPd_0TN54CBAqqj_OgJydsM,814
+jupyter_ai_magics/_version.py,sha256=5q2cFSnCsn1fCW__pPA04KFvFzBP28Vew8lFCClsfUw,172
+jupyter_ai_magics/aliases.py,sha256=8pM-qrsc8kOHGcfV8h3WhQ_H6nSmvhfv61oWuLbqW4s,175
+jupyter_ai_magics/embedding_providers.py,sha256=PcZncn_I4J0j2_pZlZZs7MecfXnjyaNIZUEsqsByhvw,2872
+jupyter_ai_magics/exception.py,sha256=_YFOYOEFBJM5ZaGeAKrVSnOjGIYXjhC0SUmWr1b318E,1277
+jupyter_ai_magics/magics.py,sha256=ncgft-8bCyE-E9kX8pwBrvRHuBOIKK9qZyoMlPHbBW4,22176
+jupyter_ai_magics/parsers.py,sha256=XXmTRe81ox7TbJ6ZCwkuVlL3QX-eOu14dWxjQEvtmtk,6098
+jupyter_ai_magics/providers.py,sha256=ojjLxhBYC9QmfG-QcX1Kwhjy5X2_0zZBww6LMZOGKyA,14514
+jupyter_ai_magics/utils.py,sha256=Lp6xoxn2txDO25C8Vb13sJpiHISHUS05byA5c-vGKwc,3610
+jupyter_ai_magics/tests/__init__.py,sha256=68xsPjPdZEIUM4riX3kTX8KZ3GoeXoDZWwSWNt_u-nU,47
+jupyter_ai_magics-0.10.1.dist-info/METADATA,sha256=546YDMcNJqfbsg5KeTx3mQn6V9r3DCmLPQcHdJJk7BI,3570
+jupyter_ai_magics-0.10.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+jupyter_ai_magics-0.10.1.dist-info/entry_points.txt,sha256=tnHoNQgcS4CMk6O0jzxtBYnhzesAhFshWwcfjFzvJYc,672
+jupyter_ai_magics-0.10.1.dist-info/licenses/LICENSE,sha256=wMVD2Kl_IyhVyrcy1ScHkwjEWwyEHqhtKzOFbhEH_B0,1523
+jupyter_ai_magics-0.10.1.dist-info/RECORD,,
