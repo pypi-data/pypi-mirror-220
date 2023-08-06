@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: fast-transfer
+Version: 0.1.2
+Summary: An easy and fast way to transfer files
+Project-URL: Homepage, https://github.com/ChanMo/fast-transfer
+Project-URL: Bug Tracker, https://github.com/ChanMo/fast-transfer/issues
+Author-email: ChanMo <chan.mo@outlook.com>
+License-File: LICENSE
+Keywords: fast-transfer,http.server,share,transfer
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: click
+Requires-Dist: flask
+Description-Content-Type: text/markdown
+
+# Fast Transfer
+
+An easy and fast way to transfer files between mulitple users.
+If you offten run the command `python -m http.server`, you will like it.
+
+
+## Usage
+
+```
+fast-transfer /tmp
+```
+
+## Installation
+
+```
+pip install fast-transfer
+```
