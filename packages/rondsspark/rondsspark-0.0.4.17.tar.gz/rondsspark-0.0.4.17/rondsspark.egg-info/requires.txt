@@ -1,0 +1,8 @@
+cassandra-driver==3.28.0
+pandas==1.1.5
+pyYAML==6.0
+confluent-kafka==2.1.1
+schedule==1.1.0
+wheel==0.37.1
+findspark==2.0.1
+importlib_resources==5.4.0
