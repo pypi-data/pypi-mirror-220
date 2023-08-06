@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: metathing
+Version: 0.3.1
+Summary: MT-Service Python SDK
+Author: Mang Shao
+License: N/A
+Requires-Dist: pyyaml
+Requires-Dist: paho-mqtt
+
