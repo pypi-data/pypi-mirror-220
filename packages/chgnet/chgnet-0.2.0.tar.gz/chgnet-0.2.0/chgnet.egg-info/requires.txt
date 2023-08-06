@@ -1,0 +1,15 @@
+ase>=3.22.0
+cython>=0.29.26
+numpy>=1.21.6
+pymatgen>=2022.4.19
+torch>=1.11.0
+
+[crystal-toolkit]
+crystal-toolkit
+
+[docs]
+lazydocs
+
+[test]
+pytest
+pytest-cov
