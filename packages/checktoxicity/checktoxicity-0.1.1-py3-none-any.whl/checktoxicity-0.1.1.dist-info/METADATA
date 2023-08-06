@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: checktoxicity
+Version: 0.1.1
+Summary: A package for content moderation using Hugging Face Toxic-BERT model
+Author: Pawan Kumar
+Author-email: pawankumar49871@gmail.com
+License-File: LICENSE
+Requires-Dist: requests
+
