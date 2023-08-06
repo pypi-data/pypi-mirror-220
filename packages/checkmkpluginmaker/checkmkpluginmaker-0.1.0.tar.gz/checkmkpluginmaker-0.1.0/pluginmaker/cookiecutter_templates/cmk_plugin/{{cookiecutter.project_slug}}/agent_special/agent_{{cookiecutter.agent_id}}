@@ -1,0 +1,166 @@
+#!/usr/bin/env python3
+# copy this file to local/share/check_mk/agents/special
+# require install netsnmp
+
+from optparse import OptionParser
+import os
+import netsnmp
+import string
+import sys
+import re
+import ast
+
+# Exit statuses recognized by Nagios
+OK = 0
+WARNING = 1
+CRITICAL = 2
+UNKNOWN = 3
+
+
+def query_snmp():
+    #
+    #   Parser options here, this hostname, community, oid is must
+    #   You could add more parser
+    #   Noticed, agent invoker will send parameter to agent
+    #
+    parser = OptionParser()
+    parser.add_option(
+        "-H",
+        dest="host",
+        type="string",
+        help="Hostname/IP Address of device",
+        metavar=' '
+    )
+    parser.add_option(
+        "-C",
+        dest="community",
+        type="string",
+        help="Community string",
+        metavar=' ',
+        default='FPTHCM123'
+    )
+    parser.add_option(
+        "-k",
+        dest="name",
+        type="string",
+        help="Name that show on service check",
+        metavar=' ',
+        default='Default card name'
+    )
+    parser.add_option(
+        "--w",
+        dest="warning",
+        type="float",
+        help="Warning threshold",
+        metavar=' ',
+        default=-275
+    )
+    parser.add_option(
+        "--c",
+        dest="critical",
+        type="float",
+        help="Critical threshold",
+        metavar=' ',
+        default=-280
+    )
+    parser.add_option(
+        "--oid", 
+        dest="OID", 
+        type="string", 
+        help="OID", 
+        metavar=' ',
+        default='1.3.6.1.4.1.3607.2.30.1.1.1.3.16395.2.10'
+    )
+    parser.add_option(
+        "--all", 
+        dest="all_values", 
+        type="string", 
+        help="all_values", 
+        metavar=' ',
+        default='all values'
+    )
+
+    # parser check
+    (options, args) = parser.parse_args()
+    for option in ('host', 'community', 'name', 'critical', 'OID'):
+        if not getattr(options, option):
+            print('Option %s not specified' % option)
+            parser.print_help()
+            sys.exit(UNKNOWN)
+    
+    # 
+    #   End parser
+    #   
+
+
+
+
+    # -----------------------------------------
+    #   Your logic code of agent
+    # -----------------------------------------
+
+    sess = netsnmp.Session(
+        Version=2,
+        DestHost=options.host,
+        Community=options.community,
+        Timeout=1000000,
+        Retries=3)
+
+    name = options.name
+    OID = '.' + options.OID
+    warning = options.warning
+    critical = options.critical
+
+    if OID == "" or OID == "null" or critical == "" or critical == "null":
+        print("UNKNOWN - OID or Threshold critical incorrect. Please check again!")
+        sys.exit(UNKNOWN)
+    else:
+        result = netsnmp.snmpwalk(
+            OID,
+            Version=2,
+            DestHost=options.host,
+            Community=options.community,
+            Timeout=1000000,
+            Retries=2)
+
+    if (None in result) or ('' in result) or (len(result)== 0):
+        #print 'OK - ' + str(name) + '= No Such Instance currently exists OID: ' + str(options.OID)
+        print('OK - ' + str(name))
+        sys.exit(OK)
+    else:
+        value = int(result[0])
+
+    status_code = 0
+    msg = ''
+    if value <= options.critical:
+        status_code = 2
+        msg += 'CRITICAL - ' + str(name) + " with value: " + str(value)
+
+    if status_code == 0:
+        msg += 'OK -  ' + str(name)
+
+    # ----------------------------------------- 
+    #   This bellow print is message send to plugin that display on checkmk UI
+    print(msg)
+
+    # -----------------------------------------
+
+
+    sys.exit(status_code)
+
+
+if __name__ == '__main__':
+    # ----------------------------------------- 
+    #   This bellow print is id of this agent
+    #   DO NOT MODIFY, If you need other id, create new plugin template!
+    # -----------------------------------------
+    print('<<<{{cookiecutter.agent_id}}>>>')       
+
+    # -----------------------------------------
+
+    # run agent 
+    try:
+        query_snmp()
+    except Exception as e:
+        print(f'UNKNOWN - Agent code get exception {e}')
+    
