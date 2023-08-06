@@ -1,0 +1,20 @@
+config:
+  some_dict:
+    key: value
+    other: out
+  some_float: 1.11
+  some_int: 12345
+  some_list_numbers:
+  - 1
+  - 2
+  - 3
+  some_list_strings:
+  - wow
+  - it's a
+  - list
+  test_inherit: inherited
+  test_override: global
+env:
+  prod:
+    config:
+      test_override: prod
