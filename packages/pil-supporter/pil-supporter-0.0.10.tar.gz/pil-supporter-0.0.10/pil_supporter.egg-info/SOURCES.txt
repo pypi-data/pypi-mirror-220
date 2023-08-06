@@ -1,0 +1,12 @@
+README.md
+setup.py
+pil_supporter/__init__.py
+pil_supporter.egg-info/PKG-INFO
+pil_supporter.egg-info/SOURCES.txt
+pil_supporter.egg-info/dependency_links.txt
+pil_supporter.egg-info/not-zip-safe
+pil_supporter.egg-info/requires.txt
+pil_supporter.egg-info/top_level.txt
+pil_supporter/utils/__init__.py
+pil_supporter/utils/draw.py
+pil_supporter/utils/etc.py
