@@ -1,0 +1,3 @@
+[console_scripts]
+diagrams-yaml = diagrams_yaml.entrypoint:entrypoint
+
