@@ -1,0 +1,3 @@
+[console_scripts]
+cdhit-compare = cdhit_reader:compare
+cdhit-parser = cdhit_reader:cli
