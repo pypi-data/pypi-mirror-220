@@ -1,0 +1,9 @@
+README.md
+setup.py
+trgm/__init__.py
+trgm/game_utils.py
+trgm.egg-info/PKG-INFO
+trgm.egg-info/SOURCES.txt
+trgm.egg-info/dependency_links.txt
+trgm.egg-info/requires.txt
+trgm.egg-info/top_level.txt
