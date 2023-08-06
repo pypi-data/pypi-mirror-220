@@ -1,0 +1,17 @@
+aiodatastore/__init__.py,sha256=SZkvhFzAGejMNfLqv3DTo0o8fKJ5I5_ak1fc5qqxnD8,1192
+aiodatastore/client.py,sha256=0lMtF29UdvVs-VIW4tt7wrTFFvw2czKXLjmjnbXiZDs,7864
+aiodatastore/commit.py,sha256=wmCxaR6PxD7jmx_K0RG3hQpQSu7a3Pqja7MSnZ_1v3k,1835
+aiodatastore/constants.py,sha256=LmR1UpgVE2pdo9NN4o6ADw9bTzsdr6b13H_efZoSxuM,1375
+aiodatastore/entity.py,sha256=WMDbZVh2raeGbk2zeUBfmY7BgTVAJK9Bal_Hryh6em0,2853
+aiodatastore/filters.py,sha256=jahE7IxVs1qFQEPadNLQX118wxqBYWdKNgKlRPyznj4,1637
+aiodatastore/key.py,sha256=CqVGrHJuqszo7Q9UnrOqK8YgI7wTf86bXfsRcM6NN8E,2950
+aiodatastore/lookup.py,sha256=GjaoalsCtRo2irkY-6knemGIY0o0PnOOTlVtWidRSkw,864
+aiodatastore/mutation.py,sha256=wdX5tj1vUoJxyRCuZ4Pn4UkOnYhynBFL1n6CpuBi3PU,1093
+aiodatastore/property.py,sha256=aAqB_OFPe61Mec4_fjET4US8v08hNVx_1TIns8HYkLY,1650
+aiodatastore/query.py,sha256=UhGe6C0OZg-iWFguEZZmTfOfHxAq1PgVUhRPZ2rGxok,7337
+aiodatastore/transaction.py,sha256=CAM45qSp0IHjYYGGTepsZ_gq20cEqfadIxqE_sTCy_I,755
+aiodatastore/values.py,sha256=hhRkTxDOGhOQe5K5raAj4wTYmUNy7_pVcmTzg3gGn0w,5546
+aiodatastore-0.1.4.dist-info/METADATA,sha256=gj0CfHSGhjA_tPqRza4dwOsZVBZuVmVNFJdPLFx-5NA,6502
+aiodatastore-0.1.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+aiodatastore-0.1.4.dist-info/licenses/LICENSE,sha256=75gX19u8NOfiXOHkEr_cerdtdGdIrZ3SqS84YeVa7-g,1077
+aiodatastore-0.1.4.dist-info/RECORD,,
