@@ -1,0 +1,11 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+datemath-stubs/METADATA.toml
+datemath-stubs/__init__.pyi
+datemath-stubs/helpers.pyi
+types_python_datemath.egg-info/PKG-INFO
+types_python_datemath.egg-info/SOURCES.txt
+types_python_datemath.egg-info/dependency_links.txt
+types_python_datemath.egg-info/requires.txt
+types_python_datemath.egg-info/top_level.txt
