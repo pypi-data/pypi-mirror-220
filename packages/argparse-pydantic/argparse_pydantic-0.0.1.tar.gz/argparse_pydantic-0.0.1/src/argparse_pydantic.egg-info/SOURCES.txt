@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/argparse_pydantic/__init__.py
+src/argparse_pydantic/core.py
+src/argparse_pydantic/version.py
+src/argparse_pydantic.egg-info/PKG-INFO
+src/argparse_pydantic.egg-info/SOURCES.txt
+src/argparse_pydantic.egg-info/dependency_links.txt
+src/argparse_pydantic.egg-info/requires.txt
+src/argparse_pydantic.egg-info/top_level.txt
