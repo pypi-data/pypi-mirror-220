@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PyTheme
+Version: 0.1.1
+Summary: The lib can change the theme of tkinter.
+Home-page: https://github.com/ThomasStudio/PyTheme
+Author: Thomas Mei
+Author-email: studio8-support@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+
+# PyTheme
+Theme for python
+
+The lib can change the theme of tkinter.
+
