@@ -1,0 +1,8 @@
+pyproject.toml
+antifragility_schema/__init__.py
+antifragility_schema/models.py
+antifragility_schema.egg-info/PKG-INFO
+antifragility_schema.egg-info/SOURCES.txt
+antifragility_schema.egg-info/dependency_links.txt
+antifragility_schema.egg-info/requires.txt
+antifragility_schema.egg-info/top_level.txt
