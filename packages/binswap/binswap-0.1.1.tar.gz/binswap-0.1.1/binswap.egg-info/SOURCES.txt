@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+binswap/__init__.py
+binswap/main.py
+binswap.egg-info/PKG-INFO
+binswap.egg-info/SOURCES.txt
+binswap.egg-info/dependency_links.txt
+binswap.egg-info/entry_points.txt
+binswap.egg-info/requires.txt
+binswap.egg-info/top_level.txt

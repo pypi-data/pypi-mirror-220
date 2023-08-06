@@ -1,0 +1,2 @@
+[console_scripts]
+binswap = binswap.main:main

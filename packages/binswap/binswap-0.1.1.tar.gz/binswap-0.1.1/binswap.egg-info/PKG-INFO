@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: binswap
+Version: 0.1.1
+Summary: A tool to monitor a directory and automatically relaunch a binary.
+Home-page: https://github.com/Mt9555/binswap
+Author: temcr
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#### Intro
+`binswap` monitors a directory for file changes and auto relaunch bin when a replacement is detected at the specified location on the filesystem..
+
+#### Usage
+```
+$ binswap --bin "path/to/binary" --dir "path/to/directory"
+```
