@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: web3r
+Version: 0.0.4
+Summary: Web3R.py is a Python wrapper that enhances the functionality of Web3.py and integrates with Etherscan's API.
+Home-page: https://github.com/FinnCastro/Web3R
+Author: Finn Castro
+Author-email: finnfierro@gmail.com
+License: MIT
+Download-URL: https://github.com/FinnCastro/Web3R/archive/refs/tags/0.0.4.tar.gz
+Keywords: web3.py,Etherscan,Ethereum,Blockchain,API
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: web3
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: etherscan-python
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
