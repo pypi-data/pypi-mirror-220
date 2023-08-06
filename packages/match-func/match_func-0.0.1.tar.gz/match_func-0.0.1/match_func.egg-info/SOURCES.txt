@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+match_func/__init__.py
+match_func/match_func.py
+match_func.egg-info/PKG-INFO
+match_func.egg-info/SOURCES.txt
+match_func.egg-info/dependency_links.txt
+match_func.egg-info/top_level.txt
