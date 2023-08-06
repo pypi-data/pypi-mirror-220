@@ -1,0 +1,2 @@
+[console_scripts]
+CloudEdgeAssetsOptimizer = CloudEdgeAssetsOptimizer.CloudEdgeAssetsOptimizer:main
