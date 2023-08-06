@@ -1,0 +1,3 @@
+include operagxdriver/requirements.txt
+include operagxdriver/thirdparty.json
+include operagxdriver/README.MD

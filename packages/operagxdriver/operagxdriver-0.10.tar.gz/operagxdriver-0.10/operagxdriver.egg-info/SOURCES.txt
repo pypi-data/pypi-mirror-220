@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+operagxdriver/README.MD
+operagxdriver/__init__.py
+operagxdriver/requirements.txt
+operagxdriver/thirdparty.json
+operagxdriver.egg-info/PKG-INFO
+operagxdriver.egg-info/SOURCES.txt
+operagxdriver.egg-info/dependency_links.txt
+operagxdriver.egg-info/requires.txt
+operagxdriver.egg-info/top_level.txt
