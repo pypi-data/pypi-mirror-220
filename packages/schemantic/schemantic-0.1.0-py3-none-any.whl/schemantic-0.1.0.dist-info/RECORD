@@ -1,0 +1,16 @@
+schemantic/__init__.py,sha256=TEF38k4jiWNHulc996eGooAuIQwinRXVNkBnpYagmdw,149
+schemantic/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schemantic/model/field_info.py,sha256=JC9agt2biYJvvFoiv0v7fuwr9V8jKFNWedNTWsaeMtI,6273
+schemantic/model/schematic.py,sha256=5Ncim4TnA2cnSrgTXWLdpEM_4B-UAdCDNPpwxtE7iWQ,3263
+schemantic/project.py,sha256=ogkyTZAv0AQEMDTmSbp_A9g9lKm0h_xKJF3h9zs6kyA,1599
+schemantic/schema/__init__.py,sha256=7j88EbVtlisPfiWh8rMQ9YkT7aKFhbJZsCNFHeSq23A,74
+schemantic/schema/abstract.py,sha256=EB_3oS7lVVJ78lWa2SujuXgNohEopkQIN-9GDXSR5UQ,4095
+schemantic/schema/main.py,sha256=wyaLc4vhhP2jDY2hDpOK7FjGa-707VwfXjKKgliuwyA,20160
+schemantic/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schemantic/utils/constant.py,sha256=EcEkUiTnWNRlvt2O2QeZuoDEsko9gpjRt1JD7JjK1cY,185
+schemantic/utils/misc.py,sha256=KI8ZeQP80QqYWdjwS99Xg68zDFUqKhFu_YRJjPgJdGM,870
+schemantic/utils/typing.py,sha256=ok6wU7sruMDC21z_WxtE0eUF8A2YZ_-8IryxBOnVZiM,351
+schemantic-0.1.0.dist-info/LICENSE.md,sha256=j50-6PuSEB5_OS8T5x18VBGmEtN6D9u-6r_hIeGL5IU,1658
+schemantic-0.1.0.dist-info/METADATA,sha256=GBinl0qVuMDGJUAjrknq-a10OHWvSzuenV5sV66yRrI,4421
+schemantic-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+schemantic-0.1.0.dist-info/RECORD,,
