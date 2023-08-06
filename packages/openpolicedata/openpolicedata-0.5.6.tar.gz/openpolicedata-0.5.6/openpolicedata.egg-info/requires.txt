@@ -1,0 +1,12 @@
+openpyxl
+numpy
+packaging
+pandas
+requests
+sodapy
+tqdm
+xlrd
+
+[optional]
+rapidfuzz
+msoffcrypto-tool
