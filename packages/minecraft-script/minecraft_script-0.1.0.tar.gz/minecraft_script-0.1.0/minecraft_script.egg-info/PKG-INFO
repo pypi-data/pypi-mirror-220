@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: minecraft-script
+Version: 0.1.0
+Summary: Minecraft Script Programming language
+Author: Joyful-Bard
+Author-email: <thisis@notarealemail.com>
+Keywords: minecraft,mc,script,language
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Python library to allow running .mcs (Minecraft Script) files and building entire datapacks from them.
