@@ -1,0 +1,133 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "datawords"
+description = 'A library to work with text data'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MPL-2.0"
+keywords = ["nlp", "datascience", "transformers", "text"]
+authors = [
+  { name = "Xavier Petit", email = "nuxion@gmail.com" },
+]
+documentation = "https://datawords.readthedocs.io/"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+	"Unidecode~=1.3.2",
+	"langdetect~=1.0.9",
+	"emoji~=1.5.0",
+	"gensim~=4.3.0",
+	"nltk~=3.6.4",
+	"scikit-learn~=1.2.0",
+	"spacy~=3.4.4",
+	# "pytextrank~=3.2.1",
+	"scikit-network~=0.28.3",
+	# "langcodes~=3.2.1",
+	# "language-data~=1.1",
+	"langcodes",
+	"language",
+	"annoy~=1.17.0",
+	"attrs~=23.1.0",
+	"cattrs~=23.1.2",
+	"tqdm",
+]
+dynamic = ["version"]
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[project.optional-dependencies]
+transformers = [
+	"toolz",
+	"transformers",
+	"sentencepiece",
+  	# "torch~=1.13.1",
+	#"torch @ https://download.pytorch.org/whl/cpu/torch-1.13.1%2Bcpu-cp37-cp37m-linux_x86_64.whl ; python_version == '3.7'",
+	#"torch @ https://download.pytorch.org/whl/cpu/torch-1.13.1%2Bcpu-cp38-cp38-linux_x86_64.whl ; python_version == '3.8'",
+  	#"torch @ https://download.pytorch.org/whl/cpu/torch-1.13.1%2Bcpu-cp39-cp39-linux_x86_64.whl ; python_version == '3.9'",
+  	# "torch @ https://download.pytorch.org/whl/cpu/torch-1.13.1%2Bcpu-cp310-cp310-linux_x86_64.whl ; python_version == '3.10'",
+  	# "torch @ https://download.pytorch.org/whl/cpu/torch-1.13.1%2Bcpu-cp311-cp311-linux_x86_64.whl ; python_version == '3.11'",
+	"sacremoses~=0.0.53",
+]
+
+#transformers-gpu = [
+#	"transformers>4.0.0"
+#]
+
+[project.urls]
+Documentation = "https://github.com/unknown/datawords#readme"
+Issues = "https://github.com/unknown/datawords/issues"
+Source = "https://github.com/unknown/datawords"
+
+[tool.hatch.version]
+path = "datawords/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+  "pip-tools",
+  "ipython",
+  "isort",
+  "pylint>2.6.0", # https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html#id4
+  "black~=22.10.0",
+  "black-macchiato", # for partial update of buffers in emacs
+  "types-requests",
+  "types-redis",
+  "types-ujson",
+  "types-dateparser",
+  "types-pytz",
+  "types-emoji",
+  "Sphinx~=5.3.0",
+  "sphinx-autobuild",
+  "sphinx-rtd-theme",
+  "torch~=1.13.1",
+  "mypy~=1.4.1",
+  # "furo", # sphinx theme
+
+]
+
+features = [
+   "transformers"
+]
+
+
+[tool.hatch.envs.docker]
+type = "container"
+
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=datawords --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "datawords/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+[tool.isort]
+profile = "black"
+
+
