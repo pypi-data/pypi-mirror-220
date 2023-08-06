@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: searchep
+Version: 0.1.1
+Summary: A module to search for exceptional points
+Home-page: https://search-for-eps.github.io/Search-for-EPs/
+License: MIT
+Keywords: searchep,EP,search for EPs,exceptional points,stepwise grouping algorithm
+Author: Patrick Egenlauf
+Author-email: patrick.egenlauf+searchep@gmail.com
+Requires-Python: >=3.9.2,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: gpflow (>=2.5.2,<3.0.0)
+Requires-Dist: jax[cpu] (>=0.3.13,<1.0.0)
+Requires-Dist: jaxlib (>=0.3.10,<1.0.0)
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: numpy (>=1.21.6,<2.0.0)
+Requires-Dist: pandas (>=1.3.5,<2.0.0)
+Requires-Dist: plotly (>=5.8.0,<6.0.0)
+Requires-Dist: scikit-learn (>=1.2.2,<2.0.0)
+Requires-Dist: scipy (>=1.7.3,<2.0.0)
+Requires-Dist: setuptools (>=52.0.0)
+Requires-Dist: typing-extensions (>=4.2.0,<5.0.0)
+Project-URL: Documentation, https://search-for-eps.github.io/Search-for-EPs/
+Project-URL: Repository, https://github.com/Search-for-EPs/Search-for-EPs
+Description-Content-Type: text/markdown
+
+# Search-for-EPs
+
+
+### Installation
+
+You can install this package via `pip`.   
+
+    pip install searchep    
+
+
+### Documentation
+
+The [documentation](https://search-for-eps.github.io/Search-for-EPs/) contains more details about this package.
+
