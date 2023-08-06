@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: splatprint
+Version: 1.0.1
+Summary: A macro generator for NXBT to print Splatoon 3 posts via Bluetooth.
+Home-page: https://github.com/wryvrrrn/splatprint
+Author: Wryvrrrn
+License: MIT
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: Pillow
+
