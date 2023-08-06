@@ -1,0 +1,2 @@
+[console_scripts]
+nebari = _nebari.cli.main:app
