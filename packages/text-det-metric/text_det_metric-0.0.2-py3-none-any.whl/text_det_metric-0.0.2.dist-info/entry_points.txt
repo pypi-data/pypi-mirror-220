@@ -1,0 +1,3 @@
+[console_scripts]
+text_det_metric = text_det_metric.main:main
+
