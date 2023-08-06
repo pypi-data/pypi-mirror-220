@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rambaldi
+Version: 2.2.0
+Summary: Standardization and analytical error propagation of Δ47, Δ48 and Δ49 clumped-isotope measurements
+Author-email: Mathieu Daëron <mathieu@daeron.fr>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy >=1.21
+Requires-Dist: scipy >=1.7.0
+Requires-Dist: matplotlib >=3.4.2
+Requires-Dist: lmfit >=1.0.2
+Requires-Dist: typer >=0.9.0
+Project-URL: Documentation, https://mdaeron.github.io/rambaldi
+Project-URL: Home, https://github.com/mdaeron/rambaldi
+
+# Rambaldi
+
+Python library for processing and standardizing carbonate clumped-isotope analyses, from low-level data out of a dual-inlet mass spectrometer to final, “absolute” Δ<sub>47</sub>, Δ<sub>48</sub> and Δ<sub>49</sub> values with fully propagated analytical error estimates.
+
