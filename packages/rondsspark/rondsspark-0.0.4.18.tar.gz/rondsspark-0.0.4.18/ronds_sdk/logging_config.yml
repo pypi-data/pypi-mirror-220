@@ -1,0 +1,30 @@
+version: 1
+
+formatters:
+  default:
+    format: "%(asctime)s - %(filename)s - %(funcName)s - %(lineno)s - %(levelname)s: %(message)s"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: default
+
+  file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: DEBUG
+    filename: app.log
+    when: midnight
+    encoding: utf-8
+    formatter: default
+    backupCount: 5
+
+loggers:
+  root:
+    handlers: [console, file]
+    level: INFO
+  executor:
+    handlers: [ console, file ]
+    level: INFO
+
+disable_existing_loggers: false
