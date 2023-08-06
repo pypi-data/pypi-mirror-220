@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: reczoo
+Version: 0.0.0
+Summary: A curated model zoo for recommendation tasks
+Home-page: https://github.com/xue-pai/RecZoo
+Author: xpai
+Author-email: xpai@users.noreply.github.com
+License: Apache-2.0 License
+Download-URL: https://github.com/xue-pai/RecZoo/tags
+Keywords: recommender systems,ctr prediction,tensorflow,pytorch
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: h5py
+Requires-Dist: PyYAML
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
