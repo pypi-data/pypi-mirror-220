@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: anilibria.py
+Version: 1.0.3
+Summary: An async API wrapper for the anilibria.tv
+Home-page: https://github.com/Damego/anilibria.py
+Author: Damego
+Author-email: danyabatueff@gmail.com
+License: GPL-3.0 License
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (>=3.8.3)
+Requires-Dist: attrs (==22.2.0)
+Requires-Dist: cattrs (==22.2.0)
+Requires-Dist: orjson (==3.8.5)
+Requires-Dist: tomli (==2.0.1)
+Provides-Extra: readthedocs
+Requires-Dist: furo ; extra == 'readthedocs'
+Requires-Dist: readthedocs-sphinx-search ; extra == 'readthedocs'
+Requires-Dist: Sphinx ; extra == 'readthedocs'
+Requires-Dist: sphinx-hoverxref ; extra == 'readthedocs'
+
+anilibria.py
+============
+
+О библиотеке
+************
+anilibria.py - это RESTful и Websocket обёртка для API anilibria.tv.
+
+Вы можете ей пользоваться для получение уведомлений о выходе новой серии, получение информации о тайтлах и других вещей.
+
+Установка
+*********
+
+``pip install --upgrade anilibria.py``
+
+С использование poetry:
+``poetry add anilibria.py``
+
+
+Использование методов клиента
+*****************************
+
+В библиотеке реализована поддержка RESTful API.
+Список всех возможных методов вы можете увидеть `здесь <https://anilibriapy.readthedocs.io/ru/latest/client.html>`__
+
+.. code-block:: python
+
+  import asyncio
+
+  from anilibria import AniLibriaClient
+
+
+  async def main():
+      # Создание клиента
+      client = AniLibriaClient(proxy="http://0.0.0.0:80")  # proxy - необязательный аргумент
+
+      # Получение тайтла по его коду
+      title = await client.get_title(code="kimetsu-no-yaiba-yuukaku-hen")
+      # Вывод описание тайтла
+      print(title.description)  # Все атрибуты вы можете найти в документации моделей
+
+  asyncio.run(main())
+
+Использование Websocket
+***********************
+
+АПИ Анилибрии имеет вебсокет, к которому можно подключиться.
+
+.. code-block:: python
+
+   from anilibria import AniLibriaClient, Connect
+
+
+   client = AniLibriaClient()
+
+
+   @client.on(Connect)  # Или client.listen(name="on_connect")
+   async def connected(event: Connect):
+       print("Подключено к АПИ")
+
+
+   client.start()
+
+
+Все модели события вы можете найти `здесь <https://anilibriapy.readthedocs.io/ru/latest/events.html>`_
+
+
+Использование с другими библиотеками
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Вы также можете использовать эту библиотеку вместе с:
+
+- ``discord.py`` и его форках
+- ``aiogram``
+
+и с другими.
+
+Примеры использования представлены `здесь <https://github.com/Damego/anilibria.py/tree/main/examples>`__
+
+Документация
+^^^^^^^^^^^^
+`Официальная документация API <https://github.com/anilibria/docs/blob/master/api_v3.md>`__
+
+`Документация библиотеки <https://anilibriapy.readthedocs.io/ru/latest/>`__
