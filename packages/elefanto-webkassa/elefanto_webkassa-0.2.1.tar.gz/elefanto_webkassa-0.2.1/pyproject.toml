@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "elefanto-webkassa"
+version = "0.2.1"
+description = ""
+authors = ["Zhanibek <gglassota2@gmail.com>"]
+readme = "README.md"
+packages = [{include = "webkassa"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+django = "^4.0.0"
+cryptography = "^41.0.2"
+httpx = "^0.24.1"
+djangorestframework = "^3.14.0"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+pytest-cov = "^4.1.0"
+pytest-mock = "^3.11.1"
+flake8-quotes = "^3.3.2"
+flake8-import-order = "^0.18.2"
+flake8-commas = "^2.1.0"
+pytest-django = "^4.5.2"
+requests-mock = "^1.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "webkassa"
+python_files = "tests.py test_*.py"
+python_classes = "*Test *TestCase"
+addopts = "--cov=webkassa --cov-report term-missing"
+testpaths = [
+    "tests"
+]
