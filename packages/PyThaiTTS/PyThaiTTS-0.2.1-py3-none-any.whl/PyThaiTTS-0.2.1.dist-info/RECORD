@@ -1,0 +1,9 @@
+pythaitts/__init__.py,sha256=pihbCmGle_S-dA9wniuGQDeA1cJ-jZRHRTJzVzUKNnM,2597
+pythaitts/pretrained/__init__.py,sha256=iWOCRkVNG5k_ahsr0Nnt1twtW4iawL7KBz0muNk0f-0,197
+pythaitts/pretrained/khanomtan_tts.py,sha256=mExlomDVeR-aaCwVZ2_7YCKyc5DRjd7pB5ubCWA5-Dc,4524
+pythaitts/pretrained/lunarlist_model.py,sha256=w4r2NFwO_PdYNlQMcNWF35aUmknScufbebI2kfDHudQ,1988
+PyThaiTTS-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+PyThaiTTS-0.2.1.dist-info/METADATA,sha256=6J0ac9tJbo6OaLZDwliXYwNdHVAiZvizdMKwBH5JhMs,1806
+PyThaiTTS-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+PyThaiTTS-0.2.1.dist-info/top_level.txt,sha256=7w2eX870ViNLYmKL9hWrW1jUEnYXl26zfXvJcHAEssw,10
+PyThaiTTS-0.2.1.dist-info/RECORD,,
