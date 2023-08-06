@@ -1,0 +1,24 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "nat_gateway_setup"
+version = "0.6.0"
+description = "A utility to configure a Linux machine as a gateway for a private network."
+authors = ["Your Name <youremail@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.1"
+prompt-toolkit = "^3.0.18"
+argparse = "^1.4.0"
+pyroute2 = "^0.5.14"
+ipaddress = "^1.0.23"
+distro = "^1.8.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+nat-gateway-setup = "nat_gateway_setup.nat_gateway_setup:main"
