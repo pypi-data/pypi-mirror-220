@@ -1,0 +1,5 @@
+[project]
+name = "server-discovery"
+version = "0.1"
+description = "Automatically find your server on the local network"
+dependencies = ["pydantic", "netifaces"]
