@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: lavapayments
+Version: 1.0.5
+Summary: Библиотека для работы с Бизнес API Lava.ru
+Author-email: dimabykov189@gmail.com
+Requires: aiohttp
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
