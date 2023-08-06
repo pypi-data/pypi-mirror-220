@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+JaiShriRam/__init__.py
+JaiShriRam/module.py
+JaiShriRam.egg-info/PKG-INFO
+JaiShriRam.egg-info/SOURCES.txt
+JaiShriRam.egg-info/dependency_links.txt
+JaiShriRam.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: JaiShriRam
+Version: 0.0.2
+Summary: This is the compressible version of various libraries of python 
+Author: Krishna
+Author-email: Krishnavijaywargiya12@gmail.com
+Keywords: sum,minus,product,division,factorial,stone_paper_scissors,random_number_generater,random_number_picker,circle,square,rectangle,root_for_quadratic_equation,quadratic_equation_formation,name_of_colour_of_word_game,halloween_wish_and_pumpkin_creation,text_to_speech,get_system_name_and_ip_address,eye_track_and_mouse_control_with_eye,stopwatch,forest_adventure_game,zero_cutties_game,tic_tac_tor_in_tkinter,
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+This is the compressible version of various libraries of python 
