@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nids-transformers
+Version: 0.0.7
+Summary: Tag Generation and Text Generation for Network Packets using Transformers
+Home-page: https://github.com/rdpahalavan/BERTSimilarWords
+Author: Pahalavan R D
+Author-email: rdpahalavan24@gmail.com
+License: MIT
+Keywords: NIDS Transformers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
