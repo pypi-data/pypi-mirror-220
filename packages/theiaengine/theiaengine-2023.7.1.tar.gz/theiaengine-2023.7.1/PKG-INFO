@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: theiaengine
+Version: 2023.7.1
+Summary: Python SDK for TheiaEngine API
+Keywords: vision,ai,ml,computer-vision,2D,3D,object-detection,image-classification,image-recognition,object-tracking,gpt,deep-learning
+Author-email: Moses Olafenwa <guymodscientist@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests >= 2.31.0
+Requires-Dist: opencv-python >= 4.7.0.72
+Project-URL: Bug Tracker, https://github.com/Gen-XR/TheiaEngine/issues
+Project-URL: Homepage, https://github.com/Gen-XR/TheiaEngine
+
+# TheiaEngine Python SDK
