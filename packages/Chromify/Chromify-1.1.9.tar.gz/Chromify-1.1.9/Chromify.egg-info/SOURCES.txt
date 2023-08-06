@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+Chromify/Chromify.py
+Chromify/Color.py
+Chromify/Converter.py
+Chromify/__init__.py
+Chromify.egg-info/PKG-INFO
+Chromify.egg-info/SOURCES.txt
+Chromify.egg-info/dependency_links.txt
+Chromify.egg-info/top_level.txt
+Chromify/ext/MassiveColors.py
+Chromify/ext/__init__.py
