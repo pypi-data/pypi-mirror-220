@@ -1,0 +1,8 @@
+README.md
+setup.py
+imgopt/__init__.py
+imgopt.egg-info/PKG-INFO
+imgopt.egg-info/SOURCES.txt
+imgopt.egg-info/dependency_links.txt
+imgopt.egg-info/requires.txt
+imgopt.egg-info/top_level.txt
