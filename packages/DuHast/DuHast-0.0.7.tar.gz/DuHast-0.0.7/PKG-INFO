@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: DuHast
+Version: 0.0.7
+Summary: Revit API sample snippets and Revit Batch Processor flows.
+Home-page: UNKNOWN
+Author: Jan Christel
+Author-email: jan.r.christel@gmail.com
+License: BSD-3-Clause
+Description: # Code samples for the Revit Batch Processor
+        This repository contains code samples for the [Revit Batch Processor](https://github.com/bvn-architecture/RevitBatchProcessor)
+        
+        A more detailed description of the varies modules, is available through the online [docs](https://jchristel.github.io/SampleCodeRevitBatchProcessor/) and in the [wiki](https://github.com/jchristel/SampleCodeRevitBatchProcessor/wiki).
+        
+Keywords: "Revit","API","Batchprocessor","sample"
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
