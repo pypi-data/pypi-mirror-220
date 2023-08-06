@@ -1,0 +1,17 @@
+segment-anything-py
+opencv-python
+pycocotools
+matplotlib
+huggingface_hub
+geopandas
+rasterio
+tqdm
+gdown
+xyzservices
+pyproj
+leafmap
+localtileserver
+
+[all]
+leafmap
+localtileserver
