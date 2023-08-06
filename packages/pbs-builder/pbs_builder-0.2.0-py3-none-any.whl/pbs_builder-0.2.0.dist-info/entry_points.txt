@@ -1,0 +1,4 @@
+[console_scripts]
+qbatch=pbs_builder.qbatch:run
+qcancel=pbs_builder.qcancel:run
+
