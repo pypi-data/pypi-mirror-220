@@ -1,0 +1,13 @@
+edgeimpulse/__init__.py,sha256=4nO-_-dnxLUHBq0UFNfkAO7yLpq2_kel7KwzGTlWZJc,297
+edgeimpulse/exceptions.py,sha256=UU8ddOpAZs_OvP7_AWgJnlncoPe2Wi39mPRuErtoKG4,3017
+edgeimpulse/methods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edgeimpulse/methods/deploy.py,sha256=wa90jE2KSFUBTwwjMZzSviR1lxY3V4dd0cCyRGRhd4I,17313
+edgeimpulse/methods/profile.py,sha256=kuDUmT5d4Kq9Q6SLgRzcMU5gXDF8zwTb4eZvYV4tN6A,7079
+edgeimpulse/model/__init__.py,sha256=ox3AheCUXEe2XrGuVQvYX4wy1UEJyajYAtym2qCot1I,313
+edgeimpulse/model/input_type.py,sha256=kJwtGJS5avr_VQA8iNdvm4JbzgmEfs4Z2btYQ8SjyWY,2144
+edgeimpulse/model/model_info.py,sha256=72IIJYsHDNWAIuF1z5opTlojpN2w6hTk3ct0I04v6aE,673
+edgeimpulse/model/output_type.py,sha256=Xs27si5MrhT7PiOYvhjMrzVyc-r3Mwa7eamlf-tlXhc,2272
+edgeimpulse/util.py,sha256=np910sv9ETI26Wrtea3kdnxjfR_j2Ng1ocAyJbTkRVc,15524
+edgeimpulse-1.0.5.dist-info/METADATA,sha256=y1U_8egWaAyR5reOoVAusMfxVfCU0TvzJGWft-bphvo,2448
+edgeimpulse-1.0.5.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+edgeimpulse-1.0.5.dist-info/RECORD,,
