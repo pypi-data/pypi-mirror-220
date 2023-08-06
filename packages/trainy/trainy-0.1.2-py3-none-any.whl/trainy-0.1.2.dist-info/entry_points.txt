@@ -1,0 +1,2 @@
+[console_scripts]
+trainy = trainy.cli:trainy
