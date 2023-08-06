@@ -1,0 +1,2 @@
+Django>=3.2
+drf-schema-adapter>=3.0.0
