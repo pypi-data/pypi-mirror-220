@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "spider-scrape"
+version = "0.0.1rc3"
+description = ""
+authors = ["Philip May <philip@may.la>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "spider_scrape"}]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+beautifulsoup4 = "*"
+python-arango = {version = "*", optional = true}
+attrs = "*"
+markdownify = "*"
+mdformat = "*"
+
+[tool.poetry.group.lint]
+optional = true
+
+[tool.poetry.group.lint.dependencies]
+black = {version = "*"}
+ruff = {version = "*"}
+
+[tool.poetry.extras]
+arango = ["python-arango"]
+
+[tool.black]
+line-length = 119
+target-versions = ["py38", "py39", "py310", "py311"]
+
+[tool.ruff]
+select = [
+  "E",  # pycodestyle
+  "F",  # pyflakes
+  "I",  # isort
+]
+line-length = 119
+fixable = ["I"]
+target-version = "py38"
