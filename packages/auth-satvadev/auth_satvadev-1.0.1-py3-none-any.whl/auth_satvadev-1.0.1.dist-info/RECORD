@@ -1,0 +1,15 @@
+auth_satvadev/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auth_satvadev/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auth_satvadev/api/exceptions.py,sha256=jdugRpb9LWJP4pDklb12ZWtRSEWnYR_-tECARQMilkw,351
+auth_satvadev/api/serializers.py,sha256=PqrpRuHEOEwdhzVdoAtSOwShFNrPfYjDpwh-JbCZtX8,812
+auth_satvadev/api/urls.py,sha256=xDm5N-5W2ADZ7gcf-2RzaL-_RPSg9N2Kj7TGi7y8M8U,558
+auth_satvadev/api/views.py,sha256=8fa1rlvIwbRjP4LW8Q4FSDgYQqrU0zVCThvap89raY0,2774
+auth_satvadev/apps.py,sha256=TvZUOAzdpRAAPN_l6LIhIWfgbPd4WV4WD-2tDPrQaKU,251
+auth_satvadev/migrations/0001_initial.py,sha256=58j8rC_fN5BP7jFsuBWAIi5e7l5PaKH2_oKf0_o0jE0,1488
+auth_satvadev/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auth_satvadev/models.py,sha256=7LkpyPtk3Z583AnUD8MFhLqr_ETZ3dozj9_dWFIBEBQ,546
+auth_satvadev/senders.py,sha256=KZiPHMPdzFB7vHiD4fI9VZ6QrEdbx55E7eyxR4NXREM,3069
+auth_satvadev-1.0.1.dist-info/LICENSE,sha256=cdOQGNe_noV46JSBPBw8P-GSd44qg_iAz62as2xCoqE,1052
+auth_satvadev-1.0.1.dist-info/METADATA,sha256=9CNBP581PS2nr-uLbcUWHZT6gP7XCQyQ_L7w0EyvLeg,2318
+auth_satvadev-1.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+auth_satvadev-1.0.1.dist-info/RECORD,,
