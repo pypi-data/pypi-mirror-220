@@ -1,0 +1,17 @@
+bfgdealer/__init__.py,sha256=XRD8rIMpa-TRSwMEI2-P0H_v5hhl54d7y8XhXZagc9w,451
+bfgdealer/_version.py,sha256=hiU_rp5scA1P5fsYbz24O_RUsChart9LA0KijNB5GvU,23
+bfgdealer/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bfgdealer/src/board.py,sha256=QQf9Iyk9j-p39sEdgdMY2ggb2FpGChNyK4yq5ixEx5U,22831
+bfgdealer/src/constants.py,sha256=3qz6w5Odyw5t3G6wndVlZY1NAUStyY6OVSHqRCEwyFo,1737
+bfgdealer/src/dealer.py,sha256=6JniL5VhJBM1BX9FHHXdFFmf7eFVFil0NfvW7torNzo,8556
+bfgdealer/src/dealer_duo.py,sha256=E6x861RdIIHJkW3v6X36jsdSYDQzXyJeZR6jLAeuvdE,28485
+bfgdealer/src/dealer_engine.py,sha256=xnex68rdkhV3wp8xaEasr5Fv5UKQeOzrMoixanNMmtM,16825
+bfgdealer/src/dealer_solo.py,sha256=q211hfbww-MNC0M2w0ZBEgmdc1ZCUBywngL2mgNfZDc,14306
+bfgdealer/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bfgdealer/tests/test_board.py,sha256=cXlva_3VQWosyb_LFOxVdRk9NvtDSITbZqlE3JWT00c,983
+bfgdealer/tests/test_set_hands_solo.py,sha256=hbA3g2kVgYMDmu_tOGJ29zhQJgp6R-lqiVU773biTQ8,289
+bfgdealer-0.0.11.dist-info/LICENSE.txt,sha256=4h0e1iLfuruOGdqDfs8-aua1e_Ma97UnS8ZfwAau8aE,33889
+bfgdealer-0.0.11.dist-info/METADATA,sha256=5YGL-ICSxl2eGd9NLrmnvzx2d3x5OD9kqS5o07B3CtM,1350
+bfgdealer-0.0.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bfgdealer-0.0.11.dist-info/top_level.txt,sha256=oVlcSg5lwCvuiAupy4blHtft3O9yLaeHURbCW7BnbBs,10
+bfgdealer-0.0.11.dist-info/RECORD,,
