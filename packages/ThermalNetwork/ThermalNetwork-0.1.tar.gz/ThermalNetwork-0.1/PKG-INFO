@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ThermalNetwork
+Version: 0.1
+Summary: A thermal network solver for GHE sizing.
+Home-page: https://github.com/mitchute/ThermalNetwork
+Author: Matt Mitchell
+Author-email: mitchute@gmail.com
+License: BSD-3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ThermalNetwork
+
+A library for sizing multiple ground heat exchangers distributed around a single-pipe thermal network.
