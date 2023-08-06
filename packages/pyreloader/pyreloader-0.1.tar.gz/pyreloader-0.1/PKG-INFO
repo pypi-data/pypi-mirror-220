@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyreloader
+Version: 0.1
+Summary: Reload a program on signal HUP.
+Home-page: https://github.com/chuan137/pyreloader
+Author: Chuan Miao
+Author-email: chuan137@gmail.com
+License: MIT
+Keywords: reload server
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Reloader
+
+Start given python script and reloads on signal SIGHUP.
+
+Installation:
+
+pip install reloader
+
+Usage:
+
+Start program: `reloader ./server.py`
+
+Reload program: `kill -HUP <pid of parent process>`
+
