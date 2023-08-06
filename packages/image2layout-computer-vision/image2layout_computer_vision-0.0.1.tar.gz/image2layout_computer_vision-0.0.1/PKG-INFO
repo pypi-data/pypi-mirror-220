@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: image2layout_computer_vision
+Version: 0.0.1
+Summary: image processing and stuff
+Author-email: Felix Do <felix.do.1030@gmail.com>
+Project-URL: Homepage, https://github.com
+Project-URL: Bug Tracker, https://github.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# image2layout-computer-vision
+Computer Vision related modules for image2layout
+
+## Installation
+
+1. Build and run Docker container, will contain the necessary requirements for all modules
+
+```bash
+sudo docker build --tag cv -f Dockerfile .
+
+sudo docker run -it -v $(pwd):/app cv bash
+```
+
+2. OR, Install Conda
+
+```bash
+curl https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh -o ~/conda.sh
+bash ~/conda.sh -b -f -p /opt/conda
+rm ~/conda.sh
+conda init --all --dry-run --verbose
+```
+
+
+## OCR - Text Detection
+
+### Installation [CPU]
+
+Follow instructions in [README](ocr/README.md) to build and run docker container for all modules
+
+Or install using conda locally:
+
+> Python [conda] + tesseract
+
+```bash
+sudo apt install tesseract-ocr libtesseract-dev -y
+
+conda create -n ocr python=3.8 -y
+conda activate ocr
+
+conda install -n ocr pytorch=1.10 torchvision -c pytorch -y
+
+python -m pip install Pillow pandas numpy
+python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.10/index.html
+python -m pip install pyyaml==5.1 chardet pytesseract
+python -m pip install --upgrade datasets transformers
+```
+
+### Usage
+
+```python
+from main import detect_text
+
+# returns an ImageBoxes object
+imageboxes = detect_text('path/to/image.png')
+
+# draw boxes
+imageboxes.draw_anno()
+
+# dataframe
+imageboxes.df
+
+# boxes (x0, y0, x1, y1)
+boxes = np.array(list(imageboxes.df['box'])).astype(int)
+
+```
+
+
+
+## Color Extractor
+
+### Installation
+
+> Python
+
+```bash
+python -m pip install Pillow pandas numpy scikit-learn
+```
+
+### Usage
+
+```python
+from PIL import Image
+from main import ColorExtractor
+
+image = Image.open('path/to/image.png').convert('RGB')
+color_extractor = ColorExtractor(image)
+color_extractor.colors
+color_extractor.color_bg    # background color
+color_extractor.color_fg    # foreground color
+```
