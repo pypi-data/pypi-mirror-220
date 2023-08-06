@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+karray/__init__.py
+karray/arrays.py
+karray/long.py
+karray/setting.py
+karray/utils.py
+karray.egg-info/PKG-INFO
+karray.egg-info/SOURCES.txt
+karray.egg-info/dependency_links.txt
+karray.egg-info/requires.txt
+karray.egg-info/top_level.txt
+test/test.py
