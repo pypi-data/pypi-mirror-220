@@ -1,0 +1,22 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="plone">
+
+  <configure zcml:condition="installed AccessControl.security">
+    <!--permission
+        id="collective.mosaicpage.SomePermission"
+        title="collective.mosaicpage: Some Permission"
+    /-->
+    <!-- -*- extra stuff goes here -*- -->
+
+    <permission
+        id="collective.mosaicpage.AddMosaicPage"
+        title="collective.mosaicpage: Add MosaicPage"
+    />
+
+
+
+  </configure>
+
+</configure>

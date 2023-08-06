@@ -1,0 +1,38 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="collective.mosaicpage">
+
+  <gs:registerProfile
+      name="default"
+      title="collective.mosaicpage"
+      directory="profiles/default"
+      description="Installs the collective.mosaicpage add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <gs:registerProfile
+      name="uninstall"
+      title="collective.mosaicpage (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the collective.mosaicpage add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="collective.mosaicpage-hiddenprofiles"
+      />
+
+  <gs:upgradeDepends
+      title="Apply typeinfo"
+      source="1000"
+      destination="1001"
+      profile="collective.mosaicpage:default"
+      import_steps="typeinfo"
+      />
+
+</configure>

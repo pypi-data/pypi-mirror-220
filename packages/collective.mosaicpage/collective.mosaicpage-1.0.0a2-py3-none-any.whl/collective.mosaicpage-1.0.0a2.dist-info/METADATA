@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: collective.mosaicpage
+Version: 1.0.0a2
+Summary: A page with Mosaic selected as only layout
+Home-page: https://github.com/collective/collective.mosaicpage
+Author: Maurits van Rees
+Author-email: maurits@vanrees.org
+License: GPL version 2
+Project-URL: PyPI, https://pypi.org/project/collective.mosaicpage/
+Project-URL: Source, https://github.com/collective/collective.mosaicpage
+Project-URL: Tracker, https://github.com/collective/collective.mosaicpage/issues
+Keywords: Python Plone CMS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 5.2
+Classifier: Framework :: Plone :: 6.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: >=3.8
+License-File: LICENSE.GPL
+License-File: LICENSE.rst
+Requires-Dist: setuptools
+Requires-Dist: plone.api
+Requires-Dist: plone.app.mosaic
+Provides-Extra: test
+Requires-Dist: plone.app.testing ; extra == 'test'
+Requires-Dist: plone.testing ; extra == 'test'
+
+=====================
+collective.mosaicpage
+=====================
+
+A page with Mosaic selected as only layout
+
+Features
+--------
+
+- Adds a portal_type MosaicPage.
+- This is a Container, where you can add Images.
+- The ``layout_view`` from ``plone.app.mosaic`` is the only possible layout.
+- On install, the layout behaviors and views are removed from all other portal types.
+  We remove the layout property from all content items that have ``layout_view`` as layout:
+  they will use the default view again.
+- Only Manager and Site Administrator can add MosaicPages.
+  Editors can still edit them.
+
+
+Installation
+------------
+
+Install collective.mosaicpage by adding it to your buildout::
+
+    [buildout]
+
+    ...
+
+    eggs =
+        collective.mosaicpage
+
+
+and then running ``bin/buildout``.
+
+
+Contribute
+----------
+
+If you are having issues, or want to contribute a bugfix or feature, please let us know.
+
+- Issue Tracker: https://github.com/collective/collective.mosaicpage/issues
+- Source Code: https://github.com/collective/collective.mosaicpage
+
+
+License
+-------
+
+The project is licensed under the GPLv2.
+
+
+Contributors
+============
+
+- Maurits van Rees, maurits@vanrees.org
+
+
+Changelog
+=========
+
+
+1.0.0a2 (2023-07-21)
+--------------------
+
+- In our typeinfo, use ``contenttype/mosaicpage`` as icon.
+  We have defined this in the registry, so we can use it.
+  [maurits]
+
+
+1.0.0a1 (2023-06-23)
+--------------------
+
+- Initial release.
+  [mauritsvanrees]
