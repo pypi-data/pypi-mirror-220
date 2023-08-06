@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jupyter Notebook Preview</title>
+        <style>
+            {{ css_code }}
+        </style>
+        {{ plugin.manifest['main.css'] }}
+        {{ plugin.manifest['main.js'] }}
+    </head>
+    <body>
+        <div id="notebook-wrapper">
+            {{ html_code | safe }}
+        </div>
+    </body>
+</html>

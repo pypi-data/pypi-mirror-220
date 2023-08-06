@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: indico-plugin-previewer-jupyter
+Version: 3.2.1
+Summary: Jupyter notebook rendering for attachments in Indico
+Home-page: https://github.com/indico/indico-plugins
+Author: Indico Team
+Author-email: indico-team@cern.ch
+License: MIT
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <3.12,>=3.9.0
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Requires-Dist: indico (>=3.2)
+Requires-Dist: nbconvert (==6.5.0)
+
+# Jupyter Preview Plugin
+
+This plugin renders Jupyter notebooks nicely as HTML when they are attached as
+material to an Indico event.
+
+## Changelog
+
+### 3.2.1
+
+- Support Python 3.11
+
+### 3.2
+
+- Replace MathJax with Katex for auto math rendering
+
+### 3.0
+
+- Initial release for Indico 3.0
