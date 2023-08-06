@@ -1,0 +1,35 @@
+[project]
+name = "colordemo"
+version = "0.2"
+description = "RGB queries on xterm-like terminals"
+authors = [
+    { name = "Darsh Ranjan", email = "dranjan@berkeley.edu" },
+]
+readme = "README.md"
+requires-python = ">=3.0"
+dependencies = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+[project.license]
+file = "COPYING"
+
+[project.scripts]
+colordemo = "colordemo.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/dranjan/python-colordemo"
+Documentation = "https://github.com/dranjan/python-colordemo"
+Repository = "https://github.com/dranjan/python-colordemo"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
