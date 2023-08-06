@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: magicmath
+Version: 2.0.0
+Summary: The power of compiling lists with sequential mathematical operations. Useful for lists with long sets of numbers.
+Home-page: https://github.com/marcosleandrorosa/magicmath
+Author: Marcos Leandro Rosa
+Author-email: marcosfac@gmail.com
+License: MIT
+Keywords: math,list,magicmath,math with lists,invert lists
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+
+UNKNOWN
+
