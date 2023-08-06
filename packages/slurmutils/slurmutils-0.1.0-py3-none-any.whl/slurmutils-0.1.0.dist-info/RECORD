@@ -1,0 +1,13 @@
+slurmtools/slurmconf/__init__.py,sha256=aUw70LDcZJom7BEI6-EN9cclAO6kGvx0Cgc2L-Kd7MQ,664
+slurmtools/slurmconf/api.py,sha256=3XKJorhtcF2TEcZP-wxY6Nl9Tsz9DSWqsV_cCybp4QM,11493
+slurmtools/slurmconf/callback.py,sha256=44xypdUhuf34_4D7-IM1T8FzfwEkSwwJ8CL0GsB0gDk,7318
+slurmtools/slurmconf/token.py,sha256=IEwjvSeWLetzN5hU4X9uL90o_LgOsjEb7KMd9IruuMg,14993
+slurmutils/slurmconf/__init__.py,sha256=aUw70LDcZJom7BEI6-EN9cclAO6kGvx0Cgc2L-Kd7MQ,664
+slurmutils/slurmconf/api.py,sha256=3XKJorhtcF2TEcZP-wxY6Nl9Tsz9DSWqsV_cCybp4QM,11493
+slurmutils/slurmconf/callback.py,sha256=44xypdUhuf34_4D7-IM1T8FzfwEkSwwJ8CL0GsB0gDk,7318
+slurmutils/slurmconf/token.py,sha256=IEwjvSeWLetzN5hU4X9uL90o_LgOsjEb7KMd9IruuMg,14993
+slurmutils-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+slurmutils-0.1.0.dist-info/METADATA,sha256=GvW5YOd88cva9a0C3-h1vDMGfHCwFzws-ErfsNokOAQ,2794
+slurmutils-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+slurmutils-0.1.0.dist-info/top_level.txt,sha256=li_dAz46yNCt2DIFQwkT1uY2aizqWzucQdR1eyuLsY0,11
+slurmutils-0.1.0.dist-info/RECORD,,
