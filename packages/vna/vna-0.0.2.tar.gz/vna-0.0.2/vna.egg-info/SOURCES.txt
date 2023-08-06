@@ -1,0 +1,15 @@
+README.md
+setup.py
+lib/_vna_python.so
+lib/base64.lib
+lib/ftd2xx.lib
+lib/libftd2xx.so
+lib/libvna.so
+lib/vna.lib
+lib/vna_python.lib
+vna/__init__.py
+vna/vna.py
+vna.egg-info/PKG-INFO
+vna.egg-info/SOURCES.txt
+vna.egg-info/dependency_links.txt
+vna.egg-info/top_level.txt
