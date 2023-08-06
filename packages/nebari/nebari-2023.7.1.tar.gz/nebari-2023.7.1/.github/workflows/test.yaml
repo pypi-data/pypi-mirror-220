@@ -1,0 +1,59 @@
+name: "Tests"
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/test.yaml"
+      - "tests/**"
+      - "tests_deployment/**"
+      - "tests_e2e/cypress/**"
+      - "scripts/**"
+      - "src/**"
+      - "pyproject.toml"
+      - "pytest.ini"
+  push:
+    branches:
+      - main
+      - develop
+      - release/\d{4}.\d{1,2}.\d{1,2}
+    paths:
+      - ".github/workflows/test.yaml"
+      - "tests/**"
+      - "tests_deployment/**"
+      - "tests_e2e/cypress/**"
+      - "scripts/**"
+      - "src/**"
+      - "pyproject.toml"
+      - "pytest.ini"
+
+jobs:
+  test-general:
+    name: "Pytest"
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version:
+          - "3.8"
+          - "3.9"
+          - "3.10"
+          - "3.11"
+      fail-fast: false
+    steps:
+      - name: "Checkout Infrastructure"
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Setup miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+          channel-priority: strict
+          channels: conda-forge
+      - name: Install Nebari
+        run: |
+          pip install .[dev]
+          conda install --quiet --yes conda-build
+      - name: Test Nebari
+        run: |
+          pytest --version
+          pytest --ignore=tests_deployment --ignore=tests_e2e/playwright
