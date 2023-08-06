@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "pytest-dogu-sdk"
+version = "1.0.1"
+description = "pytest plugin for the Dogu"
+readme = "README.md"
+packages = [{include = "pytest_dogu_sdk", from = "src"}]
+authors = ["Dogu Technologies"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "2.31.0"
+dacite = "1.8.1"
+pyjson5 = "1.6.3"
+jsonschema = "4.18.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "7.3.2"
+black = "23.3.0"
+pylint = "2.17.4"
+selenium = "^4.10.0"
+appium-python-client = "^2.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.entry-points.pytest11]
+pytest_dogu_sdk = "pytest_dogu_sdk"
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 180
+disable = """
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+    broad-exception-raised,
+    broad-exception-caught,
+    too-few-public-methods,
+    unused-argument,
+"""
