@@ -1,0 +1,7 @@
+extends: material
+
+logo: images/logo.png
+favicon: images/favicon.ico
+custom_dir: template
+language: en
+font: false

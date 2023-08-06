@@ -1,0 +1,80 @@
+{% extends "main.html" %}
+
+<!-- Add Jupyter basic javascript at the head of the file -->
+{% block extrahead %}
+{{ super() }}
+<script type="text/javascript">
+    function openInSwan(){
+        if ( window.location !== window.parent.location ) { // Check if inside an iframe in jupyterlab
+            // If yes, send a message to the jupyterlab frontend extension 
+            // to download the notebook inside the same session
+            window.parent.postMessage('{{ config.gallery_url + page.meta.notebook_url | url }}','*');
+            // Skip redirecting the iframe page to start a new session inside the iframe
+            return false; 
+        } else {
+            // When not inside an iframe, continue redirecting to the href URL to start a new SWAN session
+            return true;
+        }
+    }
+
+    // Add a fading event to the title + download bar 
+    // when scrolling to top
+    hidden = false;
+    window.addEventListener("scroll", (event) => {
+        hero = document.getElementsByClassName("md-hero__inner")[0];
+        var y = window.scrollY;
+        if (y >= 20) {
+            if (!hidden){
+                hidden = true;
+                hero.classList.add("hidden");
+            }
+        } else if (hidden) {
+            hidden = false;
+            hero.classList.remove("hidden");
+        }
+    });
+</script>
+
+{{ super() }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+{% endblock %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ 'css/notebook.css' | url }}" />
+{% endblock %} 
+
+
+{% if page and page.meta and page.meta.notebook_name %} 
+    {% set _ = page.meta.__setitem__("title", page.meta.notebook_name) %} 
+
+    {% block hero %}
+    <div class="md-hero md-hero--expand" data-md-component="hero">
+        <div class="md-hero__inner md-grid">
+            {{ page.meta.notebook_name }} 
+            
+            {% if page.meta.notebook_url %}
+            <a href="{{ config.open_in_swan_url }}{{  config.gallery_url + page.meta.notebook_url | urlencode }}" id="openInSWAN" onclick="return openInSwan()" title="Open in SWAN" class="md-content__button md-icon">
+                                        {% include ".icons/material/pencil.svg" %}
+                            <span class="button__text">Open in SWAN</span>
+                        </a>
+            <a download href="{{ page.meta.notebook_url }}" title="Download" class="md-content__button md-icon">
+                            {% include ".icons/material/download.svg" %}
+                            <span class="button__text">Download</span>
+                        </a> 
+            {% endif %}
+        </div>
+    </div>
+    {% endblock %} 
+{% endif %} 
+
+{% block content %}
+<!-- h1 needs to exist to activate the title change -->
+<h1 style="margin: 0;"></h1>
+<div id="notebook">
+    <div class="container" id="notebook-container">
+        {{ super() }}
+    </div>
+</div>
+{% endblock %} 
