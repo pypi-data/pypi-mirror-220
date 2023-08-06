@@ -1,0 +1,7 @@
+onnx_shape_inference/__about__.py,sha256=PnE1sLfJ1xklyqr5aKxo0WFevIaBXGJ8P8wJ34Ik-hc,144
+onnx_shape_inference/__init__.py,sha256=tXZ6jYq_J72makEA4V1_6rohd75fu9MjOmlkflP2k8s,122
+onnx_shape_inference/_internal/shape_inference.py,sha256=sca6v_YjjJRfQS_SQZhnFgWURZPPqjNjlKUa3XIt-cM,129377
+onnx_shape_inference-0.0.1.dist-info/METADATA,sha256=xM7HdB4oo6NZK1PKIHDuGnswx8mRicWxcqMnKwkwcnQ,1582
+onnx_shape_inference-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+onnx_shape_inference-0.0.1.dist-info/licenses/LICENSE,sha256=T2DLryNKdhAuWc0kZ03-hFi652xRli06rr08gzq97cw,2146
+onnx_shape_inference-0.0.1.dist-info/RECORD,,
