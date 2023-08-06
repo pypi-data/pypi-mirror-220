@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jsonwiz/__init__.py
+jsonwiz.egg-info/PKG-INFO
+jsonwiz.egg-info/SOURCES.txt
+jsonwiz.egg-info/dependency_links.txt
+jsonwiz.egg-info/entry_points.txt
+jsonwiz.egg-info/top_level.txt
