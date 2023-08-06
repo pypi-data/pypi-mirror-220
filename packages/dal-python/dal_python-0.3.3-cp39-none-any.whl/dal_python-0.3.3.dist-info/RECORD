@@ -1,0 +1,16 @@
+dal/__init__.py,sha256=sBayoqWkPjeoaAZm9bnwEmik0iEyICqhwIpNUFesnQQ,153
+dal/_dal.cpython-39-x86_64-linux-gnu.so,sha256=mmWYFUTdR4tAMoK_Ddcy3yAxzsCpIdh2whtkKwAWUFE,7738328
+dal/api.py,sha256=Kt7EWqL3Rn53c7jxoeRzSCCNhP-S-58nSkBEdjuN0Ok,355
+dal/dal.py,sha256=3Yg38ucqkm-5M7verP0sSiZkN--FusWS4fL8fRbLLL4,62110
+dal/dal_wrap.cpp,sha256=MhgIkgYAgKUxlgxoBpBXTnpTCI5sH9ngJnXWswFeZD4,726254
+dal/libdal.so,sha256=pWihw-4D_9XReK8tUzTPrtvRD2MB03ziFFSiqUZX9aU,8266408
+dal/libdal.so.1.0.0-dev,sha256=pWihw-4D_9XReK8tUzTPrtvRD2MB03ziFFSiqUZX9aU,8266408
+dal/libdal_public.so,sha256=yDvJ-ud6pmXf69Ty4UIAL2dt5FhO4LSAdq__8anel0A,215008
+dal/examples/001.european.py,sha256=f-Oj8kqjv0hnMcepZ9KJXzXMkyMAKI31oFqpe2ASroA,538
+dal/examples/002.uoc.py,sha256=fub7_l4RoZ4CZtVOBZcC9pVD2JMGqHXUYKfCJZB73w0,1395
+dal/examples/003.snowball.py,sha256=MEA-9RkXARAy5KhScmvIXqlAS-w8lq9xTwYvFqJTjqA,2328
+dal/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dal_python-0.3.3.dist-info/METADATA,sha256=J3jaFV6qsgVp0HFdShtuOjhG209D0giha2qPeT2S3dU,799
+dal_python-0.3.3.dist-info/WHEEL,sha256=3oXbtF4vYwmQyf0LQIagKtl0VO3gP86556qKiLb0bDc,103
+dal_python-0.3.3.dist-info/top_level.txt,sha256=0NCtz794zxjwhJcMbphMLr-IHz_8WAyZFNMqTPXtulw,4
+dal_python-0.3.3.dist-info/RECORD,,
