@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sifflet-sdk
+Version: 0.3.0
+Summary: Sifflet sdk
+Home-page: https://www.siffletdata.com/
+Author: Sifflet
+Author-email: support@siffletdata.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyJWT (<3.0.0,>=1.7.0)
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: python-dateutil (>=2.8.0)
+Requires-Dist: pyyaml (>=6.0.0)
+
+Sifflet SDK
+===========
+
+Python native SDK for [www.siffletdata.com](https://www.siffletdata.com/)
