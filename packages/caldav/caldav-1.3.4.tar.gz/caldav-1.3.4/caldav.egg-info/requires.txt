@@ -1,0 +1,14 @@
+vobject
+lxml
+requests
+icalendar
+recurring-ical-events>=2.0.0
+pytz
+tzlocal
+
+[test]
+pytest
+pytest-coverage
+coverage
+xandikos
+sphinx
