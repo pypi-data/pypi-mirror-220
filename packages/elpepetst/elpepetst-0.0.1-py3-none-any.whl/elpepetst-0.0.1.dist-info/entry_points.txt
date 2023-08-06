@@ -1,0 +1,3 @@
+[console_scripts]
+elpepe=elpepe.main:test_pkg_function
+
