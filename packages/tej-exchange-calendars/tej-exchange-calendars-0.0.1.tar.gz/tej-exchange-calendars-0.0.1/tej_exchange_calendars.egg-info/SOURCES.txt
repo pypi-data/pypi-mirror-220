@@ -1,0 +1,5 @@
+setup.py
+tej_exchange_calendars.egg-info/PKG-INFO
+tej_exchange_calendars.egg-info/SOURCES.txt
+tej_exchange_calendars.egg-info/dependency_links.txt
+tej_exchange_calendars.egg-info/top_level.txt
