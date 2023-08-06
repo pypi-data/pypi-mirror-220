@@ -1,0 +1,11 @@
+tesserocr.cpython-311-x86_64-linux-musl.so,sha256=lw0tTu-3ysOY7d3ZZyqnqNuGawwvyK2d30g4sRnBwn0,3451177
+tesserocr-2.6.1.dist-info/top_level.txt,sha256=ds28Ua0bt1QaknjkWlH2PhbpdBkNchklhi3UP638fIQ,10
+tesserocr-2.6.1.dist-info/LICENSE,sha256=hX9yyALn4XGbvMqPL2GTSrZ456vEbjmctoUXSeKfPHM,1082
+tesserocr-2.6.1.dist-info/RECORD,,
+tesserocr-2.6.1.dist-info/WHEEL,sha256=IHZpKxZL6fMI4XHd4EqcDRvBScMH-OFdPdcrSh0OKDk,113
+tesserocr-2.6.1.dist-info/METADATA,sha256=c8vZ9pUDyli0GacfPgA4ElXxt2kd84-FcdLy-4Tlk24,10407
+tesserocr.libs/libpng16-d71295f9.so.16.37.0,sha256=xqXjTbYMMqIXla4rZMSS0R3J3KpwH0cZTJTASo8NxRU,200817
+tesserocr.libs/libleptonica-66322e7a.so.6.0.0,sha256=pcblpc6u_ohOTSvQQjRmDobrOlqMgLS8tqtjJSKh-Qk,3014761
+tesserocr.libs/libtesseract-b7c97df2.so.5.3.1,sha256=FpzRKCfKEl7UbNdiyobfonlMSooG7n0jVDqaspISbn0,4329529
+tesserocr.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+tesserocr.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
