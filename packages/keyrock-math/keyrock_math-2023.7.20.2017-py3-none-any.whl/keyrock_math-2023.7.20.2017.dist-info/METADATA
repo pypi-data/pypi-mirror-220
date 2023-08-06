@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: keyrock-math
+Version: 2023.7.20.2017
+Requires-Dist: keyrock-model
+Requires-Dist: numpy
+Requires-Dist: scipy
+
