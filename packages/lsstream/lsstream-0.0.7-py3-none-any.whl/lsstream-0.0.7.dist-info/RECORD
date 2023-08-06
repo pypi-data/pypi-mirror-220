@@ -1,0 +1,12 @@
+lsstream/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lsstream/file_generation.py,sha256=IUqv8jHFOSwNPL28FDnghCnfg_-o5cT-R7HS57VHTXM,1088
+lsstream/main.py,sha256=U7HndAVhKAVBfc-qQmUdPoyTWvYMRdjMVMXfYMDTA5E,2246
+lsstream/prompts.py,sha256=fdeu2KwGZCEURR0_Pp0oyBJwFcSn0dl_86O3a4FSbXk,810
+lsstream/style.py,sha256=ohesABInekoZm1NnXVYlHYaRrBapDNxfWFRwDn5YIlc,221
+lsstream/template.py,sha256=ewA5sASqAEq7Ee_4_Q_Ex8nCnZmyR8ZIQR62i6WUe2g,160
+lsstream/test.py,sha256=X0Jfm0WgJLQkWWciaDyxyfHvGGj0r3s85qWu03Up8KQ,269
+lsstream-0.0.7.dist-info/LICENSE,sha256=VQBtkgZMgqBpgkmPnGs0Y738AH1CAF7q0me3obYaFQY,1061
+lsstream-0.0.7.dist-info/METADATA,sha256=HEfVe2GjRc-C_X2AYCIeMHDeP0ps6BL_zbnEbSKC88U,730
+lsstream-0.0.7.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+lsstream-0.0.7.dist-info/top_level.txt,sha256=P44iIs0YLPWBYvkQaNsqxKeBVSMNavufb_4kem6rn_M,9
+lsstream-0.0.7.dist-info/RECORD,,
