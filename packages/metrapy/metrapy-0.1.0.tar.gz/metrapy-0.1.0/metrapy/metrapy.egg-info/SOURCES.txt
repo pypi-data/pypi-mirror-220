@@ -1,0 +1,9 @@
+README.md
+setup.py
+metrapy/connector.py
+metrapy/sync.py
+metrapy/metrapy.egg-info/PKG-INFO
+metrapy/metrapy.egg-info/SOURCES.txt
+metrapy/metrapy.egg-info/dependency_links.txt
+metrapy/metrapy.egg-info/requires.txt
+metrapy/metrapy.egg-info/top_level.txt
