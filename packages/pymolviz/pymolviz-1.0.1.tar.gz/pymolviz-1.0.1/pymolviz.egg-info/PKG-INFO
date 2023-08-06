@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pymolviz
+Version: 1.0.1
+Summary: Library to facilitate creation of PyMOL Vizualizations.
+Home-page: 
+Author: Finn Mier
+License: MIT
+
+See https://github.com/Finnem/PyMolViz for a detailed documentation.
