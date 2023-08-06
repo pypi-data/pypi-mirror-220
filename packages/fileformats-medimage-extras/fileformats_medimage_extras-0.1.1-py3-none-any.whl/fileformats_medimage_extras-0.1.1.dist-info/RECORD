@@ -1,0 +1,12 @@
+fileformats/extras/medimage/__init__.py,sha256=BJ2P5P20XoaoArylojznqzBGicqA15yf_NTdtExhmXo,145
+fileformats/extras/medimage/_version.py,sha256=aDfNBQh0vsVL7CSgYEMdMUbrxVw92raLxMivH20w2A4,160
+fileformats/extras/medimage/converters.py,sha256=4hfLqCk8DjEvsoBL5-l9csrXCCjcOZyNXxLDw1natTw,6922
+fileformats/extras/medimage/dicom.py,sha256=0hFZkeXyYmqVZXNy1LNxYcdusMEkvfValUbfj815pGU,1903
+fileformats/extras/medimage/diffusion.py,sha256=I36_Igj7nMul3lMfuSZCwJHbFFjczR2m0D4Za4Y1BkE,736
+fileformats/extras/medimage/mrtrix3.py,sha256=iAVUxKPTunsmB5FYqm41lQVxMov-6b8SlNlBQgqJG5I,427
+fileformats/extras/medimage/nifti.py,sha256=-hcBouZrezsIaFlw2LgIWG535MUG2sVZ0H3JqV-9tVU,1511
+fileformats/extras/medimage/tests/test_neuro_converters.py,sha256=CQsfskKvttS02MIKhcAy9oNc6VkcGZ6gbBlAJQordJM,3105
+fileformats_medimage_extras-0.1.1.dist-info/METADATA,sha256=UDrTHs1X18j54gPAXLBmz7LQ5zGUArIUm7uz6H7FIO4,18991
+fileformats_medimage_extras-0.1.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+fileformats_medimage_extras-0.1.1.dist-info/licenses/LICENSE,sha256=s12hb9VeRlj1uxCx7NSbKwRGyTklVA7omWbTLyMhYIs,14222
+fileformats_medimage_extras-0.1.1.dist-info/RECORD,,
