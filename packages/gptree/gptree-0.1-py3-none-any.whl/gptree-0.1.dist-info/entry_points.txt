@@ -1,0 +1,2 @@
+[console_scripts]
+gptree = gptree:cli
