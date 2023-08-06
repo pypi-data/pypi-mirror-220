@@ -1,0 +1,9 @@
+README.md
+setup.py
+nids_transformers/NIDSTransformers.py
+nids_transformers/__init__.py
+nids_transformers.egg-info/PKG-INFO
+nids_transformers.egg-info/SOURCES.txt
+nids_transformers.egg-info/dependency_links.txt
+nids_transformers.egg-info/requires.txt
+nids_transformers.egg-info/top_level.txt
