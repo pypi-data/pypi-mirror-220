@@ -1,0 +1,9 @@
+pyfarmer/__init__.py,sha256=RryuH0coKWuYbB1aL_azHz9hJppIhzyvNXMoQMKlv-Q,1535
+pyfarmer/_pyfarmer.py,sha256=jszfnF_742Vq8AqrmfYVxrtuMHMAwDkqXB1oS_EaJSI,16572
+pyfarmer/_strategies.py,sha256=yNGxjpnhjE6ZsIQpjpd1EVUpgURDAPDRRp2MxoBeCz8,7858
+pyfarmer/_utils.py,sha256=kBbKdycSdalJnzA1Eb2GQkDzuu3ky6Fx7DY6MhGAEfw,1782
+pyfarmer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfarmer-2.0.1.dist-info/LICENSE,sha256=y0aL_gzK5s7HUXZkCq16ir1ExXgZna_uQhuhE9t_FLo,1070
+pyfarmer-2.0.1.dist-info/METADATA,sha256=X5o8AiAcRFStKE5yIAc-AR1-eo1lgZPrEuHLiKW9uu0,1966
+pyfarmer-2.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pyfarmer-2.0.1.dist-info/RECORD,,

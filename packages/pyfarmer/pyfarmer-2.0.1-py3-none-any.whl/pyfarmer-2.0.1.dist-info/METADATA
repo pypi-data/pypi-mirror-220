@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: pyfarmer
+Version: 2.0.1
+Summary: A farmer for your Destructive Farm
+Home-page: https://github.com/rikyiso01/pyfarmer
+License: MIT
+Keywords: destructivefarm,attack-defense-ctf
+Author: rikyiso01
+Author-email: riky.isola@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: aiotools (>=1.6.1,<2.0.0)
+Requires-Dist: anyio (>=3.7.0,<4.0.0)
+Requires-Dist: httpx (>=0.24.1,<0.25.0)
+Requires-Dist: typing-extensions (>=4.6.3,<5.0.0)
+Project-URL: Documentation, https://rikyiso01.github.io/pyfarmer
+Project-URL: Repository, https://github.com/rikyiso01/pyfarmer
+Description-Content-Type: text/markdown
+
+# PyFarmer
+
+## Introduction
+
+> A farmer for your [Destructive Farm](https://github.com/DestructiveVoice/DestructiveFarm)
+>
+> <img src="https://i.kym-cdn.com/entries/icons/original/000/028/021/work.jpg" style="zoom: 50%;" />
+>
+> You can read the documentation at [rikyiso01.github.io/pyfarmer](https://rikyiso01.github.io/pyfarmer)
+
+## Code Samples
+
+> ```python
+> from httpx import post
+> from pyfarmer import farm, print_exception
+>
+>
+> def main(ip: str):
+>     for flag_id in ["a", "b", "c"]:
+>         try:
+>             r = post(
+>                 f"http://{ip}:5000/api/products/{flag_id}/download?a=/api/register"
+>             )
+>             flag = r.text
+>             yield flag
+>         except:
+>             print_exception()
+>
+>
+> if __name__ == "__main__":
+>     farm(main)
+> ```
+
+## Installation
+
+> Install locally with:
+>
+> ```bash
+> pip install pyfarmer
+> ```
+
