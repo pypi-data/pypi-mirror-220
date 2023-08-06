@@ -1,0 +1,7 @@
+setup.py
+warmindo.egg-info/PKG-INFO
+warmindo.egg-info/SOURCES.txt
+warmindo.egg-info/dependency_links.txt
+warmindo.egg-info/entry_points.txt
+warmindo.egg-info/requires.txt
+warmindo.egg-info/top_level.txt
