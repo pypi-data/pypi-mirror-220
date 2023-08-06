@@ -1,0 +1,2 @@
+[console_scripts]
+sk = sanickit.cli:cli
