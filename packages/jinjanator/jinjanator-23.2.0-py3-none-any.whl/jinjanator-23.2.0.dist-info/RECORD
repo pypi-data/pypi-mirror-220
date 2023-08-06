@@ -1,0 +1,14 @@
+jinjanator/__init__.py,sha256=pTFWFqjTnEiS2lF2pfCxrG7WtKNkYNYWJzGjyH-9gQE,81
+jinjanator/cli.py,sha256=MIoRlhZ3BHv2Pes6BJSj0DGrHncUc8RQKcyTk1so9ag,9507
+jinjanator/context.py,sha256=ynMTJHwSe5tuc2Z2B6D-zUc3h_FfIcW8fx6QGvpY5zc,716
+jinjanator/filters.py,sha256=180q3_fMYUhvCfb12icm-iHxakDKkLIwwmiAMscnY0s,1154
+jinjanator/formats.py,sha256=eHU0y5X_qhrFehKv6I-aRI3xnL2A6qYu1Oaww1D9WBM,3509
+jinjanator/plugin.py,sha256=HpI53a8MRX6ug6p_Z7cOc26PNMVCqMD3fLoI-VqS-gs,2456
+jinjanator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jinjanator/version.py,sha256=NZanI7URIfLU8yG-RggY7HYWPeaJW6tEl-He0E9mTMo,162
+jinjanator-23.2.0.dist-info/METADATA,sha256=Ywh15pZ9gRvT2GEhli1EGJBWzp4h2fXxyjwIMygHS3Y,7647
+jinjanator-23.2.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+jinjanator-23.2.0.dist-info/entry_points.txt,sha256=CLf2EV3qWF90WVcGshPtTpw4FJ2DFaxS-H-boS7WbV0,50
+jinjanator-23.2.0.dist-info/licenses/LICENSE.apache-2.0,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+jinjanator-23.2.0.dist-info/licenses/LICENSE.bsd-2-clause,sha256=PWBY4Lc2ycQPbCcJPAEVZW2p07n5kNUKbcFQ2hb3uOQ,1321
+jinjanator-23.2.0.dist-info/RECORD,,
