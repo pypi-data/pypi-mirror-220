@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: qibojit
+Version: 0.0.11
+Summary: Simulation tools based on numba and cupy.
+Home-page: https://github.com/qiboteam/qibojit
+License: Apache-2.0
+Author: The Qibo team
+Requires-Python: >=3.8.0,<3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: numba (>=0.51.0)
+Requires-Dist: psutil (>=5.9.5,<6.0.0)
+Requires-Dist: qibo (>=0.1.15)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Project-URL: Repository, https://github.com/qiboteam/qibojit
