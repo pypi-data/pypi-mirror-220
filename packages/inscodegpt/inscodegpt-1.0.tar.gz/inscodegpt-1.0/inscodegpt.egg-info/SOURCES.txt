@@ -1,0 +1,8 @@
+setup.py
+inscodegpt/__init__.py
+inscodegpt/inscode_gpt.py
+inscodegpt.egg-info/PKG-INFO
+inscodegpt.egg-info/SOURCES.txt
+inscodegpt.egg-info/dependency_links.txt
+inscodegpt.egg-info/requires.txt
+inscodegpt.egg-info/top_level.txt
