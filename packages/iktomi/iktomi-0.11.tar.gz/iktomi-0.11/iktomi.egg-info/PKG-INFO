@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: iktomi
+Version: 0.11
+Summary: A web tool: routing, forms, other useful things.
+Home-page: http://github.com/SmartTeleMax/iktomi/
+Author: Denis Otkidach
+Author-email: denis.otkidach@gmail.com
+Maintainer: Harut Dagesyan
+Maintainer-email: yes@harutune.name
+License: MIT
+Keywords: web forms
+Provides-Extra: web
+Provides-Extra: fcgi
+Provides-Extra: sqla
+Provides-Extra: memcached
+Provides-Extra: cleanhtml
+Provides-Extra: renderhtml
+Provides-Extra: images
+Provides-Extra: tests
+License-File: LICENSE.txt
+License-File: AUTHORS
