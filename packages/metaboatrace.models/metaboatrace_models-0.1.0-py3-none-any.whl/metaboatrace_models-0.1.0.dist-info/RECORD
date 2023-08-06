@@ -1,0 +1,10 @@
+metaboatrace/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metaboatrace/models/boat.py,sha256=iT_p4jXfoXsTVpUubNVJKNpJxAzNs3Tinmqug-NoeVc,812
+metaboatrace/models/race.py,sha256=9ufMXW0t_nMtiPxHjXP5-md__QygzBIWmE3643DKMxE,2862
+metaboatrace/models/racer.py,sha256=Nxu47mw7iX2qhm9FSvvWNwMhoq9STy0DA0uCjsRzC70,714
+metaboatrace/models/region.py,sha256=pnNsXJE3EFeIc_H0oCR4s_uAW7KZ2EjXqpjandrTHhU,5755
+metaboatrace/models/stadium.py,sha256=C5Es5L3oMJgnZYRytPga7hLR2lw6L9KFzVzi9jIf-jA,940
+metaboatrace_models-0.1.0.dist-info/METADATA,sha256=RMOb31sAGR5ktAqePW3io4r-hwHDWW6EjR8Swf5_ZAc,448
+metaboatrace_models-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+metaboatrace_models-0.1.0.dist-info/licenses/LICENSE.txt,sha256=2rG7l4OAlFad_2LObn8qsPBgleHa0G_ROFSRuJa__xE,1074
+metaboatrace_models-0.1.0.dist-info/RECORD,,

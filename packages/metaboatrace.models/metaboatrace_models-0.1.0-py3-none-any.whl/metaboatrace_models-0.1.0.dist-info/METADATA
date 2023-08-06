@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: metaboatrace.models
+Version: 0.1.0
+Summary: Models of Japanese boatrace
+Author-email: k0kishima <okishimaxyz@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Requires-Python: >=3.10
+Requires-Dist: pydantic>=2.0.3
+Description-Content-Type: text/markdown
+
+## 概要
+
+ボートレース関連の開発で用いるモデルのパッケージ
+
+## インストール
+
+```bash
+$ pip install metaboatrace.models
+```
