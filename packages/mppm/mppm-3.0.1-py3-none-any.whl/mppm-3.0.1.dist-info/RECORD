@@ -1,0 +1,16 @@
+mppm/run.py,sha256=ukAUuEH5efTFAlUdaI1N6grF-UqFELB4kJilprYVgRc,322
+mppm/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mppm/src/command/argpass.py,sha256=l2uwVaKjVIbMBFsYpoNXDO74JZ4rdjNvdTtYA5DqbQ8,2891
+mppm/src/command/cmd_dispatch.py,sha256=gY8RvbKnIz_ZhLvrAQv0pLGsCshk0qvkc1Zksoj-8g4,527
+mppm/src/command/download.py,sha256=xrbV2iTqJ04t-XSrTBNPjRCX-4nuaa3mSWmz8t6rfXU,936
+mppm/src/command/rewrite.py,sha256=rPrXY3Omp3xlHGg4npQnAGaGhqzpF05rgtH1TkzisM4,681
+mppm/src/command/uninstall.py,sha256=5gOAZJyiCeNaHe4LAdSfVYz7zZrHTxnpiVrtxXwL4Y8,1077
+mppm/src/common/const.py,sha256=eYQ88VFwJss2U0wIyIqizr1Ihp3TaV_Fjem9LClLmmk,1510
+mppm/src/common/utility.py,sha256=QnEQLfMb1zMmpDDXcjlnxJspYWq-pw4c1dr6BlkZzUM,2784
+mppm/src/config/pip_conf.py,sha256=NmS5PQIM84l5XRgIravNyOCdjjBoxsSlqwWVRc7yZSQ,1383
+mppm-3.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+mppm-3.0.1.dist-info/METADATA,sha256=FUYeGdl7VLHr9HQpF7V0VSRkAHK1dgyIT_TE2bCTVLE,3311
+mppm-3.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mppm-3.0.1.dist-info/entry_points.txt,sha256=tufWPHzB89S6FVlgkP2YpkbLGZzG7_9xkld3oPyEbns,39
+mppm-3.0.1.dist-info/top_level.txt,sha256=FU-zr_xsCl48bT4vTwmoZBP3ypDiqH5aVB2YR8Wveho,5
+mppm-3.0.1.dist-info/RECORD,,

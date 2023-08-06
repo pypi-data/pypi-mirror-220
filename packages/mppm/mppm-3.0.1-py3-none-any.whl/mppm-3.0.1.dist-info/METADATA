@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: mppm
+Version: 3.0.1
+Summary: Manager Pypi Package & Mirror
+Home-page: https://gitee.com/TianCiwang/mppm.git
+Author: TianCiwang
+Author-email: 13623650548@163.com
+License: MIT
+Keywords: pypi,mirror,package
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pip
+Requires-Dist: crayons
+Requires-Dist: blindspin
+Requires-Dist: requests
+Requires-Dist: pick
+Requires-Dist: configparser
+Requires-Dist: pip-autoremove
+
+# mppm
+
+## Introduce
+
+Configure the pypi source repository, support for downloading specified modules or files and its dependent packages.
+
+## My Use Case
+
+The project project is offline and requires downloading the dependent package locally. 
+The project project can only be started after the installation of the dependent package is completed.
+
+## Installation
+
+    pip install mppm
+
+## Usage
+
+    usage: mppm  <sub-commands>  [<args>] 
+
+    mppm Manage pip sources and dependent packages
+    
+    positional arguments:
+      {download,uninstall,config}
+        download            download modules
+        uninstall           uninstall modules
+        config              rewrite pip configuration
+    
+    options:
+      -h, --help            show this help message and exit
+      -v, --version         show program's version number and exit
+
+### SubCommand: config
+    usage: mppm  <sub-commands>  [<args>] config [-h] [-y]
+
+    options:
+      -h, --help  show this help message and exit
+      -y, --yes   force rewrite pip configuration
+
+#### examples
+
+    mppm config
+
+### SubCommand: download
+
+    usage: mppm  <sub-commands>  [<args>] download [-h] (-m MODULE | -r REQUIREMENT) [-y]
+    
+    options:
+      -h, --help            show this help message and exit
+      -m MODULE, --module MODULE
+                            download specified modules and dependencies
+      -r REQUIREMENT, --requirement REQUIREMENT
+                            download the modules and dependencies specified in the file. like requirements.txt
+      -y, --yes             rewrite the pip configuration
+
+
+  #### examples
+    mppm download -m flask  
+    mppm download -r /tmp/requiremen.txt
+
+### SubCommand: uninstall
+
+    usage: mppm  <sub-commands>  [<args>] uninstall [-h] (-m MODULE | -r REQUIREMENT) [-y]
+
+    options:
+      -h, --help            show this help message and exit
+      -m MODULE, --module MODULE
+                            uninstall specified modules and dependencies
+      -r REQUIREMENT, --requirement REQUIREMENT
+                            uninstall the modules and dependencies specified in the file. like requirements.txt
+      -y, --yes             interactive
+
+  #### examples
+    mppm uninstall -m flask
+    mppm download -r /tmp/requiremen.txt -y
+
+## Configuration
+
+You can add package indexes to your `~/.pip/pip.conf` file. Example:
+
+    [global]
+    timeout = 120
+    index-url = https://pypi.org/simple/
+    trusted-host = pypi.org
+
