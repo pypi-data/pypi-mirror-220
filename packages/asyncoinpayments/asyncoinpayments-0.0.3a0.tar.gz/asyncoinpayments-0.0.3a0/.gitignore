@@ -1,0 +1,11 @@
+.env
+
+*.egg-info/
+
+build/
+
+dist/
+
+run.py
+
+/asyncoinpayments/__pycache__/
