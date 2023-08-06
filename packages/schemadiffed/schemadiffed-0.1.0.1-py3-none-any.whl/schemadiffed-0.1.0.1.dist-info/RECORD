@@ -1,0 +1,11 @@
+schemadiff/__init__.py,sha256=sQXhsCA5vcVH5vx6pgdwkh_z92kU8OLuiNbS74Kw2MU,2033
+schemadiff/cli.py,sha256=1kjiGfMXH-16utIVSWjAgQCoN7RwY2IyY0Ww8N-RcjU,1252
+schemadiff/filesystem.py,sha256=qwu8pBCV-NVOvs9qcef-wXNYcpe14K1v5u96VGP1GPQ,5815
+schemadiff/m_exceptions.py,sha256=QAxjX4AKe50n0KzIQMREaK8JPEvq2UTAuzieqjvYEh0,241
+schemadiff/report_generator.py,sha256=sE78sLpzyJxyoS3sqsxYw3uRGdnl02EcjfmBYuod6AM,1635
+schemadiff/schema_comparer.py,sha256=uTrF9--EnC7owkyckU_N4pFGMcHYy3x0YLF138P4NgM,2107
+schemadiffed-0.1.0.1.dist-info/LICENSE,sha256=Y9gqsgKEbpdYEdu4UOFFo6vtJp8BIVrKSLx_3_Ll6sk,1072
+schemadiffed-0.1.0.1.dist-info/METADATA,sha256=0BqRoxt7r1pqtIykiZ9546o5lVJDfhFmlSr7xa-7VdE,3088
+schemadiffed-0.1.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+schemadiffed-0.1.0.1.dist-info/entry_points.txt,sha256=Wj1Au_PXgACd70okOF2tUzi8wsnyGJhnXnKdcM98TqY,50
+schemadiffed-0.1.0.1.dist-info/RECORD,,
