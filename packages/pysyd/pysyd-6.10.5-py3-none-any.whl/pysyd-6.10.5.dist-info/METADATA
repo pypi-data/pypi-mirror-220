@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: pysyd
+Version: 6.10.5
+Summary: automated measurements of global asteroseismic parameters
+Home-page: https://github.com/ashleychontos/pysyd
+Author: Ashley Chontos
+Author-email: achontos@hawaii.edu
+License: MIT
+Project-URL: Documentation, https://pysyd.readthedocs.io
+Project-URL: Source, https://github.com/ashleychontos/pySYD
+Project-URL: Bug Tracker, https://github.com/ashleychontos/pySYD/issues
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy (>=4.0.0)
+Requires-Dist: numpy (>=1.23.0)
+Requires-Dist: matplotlib (>=1.5.3)
+Requires-Dist: pandas (>=1.0.5)
+Requires-Dist: scipy (>=1.9.0)
+Requires-Dist: tqdm (>=4.64.0)
+
+<div align="center">
+<img src="docs/_static/latex.png" width="70%">
+
+## **Automated Measurements of Global Asteroseismic Parameters**
+
+[![PyPI](https://img.shields.io/pypi/v/pysyd)](https://pypi.org/project/pysyd/)
+![tests](https://github.com/ashleychontos/pySYD/actions/workflows/tests.yml/badge.svg)
+[![Documentation](https://readthedocs.org/projects/pysyd/badge/?version=latest)](https://pysyd.readthedocs.io/en/latest/?badge=latest)
+[![arXiv](https://img.shields.io/badge/arXiv-2108.00582-b31b1b.svg)](https://arxiv.org/abs/2108.00582)
+[![JOSS](https://joss.theoj.org/papers/6465a9dd3141c207175f200c7f891f1e/status.svg)](https://joss.theoj.org/papers/6465a9dd3141c207175f200c7f891f1e)
+[![PyPI downloads](https://img.shields.io/pypi/dm/pysyd?color=purple)](https://pypistats.org/packages/pysyd)
+<a href="https://ascl.net/2111.017"><img src="https://img.shields.io/badge/ascl-2111.017-blue.svg?colorB=262255" alt="ascl:2111.017" /></a>
+
+<a href="https://github.com/ashleychontos/pySYD/graphs/contributors"><img src="https://contrib.rocks/image?repo=ashleychontos/pySYD" /></a>
+</div>
+
+--------------------------------------------------------------------------------
+
+## Documentation
+
+The documentation for `pySYD` can be found [here](https://pysyd.readthedocs.io)
+
+## Attribution
+
+If you make use of `pySYD` in your work, please cite [Chontos et al. (2022)](https://joss.theoj.org/papers/10.21105/joss.03331):
+
+    @ARTICLE{2022JOSS....7.3331C,
+           author = {{Chontos}, Ashley and {Huber}, Daniel and {Sayeed}, Maryum and {Yamsiri}, Pavadol},
+            title = "{pySYD: Automated measurements of global asteroseismic parameters}",
+          journal = {The Journal of Open Source Software},
+         keywords = {Python, fundamental stellar properties, solar-like oscillations, stellar oscillations, stellar astrophysics, asteroseismology, astronomy, global asteroseismology, Astrophysics - Solar and Stellar Astrophysics, Astrophysics - Instrumentation and Methods for Astrophysics},
+             year = 2022,
+            month = nov,
+           volume = {7},
+           number = {79},
+              eid = {3331},
+            pages = {3331},
+              doi = {10.21105/joss.03331},
+    archivePrefix = {arXiv},
+           eprint = {2108.00582},
+     primaryClass = {astro-ph.SR},
+           adsurl = {https://ui.adsabs.harvard.edu/abs/2022JOSS....7.3331C},
+          adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+    }
+
+## License
+
+&copy; 2019-2022 Ashley Chontos and contributors. <br/>
+`pySYD` is free software made available under the [MIT license](LICENSE.md).
+
+## Contribution
+
+Our [list](docs/AUTHORS.rst) of contributors continues to grow! <br/> 
+If you'd like to be a part of that, please see [our guide](CONTRIBUTING.md) for contributing.
+
