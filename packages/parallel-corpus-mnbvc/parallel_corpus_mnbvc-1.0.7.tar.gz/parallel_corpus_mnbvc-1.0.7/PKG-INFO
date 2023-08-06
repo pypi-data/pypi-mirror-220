@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: parallel_corpus_mnbvc
+Version: 1.0.7
+Summary: parallel corpus dataset from the pypi repository of the mnbvc project
+Home-page: https://github.com/liyongsea/parallel_corpus_mnbvc
+Author: ranWang
+Author-email: redamancy0326@gmail.com
+License-File: LICENSE
