@@ -1,0 +1,12 @@
+README.md
+setup.py
+idftools/Roboto-Regular.ttf
+idftools/__init__.py
+idftools/certificate.py
+idftools/driversfactory.py
+idftools/logging.conf
+idftools/utilities.py
+idftools.egg-info/PKG-INFO
+idftools.egg-info/SOURCES.txt
+idftools.egg-info/dependency_links.txt
+idftools.egg-info/top_level.txt
