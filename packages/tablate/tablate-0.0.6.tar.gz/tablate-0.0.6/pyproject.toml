@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tablate"
+version = "0.0.6"
+authors = [
+  { name="Guy de Winton", email="guy@codehippie.io" },
+]
+description = "An ASCII plain text table renderer."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/guydewinton/tablate"
+"Bug Tracker" = "https://gitlab.com/guydewinton/tablate/issues"
