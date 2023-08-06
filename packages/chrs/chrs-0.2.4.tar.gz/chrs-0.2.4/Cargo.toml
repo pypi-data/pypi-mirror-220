@@ -1,0 +1,47 @@
+[package]
+name = "chrs"
+version = "0.2.4"
+authors = ["FNNDSC <dev@babyMRI.org>"]
+
+edition = "2021"
+
+readme = "README.md"
+description = "CLI ChRIS client"
+repository = "https://github.com/FNNDSC/chrs"
+license = "MIT"
+categories = ["command-line-utilities", "science"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chris = { path = "local_dependencies/chris", version = "0.3.4", features = ["rustls"], default-features = false }
+clap = { version = "4.1.1", features = ["derive", "string"] }
+lazy_static = "1.4.0"
+keyring = "1.1.2"
+anyhow = "1.0.56"
+thiserror = "1.0.30"
+tokio = { version = "1.17.0", features = ["full"] }
+tokio-util = { version = "0.7.1", features = [ "io" ] }
+futures = "0.3.21"
+async-stream = "0.3.3"
+async-recursion = "1.0.0"
+confy = "0.5.1"
+dialoguer = "0.10.0"
+indicatif = "0.17.3"
+console = "0.15.0"
+serde = "1.0.136"
+serde_json = "1.0.79"
+serde_yaml = "0.9.14"
+fs-err = { version = "2.9.0", features = [ "tokio" ] }
+pathdiff = "0.2.1"
+itertools = "0.10.3"
+regex = "1.5"
+url = "2.2.2"
+termtree = "0.4.0"
+aliri_braid = "0.3.1"
+
+[package.metadata.binstall.overrides.x86_64-pc-windows-gnu]
+pkg-fmt = "zip"
+
+[package.metadata.binstall.overrides.x86_64-pc-windows-msvc]
+pkg-fmt = "zip"
