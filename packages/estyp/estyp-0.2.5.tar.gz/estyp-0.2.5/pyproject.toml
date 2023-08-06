@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "estyp"
+version = "0.2.5"
+authors = [
+    { name="estebanrucan", email="errucan@gmail.com" },
+]
+description = "Extended Statistical Toolkit Yet Practical"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 1 - Planning"
+]
+dependencies = [
+    "numpy >= 1.22.3",
+    "scikit-learn >= 1.2.1",
+    "patsy >= 0.5.3",
+    "statsmodels >= 0.13.5",
+    "scipy >= 1.11.1"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/estebanrucan/estyp"
+"Bug Tracker" = "https://github.com/estebanrucan/estyp/issues"
