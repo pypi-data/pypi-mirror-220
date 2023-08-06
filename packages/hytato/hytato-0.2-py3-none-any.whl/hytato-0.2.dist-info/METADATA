@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hytato
+Version: 0.2
+Summary: Module for storing python dictionaries in a different format.
+Home-page: https://github.com/Hypurrnating/potato
+Author: Hypurrnating
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
+License-File: LICENSE
+
+https://github.com/Hypurrnating/potato#readme
