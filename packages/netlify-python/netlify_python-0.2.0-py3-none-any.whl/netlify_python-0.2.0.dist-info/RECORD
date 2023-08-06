@@ -1,0 +1,15 @@
+netlify/__init__.py,sha256=V9ls1AvPUO4fesgqT4KEx-04jz72tBHdFA9RqRgwC2Y,92
+netlify/__main__.py,sha256=31ZVxGyoy7XlUrgbk0jSdeHGGxFUIaHNMbrr3d3Y2_0,83
+netlify/client.py,sha256=uYwKd3WmolZ_ZwDJeuJ3hRrhAJog-fBJA6Uo-DtLqSs,3828
+netlify/enums.py,sha256=0vGWT6HfXFplmzPPpH4sHdOYhT7WqU7lZwCR3MrGrpM,114
+netlify/exceptions.py,sha256=MfBLX0O8vknbm7Syp53YTOHC09SrovP4k-2UyjsnTqU,1005
+netlify/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+netlify/schemas.py,sha256=41WshKh_sAl7sMUC9Y-ds7ZAYedWSTT7gY8MjITKnS4,3954
+netlify/transport.py,sha256=RmLzfrj0Ymkd8U6wLaFJ2cOI6bBvZabWrl_KaVr817I,3455
+netlify/auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+netlify/auth/bearer.py,sha256=fH0tU8apyTNtf28RQq2CSvRa9oaAzjBKrNbsaSEShKM,400
+netlify_python-0.2.0.dist-info/LICENSE,sha256=Lw7HYzQFnp2m529DHOvZ1tABqlMVFHV0ZxigVPQ94Zg,1063
+netlify_python-0.2.0.dist-info/METADATA,sha256=ioGH8ULYgzhvyP9H-ToEqzE2tm0NePUDQ7ZUnUgWQbg,3991
+netlify_python-0.2.0.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+netlify_python-0.2.0.dist-info/top_level.txt,sha256=-gylBI5omRrliiuPVqk_sZOAq0OqRefvGG8F4R9weFI,8
+netlify_python-0.2.0.dist-info/RECORD,,
