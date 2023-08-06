@@ -1,0 +1,174 @@
+Metadata-Version: 2.1
+Name: pydeployhelp
+Version: 1.5.0
+Summary: Deploy helper for Python projects
+Author-email: Ihar Yazerski <ihar.yazerski@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/igorezersky/pydeployhelp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (==8.1.6)
+Requires-Dist: jinja2 (==3.1.2)
+Requires-Dist: markupsafe (==2.1.3)
+Requires-Dist: ruamel-yaml (==0.17.32)
+Requires-Dist: ruamel-yaml-clib (==0.2.7)
+Requires-Dist: typer (==0.9.0)
+Requires-Dist: typing-extensions (==4.7.1)
+Provides-Extra: dev
+Requires-Dist: alabaster (==0.7.13) ; extra == 'dev'
+Requires-Dist: appnope (==0.1.3) ; extra == 'dev'
+Requires-Dist: asttokens (==2.2.1) ; extra == 'dev'
+Requires-Dist: babel (==2.12.1) ; extra == 'dev'
+Requires-Dist: backcall (==0.2.0) ; extra == 'dev'
+Requires-Dist: bleach (==6.0.0) ; extra == 'dev'
+Requires-Dist: build (==0.10.0) ; extra == 'dev'
+Requires-Dist: certifi (==2023.5.7) ; extra == 'dev'
+Requires-Dist: charset-normalizer (==3.2.0) ; extra == 'dev'
+Requires-Dist: click (==8.1.6) ; extra == 'dev'
+Requires-Dist: decorator (==5.1.1) ; extra == 'dev'
+Requires-Dist: docutils (==0.18.1) ; extra == 'dev'
+Requires-Dist: executing (==1.2.0) ; extra == 'dev'
+Requires-Dist: idna (==3.4) ; extra == 'dev'
+Requires-Dist: imagesize (==1.4.1) ; extra == 'dev'
+Requires-Dist: importlib-metadata (==6.8.0) ; extra == 'dev'
+Requires-Dist: ipython (==8.14.0) ; extra == 'dev'
+Requires-Dist: jaraco-classes (==3.3.0) ; extra == 'dev'
+Requires-Dist: jedi (==0.18.2) ; extra == 'dev'
+Requires-Dist: jinja2 (==3.1.2) ; extra == 'dev'
+Requires-Dist: keyring (==24.2.0) ; extra == 'dev'
+Requires-Dist: markdown-it-py (==3.0.0) ; extra == 'dev'
+Requires-Dist: markupsafe (==2.1.3) ; extra == 'dev'
+Requires-Dist: matplotlib-inline (==0.1.6) ; extra == 'dev'
+Requires-Dist: mdurl (==0.1.2) ; extra == 'dev'
+Requires-Dist: more-itertools (==9.1.0) ; extra == 'dev'
+Requires-Dist: packaging (==23.1) ; extra == 'dev'
+Requires-Dist: parso (==0.8.3) ; extra == 'dev'
+Requires-Dist: pexpect (==4.8.0) ; extra == 'dev'
+Requires-Dist: pickleshare (==0.7.5) ; extra == 'dev'
+Requires-Dist: pip-tools (==7.1.0) ; extra == 'dev'
+Requires-Dist: pkginfo (==1.9.6) ; extra == 'dev'
+Requires-Dist: prompt-toolkit (==3.0.39) ; extra == 'dev'
+Requires-Dist: ptyprocess (==0.7.0) ; extra == 'dev'
+Requires-Dist: pure-eval (==0.2.2) ; extra == 'dev'
+Requires-Dist: pygments (==2.15.1) ; extra == 'dev'
+Requires-Dist: pyproject-hooks (==1.0.0) ; extra == 'dev'
+Requires-Dist: readme-renderer (==40.0) ; extra == 'dev'
+Requires-Dist: requests (==2.31.0) ; extra == 'dev'
+Requires-Dist: requests-toolbelt (==1.0.0) ; extra == 'dev'
+Requires-Dist: rfc3986 (==2.0.0) ; extra == 'dev'
+Requires-Dist: rich (==13.4.2) ; extra == 'dev'
+Requires-Dist: ruamel-yaml (==0.17.32) ; extra == 'dev'
+Requires-Dist: ruamel-yaml-clib (==0.2.7) ; extra == 'dev'
+Requires-Dist: six (==1.16.0) ; extra == 'dev'
+Requires-Dist: snowballstemmer (==2.2.0) ; extra == 'dev'
+Requires-Dist: sphinx (==6.2.1) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (==1.2.2) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-applehelp (==1.0.4) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-devhelp (==1.0.2) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-htmlhelp (==2.0.1) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-jquery (==4.1) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-jsmath (==1.0.1) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-qthelp (==1.0.3) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-serializinghtml (==1.1.5) ; extra == 'dev'
+Requires-Dist: stack-data (==0.6.2) ; extra == 'dev'
+Requires-Dist: tomli (==2.0.1) ; extra == 'dev'
+Requires-Dist: traitlets (==5.9.0) ; extra == 'dev'
+Requires-Dist: twine (==4.0.2) ; extra == 'dev'
+Requires-Dist: typer (==0.9.0) ; extra == 'dev'
+Requires-Dist: typing-extensions (==4.7.1) ; extra == 'dev'
+Requires-Dist: urllib3 (==2.0.4) ; extra == 'dev'
+Requires-Dist: wcwidth (==0.2.6) ; extra == 'dev'
+Requires-Dist: webencodings (==0.5.1) ; extra == 'dev'
+Requires-Dist: wheel (==0.40.0) ; extra == 'dev'
+Requires-Dist: zipp (==3.16.2) ; extra == 'dev'
+
+# pydeployhelp
+
+## Overview
+
+`pydeployhelp` is aimed to help integrating deploy (*via Docker*) to Python projects. It can be used both as
+external library (all processors can be imported) and as CLI tool.
+
+Following CLI tools will be available after installation:
+
+- `pydeployhelp`: performs deploy according to info from deploy directory created by `pydeployhelp-quickstart`
+- `pydeployhelp-quickstart`: creates directory with deploy service files templates (*Dockerfile, docker-compose, configs*)
+
+## Documentation
+
+Please see the latest documentation at [Read the Docs](https://pydeployhelp.readthedocs.io/)
+
+## Installation
+
+`pydeployhelp` can be installed from `PyPi`:
+
+```shell
+pip install pydeployhelp
+```
+
+Or locally (inside project directory):
+
+```shell
+pip install -e .
+```
+
+`pydeployhelp` requires following external packages to be installed:
+
+- [Docker](https://docs.docker.com/)
+
+`pydeployhelp-quickstart` tool and all code library can be used without any external system packages installation.
+
+### Updating to newer versions
+
+```shell
+python -m pip install --upgrade --no-cache-dir pydeployhelp
+```
+
+## Usage
+
+### pydeployhelp
+
+```text
+Usage: pydeployhelp [OPTIONS]                                                                                                                                                      
+
+Main entrypoint, which will be called when executing `pydeployhelp` in console                                                                                                     
+
+╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --task                         TEXT  List of deployment tasks defined in config.yaml                                                                                             │
+│ --target                       TEXT  List of deployment targets defined in config.yaml                                                                                           │
+│ --deploydir                    TEXT  Path to directory with deploy scripts (normally generated via `pydeployhelp-quickstart`) [default: deploy]                                  │
+│ --silent       --no-silent           Ignore all communication with user and use default values [default: no-silent]                                                              │
+│ --version      --no-version          Print version and exit [default: no-version]                                                                                                │
+│ --help                               Show this message and exit.                                                                                                                 │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
+
+Executing in ordinary way (without `--silent`) you will be asked to enter some info
+(*task names, services names*),
+soon after that you will see message about deploy status.
+
+Console mode example (you will not be asked to enter any info manually):
+
+```shell
+pydeployhelp --task build --task up --target all
+```
+
+### pydeployhelp-quickstart
+
+```text
+Usage: pydeployhelp-quickstart [OPTIONS]                                                                                                                                           
+
+╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --silent     --no-silent       Ignore all communication with user and use default values [default: no-silent]                                                                    │
+│ --version    --no-version      Print version and exit [default: no-version]                                                                                                      │
+│ --help                         Show this message and exit.                                                                                                                       │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
+
+Executing in ordinary way (without `--silent`) you will be asked to enter some info
+(*project name, deploy directory location, supported tasks*),
+soon after that you will see message about service files creation status.
