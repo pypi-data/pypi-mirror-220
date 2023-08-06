@@ -1,0 +1,8 @@
+README.md
+setup.py
+reczoo/__init__.py
+reczoo.egg-info/PKG-INFO
+reczoo.egg-info/SOURCES.txt
+reczoo.egg-info/dependency_links.txt
+reczoo.egg-info/requires.txt
+reczoo.egg-info/top_level.txt
