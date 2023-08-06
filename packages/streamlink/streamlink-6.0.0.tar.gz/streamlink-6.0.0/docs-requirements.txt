@@ -1,0 +1,7 @@
+sphinx >=5.0.0, <7
+furo ==2023.03.27
+myst-parser >=1.0.0, <2
+sphinx-design >=0.4.1, <1
+versioningit >=2.0.0, <3
+
+docutils-stubs
