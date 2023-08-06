@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+agentlogger/__init__.py
+agentlogger/main.py
+agentlogger/tests.py
+agentlogger.egg-info/PKG-INFO
+agentlogger.egg-info/SOURCES.txt
+agentlogger.egg-info/dependency_links.txt
+agentlogger.egg-info/requires.txt
+agentlogger.egg-info/top_level.txt
