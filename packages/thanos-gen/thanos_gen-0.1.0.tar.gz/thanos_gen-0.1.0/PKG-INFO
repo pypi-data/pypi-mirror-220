@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: thanos-gen
+Version: 0.1.0
+Summary: THis ANOmaly is Synthetic: A recipe based timeseries data generator
+License: Apache-2.0
+Author: Lorne Schell
+Author-email: orange.toaster@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: notebook
+Requires-Dist: ipytest (>=0.13.0,<0.14.0) ; extra == "notebook"
+Requires-Dist: matplotlib (>=3.7.0,<4.0.0) ; extra == "notebook"
+Requires-Dist: numpy (>=1.24.0,<2.0.0)
+Requires-Dist: pandas (>=2.0.0,<3.0.0)
+Requires-Dist: scikit-learn (>=1.2.0,<2.0.0) ; extra == "notebook"
+Requires-Dist: seaborn (>=0.12.0,<0.13.0) ; extra == "notebook"
+Requires-Dist: torch (>=2.0.0,<3.0.0) ; extra == "notebook"
