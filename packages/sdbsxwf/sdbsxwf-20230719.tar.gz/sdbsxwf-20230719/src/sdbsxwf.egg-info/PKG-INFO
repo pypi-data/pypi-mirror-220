@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sdbsxwf
+Version: 20230719
+Summary: 个人工具箱
+Home-page: 
+Author: xwf
+Author-email: 453211170@qq.com
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Utilities
+
+试着改变世界
+20230718添加pandas读和写xlsx
+20230719优化导入模块接口
