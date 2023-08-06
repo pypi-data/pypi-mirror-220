@@ -1,0 +1,3 @@
+[console_scripts]
+build-hints = micropython_hints:run
+remove-hints = micropython_hints:remove
