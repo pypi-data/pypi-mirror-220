@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pyballc
+Version: 0.0.1
+Summary: Python module for reading BAllC files
+License-File: LICENSE
+Requires-Dist: pysam
+
