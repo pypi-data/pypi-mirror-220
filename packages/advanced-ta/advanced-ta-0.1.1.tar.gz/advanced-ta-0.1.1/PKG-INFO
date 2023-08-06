@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: advanced-ta
+Version: 0.1.1
+Summary: Python implementation of Lorentzian Classification algorithm.
+Home-page: https://bitbucket.org/lokiarya/advanced-ta
+Author: Loki Arya
+Author-email: loki.arya+osdev@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: TA-Lib (>=0.4.27,<0.5.0)
+Requires-Dist: mplfinance (>=0.12.9-beta.7,<0.13.0)
+Requires-Dist: numpy (>=1.25.1,<2.0.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: scikit-learn (>=1.3.0,<2.0.0)
+Project-URL: Repository, https://bitbucket.org/lokiarya/advanced-ta
+Description-Content-Type: text/markdown
+
+This module is a python implementation of Lorentzian Classification algorithm developed by @jdehorty in pinescript. The original work can be found here - https://www.tradingview.com/script/WhBzgfDu-Machine-Learning-Lorentzian-Classification/
+
+## Prerequisites
+> Ensure that [TA-Lib](https://ta-lib.org/hdr_dw.html) is downloaded and built for your platform. Set `TA_INCLUDE_PATH` and `TA_LIBRARY_PATH` as mentioned in [ta-lib-python](https://github.com/TA-Lib/ta-lib-python#installation). TA-Lib package itself will be installed as a dependency of `advanced-ta`.
