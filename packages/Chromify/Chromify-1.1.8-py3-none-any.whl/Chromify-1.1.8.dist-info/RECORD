@@ -1,0 +1,16 @@
+Chromify/Chromify.py,sha256=sUmZjqxmOurncTqnxUTyTN9uqzLqEK0QtLqIoKBHnYw,6852
+Chromify/Color.py,sha256=dhvSxtYTeTOTn-DganWi4VQF45EP9vau3z5XdDiIqfw,16090
+Chromify/Converter.py,sha256=Ez2pPtFl4ifgp-3aKNK1cZdnVh9FWFq--vYTJePuHNQ,7866
+Chromify/__init__.py,sha256=zSIlyrQ1RI6HUut-V5699XmSc_54NH5_Gqn4D1yfQZU,148
+Chromify/ext/MassiveColors.py,sha256=i08PLFZ85eM0BhelrrkYmW23tuO71Gp97afEhf_zazI,10581
+Chromify/ext/__init__.py,sha256=86oLL8eFrunL0jx6S-kcOv_k3OmuZcxzIAziukUOeU0,40
+lib/Chromify.py,sha256=ycMU5zPBvV26NY_suYrFeCffxPw0dR6SQUeP9iHhl5U,6542
+lib/Color.py,sha256=dhvSxtYTeTOTn-DganWi4VQF45EP9vau3z5XdDiIqfw,16090
+lib/Converter.py,sha256=Y997iU-EpAwf6MbWPIjVzpAqBVxhgApl90gPxldhRws,7865
+lib/__init__.py,sha256=_yyxTABepWmcq67gJRWhibfbV9hZ7RegF3sxsfvLZ2Y,144
+lib/main.py,sha256=ycMU5zPBvV26NY_suYrFeCffxPw0dR6SQUeP9iHhl5U,6542
+Chromify-1.1.8.dist-info/LICENSE,sha256=dqcrRUVJC08UtigVddtzlZgsJ_mfCpSISHq6hjDM1YM,1314
+Chromify-1.1.8.dist-info/METADATA,sha256=Lnb4iw2pvOctTTsKqWRSxfyOGuShWr7eY7Y9-VtU8so,8627
+Chromify-1.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Chromify-1.1.8.dist-info/top_level.txt,sha256=WpF-Lmk5aBIEK_4qU-FV5k8QeI6cpaKJ20QO_bab0JY,9
+Chromify-1.1.8.dist-info/RECORD,,
