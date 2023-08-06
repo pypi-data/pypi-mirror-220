@@ -1,0 +1,5 @@
+__title__ = "py_tls"
+__description__ = "Python async TLS client."
+__version__ = "0.1.0"
+__author__ = "Tyler Kruer"
+__license__ = "MIT"
