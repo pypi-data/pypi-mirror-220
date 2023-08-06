@@ -1,0 +1,10 @@
+poetry-core
+astropy
+bokeh
+click
+dask
+matplotlib
+numpy
+pandas
+photutils==1.8.0
+dask[distributed]
