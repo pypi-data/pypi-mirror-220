@@ -1,0 +1,12 @@
+irisml/tasks/create_azure_computervision_caption_model.py,sha256=JZKOWpYPyI--ncgZZcxfWAdKHMOAqoBgH_n5BF8iShg,1538
+irisml/tasks/create_azure_computervision_classification_model.py,sha256=mt2UNy7pM_y0hIjhCXnIYfbHW-fizQ2Htnba0Lh4mKM,4026
+irisml/tasks/create_azure_computervision_custom_model.py,sha256=Rp3MaUTRFT8UuDfCY8FpYnle-RZSvqpOD2jFtOgQcnM,3950
+irisml/tasks/create_azure_computervision_ocr_model.py,sha256=4StD_hd-0igImLUVn6cPytZqFJXvY7pDhkOlzRFbHUQ,1464
+irisml/tasks/create_azure_computervision_product_recognizer_model.py,sha256=LcDPqtgSeXJtnFhhHD-RcmpOYUWj8JWmNE-QEMtPbmM,5936
+irisml/tasks/delete_azure_computervision_custom_model.py,sha256=-lzrJJg6Y8YMtfnSBQ1zHqKXqxLR-2qlUO4ei5gG43A,1102
+irisml/tasks/train_azure_computervision_custom_model.py,sha256=7AGGlIIh5uLv73emkwjp97-91EcgvcIg8HbeSnpDpfs,11782
+irisml_tasks_azure_computervision-0.0.7.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+irisml_tasks_azure_computervision-0.0.7.dist-info/METADATA,sha256=nYoe3LX81HkRy-W_kexsDcoEo38-xj2Qiy-M4uNXxZY,1934
+irisml_tasks_azure_computervision-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+irisml_tasks_azure_computervision-0.0.7.dist-info/top_level.txt,sha256=-O6mZvBaJ0q2Xuea9BVCfU8n5tO5UO5aLoPn_Eos3Ao,7
+irisml_tasks_azure_computervision-0.0.7.dist-info/RECORD,,
