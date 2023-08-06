@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "myhelloya"
+version = "0.1.0"
+description = "mlyl的第一个上传脚本"
+authors = ["mlyl"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
