@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "query-everywhere"
+version = "0.1.2"
+description = "Query every resource in RDBMS for REST"
+authors = ["-LAN- <laipz8200@outlook.com>"]
+readme = "README.md"
+packages = [{include = "query_everywhere"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^2.0.19"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
