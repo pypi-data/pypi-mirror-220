@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jolli"
+version = "0.0.18"
+authors = [
+  { name="Thomas Kluge", email="t.kluge@hzdr.de" },
+]
+description = "jolli is just an openPMD low-level interface for reading and plotting PIConGPU output in python. It is a simple wrapper for the openPMD-api to read PIConGPU output"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Framework :: Jupyter",
+]
+
+[project.urls]
+"GitHub" = "https://github.com/ComputationalRadiationPhysics/jolli"
