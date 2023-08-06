@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyiaacsync/__init__.py
+pyiaacsync/pyiaacsync.py
+pyiaacsync.egg-info/PKG-INFO
+pyiaacsync.egg-info/SOURCES.txt
+pyiaacsync.egg-info/dependency_links.txt
+pyiaacsync.egg-info/requires.txt
+pyiaacsync.egg-info/top_level.txt
