@@ -1,0 +1,11 @@
+shell_whiz/__init__.py,sha256=-_s4ar9jjLJq5xOsluK2iBGNWsPhS9cRqLcs9F7UxQ8,3874
+shell_whiz/__main__.py,sha256=5BjNuyet8AY-POwoF5rGt722rHQ7tJ0Vf0UFUfzzi-I,58
+shell_whiz/config.py,sha256=HnKlr8LhZJgSqU_G7V4PKwH8abU2K4DNRqu36Dnslzc,1686
+shell_whiz/constants.py,sha256=msJ5Vq3zssu6KUZk8zL6Glf-UnZ33QQ4keMGR-Uh5lw,194
+shell_whiz/exceptions.py,sha256=4-vQtdImR3VsZVjk4ARrTOsL_kY_yiovHYwyyOdWDkY,108
+shell_whiz/openai.py,sha256=cs6osV9p-Xz2EXkavLmJmoIvc5TKuBrRdHAuy4S_M0Y,7282
+shell_whiz-0.1.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+shell_whiz-0.1.7.dist-info/METADATA,sha256=P3OaZ53PiJiz8sElVNB97ZsOZZqWamVXDpVftH8C2wc,1687
+shell_whiz-0.1.7.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+shell_whiz-0.1.7.dist-info/entry_points.txt,sha256=WbeyV2oC1uQNta5HmWXEQiwT2Zq1P9k-HFNKXXQRVYo,38
+shell_whiz-0.1.7.dist-info/RECORD,,
