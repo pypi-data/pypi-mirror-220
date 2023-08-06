@@ -1,0 +1,4 @@
+import coloredlogs
+
+
+coloredlogs.install()
