@@ -1,0 +1,12 @@
+LICENSE
+README.md
+libz3.dll
+nextflap.pyd
+setup.py
+up_nextflap/__init__.py
+up_nextflap/up_nextflap.py
+up_nextflap.egg-info/PKG-INFO
+up_nextflap.egg-info/SOURCES.txt
+up_nextflap.egg-info/dependency_links.txt
+up_nextflap.egg-info/requires.txt
+up_nextflap.egg-info/top_level.txt
