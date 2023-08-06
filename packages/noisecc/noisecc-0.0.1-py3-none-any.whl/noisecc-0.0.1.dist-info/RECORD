@@ -1,0 +1,11 @@
+noisecc/__init__.py,sha256=9tyUPybPzU97uR63uPljf3TQFLH8UcqSp9K-cpQNxqc,82
+noisecc/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+noisecc/config/main.py,sha256=8R9YPQ0p7bCBeOIx90P3QKV51T3YjN-U_iXLItXugyk,359
+noisecc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+noisecc/tests/test_config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+noisecc/tests/test_config/test_main.py,sha256=y1O801N8DjFs4x2V6KvnNWkwp4sCo6vgeTsz-dv7kQE,157
+pyproject.toml,sha256=NaMC7Z1kCCi1kd_tZAPfklLQq02DK4aGBuoGdffHeuI,1538
+noisecc-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+noisecc-0.0.1.dist-info/METADATA,sha256=s-GvOTq8mCPvDBEBxUyB7ouks4ECViFvZDOdAt057Fc,1600
+noisecc-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+noisecc-0.0.1.dist-info/RECORD,,
