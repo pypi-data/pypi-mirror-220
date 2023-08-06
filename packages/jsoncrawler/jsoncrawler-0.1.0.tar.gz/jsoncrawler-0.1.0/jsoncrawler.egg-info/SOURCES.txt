@@ -1,0 +1,7 @@
+setup.py
+jsoncrawler/__init__.py
+jsoncrawler/jsoncrawler.py
+jsoncrawler.egg-info/PKG-INFO
+jsoncrawler.egg-info/SOURCES.txt
+jsoncrawler.egg-info/dependency_links.txt
+jsoncrawler.egg-info/top_level.txt
