@@ -1,0 +1,10 @@
+shape_existence/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+shape_existence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shape_existence/complexes_and_proofs.py,sha256=OnRQ7No4AQvCSSXXRptDJnsHzBxaOTrZ7Y-75-q3FLo,21683
+shape_existence/flexible_cqp.py,sha256=16G6zi5jVToOPLVuCVUkoJTWiisFmZYMZz6KkWTclNI,13379
+shape_existence/fractions_and_interval_arithmetic.py,sha256=4BPTskcoT3Rjv6BPu4j5UGHR7Ytjolvqd8MhpnJnRkY,16720
+shape_existence/obj_stuff.py,sha256=BXeFNLdMqqKAK4DnbshnA3VcyVnSD9Fcj1V5ggyOCBE,4928
+shape_existence-0.0.5.dist-info/METADATA,sha256=oMpd1E-nIM-ZXIplNMOC37R1sFKBrzE9pB1cKpatZ1Y,3752
+shape_existence-0.0.5.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+shape_existence-0.0.5.dist-info/licenses/LICENSE,sha256=3JiOdY_NQXhWxzLBTVFJGNlal4eI9tz5nX0wj5ysufs,1058
+shape_existence-0.0.5.dist-info/RECORD,,
