@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: document-detection
+Version: 1.0.4
+Summary: version
+Home-page: https://pypi.org/project/document_detection
+Author: huyi
+Author-email: huyi@datagrand.com
+Requires-Python: >=3.6.0
+Requires-Dist: Levenshtein (==0.20.9)
+

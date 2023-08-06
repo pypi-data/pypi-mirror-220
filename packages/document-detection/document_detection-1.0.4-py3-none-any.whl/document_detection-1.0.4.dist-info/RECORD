@@ -1,0 +1,11 @@
+document_detection/__init__.py,sha256=bBxKOvMbFPeGaOeF_c2V7i5JZoIlTSh1BCbdAWb09EI,387
+document_detection/detection.py,sha256=edtWzpR_BhSNFc2Qe0q1NrdxsoOf_b90-lKD4x5niB4,5737
+document_detection/node.py,sha256=-pc-_LVOcA43U68ZpRrLeYTcV4GLu6BCN_5DJm8bpPM,140
+document_detection/scope_table,sha256=q0oL9Fl8ldvLAluOBJMDQzDhjY2bi7DtEwlVrlwrL-8,1465
+document_detection/state_word.txt,sha256=BOh8Z-qdfhjQBNMNC-xeZwWO8mGajgUQfRHd-dA31-M,13
+document_detection/test.py,sha256=nr5TXvukzBTcM8lzM-TsG7CuQz2bY-06Q_hc6NfwJZQ,1747
+document_detection/utils.py,sha256=d8jLAOrLufLCXUAcOVWCMFk-hPDIyhqGwKE0iGzER5E,2059
+document_detection-1.0.4.dist-info/METADATA,sha256=YU5IfWLm_WrHK7psTiZD3qwaOzvyL3HF60CziCRCErM,244
+document_detection-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+document_detection-1.0.4.dist-info/top_level.txt,sha256=KdUGrP4BZPGJW4w9CgF3n2WhN82qtcVxt9u0EmdTMeU,19
+document_detection-1.0.4.dist-info/RECORD,,
