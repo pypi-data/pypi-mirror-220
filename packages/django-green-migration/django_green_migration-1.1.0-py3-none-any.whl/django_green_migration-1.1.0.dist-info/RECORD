@@ -1,0 +1,12 @@
+green_migration/__init__.py,sha256=Y_OfyCO1mikWc6j7iipUv7N3tHiF19C9dSTLfY5Q7gM,17
+green_migration/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+green_migration/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+green_migration/management/commands/green_migrate.py,sha256=KqGCABgmbwPUOuiIz5KD1V1uc3-wbboyqZcA-UlOe4Q,3614
+green_migration/management/commands/pos_green_migrate.py,sha256=q99t3tQg_AZJkcYJ36-FUSrTK59mNboH7SwWEJznavw,1018
+green_migration/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+green_migration/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_green_migration-1.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+django_green_migration-1.1.0.dist-info/METADATA,sha256=LPifp_H3ZxpiUUHN9dv_OuN_SmRLqq44qIkzbE6hryo,15103
+django_green_migration-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_green_migration-1.1.0.dist-info/top_level.txt,sha256=lSwerJLPJqvr-i8crLcVj0ejlw40-zp-orcxqd4ABUQ,16
+django_green_migration-1.1.0.dist-info/RECORD,,
