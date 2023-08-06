@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+freewillai/freewillai.egg-info/PKG-INFO
+freewillai/freewillai.egg-info/SOURCES.txt
+freewillai/freewillai.egg-info/dependency_links.txt
+freewillai/freewillai.egg-info/requires.txt
+freewillai/freewillai.egg-info/top_level.txt
