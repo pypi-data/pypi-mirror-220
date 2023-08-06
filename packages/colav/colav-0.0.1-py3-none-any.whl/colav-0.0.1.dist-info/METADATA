@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: colav
+Version: 0.0.1
+Summary: Calculate structural representations (dihedral angles, CA pairwise distances, and strain analysis) for downstream analysis (e.g., PCA, t-SNE, or UMAP)
+Project-URL: homepage, https://rs-station.github.io/colav/
+Project-URL: repository, https://github.com/rs-station/colav
+Author-email: Ammaar Saeed <aasaeed@college.harvard.edu>
+License: MIT License
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Requires-Dist: biopandas
+Requires-Dist: jupyter
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Provides-Extra: docs
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest>=6.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+# colav
+
+`colav` (Conformational Landscape Visualization) provides tools for representing protein structures and mapping conformational landscapes. 
+
+`colav` supports calculations for dihedral angles, pairwise distances, and strain. It is built on `biopandas`, `NumPy`, and `SciPy`. The methods analyze PDB files, either one-by-one or all together. The three methods currently implemented are: 
+
+## Installation 
+
+You can install `colav` using `pip`: 
+
+```
+pip install colav
+```
+
+## Examples 
+
+Examples of how to use the software can be found in `scripts/`.
+
+## Documentation 
+
+Documentation can be found [here](rs-station.github.io/colav). 
+
+## Support 
+
+If you are having issues, please let us know. You can contact Ammaar at aasaeed@college.harvard.edu. 
+
+## License 
+
+This code is provided under the [MIT license](LICENSE). 
+
+## Reference 
+
+If you use `colav` in your work, please use the following citation: 
+Saeed, A.A., Klureza, M.A., and Hekstra, D.R. (2023). Mapping protein conformational ensembles using crystallographic drug fragment screens. [doi]()
