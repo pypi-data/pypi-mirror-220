@@ -1,0 +1,8 @@
+README.md
+setup.py
+logpai/__init__.py
+logpai.egg-info/PKG-INFO
+logpai.egg-info/SOURCES.txt
+logpai.egg-info/dependency_links.txt
+logpai.egg-info/requires.txt
+logpai.egg-info/top_level.txt
