@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: OptiFit
+Version: 1.2
+Summary: Combining methods from solcore and lmfit for an easy-to-use fitting procedure of thin film reflection contrast data and PL data
+Home-page: https://github.com/aidanobeirne/OptiFit.git
+Author: Aidan OBeirne
+Author-email: aidanobeirne@me.com
+License: MIT
+Download-URL: https://github.com/aidanobeirne/OptiFit/archive/refs/tags/v1_2.zip
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+UNKNOWN
+
