@@ -1,0 +1,3 @@
+[console_scripts]
+webpy-cli = webpy_cli.cli:main
+
