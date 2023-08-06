@@ -1,0 +1,22 @@
+{
+  "name": "bqplot-ui-tests",
+  "version": "1.0.0",
+  "description": "bqplot UI Tests",
+  "private": true,
+  "scripts": {
+    "start": "jupyter lab --config jupyter_server_config.py",
+    "test": "npx playwright test",
+    "test:update": "npx playwright test --update-snapshots",
+    "test:debug": "PWDEBUG=1 npx playwright test"
+  },
+  "author": "bqplot",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@jupyterlab/galata": "^5.0.1",
+    "@playwright/test": "^1.32.0"
+  },
+  "dependencies": {
+    "@types/klaw-sync": "^6.0.1",
+    "klaw-sync": "^6.0.0"
+  }
+}
