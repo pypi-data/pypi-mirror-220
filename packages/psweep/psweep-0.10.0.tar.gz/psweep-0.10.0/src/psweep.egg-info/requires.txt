@@ -1,0 +1,5 @@
+docopt
+joblib
+pandas>=0.19.2
+pyyaml
+tabulate>=0.8.2
