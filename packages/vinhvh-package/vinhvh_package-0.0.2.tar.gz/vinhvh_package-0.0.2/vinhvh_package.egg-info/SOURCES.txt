@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+vinhvh_package.egg-info/PKG-INFO
+vinhvh_package.egg-info/SOURCES.txt
+vinhvh_package.egg-info/dependency_links.txt
+vinhvh_package.egg-info/top_level.txt
