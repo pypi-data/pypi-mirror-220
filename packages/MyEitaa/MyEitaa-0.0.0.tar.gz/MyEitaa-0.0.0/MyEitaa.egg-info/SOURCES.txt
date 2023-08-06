@@ -1,0 +1,8 @@
+LICENSE.txt
+MyEitaa.py
+README.md
+pyproject.toml
+MyEitaa.egg-info/PKG-INFO
+MyEitaa.egg-info/SOURCES.txt
+MyEitaa.egg-info/dependency_links.txt
+MyEitaa.egg-info/top_level.txt
