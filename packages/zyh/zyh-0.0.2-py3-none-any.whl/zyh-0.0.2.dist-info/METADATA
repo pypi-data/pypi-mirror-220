@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: zyh
+Version: 0.0.2
+Summary: Easily show off amazing scripys by zyh
+Home-page: https://github.com/amanyara/zyh
+Author: zhangyuhan
+Author-email: yhanzh0608@gmail.com
+License: MIT
+Keywords: python,nlp,show off
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: transformers
+Requires-Dist: datasets
+Requires-Dist: evaluate
+Requires-Dist: peft
+Requires-Dist: accelerate
+Requires-Dist: gradio
+Requires-Dist: optimum
+Requires-Dist: sentencepiece
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: tensorboard
+Requires-Dist: rouge
+Requires-Dist: nltk
+Requires-Dist: jupyterlab
+
+## 介绍
+测试python环境！
+
+借助zyh这个库
+
+github repo: 
+
+[https://github.com/amanyara/zyh](https://github.com/amanyara/zyh)
+
+## 安装
+你可以使用
+```
+pip install zyh
+```
+来下载。（推荐，因为还会在你系统内安装同名的命令行工具）
+
+
+或者直接clone这个repo
+
+## 用法
+在当前文件夹下
+
+
+
+假如你使用pip的方式安装，只需要运行
+```
+zyh
+```
+即可
+
