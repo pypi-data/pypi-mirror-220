@@ -1,0 +1,2 @@
+[console_scripts]
+koheron = koheron.cli:cli
