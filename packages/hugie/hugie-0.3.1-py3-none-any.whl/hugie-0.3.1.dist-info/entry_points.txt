@@ -1,0 +1,3 @@
+[console_scripts]
+hugie=hugie.__main__:app
+
