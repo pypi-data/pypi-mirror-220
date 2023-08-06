@@ -1,0 +1,14 @@
+mod17/__init__.py,sha256=mekoHoUWZTVNyp49xj2JLIQIIRcz9NntykAoxlW5Xz0,20140
+mod17/calibration.py,sha256=MVjf3qok6tGfC7Qx6PVquO4pU5aP1QuZYdgcTJTlyqw,52526
+mod17/science.py,sha256=Izaf4nukGcvu_UQtd5k0UUlL8--fLKJD5O5ardcyOUw,7696
+mod17/sensitivity.py,sha256=RcPkYPtvuxT0O0owPaumV8R0guL0HhtpyxVR39C8YZM,11767
+mod17/srs.py,sha256=zymy0ovd4VvV91hM1Octf8N27NpCYmYgzbz_z7j7mWk,7805
+mod17/utils.py,sha256=uqcYhrJ7wbkT3DNerqrsTf3nY6LM79plgoybbtpIp9M,19424
+mod17/viirs.py,sha256=swnZKDqoQ3uhUJuzXsAdMGFBoajTx3EAD61-bLR63EE,21146
+mod17/data/MOD17_BPLUT_C5.1_MERRA_NASA.csv,sha256=Kcqob6zdUsCyVPiWXrgFGUH3uREMq-2diIJRHcy8Wys,1010
+mod17/data/MOD17_BPLUT_CX.X_MERRA_NASA.csv,sha256=un3kSWH9zHL44s6XQYOzktc-5_9yvT5U1VxdnAfIhwo,1061
+mod17-0.1.1.dist-info/LICENSE,sha256=QoLbITPwtyQrtFCq9t3wIWYmpDVGjKI8fQedwt3v4XY,1074
+mod17-0.1.1.dist-info/METADATA,sha256=bhlTYqJ79o7ZTfwbyqYRJKT9_7v70ZUbKrKEhaC84FA,6953
+mod17-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mod17-0.1.1.dist-info/top_level.txt,sha256=rxDMICj7i7xBqbreQkOKRCzjSEj9F7EZah0hHoXG1iU,6
+mod17-0.1.1.dist-info/RECORD,,
