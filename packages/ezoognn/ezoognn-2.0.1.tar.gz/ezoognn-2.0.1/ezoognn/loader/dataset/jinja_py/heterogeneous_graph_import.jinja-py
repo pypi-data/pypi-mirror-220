@@ -1,0 +1,59 @@
+{
+    "db_name": "{{import_conf_json.db_name}}",
+    "nodes":[
+        {% for schema in import_conf_json.node_schema %}
+        {
+            "path": "./{{schema.path}}",
+            "type": "csv",
+            "conf": {
+                "type": "{{schema.name}}",
+                "props": [
+                    {% for prop in schema.props %}
+                    {
+                       "name": "{{prop.name}}",
+                       "column": {{prop.column}}
+                    }{%- if prop.last_prop_no_tag == 0-%}{% else %},{% endif %}
+                    {% endfor %}
+                ]
+            }
+        }{%- if schema.last_prop_no_tag == 0-%}{% else %},{% endif %}
+        {% endfor %}
+    ],
+    "edges": [
+        {% for schema in import_conf_json.edge_schema %}
+        {
+            "path": "./{{schema.path}}",
+                    "type": "csv",
+                    "conf": {
+                         "type": "{{schema.edge_type}}",
+                         "start_node": {
+                             "type": "{{schema.start_node}}",
+                             "unique": [
+                                 {
+                                     "name" : "id",
+                                     "column" : 0
+                                 }
+                             ]
+                         },
+                         "end_node": {
+                            "type": "{{schema.end_node}}",
+                            "unique": [
+                                 {
+                                     "name" : "id",
+                                     "column" : 1
+                                 }
+                             ]
+                         },
+                         "props": [
+                            {% for prop in schema.props %}
+                            {
+                               "name": "{{prop.name}}",
+                               "column": {{prop.column}}
+                            }{%- if prop.last_prop_no_tag == 0-%}{% else %},{% endif %}
+                            {% endfor %}
+                         ]
+                    }
+        }{%- if schema.last_prop_no_tag == 0-%}{% else %},{% endif %}
+        {% endfor %}
+    ]
+}

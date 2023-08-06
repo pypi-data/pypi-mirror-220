@@ -1,0 +1,64 @@
+{
+    "db_name": "{{import_conf_json.db_name}}",
+    "nodes":[
+        {
+            "path": "./{{import_conf_json.db_name}}-node.csv",
+            "type": "csv",
+            "conf": {
+                "type": "node",
+                "props": [
+                    {
+                        "name": "id",
+                        "column": 0
+                    },
+                    {% for featx in import_conf_json.node_json %}
+                    {
+                       "name": "{{featx.name}}",
+                       "column": {{featx.column}}
+                    }{%- if featx.last_prop_no_tag == 0-%}{% else %},{% endif %}
+                    {% endfor %}
+                ]
+            }
+        }
+    ],
+    "edges": [
+        {
+            "path": "./{{import_conf_json.db_name}}-edge.csv",
+                    "type": "csv",
+                    "conf": {
+                         "type": "edge",
+                         "start_node": {
+                             "type": "node",
+                             "unique": [
+                                 {
+                                     "name" : "id",
+                                     "column" : 0
+                                 }
+                             ]
+                         },
+                         "end_node": {
+                            "type": "node",
+                            "unique": [
+                                 {
+                                     "name" : "id",
+                                     "column" : 1
+                                 }
+                             ]
+                         },
+                         "props": [
+                            {
+                                "name": "number",
+                                "column": 2
+                            },
+                            {% for featx in import_conf_json.edge_json %}
+                            {
+                               "name": "{{featx.name}}",
+                               "column": {{featx.column}}
+                            }{%- if featx.last_prop_no_tag == 0-%}{% else %},{% endif %}
+                            {% endfor %}
+                         ]
+                    }
+
+        }
+    ]
+}

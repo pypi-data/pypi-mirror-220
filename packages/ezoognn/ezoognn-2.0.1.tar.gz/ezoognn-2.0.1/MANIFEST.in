@@ -1,0 +1,6 @@
+include ezoognn/libgraph.dylib
+include ezoognn/libgnn.dylib
+include ezoognn/loader/dataset/jinja_py/heterogeneous_graph_import.jinja-py
+include ezoognn/loader/dataset/jinja_py/homogeneous_graph_schema.jinja-py
+include ezoognn/loader/dataset/jinja_py/homogeneous_graph_import.jinja-py
+include ezoognn/loader/dataset/jinja_py/heterogeneous_graph_schema.jinja-py
