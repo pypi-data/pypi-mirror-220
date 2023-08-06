@@ -1,0 +1,10 @@
+click
+pyfakefs
+
+[:python_version < "3.11"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
