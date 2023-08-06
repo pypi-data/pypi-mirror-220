@@ -1,0 +1,4 @@
+[project]
+name = 'KwoksTool'
+version ='0.0.12'
+dependencies=[]
