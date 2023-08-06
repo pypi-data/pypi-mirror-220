@@ -1,0 +1,11 @@
+subproj/__init__.py,sha256=A5WkRdli4YNZH8OGa84UtEa7oVivSCvgwlVBbp5sHM0,100
+subproj/__main__.py,sha256=NbLMLLreIf5oqtXt8RArPDvBIZY95UFJjodyGn5N2-0,1155
+subproj/logging.py,sha256=MQCafCy8nfwDFna0wp_cUhm6YYKWjoW_iNHnZtegXR8,542
+subproj/setup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+subproj/setup/update.py,sha256=AUdEkbQFcHl0i1M8sOoVuvK1jBYgEielasduWIoRU3g,606
+subproj-0.0.1a1.dist-info/LICENSE.rst,sha256=tzUuiUxK5y4kRI2WXI3XD3yhBWDg9-KwSMlcx5UacLY,1515
+subproj-0.0.1a1.dist-info/METADATA,sha256=0hJJzTcQKi9dozXGTZCgXOTIHvMcJno9zYhnwrVXTe4,1563
+subproj-0.0.1a1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+subproj-0.0.1a1.dist-info/entry_points.txt,sha256=5N33jWx2bKihG1aMZ1MPY5-3YUx_IQm18SXUJBfdOtI,50
+subproj-0.0.1a1.dist-info/top_level.txt,sha256=aNBAVCcWgUYM9oqJrbx1qwVeJB1mE529Dt2qVydknQc,8
+subproj-0.0.1a1.dist-info/RECORD,,

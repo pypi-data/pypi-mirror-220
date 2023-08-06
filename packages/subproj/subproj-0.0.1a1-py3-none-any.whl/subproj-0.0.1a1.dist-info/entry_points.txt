@@ -1,0 +1,2 @@
+[console_scripts]
+subproj = subproj.__main__:main

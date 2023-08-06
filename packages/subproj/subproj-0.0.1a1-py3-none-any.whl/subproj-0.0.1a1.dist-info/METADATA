@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: subproj
+Version: 0.0.1a1
+Summary: Handle PVSS subprojects
+Home-page: https://gitlab.com/fholmer/subproj
+Author: Frode Holmer
+Author-email: fholmer+subproj@gmail.com
+License: BSD-3-Clause
+Project-URL: Documentation, https://fholmer.gitlab.io/subproj
+Project-URL: Source Code, https://gitlab.com/fholmer/subproj
+Keywords: subproj,subprojects,deploy,install,on-prem,pvss
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.rst
+Requires-Dist: adop
+Requires-Dist: keyring
+
+=======
+subproj
+=======
+
+* PyPI: https://pypi.org/project/subproj/
+* Downloads: https://gitlab.com/fholmer/subproj/-/packages
+* Documentation: https://fholmer.gitlab.io/subproj
+* Source Code: https://gitlab.com/fholmer/subproj
+* License: BSD License
+
+Summary
+=======
+
+Handle subprojects on-prem.
+
+Warning
+=======
+
+* This is a beta version. Not ready for production.
+
+
+Installation
+============
+
+Open command line and and install using pip:
+
+.. code-block:: console
+
+    $ pip install subproj
+
+
+Usage
+=====
+
+subproj is available as console script and library module
+
+.. code-block:: console
+
+    $ subproj -h
+    $ python -m subproj -h
+
+Update a project
+
+.. code-block:: console
+
+  $ cd proj
+  $ subproj update .
