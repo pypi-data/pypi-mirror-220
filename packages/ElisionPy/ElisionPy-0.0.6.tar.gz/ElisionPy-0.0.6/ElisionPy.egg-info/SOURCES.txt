@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+ElisionPy.egg-info/PKG-INFO
+ElisionPy.egg-info/SOURCES.txt
+ElisionPy.egg-info/dependency_links.txt
+ElisionPy.egg-info/requires.txt
+ElisionPy.egg-info/top_level.txt
+elision/__init__.py
+elision/datetime.py
+elision/help.py
+elision/random.py
