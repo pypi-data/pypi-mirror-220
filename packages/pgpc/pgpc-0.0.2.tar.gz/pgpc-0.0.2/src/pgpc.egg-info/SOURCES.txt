@@ -1,0 +1,12 @@
+LICENSE
+NOTICE
+README.md
+setup.py
+src/pgpc/__init__.py
+src/pgpc/parser.py
+src/pgpc/scanner.py
+src/pgpc.egg-info/PKG-INFO
+src/pgpc.egg-info/SOURCES.txt
+src/pgpc.egg-info/dependency_links.txt
+src/pgpc.egg-info/requires.txt
+src/pgpc.egg-info/top_level.txt
