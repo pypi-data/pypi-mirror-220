@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements-dev.txt
+requirements.txt
+setup.py
+ibm_container_registry/__init__.py
+ibm_container_registry/common.py
+ibm_container_registry/container_registry_v1.py
+ibm_container_registry/version.py
+ibm_container_registry/vulnerability_advisor_v4.py
+ibm_container_registry.egg-info/PKG-INFO
+ibm_container_registry.egg-info/SOURCES.txt
+ibm_container_registry.egg-info/dependency_links.txt
+ibm_container_registry.egg-info/requires.txt
+ibm_container_registry.egg-info/top_level.txt
+ibm_container_registry.egg-info/zip-safe
