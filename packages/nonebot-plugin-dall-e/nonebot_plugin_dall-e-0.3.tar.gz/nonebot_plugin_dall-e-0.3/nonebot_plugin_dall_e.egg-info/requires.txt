@@ -1,0 +1,5 @@
+nonebot2
+openai
+pillow
+aiohttp
+nonebot-adapter-onebot
