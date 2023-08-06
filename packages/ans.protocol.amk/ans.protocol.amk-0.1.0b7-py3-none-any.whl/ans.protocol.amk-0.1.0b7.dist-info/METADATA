@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ans.protocol.amk
+Version: 0.1.0b7
+Summary: Python client for ans.protocol.amk built on 08:08:03 on 21 July 2023
+Maintainer-email: mohamed.koubaa@ansys.com
+License: Ansys Reserved
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: grpcio
+Requires-Dist: protobuf (<=3.20)
+
+Python client for ans.protocol.amk built on 08:08:03 on 21 July 2023
+
+
+© 2022 ANSYS, Inc.
+
+•   This software is published only for use by ANSYS, Inc. and its
+    subsidiaries (collectively “Ansys”).
+•   Publication of this software does not transfer any rights to any
+    person outside of Ansys.
+•   You may not use, copy, modify, merge, publish, distribute,
+    sublicense, and/or sell copies of the software for any purpose.
