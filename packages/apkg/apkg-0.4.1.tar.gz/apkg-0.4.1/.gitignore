@@ -1,0 +1,14 @@
+*.py[co]
+.*
+*.egg
+*.egg-info
+*.tar.gz
+poetry.lock
+/AUTHORS
+/ChangeLog
+/build
+/dist
+/pkg
+/site
+/knot-dns
+/examples/*/pkg
