@@ -1,0 +1,15 @@
+xcube_4d_viewer/__init__.py,sha256=XpBANa6g4uDUvX-snf5QBp-iB0_X1uNt_dJ7o7AlDNg,101
+xcube_4d_viewer/api.py,sha256=r5HQgGD4il_NfgZc7U0ngtFZeADry5bP3rudwshUedc,1075
+xcube_4d_viewer/context.py,sha256=lwZfxkjFDzAnVW6KuOwHoRqtnJ6N2KSPxpaqT3nTwIQ,606
+xcube_4d_viewer/controllers.py,sha256=28ovISRGEDdQ1h5uONJl65i71quDbqlXwlSMYEnT_nQ,15191
+xcube_4d_viewer/middle_tier_registration.py,sha256=qpq8iJoQzDRjIqo0Ase8szp8GlwxRrXAG-59UstIzoA,2635
+xcube_4d_viewer/plugin.py,sha256=W3ng1-7A_pCcoV-WHMPghf3xw2Te6nQGurd7kGapHGs,454
+xcube_4d_viewer/route_parameters.py,sha256=TFxwFJePBcxxbay6rkkCR0RUqnB7QitehbXzoCEQbDw,1197
+xcube_4d_viewer/routes.py,sha256=zr1L9dPHi7JKpfhCUXJEfTQ6cvNpfk6XytxWfTFR_Fw,3079
+xcube_4d_viewer/tile.py,sha256=aKBIUdwxWVm8NKcLsb8oj63d_akgBVHffK30qBLbhaI,709
+xcube_4d_viewer-1.0.6.dist-info/LICENSE,sha256=kjWTA-TtT_rJtsWuAgWvesvu01BytVXgt_uCbeQgjOg,1061
+xcube_4d_viewer-1.0.6.dist-info/METADATA,sha256=w8z3AfPfHlJQHc0iNbiVWwv7CySUL1bQXg9QhjyX8cs,1507
+xcube_4d_viewer-1.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+xcube_4d_viewer-1.0.6.dist-info/entry_points.txt,sha256=PqOSeunp9hWevxuIV6B7j5oIkn4lYbLKJVTArFI_l7E,69
+xcube_4d_viewer-1.0.6.dist-info/top_level.txt,sha256=QdCALqfcZTp2JIDyi3irqtkwFiGL4p-XLkrfYpYPl2U,16
+xcube_4d_viewer-1.0.6.dist-info/RECORD,,
