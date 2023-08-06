@@ -1,0 +1,11 @@
+numpy
+astropy
+radio_beam
+schwimmbad
+psutil
+scipy
+spectral_cube
+tqdm
+
+[mpi]
+mpi4py
