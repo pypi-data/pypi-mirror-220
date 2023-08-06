@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: onehttp
+Version: 1.0.0
+Summary: Simple HTTP request management / browsing
+Home-page: https://github.com/fahim-programmer/onehttp
+Author: Fahim Chohan
+License: UNKNOWN
+Platform: Windows
+Platform: MacOS
+Platform: Linux
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 (==4.12.2)
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: certifi (==2023.7.22)
+Requires-Dist: charset-normalizer (==3.0.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: pdfkit (==1.0.0)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: soupsieve (==2.4.1)
+Requires-Dist: urllib3 (==1.26.0)
+
+A simple module that extends functionality of core modules and makes it easier to work with non-dynamic html based websites with cookies and other features
+
+
