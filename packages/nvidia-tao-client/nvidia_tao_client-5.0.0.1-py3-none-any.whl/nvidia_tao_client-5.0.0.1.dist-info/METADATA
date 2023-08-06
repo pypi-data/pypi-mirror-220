@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nvidia-tao-client
+Version: 5.0.0.1
+Summary: NVIDIA's package for using REST-API via TAO-Client.
+Author: Varun Praveen
+Author-email: vpraveen@nvidia.com
+License: NVIDIA Proprietary Software
+Keywords: nvidia,tao,api
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Environment :: Console
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+Requires-Dist: click (>=8.0.4)
+Requires-Dist: requests (>=2.27.1)
+
