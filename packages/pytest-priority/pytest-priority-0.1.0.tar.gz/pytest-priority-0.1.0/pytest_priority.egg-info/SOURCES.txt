@@ -1,0 +1,12 @@
+README.md
+setup.py
+pytest_priority/__init__.py
+pytest_priority/plugin.py
+pytest_priority.egg-info/PKG-INFO
+pytest_priority.egg-info/SOURCES.txt
+pytest_priority.egg-info/dependency_links.txt
+pytest_priority.egg-info/entry_points.txt
+pytest_priority.egg-info/requires.txt
+pytest_priority.egg-info/top_level.txt
+pytest_priority.egg-info/zip-safe
+tests/test_plugin.py
