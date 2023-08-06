@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: gulf-id-scanner
+Version: 0.1.0b0
+Summary: Python websocket client for reading Gulf IDs
+Home-page: https://github.com/Gallagher-ME/gulf_id_scanner
+License: MIT
+Author: Rami Mousleh
+Author-email: engrbm87@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.8.4,<4.0.0)
+Requires-Dist: orjson (>=3.9.2,<4.0.0)
+Requires-Dist: typing-extensions (>=4.7.1,<5.0.0)
+Requires-Dist: websockets (>=11.0.3,<12.0.0)
+Project-URL: Repository, https://github.com/Gallagher-ME/gulf_id_scanner/releases
+Description-Content-Type: text/markdown
+
+# Read Gulf ID card data
+
+Python package that interfaces with the Gulf ID and EID card reader service. It uses websocket to connect to the service installed on the host machine where a USB smart card reader is connected.
+
+## Usage
+
+- Install the card reader service on a windows machine
+- Ensure the services are running
+- Get the IP of the machine
+
+```python
+import aiohttp
+from gulf_id_scanner.client import Client
+from .execptions import ServiceError
+
+session = aiohttp.ClientSession()
+client = Client(host="192.168.3.45", web_session=session)
+# validate connection
+try:
+    await client.connect()
+except ServiceError as err:
+    return False
+
+# read card data
+try:
+  card_data = client.async_read_card():
+    # code to process returned card data
+except ServiceError as err:
+    return
+# detect when card is inserted and read card data
+try:
+  async for card_data in client.async_detect_card():
+    # code to process returned card data
+except ServiceError as err:
+    return
+await session.close()
+```
+
+## Card Data
+
+The [`CardData`](https://github.com/Gallagher-ME/gulf_id_scanner/blob/8a0d692c85b86c3486e73cb5dd0fcbf9da6315a9/gulf_id_scanner/models.py#L653) class provides the main card data fields that are commonly required when reading the ID. For more specific fields you can find all the data fields retrived from `CardData.card_data`.
+
