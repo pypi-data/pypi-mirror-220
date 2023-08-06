@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>intelmq.bots.outputs.smtp_batch package &#8212; intelmq 3.2.0.a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="intelmq-bots-outputs-smtp-batch-package">
+<h1>intelmq.bots.outputs.smtp_batch package<a class="headerlink" href="#intelmq-bots-outputs-smtp-batch-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-intelmq.bots.outputs.smtp_batch.output">
+<span id="intelmq-bots-outputs-smtp-batch-output-module"></span><h2>intelmq.bots.outputs.smtp_batch.output module<a class="headerlink" href="#module-intelmq.bots.outputs.smtp_batch.output" title="Permalink to this heading">¶</a></h2>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.BOT">
+<span class="sig-prename descclassname"><span class="pre">intelmq.bots.outputs.smtp_batch.output.</span></span><span class="sig-name descname"><span class="pre">BOT</span></span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.BOT" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot" title="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot"><code class="xref py py-class docutils literal notranslate"><span class="pre">SMTPBatchOutputBot</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.Mail">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">intelmq.bots.outputs.smtp_batch.output.</span></span><span class="sig-name descname"><span class="pre">Mail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.Mail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.Mail.count">
+<span class="sig-name descname"><span class="pre">count</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.Mail.count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.Mail.key">
+<span class="sig-name descname"><span class="pre">key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.Mail.key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.Mail.path">
+<span class="sig-name descname"><span class="pre">path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.Mail.path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.Mail.to">
+<span class="sig-name descname"><span class="pre">to</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.Mail.to" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">intelmq.bots.outputs.smtp_batch.output.</span></span><span class="sig-name descname"><span class="pre">SMTPBatchOutputBot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bot_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sighup_event</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disable_multithreading</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_queue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">standalone</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="intelmq.lib.html#intelmq.lib.bot.Bot" title="intelmq.lib.bot.Bot"><code class="xref py py-class docutils literal notranslate"><span class="pre">Bot</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.allowed_fieldnames">
+<span class="sig-name descname"><span class="pre">allowed_fieldnames</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['time.source',</span> <span class="pre">'source.ip',</span> <span class="pre">'classification.taxonomy',</span> <span class="pre">'classification.type',</span> <span class="pre">'time.observation',</span> <span class="pre">'source.geolocation.cc',</span> <span class="pre">'source.asn',</span> <span class="pre">'event_description.text',</span> <span class="pre">'malware.name',</span> <span class="pre">'feed.name',</span> <span class="pre">'feed.url',</span> <span class="pre">'raw']</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.allowed_fieldnames" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.alternative_mail">
+<span class="sig-name descname"><span class="pre">alternative_mail</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.alternative_mail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.alternative_mails">
+<span class="sig-name descname"><span class="pre">alternative_mails</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.alternative_mails" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.attachment_name">
+<span class="sig-name descname"><span class="pre">attachment_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'intelmq_%Y-%m-%d'</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.attachment_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.bcc">
+<span class="sig-name descname"><span class="pre">bcc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.bcc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.build_mail">
+<span class="sig-name descname"><span class="pre">build_mail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">send</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">override_to</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.build_mail" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates a MIME message
+:param mail: Mail object
+:param send: True to send through SMTP, False for just printing the information
+:param override_to: Use this e-mail instead of the one specified in the Mail object
+:return: True if successfully sent.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.cache">
+<span class="sig-name descname"><span class="pre">cache</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="intelmq.lib.html#intelmq.lib.cache.Cache" title="intelmq.lib.cache.Cache"><span class="pre">Cache</span></a></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.cache" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.cli">
+<span class="sig-name descname"><span class="pre">cli</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.cli" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.cli_run">
+<span class="sig-name descname"><span class="pre">cli_run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.cli_run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.email_from">
+<span class="sig-name descname"><span class="pre">email_from</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.email_from" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.fieldnames_translation">
+<span class="sig-name descname"><span class="pre">fieldnames_translation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'classification.taxonomy':</span> <span class="pre">'class',</span> <span class="pre">'classification.type':</span> <span class="pre">'type',</span> <span class="pre">'event_description.text':</span> <span class="pre">'description',</span> <span class="pre">'feed.name':</span> <span class="pre">'feed_name',</span> <span class="pre">'feed.url':</span> <span class="pre">'feed_url',</span> <span class="pre">'malware.name':</span> <span class="pre">'malware',</span> <span class="pre">'raw':</span> <span class="pre">'raw',</span> <span class="pre">'source.asn':</span> <span class="pre">'asn',</span> <span class="pre">'source.geolocation.cc':</span> <span class="pre">'country_code',</span> <span class="pre">'source.ip':</span> <span class="pre">'ip',</span> <span class="pre">'time.observation':</span> <span class="pre">'time_delivered',</span> <span class="pre">'time.source':</span> <span class="pre">'time_detected'}</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.fieldnames_translation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.gpg_key">
+<span class="sig-name descname"><span class="pre">gpg_key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.gpg_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.gpg_pass">
+<span class="sig-name descname"><span class="pre">gpg_pass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.gpg_pass" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.ignore_older_than_days">
+<span class="sig-name descname"><span class="pre">ignore_older_than_days</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.ignore_older_than_days" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.init">
+<span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.key">
+<span class="sig-name descname"><span class="pre">key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.limit_results">
+<span class="sig-name descname"><span class="pre">limit_results</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.limit_results" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.mail_contents">
+<span class="sig-name descname"><span class="pre">mail_contents</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.mail_contents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.mail_template">
+<span class="sig-name descname"><span class="pre">mail_template</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.mail_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.prepare_mails">
+<span class="sig-name descname"><span class="pre">prepare_mails</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.prepare_mails" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates Mail objects</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.redis_cache_db">
+<span class="sig-name descname"><span class="pre">redis_cache_db</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.redis_cache_db" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.redis_cache_host">
+<span class="sig-name descname"><span class="pre">redis_cache_host</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.redis_cache_host" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.redis_cache_port">
+<span class="sig-name descname"><span class="pre">redis_cache_port</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.redis_cache_port" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.redis_cache_ttl">
+<span class="sig-name descname"><span class="pre">redis_cache_ttl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1728000</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.redis_cache_ttl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.run">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parsed_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.send">
+<span class="sig-name descname"><span class="pre">send</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.send" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.send_mails_to_tester">
+<span class="sig-name descname"><span class="pre">send_mails_to_tester</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mails</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.send_mails_to_tester" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>These mails are going to tester’s address. Then prints out their count.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mails</strong> – list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.set_cache">
+<span class="sig-name descname"><span class="pre">set_cache</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.set_cache" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.set_tester">
+<span class="sig-name descname"><span class="pre">set_tester</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.set_tester" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.smtp_server">
+<span class="sig-name descname"><span class="pre">smtp_server</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'localhost'</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.smtp_server" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.subject">
+<span class="sig-name descname"><span class="pre">subject</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'IntelMQ</span> <span class="pre">warning</span> <span class="pre">(%Y-%m-%d)'</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.subject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.testing_to">
+<span class="sig-name descname"><span class="pre">testing_to</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.testing_to" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.timeout">
+<span class="sig-name descname"><span class="pre">timeout</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span></em><a class="headerlink" href="#intelmq.bots.outputs.smtp_batch.output.SMTPBatchOutputBot.timeout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-intelmq.bots.outputs.smtp_batch">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-intelmq.bots.outputs.smtp_batch" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/Logo_Intel_MQ.svg" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">IntelMQ is a solution for IT security teams for collecting and processing security feeds using a message queuing protocol.</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=certtools&repo=intelmq&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/organization.html">IntelMQ Organizational Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/support.html">Getting support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/support.html#development">Development</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user/hardware-requirements.html">Hardware Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/upgrade.html">Upgrade instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/configuration-management.html">Configuration and Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/bots.html">Bots inventory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/intelmqctl.html">intelmqctl documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/feeds.html">Data Feeds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/intelmq-api.html">IntelMQ API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/intelmq-manager.html">IntelMQ Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/FAQ.html">Frequently asked questions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user/universe.html">IntelMQ Universe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/ELK-Stack.html">ELK Stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/MISP-Integrations.html">MISP integrations in IntelMQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/n6-integrations.html">IntelMQ - n6 Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/CIFv3-Integrations.html">CIFv3 integrations in IntelMQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/eventdb.html">EventDB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/abuse-contacts.html">Abuse-contact look-ups</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/guide.html">Developers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/library.html">Running IntelMQ as Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/data-format.html">Data Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/harmonization-fields.html">Harmonization field names</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/release-procedure.html">Release procedure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/feeds-wishlist.html">Feeds wishlist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Code documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, IntelMQ community.
+      
+      |
+      <a href="../_sources/source/intelmq.bots.outputs.smtp_batch.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
