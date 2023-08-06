@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tejaspakcagelib
+Version: 0.0.1
+Summary: this package does amazing things
+Author: Tejas patil
+Author-email: tejas9patil@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# first-python-package
+This package does amazing things
+## instalation
+```
+shell
+$python  -m pip install first-python-package
+```
+
