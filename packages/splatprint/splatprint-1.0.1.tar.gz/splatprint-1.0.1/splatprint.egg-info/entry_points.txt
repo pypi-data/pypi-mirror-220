@@ -1,0 +1,2 @@
+[console_scripts]
+splatprint = splatprint.splatprint:main
