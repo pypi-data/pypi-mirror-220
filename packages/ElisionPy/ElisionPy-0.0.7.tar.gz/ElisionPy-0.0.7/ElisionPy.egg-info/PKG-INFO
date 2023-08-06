@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ElisionPy
+Version: 0.0.7
+Summary: This module is under development!
+Home-page: https://github.com/Ginji-Fox/ElisionPy
+Author: Ginji
+Author-email: bfire1999@gmail.com
+Project-URL: Documentation, https://github.com/Ginji-Fox/ElisionPy
+Keywords: ElisionPy Elision
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+This module is under development!
