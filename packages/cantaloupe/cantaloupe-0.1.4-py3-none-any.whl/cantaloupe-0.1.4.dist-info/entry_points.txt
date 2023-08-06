@@ -1,0 +1,3 @@
+[console_scripts]
+cantaloupe=cantaloupe.__main__:entry
+
