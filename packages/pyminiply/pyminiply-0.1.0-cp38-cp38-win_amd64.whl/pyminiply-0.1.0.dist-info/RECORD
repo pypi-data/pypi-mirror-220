@@ -1,0 +1,10 @@
+pyminiply/__init__.py,sha256=KPAChImCycqiy4PThKgp9btWWF8W8D5A0l-oTPZzc7g,88
+pyminiply/_version.py,sha256=ggSs4O41qEJzLJa0XfkG8_khuNNCkIY6TK9Da1b2iqU,219
+pyminiply/_wrapper.cp38-win_amd64.pyd,sha256=YZjyBPBhHEhZpB6WhWv9HYgldGWs8SqI5PreCSgU2-s,93184
+pyminiply/_wrapper.pyx,sha256=MGTe2K3wEDR7jJ09i37C6HgAnB9XfjDa5pm7SQiVi3o,3799
+pyminiply/reader.py,sha256=mHo7CPGu683oWeC9JUERhOIsDNvU-ajYbQx2uZDzjw0,7269
+pyminiply/wrapper.hpp,sha256=AShatVyii4EOjuzfk2tSN8U_UgyddAgHPbxuDZ_6x8E,243
+pyminiply-0.1.0.dist-info/METADATA,sha256=l-tCbB2xNPWNlpA8NC50atuMc6ND67EsBClCKrAQ8KE,8359
+pyminiply-0.1.0.dist-info/WHEEL,sha256=F2aDWtWrilNM3-px1vBtJOEd7aRVTetQfFuDYmYbAUQ,100
+pyminiply-0.1.0.dist-info/top_level.txt,sha256=7HgbmomHJ_954sdXSEb1jr1vhEcMPU7QsslzMJvUpT8,10
+pyminiply-0.1.0.dist-info/RECORD,,
