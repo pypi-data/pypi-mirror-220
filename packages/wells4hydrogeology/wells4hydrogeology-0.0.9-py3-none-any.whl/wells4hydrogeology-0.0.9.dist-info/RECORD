@@ -1,0 +1,17 @@
+w4h/__init__.py,sha256=BYXythCiA_ouzstVPhfp8c82imDXfkhoeLjJk5ebP6g,3475
+w4h/classify.py,sha256=4lFk5qtE0IXKYjSg-DV1X2VRjwYrYfK8tEA7EaU1cOI,16301
+w4h/clean.py,sha256=S5-iB4o9YDs6huLtYsQCPJwGvSuA0WkA2JkGEMDUAL4,10251
+w4h/core.py,sha256=jg6Wzt5rmYVgu0e3WUz6E3nRHhPWh02GrgjqBOM2n_A,24888
+w4h/export.py,sha256=r58SyFV6hEf6r-dwu_79ZPqEeW2wpuVBWd6KqVOKkao,7053
+w4h/layers.py,sha256=UILd8y9UllUOJQ9tC0m3dlRMe915-uN6Ar3L_5bAX_o,25324
+w4h/mapping.py,sha256=-8AnQuTayOL9gQ_9iETvb2Q75d3IVcxSSCvA-OR5OWA,30309
+w4h/read.py,sha256=rE3ag7FZO3zCjnD43rgKw_whtRPIrqGrAcLtGAe4jio,30609
+w4h/resources/resReadme.md,sha256=aAe7-P3Ebc4lzdbJGF7J-JMC91_pjq7ZBWBJkwnTI7Y,2247
+w4h/resources/resource_home.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+w4h/resources/temp4wiki.md,sha256=ZlIr5o4pel-qGq-5ugKsXkg_rMF0Vf0_Ur7ARmMi5zQ,12253
+w4h/resources/uniqueparameters.xlsx,sha256=seML7fTo7ZFOqvTVEWRwziz968WR0sCTB-4OzaYKLbQ,21040
+wells4hydrogeology-0.0.9.dist-info/LICENSE,sha256=PXlneO4YVrbfctc8JQ8bVYaPQFEmyIg-9gieaJ25JwE,1067
+wells4hydrogeology-0.0.9.dist-info/METADATA,sha256=sTfwm8j_gJ-0ZgRaGPgTp267eKd8P4xpoU-Yr5n5g-I,5021
+wells4hydrogeology-0.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+wells4hydrogeology-0.0.9.dist-info/top_level.txt,sha256=SEJSDsHfkJD58pYdASckEzXzTHe7T5ZuCiv3ArlKNBo,4
+wells4hydrogeology-0.0.9.dist-info/RECORD,,
