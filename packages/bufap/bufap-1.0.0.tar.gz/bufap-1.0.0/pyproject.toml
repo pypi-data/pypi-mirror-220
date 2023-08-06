@@ -1,0 +1,47 @@
+[project]
+name = "bufap"
+description = "A Python module (and CLI tool) for managing Buffalo wireless access points."
+authors = [
+    { name = "Masumitsu Hatta", email = "Masumitsu.Hatta@gmail.com" }
+]
+dynamic = ["version"]
+
+dependencies = [
+    "dictknife>=0.14.0",
+    "paramiko>=3.2.0",
+    "ouilookup>=0.3.1",
+]
+readme = "README.md"
+requires-python = ">= 3.9"
+
+[project.scripts]
+bufap-cli = "bufap.cli:main"
+
+[build-system]
+requires = ["hatchling>=1.17.1", "hatch-vcs>=0.3.0"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "black>=23.7.0",
+    "pyinstaller>=5.13.0",
+    "pytest>=7.4.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build]
+ignore-vcs = true
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+version_scheme = "python-simplified-semver"
+local_scheme = "no-local-version"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "bufap/_version.py"
+

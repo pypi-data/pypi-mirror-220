@@ -1,0 +1,354 @@
+# setup show status
+BUFFALO AirStationPro WAPM-AX8R Ver.1.27 (R4.01/B2016.01-1.11)
+[AirStation Name]
+APC43CEACC07E0
+[Serial Number]
+20600310500494
+[Management Interface]
+HTTP                 enable
+HTTPS                enable
+TELNET               enable
+SSH                  enable
+SNMP                 disable
+[Authentication User List]
+[Time Zone]
+GMT+09:00
+[Transfer Log (Syslog) Setup]
+Log Transfer   disable
+Syslog Server  ""
+USB            disable
+Log facilities for send
+DHCP Client      enable
+DHCP Server      enable
+Wireless Client  enable
+Authentication   enable
+Change Setting   enable
+Re-Start System  enable
+NTP Client       enable
+Wired Link       enable
+USB              enable
+ADT              enable
+[NTP Time Server]
+NTP Functionality    disable
+Server Name          "ntp.jst.mfeed.ad.jp"
+Update Interval      24 hours
+[Admin Tools]
+Admin Tools          disable
+Remote               disable
+[Remote Management Service]
+Remote Management Service  disable
+Current Status             Remote Management Service access is not configured.
+Assigned Profile
+cloud-setting              enable
+[LED Settings]
+Power LED         enable
+LAN LED           enable
+Wireless LED      enable
+[Reboot Scheduler]
+Reboot Scheduler            disable
+[Urgent mode]
+Urgent mode          disable
+# ip show status
+[Basic Settings]
+LAN Side IP Address                 DHCP
+IP Address                          192.168.17.101
+Subnet Mask                         255.255.255.0
+Default Gateway                     192.168.17.1
+DNS1                                192.168.16.1
+DNS2                                8.8.8.8
+LAN MAC Address                     C4:3C:EA:CC:07:E0
+2.4GHz                              00:03:7F:12:97:97
+5GHz                                00:03:7F:12:97:97
+[Advanced Settings]
+Management VLAN ID                  1
+[Proxy Arp]
+Proxy Arp                           disable
+[DHCP Server Settings]
+DHCP Server                         disable
+# ether show status
+[Wired LAN Port setup]
+Wired LAN Port  Status                         VLAN Mode      VLAN ID              Media Type                     MDI       Flow Control  802.3az
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Wired Port(#1)  enable(Up-1000BaseT-FD)        Hybrid Port    1                    Media/Duplex Auto              auto      enable        disable
+Wired Port(#2)  enable(Down)                   Hybrid Port    1                    Media/Duplex Auto              auto      enable        disable
+# airset 11g basic_info show status
+[11g basic_info]
+Wireless Status             enable
+Wireless Mode               11b/g/n/ax
+Wireless Channel            6/20MHz
+802.11g Protection          enable
+802.11n Protection          enable
+FrameBursting               disable
+Multicast Rate              auto
+Output Power                100
+Beacon Interval             100
+DTIM Period                 1
+RTS Threshold               2347
+Keep Alive                  60
+Guard Interval              short
+Aggregation                 ampdu+amsdu
+# SSID and security config ---> "airset ssid show status"
+# airset 11a basic_info show status
+[11a basic_info]
+Wireless Status             enable
+Wireless Mode               11a/n/ac/ax
+Wireless Channel            36/80MHz (auto_w52)
+CH Change Detect Interval   60
+Change CH Communication     disable
+avoid-intf                  strong-intf
+802.11n Protection          enable
+802.11h Send                enable
+FrameBursting               disable
+Multicast Rate              auto
+Output Power                100
+Beacon Interval             100
+DTIM Period                 1
+RTS Threshold               2347
+Keep Alive                  60
+Guard Interval              short
+Aggregation                 ampdu+amsdu
+[indoor/outdoor]
+indoor / outdoor            indoor
+# SSID and security config ---> "airset ssid show status"
+# airset ssid show status
+[Band Steering Policy]
+Disable
+[Airset SSID Settings]
+No. Status  SSID                             Device     VLAN                           Auth                             Encryption Add_Auth              Any_Refusal Privacy    Steering
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1   enable  WAPM-AX8R-test2                  2G         Untagged 1                     WPA2 Personal                    aes        none                  disable     ssid       enable
+2   enable  WAPM-AX8R-test5                         5G  Untagged 1                     WPA2 Personal                    aes        none                  disable     station    disable
+# airset scheduler show status
+[Scheduler]
+Wireless Scheduler          disable
+# airset maclist show status
+[Wireless MAC Filtering]
+No. MAC Address      Status
+------------------------------------------------------------
+# airset linkitg show status
+[Link Integrity]
+Link Integrity                                                     disable
+# airset wmm show status
+[WMM-EDCA Parameter]
+For AP  For STA
+---------------------------------------------------------
+AC_BK(Low)                CWmin:       15      15
+CWmax:       1023    1023
+AIFSN:       7       7
+TXOP Limit:  0       0
+AC_BE(Normal)             CWmin:       15      15
+CWmax:       63      1023
+AIFSN:       3       3
+TXOP Limit:  0       0
+AC_VI(High Priority)      CWmin:       7       7
+CWmax:       15      15
+AIFSN:       1       2
+TXOP Limit:  94      94
+AC_VO(Highest Priority)   CWmin:       3       3
+CWmax:       7       7
+AIFSN:       1       2
+TXOP Limit:  47      47
+# airset client-monitor show status
+[ 5GHz ]
+SSID                                               MAC                  Tx      Rx      RSSI    connect idle
+------------------------------------------------------------------------------------------------------------
+WAPM-AX8R-test5                                    10:30:25:EA:48:D7    1.3GB   2.3KB   -80     4h35m8s 0s
+[ 2GHz ]
+# airset wireless-monitor show status
+5 minutes have passed since the previous scan.
+Index MAC                  SSID                                Channel       Mode            RSSI   Noise  Security
+---------------------------------------------------------------------------------------------------------------------------------------
+1     d4:2c:46:51:29:41    !_AXETR_2.4G                        1             802.11g/n/ax    -22    -95    TKIP/AES
+2     88:57:ee:6f:db:a1    17_11g_CPSE_Share                   2             802.11g/n       -25    -95    AES
+3     88:57:ee:6f:db:a4    19_11g_CPSE_KH                      2             802.11g/n       -26    -95    AES
+4     88:57:ee:6f:db:a3    22_11g_CPSE_HM                      2             802.11g/n       -26    -95    AES
+5     88:57:ee:6f:db:a2    18_11g_CPSE_HT                      2             802.11g/n       -26    -95    AES
+6     88:57:ee:6f:db:a7    21_11g_CPSE_TT                      2             802.11g/n       -26    -95    AES
+7     88:57:ee:6f:db:a6    20_11g_CPSE_MA                      2             802.11g/n       -26    -95    AES
+8     88:57:ee:6f:db:a5    23_11g_CPSE_AY                      2             802.11g/n       -27    -95    AES
+9     60:84:bd:46:26:f0    FREESPOT                            2             802.11g/n       -27    -95    NONE
+10    50:c4:dd:4f:c1:78    Buffalo-G-C178                      6             802.11g/n       -29    -95    NONE
+11    34:3d:c4:34:3e:82    0000BITSTEST-ZZZZ                   6             802.11g/n       -30    -95    AES
+12    34:3d:c4:34:3e:81    .                                   6             802.11g/n       -30    -95    AES
+13    74:da:38:61:49:92    CFD-RMG2.4G                         3             802.11g/n       -30    -95    AES
+14    34:3d:c4:34:3e:80    AW-WAPM1166D-g                      6             802.11g/n       -30    -95    AES
+15    c4:36:c0:c3:17:73    radiustest-peap                     11            802.11g/n/ax    -33    -95    AES
+16    c4:36:c0:c3:17:72    navitest-ma                         11            802.11g/n/ax    -33    -95    AES
+17    50:c4:dd:ca:71:98    Buffalo-G-7190                      11            802.11g/n/ax    -34    -95    AES
+18    c4:36:c0:c3:17:74    radiustest-tls                      11            802.11g/n/ax    -34    -95    AES
+19    c4:36:c0:c3:17:71    Navitest-24                         11            802.11g/n/ax    -34    -95    AES
+20    50:c4:dd:ca:71:9f    Buffalo-G-7190-WPA3                 11            802.11g/n/ax    -34    -95    AES
+21    58:27:8c:fb:09:00    WAP-G                               11            802.11g/n       -42    -95    AES
+22    50:c4:dd:b4:08:28    DTKY_DiRAS                          5+1           802.11g/n       -44    -95    AES
+23    18:c2:bf:c3:17:d3    .                                   9             802.11g/n       -45    -95    AES
+24    18:c2:bf:62:ca:21    WAP-BITSsales_G                     3             802.11g/n       -46    -95    AES
+25    58:27:8c:fb:09:02    FREESPOT                            11            802.11g/n       -46    -95    NONE
+26    58:27:8c:fb:09:01    WAP-BITSsales_G                     11            802.11g/n       -47    -95    AES
+27    58:27:8c:fb:09:03    .                                   11            802.11g/n       -47    -95    AES
+28    18:c2:bf:62:ac:b3    .                                   10            802.11g/n       -47    -95    AES
+29    18:c2:bf:c3:17:d0    WAP-G                               9             802.11g/n       -50    -95    AES
+30    18:c2:bf:c3:08:40    FREESPOT                            3             802.11g/n       -51    -95    NONE
+31    18:c2:bf:62:ac:b1    WAP-BITSsales_G                     10            802.11g/n       -52    -95    AES
+32    18:c2:bf:c3:17:d2    FREESPOT                            9             802.11g/n       -54    -95    NONE
+33    18:c2:bf:c3:0e:a1    WAP-BITSsales_G                     2             802.11g/n       -54    -95    AES
+34    18:c2:bf:c3:17:d1    WAP-BITSsales_G                     9             802.11g/n       -55    -95    AES
+35    18:c2:bf:c3:0e:a0    WAP-G                               2             802.11g/n       -56    -95    AES
+36    18:c2:bf:c3:0e:a2    FREESPOT                            2             802.11g/n       -56    -95    NONE
+37    18:c2:bf:62:d6:22    FREESPOT                            8             802.11g/n       -63    -95    NONE
+38    d4:2c:46:34:d9:01    .                                   6             802.11g/n       -64    -95    AES
+39    18:c2:bf:62:de:93    .                                   10            802.11g/n       -65    -95    AES
+40    d4:2c:46:34:d9:00    Buffalo-D900                        6             802.11g/n       -65    -95    AES
+41    d4:2c:46:34:d9:04    Buffalo-D900-WPA3                   6             802.11g/n       -67    -95    AES
+42    ac:23:16:2d:33:c1    .                                   6             802.11g/n/ax    -68    -95    AES
+43    ac:23:16:2d:33:c2    .                                   6             802.11g/n/ax    -68    -95    AES
+44    4c:5e:0c:2a:10:7f    VLAN22-local                        40            802.11a/n/ac    -33    -95    NONE
+45    d4:2c:46:51:29:51    !_AXETR_5G                          36+40         802.11a/n/ac/ax -33    -95    NONE
+46    88:57:ee:6f:db:b6    20_11a_CPSE_MA                      48+44         802.11a/n/ac    -34    -95    AES
+47    60:84:bd:46:26:f8    FREESPOT                            48(80MHz)     802.11a/n/ac    -34    -95    NONE
+48    88:57:ee:6f:db:b2    18_11a_CPSE_HT                      48+44         802.11a/n/ac    -35    -95    AES
+49    88:57:ee:6f:db:b8    21_11a_CPSE_TT                      48+44         802.11a/n/ac    -35    -95    AES
+50    88:57:ee:6f:db:b1    17_11a_CPSE_Share                   48+44         802.11a/n/ac    -35    -95    AES
+51    88:57:ee:6f:db:b5    23_11a_CPSE_AY                      48+44         802.11a/n/ac    -35    -95    AES
+52    88:57:ee:6f:db:b3    22_11a_CPSE_HM                      48+44         802.11a/n/ac    -35    -95    AES
+53    88:57:ee:6f:db:b4    19_11a_CPSE_KH                      48+44         802.11a/n/ac    -35    -95    AES
+54    c4:36:c0:c3:17:84    radiustest-tls                      64(80MHz)     802.11a/n/ac/ax -38    -95    AES
+55    c4:36:c0:c3:17:83    radiustest-peap                     64(80MHz)     802.11a/n/ac/ax -38    -95    AES
+56    c4:36:c0:c3:17:82    navitest-ma                         64(80MHz)     802.11a/n/ac/ax -38    -95    AES
+57    c4:36:c0:c3:17:81    Navitest-5                          64(80MHz)     802.11a/n/ac/ax -38    -95    AES
+58    50:c4:dd:ca:71:a7    Buffalo-A-7190-WPA3                 128(160MHz)   802.11a/n/ac/ax -39    -95    AES
+59    74:da:38:61:49:93    CFD-RMG5G                           40(80MHz)     802.11a/n/ac    -39    -95    AES
+60    50:c4:dd:ca:71:a0    Buffalo-A-7190                      128(160MHz)   802.11a/n/ac/ax -39    -95    AES
+61    50:c4:dd:4f:c1:7c    Buffalo-A-C178                      36(80MHz)     802.11a/n/ac    -40    -95    AES
+62    50:c4:dd:3c:f4:5c    0000SEKKEI-a                        36(80MHz)     802.11a/n/ac    -43    -95    AES
+63    34:3d:c4:34:3e:90    AW-WAPM1166D-a                      36            802.11a/n/ac    -44    -95    AES
+64    34:3d:c4:34:3e:91    AW-WAPM1166D-AAAA                   36            802.11a/n/ac    -45    -95    AES
+65    58:27:8c:fb:09:14    .                                   44            802.11a/n/ac    -50    -95    AES
+66    58:27:8c:fb:09:11    WAP-BITSsales_A                     44            802.11a/n/ac    -50    -95    AES
+67    58:27:8c:fb:09:13    'freespot'=SecurityPassword(AES)    44            802.11a/n/ac    -50    -95    AES
+68    58:27:8c:fb:09:12    FREESPOT                            44            802.11a/n/ac    -50    -95    NONE
+69    58:27:8c:fb:09:20    WAP-A                               108           802.11a/n/ac    -50    -95    AES
+70    58:27:8c:fb:09:24    .                                   108           802.11a/n/ac    -51    -95    AES
+71    58:27:8c:fb:09:23    'freespot'=SecurityPassword(AES)    108           802.11a/n/ac    -51    -95    AES
+72    58:27:8c:fb:09:21    WAP-BITSsales_A                     108           802.11a/n/ac    -51    -95    AES
+73    58:27:8c:fb:09:22    FREESPOT                            108           802.11a/n/ac    -51    -95    NONE
+74    58:27:8c:fb:09:10    WAP-A                               44            802.11a/n/ac    -51    -95    AES
+75    18:c2:bf:c3:17:f4    .                                   128           802.11a/n/ac    -63    -95    AES
+76    18:c2:bf:c3:17:f0    WAP-A                               128           802.11a/n/ac    -64    -95    AES
+77    18:c2:bf:c3:17:f1    WAP-BITSsales_A                     128           802.11a/n/ac    -64    -95    AES
+78    18:c2:bf:c3:17:f3    'freespot'=SecurityPassword(AES)    128           802.11a/n/ac    -64    -95    AES
+79    18:c2:bf:c3:17:e4    .                                   48            802.11a/n/ac    -65    -95    AES
+80    18:c2:bf:c3:17:e2    FREESPOT                            48            802.11a/n/ac    -65    -95    NONE
+81    18:c2:bf:c3:17:f2    FREESPOT                            128           802.11a/n/ac    -65    -95    NONE
+82    18:c2:bf:c3:17:e3    'freespot'=SecurityPassword(AES)    48            802.11a/n/ac    -65    -95    AES
+83    18:c2:bf:c3:17:e0    WAP-A                               48            802.11a/n/ac    -65    -95    AES
+84    18:c2:bf:c3:17:e1    WAP-BITSsales_A                     48            802.11a/n/ac    -65    -95    AES
+85    18:c2:bf:62:ac:c4    .                                   40            802.11a/n/ac    -68    -95    AES
+86    18:c2:bf:62:ac:c0    WAP-A                               40            802.11a/n/ac    -68    -95    AES
+87    18:c2:bf:62:ac:c3    'freespot'=SecurityPassword(AES)    40            802.11a/n/ac    -68    -95    AES
+88    18:c2:bf:62:ac:c1    WAP-BITSsales_A                     40            802.11a/n/ac    -68    -95    AES
+89    18:c2:bf:62:ac:c2    FREESPOT                            40            802.11a/n/ac    -69    -95    NONE
+90    18:c2:bf:62:ac:d3    'freespot'=SecurityPassword(AES)    100           802.11a/n/ac    -70    -95    AES
+91    52:41:b9:05:0a:7b    IODATA-050a78-5G-2                  116(80MHz)    802.11a/n/ac    -70    -95    AES
+92    18:c2:bf:c3:08:60    FREESPOT                            136           802.11a/n/ac    -70    -95    NONE
+93    18:c2:bf:c3:08:61    'freespot'=SecurityPassword(AES)    136           802.11a/n/ac    -70    -95    AES
+94    18:c2:bf:62:ac:d1    WAP-BITSsales_A                     100           802.11a/n/ac    -70    -95    AES
+95    18:c2:bf:62:ac:d2    FREESPOT                            100           802.11a/n/ac    -70    -95    NONE
+96    18:c2:bf:c3:0e:c2    FREESPOT                            140           802.11a/n/ac    -71    -95    NONE
+97    18:c2:bf:62:ac:d0    WAP-A                               100           802.11a/n/ac    -71    -95    AES
+98    18:c2:bf:62:de:a3    'freespot'=SecurityPassword(AES)    48            802.11a/n/ac    -71    -95    AES
+99    18:c2:bf:62:ac:d4    .                                   100           802.11a/n/ac    -71    -95    AES
+100   18:c2:bf:62:de:a2    FREESPOT                            48            802.11a/n/ac    -71    -95    NONE
+101   18:c2:bf:62:de:a0    WAP-A                               48            802.11a/n/ac    -71    -95    AES
+102   18:c2:bf:62:de:b0    WAP-A                               140           802.11a/n/ac    -71    -95    AES
+103   18:c2:bf:c3:0e:c1    WAP-BITSsales_A                     140           802.11a/n/ac    -71    -95    AES
+104   18:c2:bf:c3:0e:c0    WAP-A                               140           802.11a/n/ac    -71    -95    AES
+105   50:c4:dd:b4:08:38    DTKY_DiRAS                          100(80MHz)    802.11a/n/ac    -71    -95    AES
+106   18:c2:bf:62:de:a5    .                                   48            802.11a/n/ac    -71    -95    AES
+107   18:c2:bf:62:de:a1    WAP-BITSsales_A                     48            802.11a/n/ac    -72    -95    AES
+108   18:c2:bf:62:de:a4    WAP-Drkeihi                         48            802.11a/n/ac    -72    -95    AES
+109   18:c2:bf:62:de:b4    WAP-Drkeihi                         140           802.11a/n/ac    -72    -95    AES
+110   18:c2:bf:62:de:b1    WAP-BITSsales_A                     140           802.11a/n/ac    -72    -95    AES
+111   50:c4:dd:b4:08:30    DTKY_DiRAS                          40(80MHz)     802.11a/n/ac    -73    -95    AES
+112   18:c2:bf:c3:0e:c4    .                                   140           802.11a/n/ac    -73    -95    AES
+113   18:c2:bf:62:de:b3    'freespot'=SecurityPassword(AES)    140           802.11a/n/ac    -73    -95    AES
+114   18:c2:bf:c3:0e:c3    'freespot'=SecurityPassword(AES)    140           802.11a/n/ac    -74    -95    AES
+115   18:c2:bf:62:de:b2    FREESPOT                            140           802.11a/n/ac    -74    -95    NONE
+116   18:c2:bf:c3:0e:b4    .                                   36            802.11a/n/ac    -75    -95    AES
+117   18:c2:bf:c3:0e:b0    WAP-A                               36            802.11a/n/ac    -75    -95    AES
+118   18:c2:bf:c3:0e:b1    WAP-BITSsales_A                     36            802.11a/n/ac    -75    -95    AES
+119   18:c2:bf:62:de:b5    .                                   140           802.11a/n/ac    -75    -95    AES
+120   18:c2:bf:c3:0e:b2    FREESPOT                            36            802.11a/n/ac    -75    -95    NONE
+121   18:c2:bf:c3:0e:b3    'freespot'=SecurityPassword(AES)    36            802.11a/n/ac    -75    -95    AES
+122   18:c2:bf:c3:08:50    FREESPOT                            36            802.11a/n/ac    -76    -95    NONE
+123   18:c2:bf:c3:08:51    'freespot'=SecurityPassword(AES)    36            802.11a/n/ac    -76    -95    AES
+124   50:41:b9:05:0a:7a    IODATA-050a78-5G-1                  36(80MHz)     802.11a/n/ac    -76    -95    AES
+125   52:41:b9:15:0a:7a    IO-Guest-050a78-5G-1                36(80MHz)     802.11a/n/ac    -77    -95    AES
+126   18:c2:bf:62:ca:44    .                                   140           802.11a/n/ac    -77    -95    AES
+127   18:c2:bf:62:ca:43    'freespot'=SecurityPassword(AES)    140           802.11a/n/ac    -78    -95    AES
+128   90:96:f3:72:ae:49    'freespot'=SecurityPassword(AES)    36(80MHz)     802.11a/n/ac    -83    -95    TKIP/AES
+129   18:c2:bf:62:ca:42    FREESPOT                            140           802.11a/n/ac    -83    -95    NONE
+130   18:c2:bf:62:ca:41    WAP-BITSsales_A                     140           802.11a/n/ac    -83    -95    AES
+131   d0:15:a6:7c:29:90    7bc759ee0ccd298abb735618e76b2d6     52(80MHz)     802.11a/n/ac    -84    -95    AES
+132   d0:15:a6:7c:29:93    DTKY_DEV                            52(80MHz)     802.11a/n/ac    -84    -95    AES
+133   18:c2:bf:62:ca:40    WAP-A                               140           802.11a/n/ac    -84    -95    AES
+134   d0:15:a6:7c:29:92    DTKY_BIZ                            52(80MHz)     802.11a/n/ac    -85    -95    AES
+135   18:c2:bf:62:ca:32    FREESPOT                            36            802.11a/n/ac    -88    -95    NONE
+136   18:c2:bf:62:ca:31    WAP-BITSsales_A                     36            802.11a/n/ac    -88    -95    AES
+137   18:c2:bf:62:ca:34    .                                   36            802.11a/n/ac    -88    -95    AES
+138   18:c2:bf:62:ca:30    WAP-A                               36            802.11a/n/ac    -88    -95    AES
+139   18:c2:bf:62:ca:33    'freespot'=SecurityPassword(AES)    36            802.11a/n/ac    -88    -95    AES
+140   18:c2:bf:62:d6:32    FREESPOT                            44            802.11a/n/ac    -91    -95    NONE
+141   18:c2:bf:62:d6:30    WAP-A                               44            802.11a/n/ac    -92    -95    AES
+142   d4:2c:46:34:d9:09    .                                   48(80MHz)     802.11a/n/ac/ax -92    -95    AES
+143   d4:2c:46:34:d9:08    Buffalo-D900                        48(80MHz)     802.11a/n/ac/ax -92    -95    AES
+144   34:3d:c4:df:16:6c    MI0024_A                            36(80MHz)     802.11a/n/ac    -93    -95    AES
+145   18:c2:bf:62:d6:33    'freespot'=SecurityPassword(AES)    44            802.11a/n/ac    -93    -95    AES
+146   18:c2:bf:62:d6:42    FREESPOT                            100           802.11a/n/ac    -93    -95    NONE
+147   d4:2c:46:34:d9:0c    Buffalo-D900-WPA3                   48(80MHz)     802.11a/n/ac/ax -93    -95    AES
+148   18:c2:bf:62:d6:31    WAP-BITSsales_A                     44            802.11a/n/ac    -93    -95    AES
+149   ac:23:16:2d:33:a8    .                                   52+56         802.11a/n/ac/ax -94    -95    AES
+150   18:c2:bf:62:d6:43    'freespot'=SecurityPassword(AES)    100           802.11a/n/ac    -94    -95    AES
+151   ac:23:16:2d:33:a7    Next-Match-Tester                   52+56         802.11a/n/ac    -94    -95    AES
+152   ac:23:16:2d:33:a1    .                                   52+56         802.11a/n/ac/ax -94    -95    AES
+153   ac:23:16:2d:33:a9    .                                   52+56         802.11a/n/ac/ax -94    -95    AES
+154   ac:23:16:2d:33:ab    .                                   52+56         802.11a/n/ac/ax -94    -95    AES
+155   18:c2:bf:62:d6:40    WAP-A                               100           802.11a/n/ac    -94    -95    AES
+156   18:c2:bf:62:d6:44    .                                   100           802.11a/n/ac    -94    -95    AES
+157   18:c2:bf:62:d6:41    WAP-BITSsales_A                     100           802.11a/n/ac    -94    -95    AES
+158   ac:23:16:2d:33:a6    .                                   52+56         802.11a/n/ac/ax -94    -95    AES
+159   ac:23:16:2d:33:a4    .                                   52+56         802.11a/n/ac/ax -95    -95    AES
+160   ac:23:16:2d:33:aa    .                                   52+56         802.11a/n/ac/ax -95    -95    AES
+161   ac:23:16:2d:4e:a1    .                                   36+40         802.11a/n/ac/ax -95    -95    AES
+162   ac:23:16:2d:33:a5    .                                   52+56         802.11a/n/ac/ax -95    -95    AES
+163   ac:23:16:2d:33:a2    .                                   52+56         802.11a/n/ac/ax -96    -95    AES
+164   ac:23:16:2d:33:a3    .                                   52+56         802.11a/n/ac/ax -96    -95    AES
+# radius show status
+[Primary RADIUS Server]
+Server                      disable
+[Secondary RADIUS Server]
+Server                      disable
+[Calling-Station-Id]
+"" (No separator , lower case)
+[Called-Station-Id]
+"" (No separator , lower case)
+[ASAM]
+PMK Chache                  disable
+[Internal RADIUS Server]
+Internal RADIUS Server      disable
+# bridge show status
+[Bridge Setup]
+Aging Time                     300
+Spanning Tree                  disable
+BPDU Forwarding                enable
+[Editing of Port Bridge Information]
+Port                                                               PortPriority PathCost EdgePort PointToPoint
+------------------------------------------------------------------------------------------------------------------
+Wired Port(#1)                                                     128          8000     disable  auto
+Wired Port(#2)                                                     128          20000    disable  auto
+SSID #1 [WAPM-AX8R-test2] (11g)                                    128          200000   disable  auto
+SSID #2 [WAPM-AX8R-test5] (11a)                                    128          200000   disable  auto
+# usb show status
+Port                    ----
+Device Name             ----
+Power                   ----
+Status                  No USB device found.

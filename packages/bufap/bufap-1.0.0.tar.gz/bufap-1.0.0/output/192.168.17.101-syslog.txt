@@ -1,0 +1,480 @@
+date                  facility       log content
+------------------------------------------------------------------------
+2022/01/03 00:15:14   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/03 00:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/03 00:00:48   DHCPC         add resolve
+2022/01/03 00:00:48   DHCPC         Info : LEASETIME(43200) , RENEWALTIME(21600) , REBINDTIME(37800)
+2022/01/03 00:00:48   DHCPC         Info : DHCPSNAME =
+2022/01/03 00:00:48   DHCPC         Info : DHCPSHADDR = 00:16:01:19:EC:22
+2022/01/03 00:00:48   DHCPC         Info : DHCPCHADDR = C4:3C:EA:CC:07:E0
+2022/01/03 00:00:48   DHCPC         Info : DHCPSIADDR = 0.0.0.0
+2022/01/03 00:00:48   DHCPC         Info : DHCPGIADDR = 0.0.0.0
+2022/01/03 00:00:48   DHCPC         Info : DHCPSID = 192.168.17.1
+2022/01/03 00:00:48   DHCPC         Info : DNS[2] = 8.8.8.8
+2022/01/03 00:00:48   DHCPC         Info : DNS[1] = 192.168.16.1
+2022/01/03 00:00:48   DHCPC         Info : Default Gateway = 192.168.17.1
+2022/01/03 00:00:48   DHCPC         Info : Subnet Mask = 255.255.255.0
+2022/01/03 00:00:48   DHCPC         Info : IP Address = 192.168.17.101
+2022/01/03 00:00:48   DHCPC         DHCP_ACK received from  (192.168.17.1)
+2022/01/03 00:00:48   DHCPC         Renew : sending DHCP_REQUEST for 192.168.17.101 to 192.168.17.1
+2022/01/02 23:15:14   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 23:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 22:15:14   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 22:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 21:15:14   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 21:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 20:39:29   AUTH          wl0.0 (5GHz): Authenticated (WPA2-PSK) User - 10:30:25:ea:48:d7
+2022/01/02 20:39:29   WIRELESS      wl0.0 (5GHz): Associated User - 10:30:25:ea:48:d7
+2022/01/02 20:15:14   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 20:15:14   WIRELESS      wl0 (5GHz): Switch Channel 36 / 80 MHz
+2022/01/02 20:15:14   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 36 / 80 MHz
+2022/01/02 20:15:14   WIRELESS      wl0 (5GHz): Detect interference(56per) on channel 144.
+2022/01/02 20:15:14   WIRELESS      wl0 (5GHz): Detect interference(56per) on channel 140.
+2022/01/02 20:15:14   WIRELESS      wl0 (5GHz): Detect interference(56per) on channel 136.
+2022/01/02 20:15:14   WIRELESS      wl0 (5GHz): Detect interference(56per) on channel 132.
+2022/01/02 20:15:14   WIRELESS      wl0 (5GHz): Detect interference(71per) on channel 128.
+2022/01/02 20:15:14   WIRELESS      wl0 (5GHz): Detect interference(71per) on channel 124.
+2022/01/02 20:15:14   WIRELESS      wl0 (5GHz): Detect interference(71per) on channel 120.
+2022/01/02 20:15:14   WIRELESS      wl0 (5GHz): Detect interference(71per) on channel 116.
+2022/01/02 20:15:12   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 20:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 44 / 80 MHz
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(59per) on channel 144.
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(59per) on channel 140.
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(59per) on channel 136.
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(59per) on channel 132.
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 128.
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 124.
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 120.
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 116.
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(53per) on channel 112.
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(53per) on channel 108.
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(53per) on channel 104.
+2022/01/02 19:15:12   WIRELESS      wl0 (5GHz): Detect interference(53per) on channel 100.
+2022/01/02 19:15:11   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 19:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 18:15:11   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 18:15:10   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 18:15:10   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 44 / 80 MHz
+2022/01/02 18:15:10   WIRELESS      wl0 (5GHz): Detect interference(65per) on channel 128.
+2022/01/02 18:15:10   WIRELESS      wl0 (5GHz): Detect interference(65per) on channel 124.
+2022/01/02 18:15:10   WIRELESS      wl0 (5GHz): Detect interference(65per) on channel 120.
+2022/01/02 18:15:10   WIRELESS      wl0 (5GHz): Detect interference(65per) on channel 116.
+2022/01/02 18:15:10   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 18:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 18:02:41   ADT           Accept regist Error!!
+2022/01/02 18:02:41   ADT           Subscribe callback(accept_regist)
+2022/01/02 18:02:41   ADT           publish: request_regist
+2022/01/02 18:02:40   ADT           Subscribing(unpaired)...
+2022/01/02 18:00:49   DHCPC         add resolve
+2022/01/02 18:00:49   DHCPC         Info : LEASETIME(43200) , RENEWALTIME(21600) , REBINDTIME(37800)
+2022/01/02 18:00:49   DHCPC         Info : DHCPSNAME =
+2022/01/02 18:00:49   DHCPC         Info : DHCPSHADDR = 00:16:01:19:EC:22
+2022/01/02 18:00:49   DHCPC         Info : DHCPCHADDR = C4:3C:EA:CC:07:E0
+2022/01/02 18:00:49   DHCPC         Info : DHCPSIADDR = 0.0.0.0
+2022/01/02 18:00:49   DHCPC         Info : DHCPGIADDR = 0.0.0.0
+2022/01/02 18:00:49   DHCPC         Info : DHCPSID = 192.168.17.1
+2022/01/02 18:00:49   DHCPC         Info : DNS[2] = 8.8.8.8
+2022/01/02 18:00:49   DHCPC         Info : DNS[1] = 192.168.16.1
+2022/01/02 18:00:49   DHCPC         Info : Default Gateway = 192.168.17.1
+2022/01/02 18:00:49   DHCPC         Info : Subnet Mask = 255.255.255.0
+2022/01/02 18:00:49   DHCPC         Info : IP Address = 192.168.17.101
+2022/01/02 18:00:48   DHCPC         DHCP_ACK received from  (192.168.17.1)
+2022/01/02 18:00:48   DHCPC         Renew : sending DHCP_REQUEST for 192.168.17.101 to 192.168.17.1
+2022/01/02 17:15:10   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Switch Channel 44 / 80 MHz
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 44 / 80 MHz
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(53per) on channel 144.
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(53per) on channel 140.
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(53per) on channel 136.
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(53per) on channel 132.
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(71per) on channel 128.
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(71per) on channel 124.
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(71per) on channel 120.
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(71per) on channel 116.
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(56per) on channel 112.
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(56per) on channel 108.
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(56per) on channel 104.
+2022/01/02 17:15:09   WIRELESS      wl0 (5GHz): Detect interference(56per) on channel 100.
+2022/01/02 17:15:08   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 17:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 16:15:08   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 16:15:08   WIRELESS      wl0 (5GHz): Switch Channel 40 / 80 MHz
+2022/01/02 16:15:08   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 40 / 80 MHz
+2022/01/02 16:15:08   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 144.
+2022/01/02 16:15:08   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 140.
+2022/01/02 16:15:08   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 136.
+2022/01/02 16:15:08   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 132.
+2022/01/02 16:15:08   WIRELESS      wl0 (5GHz): Detect interference(70per) on channel 128.
+2022/01/02 16:15:08   WIRELESS      wl0 (5GHz): Detect interference(70per) on channel 124.
+2022/01/02 16:15:08   WIRELESS      wl0 (5GHz): Detect interference(70per) on channel 120.
+2022/01/02 16:15:08   WIRELESS      wl0 (5GHz): Detect interference(70per) on channel 116.
+2022/01/02 16:15:05   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 16:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 15:15:05   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 15:15:04   WIRELESS      wl0 (5GHz): Switch Channel 36 / 80 MHz
+2022/01/02 15:15:04   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 36 / 80 MHz
+2022/01/02 15:15:04   WIRELESS      wl0 (5GHz): Detect interference(52per) on channel 144.
+2022/01/02 15:15:04   WIRELESS      wl0 (5GHz): Detect interference(52per) on channel 140.
+2022/01/02 15:15:04   WIRELESS      wl0 (5GHz): Detect interference(52per) on channel 136.
+2022/01/02 15:15:04   WIRELESS      wl0 (5GHz): Detect interference(52per) on channel 132.
+2022/01/02 15:15:04   WIRELESS      wl0 (5GHz): Detect interference(70per) on channel 128.
+2022/01/02 15:15:04   WIRELESS      wl0 (5GHz): Detect interference(70per) on channel 124.
+2022/01/02 15:15:04   WIRELESS      wl0 (5GHz): Detect interference(70per) on channel 120.
+2022/01/02 15:15:04   WIRELESS      wl0 (5GHz): Detect interference(70per) on channel 116.
+2022/01/02 15:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 14:15:07   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 14:15:07   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 14:15:07   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 40 / 80 MHz
+2022/01/02 14:15:07   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 128.
+2022/01/02 14:15:07   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 124.
+2022/01/02 14:15:07   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 120.
+2022/01/02 14:15:07   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 116.
+2022/01/02 14:15:01   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 14:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 13:15:01   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 13:15:01   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 13:15:01   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 40 / 80 MHz
+2022/01/02 13:15:01   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 13:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 12:15:01   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 12:15:01   WIRELESS      wl0 (5GHz): Switch Channel 40 / 80 MHz
+2022/01/02 12:15:01   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 40 / 80 MHz
+2022/01/02 12:15:01   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 128.
+2022/01/02 12:15:01   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 124.
+2022/01/02 12:15:01   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 120.
+2022/01/02 12:15:01   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 116.
+2022/01/02 12:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 12:14:51   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 12:00:48   DHCPC         add resolve
+2022/01/02 12:00:48   DHCPC         Info : LEASETIME(43200) , RENEWALTIME(21600) , REBINDTIME(37800)
+2022/01/02 12:00:48   DHCPC         Info : DHCPSNAME =
+2022/01/02 12:00:48   DHCPC         Info : DHCPSHADDR = 00:16:01:19:EC:22
+2022/01/02 12:00:48   DHCPC         Info : DHCPCHADDR = C4:3C:EA:CC:07:E0
+2022/01/02 12:00:48   DHCPC         Info : DHCPSIADDR = 0.0.0.0
+2022/01/02 12:00:48   DHCPC         Info : DHCPGIADDR = 0.0.0.0
+2022/01/02 12:00:48   DHCPC         Info : DHCPSID = 192.168.17.1
+2022/01/02 12:00:48   DHCPC         Info : DNS[2] = 8.8.8.8
+2022/01/02 12:00:48   DHCPC         Info : DNS[1] = 192.168.16.1
+2022/01/02 12:00:48   DHCPC         Info : Default Gateway = 192.168.17.1
+2022/01/02 12:00:48   DHCPC         Info : Subnet Mask = 255.255.255.0
+2022/01/02 12:00:48   DHCPC         Info : IP Address = 192.168.17.101
+2022/01/02 12:00:48   DHCPC         DHCP_ACK received from  (192.168.17.1)
+2022/01/02 12:00:48   DHCPC         Renew : sending DHCP_REQUEST for 192.168.17.101 to 192.168.17.1
+2022/01/02 11:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 11:14:51   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 11:14:51   WIRELESS      wl0 (5GHz): Switch Channel 44 / 80 MHz
+2022/01/02 11:14:51   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 44 / 80 MHz
+2022/01/02 11:14:51   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 128.
+2022/01/02 11:14:51   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 124.
+2022/01/02 11:14:51   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 120.
+2022/01/02 11:14:51   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 116.
+2022/01/02 10:15:03   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 10:15:02   WIRELESS      wl0 (5GHz): Switch Channel 40 / 80 MHz
+2022/01/02 10:15:02   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 40 / 80 MHz
+2022/01/02 10:15:02   WIRELESS      wl0 (5GHz): Detect interference(54per) on channel 144.
+2022/01/02 10:15:02   WIRELESS      wl0 (5GHz): Detect interference(54per) on channel 140.
+2022/01/02 10:15:02   WIRELESS      wl0 (5GHz): Detect interference(54per) on channel 136.
+2022/01/02 10:15:02   WIRELESS      wl0 (5GHz): Detect interference(54per) on channel 132.
+2022/01/02 10:15:02   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 128.
+2022/01/02 10:15:02   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 124.
+2022/01/02 10:15:02   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 120.
+2022/01/02 10:15:02   WIRELESS      wl0 (5GHz): Detect interference(69per) on channel 116.
+2022/01/02 10:15:02   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 10:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 09:15:02   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 09:15:01   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 09:15:01   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 44 / 80 MHz
+2022/01/02 09:15:01   WIRELESS      wl0 (5GHz): Detect interference(74per) on channel 128.
+2022/01/02 09:15:01   WIRELESS      wl0 (5GHz): Detect interference(74per) on channel 124.
+2022/01/02 09:15:01   WIRELESS      wl0 (5GHz): Detect interference(74per) on channel 120.
+2022/01/02 09:15:01   WIRELESS      wl0 (5GHz): Detect interference(74per) on channel 116.
+2022/01/02 09:15:01   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 09:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 08:15:01   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 08:15:01   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 08:15:00   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 44 / 80 MHz
+2022/01/02 08:15:00   WIRELESS      wl0 (5GHz): Detect interference(68per) on channel 128.
+2022/01/02 08:15:00   WIRELESS      wl0 (5GHz): Detect interference(68per) on channel 124.
+2022/01/02 08:15:00   WIRELESS      wl0 (5GHz): Detect interference(68per) on channel 120.
+2022/01/02 08:15:00   WIRELESS      wl0 (5GHz): Detect interference(68per) on channel 116.
+2022/01/02 08:14:57   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 08:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 07:40:55   WIRELESS      wl0.0 (5GHz): DisAssociated User - 10:30:25:ea:48:d7
+2022/01/02 07:14:57   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 07:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 06:14:57   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 06:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 06:00:48   DHCPC         add resolve
+2022/01/02 06:00:48   DHCPC         Info : LEASETIME(43200) , RENEWALTIME(21600) , REBINDTIME(37800)
+2022/01/02 06:00:48   DHCPC         Info : DHCPSNAME =
+2022/01/02 06:00:48   DHCPC         Info : DHCPSHADDR = 00:16:01:19:EC:22
+2022/01/02 06:00:48   DHCPC         Info : DHCPCHADDR = C4:3C:EA:CC:07:E0
+2022/01/02 06:00:48   DHCPC         Info : DHCPSIADDR = 0.0.0.0
+2022/01/02 06:00:48   DHCPC         Info : DHCPGIADDR = 0.0.0.0
+2022/01/02 06:00:48   DHCPC         Info : DHCPSID = 192.168.17.1
+2022/01/02 06:00:48   DHCPC         Info : DNS[2] = 8.8.8.8
+2022/01/02 06:00:48   DHCPC         Info : DNS[1] = 192.168.16.1
+2022/01/02 06:00:48   DHCPC         Info : Default Gateway = 192.168.17.1
+2022/01/02 06:00:48   DHCPC         Info : Subnet Mask = 255.255.255.0
+2022/01/02 06:00:48   DHCPC         Info : IP Address = 192.168.17.101
+2022/01/02 06:00:48   DHCPC         DHCP_ACK received from  (192.168.17.1)
+2022/01/02 06:00:48   DHCPC         Renew : sending DHCP_REQUEST for 192.168.17.101 to 192.168.17.1
+2022/01/02 05:14:57   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 05:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 05:00:14   WIRELESS      wl1 (2.4GHz): Detect interference(71per) [with Non-802.11] on channel 6.
+2022/01/02 04:44:19   AUTH          wl0.0 (5GHz): Authenticated (WPA2-PSK) User - 10:30:25:ea:48:d7
+2022/01/02 04:44:19   WIRELESS      wl0.0 (5GHz): Associated User - 10:30:25:ea:48:d7
+2022/01/02 04:44:17   WIRELESS      wl0.0 (5GHz): DisAssociated User - 3e:6f:76:d0:91:67
+2022/01/02 04:44:10   AUTH          wl0.0 (5GHz): Authenticated (WPA2-PSK) User - 3e:6f:76:d0:91:67
+2022/01/02 04:44:10   WIRELESS      wl0.0 (5GHz): Associated User - 3e:6f:76:d0:91:67
+2022/01/02 04:43:47   WIRELESS      wl0.0 (5GHz): DisAssociated User - 3e:6f:76:d0:91:67
+2022/01/02 04:36:34   AUTH          wl0.0 (5GHz): Authenticated (WPA2-PSK) User - 3e:6f:76:d0:91:67
+2022/01/02 04:36:34   WIRELESS      wl0.0 (5GHz): Associated User - 3e:6f:76:d0:91:67
+2022/01/02 04:14:58   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Switch Channel 44 / 80 MHz
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 44 / 80 MHz
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 144.
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 140.
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 136.
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 132.
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 128.
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 124.
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 120.
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(67per) on channel 116.
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 112.
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 108.
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 104.
+2022/01/02 04:14:57   WIRELESS      wl0 (5GHz): Detect interference(51per) on channel 100.
+2022/01/02 04:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 04:14:52   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 04:13:33   WIRELESS      wl1.0 (2.4GHz): DisAssociated User - 5c:d0:6e:ee:aa:8b
+2022/01/02 03:24:39   WIRELESS      wl1 (2.4GHz): Detect interference(69per) [with Non-802.11] on channel 6.
+2022/01/02 03:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 03:14:52   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 03:14:51   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 03:14:51   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 48 / 80 MHz
+2022/01/02 03:14:51   WIRELESS      wl0 (5GHz): Detect interference(64per) on channel 128.
+2022/01/02 03:14:51   WIRELESS      wl0 (5GHz): Detect interference(64per) on channel 124.
+2022/01/02 03:14:51   WIRELESS      wl0 (5GHz): Detect interference(64per) on channel 120.
+2022/01/02 03:14:51   WIRELESS      wl0 (5GHz): Detect interference(64per) on channel 116.
+2022/01/02 03:14:46   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 02:23:00   AUTH          wl1.0 (2.4GHz): Authenticated (WPA2-PSK) User - 5c:d0:6e:ee:aa:8b
+2022/01/02 02:23:00   WIRELESS      wl1.0 (2.4GHz): Associated User - 5c:d0:6e:ee:aa:8b
+2022/01/02 02:22:57   WIRELESS      wl1.0 (2.4GHz): DisAssociated User - 52:38:ab:a1:f8:ff
+2022/01/02 02:22:40   AUTH          wl1.0 (2.4GHz): Authenticated (WPA2-PSK) User - 52:38:ab:a1:f8:ff
+2022/01/02 02:22:39   WIRELESS      wl1.0 (2.4GHz): Associated User - 52:38:ab:a1:f8:ff
+2022/01/02 02:22:36   WIRELESS      wl1.0 (2.4GHz): DisAssociated User - 52:38:ab:a1:f8:ff
+2022/01/02 02:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 02:14:52   WIRELESS      wl0.0 (5GHz): DisAssociated User - 3e:6f:76:d0:91:67
+2022/01/02 02:14:50   AUTH          wl0.0 (5GHz): Authenticated (WPA2-PSK) User - 3e:6f:76:d0:91:67
+2022/01/02 02:14:50   WIRELESS      wl0.0 (5GHz): Associated User - 3e:6f:76:d0:91:67
+2022/01/02 02:14:50   WIRELESS      wl0.0 (5GHz): DisAssociated User - 3e:6f:76:d0:91:67
+2022/01/02 02:14:50   WIRELESS      wl0.0 (5GHz): DisAssociated User - 3e:6f:76:d0:91:67
+2022/01/02 02:14:49   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing failed for User - 3e:6f:76:d0:91:67
+2022/01/02 02:14:46   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 01:14:57   WIRELESS      wl1.0 (2.4GHz): Encryption Key Renewing
+2022/01/02 01:14:46   WIRELESS      wl0.0 (5GHz): Encryption Key Renewing
+2022/01/02 01:09:31   WIRELESS      wl1 (2.4GHz): Detect interference(76per) [with Non-802.11] on channel 6.
+2022/01/02 00:53:01   AUTH          wl1.0 (2.4GHz): Authenticated (WPA2-PSK) User - 52:38:ab:a1:f8:ff
+2022/01/02 00:53:00   WIRELESS      wl1.0 (2.4GHz): Associated User - 52:38:ab:a1:f8:ff
+2022/01/02 00:17:50   WIRELESS      wl1.0 (2.4GHz): DisAssociated User - 52:38:ab:a1:f8:ff
+2022/01/02 00:16:26   AUTH          wl0.0 (5GHz): Authenticated (WPA2-PSK) User - 3e:6f:76:d0:91:67
+2022/01/02 00:16:26   WIRELESS      wl0.0 (5GHz): Associated User - 3e:6f:76:d0:91:67
+2022/01/02 00:16:03   AUTH          wl1.0 (2.4GHz): Authenticated (WPA2-PSK) User - 52:38:ab:a1:f8:ff
+2022/01/02 00:16:02   WIRELESS      wl1.0 (2.4GHz): Associated User - 52:38:ab:a1:f8:ff
+2022/01/02 00:14:57   WIRELESS      wl1 (2.4GHz): Start sending beacon
+2022/01/02 00:14:57   WIRELESS      wl1 (2.4GHz): Switch Channel 6 / 20 MHz
+2022/01/02 00:14:46   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 00:14:37   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/02 00:14:37   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 48 / 80 MHz
+2022/01/02 00:14:37   WIRELESS      wl0 (5GHz): Detect interference(75per) on channel 128.
+2022/01/02 00:14:37   WIRELESS      wl0 (5GHz): Detect interference(75per) on channel 124.
+2022/01/02 00:14:37   WIRELESS      wl0 (5GHz): Detect interference(75per) on channel 120.
+2022/01/02 00:14:37   WIRELESS      wl0 (5GHz): Detect interference(75per) on channel 116.
+2022/01/02 00:14:23   CONFIGURE     WIRELESS SSID
+2022/01/02 00:13:10   WIRELESS      wl1 (2.4GHz): Start sending beacon
+2022/01/02 00:13:10   WIRELESS      wl1 (2.4GHz): Switch Channel 6 / 20 MHz
+2022/01/02 00:12:34   WIRELESS      wl0.0 (5GHz): DisAssociated User - 32:06:ad:e9:da:04
+2022/01/02 00:12:26   CONFIGURE     WIRELESS SSID
+2022/01/02 00:06:35   WIRELESS      wl1 (2.4GHz): Detect interference(74per) [with Non-802.11] on channel 6.
+2022/01/02 00:00:48   DHCPC         add resolve
+2022/01/02 00:00:48   DHCPC         Info : LEASETIME(43200) , RENEWALTIME(21600) , REBINDTIME(37800)
+2022/01/02 00:00:48   DHCPC         Info : DHCPSNAME =
+2022/01/02 00:00:48   DHCPC         Info : DHCPSHADDR = 00:16:01:19:EC:22
+2022/01/02 00:00:48   DHCPC         Info : DHCPCHADDR = C4:3C:EA:CC:07:E0
+2022/01/02 00:00:48   DHCPC         Info : DHCPSIADDR = 0.0.0.0
+2022/01/02 00:00:48   DHCPC         Info : DHCPGIADDR = 0.0.0.0
+2022/01/02 00:00:48   DHCPC         Info : DHCPSID = 192.168.17.1
+2022/01/02 00:00:48   DHCPC         Info : DNS[2] = 8.8.8.8
+2022/01/02 00:00:48   DHCPC         Info : DNS[1] = 192.168.16.1
+2022/01/02 00:00:48   DHCPC         Info : Default Gateway = 192.168.17.1
+2022/01/02 00:00:48   DHCPC         Info : Subnet Mask = 255.255.255.0
+2022/01/02 00:00:48   DHCPC         Info : IP Address = 192.168.17.101
+2022/01/02 00:00:48   DHCPC         DHCP_ACK received from  (192.168.17.1)
+2022/01/02 00:00:48   DHCPC         Renew : sending DHCP_REQUEST for 192.168.17.101 to 192.168.17.1
+2022/01/01 23:44:10   WIRELESS      wl1 (2.4GHz): Detect interference(66per) [with Non-802.11] on channel 6.
+2022/01/01 23:39:10   WIRELESS      wl1 (2.4GHz): Detect interference(82per) [with Non-802.11] on channel 6.
+2022/01/01 23:39:05   WIRELESS      wl1 (2.4GHz): Detect interference(79per) [with Non-802.11] on channel 6.
+2022/01/01 23:38:46   AUTH          wl0.0 (5GHz): Authenticated (WPA2-PSK) User - 32:06:ad:e9:da:04
+2022/01/01 23:38:45   WIRELESS      wl0.0 (5GHz): Associated User - 32:06:ad:e9:da:04
+2022/01/01 23:38:27   WIRELESS      wl0.0 (5GHz): DisAssociated User - 32:06:ad:e9:da:04
+2022/01/01 23:38:24   WIRELESS      wl0.0 (5GHz): Associated User - 32:06:ad:e9:da:04
+2022/01/01 23:36:36   WIRELESS      wl1 (2.4GHz): Start sending beacon
+2022/01/01 23:36:36   WIRELESS      wl1 (2.4GHz): Switch Channel 6 / 20 MHz
+2022/01/01 23:36:24   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/01 23:36:16   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/01 23:36:15   WIRELESS      wl0 (5GHz): Switch Channel 48 / 80 MHz
+2022/01/01 23:36:15   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 48 / 80 MHz
+2022/01/01 23:36:15   WIRELESS      wl0 (5GHz): Detect interference(75per) on channel 128.
+2022/01/01 23:36:15   WIRELESS      wl0 (5GHz): Detect interference(75per) on channel 124.
+2022/01/01 23:36:15   WIRELESS      wl0 (5GHz): Detect interference(75per) on channel 120.
+2022/01/01 23:36:15   WIRELESS      wl0 (5GHz): Detect interference(75per) on channel 116.
+2022/01/01 23:36:15   WIRELESS      wl0 (5GHz): Detect interference(50per) on channel 112.
+2022/01/01 23:36:15   WIRELESS      wl0 (5GHz): Detect interference(50per) on channel 108.
+2022/01/01 23:36:15   WIRELESS      wl0 (5GHz): Detect interference(50per) on channel 104.
+2022/01/01 23:36:15   WIRELESS      wl0 (5GHz): Detect interference(50per) on channel 100.
+2022/01/01 23:35:53   CONFIGURE     WIRELESS SSID
+2022/01/01 23:30:47   WIRELESS      wl1 (2.4GHz): Start sending beacon
+2022/01/01 23:30:47   WIRELESS      wl1 (2.4GHz): Switch Channel 6 / 20 MHz
+2022/01/01 23:30:38   WIRELESS      wl0 (5GHz): Start sending beacon
+2022/01/01 23:30:37   WIRELESS      wl0 (5GHz): Switch Channel 44 / 80 MHz
+2022/01/01 23:30:28   WIRELESS      wl0 (5GHz): AutoChannel selected Channel 44 / 80 MHz
+2022/01/01 23:30:28   WIRELESS      wl0 (5GHz): Detect interference(76per) on channel 128.
+2022/01/01 23:30:28   WIRELESS      wl0 (5GHz): Detect interference(76per) on channel 124.
+2022/01/01 23:30:28   WIRELESS      wl0 (5GHz): Detect interference(76per) on channel 120.
+2022/01/01 23:30:28   WIRELESS      wl0 (5GHz): Detect interference(76per) on channel 116.
+2022/01/01 23:30:28   WIRELESS      wl0 (5GHz): Detect interference(50per) on channel 112.
+2022/01/01 23:30:28   WIRELESS      wl0 (5GHz): Detect interference(50per) on channel 108.
+2022/01/01 23:30:28   WIRELESS      wl0 (5GHz): Detect interference(50per) on channel 104.
+2022/01/01 23:30:28   WIRELESS      wl0 (5GHz): Detect interference(50per) on channel 100.
+2022/01/01 23:30:07   CONFIGURE     WIRELESS SSID
+2022/01/01 18:02:26   ADT           Accept regist Error!!
+2022/01/01 18:02:26   ADT           Subscribe callback(accept_regist)
+2022/01/01 18:02:26   ADT           publish: request_regist
+2022/01/01 18:02:25   ADT           Subscribing(unpaired)...
+2022/01/01 18:00:48   DHCPC         add resolve
+2022/01/01 18:00:48   DHCPC         Info : LEASETIME(43200) , RENEWALTIME(21600) , REBINDTIME(37800)
+2022/01/01 18:00:48   DHCPC         Info : DHCPSNAME =
+2022/01/01 18:00:48   DHCPC         Info : DHCPSHADDR = 00:16:01:19:EC:22
+2022/01/01 18:00:48   DHCPC         Info : DHCPCHADDR = C4:3C:EA:CC:07:E0
+2022/01/01 18:00:48   DHCPC         Info : DHCPSIADDR = 0.0.0.0
+2022/01/01 18:00:48   DHCPC         Info : DHCPGIADDR = 0.0.0.0
+2022/01/01 18:00:48   DHCPC         Info : DHCPSID = 192.168.17.1
+2022/01/01 18:00:48   DHCPC         Info : DNS[2] = 8.8.8.8
+2022/01/01 18:00:48   DHCPC         Info : DNS[1] = 192.168.16.1
+2022/01/01 18:00:48   DHCPC         Info : Default Gateway = 192.168.17.1
+2022/01/01 18:00:48   DHCPC         Info : Subnet Mask = 255.255.255.0
+2022/01/01 18:00:48   DHCPC         Info : IP Address = 192.168.17.101
+2022/01/01 18:00:48   DHCPC         DHCP_ACK received from  (192.168.17.1)
+2022/01/01 18:00:48   DHCPC         Renew : sending DHCP_REQUEST for 192.168.17.101 to 192.168.17.1
+2022/01/01 12:57:37   CONFIGURE     WIRELESS
+2022/01/01 12:02:11   ADT           Accept regist Error!!
+2022/01/01 12:02:11   ADT           Subscribe callback(accept_regist)
+2022/01/01 12:02:11   ADT           publish: request_regist
+2022/01/01 12:02:10   ADT           Subscribing(unpaired)...
+2022/01/01 12:00:48   DHCPC         add resolve
+2022/01/01 12:00:48   DHCPC         Info : LEASETIME(43200) , RENEWALTIME(21600) , REBINDTIME(37800)
+2022/01/01 12:00:48   DHCPC         Info : DHCPSNAME =
+2022/01/01 12:00:48   DHCPC         Info : DHCPSHADDR = 00:16:01:19:EC:22
+2022/01/01 12:00:48   DHCPC         Info : DHCPCHADDR = C4:3C:EA:CC:07:E0
+2022/01/01 12:00:48   DHCPC         Info : DHCPSIADDR = 0.0.0.0
+2022/01/01 12:00:48   DHCPC         Info : DHCPGIADDR = 0.0.0.0
+2022/01/01 12:00:48   DHCPC         Info : DHCPSID = 192.168.17.1
+2022/01/01 12:00:48   DHCPC         Info : DNS[2] = 8.8.8.8
+2022/01/01 12:00:48   DHCPC         Info : DNS[1] = 192.168.16.1
+2022/01/01 12:00:48   DHCPC         Info : Default Gateway = 192.168.17.1
+2022/01/01 12:00:48   DHCPC         Info : Subnet Mask = 255.255.255.0
+2022/01/01 12:00:48   DHCPC         Info : IP Address = 192.168.17.101
+2022/01/01 12:00:48   DHCPC         DHCP_ACK received from  (192.168.17.1)
+2022/01/01 12:00:47   DHCPC         Renew : sending DHCP_REQUEST for 192.168.17.101 to 192.168.17.1
+2022/01/01 06:02:06   ADT           Accept regist Error!!
+2022/01/01 06:02:06   ADT           Subscribe callback(accept_regist)
+2022/01/01 06:02:05   ADT           publish: request_regist
+2022/01/01 06:02:04   ADT           Subscribing(unpaired)...
+2022/01/01 06:00:47   DHCPC         add resolve
+2022/01/01 06:00:47   DHCPC         Info : LEASETIME(43200) , RENEWALTIME(21600) , REBINDTIME(37800)
+2022/01/01 06:00:47   DHCPC         Info : DHCPSNAME =
+2022/01/01 06:00:47   DHCPC         Info : DHCPSHADDR = 00:16:01:19:EC:22
+2022/01/01 06:00:47   DHCPC         Info : DHCPCHADDR = C4:3C:EA:CC:07:E0
+2022/01/01 06:00:47   DHCPC         Info : DHCPSIADDR = 0.0.0.0
+2022/01/01 06:00:47   DHCPC         Info : DHCPGIADDR = 0.0.0.0
+2022/01/01 06:00:47   DHCPC         Info : DHCPSID = 192.168.17.1
+2022/01/01 06:00:47   DHCPC         Info : DNS[2] = 8.8.8.8
+2022/01/01 06:00:47   DHCPC         Info : DNS[1] = 192.168.16.1
+2022/01/01 06:00:47   DHCPC         Info : Default Gateway = 192.168.17.1
+2022/01/01 06:00:47   DHCPC         Info : Subnet Mask = 255.255.255.0
+2022/01/01 06:00:47   DHCPC         Info : IP Address = 192.168.17.101
+2022/01/01 06:00:47   DHCPC         DHCP_ACK received from  (192.168.17.1)
+2022/01/01 06:00:47   DHCPC         Renew : sending DHCP_REQUEST for 192.168.17.101 to 192.168.17.1
+2022/01/01 01:35:51   CONFIGURE     WIRELESS SSID
+2022/01/01 00:02:01   ADT           Accept regist Error!!
+2022/01/01 00:02:01   ADT           Subscribe callback(accept_regist)
+2022/01/01 00:02:00   ADT           publish: request_regist
+2022/01/01 00:01:59   ADT           Subscribing(unpaired)...
+2022/01/01 00:01:59   ADT           Start device registration process.
+2022/01/01 00:01:59   ADT           Finished checking the network. hosType=2
+2022/01/01 00:01:59   ADT           Start checking the network. hosType=2
+2022/01/01 00:01:57   ADT           First connect Success.
+2022/01/01 00:01:57   ADT           Subscribing(unpaired)...
+2022/01/01 00:01:52   ADT           Error: topicSubAcceptRegist
+2022/01/01 00:01:52   ADT           Subscribing(unpaired)...
+2022/01/01 00:01:46   ADT           Error: topicSubAcceptRegist
+2022/01/01 00:01:46   ADT           Subscribing(unpaired)...
+2022/01/01 00:01:40   ADT           Finished checking the network. hosType=2
+2022/01/01 00:01:40   ADT           Start checking the network. hosType=2
+2022/01/01 00:01:40   ADT           Certificate acquisition process Success.
+2022/01/01 00:01:39   ADT           Start certificate acquisition process.
+2022/01/01 00:01:39   ADT           Finished checking the network. hosType=1
+2022/01/01 00:01:38   ADT           Start checking the network. hosType=1
+2022/01/01 00:01:38   ADT           No copied zip file from non-volatile area.
+2022/01/01 00:01:38   ADT           No copied zip file from non-volatile area.
+2022/01/01 00:01:35   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:01:32   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:01:28   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:01:25   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:01:22   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:01:19   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:01:15   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:01:12   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:01:09   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:01:06   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:01:03   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:00:59   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:00:56   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:00:53   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:00:50   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:00:47   DHCPC         add resolve
+2022/01/01 00:00:47   DHCPC         Info : LEASETIME(43200) , RENEWALTIME(21600) , REBINDTIME(37800)
+2022/01/01 00:00:47   DHCPC         Info : DHCPSNAME =
+2022/01/01 00:00:47   DHCPC         Info : DHCPSHADDR = 00:16:01:19:EC:22
+2022/01/01 00:00:47   DHCPC         Info : DHCPCHADDR = C4:3C:EA:CC:07:E0
+2022/01/01 00:00:47   DHCPC         Info : DHCPSIADDR = 0.0.0.0
+2022/01/01 00:00:47   DHCPC         Info : DHCPGIADDR = 0.0.0.0
+2022/01/01 00:00:47   DHCPC         Info : DHCPSID = 192.168.17.1
+2022/01/01 00:00:47   DHCPC         Info : DNS[2] = 8.8.8.8
+2022/01/01 00:00:47   DHCPC         Info : DNS[1] = 192.168.16.1
+2022/01/01 00:00:47   DHCPC         Info : Default Gateway = 192.168.17.1
+2022/01/01 00:00:47   DHCPC         Info : Subnet Mask = 255.255.255.0
+2022/01/01 00:00:47   DHCPC         Info : IP Address = 192.168.17.101
+2022/01/01 00:00:47   DHCPC         DHCP_ACK received from  (192.168.17.1)
+2022/01/01 00:00:47   DHCPC         broadcasting DHCP_REQUEST for 192.168.17.101
+2022/01/01 00:00:47   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:00:46   DHCPC         DHCP_OFFER received from  (192.168.17.1)
+2022/01/01 00:00:46   DHCPC         broadcasting second DHCP_DISCOVER
+2022/01/01 00:00:43   ADT           ADT Command(REQUEST_COMMON): 503 Error!
+2022/01/01 00:00:40   ADT           Not a proxy connection.
+2022/01/01 00:00:40   ADT           Host: Production
+2022/01/01 00:00:40   ADT           saveConfTimeoutMs    : 10000
+2022/01/01 00:00:40   ADT           keepaliveIntervalSec : 120
+2022/01/01 00:00:40   ADT           === Start kikiNavi monitoring process.
+2022/01/01 00:00:40   ADT           Startup Remote Management Service
+2022/01/01 00:00:40   ADT           Start USB watcher for Remote access config.
+2022/01/01 00:00:40   ADT           Startup Buffalo Admin Tools Daemon Ver.3.0.0
+2022/01/01 00:00:40   ADT           SNMP Daemon Start
+2022/01/01 00:00:17   DHCPC         Request: broadcasting DHCP_DISCOVER
+2022/01/01 00:00:08   WIRED         et0: link up(1000 Mbps Full duplex)
+2022/01/01 00:00:02   BOOT          Power supply: PoE(802.3at)
+2022/01/01 00:00:02   BOOT          WAPM-AX8R Ver.1.27 (R4.01/B2016.01-1.11)
