@@ -1,0 +1,9 @@
+numpy
+
+[all]
+imagecodecs>=2023.1.23
+matplotlib
+defusedxml
+lxml
+zarr
+fsspec
