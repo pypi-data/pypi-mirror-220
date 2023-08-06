@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: konko
+Version: 0.2.0
+Summary: "Konko AI Python SDK: A client library to interact with Konko AI's API. With this SDK, developers can integrate, evaluate, fine-tune, and deploy Large Language Models (LLMs) using Konko AI's fully-managed, SOC 2 compliant platform. Ideal for enterprise use-cases, it allows you to focus on building great products without worrying about infrastructure."
+License: Proprietary
+Author: Konko AI
+Requires-Python: >=3.7
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fastapi (>=0.100.0,<0.101.0)
+Requires-Dist: pydantic (>=2.0.3,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# For documentation please visit 
+[Link Text](https://docs.konko.ai/)
+

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "konko"
+version = "0.2.0"
+description = "\"Konko AI Python SDK: A client library to interact with Konko AI's API. With this SDK, developers can integrate, evaluate, fine-tune, and deploy Large Language Models (LLMs) using Konko AI's fully-managed, SOC 2 compliant platform. Ideal for enterprise use-cases, it allows you to focus on building great products without worrying about infrastructure.\""
+authors = ["Konko AI"]
+license = "Proprietary"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+requests = "^2.31.0"
+fastapi = "^0.100.0"
+pydantic = "^2.0.3"
+
+[tool.poetry.dev-dependencies]
+uvicorn = "^0.22.0"
+
+[build-system]
+requires = ["poetry-core>=1.5.1"]
+build-backend = "poetry.core.masonry.api"
