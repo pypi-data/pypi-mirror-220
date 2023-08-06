@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: zhcevanstest
+Version: 1.1.1
+Summary: A package for plotting Konrads data
+Home-page: https://github.com/evans1112/testforpypi
+Author: evans.zhu
+Author-email: evanszhu2001@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+Put a detailed description of your package here
