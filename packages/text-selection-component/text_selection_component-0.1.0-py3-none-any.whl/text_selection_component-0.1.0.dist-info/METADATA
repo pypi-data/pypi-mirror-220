@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: text-selection-component
+Version: 0.1.0
+Summary: Streamlit component to get slected text in paragraph so, you process selected text
+Author: Muhammad Kamran
+Author-email: mkrnaqeebi@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit (>=1.2)
+Requires-Dist: jinja2
+
+# text-selection-component
+
+Streamlit component to get slected text in paragraph so, you process selected text
+
+## Installation instructions 
+
+```sh
+pip install text-selection-component
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+
+from text_selection_component import text_selection_component
+
+value = text_selection_component()
+
+st.write(value)
