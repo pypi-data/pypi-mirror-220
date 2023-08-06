@@ -1,0 +1,7 @@
+wikipedia
+numpy
+pandas
+cryptocompare
+keras
+tensorflow
+faker
