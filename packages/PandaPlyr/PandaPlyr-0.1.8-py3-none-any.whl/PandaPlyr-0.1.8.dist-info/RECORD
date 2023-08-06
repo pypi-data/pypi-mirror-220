@@ -1,0 +1,12 @@
+PandaPlyr/__init__.py,sha256=YlR2d-itGyufsk_Q10CT1PXNstq7CZ2EhP_THSqzHbI,170
+PandaPlyr/pandaplyr.py,sha256=SYjgH3Nu8wGqrO43tF47YpSAVTMYcKgOYEcqVWMQtOY,23666
+PandaPlyr/utils.py,sha256=SpBX8cKadT932cSuYE4VWNWBPm9ZcCYm5lm2vXyWQnU,1620
+PandaPlyr/data/student_grades.csv,sha256=yKd8YDAe-bW-H5zQcNBXRxOcnk3l26iJvyYSZ1SFeWA,369
+PandaPlyr/data/student_grades_by_year.csv,sha256=j5gE4OoXXc4Io0MNEOY03KQRYudDwWUY0BChh9GGQHI,51243
+PandaPlyr/data/subject_categories.csv,sha256=P_VqZqwwSkzFCH8K2zzwM3vxx2vr-aEv5rP8eQ_xOro,114
+PandaPlyr/data/titanic.csv,sha256=Q6-BoB8lp3ccmkKAmjFiX00N4_M1zfKZYfm6F5qGwT0,57910
+PandaPlyr-0.1.8.dist-info/LICENSE,sha256=o19uJRS8hCSJZPvZyfHWBIl_FNh5cZIDq6WOOgJGpbg,1090
+PandaPlyr-0.1.8.dist-info/METADATA,sha256=7ZCTyFkUeY78nWNTwR_RKDsPLLoBIDsfZzAk0KrPa_o,15930
+PandaPlyr-0.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+PandaPlyr-0.1.8.dist-info/top_level.txt,sha256=ZDzMYE-bjx6mKgzVs1d5RdbyWlU3FfaQWXKivEPLo9Y,10
+PandaPlyr-0.1.8.dist-info/RECORD,,
