@@ -1,0 +1,3 @@
+[console_scripts]
+blm = blm.blm_cluster:_main
+
