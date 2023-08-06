@@ -1,0 +1,10 @@
+argparse
+argcomplete
+requests
+PyYAML
+dictdiffer
+
+[tests]
+pytest
+pytest-cov
+requests-mock
