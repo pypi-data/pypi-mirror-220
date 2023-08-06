@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: suinspy
+Version: 0.1.0
+Summary: Sui Name Service Python SDK Client
+Author: andreidev1
+Author-email: d.andrei01@yahoo.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pysui (>=0.27.1,<0.28.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
