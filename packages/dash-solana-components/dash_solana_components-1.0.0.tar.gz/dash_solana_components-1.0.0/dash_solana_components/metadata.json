@@ -1,0 +1,92 @@
+{
+  "src/ts/components/App.tsx": {
+    "displayName": "App",
+    "description": "",
+    "props": {
+      "network": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'devnet'",
+              "computed": false
+            },
+            {
+              "value": "'mainnet'",
+              "computed": false
+            },
+            {
+              "value": "'testnet'",
+              "computed": false
+            }
+          ],
+          "raw": "\"devnet\" | \"mainnet\" | \"testnet\""
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": true,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/ts/components/DashSolanaComponents.tsx": {
+    "displayName": "DashSolanaComponents",
+    "description": "",
+    "props": {
+      "network": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'devnet'",
+              "computed": false
+            },
+            {
+              "value": "'mainnet'",
+              "computed": false
+            },
+            {
+              "value": "'testnet'",
+              "computed": false
+            }
+          ],
+          "raw": "\"devnet\" | \"mainnet\" | \"testnet\""
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": true,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      }
+    },
+    "isContext": false
+  }
+}
