@@ -1,0 +1,1 @@
+This is a simple program that takes a url or a video and a start and end time and converts it into a gif that should be shareable on most platforms (make sure the gif isn't too long though). This package depends only on ffmpeg and python packages.
