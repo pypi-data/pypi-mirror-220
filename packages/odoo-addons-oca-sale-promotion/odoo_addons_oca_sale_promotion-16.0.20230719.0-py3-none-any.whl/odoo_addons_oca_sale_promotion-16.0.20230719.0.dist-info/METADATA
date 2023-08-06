@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-sale-promotion
+Version: 16.0.20230719.0
+Summary: Meta package for oca-sale-promotion Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-coupon-chatter (<16.1dev,>=16.0dev)
+
+UNKNOWN
+
