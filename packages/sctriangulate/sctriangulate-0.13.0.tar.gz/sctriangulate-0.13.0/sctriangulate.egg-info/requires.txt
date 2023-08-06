@@ -1,0 +1,6 @@
+squidpy==1.2.0
+gseapy==0.10.4
+scrublet==0.2.3
+yattag
+anytree
+mygene==3.2.2
