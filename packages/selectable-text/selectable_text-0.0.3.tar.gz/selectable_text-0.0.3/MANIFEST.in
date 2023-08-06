@@ -1,0 +1,11 @@
+include selectable_text/selectable_text.min.js
+include selectable_text/selectable_text.min.js.map
+include selectable_text/async-*.js
+include selectable_text/async-*.js.map
+include selectable_text/*-shared.js
+include selectable_text/*-shared.js.map
+include selectable_text/metadata.json
+include selectable_text/package-info.json
+include README.md
+include LICENSE
+include package.json
