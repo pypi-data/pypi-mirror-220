@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pyepp
+Version: 0.0.1a0
+Summary: A Python API on top of the EPP protocol.
+Author-email: InternetNZ <ehsan@internetnz.net.nz>
+License: GPL-3.0
+Project-URL: Homepage, https://github.com/InternetNZ/pyepp
+Project-URL: Repository, https://github.com/InternetNZ/pyepp
+Keywords: epp,registry
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jinja2 (>=3.1.2)
+Requires-Dist: lxml (>=4.9.3)
+Requires-Dist: bs4 (>=0.0.1)
+Provides-Extra: dev
+Requires-Dist: bandit ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: safety ; extra == 'dev'
+
+# PyEPP
+> A Python API on top of EPP protocol to work with registry systems.
+
+This a Python API on [EPP](https://en.wikipedia.org/wiki/Extensible_Provisioning_Protocol) protocol to connect to
+any registry systems that support EPP and work with it. It supports bellow RFCs:
+- [RFC 5730 - Extensible Provisioning Protocol](https://datatracker.ietf.org/doc/html/rfc5730)
+- [RFC 5731 - Domain Name Mapping](https://datatracker.ietf.org/doc/html/rfc5731)
+- [RFC 5732 - Host Mapping](https://datatracker.ietf.org/doc/html/rfc5732)
+- [RFC 5733 - Contact Mapping](https://datatracker.ietf.org/doc/html/rfc5733)
+- [RFC 5734 - Transport over TCP](https://datatracker.ietf.org/doc/html/rfc5734)
+
+>This is an early version and not stable yet. Please use with care.
+
+## Installation
+
+```sh
+pip install pyepp
+```
+
+## Usage example
+
+
+## Development setup
+
+
+## Contributing
+Please refer to [CONTRIBUTING.md]()
+
+<!-- Markdown link & img dfn's -->
+[wiki]: https://github.com/internetnz/pyepp/wiki
