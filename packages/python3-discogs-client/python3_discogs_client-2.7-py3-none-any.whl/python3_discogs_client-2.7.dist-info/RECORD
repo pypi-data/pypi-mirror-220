@@ -1,0 +1,11 @@
+discogs_client/__init__.py,sha256=jtFqxDk4H8_GK_bF6p_1dcoKVt_Di_GYo5uWB2ESPfc,445
+discogs_client/client.py,sha256=AqQmwJd54DrAFTnTb4zi1jCefjC6sbISh43FZuYsQ0g,7632
+discogs_client/exceptions.py,sha256=7kHj2wbpfT0gLE7uqm6c4aS28Wkr58f6u9jfpcT_NSM,1323
+discogs_client/fetchers.py,sha256=UP-FcCo8MOgfG5VpiFCRpKUUBcVn_zSMbnV5Z3DpAqQ,11963
+discogs_client/models.py,sha256=c6OfCIEPW7HtOpegP3tcdGPtEBTm7adDxWyQzcfe52M,31844
+discogs_client/utils.py,sha256=KJDkJ91C1rVW7Tr4hZ8To-sJyKtFu4gT1oNQIv7Mo_k,3395
+python3_discogs_client-2.7.dist-info/LICENSE,sha256=GvYq7dzLVxNCGN29xn0Ec1JMpzZwPXzOAdtZsuB9pUI,1455
+python3_discogs_client-2.7.dist-info/METADATA,sha256=sOt6aDkRndWOtM0ujuMspeX2EdJfHGysOfOIU6QQ5U8,927
+python3_discogs_client-2.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+python3_discogs_client-2.7.dist-info/top_level.txt,sha256=jgqsRXqG3dJuCOSykXhXN68DMNu77XYQuqgqlPSSv1E,15
+python3_discogs_client-2.7.dist-info/RECORD,,
