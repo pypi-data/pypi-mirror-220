@@ -1,0 +1,3 @@
+[console_scripts]
+purge=akamai_purge_cache.purge:purge
+
