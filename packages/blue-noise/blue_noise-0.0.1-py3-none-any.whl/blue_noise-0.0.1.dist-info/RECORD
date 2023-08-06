@@ -1,0 +1,7 @@
+blue_noise/__init__.py,sha256=geCw8hhV7y_ObMge6Wc9j_dI2NjWGwGpvnYxdHWjH94,83
+blue_noise/best_candidate.py,sha256=HP7KvyQawDBnEZfGSlYz_rjnEeDltNMD1OIkEI89cwk,232
+blue_noise/poisson_disk.py,sha256=sFfN59yz6x2H5JHaSJiwEL6mlTW38UD6555elIUJ_28,3631
+blue_noise-0.0.1.dist-info/LICENSE,sha256=qVjnvqH0unMAmzYLkVwSEz3sETQJZIieMwkB78b0D74,1068
+blue_noise-0.0.1.dist-info/METADATA,sha256=XjXLGjIC_8Lgq76j7PzjHARdhXn4XQG_BEc2cC0QBZM,612
+blue_noise-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+blue_noise-0.0.1.dist-info/RECORD,,
