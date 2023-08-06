@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lib-agent
+Version: 1.0.6
+Summary: Using OnlyKey as hardware SSH and GPG agent
+Home-page: https://github.com/onlykey/lib-agent
+Author: CryptoTrust
+Author-email: admin@crp.to
+Platform: POSIX
+Classifier: Environment :: Console
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Communications
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+License-File: LICENSE
