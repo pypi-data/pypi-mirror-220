@@ -1,0 +1,9 @@
+poetry-core>=1.1.0
+astropy==5.3.1
+bokeh==3.2.0
+click==8.0.4
+dask==2021.10.0
+matplotlib==3.4.3
+numpy==1.22.3
+pandas==2.0.3
+photutils==1.8.0
