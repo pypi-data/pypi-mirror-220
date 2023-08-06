@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: baimomcsm_api
+Version: 0.0.2
+Summary: MCSManager API for Python (开发中)
+Home-page: https://github.com/Zhou-Shilin/BaimoMCSManager-API
+Author: BaimoQilin
+Author-email: admin@baimoqilin.top
+License: Apache 2.0
+Description: <h1 id="baimomcsmanager-api-for-python">BaimoMCSManager API for
+        <code>Python</code></h1>
+        <p><a
+        href="https://github.com/Zhou-Shilin/BaimoMCSManager-API/pulls"><img
+        src="https://img.shields.io/badge/PRs-welcome-20BF20"
+        alt="PRs welcome" /></a> <img
+        src="https://img.shields.io/badge/Support-MCSM_9.9.0-blue"
+        alt="Support MSCM 9.9.0" /> <img
+        src="https://img.shields.io/badge/License-Apache-red"
+        alt="Apache License" /><br />
+        这是一个适用于Python语言的第三方库，让你在Python中更方便地调用<a
+        href="https://docs.mcsmanager.com/#/zh-cn/apis/readme">MCSM-API</a>管理你的服务器。</p>
+        <h2 id="注意">⚠️注意</h2>
+        <p>这个项目仍在开发中，仅支持部分功能。</p>
+        <p>当前进展： - [x] 面板通用设置 ( <code>common.py</code>) - [x]
+        应用实例管理 (<code>applications.py</code>) - [ ] 实例文件管理
+        (<code>files.py</code>) - [ ] 计划任务管理 (<code>plans.py</code>) - [ ]
+        守护进程管理 ( <code>remote_service.py</code>) - [ ] 多用户管理
+        (<code>auth.py</code>)</p>
+        <h2 id="使用方法">📖使用方法</h2>
+        <p>施工中……</p>
+        
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
