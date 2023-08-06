@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+jakt/__init__.py
+jakt/__main__.py
+jakt/cli.py
+jakt/exceptions.py
+jakt/report.py
+jakt/timeslot.py
+jakt.egg-info/PKG-INFO
+jakt.egg-info/SOURCES.txt
+jakt.egg-info/dependency_links.txt
+jakt.egg-info/entry_points.txt
+jakt.egg-info/requires.txt
+jakt.egg-info/top_level.txt
