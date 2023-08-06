@@ -1,0 +1,6 @@
+setup.py
+gigaml/__init__.py
+gigaml.egg-info/PKG-INFO
+gigaml.egg-info/SOURCES.txt
+gigaml.egg-info/dependency_links.txt
+gigaml.egg-info/top_level.txt
