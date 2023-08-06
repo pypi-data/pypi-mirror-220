@@ -1,0 +1,11 @@
+astropy
+astroquery
+sfdmap
+numpy
+pandas
+scipy
+sklearn
+matplotlib
+shapely
+Pillow
+termcolor
