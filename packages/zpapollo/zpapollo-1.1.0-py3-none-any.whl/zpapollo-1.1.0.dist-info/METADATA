@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: zpapollo
+Version: 1.1.0
+Summary: zpapollo
+Home-page: https://github.com/
+Author: zhidonglv
+Author-email: 2907872121@qq.com
+License: UNKNOWN
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: requests
+
+
+pyapollo 常用工具包
+
+
+
+

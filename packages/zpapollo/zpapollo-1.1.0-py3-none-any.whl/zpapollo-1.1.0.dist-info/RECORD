@@ -1,0 +1,13 @@
+apollo/__init__.py,sha256=D82EINWyLVT-tsS_lwYU-Lpn_kKOVe4vLH-T2kCUgVs,79
+apollo/apollo_client.py,sha256=u4TpC2iCrS9UB6gGI3670Cguxn59LNoZq_dZuc35hvc,13494
+apollo/python_2x.py,sha256=c-Dm0TU7V0K-HdUy7Oh73WTQraWA5jFE4s_0ouoEpyQ,900
+apollo/python_3x.py,sha256=LtysxnK7pohB3k4sjwAiyL_tZ0MsJFZ3H43hXC5WpS8,1032
+apollo/util.py,sha256=BathslYt3C661OBp6gfUJhh9MY3tXOcQQe05FvRPpVc,1386
+demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demo/demo.py,sha256=S_-3OszIlbgu0Un69foKRUMftk6uoIFOen09Hjq122c,400
+demo/demo_listener.py,sha256=z18VvF_uw16OmdzDXZp4zubEh8AJ9TjQ-Ucg47g8usg,777
+demo/demo_secret.py,sha256=k2eYEGq1Zk2N-N_oBOfbEo4o-drhBRQC9hHVq9WcJVE,477
+zpapollo-1.1.0.dist-info/METADATA,sha256=p3IU-PwTepEF5IbWN1ZlMCjLv28aAxQY0paFWIf3L8Y,480
+zpapollo-1.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+zpapollo-1.1.0.dist-info/top_level.txt,sha256=K6ikVbXbEr55ukfXMvnvAuMdL67TmEzrdMk8S-I_r_c,12
+zpapollo-1.1.0.dist-info/RECORD,,
