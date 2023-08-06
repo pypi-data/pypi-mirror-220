@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+xgorn_api/__init__.py
+xgorn_api/api.py
+xgorn_api.egg-info/PKG-INFO
+xgorn_api.egg-info/SOURCES.txt
+xgorn_api.egg-info/dependency_links.txt
+xgorn_api.egg-info/requires.txt
+xgorn_api.egg-info/top_level.txt
+xgorn_api/features/__init__.py
+xgorn_api/features/bypass.py
+xgorn_api/features/music.py
+xgorn_api/features/scrape.py
+xgorn_api/features/translate.py
