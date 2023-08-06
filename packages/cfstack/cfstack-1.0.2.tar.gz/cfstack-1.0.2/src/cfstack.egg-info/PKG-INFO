@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cfstack
+Version: 1.0.2
+Summary: A utility to manage CloudFormation stacks
+Home-page: https://github.com/Yashprime1
+Author: Yashdeep Suresh Shetty
+Author-email: shettyyashdeep@gmail.com
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Overview
+This cfstack utility is the awesome tool that you can use to manage your cloudformation stacks.
+
