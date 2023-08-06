@@ -1,0 +1,22 @@
+from typing import Any, Dict, List, Optional
+from honeyhive.api.models.feedback import FeedbackQuery, FeedbackResponse
+from honeyhive.sdk.init import honeyhive_client
+
+def feedback(
+    project: str,
+    generation_id: str,
+    feedback_json: Dict[str, Any]
+) -> FeedbackResponse:
+    """Submit feedback"""
+    client = honeyhive_client()
+    return client.feedback(
+        feedback=FeedbackQuery(
+            task=project,
+            generation_id=generation_id,
+            feedback_json=feedback_json
+        )
+    )
+
+__all__ = [
+    "feedback"
+]
