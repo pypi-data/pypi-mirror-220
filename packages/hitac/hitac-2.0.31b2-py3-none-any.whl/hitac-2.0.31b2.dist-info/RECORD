@@ -1,0 +1,14 @@
+hitac/__init__.py,sha256=5tU6wDIHyHz3eSxHYlPmo0Ic3gyfjsvKJUspBt-HpGY,288
+hitac/_hierarchical_taxonomic_classifier.py,sha256=ayU5s0EEdgr5ozSqSk3yAaqUf0COdmF5kKNxvzLwOsI,6572
+hitac/_utils.py,sha256=p5H4K5-Wn75FcfL6U7iJ0lf5oAxYjI4_Vb9O67ssMms,10538
+hitac/_version.py,sha256=qB108QIxjMvrsjYMorVWF1Ysb5-wSSYMOhgJ1vlusr0,505
+hitac/citations.bib,sha256=p95QgeaCDFxWClLN2JTB1n0HjKvSozOmLty9pdB3iTc,302
+hitac/classifier.py,sha256=LRLwBNI-63-mMj-1mJe28TRi7KUr-LsY5LVUiJ8aAqs,9316
+hitac/filter.py,sha256=90NlHFEb_-10yZVdhwNVRuKhngERnbOEMHRfOSE54Ok,1807
+hitac/plugin_setup.py,sha256=awREdCPsEdkYEVXHONjlA-cG2dP9VFpXy6Uu9XzDRf0,518
+hitac-2.0.31b2.dist-info/LICENSE,sha256=mUX3pQFGjiZXn16uA53ud59Axp1EpUVVH-nJVFrRtMs,1529
+hitac-2.0.31b2.dist-info/METADATA,sha256=nDJvMymwbllUE8F7LInfihvLWumXA_E1bDoKWWA0Vas,9420
+hitac-2.0.31b2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hitac-2.0.31b2.dist-info/entry_points.txt,sha256=YxyoMH3ZWID9v37Q3qWa6_OtMAVnhh9VJyCgGKEnLww,51
+hitac-2.0.31b2.dist-info/top_level.txt,sha256=87D0RKIv8feW_e0rAoqhAWPZjAa5r4DLswqbrpUq0Kk,6
+hitac-2.0.31b2.dist-info/RECORD,,
