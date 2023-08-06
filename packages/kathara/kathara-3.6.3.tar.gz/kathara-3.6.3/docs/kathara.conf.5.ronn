@@ -1,0 +1,161 @@
+m4_changequote()
+kathara.conf(5) -- Kathara configuration file
+=============================================
+
+## DESCRIPTION
+
+This file is a JSON that contains information about the Kathara configuration. It also stores the default settings to be used when starting new devices. This file is placed in the `~/.config` folder. If it does not exist when Kathara is launched, it will be created with default settings.
+
+Checks on the correctness of the configuration are performed each time a Kathara command is launched. So each value must always be a valid setting.
+
+## CONFIGURATION PARAMETERS
+
+* `image` (string):
+    Default Docker image used when starting a device.
+
+    Default to `kathara/quagga`.
+
+* `manager_type` (string):
+    Manager used to launch the network scenario.
+
+    Default to `docker`.
+
+* `terminal` (string):
+	This parameter determines the terminal emulator application to be used for device terminals. The application must be correctly installed in the host system. This option is only visible on Linux and macOS.
+	On Linux, options are `/usr/bin/xterm`, `TMUX` or an user-defined path.
+	On macOS, options are `Terminal` (default system terminal), `iTerm` or `TMUX`.
+
+	Default to `/usr/bin/xterm` on Linux and `Terminal` on macOS.
+
+* `open_terminals` (boolean):
+	This parameter determines if device terminal should be opened when starting it.
+
+	Default to `true`.
+
+* `device_shell` (string):
+	This parameter determines the shell to use inside the device. The application must be correctly installed in the Docker image used for the device. Possible examples are: bash, sh, fish, and so on.
+
+	Default to `/bin/bash`.
+
+* `net_prefix` (string):
+	The prefix assigned to the network name when deployed.
+
+	Default to `kathara`.
+
+* `device_prefix` (string):
+	The prefix assigned to the device name when deployed.
+
+	Default to `kathara`.
+
+* `debug_level` (string):
+	Logging level of Kathara messages. Must be one of the following: CRITICAL, ERROR, WARNING, INFO or DEBUG.
+
+	Default to `INFO`.
+
+* `print_startup_log` (boolean):
+	When opening a device terminal, print its startup log. This setting is ignored if `open_terminals` is `false`.
+
+	Default to `true`.
+
+* `enable_ipv6` (boolean):
+	This option enables IPv6 inside the devices.
+
+	Default to `false`.
+
+* `last_checked` (double):
+	Unix time (in milliseconds) of the last online check for Kathara updates. Each week, when the first Kathara command is launched, the system will check if the system and the default image are up-to-date.
+
+	Default to `time of the file creation - one week`, so the check will always run after a fresh.
+
+## ADDITIONAL MANAGER PARAMETERS
+
+Each Manager specifies additional parameters which are used only when the Manager is currently active.
+
+### KATHARA (Docker)
+
+* `hosthome_mount` (boolean):
+	This parameter specifies if the `/hosthome` dir will be mounted inside the device. The home directory of the current user is made available for reading/writing inside the device under the special directory `/hosthome`.
+
+	Default to `false`.
+
+* `shared_mount` (boolean):
+	This parameter specifies if the `/shared` dir will be mounted inside the device. The "shared" folder inside the network scenario folder is made available for reading/writing inside the device under the special directory `/shared`.
+
+	Default to `true`.
+
+* `image_update_policy` (string):
+    This parameter specifies the policy when a Docker image update is available for a running device.
+
+    Possible values are `Prompt`, `Always`, `Never`.
+
+    Default to `Prompt`.
+
+* `shared_cd` (boolean):
+    This parameter allows to connect devices of different users to the same collision domains.
+
+    Default to `false`.
+
+* `remote_url` (string):
+    This parameter specifies a Remote Docker daemon URL to connect to, instead of a local one.
+
+    Default to null.
+
+* `cert_path` (string):
+    This parameter specifies a TLS Cert path that could be required when using a Remote Docker daemon.
+
+    Default to null.
+
+### MEGALOS (Kubernetes)
+
+* `api_server_url` (string):
+	This parameter specifies the remote Kubernetes API server url. If not specified Megalos will try to connect to a local API server.
+
+	Default to null.
+
+* `api_token` (string):
+	This parameter specifies the authentication token used for the remote API server. If the remote API server is not used, this parameter is useless.
+
+	Default to null.
+
+* `host_shared` (boolean):
+	Each Kubernetes worker node creates a '/home/shared` directory and this directory will be mounted in read/write mode on each device under the path `/shared`.
+	This will allow to save files from the device to the Kubernetes worker node locally. Note that the content of those folders (one on each worker node) are not shared between them nor between the worker and the Kathara host.
+
+	Default to `true`.
+
+* `image_pull_policy` (string):
+	Specify the image pull policy for Docker images used by devices.
+
+	Possible values are `Always`, `IfNotPresent`, `Never`. Please refer to the [official Kubernetes page](https://kubernetes.io/docs/concepts/configuration/overview/#container-images) for further details on how this mode works.
+
+	Default to `IfNotPresent`.
+
+## EXAMPLE
+
+        {
+            "image": "kathara/quagga",
+            "manager_type": "docker",
+            "terminal": "/usr/bin/xterm",
+            "open_terminals": true,
+            "device_shell": "/bin/bash",
+            "net_prefix": "kathara",
+            "device_prefix": "kathara",
+            "debug_level": "INFO",
+            "print_startup_log": true,
+            "enable_ipv6": true,
+            "last_checked": 1600087624.6843708,
+            "hosthome_mount": false,
+            "shared_mount": true,
+            "image_update_policy": "Prompt",
+            "shared_cd": false,
+            "remote_url": null,
+            "cert_path": null
+        }
+
+Example of the default `kathara.conf`(5) file using Docker Manager.
+
+m4_include(footer.txt)
+
+## SEE ALSO
+
+`kathara`(1), `kathara-vstart`(1), `kathara-lstart`(1), [Kathara official site](https://www.kathara.org)

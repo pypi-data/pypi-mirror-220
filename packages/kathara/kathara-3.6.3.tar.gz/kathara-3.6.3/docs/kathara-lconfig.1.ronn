@@ -1,0 +1,51 @@
+m4_changequote()
+kathara-lconfig(1) -- Attach network interfaces to a running Kathara device of a Kathara network scenario
+=============================================
+
+## SYNOPSIS
+
+`kathara lconfig` [`-h`] [`-d` <DIRECTORY>] `-n` <DEVICE_NAME> (`--add` <CD> [<CD> ...] \| `--rm` <CD> [<CD> ...])  
+
+## DESCRIPTION
+
+Manage the network interfaces of a running Kathara device in a network scenario. The affected device is identified by <DEVICE_NAME>, which is the name of the running device in the network scenario. 
+
+## OPTIONS
+
+* `-h`, `--help`:
+    Show a help message and exit.
+
+* `-d` <DIRECTORY>, `--directory` <DIRECTORY>:
+    Specify the folder containing the network scenario.
+
+    Manage the network interfaces of running devices in a Kathara network scenario that is located inside <DIRECTORY>.
+    If no `-d` option is provided, assume the network scenario is located in the current directory.
+
+* `-n` <DEVICE_NAME>, `--name` <DEVICE_NAME>:
+    Name of the device to configure.
+
+* `--add` <CD> [<CD> ...]:
+	Specify the collision domain to add.
+
+    Equip the device with an additional network interface attached to a (virtual) collision domain whose name is <CD>. The number of the resulting network interface is generated incrementing the number of the last network interface used by the device.
+
+* `--rm` <CD> [<CD> ...]:
+	Specify the collision domain to remove.
+
+    Disconnect the device from the collision domain whose name is <CD> and remove the corresponding interface.
+
+## EXAMPLES
+
+    kathara lconfig -d path/to/network_scenario -n pc1 --add X Y
+
+Two new interfaces will be added to the device pc1 in the network scenario located in "path/to/network_scenario": the first one will be attached to the collision domain named X, while the other one to the collision domain named Y. Both the interfaces will have to be configured by hand inside the device (for example, by using ifconfig).
+
+    kathara vconfig -n pc1 --rm X
+
+pc1, in the network scenario located in "path/to/network_scenario", will be disconnected from the collision domain named X and the corresponding network interface will be removed.
+
+m4_include(footer.txt)
+
+## SEE ALSO
+
+`kathara`(1), `kathara-lstart`(1), `kathara-lclean`(1)

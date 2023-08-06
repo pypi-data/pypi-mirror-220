@@ -1,0 +1,85 @@
+m4_changequote()
+kathara-lrestart(1) -- Restart a Kathara network scenario
+=============================================
+
+## SYNOPSIS
+
+`kathara lrestart` [`-h`] [`-F`] [`-l`]  
+[`--noterminals` | `--terminals` | `--privileged`] [`-d` <DIRECTORY>]  
+[`-o` [<OPTION> [<OPTION> ...]]] [`--xterm` <XTERM>]  
+[`--no-hosthome` \| `--hosthome`] [`--no-shared` \| `--shared`] [<DEVICE_NAME> [<DEVICE_NAME> ...]]
+
+
+## DESCRIPTION
+
+Restart a Kathara network scenario. It simply wraps a call to `kathara-lclean`(1) and then `kathara-lstart`(1).
+
+Mainly it has the same options of `lstart` with the lack of some options (e.g. `--print`).
+
+## OPTIONS
+
+* `-h`, `--help`:
+    Show a help message and exit.
+
+* `--noterminals`:
+    Start the network scenario devices without opening terminal windows. Override the default setting specified in `kathara.conf`(5) file.
+
+* `--terminals`:
+    Start the network scenario devices opening their terminal windows. Override the default setting specified in `kathara.conf`(5) file.
+
+* `--privileged`:
+    Start the devices in privileged mode. MUST BE ROOT FOR THIS OPTION.
+
+* `-d` <DIRECTORY>, `--directory` <DIRECTORY>:
+    Specify the folder containing the network scenario.
+
+    Restart the Kathara network scenario that is located inside DIRECTORY.  
+    If no `-d` option is provided, assume the network scenario is located in the current directory.
+
+* `-F`, `--force-lab`:
+    Force the network scenario to start without a lab.conf or lab.dep file.
+
+    As a native behaviour, Kathara starts a device for each directory that it finds in a designated path, by default the current directory. In order to prevent the user from accidentally starting random devices from a directory that does not contain a network scenario, lstart requires the presence of the `kathara-lab.conf`(5) file in the affected directory. If this file is not required for your setting, and you still want to launch your network scenario without creating it, you can use this option to force Kathara starting a network scenario in the affected directory.
+
+* `-l`, `--list`:
+    Show informarion about running devices after the network scenario has been started.
+
+* `-o` [<OPTION> [<OPTION> ...]], `--pass` [<OPTION> [<OPTION> ...]]:
+    Apply options to all devices of a network scenario during startup.
+
+    Should be a list of double quoted strings, like `--pass "mem=64m" "image=kathara/frr"`.
+    You can specify the same device options described in `kathara-lab.conf`(5).
+
+* `--xterm` <XTERM>:
+    Set a different terminal emulator application (Unix only).
+
+    As an example: `gnome-terminal`(1). Override the default setting specified in `kathara.conf`(5) file.
+
+* `--no-hosthome`, `-H`:
+    Do not mount `/hosthome` directory inside devices.
+
+    Do not mount the home directory of the current user inside devices. This is the default specified in `kathara.conf`(5) file.
+
+* `--hosthome`:
+    Mount `/hosthome` directory inside devices.
+
+    Mount the home directory of the current user inside devices in the special directory `/hosthome`. This option makes the host filesystem accessible from inside devices, overriding the default setting specified in `kathara.conf`(5) file.
+
+* `--no-shared`, `-S`:
+    Do not mount `/shared` directory inside devices.
+
+    By default, the `shared` directory inside the network scenario folder is mounted inside all devices in the special directory `/shared`. This option disables this behaviour, making the shared directory not accessible from inside devices. Overrides the default setting specified in `kathara.conf`(5) file.
+
+* `--shared`:
+    Mount `/shared` directory inside devices.
+
+    Mount the `shared` directory inside the network scenario folder inside all devices on the special directory `/shared`. This is the default specified in `kathara.conf`(5) file.
+
+* `DEVICE_NAME`:
+    A list of device names. Instead of restarting the whole network scenario, only specified devices are restarted.
+
+m4_include(footer.txt)
+
+## SEE ALSO
+
+`kathara`(1), `kathara-lstart`(1), `kathara-lclean`(1), `kathara-linfo`(1), `kathara-lab.conf`(5), `kathara-lab.dep`(5), `kathara-lab.ext`(5)
