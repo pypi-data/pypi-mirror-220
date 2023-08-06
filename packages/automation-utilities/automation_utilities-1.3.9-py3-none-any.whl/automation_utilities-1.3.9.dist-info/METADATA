@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: automation-utilities
+Version: 1.3.9
+Summary: Changed the hirarchy of the package
+Author: Hazem Oukal
+Requires-Dist: phonenumbers
+Requires-Dist: names
+Requires-Dist: requests
+Requires-Dist: automation-utilities
+
