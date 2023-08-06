@@ -1,0 +1,12 @@
+odoo/addons/ssi_duration_mixin/README.rst,sha256=alC6p0nhMJFWJAK2uxXl-MLlz55o-4tkobJGAtIKj14,1266
+odoo/addons/ssi_duration_mixin/__init__.py,sha256=X3ayW9k4OH3xqib3X0KEzYY9_pqaAhP2YdhFFVEJSvo,181
+odoo/addons/ssi_duration_mixin/__manifest__.py,sha256=1LYvahk_NtSn2OKSo4BL_D3ezHvsbGCJcvtntEnh7fI,488
+odoo/addons/ssi_duration_mixin/menu.xml,sha256=vCdmxeV6tlacTN1izhiP1SvfIgu2ML7_CaeD9YPJRQw,302
+odoo/addons/ssi_duration_mixin/models/__init__.py,sha256=A2lJQ3AOy0b4VfuRpxmY7csD0LzBbheKnyXtMohU0K0,223
+odoo/addons/ssi_duration_mixin/models/mixin_date_duration.py,sha256=wSHLA_4izPZlzuJNHpfHkC_QAiham4MROtTXoWaxcE4,3316
+odoo/addons/ssi_duration_mixin/models/mixin_datetime_duration.py,sha256=IqwbEuF6ciDfNscANgq73PSEFLQFIhbpF5U0IwZBDMM,454
+odoo/addons/ssi_duration_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_duration_mixin-14.0.2.0.1.dist-info/METADATA,sha256=c5Lq2ARUy3wiTGN1346xsqRltUlJ22-GYi9XrEKemRk,1826
+odoo14_addon_ssi_duration_mixin-14.0.2.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_duration_mixin-14.0.2.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_duration_mixin-14.0.2.0.1.dist-info/RECORD,,
