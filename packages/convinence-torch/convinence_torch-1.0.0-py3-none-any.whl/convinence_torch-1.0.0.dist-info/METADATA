@@ -1,0 +1,165 @@
+Metadata-Version: 2.1
+Name: convinence-torch
+Version: 1.0.0
+Summary: minimalistic convenience utilities for using PyTorch
+Home-page: https://github.com/NISCHALPI/ConvinenceTorch
+Author: Nischal Bhattarai
+Author-email: Nischal bhattarai <nischalbhattaraipi@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 HadesX
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/NISCHALPI/ConvinenceTorch
+Keywords: torch,utilities,trainer,neural network
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (>=2.0.0)
+Requires-Dist: scikit-learn (>=1.0)
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Provides-Extra: dev
+Requires-Dist: nvitop ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: myst-parser ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: nbsphinx ; extra == 'doc'
+
+[![Static Badge](https://img.shields.io/badge/pytorch-v2.x-red)](https://pytorch.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) 
+
+
+
+# ConvinenceTorch - A Lightweight and Minimalistic Convenience Library for PyTorch
+<img src="./Logo.jpeg" alt="Logo" width="300">
+
+ConvinenceTorch is a Python package that serves as a lightweight and minimalistic convenience library for PyTorch, a popular deep learning framework. It provides a collection of utility modules and classes to simplify and streamline the training process of neural networks in PyTorch.
+
+## Features
+
+- **NNtrainer**: ConvinenceTorch offers a flexible and extensible `NNtrainer` class designed for training neural networks in PyTorch. The `NNtrainer` handles various common training tasks, such as model initialization, optimization, loss computation, device management, and training/validation loops. By utilizing the `NNtrainer` class, developers can focus on defining their models and customizing the training process without being burdened by boilerplate code.
+
+- **Memory Usage Report**: ConvinenceTorch provides a memory usage report feature that allows users to monitor the memory consumption during the training process. The mem_report() function in NNtrainer provides valuable insights into the memory usage, helping users optimize their models and data loaders efficiently.
+
+- **Metrics and Loss capture**: ConvinenceTorch offers a comprehensive and flexible mechanism for capturing and tracking metrics and losses during the training process. The NNtrainer class allows users to easily specify the metrics they wish to monitor, such as accuracy, F1 score, or any custom evaluation metric. Additionally, users can choose to record the training and validation losses for further analysis.
+- **Stochastic Weight Averaging (SWA) Support**: NNtrainer supports Stochastic Weight Averaging, a technique that can improve model generalization. The class includes functionalities for setting SWA models, starting epochs, and SWA-specific validation.
+- **Model Checkpointing**: ConvinenceTorch includes model checkpointing functionality, allowing users to save the model's state at specified intervals during training or after every epoch. This feature facilitates easy resumption of training from the last saved checkpoint, enhancing training reliability and fault tolerance.
+- **Inference Support** : With NNtrainer, users can make predictions using the trained model on new data, enabling them to leverage their models for inference tasks.
+
+## Installation
+This library is designed with a minimalistic approach to cater to educational applications and general research purposes. It boasts well-documented docstrings for every component, ensuring clarity and ease of understanding throughout its usage.
+
+For those seeking to extend its functionalities, performing an editable install and making necessary tweaks to the library is highly recommended. Consequently, an editable install is the preferred method, allowing users to seamlessly customize the library to suit their specific requirements and leverage its full potential.
+```bash
+$ pip install convinence-torch
+```
+
+## Usage
+
+```python
+import torch
+import torch.nn as nn
+import torchvision
+from torch.utils.data import DataLoader
+
+# Enable debugging 
+import os
+os.environ['LOG'] = '10'
+
+# Import trainer 
+from torchutils.trainer import NNtrainer
+
+# Setup your data loaders
+train_data = torchvision.datasets.FashionMNIST('./data/', train=True, transform=torchvision.transforms.ToTensor(), download=True)
+test_data = torchvision.datasets.FashionMNIST('./data/', train=False, transform=torchvision.transforms.ToTensor(), download=True)
+trainloader = DataLoader(train_data, batch_size=B, shuffle=True, num_workers=5)
+test_loader = DataLoader(test_data, batch_size=B)
+
+# Constants
+D = 28 * 28
+n = 32
+C = 1
+classes = 10
+eta_0 = 0.005
+eta_1 = 0.001
+
+# Define your PyTorch model, optimizer, and loss function
+fc_model = nn.Sequential(
+    nn.Conv2d(1, n, 3, padding=1),  # 28 * 28
+    nn.LeakyReLU(0.1),
+    nn.Conv2d(n, n, 3, padding=1),  # 28 * 28
+    nn.LeakyReLU(0.1),
+    nn.MaxPool2d(2),  # 14 * 14
+    nn.Conv2d(n, n // 2, 3, padding=1),
+    nn.LeakyReLU(0.1),
+    nn.Conv2d(n // 2, n // 2, 3, padding=1),
+    nn.LeakyReLU(0.1),
+    nn.MaxPool2d(2),  # 7 * 7
+    nn.Conv2d(n // 2, n // 4, 3, padding=1),
+    nn.LeakyReLU(0.1),
+    nn.Flatten(),
+    nn.Linear(7 * 7 * n // 4, 64),
+    nn.Tanh(),
+    nn.Linear(64, 64),
+    nn.Tanh(),
+    nn.Linear(64, 10)
+)
+
+# Create an instance of NNtrainer
+trainer = NNtrainer(model, optimizer, loss)
+
+# See the memory usage report
+trainer.mem_report(batch_shape=(33, 1, 28, 28))
+
+# Add Cosine Annealing
+trainer.add_cosineannealing_lrs(lr_initial=eta_0, lr_final=eta_1, dips=5, epoch=20, verbose=True)
+
+# Add Gradient Clipping
+trainer.add_gradient_clipping(min=-100, max=100)
+
+# Compile the model before training
+trainer.compile()
+
+# Train the model
+trainer.train(trainloader=trainloader, valloader=valloader, epoch=20, metrics=['accuracy', 'f1'], record_loss=True, checkpoint_file='train')
+
+# Plot the training and validation metric curves
+trainer.plot_train_validation_metric_curve('accuracy')
+```
+
+## Contributing
+Contributions are welcome! If you find any issues or have suggestions for new features, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License.
+
+
