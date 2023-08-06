@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ifsFractals
+Version: 1.0.4
+Summary: For Fast Generation of IFS Fractals
+Home-page: https://github.com/PeterEFrancis/ifsFractals-py
+Author: Peter Francis
+Author-email: peter.e.francis@stonybrook.edu
+Keywords: Fractal Generator
+Requires-Python: >=3.0.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+    # ifsFractals
+
+    A python module for fast Iterated Function System Fractal generation
+
+    See the [GitHub Repo](https://github.com/PeterEFrancis/ifsFractals-py) for more information.
+    
