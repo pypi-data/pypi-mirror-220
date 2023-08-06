@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: promptflow
+Version: 0.1.0b1
+Summary: PromptFlow SDK
+Author: Microsoft Corporation
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: <4.0,>=3.8
+
