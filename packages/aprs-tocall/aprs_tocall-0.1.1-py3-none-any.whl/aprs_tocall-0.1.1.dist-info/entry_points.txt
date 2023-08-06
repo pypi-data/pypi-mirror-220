@@ -1,0 +1,3 @@
+[console_scripts]
+aprs_tocall=aprs_tocall:__main__.main
+
