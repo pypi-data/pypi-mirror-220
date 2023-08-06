@@ -1,0 +1,3 @@
+[console_scripts]
+APC_Tempf = APC_Temp_fetch.cli:main_one
+APC_Tempstfe = APC_Temp_fetch.cli:main_list
