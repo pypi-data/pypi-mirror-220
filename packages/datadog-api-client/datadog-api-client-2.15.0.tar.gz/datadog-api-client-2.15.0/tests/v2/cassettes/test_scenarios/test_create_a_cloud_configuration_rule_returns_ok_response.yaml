@@ -1,0 +1,39 @@
+interactions:
+- request:
+    body: '{"cases":[{"notifications":["channel"],"status":"info"}],"complianceSignalOptions":{"userActivationStatus":true,"userGroupByFields":["@account_id"]},"filters":[{"action":"require","query":"resource_id:helo*"},{"action":"suppress","query":"control:helo*"}],"isEnabled":false,"message":"ddd","name":"Test-Create_a_cloud_configuration_rule_returns_OK_response-1689856053_cloud","options":{"complianceRuleOptions":{"complexRule":false,"regoRule":{"policy":"package
+      datadog\n","resourceTypes":["gcp_compute_disk"]},"resourceType":"gcp_compute_disk"}},"tags":["my:tag"],"type":"cloud_configuration"}'
+    headers:
+      accept:
+      - application/json
+      content-type:
+      - application/json
+    method: POST
+    uri: https://api.datadoghq.com/api/v2/security_monitoring/rules
+  response:
+    body:
+      string: '{"id":"rmr-xkf-scr","version":1,"name":"Test-Create_a_cloud_configuration_rule_returns_OK_response-1689856053_cloud","createdAt":1689856054469,"creationAuthorId":1445416,"isDefault":false,"isEnabled":false,"isDeleted":false,"isDeprecated":false,"queries":[{"query":"resource_type:gcp_compute_disk","groupByFields":["resource_type","resource_id"],"distinctFields":[],"aggregation":"count","name":"a"}],"options":{"keepAlive":21600,"maxSignalDuration":86400,"detectionMethod":"threshold","evaluationWindow":7200,"complianceRuleOptions":{"resourceType":"gcp_compute_disk","regoRule":{"policy":"package
+        datadog\n","resourceTypes":["gcp_compute_disk"]},"complexRule":false}},"complianceSignalOptions":{"defaultActivationStatus":null,"defaultGroupByFields":null,"userActivationStatus":true,"userGroupByFields":["@account_id"]},"cases":[{"condition":"a
+        > 0","name":"","status":"info","notifications":["channel"]}],"message":"ddd","tags":["my:tag"],"hasExtendedTitle":true,"type":"cloud_configuration","filters":[{"action":"require","query":"resource_id:helo*"},{"action":"suppress","query":"control:helo*"}]}
+
+        '
+    headers:
+      content-type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      accept:
+      - '*/*'
+    method: DELETE
+    uri: https://api.datadoghq.com/api/v2/security_monitoring/rules/rmr-xkf-scr
+  response:
+    body:
+      string: ''
+    headers: {}
+    status:
+      code: 204
+      message: No Content
+version: 1
