@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: infobvc
+Version: 0.0.3
+Summary: Get data about Bolsa de Valores de Colombia (BVC)
+Author-email: Fabian Triana <fatrianaa1@gmail.com>
+License: 
+        
+Project-URL: Homepage, https://github.com/FabianTriana/infobvc
+Keywords: bvc,stocks,finance,colombia
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.5.0)
+Requires-Dist: numpy (>=1.22.1)
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: seaborn
+Requires-Dist: pandas-ta
+Requires-Dist: tomli ; python_version < "3.11"
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# Infobvc
+
+This is a Package to get and analyze data about Bolsa de Valores de Colombia (BVC)
