@@ -1,0 +1,10 @@
+requests
+tqdm
+matplotlib
+numpy
+imageio
+scikit-image
+torch
+opencv-python
+pillow
+minio
