@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: auto-uncertainties
+Version: 0.4.2
+Summary: Linear Uncertainty Propagation with Auto-Differentiation
+Author-email: Varchas Gopalaswamy <vgop@lle.rochester.edu>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1.23.0)
+Requires-Dist: jax (>=0.3.14)
+Requires-Dist: jaxlib (>=0.3.14)
+Requires-Dist: joblib (>=1.2.0)
+Requires-Dist: loguru (>=0.6.0)
+Provides-Extra: ci
+Requires-Dist: pytest ; extra == 'ci'
+Requires-Dist: pytest-cov ; extra == 'ci'
+Requires-Dist: hypothesis ; extra == 'ci'
+Requires-Dist: pylint ; extra == 'ci'
+Provides-Extra: pandas
+Requires-Dist: pandas (>=1.5.1) ; extra == 'pandas'
+
