@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: open-buildings
+Version: 0.0.1
+Summary: Tools for working with open building datasets
+Home-page: https://github.com/opengeos/open-buildings
+Author: Chris Holmes
+Author-email: homie@gmail.com
+License: Apache Software License 2.0
+Keywords: open_buildings
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# open-buildings
+
+[![image](https://img.shields.io/pypi/v/open-buildings.svg)](https://pypi.python.org/pypi/open-buildings)
+[![image](https://img.shields.io/conda/vn/conda-forge/open-buildings.svg)](https://anaconda.org/conda-forge/open-buildings)
+
+**Tools for working with open building datasets**
+
+-   Free software: Apache Software License 2.0
+-   Documentation: https://opengeos.github.io/open-buildings
+
+## Features
+
+-   TODO
