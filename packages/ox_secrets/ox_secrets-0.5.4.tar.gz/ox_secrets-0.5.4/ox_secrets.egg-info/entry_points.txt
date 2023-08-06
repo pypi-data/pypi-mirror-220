@@ -1,0 +1,3 @@
+[console_scripts]
+ox_secrets = ox_secrets.ui.cli:main
+
