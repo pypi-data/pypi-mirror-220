@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sita_package_ml
+Version: 0.1.2
+Summary: buiding a python package
+Home-page: https://gitlab.com/Djeinaba_Doro/test_project
+Author: Djeinaba
+Author-email: djeinaba147@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: hello this is just a test
+License-File: LICENSE
+
+python package for ML models
+

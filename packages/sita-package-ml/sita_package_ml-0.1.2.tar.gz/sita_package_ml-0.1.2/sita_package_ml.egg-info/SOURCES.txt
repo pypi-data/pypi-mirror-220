@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+sita_package_ml/__init__.py
+sita_package_ml/code_src.py
+sita_package_ml.egg-info/PKG-INFO
+sita_package_ml.egg-info/SOURCES.txt
+sita_package_ml.egg-info/dependency_links.txt
+sita_package_ml.egg-info/requires.txt
+sita_package_ml.egg-info/top_level.txt
+test/test.py
