@@ -1,0 +1,7 @@
+setup.py
+Vpro/__init__.py
+Vpro.egg-info/PKG-INFO
+Vpro.egg-info/SOURCES.txt
+Vpro.egg-info/dependency_links.txt
+Vpro.egg-info/requires.txt
+Vpro.egg-info/top_level.txt
