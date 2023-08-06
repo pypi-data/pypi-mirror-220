@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: llamatune
+Version: 0.2.3
+Summary: Haven's Tuning Library for LLM finetuning
+Author: Haven Technologies Inc.
+Author-email: hello@havenllm.com
+Requires-Dist: torch (==2.0.1)
+Requires-Dist: bitsandbytes (==0.40.0)
+Requires-Dist: einops (==0.6.1)
+Requires-Dist: evaluate (==0.4.0)
+Requires-Dist: scikit-learn (==1.2.2)
+Requires-Dist: sentencepiece (==0.1.99)
+Requires-Dist: wandb (==0.15.3)
+Requires-Dist: accelerate (==0.21.0)
+Requires-Dist: posthog (==2.5.0)
+
