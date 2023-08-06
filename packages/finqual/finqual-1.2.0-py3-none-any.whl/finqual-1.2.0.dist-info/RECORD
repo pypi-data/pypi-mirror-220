@@ -1,0 +1,8 @@
+finqual/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finqual/finqual.py,sha256=1yHsQpRbP3VT3-syY7VmHdk5U0v_CphAyClbKR0qfD8,137647
+finqual/data/sec_sic.csv,sha256=mAVnpuWuNJrRMc4N6cN1pFH3vfeWNUzuvq_BNdSMTHs,434839
+finqual-1.2.0.dist-info/LICENSE.md,sha256=5-Lvu0V1MXB29EyIQ1eaAXywcY28TaT3Kv9R7IVSyoA,17529
+finqual-1.2.0.dist-info/METADATA,sha256=wwF9aw2TuqfPeIem0veXQJu84WwOQsprm8kHXsKznnk,4975
+finqual-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+finqual-1.2.0.dist-info/top_level.txt,sha256=4YaTy9ul_g4hS_K2LnivRih_R2c4d0gIIjCmPAxSTVQ,8
+finqual-1.2.0.dist-info/RECORD,,
