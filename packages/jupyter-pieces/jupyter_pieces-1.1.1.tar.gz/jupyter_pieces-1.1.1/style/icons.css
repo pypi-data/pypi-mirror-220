@@ -1,0 +1,183 @@
+.batchfile-img-w {
+    background-image: url('./assets/classifications/batchfile-white.png');
+}
+
+.coffeescript-img-w {
+    background-image: url('./assets/classifications/coffeescript-white.png');
+}
+
+.batchfile-img-b {
+    background-image: url('./assets/classifications/batchfile-black.png');
+}
+
+.coffeescript-img-b {
+    background-image: url('./assets/classifications/coffeescript-black.png');
+}
+
+.erlang-img {
+    background-image: url('./assets/classifications/erlang.png');
+}
+
+.haskell-img {
+    background-image: url('./assets/classifications/haskell.png');
+}
+
+.lua-img {
+    background-image: url('./assets/classifications/lua.png');
+}
+
+.markdown-img-w {
+    background-image: url('./assets/classifications/markdown-white.png');
+}
+
+.markdown-img-b {
+    background-image: url('./assets/classifications/markdown-black.png');
+}
+
+.matlab-img {
+    background-image: url('./assets/classifications/matlab.png');
+}
+
+.objective-c-img {
+    background-image: url('./assets/classifications/objective-c.png');
+}
+
+.c-img {
+    background-image: url('./assets/classifications/c.png');
+}
+
+.cpp-img {
+    background-image: url('./assets/classifications/cpp.png');
+}
+
+.csharp-img {
+    background-image: url('./assets/classifications/c-sharp.png');
+}
+
+.css-img {
+    background-image: url('./assets/classifications/css.png');
+}
+
+.go-img {
+    background-image: url('./assets/classifications/go.png');
+}
+
+.html-img {
+    background-image: url('./assets/classifications/html.png');
+}
+
+.java-img {
+    background-image: url('./assets/classifications/java.png');
+}
+
+.javascript-img {
+    background-image: url('./assets/classifications/javascript.png');
+}
+
+.typescript-img {
+    background-image: url('./assets/classifications/typescript.png');
+}
+
+.dart-img {
+    background-image: url('./assets/classifications/dart.png');
+}
+
+.scala-img {
+    background-image: url('./assets/classifications/scala.png');
+}
+
+.sql-img {
+    background-image: url('./assets/classifications/sql.png');
+}
+
+.perl-img {
+    background-image: url('./assets/classifications/perl.png');
+}
+
+.php-img {
+    background-image: url('./assets/classifications/php.png');
+}
+
+.python-img {
+    background-image: url('./assets/classifications/python.png');
+}
+
+.powershell-img {
+    background-image: url('./assets/classifications/powershell.png');
+}
+
+.r-img {
+    background-image: url('./assets/classifications/r.png');
+}
+
+.bash-img-w {
+    background-image: url('./assets/classifications/bash-white.png');
+}
+
+.bash-img-b {
+    background-image: url('./assets/classifications/bash-black.png');
+}
+
+.swift-img {
+    background-image: url('./assets/classifications/swift.png');
+}
+
+.ruby-img {
+    background-image: url('./assets/classifications/ruby.png');
+}
+
+.tex-img {
+    background-image: url('./assets/classifications/tex.png');
+}
+
+.text-img {
+    background-image: url('./assets/classifications/text.png');
+}
+
+.rust-img {
+    background-image: url('./assets/classifications/rust.png');
+}
+
+.json-img {
+    background-image: url('./assets/classifications/json.png');
+}
+
+.yaml-img-w {
+    background-image: url('./assets/classifications/yaml-white.png');
+}
+
+.toml-img-w {
+    background-image: url('./assets/classifications/toml-white.png');
+}
+
+.yaml-img-b {
+    background-image: url('./assets/classifications/yaml-black.png');
+}
+
+.toml-img-b {
+    background-image: url('./assets/classifications/toml-black.png');
+}
+
+.xml-img {
+    background-image: url('./assets/classifications/xml.png');
+}
+
+.groovy-img {
+    background-image: url('./assets/classifications/groovy.png');
+}
+
+.kotlin-img {
+    background-image: url('./assets/classifications/kotlin.png');
+}
+
+.clojure-img {
+    background-image: url('./assets/classifications/clojure.png');
+}
+
+.emacs-lisp-img {
+    background-image: url('./assets/classifications/emacslisp.png');
+}
+
+.elixir-img {
+    background-image: url('./assets/classifications/elixir.png');
+}

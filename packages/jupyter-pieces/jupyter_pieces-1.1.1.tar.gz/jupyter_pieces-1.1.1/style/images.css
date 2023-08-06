@@ -1,0 +1,33 @@
+.pfd-black {
+    background-image: url('./assets/pfd-black.png');
+}
+.pfd-white {
+    background-image: url('./assets/pfd-white.png');
+}
+
+.illustration-robot-plugging-in-black {
+    background-image: url('./assets/illustrations/Robot_Plugging_In-black.png');
+}
+
+.illustration-robot-plugging-in-white {
+    background-image: url('./assets/illustrations/Robot_Plugging_In-white.png');
+}
+
+.illustration-cat-fish-bowl-black {
+    background-image: url('./assets/illustrations/Cat_Fish_Bowl-black.png');
+}
+
+.illustration-cat-fish-bowl-white {
+    background-image: url('./assets/illustrations/Cat_Fish_Bowl-white.png');
+}
+
+.onboarding-saveWithShortcut {
+    background-image: url('./assets/onboarding/saveWithShortcut.png');
+}
+
+.onboarding-keyboardShortcuts {
+    background-image: url('./assets/onboarding/keyboardShortcuts.png');
+}
+.onboarding-withDesktopApp {
+    background-image: url('./assets/onboarding/withDesktopApp.png');
+}
