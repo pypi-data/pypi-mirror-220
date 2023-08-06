@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+chungus/__init__.py
+chungus/chungus.py
+chungus.egg-info/PKG-INFO
+chungus.egg-info/SOURCES.txt
+chungus.egg-info/dependency_links.txt
+chungus.egg-info/top_level.txt

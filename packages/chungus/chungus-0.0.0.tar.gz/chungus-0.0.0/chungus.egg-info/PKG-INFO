@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: chungus
+Version: 0.0.0
+Summary: Chunky Module
+Author: PyModuleDev
+Author-email: pxcom@mail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## CHUNGUS
+
+*IN ALL TEXT BELOW, LARGE BRACKETS({}) MEANS FOR YOU TO COME UP WITH SOMETHING *
+
+CHUNKY MOD THAT LAGS AND TAKES UP SPACE
+
+**To troll your friends(METHOD 1: Harder but less sus):**
+
+Step 1: Prepare
+
+You need a setup like this:
+
+`{name}`
+
+|----`{name}`
+
+. . . . |-----`__init__.py`
+
+. . . . |-----`{name}.py`
+
+|----`README.md`
+
+|----`LICENSE`
+
+|_ _ `setup.py`
+
+Step 2: Write code
+
+In `{name}.py`, write `import chunky`
+
+In README.md, write a description(like this description is!)
+
+In LICENSE, you use "No License" as my Apache 2.0 does not let you publish publicly. You cannot publish this publicly in any way, however you can spread word about the original Chungus module by me. Use PyModuleDev as my name.
+
+In setup.py, write this:
+
+```
+from setuptools import setup
+with open("README.md", "r", encoding="utf-8")as fh:    long_description = fh.read()
+setup(
+name="{name}",
+version="0.0.0",author="{your_name}",   author_email="{your_email}",    description="Chunky Module",    long_description=long_description,    long_description_content_type="text/markdown",    packages=["snoringness"],    classifiers=[        "Development Status :: 5 - Production/Stable",        "Intended Audience :: Developers",        "Programming Language :: Python :: 3"    ],    python_requires=">=3.6")
+```
+
+Step 3: Write commands
+
+Open the Python terminal. There, use the cd command to navigate to the directory your `setup.py` is in. Now type `pip install setuptools` and run. Last, type `python setup.py sdist bdist_wheel` and that's it! Look inside the newly added `build` and `dist` folders and find the `.tar.gz` file OR the `.whl` file. Distribute these files any PRIVATE way you want. Distributing publicly would "disturb" the Apache License 2.0.
+
+
+**To troll your friends(Easier but more sus):**
+
+Have your friend run `pip install chungus`. Thats it!
+
+
+
+
+#### LICENSE
+
+1. Permissions
+
+   You are granted a non-exclusive, worldwide, royalty-free license to use the Chungus module as you see fit.
+
+2. Limitations
+
+   You are not granted any rights to modify, distribute, sublicense, or sell the source code of the Chungus module.
+
+3. Warranty
+
+   The Chungus module is provided "as is," without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the Chungus module or the use or other dealings in the Chungus module.
