@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: easypcd
+Version: 0.0.2
+Summary: a package for pcd
+Home-page: https://blog.csdn.net/qq_18566467?spm=1010.2135.3001.5343
+Author: GentleWang
+Author-email: 189030005@stu.just.edu.cn
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
