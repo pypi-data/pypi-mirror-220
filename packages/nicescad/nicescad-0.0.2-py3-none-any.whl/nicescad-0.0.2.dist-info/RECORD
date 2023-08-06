@@ -1,0 +1,12 @@
+nicescad/__init__.py,sha256=HBhfINMXdfWYIApaqr1-ML8jjr202wq0tL7y497Ka5o,19
+nicescad/local_filepicker.py,sha256=T3hwKFZtf-EKdMl0VNSvF_HAADWe3ga5ppbdBjyBNpg,3447
+nicescad/nicescad_cmd.py,sha256=m4Be-b22QrKQh28YdKDuVdquJ6PLd3xeVrPlTVhnXcY,2898
+nicescad/openscad.py,sha256=GGxLYxN6lEf8cFENXX6Q4v4DhiHUaGeykl439se5GYI,4510
+nicescad/profiler.py,sha256=MedbBA85OKdzUg4Lg3VrWY_ijwCR4lKjCs9iBeb1GWE,804
+nicescad/version.py,sha256=NcKhdY1W7PsszPeOKopnP6YRNKa-9LYuZ20v4KS4Uaw,880
+nicescad/webserver.py,sha256=tdVOdXFwArqiUpnWhVwRygbVVyS1BDQWq2ogPl55IJA,7065
+nicescad-0.0.2.dist-info/METADATA,sha256=pDc3igqFdhiCLwQlGQusvVOTMD4xpZNCmXoUXne_t64,2458
+nicescad-0.0.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+nicescad-0.0.2.dist-info/entry_points.txt,sha256=S65AYIcxDLrHCCfdsDHKmWWOHk36ouEKkwPemDijBGI,56
+nicescad-0.0.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nicescad-0.0.2.dist-info/RECORD,,
