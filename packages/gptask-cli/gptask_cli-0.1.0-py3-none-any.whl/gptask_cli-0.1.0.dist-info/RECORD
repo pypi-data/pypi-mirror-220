@@ -1,0 +1,9 @@
+gptask_cli/.gptask.example/prompts/doc-reviewer.gptask,sha256=mTLkPKtZopXDcT76-mR16D1LwJhyn8esv27GRw2vgvY,200
+gptask_cli/__init__.py,sha256=8R9UIFezuMjfGzI6fHkQ7qGBeLu78-UPb0bLTcLQJN4,2090
+gptask_cli/conf.py,sha256=Zp9cCGL5Z4GiUoRUk0XFJ5Fw1Ff9bXRFcnLuU7cWX2s,1652
+gptask_cli/git_checker.py,sha256=OUu9kVNZcWL8bFRWQROeeIIGmlKrank3AVoj-QPDNrc,854
+gptask_cli/openai_gptask.py,sha256=MQDMLGZNbx36_lJybsURfMab-ACQ_PbABgGgr8E7_wo,1323
+gptask_cli-0.1.0.dist-info/METADATA,sha256=1vnyR8AZ0KuiwFD0y_oQIeNGTCXRyAZtYFI4A8DTOwo,472
+gptask_cli-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+gptask_cli-0.1.0.dist-info/entry_points.txt,sha256=sbZiSheGIv-OM7lv2MtzUv_0UxZqUK3zTXP7rIdwzSc,61
+gptask_cli-0.1.0.dist-info/RECORD,,
