@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: bitcoin-qrreader
+Version: 0.1.0
+Summary: Bitcoin qr reader
+Home-page: https://github.com/andreasgriffin/bitcoin_qrreader
+Author: Andreas Griffin
+Author-email: andreasgriffin@proton.me
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7,<4.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# A python bitcoin qr reader
+
+Run it with
+
+```
+python demo.py
+```
+
+
+
+# Install package
+
+
+
+### From pypi
+
+```shell
+pip install bitcoin_qrreader
+```
+
+
+
+###  From git
+
+```shell
+python setup.py sdist bdist_wheel
+pip install dist/bitcoin_qrreader*.whl  
+```
+
+
+
