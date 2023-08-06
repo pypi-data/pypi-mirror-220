@@ -1,0 +1,12 @@
+build
+packaging
+pyparsing
+tomli
+numpy
+pandas
+scipy
+scikit-learn
+scanpy>=1.4.5
+tqdm>=4.28.1
+leidenalg>=0.8.3
+scvelo>=0.2.4

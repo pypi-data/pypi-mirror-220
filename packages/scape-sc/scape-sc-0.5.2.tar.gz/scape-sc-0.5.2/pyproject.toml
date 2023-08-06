@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=42.0","wheel","build","packaging","tomli"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scape-sc"
+version = "0.5.2"
+authors = [
+  { name="Yuzhe Li", email="liyuzhezju@gmail.com" },
+]
+description = "Single-Cell data Analysis via Perturbation Estimation"
+readme = "README.md"
+requires-python = ">3.6.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Bio-Informatics',
+]
+dependencies = [
+    "build",
+    "packaging",
+    "pyparsing",
+    "tomli",
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "scanpy>=1.4.5",
+    "tqdm>=4.28.1",
+    "leidenalg>=0.8.3",
+    "scvelo>=0.2.4"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ericli0419/SCAPE"
+"Bug Tracker" = "https://github.com/ericli0419/SCAPE/issues"
