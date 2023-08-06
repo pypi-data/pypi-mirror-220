@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "wsuks"
+version = "0.4.2"
+description = "A Tool for automating the MITM attack on the WSUS connection"
+authors = ["Alexander Neff <alex99.neff@gmx.de>"]
+readme = "README.md"
+license = "MIT"
+packages = [
+    { include = "wsuks" }
+]
+
+[tool.poetry.scripts]
+wsuks = "wsuks.wsuks:main"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+impacket = "^0.10.0"
+scapy = "^2.5.0"
+termcolor = "^2.2.0"
+bs4 = "^0.0.1"
+lxml = "^4.9.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+ignore = ["E501"]
