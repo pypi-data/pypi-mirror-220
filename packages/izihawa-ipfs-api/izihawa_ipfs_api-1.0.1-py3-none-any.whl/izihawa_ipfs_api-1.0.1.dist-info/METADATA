@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: izihawa-ipfs-api
+Version: 1.0.1
+Summary: Async client for IPFS API
+Author: Pasha Podolsky
+Project-URL: Homepage, https://github.com/izihawa/ipfs-api
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: aiohttp (==3.8.5)
+Requires-Dist: aiobaseclient (==0.2.4)
+
