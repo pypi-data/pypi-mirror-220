@@ -1,0 +1,9 @@
+svc_reg/__init__.py,sha256=lU9XFv8ruCKqRN7f9njB9YJK7pp8OeP_qYT89EjLgR0,476
+svc_reg/_core.py,sha256=vFwzMz_gc5eRwWYr8NFtZDn6cu2Ff7Z-cZVJ-D7CeDY,6879
+svc_reg/exceptions.py,sha256=aP1chdq_5XR6o_A1zaZ2f0bDNHDqI5DaxEj_5ZbwE6Q,234
+svc_reg/flask.py,sha256=yzFk16XZFM5KDG5r5ixFzSCypXQKGKHWlrEuGZigsWs,2377
+svc_reg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svc_reg-23.3.0.dist-info/METADATA,sha256=tJUl7U2J4YjpEkC43CaY7mp8nMH1kIoQwFBp-wsOrzM,5654
+svc_reg-23.3.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+svc_reg-23.3.0.dist-info/licenses/LICENSE,sha256=FQKCxfFYlSI2w_mFQeQCrPtR1L7AfKexnJD8BlhL0zQ,1072
+svc_reg-23.3.0.dist-info/RECORD,,
