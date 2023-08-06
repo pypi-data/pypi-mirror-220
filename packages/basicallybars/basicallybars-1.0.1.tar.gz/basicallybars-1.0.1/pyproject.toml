@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "basicallybars"
+version = "1.0.1"
+authors = [
+  { name="Sleepy82", email="shgj7y1z@duck.com" },
+]
+description = "A visual way to display algorithm status."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Github" = "https://github.com/Coder2354/basicallybars/tree/master"
