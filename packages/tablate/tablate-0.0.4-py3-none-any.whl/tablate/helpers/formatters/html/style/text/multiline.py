@@ -1,0 +1,2 @@
+def multiline():
+    pass
