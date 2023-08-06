@@ -1,0 +1,15 @@
+README.md
+setup.py
+minecraft_script/__init__.py
+minecraft_script/__main__.py
+minecraft_script/build.py
+minecraft_script/interpreter.py
+minecraft_script/parser.py
+minecraft_script/parsetab.py
+minecraft_script/shell_commands.py
+minecraft_script/tokens.py
+minecraft_script.egg-info/PKG-INFO
+minecraft_script.egg-info/SOURCES.txt
+minecraft_script.egg-info/dependency_links.txt
+minecraft_script.egg-info/requires.txt
+minecraft_script.egg-info/top_level.txt
