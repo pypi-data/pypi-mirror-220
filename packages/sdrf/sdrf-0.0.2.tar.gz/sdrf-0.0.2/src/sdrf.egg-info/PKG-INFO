@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sdrf
+Version: 0.0.2
+Summary: Simple rest framework is an abstraction for building rest api with well written documentations
+Home-page: https://github.com/hus201/srf
+Author: Hussein Anabtawi
+Author-email: Hussein Anabtawi <husainanabtawi2001@hotmail.com>
+Project-URL: Homepage, https://github.com/hus201/srf
+Project-URL: Bug Tracker, https://github.com/hus201/srf/issues
+Keywords: django,rest apis,abstraction
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Simple Django Rest Framework
+
+Simple Django Rest Framework is django based app used to provide abstraction that combines both django rest framework with drf_yasg a swagger generator to implement good looking and  well documented apis using djang
+
+
+## Quick Start
+
+### Install
+
+
+### Configure
+
+### Build API Endpoints
+
+
