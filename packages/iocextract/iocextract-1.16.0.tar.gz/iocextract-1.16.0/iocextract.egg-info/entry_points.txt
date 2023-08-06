@@ -1,0 +1,2 @@
+[console_scripts]
+iocextract = iocextract:main
