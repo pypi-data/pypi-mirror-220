@@ -1,0 +1,12 @@
+mr/__init__.py,sha256=XVresAwnVohxqJNRkasrdsEyeSKhpUM6m6DQ_hNSUos,177
+mr/config/__init__.py,sha256=iuJSl7jqC35UPd6Bu49OhP-ku7MhrizjEMkvBsFw-xQ,999
+mr/mime.py,sha256=RIjBUT33jznx9GaIDs7XjUr-T7Utwjz5ze1CAspCUmQ,2425
+mr/states/__init__.py,sha256=SsrGd_gBQz6QQDfSBKr9o2FtsAnu2gKUcQIMbl8ff2I,326
+mr/states/implementations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mr/states/implementations/memory.py,sha256=n63Va5YutqCfy4VRdj1-1agWDCrgciwaZCvAzv5TZq0,1179
+mr/states/implementations/redis.py,sha256=9iZjZSH_x4ApHlJHasKFpASkojIKxCUOl4ehYBJzfK0,1955
+mr/states/interface.py,sha256=VPXyN31BX-JhWyQOw0NZNIZtzZEW7VNDrBZEo1DD-5k,1141
+my_mimic-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+my_mimic-0.2.0.dist-info/METADATA,sha256=WMlwQ0P4GyIYdyKmk3ZHpv8JRQqAdQYKHIzwIV26Wio,9613
+my_mimic-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+my_mimic-0.2.0.dist-info/RECORD,,
