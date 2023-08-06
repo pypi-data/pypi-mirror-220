@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plotagain"
+authors = [
+    {name = "Jeremy John Henry Wilkinson", email = "jero.wilkinson@gmail.com"},
+]
+description = "A helper tool for matplotlib. Provides a contextmanager which automatically saves data used to make plots and automatically generates a script to re-load and re-plot this data at a later stage."
+readme = "README.md"
+requires-python = ">=3.0"
+keywords = ["save data", "matplotlib", "plt"]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Framework :: Matplotlib",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "matplotlib",
+    "numpy",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://bitbucket.org/jjhw3/plotagain/"
+
+[tool.setuptools.dynamic]
+version = {attr = "plotagain.VERSION"}
