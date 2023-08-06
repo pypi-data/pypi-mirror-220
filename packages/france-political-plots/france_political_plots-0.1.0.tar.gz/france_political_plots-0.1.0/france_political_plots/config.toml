@@ -1,0 +1,14 @@
+projects = [
+    "lfi-spending",
+]
+
+[aliases]
+
+lfi-spending = [
+    "lfi-2022",
+    "lfi22"
+]
+
+[procfiles]
+
+lfi-spending = "web: gunicorn france_political_plots.server.government_spending:server"
