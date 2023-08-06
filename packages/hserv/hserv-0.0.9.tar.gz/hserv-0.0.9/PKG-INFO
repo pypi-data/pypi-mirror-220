@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hserv
+Version: 0.0.9
+Summary: cli / api toolchain for managing hydrocode servers
+Author: Mirko Mälicke
+Author-email: mirko@hydrocode.de
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hydrocode-server
+CLI+API toolchain for hydrocode-server management
