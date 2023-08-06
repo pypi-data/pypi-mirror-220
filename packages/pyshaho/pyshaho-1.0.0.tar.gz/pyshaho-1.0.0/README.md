@@ -1,0 +1,1 @@
+omadi inja kir bokhori dadash?
