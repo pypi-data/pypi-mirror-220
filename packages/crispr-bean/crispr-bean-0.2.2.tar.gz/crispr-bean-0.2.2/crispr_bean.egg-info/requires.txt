@@ -1,0 +1,15 @@
+numpy
+perturb-tools>=0.2.0
+anndata>=0.8.0
+Bio>=1.5
+matplotlib
+pandas
+scipy
+seaborn
+tqdm
+
+[model]
+pyBigWig
+pyro-ppl<=1.8.1
+statsmodels
+torch<2
