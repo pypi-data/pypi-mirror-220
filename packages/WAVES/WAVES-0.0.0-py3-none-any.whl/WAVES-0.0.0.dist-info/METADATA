@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: WAVES
+Version: 0.0.0
+Summary: Wind Asset Value Estimation System
+Author: Rob Hammond
+Author-email: rob.hammond@nrel.gov
+Project-URL: Source, https://github.com/NREL/WAVES
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: attrs
+Requires-Dist: pyyaml
+Requires-Dist: matplotlib (>=3.6)
+Requires-Dist: numpy-financial (>=1.0.0)
+Requires-Dist: floris (>=3.3)
+Requires-Dist: wombat (>=0.7.1)
+Requires-Dist: orbit-nrel (>=1.0.8)
+Provides-Extra: all
+Requires-Dist: pre-commit ; extra == 'all'
+Requires-Dist: black ; extra == 'all'
+Requires-Dist: mypy ; extra == 'all'
+Requires-Dist: flake8 ; extra == 'all'
+Requires-Dist: flake8-docstrings ; extra == 'all'
+Requires-Dist: isort ; extra == 'all'
+Requires-Dist: ruff ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: jupyter-book ; extra == 'all'
+Requires-Dist: myst-nb ; extra == 'all'
+Requires-Dist: myst-parser ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-docstrings ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: jupyter-book ; extra == 'docs'
+Requires-Dist: myst-nb ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+
+# WAVES: Wind Asset Value Estimation System
+
+Coming soon!
