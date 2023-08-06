@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: langproxy
+Version: 0.0.2
+Summary: Language Model Proxy
+Home-page: https://github.com/jinto/langproxy
+Author: jaypark
+Author-email: jaypark@gmail.com
+Keywords: chatbot,ai,ml,llm
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+
