@@ -1,0 +1,7 @@
+README
+setup.cfg
+setup.py
+defense.egg-info/PKG-INFO
+defense.egg-info/SOURCES.txt
+defense.egg-info/dependency_links.txt
+defense.egg-info/top_level.txt
