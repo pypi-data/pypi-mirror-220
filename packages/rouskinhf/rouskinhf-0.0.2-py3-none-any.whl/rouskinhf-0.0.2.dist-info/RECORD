@@ -1,0 +1,16 @@
+rouskinhf/__init__.py,sha256=tQPI39asw9riLNaS7F8pJSeTJ91nSDfnYnUENQQvWeU,69
+rouskinhf/datafolder.py,sha256=suHuIO7YfP99WBJQZvLlHRzgvkSpFvoYcWzNZjt1mzA,14888
+rouskinhf/datapoint.py,sha256=AmRJSynMIQyr4c945xYPk-KuHqDa9943a8ui64qbhbU,5620
+rouskinhf/env.py,sha256=IfMXTEMPWrT4_fkI4IwswSTHss0TPIRYfzBh0fVtoGs,920
+rouskinhf/finder.py,sha256=osm26Hf-0WidhdBPhDK5hYZ_zNfy2xNQwJ6AKedFuK4,1997
+rouskinhf/info_file.py,sha256=wJVIelB1cPPqIzixaYnl7glcOqaK_3rDixqipSkP7Xo,3136
+rouskinhf/list_datapoints.py,sha256=dekzlj2fglUuy5WAZF64Z3iZhibtfCODyYTEHCwfXjY,9593
+rouskinhf/parsers.py,sha256=2JEEpQyCyNthqFM8TD8Cdj1dsaHrPuSLdTQe8-wFCGA,3685
+rouskinhf/path.py,sha256=oSodwy6Rnn3U-5t7aN21VQ7022r4VGjQeyGnkRLFLY8,2608
+rouskinhf/rnastructure.py,sha256=ebRLoTSw36czgscb5mayXeBdNYnVHveuAY62ch-gWKc,6222
+rouskinhf/util.py,sha256=6rFqOpJFqjYLd4rlOFNwQdg2faie1036qGsT6y_TZT0,3493
+rouskinhf-0.0.2.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+rouskinhf-0.0.2.dist-info/METADATA,sha256=_pFzlv2hOERpBJv6uuR53rqb2Ldco1LQMiB30TW9B0E,758
+rouskinhf-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rouskinhf-0.0.2.dist-info/top_level.txt,sha256=4gTNgCeACvF_U5mgP_-rq3JtFjuD0X7cTpIEmwLnKkw,10
+rouskinhf-0.0.2.dist-info/RECORD,,
