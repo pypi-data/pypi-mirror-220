@@ -1,0 +1,11 @@
+pgpc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgpc/parser.py,sha256=KgWYankh1-X7x4fWVxC7imv64cfFET-sNw57fP7GB5k,2114
+pgpc/scanner.py,sha256=lQwRJkxGUmuTazXBqJu1e0C2ZVJ96hjtGzOPxWHn0XA,2685
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_parse_text.py,sha256=q7gKYQFEdPlBwjVP-Mgfjif-6fdLyKOhahK1B8wrtCA,827
+pgpc-0.0.3.dist-info/LICENSE,sha256=QwWv2ncP3VYGsr-bJrSD9SRohXmv3B6cr9PvwAyDSCM,11340
+pgpc-0.0.3.dist-info/METADATA,sha256=xMfsTOi0TA8L57fLbErfWLkyOT_m_nKhIHFlnSRDgAA,2272
+pgpc-0.0.3.dist-info/NOTICE,sha256=UD-VEK7KlDbjU8w7R2pukX8UsCes1s-fY6CrahPysMM,138
+pgpc-0.0.3.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+pgpc-0.0.3.dist-info/top_level.txt,sha256=EBLb6OyqDTYAhnPZ25nxSXEYaMyRYYaOUuOJrsbeQyQ,10
+pgpc-0.0.3.dist-info/RECORD,,
