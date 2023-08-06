@@ -1,0 +1,2 @@
+[console_scripts]
+pai = pai.__main__:main
