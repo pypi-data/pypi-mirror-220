@@ -1,0 +1,3 @@
+Django
+core-parser-app==2.4.*
+xml-utils==1.21.*
