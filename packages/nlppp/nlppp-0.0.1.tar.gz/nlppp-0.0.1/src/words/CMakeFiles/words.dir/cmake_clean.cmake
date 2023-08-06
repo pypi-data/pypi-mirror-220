@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "../../lib/libwords.a"
+  "../../lib/libwords.pdb"
+  "CMakeFiles/words.dir/word1.cpp.o"
+  "CMakeFiles/words.dir/word10.cpp.o"
+  "CMakeFiles/words.dir/word11.cpp.o"
+  "CMakeFiles/words.dir/word12.cpp.o"
+  "CMakeFiles/words.dir/word13.cpp.o"
+  "CMakeFiles/words.dir/word14.cpp.o"
+  "CMakeFiles/words.dir/word15.cpp.o"
+  "CMakeFiles/words.dir/word16.cpp.o"
+  "CMakeFiles/words.dir/word17.cpp.o"
+  "CMakeFiles/words.dir/word18.cpp.o"
+  "CMakeFiles/words.dir/word19.cpp.o"
+  "CMakeFiles/words.dir/word2.cpp.o"
+  "CMakeFiles/words.dir/word20.cpp.o"
+  "CMakeFiles/words.dir/word21.cpp.o"
+  "CMakeFiles/words.dir/word22.cpp.o"
+  "CMakeFiles/words.dir/word23.cpp.o"
+  "CMakeFiles/words.dir/word24.cpp.o"
+  "CMakeFiles/words.dir/word25.cpp.o"
+  "CMakeFiles/words.dir/word26.cpp.o"
+  "CMakeFiles/words.dir/word27.cpp.o"
+  "CMakeFiles/words.dir/word28.cpp.o"
+  "CMakeFiles/words.dir/word29.cpp.o"
+  "CMakeFiles/words.dir/word3.cpp.o"
+  "CMakeFiles/words.dir/word30.cpp.o"
+  "CMakeFiles/words.dir/word4.cpp.o"
+  "CMakeFiles/words.dir/word5.cpp.o"
+  "CMakeFiles/words.dir/word6.cpp.o"
+  "CMakeFiles/words.dir/word7.cpp.o"
+  "CMakeFiles/words.dir/word8.cpp.o"
+  "CMakeFiles/words.dir/word9.cpp.o"
+  "CMakeFiles/words.dir/wordarrs.cpp.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/words.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

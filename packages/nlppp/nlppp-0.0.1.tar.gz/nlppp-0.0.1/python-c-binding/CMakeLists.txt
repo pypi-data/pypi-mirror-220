@@ -1,0 +1,17 @@
+if(WIN32)
+  add_definitions( -DMSVC_VERSION=${MSVC_VERSION} -D_CRT_SECURE_NO_WARNINGS )
+else()
+  add_definitions( -DLINUX -Wno-write-strings -Wno-deprecated)
+endif()
+
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Debug)
+endif()
+
+if(WIN32)
+  pybind11_add_module(nlppp MODULE main.cpp)
+  target_link_libraries(nlppp PRIVATE prim kbm consh words lite pybind11::module)
+else()
+  pybind11_add_module(nlppp MODULE main.cpp)
+  target_link_libraries(nlppp PRIVATE prim kbm consh words lite pybind11::module)
+endif()

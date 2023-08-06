@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: nlppp
+Version: 0.0.1
+Summary: Bindings for nlp-engine using pybind11
+Author: Sarthak Diwan
+Author-email: sarthakdiwan5@gmail.com
+Requires-Python: >=3.7
+Provides-Extra: test
+License-File: LICENSE
