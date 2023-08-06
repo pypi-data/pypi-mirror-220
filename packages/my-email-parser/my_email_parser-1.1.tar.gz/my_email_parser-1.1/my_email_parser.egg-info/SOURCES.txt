@@ -1,0 +1,7 @@
+settingup.py
+setup.py
+my_email_parser.egg-info/PKG-INFO
+my_email_parser.egg-info/SOURCES.txt
+my_email_parser.egg-info/dependency_links.txt
+my_email_parser.egg-info/requires.txt
+my_email_parser.egg-info/top_level.txt
