@@ -1,0 +1,13 @@
+w4h/__init__.py,sha256=BYXythCiA_ouzstVPhfp8c82imDXfkhoeLjJk5ebP6g,3475
+w4h/classify.py,sha256=4lFk5qtE0IXKYjSg-DV1X2VRjwYrYfK8tEA7EaU1cOI,16301
+w4h/clean.py,sha256=S5-iB4o9YDs6huLtYsQCPJwGvSuA0WkA2JkGEMDUAL4,10251
+w4h/core.py,sha256=jg6Wzt5rmYVgu0e3WUz6E3nRHhPWh02GrgjqBOM2n_A,24888
+w4h/export.py,sha256=r58SyFV6hEf6r-dwu_79ZPqEeW2wpuVBWd6KqVOKkao,7053
+w4h/layers.py,sha256=UILd8y9UllUOJQ9tC0m3dlRMe915-uN6Ar3L_5bAX_o,25324
+w4h/mapping.py,sha256=PNAdcAxenrHBHYO1hREtNZHsBK-G7-BApzZHqYP7AnY,29779
+w4h/read.py,sha256=rE3ag7FZO3zCjnD43rgKw_whtRPIrqGrAcLtGAe4jio,30609
+wells4hydrogeology-0.0.7.dist-info/LICENSE,sha256=PXlneO4YVrbfctc8JQ8bVYaPQFEmyIg-9gieaJ25JwE,1067
+wells4hydrogeology-0.0.7.dist-info/METADATA,sha256=k6YpAA3irhGqMM085INjP54ckNvzRWY4rqkzbOWtGdY,5021
+wells4hydrogeology-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+wells4hydrogeology-0.0.7.dist-info/top_level.txt,sha256=SEJSDsHfkJD58pYdASckEzXzTHe7T5ZuCiv3ArlKNBo,4
+wells4hydrogeology-0.0.7.dist-info/RECORD,,
