@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: markdown-analysis
+Version: 0.0.1
+Summary: A library to analyze markdown files
+Home-page: https://github.com/yannbanas/mrkdwn_analysis
+Author: yannbanas
+Author-email: yannbanas@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+
+UNKNOWN
+
