@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: moss_decoder
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Python module providing a decoder for the MOSS chip protocol.
+Author: Marc Beck König <mbkj@tutamail.com>
+Author-email: Marc Beck König <mbkj@tutamail.com>
+License: MIT OR Apache-2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# MossDecoder
+[![CI](https://github.com/CramBL/moss_decoder/actions/workflows/CI.yml/badge.svg)](https://github.com/CramBL/moss_decoder/actions/workflows/CI.yml)
+
+
+Python module implemented in Rust for decoding raw data from the MOSS chip.
