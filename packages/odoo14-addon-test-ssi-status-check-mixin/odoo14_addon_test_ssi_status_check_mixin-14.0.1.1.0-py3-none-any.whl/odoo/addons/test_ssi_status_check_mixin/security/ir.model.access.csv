@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_test_status_check_all,access.test.status.check – All Users,model_test_status_check,,1,1,1,1
