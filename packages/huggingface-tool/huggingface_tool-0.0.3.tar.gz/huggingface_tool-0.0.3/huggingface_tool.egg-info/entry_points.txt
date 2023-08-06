@@ -1,0 +1,2 @@
+[console_scripts]
+htool = huggingface_tool.cli.cli:cli
