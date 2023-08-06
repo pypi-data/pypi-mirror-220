@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ptb-state-handler
+Version: 0.2.0
+Summary: State handler for python-telegram-bot library
+License: Apache-2.0
+Author: Vlad Pastushenko
+Author-email: iam@vladpi.me
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: python-telegram-bot (>=20.0,<21.0)
