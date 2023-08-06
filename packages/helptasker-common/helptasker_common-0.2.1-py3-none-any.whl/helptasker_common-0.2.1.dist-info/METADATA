@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: helptasker-common
+Version: 0.2.1
+Summary: Shared Library
+Home-page: https://github.com/helptasker/common/
+Keywords: fastapi,pydantic,asyncio
+Author: Kostya Ten
+Author-email: kostya@yandex.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: FastAPI
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pydantic :: 2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: asgi-lifespan (>=2.1.0,<3.0.0)
+Requires-Dist: fastapi[all] (>=0.100.0,<0.101.0)
+Requires-Dist: httpx[http2] (>=0.24.1,<0.25.0)
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc (>=1.19.0,<2.0.0)
+Requires-Dist: python-json-logger (>=2.0.7,<3.0.0)
+Requires-Dist: uvicorn (>=0.23.0,<0.24.0)
+Project-URL: Documentation, https://github.com/helptasker/common/
+Project-URL: Repository, https://github.com/helptasker/common/
+Description-Content-Type: text/markdown
+
+Helptasker common
+=================
+
+[![Testing](https://github.com/helptasker/common/actions/workflows/testing.yml/badge.svg)](https://github.com/helptasker/common/actions/workflows/testing.yml)
+[![codecov](https://codecov.io/github/helptasker/common/branch/main/graph/badge.svg?token=IZK3GQGU2U)](https://codecov.io/github/helptasker/common)
+
