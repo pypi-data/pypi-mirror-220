@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: orbitalcyber-sdk
+Version: 0.1.0
+Summary: This package provides an SDK that can be used to jumpstart projects that interact with the OrbitalCyber API
+Home-page: https://github.com/Sage-Infrastructure-Solutions-Group-Inc/orbitalcyber-python-sdk
+Author: Rylan Merritt
+Author-email: rmerritt@sageisg.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: requests
+
