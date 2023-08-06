@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pymsprog"
+version = "0.1.1"
+description = ""
+authors = ["noemi.montobbio <noemi.montobbio@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[tool.poetry.group.dev.dependencies]
+scriv = "^1.2.1"
+
+
+[tool.scriv]
+format = "md"
+version = "literal: pymsprog/__init__.py: __version__"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
