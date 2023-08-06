@@ -1,0 +1,12 @@
+LICENCE.md
+README.md
+setup.py
+argil/__init__.py
+argil/api_definitions.py
+argil/argil_config.py
+argil/argil_error.py
+argil.egg-info/PKG-INFO
+argil.egg-info/SOURCES.txt
+argil.egg-info/dependency_links.txt
+argil.egg-info/requires.txt
+argil.egg-info/top_level.txt
