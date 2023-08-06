@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "maglevai"
+version = "0.1.3"
+description = "Making AI content safe and trustworthy"
+authors = ["Maglev AI, Inc. <97685959+MaglevAIInc@users.noreply.github.com>"]
+readme = "README.md"
+repository = "https://github.com/Maglev-AI/MaglevAI"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
