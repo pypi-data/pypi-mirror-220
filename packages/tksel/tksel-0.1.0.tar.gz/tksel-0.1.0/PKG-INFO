@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: tksel
+Version: 0.1.0
+Summary: Scrapper for Minet csvs on tiktok
+Project-URL: Documentation, https://github.com/Marceau-h/tksel#readme
+Project-URL: Issues, https://github.com/Marceau-h/tksel/issues
+Project-URL: Source, https://github.com/Marceau-h/tksel
+Author-email: Marceau-h <106751184+Marceau-h@users.noreply.github.com>
+Maintainer-email: Marceau-h <106751184+Marceau-h@users.noreply.github.com>
+License-Expression: AGPL-3.0-or-later
+License-File: LICENSE.txt
+Keywords: TikTok,minet,tksel,video
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: pandas
+Requires-Dist: requests>2.30.0
+Requires-Dist: selenium
+Requires-Dist: tqdm>4.60.0
+Description-Content-Type: text/markdown
+
+# tksel 
+
+[![PyPI - Version](https://img.shields.io/pypi/v/tksel.svg)](https://pypi.org/project/tksel)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tksel.svg)](https://pypi.org/project/tksel)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install tksel
+```
+
+## License
+
+`tksel` is distributed under the terms of the [AGPLv3 license](https://www.gnu.org/licenses/agpl-3.0.en.html).
