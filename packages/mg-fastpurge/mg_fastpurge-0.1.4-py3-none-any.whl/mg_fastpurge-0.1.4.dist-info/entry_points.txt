@@ -1,0 +1,3 @@
+[console_scripts]
+mgpurge=mg_fastpurge.purge:mgpurge
+
