@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyftch/__init__.py
+src/pyftch/__main__.py
+src/pyftch.egg-info/PKG-INFO
+src/pyftch.egg-info/SOURCES.txt
+src/pyftch.egg-info/dependency_links.txt
+src/pyftch.egg-info/entry_points.txt
+src/pyftch.egg-info/top_level.txt
