@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: babymaycry
+Version: 0.0.5
+Summary: Baby cry detection
+Author-email: hvppycoding <hvppycoding@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: audioop
+Requires-Dist: pyaudio
+Requires-Dist: python-telegram-bot
+Description-Content-Type: text/markdown
+
+# babymaycry
+
+Baby cry detection
