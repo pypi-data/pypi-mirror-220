@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+starfall/__init__.py
+starfall/executor.py
+starfall/helper.py
+starfall/main.py
+starfall.egg-info/PKG-INFO
+starfall.egg-info/SOURCES.txt
+starfall.egg-info/dependency_links.txt
+starfall.egg-info/not-zip-safe
+starfall.egg-info/requires.txt
+starfall.egg-info/top_level.txt
