@@ -1,0 +1,9 @@
+robust_laplacian_bindings.cp37-win_amd64.pyd,sha256=F6eXSq2dF_0w8uiTJCzNUdbh6ld1Wf8S7uXSPGJebeY,464384
+robust_laplacian_bindings.pypy37-pp73-win_amd64.pyd,sha256=8wkBQiZ6A3B2hj1982Z2g07a3uefroYpD_NF4Nk6_Vo,461312
+robust_laplacian/__init__.py,sha256=MHJ0oX-IN6YG4lMSQJU21W-BRapcY_5_qi114Nowq58,37
+robust_laplacian/core.py,sha256=yKJwxy0b8akwATykF25T67esLPAdo6WXdme6euSW_nk,1346
+robust_laplacian-0.2.5.dist-info/LICENSE,sha256=EO_1o4thufJJrTsbuutRY9980PNtsvaeaC9Mc577ZiU,1092
+robust_laplacian-0.2.5.dist-info/METADATA,sha256=HydMNKZvu2hPXg4qh5e_SDS4dT4y5sj7dMRaFowixRs,7842
+robust_laplacian-0.2.5.dist-info/WHEEL,sha256=nR0TcaMNmgCE_ksOasCKu-pqTGxyfESd_1IWrwK31vk,107
+robust_laplacian-0.2.5.dist-info/top_level.txt,sha256=qF3ljqNrF175ngEhLEcYbTovcuAKts31kPkWGJk_ipg,18
+robust_laplacian-0.2.5.dist-info/RECORD,,
