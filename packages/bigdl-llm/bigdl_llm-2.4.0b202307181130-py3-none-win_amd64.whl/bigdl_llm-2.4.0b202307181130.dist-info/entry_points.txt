@@ -1,0 +1,2 @@
+[console_scripts]
+llm-convert = bigdl.llm.convert_model:main
