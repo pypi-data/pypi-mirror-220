@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+testflows.combinatorics.egg-info/PKG-INFO
+testflows.combinatorics.egg-info/SOURCES.txt
+testflows.combinatorics.egg-info/dependency_links.txt
+testflows.combinatorics.egg-info/not-zip-safe
+testflows.combinatorics.egg-info/requires.txt
+testflows.combinatorics.egg-info/top_level.txt
+testflows/combinatorics/__init__.py
+testflows/combinatorics/covering_array.py
+testflows/combinatorics/funcs.py
