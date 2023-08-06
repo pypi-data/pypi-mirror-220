@@ -1,0 +1,11 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+converter_lib.py,sha256=wU4bU_BH9ejJJ8AvRWvioRVEDJwpDHtjPyG5thHnl2M,6048
+errno_converter.py,sha256=R45_sW501YcgQW54dW2JolP-pDoGoDmyuvPwLuDHz3o,613
+http_converter.py,sha256=dNUvgmV5yzuo8VO-PiF5fCTJzjLtXnHoYSoSajGRGiM,691
+signal_converter.py,sha256=89V3VQaoqRR7KMAylYAA1qbNKShZcy9qeBDr1zkSZu8,686
+errno_converter-0.1.5.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+errno_converter-0.1.5.dist-info/METADATA,sha256=k4NDFFEjqmm8atMEH7SbMyke-7I8Y80taHRlszHgucs,11081
+errno_converter-0.1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+errno_converter-0.1.5.dist-info/entry_points.txt,sha256=oMrtUgtd4IA-IE5kxi4v0i9EI9Vpyl0-Myficcx6FWA,135
+errno_converter-0.1.5.dist-info/top_level.txt,sha256=dWFT2kS66GE45wJsEtduhvZCUuHpxvdFCgDWspET-3g,71
+errno_converter-0.1.5.dist-info/RECORD,,
