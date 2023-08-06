@@ -1,0 +1,106 @@
+{
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": ["string", "null"]
+      },
+      "typeId": {
+        "type": ["string", "null"]
+      },
+      "statusId": {
+        "type": ["string", "null"]
+      },
+      "date": {
+        "type": ["string", "null"],
+        "format": "date"
+      },
+      "minutes": {
+        "type": ["number", "null"]
+      },
+      "timerStartedAt": {
+        "type": ["string", "null"],
+        "format": "date-time"
+      },
+      "notes": {
+        "type": ["string", "null"]
+      },
+      "isBillable": {
+        "type": ["boolean", "null"]
+      },
+      "invoiced": {
+        "type": ["boolean", "null"]
+      },
+      "createdAt": {
+        "type": ["string", "null"],
+        "format": "date-time"
+      },
+      "member": {
+        "type": ["object", "null"],
+        "properties": {
+          "id": {
+            "type": ["string", "null"]
+          },
+          "name": {
+            "type": ["string", "null"]
+          }
+        }
+      },
+      "project": {
+        "type": ["object", "null"],
+        "properties": {
+          "id": {
+            "type": ["string", "null"]
+          },
+          "name": {
+            "type": ["string", "null"]
+          },
+          "client": {
+            "type": ["object", "null"],
+            "properties": {
+              "id": {
+                "type": ["string", "null"]
+              },
+              "name": {
+                "type": ["string", "null"]
+              }
+            }
+          }
+        }
+      },
+      "role": {
+        "type": ["object", "null"],
+        "properties": {
+          "id": {
+            "type": ["string", "null"]
+          },
+          "name": {
+            "type": ["string", "null"]
+          }
+        }
+      },
+      "task": {
+        "type": ["object", "null"],
+        "properties": {
+          "id": {
+            "type": ["string", "null"]
+          },
+          "name": {
+            "type": ["string", "null"]
+          }
+        }
+      },
+      "timeOffType": {
+        "type": ["object", "null"],
+        "properties": {
+          "id": {
+            "type": ["string", "null"]
+          },
+          "name": {
+            "type": ["string", "null"]
+          }
+        }
+      }
+    },
+    "required": ["id", "typeId", "statusId", "date", "minutes", "timerStartedAt", "notes", "isBillable", "invoiced", "createdAt", "member", "project", "role", "task", "timeOffType"]
+  }
+  

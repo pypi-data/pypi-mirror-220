@@ -1,0 +1,3 @@
+[console_scripts]
+tap-ruddr=tap_ruddr.tap:Tapruddr.cli
+

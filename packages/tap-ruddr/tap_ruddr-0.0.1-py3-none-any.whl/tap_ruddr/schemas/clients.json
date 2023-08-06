@@ -1,0 +1,88 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": ["string", "null"]
+    },
+    "key": {
+      "type": ["string", "null"]
+    },
+    "name": {
+      "type": ["string", "null"]
+    },
+    "code": {
+      "type": ["string", "null"]
+    },
+    "currency": {
+      "type": ["string", "null"]
+    },
+    "notes": {
+      "type": ["string", "null"]
+    },
+    "emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "streetAddress": {
+      "type": ["string", "null"]
+    },
+    "useWorkspaceInvoiceDetails": {
+      "type": ["boolean", "null"]
+    },
+    "paymentTermsId": {
+      "type": ["string", "null"]
+    },
+    "invoiceNotes": {
+      "type": ["string", "null"]
+    },
+    "isInternal": {
+      "type": ["boolean", "null"]
+    },
+    "recordStatusId": {
+      "type": ["string", "null"]
+    },
+    "createdAt": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "practice": {
+      "type": ["object", "null"],
+      "properties": {
+        "id": {
+          "type": ["string", "null"]
+        },
+        "name": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "owner": {
+      "type": ["object", "null"],
+      "properties": {
+        "id": {
+          "type": ["string", "null"]
+        },
+        "name": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": ["string", "null"]
+          },
+          "name": {
+            "type": ["string", "null"]
+          }
+        }
+      }
+    }
+  },
+  "required": ["id", "key", "name", "currency", "useWorkspaceInvoiceDetails", "paymentTermsId", "invoiceNotes", "isInternal", "recordStatusId", "createdAt"]
+}
