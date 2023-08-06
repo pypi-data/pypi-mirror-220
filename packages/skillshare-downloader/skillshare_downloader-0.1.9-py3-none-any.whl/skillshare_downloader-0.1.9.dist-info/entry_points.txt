@@ -1,0 +1,4 @@
+[console_scripts]
+down=skillshare_downloader.main:main
+skdown=skillshare_downloader.main:main
+

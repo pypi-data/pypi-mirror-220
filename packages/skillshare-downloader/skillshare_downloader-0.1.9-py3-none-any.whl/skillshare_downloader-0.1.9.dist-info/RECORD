@@ -1,0 +1,10 @@
+skillshare_downloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skillshare_downloader/__main__.py,sha256=7tzuGbeA5JiJWE_g9pzlcTXSsKlR-iEXNEbdYd4jZMs,62
+skillshare_downloader/main.py,sha256=LavuQYXphf65Nxq4oViXipTKunJRiToAD3RRkvXKe8Q,5977
+skillshare_downloader/progress.py,sha256=3e-bLS5miIYYZoIrKusiCbXXXHslfUovCS1XluYA7PY,2529
+skillshare_downloader/skillshare.py,sha256=MW-hcQf1AmH5qJ-tsQvEzL003x0R5viPVHOppgi3pNE,16275
+skillshare_downloader-0.1.9.dist-info/LICENSE,sha256=MUgUGn8DG1gWhcDNRv3ElzgyTU5n3dfu_DVCkguyTPM,1073
+skillshare_downloader-0.1.9.dist-info/METADATA,sha256=rDNmLdE2ZCBPG46jVFbMgF7g5UWj__cLOh4oaQdh8F4,3609
+skillshare_downloader-0.1.9.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+skillshare_downloader-0.1.9.dist-info/entry_points.txt,sha256=P3i-DNrf3CFCDB2tEFWp1aAv1hFNUkgR_cwD_tg0u2g,95
+skillshare_downloader-0.1.9.dist-info/RECORD,,
