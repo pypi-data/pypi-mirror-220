@@ -1,0 +1,14 @@
+{
+  "tests/test_main_app.py": true,
+  "tests/test_v1.py": true,
+  "tests/app/builder/test_app_builder.py": true,
+  "tests/cli/builder/test_parser.py": true,
+  "tests/command/builder/test_command.py": true,
+  "tests/command/builder/test_command_builder.py": true,
+  "tests/command/builder/test_command_factory.py": true,
+  "tests/command/builder/test_command_queue.py": true,
+  "tests/config/builder/test_config.py": true,
+  "tests/config/builder/test_config_builder.py": true,
+  "tests/logger/builder/test_logger.py": true,
+  "tests/logger/builder/test_logger_factory.py": true
+}
