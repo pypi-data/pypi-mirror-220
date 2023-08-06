@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fixie-proto"
+version = "0.1.0"
+description = ""
+authors = ["Fixie.ai Team <founders@fixie.ai>"]
+readme = "README.md"
+packages = [{include = "gen/python"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+protobuf = "^4.23.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
