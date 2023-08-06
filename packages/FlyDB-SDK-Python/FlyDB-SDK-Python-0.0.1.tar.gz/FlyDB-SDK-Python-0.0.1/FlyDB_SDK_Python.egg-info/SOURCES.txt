@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+FlyDB_SDK_Python.egg-info/PKG-INFO
+FlyDB_SDK_Python.egg-info/SOURCES.txt
+FlyDB_SDK_Python.egg-info/dependency_links.txt
+FlyDB_SDK_Python.egg-info/requires.txt
+FlyDB_SDK_Python.egg-info/top_level.txt

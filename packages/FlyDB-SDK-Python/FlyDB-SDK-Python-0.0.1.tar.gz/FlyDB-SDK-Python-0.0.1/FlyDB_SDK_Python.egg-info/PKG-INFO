@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: FlyDB-SDK-Python
+Version: 0.0.1
+Summary: FlyDB python version of the sdk
+Home-page: https://github.com/ByteStorage/FlyDB-SDK-Python
+Author: GodQI
+Author-email: bsgodqi@163.com
+License-File: LICENSE
