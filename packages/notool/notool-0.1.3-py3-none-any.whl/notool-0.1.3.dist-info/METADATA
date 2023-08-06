@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: notool
+Version: 0.1.3
+Summary: Different handies
+Home-page: https://github.com/means0nothing/Notool
+Author: Pavel Shevcov
+Author-email: means0nothing@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.23.1)
+Requires-Dist: rdp (==0.8)
+Requires-Dist: dacite (==1.8.1)
+Requires-Dist: orjson (==3.8.1)
+
+Different handies
