@@ -1,0 +1,3 @@
+[console_scripts]
+lkfmt=lkfmt.__main__:_shortcut
+
