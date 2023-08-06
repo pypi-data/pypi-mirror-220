@@ -1,0 +1,9 @@
+unitee/__init__.py,sha256=-Rsit44E3o68Q_dhbFU1CzC8Sj1RFeR7rD_pHtuyi0k,36
+unitee/base_units.csv,sha256=3i4YHQyoK1EosWl7a95lGuAL0i_VO8PQgpERq8rQwaQ,116
+unitee/consts.csv,sha256=yjLnX4ZxfTmE3g9PeQnNdwnIqW-CYvTJLwFkoX9gqMM,142
+unitee/derived_units.csv,sha256=m3e543YKDKr99mgcDMBYG4PRqp3RWQ-oy6AWDVLbRb4,718
+unitee/prefixes.csv,sha256=yCPmWbnvT6JDztZvzaK3G3LH4j0aVp7ihebDtnNOAuo,310
+unitee/unitee.py,sha256=_ifdYew3Vpl8VcXen9nPfqiKfN7mfcjENA4Db3cQMhw,18699
+unitee-0.1.6.dist-info/METADATA,sha256=Iur9465DsjNaY3p0mfRgx8-p3cqmntOj3xHy3lWZFxU,525
+unitee-0.1.6.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+unitee-0.1.6.dist-info/RECORD,,
