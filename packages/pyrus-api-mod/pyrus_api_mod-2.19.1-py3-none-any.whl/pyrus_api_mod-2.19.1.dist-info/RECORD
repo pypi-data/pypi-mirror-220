@@ -1,0 +1,14 @@
+pyrus/__init__.py,sha256=muJjixSh-N_QJpScooFvxyJ8gY7AFIEZ9Xw12GYBrhQ,29
+pyrus/client.py,sha256=z6PuZO3A0GTfnANHRnICedd6jsMBFVHZFj1LJ1cNBT8,25449
+pyrus/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrus/models/constants.py,sha256=h-y0xUW0tgSDNLJTt860q0qVOKhsCH4PED7PDu7k9s8,86
+pyrus/models/customhandlers.py,sha256=mOTQE4A_2OnbUGKpKTb91OEFmFc-eiF1l1cAY1sEEhU,1475
+pyrus/models/entities.py,sha256=3PUrI1Wv0T2AaS_h7p49vyYB88UncFbdJu6DIKgBTTs,46790
+pyrus/models/requests.py,sha256=1e1JFom8BQaE36HONQdQ30lCam91y15xNzjztpqjYXc,40781
+pyrus/models/responses.py,sha256=amD-x-hLQXsPvnxMJjSsbulWP_r5rjdW6tvu0g7RNGg,18381
+pyrus_api_mod-2.19.1.dist-info/LICENSE.txt,sha256=uAtLNdjgvTe7yWWj3QZgxhBdoyDrNebcoM3qYvXTWD0,1062
+pyrus_api_mod-2.19.1.dist-info/METADATA,sha256=L1EKmpaTgPJxsUYjHd611RFLKbE63o2dbfx02oA1rOM,4802
+pyrus_api_mod-2.19.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyrus_api_mod-2.19.1.dist-info/top_level.txt,sha256=HGsVDFKv7rbQU_P7avefL9zwV7cZrjNN_wF0wNGcsME,6
+pyrus_api_mod-2.19.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyrus_api_mod-2.19.1.dist-info/RECORD,,
