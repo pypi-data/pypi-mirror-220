@@ -1,0 +1,4 @@
+app
+media
+static
+templates

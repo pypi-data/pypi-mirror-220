@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/app.py
+src/fast_transfer.egg-info/PKG-INFO
+src/fast_transfer.egg-info/SOURCES.txt
+src/fast_transfer.egg-info/dependency_links.txt
+src/fast_transfer.egg-info/top_level.txt
