@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyreloader
+Version: 0.1.4
+Summary: Reload a python program on kill signal.
+Home-page: https://github.com/chuan137/pyreloader
+Author: Chuan Miao
+Author-email: chuan137@gmail.com
+License: MIT
+Keywords: reload server
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# PyReloader
+
+Start given python script and reloads on signal SIGHUP.
+
+Installation:
+
+pip install pyreloader
+
+Usage:
+
+Start program: `pyreloader ./server.py`
+
+Reload program: `kill -HUP <pid of parent process>`
+

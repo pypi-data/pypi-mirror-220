@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+pyreloader.py
+setup.py
+pyreloader.egg-info/PKG-INFO
+pyreloader.egg-info/SOURCES.txt
+pyreloader.egg-info/dependency_links.txt
+pyreloader.egg-info/entry_points.txt
+pyreloader.egg-info/top_level.txt
