@@ -1,0 +1,3 @@
+[console_scripts]
+deploy-hf=scripts.deploy_hf:main
+
