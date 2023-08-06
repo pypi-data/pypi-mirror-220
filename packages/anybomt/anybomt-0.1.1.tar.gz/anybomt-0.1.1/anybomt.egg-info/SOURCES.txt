@@ -1,0 +1,8 @@
+LICENSE
+README.md
+anybomt.py
+setup.py
+anybomt.egg-info/PKG-INFO
+anybomt.egg-info/SOURCES.txt
+anybomt.egg-info/dependency_links.txt
+anybomt.egg-info/top_level.txt
