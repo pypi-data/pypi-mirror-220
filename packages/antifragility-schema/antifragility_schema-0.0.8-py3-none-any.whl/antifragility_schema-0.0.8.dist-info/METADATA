@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: antifragility-schema
+Version: 0.0.8
+Author-email: Mike Artemiev <mixartemev@gmail.com>
+Project-URL: Homepage, https://gitlab.com/antifragility/schema
+Project-URL: Repository, https://gitlab.com/antifragility/schema
+Requires-Python: >=3.9
+Requires-Dist: tortoise-api-model
+
