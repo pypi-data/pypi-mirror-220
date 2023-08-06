@@ -1,0 +1,7 @@
+numpy
+datetime
+os
+netCDF4
+pandas
+geopandas
+rasterio
