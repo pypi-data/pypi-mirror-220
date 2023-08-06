@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nweb_web]
+d = nweb.web:DocUi
+

@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: nweb
+Version: 1.0.2
+Summary: nweb
+Home-page: https://bsnx.net/4.0/group/pynwebclient
+Author: Bjoern Salgert
+Author-email: bjoern.salgert@hs-duesseldorf.de
+License: UNKNOWN
+Description: # nweb for Python
+        
+        
+        ## ORM
+        
+        Basisklasse für Datensaetze: `TableRow` mit den Spzialisierungen `Document` und `Group`
+        
+        ```mermaid
+        graph TD;
+          Document-->TableRow;
+          Group-->TableRow;
+        ```
+        
+        TableRow
+         - `__init__(table_name, id, connection)`
+         
+         
+         
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

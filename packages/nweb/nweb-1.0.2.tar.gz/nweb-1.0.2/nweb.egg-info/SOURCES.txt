@@ -1,0 +1,10 @@
+README.md
+setup.py
+nweb/__init__.py
+nweb/web.py
+nweb.egg-info/PKG-INFO
+nweb.egg-info/SOURCES.txt
+nweb.egg-info/dependency_links.txt
+nweb.egg-info/entry_points.txt
+nweb.egg-info/requires.txt
+nweb.egg-info/top_level.txt
