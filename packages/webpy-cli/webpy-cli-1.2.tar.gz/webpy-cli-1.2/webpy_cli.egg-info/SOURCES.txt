@@ -1,0 +1,7 @@
+setup.py
+webpy_cli/cli.py
+webpy_cli.egg-info/PKG-INFO
+webpy_cli.egg-info/SOURCES.txt
+webpy_cli.egg-info/dependency_links.txt
+webpy_cli.egg-info/entry_points.txt
+webpy_cli.egg-info/top_level.txt
