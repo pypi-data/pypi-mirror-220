@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cell-value
+Version: 1.0.1
+Summary: inner cell value
+Author: cc
+Author-email: no@example.com
+Requires-Python: >=3.6
