@@ -1,0 +1,10 @@
+bson>=0.5.10
+openai>=0.27.6
+langchain>=0.0.160
+setuptools>=67.8.0
+llama-index>=0.6.7
+PyPDF2>=3.0.1
+
+[dev]
+pytest>=7.4.0
+twine>=4.0.2

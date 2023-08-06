@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+src/chat_pdf/__init__.py
+src/chat_pdf/chat_with_pdfs.py
+src/chatting_with_pdfs.egg-info/PKG-INFO
+src/chatting_with_pdfs.egg-info/SOURCES.txt
+src/chatting_with_pdfs.egg-info/dependency_links.txt
+src/chatting_with_pdfs.egg-info/requires.txt
+src/chatting_with_pdfs.egg-info/top_level.txt
