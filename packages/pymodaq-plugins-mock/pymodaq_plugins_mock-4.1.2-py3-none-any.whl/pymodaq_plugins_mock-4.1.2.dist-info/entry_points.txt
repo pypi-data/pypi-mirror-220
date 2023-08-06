@@ -1,0 +1,8 @@
+[pymodaq.extensions]
+mock = pymodaq_plugins_mock
+
+[pymodaq.pid_models]
+mock = pymodaq_plugins_mock
+
+[pymodaq.plugins]
+mock = pymodaq_plugins_mock
