@@ -1,0 +1,13 @@
+Pylette/__init__.py,sha256=aorZ9Ot-IYN45aUutYyIEsMf7dkZV8YeBKVCbYh8aUk,102
+Pylette/auxiliary.py,sha256=q0GvPoBJytdA0zwUYOuvJyvDWTaq1vxJFnD_h2qWTTI,1921
+Pylette/cmd.py,sha256=YipBdAEsVVyptJKKCr3fXphj68hDzi9fcly8TgPOrBI,1703
+Pylette/color.py,sha256=bNGOPO6Hnu3TWUoaSBJwPN-nmOOSIgmvTwLpOPbV2sI,1196
+Pylette/color_extraction.py,sha256=6OqiFAdgGDsIZvbJmU_HUxHMiaDznejYsnJWq85bvPI,2976
+Pylette/gui.py,sha256=YnllNKZHrGOSgOi8G_Pqg0BLzmCb2A1PQ0FgKAoKccM,3869
+Pylette/palette.py,sha256=sgMdfhkghF-y76AXD54DBZR3xXoiYUY1irfs7JqNLAQ,2963
+pylette_windows-1.0.0.dist-info/LICENSE.md,sha256=hX5AiN2qB1hC3GBEADXLw80wnkO5oZVUJkCRAXh6nnQ,1095
+pylette_windows-1.0.0.dist-info/METADATA,sha256=doxHgInlw_LWgJTcKjy6z3lT8tTMwalKflXuhzmPq9A,9379
+pylette_windows-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pylette_windows-1.0.0.dist-info/entry_points.txt,sha256=CwQ-1ek2oYDl7Numi-ZREqZIjCQDTatngr2FNJpkEVU,49
+pylette_windows-1.0.0.dist-info/top_level.txt,sha256=bTsB36U3oGV4YdLTf6QnNbKjHkbKIXZpOXcPuI5ZmoY,8
+pylette_windows-1.0.0.dist-info/RECORD,,
