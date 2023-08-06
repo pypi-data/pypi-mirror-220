@@ -1,0 +1,12 @@
+entail/__init__.py,sha256=dXxAFJdtf-PzhDV-9iMprjGTi0XtaLaQEmphDDaY_7c,223
+entail/assertion.py,sha256=6DWzszmSA08yljID7QLcHCihAnivIGHeqZ3zT68R41I,1102
+entail/cli.py,sha256=JXsiK5-Udxhep7lun-Ks9rc2uw7h2HZPL-y0Rqm0bc8,625
+entail/config.py,sha256=MX0aSgmiYsNX6ryjJb1pQavJJRlryjP7XqToryNSE0M,1875
+entail/core.py,sha256=m7IVp9CruK0yJ_q40cY771gnYJ-2x7cMgamxkU2-lc4,7883
+entail/env.py,sha256=lHeazIbF7V88chP6GHg4MFLVPwZWqb4MxGjXgo8cIRU,5372
+entail/results.py,sha256=RNTxyoS5brcMITBUfFLufA_aMBs5lF_azLiQjBcrW04,11698
+entail/utils.py,sha256=R8mHNC6UhxB2CBzARO8IIDtu9Z6OAnEyihkGUX-I-R8,1256
+entail-0.0.4.dist-info/METADATA,sha256=PVuVYJhrriKtJo_H2FcTlHYwcJpEr9GazR18F14g9Qo,269
+entail-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+entail-0.0.4.dist-info/top_level.txt,sha256=YZGzD6B1tEK2rEANJcBQJ1GhPBhvnMy0C975trEnCso,7
+entail-0.0.4.dist-info/RECORD,,
