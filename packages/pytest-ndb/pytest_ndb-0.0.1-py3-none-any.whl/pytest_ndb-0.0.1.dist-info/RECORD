@@ -1,0 +1,8 @@
+pytest_ndb/VERSION,sha256=5mNQReHSR47EynEtjA4d_O-Lt7Wx6OO7Vg03_jmannI,6
+pytest_ndb/__init__.py,sha256=Ch9q5YTk6EgU6Jh7__obbcF03qp8ee7TKsoJRswwVCM,4440
+pytest_ndb/tests.py,sha256=tThzOxmUr-p9YQk6qlBomgVPI2zlfRKwxcrfaMd73zE,948
+pytest_ndb-0.0.1.dist-info/LICENSE,sha256=VMTHhB7bL2-3rpsUvlYw71Ohyti2rfDiteXezKPbsA8,1503
+pytest_ndb-0.0.1.dist-info/METADATA,sha256=32pQcl0c4fK8nGZuwJ8bVlUXPyauCb2cNtHviYuKnbk,4651
+pytest_ndb-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytest_ndb-0.0.1.dist-info/top_level.txt,sha256=1ssdO8DLSNiIl82_t2pmS4D6UL-vc9qz8YmXPvcUjAQ,11
+pytest_ndb-0.0.1.dist-info/RECORD,,
