@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: aprs-tocall
+Version: 0.1.3
+Summary: Parses APRS "tocalls" or tocalls.txt / tocalls.yaml easily in Python
+Home-page: https://github.com/xssfox/aprs_tocall
+License: WTFPL
+Author: xss
+Author-email: michaela@michaela.lgbt
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
+Project-URL: Repository, https://github.com/xssfox/aprs_tocall
+Description-Content-Type: text/markdown
+
+aprs_tocall
+==
+
+Install
+--
+
+```sh
+pip install aprs_tocall
+```
+
+Usage
+--
+```python
+from aprs_tocall import Parser
+tocalls = Parser(offline=False) 
+# Setting offline to False will use the online 
+# yaml file, while offline=True (default) will 
+# use the distributed version
+tocalls.lookup("APWEEA")
+# returns 
+# {
+#   'tocall': 'APWEE?',
+#   'vendor': 'Tom Keffer and Matthew Wall',
+#   'model': 'WeeWX Weather Software',
+#   'class': 'software', 
+#   'os': 'Linux/Unix'
+# }
+```
+
+Command line
+--
+
+```sh
+% python3 -m aprs_tocall APTTAA
+tocall=APTT*
+vendor=Byonics
+model=TinyTrak
+class=tracker
+```
