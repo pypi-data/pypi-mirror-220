@@ -1,0 +1,8 @@
+cmlibs.argon>=0.4.0
+cmlibs.zinc
+
+[thumbnail_hardware]
+PySide6
+
+[thumbnail_software]
+PyOpenGL
