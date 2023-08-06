@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: femto-admin
+Version: 0.0.7
+Author-email: Artemiev <mixartemev@gmail.com>
+Project-URL: Homepage, https://github.com/mixartemev/femto-admin
+Project-URL: Repository, https://github.com/mixartemev/femto-admin
+Requires-Python: >=3.9
