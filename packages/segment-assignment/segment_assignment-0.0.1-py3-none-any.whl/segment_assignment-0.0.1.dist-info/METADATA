@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: segment-assignment
+Version: 0.0.1
+Summary: PyPi package created by Schibsted's Product & Application Security team.
+Home-page: https://schibsted.com
+Author: Application Security Team
+Author-email: application-security+pypi@schibsted.com
+Classifier: Development Status :: 1 - Planning
+
