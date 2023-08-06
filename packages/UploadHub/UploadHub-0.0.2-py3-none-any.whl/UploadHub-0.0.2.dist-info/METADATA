@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: UploadHub
+Version: 0.0.2
+Summary: PYPI and GitHub package uploader.
+Author: Armando Chaparro
+Author-email: <pylejandria@gmail.com>
+Keywords: python
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: twine
+Requires-Dist: ttkbootstrap
+
+Manages all the commands to upload a package to PYPI and GitHub repo.
