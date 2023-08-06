@@ -1,0 +1,17 @@
+.bumpversion.cfg,sha256=3pLgbHNdJsw11Oggi8eh5FKRmRZ5sWdz8sW07xMhzr0,173
+.editorconfig,sha256=RYlYhANKQvdr_K-au_QHt8NZ3Oh9J7pSYtT2UaJNXmg,353
+.pre-commit-config.yaml,sha256=OETmKvTIMlxhQmCnhft6abSe8WQe_vR31FmnE37mKKo,898
+AUTHORS.rst,sha256=9W1cF4AWIM4XJooGbOHTy0S0d2RHrvWov1oe7FoHKaM,55
+CHANGELOG.rst,sha256=PgRCelKokp4Xd-U_Sd73fI8Vx85jf1OpfQueMBSEHsU,638
+CONTRIBUTING.rst,sha256=h_Dn0pmp2JFS_citI4VkrOw4JALmXgTppy_RUPE8xys,1346
+LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+README.rst,sha256=3QZJjqOKVVjSa_CTh3e5nysWG-E-RtWtAfPX-9DjoQ4,661
+ase-stubs/__init__.pyi,sha256=HEZlSq3ODY25eK1c66ddgFlQW-55iFvRQ-tnIybqVeI,71
+ase-stubs/atom.pyi,sha256=k7xovbJ5-QEJgYj9ZbWeiYNaJF2ySU_9jvUVgwoddp4,1175
+ase-stubs/atoms.pyi,sha256=YA6rUQZfWfoeF6OWSs95ZISTIluzfo7_oDefSzsikH0,13464
+ase-stubs/cell.pyi,sha256=4N_cwXAdeK5LVzDjScmj2HD_3cyCq02Pzxf8eoynxMc,1771
+ase-stubs/geometry/geometry.pyi,sha256=S3JgtTKL7XueKD_uIoPnPd30waeznC9JE085pCt2xmg,1466
+ase_stubs-0.0.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+ase_stubs-0.0.1.dist-info/METADATA,sha256=rIYnuFJEXUz7M6IlRu8NHc-i9WSdEec82uJme9TWhKs,1559
+ase_stubs-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+ase_stubs-0.0.1.dist-info/RECORD,,
