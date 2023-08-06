@@ -1,0 +1,15 @@
+odoo/addons/product_top_category/README.rst,sha256=a5_Ux7tGr250k5S29o_Fr3Ycimgb-S-Lwql7ECbay3E,3120
+odoo/addons/product_top_category/__init__.py,sha256=Tevv4UsCYyAkvFpf-zNNoPSXAG4_jHREz6VNPZoDoJg,116
+odoo/addons/product_top_category/__manifest__.py,sha256=SvgrLGinlsJHMWit3NE6ShMOdOQbDIDWMpR2JP6RUYU,606
+odoo/addons/product_top_category/i18n/product_top_category.pot,sha256=AzFBkvTY8j65So-bAnJJ39jQlfUVpmZ21xRMKFiBkyM,1013
+odoo/addons/product_top_category/models/__init__.py,sha256=QMs8pl-USiRl89liA66TYVDfC-njVvzxOG3ttz9jPxA,62
+odoo/addons/product_top_category/models/product_category.py,sha256=IjuuXfJS5BUeD52ZAzndNE5IKWndpf1FFIKMO_KtxNU,801
+odoo/addons/product_top_category/models/product_template.py,sha256=F0xoJDnKsFga2TSP-C1Vlog6KQAi4VMcX7fb6ZBGBns,371
+odoo/addons/product_top_category/readme/DESCRIPTION.rst,sha256=APJSVhsEKpEXM0rdsC3XidybIDjIh2ZMTmhBXT15uY0,252
+odoo/addons/product_top_category/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/product_top_category/static/description/index.html,sha256=pzWlAcF3GQUOZ0lD80ZIXw_3iYZun5DtbcQUDspEjt4,11965
+odoo/addons/product_top_category/views/product_category.xml,sha256=Y_N5-NbvJsofpk3Y3XKYPlLtTR4GKpN7DbutQLD4hBA,565
+odoo12_addon_product_top_category-12.0.1.0.1.dist-info/METADATA,sha256=_YRQKGv2rlavkcteza3wnomluyw5yPliGzRFrVMBJSo,3685
+odoo12_addon_product_top_category-12.0.1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo12_addon_product_top_category-12.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_product_top_category-12.0.1.0.1.dist-info/RECORD,,
