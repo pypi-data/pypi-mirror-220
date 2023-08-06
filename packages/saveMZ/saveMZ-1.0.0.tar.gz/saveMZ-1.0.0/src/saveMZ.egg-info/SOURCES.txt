@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/saveMZ/__init__.py
+src/saveMZ.egg-info/PKG-INFO
+src/saveMZ.egg-info/SOURCES.txt
+src/saveMZ.egg-info/dependency_links.txt
+src/saveMZ.egg-info/top_level.txt
