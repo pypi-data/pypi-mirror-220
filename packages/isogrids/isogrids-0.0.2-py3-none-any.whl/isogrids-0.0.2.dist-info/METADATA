@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: isogrids
+Version: 0.0.2
+Summary: A package that generates and visualizes simple simulation environments and their respective scene graphs for planning-algorithm development
+Author-email: Isaac Remy <iremy@uw.edu>
+Project-URL: Homepage, https://github.com/isremy/isogrids
+Project-URL: Bug Tracker, https://github.com/isremy/isogrids
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Isogrids
+A package for generating simple simulation environments and their respective scene graphs for planning-algorithm development
+
+Currently only UNIX-compatible
