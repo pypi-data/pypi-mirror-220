@@ -1,0 +1,4 @@
+[console_scripts]
+juice-agm=ptr.cli:cli_juice_agm
+ptr2seg=ptr.cli:cli_ptr_to_seg
+
