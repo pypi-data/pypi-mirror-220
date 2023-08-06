@@ -1,0 +1,3 @@
+forexconnect
+python-dotenv
+pandas==1.3.4
