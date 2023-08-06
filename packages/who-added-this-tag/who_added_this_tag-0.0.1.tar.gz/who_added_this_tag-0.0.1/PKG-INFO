@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: who_added_this_tag
+Version: 0.0.1
+Summary: A tool to research who added given OSM tags currently in use
+Home-page: https://codeberg.org/matkoniecz/who-added-this-tag
+Author: Mateusz Konieczny
+Author-email: matkoniecz@tutanota.com
+License: UNKNOWN
+Description: Tool for tracking down who added specific tag.
+        
+        Will work fine for tags used on a small scale.
+        
+        As it will download objects with Overpass Turbo and then use editing API to retrieve old versions of each object, it is acceptable to be used only for tags that have few instances.
+        
+        Do not try to run it for say `building=house`
+        
+        But for investigating who added tag appearing 1017 times? Should be fine.
+        
+        It can be useful to
+        
+        - notify editors about tagging discussion
+        - easily track down who was adding specific tag which is unclear/dubious/problematic
+        
+        # Package
+        
+        ```
+        import who_added_this_tag
+        
+        config = {
+            'key': 'related:wikipedia',
+            'value': None, # may be None - in such case it looks for all values of key
+            'area_identifier_key': None, # may be None, in such case search is worldwide, 'ISO3166-1' is a good identifier
+            'area_identifier_value': 'PL', # ignored if area_identifier_key is None
+            'list_all_edits': True,
+            'list_all_edits_made_by_this_users': [], # ignored with list_all_edits set to True
+        }
+        who_added_this_tag.statistics.process_case(config)
+        ```
+        
+        # Run tests
+        
+        ```
+        python3 -m unittest
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
