@@ -1,0 +1,2 @@
+[console_scripts]
+htsct = htsct.cli.main:main
