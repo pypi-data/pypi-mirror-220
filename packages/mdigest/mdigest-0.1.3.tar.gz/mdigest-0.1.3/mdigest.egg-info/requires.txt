@@ -1,0 +1,13 @@
+numpy<=1.24.3
+numba==0.56.4
+scipy>=1.10.0
+python-louvain==0.15
+pymol-open-source
+pandas
+seaborn
+mdtraj
+pyemma
+MDAnalysis
+silx
+nglview
+networkx
