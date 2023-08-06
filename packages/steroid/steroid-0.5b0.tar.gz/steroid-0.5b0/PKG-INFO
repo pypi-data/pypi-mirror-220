@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: steroid
+Version: 0.5b0
+Summary: Steroid
+Home-page: https://github.com/struckchure/steroid
+Author: Mohammed Al Ameen
+Author-email: ameenmohammed2311@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: annotated-types (==0.5.0)
+Requires-Dist: anyio (==3.7.1)
+Requires-Dist: click (==8.1.5)
+Requires-Dist: exceptiongroup (==1.1.2)
+Requires-Dist: fastapi (==0.100.0)
+Requires-Dist: h11 (==0.14.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: pydantic (==2.0.3)
+Requires-Dist: pydantic-core (==2.3.0)
+Requires-Dist: sniffio (==1.3.0)
+Requires-Dist: starlette (==0.27.0)
+Requires-Dist: typing-extensions (==4.7.1)
+Requires-Dist: uvicorn (==0.23.0)
+Project-URL: Repository, https://github.com/struckchure/steroid
+Description-Content-Type: text/markdown
+
+# steroid
+
+NestJs like framework for python, built on top of FastAPI
+
