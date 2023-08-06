@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: mlflowops
+Version: 0.1.1
+Summary: MLOps utils with MLFlow
+License: MIT
+Author: Carlos D. Escobar-Valbuena
+Author-email: carlosdavidescobar@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: azure-ai-ml (>=1.8.0,<2.0.0)
+Requires-Dist: mlflow (>=2.5.0,<3.0.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: pydantic (>=2.0.3,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# mlflowops Util
+**MLOps utils with MLFlow**
+
+
+## Setup
+
+### Quick Install
+
+```shell
+python -m pip install mlflowops
+```
+
+### Build from source
+
+Clone the repository
+
+```shell
+git clone https://github.com/Broomva/mlflowops.git
+```
+
+Install the package
+
+``` shell
+cd mlflowops && make install
+```
+
+### Build manually
+
+After cloning, create a virtual environment
+
+```shell
+conda create -n mlflowops python=3.10
+conda activate mlflowops
+```
+
+Install the requirements
+
+```shell
+pip install -r requirements.txt
+```
+
+Run the python installation
+
+```shell
+python setup.py install
+```
+
+## Usage
+
+The deployment requires a .env file created under local folder:
+
+```shell
+touch .env
+```
+
+It should have a schema like this:
+
+```toml
+databricks_experiment_name=''
+databricks_experiment_id=''
+databricks_host=''
+databricks_token=''
+databricks_username=''
+databricks_password=''
+databricks_cluster_id=''
+```
+
+```python
+import mlflowops 
+```
