@@ -1,0 +1,2 @@
+[console_scripts]
+shadowhash = shadowhash.__main__:main

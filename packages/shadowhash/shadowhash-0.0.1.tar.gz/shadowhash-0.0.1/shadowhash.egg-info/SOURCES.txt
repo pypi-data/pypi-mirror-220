@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+shadowhash/__init__.py
+shadowhash/__main__.py
+shadowhash/version.py
+shadowhash.egg-info/PKG-INFO
+shadowhash.egg-info/SOURCES.txt
+shadowhash.egg-info/dependency_links.txt
+shadowhash.egg-info/entry_points.txt
+shadowhash.egg-info/requires.txt
+shadowhash.egg-info/top_level.txt
