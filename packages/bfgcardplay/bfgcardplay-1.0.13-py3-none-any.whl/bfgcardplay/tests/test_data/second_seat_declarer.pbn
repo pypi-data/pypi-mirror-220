@@ -1,0 +1,14 @@
+[Board "0"]
+[Description "11 Jul 2023 13:10:23" do not play King]
+[Dealer "N"]
+[Vulnerable "None"]
+[Deal "N:AJT.T8542.5432.A K9876.J6.Q7.6432 543.AQ93.J8.KJ95 Q2.K7.AKT96.QT87"]
+[Declarer E]
+[Contract 4S]
+[Auction "N"]
+2H Pass 3H X
+4H 4S Pass Pass
+X Pass Pass Pass
+
+[Play "S"]
+HA
