@@ -1,0 +1,10 @@
+__init__.py,sha256=XabzxeftD8OCtX-HHa_5AdCRR27rq4gpkKnyN4JeLug,67
+genomes.py,sha256=OVca3gKzh_e-j_a6PeX-QMgpLDwKqXJyZ556Badfm0U,189
+targets.py,sha256=JYQ9M8BcSBkC2D1P-tKzPco4Qaxw69WuCfvPKx8O_FE,610
+test_lifters.py,sha256=Baa43wXKrRCFU-BTJAi7av4z08xF9RmTa5dD-0ZlHdI,770
+types.json,sha256=BTCiFwxGn92vFrVQVa9k-5EEZQk9Jg1ybkBpmz05kNk,1231
+uplift.py,sha256=b5o5wOH-qZtPnOSLNLJw1PJ6CVegnZBCkCceubvcf3s,1223
+easyliftover-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+easyliftover-0.0.1.dist-info/METADATA,sha256=DyZbsuYLv_oqUETgzH9Rj3IUR43m0ngdFEeiMELiDfo,1173
+easyliftover-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+easyliftover-0.0.1.dist-info/RECORD,,
