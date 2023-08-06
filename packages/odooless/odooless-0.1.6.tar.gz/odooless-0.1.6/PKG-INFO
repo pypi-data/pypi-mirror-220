@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: odooless
+Version: 0.1.6
+Summary: A DynamoDB ORM inspired by Odoo
+Home-page: https://github.com/Barameg/odooless.git
+Author: Sam Hasan
+Author-email: sam@barameg.co
+Keywords: odooless
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+
+A DynamoDB ORM inspired by Odoo
