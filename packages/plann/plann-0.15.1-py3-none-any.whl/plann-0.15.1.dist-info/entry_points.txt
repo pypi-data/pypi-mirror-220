@@ -1,0 +1,2 @@
+[console_scripts]
+plann = plann.cli:cli
