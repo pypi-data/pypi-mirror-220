@@ -1,0 +1,2 @@
+[console_scripts]
+tk = tk.tk_main:cli_wrapper
