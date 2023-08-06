@@ -1,0 +1,17 @@
+isal/__init__.py,sha256=E-BmXDlySj1vflFSwJ_Nu5J7vHlHa4hVjoD1qYRY5ok,939
+isal/_isal.pyi,sha256=pMO3WxiugIVK0iwoNs0nsowkcE5RM0cYxoYMyO7jtcw,416
+isal/_isal.pypy37-pp73-win_amd64.pyd,sha256=O2m6s4t4HiTBdDmlSh0eKHPFKuwT6IdA96RaJvTWqc4,10752
+isal/igzip.py,sha256=acwqgfUDJQsY1QcebNICudyX5tyySNH8mFIzEdF7PpU,23930
+isal/igzip_lib.pyi,sha256=VrBAz3Y8w2mcp8m1xLKRMxqiUzUXgW-wo8FdYirYdC0,1682
+isal/igzip_lib.pypy37-pp73-win_amd64.pyd,sha256=ayxjMaDdDOwqF6wkGDuwl4n3oDH4rlfgrIILFGv0lxU,215040
+isal/isal_zlib.pyi,sha256=FqKUDBUKvlFv_9JOHwP--CAPbIwxXj69MjUPQn_82xI,1817
+isal/isal_zlib.pypy37-pp73-win_amd64.pyd,sha256=dHs-EMVsWoGkRRrsGf0O-rFLhjKyv0xIn7G3ql_9QNI,222208
+isal/py.typed,sha256=a1RlQ-hAngPdZDtrgliwTVNtPmZYUZS3wvfbMRnunHI,28
+isal/isa-l/LICENSE,sha256=OglX0Jc-PcVzwkhkS8WTUDGfXVCieEcEls6tL61to5k,1585
+isal/isa-l/README.md,sha256=tbu9I5pefh_aaag7xjesDpmhGG8FBwDmcfCGm3eATnU,2644
+isal/isa-l/Release_notes.txt,sha256=dL1UurPI-Eek3v1IvO3x7w-E4CDYjjp1cDL5wgHISDQ,9747
+isal-1.2.0.dist-info/LICENSE,sha256=VwawAF9rOxOG0bIFNa6RpUXYDZ4lVaHndABMqMeRFbA,2532
+isal-1.2.0.dist-info/METADATA,sha256=3OJQD-scxV4HwMFknghpcKNfm2tOA8NKREH4kQ7fzxk,8898
+isal-1.2.0.dist-info/WHEEL,sha256=pGcgHTQxT-5QcV4VYCDbpvYfuDR0DvqqhFzWAXVhCU0,107
+isal-1.2.0.dist-info/top_level.txt,sha256=spID_Xbf5QzLXSqvXyOCz8TUk1Pz2My8CDNs3bJWxAw,5
+isal-1.2.0.dist-info/RECORD,,
