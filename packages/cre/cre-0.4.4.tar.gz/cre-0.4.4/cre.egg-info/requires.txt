@@ -1,0 +1,7 @@
+cloudpickle
+numba
+numpy
+
+[dev]
+pytest
+pytest-benchmark
