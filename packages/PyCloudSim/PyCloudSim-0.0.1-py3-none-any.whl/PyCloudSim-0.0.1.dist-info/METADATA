@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PyCloudSim
+Version: 0.0.1
+Summary: A small example package
+Author-email: Yifei Ren <ryf0510@live.com>
+Project-URL: Homepage, https://github.com/ulfaric/PyCloudSim-legacy
+Project-URL: Documentation, https://ulfaric.github.io/PyCloudSim-legacy/
+Project-URL: Bug Tracker, https://github.com/ulfaric/PyCloudSim-legacy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: bitmath
+Requires-Dist: networkx[default]
+Requires-Dist: Akatosh (<2.0.0)
+Requires-Dist: polars
+Requires-Dist: randomname
+
+# PyCloudSim
+
+For documentation, see <https://ulfaric.github.io/PyCloudSim-legacy/>
