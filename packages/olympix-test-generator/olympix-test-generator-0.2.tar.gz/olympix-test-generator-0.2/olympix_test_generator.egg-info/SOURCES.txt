@@ -1,0 +1,10 @@
+README.md
+setup.py
+olympix_test_generator/__init__.py
+olympix_test_generator/client.py
+olympix_test_generator.egg-info/PKG-INFO
+olympix_test_generator.egg-info/SOURCES.txt
+olympix_test_generator.egg-info/dependency_links.txt
+olympix_test_generator.egg-info/entry_points.txt
+olympix_test_generator.egg-info/requires.txt
+olympix_test_generator.egg-info/top_level.txt
