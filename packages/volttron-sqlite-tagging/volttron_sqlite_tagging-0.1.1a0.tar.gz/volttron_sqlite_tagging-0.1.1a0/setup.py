@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+package_dir = \
+{'': 'src'}
+
+packages = \
+['tagging', 'tagging.sqlite']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['ply>=3.11,<4.0', 'volttron-lib-tagging>=0.1.1a2,<0.2.0']
+
+entry_points = \
+{'console_scripts': ['volttron-sqlite-tagging = tagging.sqlite.tagging:main']}
+
+setup_kwargs = {
+    'name': 'volttron-sqlite-tagging',
+    'version': '0.1.1a0',
+    'description': 'Tagging agent that implement volttron-lib-tagging and store tag data in sqlite3 database',
+    'long_description': '[![Eclipse VOLTTRON™](https://img.shields.io/badge/Eclips%20VOLTTRON--red.svg)](https://eclipse-volttron.readthedocs.io/en/latest/)\n![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)\n![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)\n[![Run Pytests](https://github.com/eclipse-volttron/volttron-sqlite-tagging/actions/workflows/run-test.yml/badge.svg)](https://github.com/eclipse-volttron/volttron-sqlite-tagging/actions/workflows/run-test.yml)\n[![pypi version](https://img.shields.io/pypi/v/volttron-sqlite-tagging.svg)](https://pypi.org/project/volttron-sqlite-tagging/)\n![Passing?](https://github.com/VOLTTRON/volttron-sqlite-tagging/actions/workflows/run-tests.yml/badge.svg)\n\n# SQLite Tagging Agent \n\nSQLite tagging agent provide APIs to tag both topic names(device points) and topic name prefixes (campus, building, \nunit/equipment, sub unit) and then query for relevant topics based on saved tag names and values. The SQLite tagging \nagent stores the tags in a sqlite3 database and hence provides a way to test this feature in VOLTTRON without any \nadditional database install. However, sqlite3 is not an ideal database for key/value data that has many to many mapping. \nA database such as MongoDB or Postgresql would be better suited.\n\nTags used by this agent have to be pre-defined in a resource file at volttron_data/tagging_resources. The\nagent validates against this predefined list of tags every time user add tags to topics. Tags can be added to one \ntopic at a time or multiple topics by using a topic name pattern(regular expression). This agent uses tags from \n[project haystack](https://project-haystack.org/) and adds a few custom tags for campus and VOLTTRON point name.\n\nEach tag has an associated value and users can query for topic names based tags and its values using a simplified \nsql-like query string. Queries can specify tag names with values or tags without values for boolean tags(markers). \nQueries can combine multiple conditions with keyword AND and OR, and use the keyword NOT to negate a conditions.\n\n## Requirements\n\n - Python >= 3.10\n\n\n## Dependencies and Limitations\n\n1. When adding tags to topics this agent calls the platform.historian\'s (or a configured historian\'s) \n   get_topic_list and hence requires a platform.historian or configured historian to be running, but it doesn\'t require \n   the historian to use sqlite3 or any specific database. It requires historian to be running only for using this \n   api (add_tags) and does not require historian to be running for any other api. \n2. Resource files that provides the list of valid tags is mandatory and is present under data_model/tags.csv   \n   within base tagging agent\n3. Tagging agent only provides APIs query for topic names based on tags. Once the list of topic names is retrieved, \n   users should use the historian APIs to get the data corresponding to those topics. \n4. Current version of tagging agent does not support versioning of tag/values. When tags values set using tagging \n   agent\'s APIs update/overwrite any existing tag entries in the database\n5. Since RDMS is not a natural fit for tagname=value kind of data, performance of queries will not be high if you have \n   several thousands of topics and several hundreds tags for each topic and perform complex queries. For intermediate \n   level data and query complexity, performance can be improved by increasing the page limit of sqlite.\n\n## Installation\n\n1. Create and activate a virtual environment.\n\n   ```shell\n    python -m venv env\n    source env/bin/activate\n    ```\n\n2. Installing volttron-sqlite-tagging requires a running volttron instance.\n\n    ```shell\n    pip install volttron\n    \n    # Start platform with output going to volttron.log\n    volttron -vv -l volttron.log &\n    ```\n\n3. Create an agent configuration file \n   SQLite tagging supports three parameters\n    \n    - connection -  This is a mandatory parameter with type indicating the type of database (i.e. sqlite) and params \n                    containing the path the database file.\n    \n    - table_prefix - Optional parameter to provide custom table names for topics, data, and metadata.\n   \n    - historian_vip_identity - Optional. Specify if you want tagging agent to query the historian with this vip \n                               identity. defaults to platform.historian. Historian is queried only by the add_topics api.\n                               other apis do not use historian.\n    \n    The configuration can be in a json or yaml formatted file.\n\n    Yaml Format:\n\n    ```yaml\n    connection:\n      # type should be sqlite\n      type: sqlite\n      params:\n        # Relative to the agents data directory\n        database: "data/tagging.sqlite"\n    \n    # prefix for tagging data tables\n    table_prefix: ""\n\n    # optional parameter to point to historian other than platform.historian\n    historian_vip_identity: my.test.historian\n    ```\n    \n4. Install and start the volttron-sqlite-tagging agent.\n\n    ```shell\n    vctl install volttron-sqlite-taggig --agent-config <path to configuration> --start\n    ```\n\n5. View the status of the installed agent\n\n    ```shell\n    vctl status\n    ```\n\n## Development\n\nPlease see the following for contributing guidelines [contributing](https://github.com/eclipse-volttron/volttron-core/blob/develop/CONTRIBUTING.md).\n\nPlease see the following helpful guide about [developing modular VOLTTRON agents](https://github.com/eclipse-volttron/volttron-core/blob/develop/DEVELOPING_ON_MODULAR.md)\n\n# Disclaimer Notice\n\nThis material was prepared as an account of work sponsored by an agency of the\nUnited States Government.  Neither the United States Government nor the United\nStates Department of Energy, nor Battelle, nor any of their employees, nor any\njurisdiction or organization that has cooperated in the development of these\nmaterials, makes any warranty, express or implied, or assumes any legal\nliability or responsibility for the accuracy, completeness, or usefulness or any\ninformation, apparatus, product, software, or process disclosed, or represents\nthat its use would not infringe privately owned rights.\n\nReference herein to any specific commercial product, process, or service by\ntrade name, trademark, manufacturer, or otherwise does not necessarily\nconstitute or imply its endorsement, recommendation, or favoring by the United\nStates Government or any agency thereof, or Battelle Memorial Institute. The\nviews and opinions of authors expressed herein do not necessarily state or\nreflect those of the United States Government or any agency thereof.\n',
+    'author': 'VOLTTRON Team',
+    'author_email': 'volttron@pnnl.gov',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/eclipse-volttron/volttron-sqlite-tagging',
+    'package_dir': package_dir,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.10,<4.0',
+}
+
+
+setup(**setup_kwargs)
