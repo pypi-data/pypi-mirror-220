@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/PandaPlyr.egg-info/PKG-INFO
+src/PandaPlyr.egg-info/SOURCES.txt
+src/PandaPlyr.egg-info/dependency_links.txt
+src/PandaPlyr.egg-info/requires.txt
+src/PandaPlyr.egg-info/top_level.txt
+tests/test_pyplyr.py
