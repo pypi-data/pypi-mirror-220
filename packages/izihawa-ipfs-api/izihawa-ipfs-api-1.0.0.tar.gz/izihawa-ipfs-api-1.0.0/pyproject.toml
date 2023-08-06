@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools<65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "izihawa-ipfs-api"
+version = "1.0.0"
+authors = [{ name = "Pasha Podolsky" }]
+description = "Async client for IPFS API"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+"Homepage" = "https://github.com/izihawa/ipfs-api"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
