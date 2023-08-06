@@ -1,0 +1,10 @@
+textsearch/__init__.py,sha256=9hMi0D7H1l0QtyvfLNYlVB_lWc1gQhbBjq-Mj6J8Qi4,973
+textsearch/datatypes.py,sha256=K1rkGPPI5KTiuyO5xfekOthRTFNEqgW67gJfk2EqpEI,13873
+textsearch/levenshtein.py,sha256=q_P9FA8nK0GltbCW1aDHQoIY1UHvZ4gfBn8xa7FS3aU,3725
+textsearch/match.py,sha256=WsPqsJw7B7Wio15oLVbwH5TXJqSF5uXsF6vUnaN8l6E,53597
+textsearch/suffix_array.py,sha256=UDu3-HryBw9MRrcvO8Re8TQiF7Qw3ALQ-_uNon0YGck,3297
+textsearch/utils.py,sha256=nzApzaouX4-ieudXjKjRSNLgKxF1Pulml0GVzHQzBa4,5453
+fasttextsearch-0.6.dist-info/METADATA,sha256=l9tVtl0GwrWq4Fpz3Dy-ExRlauVwVPlCBEXmxCCnM80,1242
+fasttextsearch-0.6.dist-info/WHEEL,sha256=Ecbb0_kZJtemD7-rR3Duaz_lzr9_iQAuZ4hgpmUiXjg,102
+fasttextsearch-0.6.dist-info/top_level.txt,sha256=mhdOeWn2kpMq1qsLsVFmKzexpShGfpE2mq-9am7B2wU,24
+fasttextsearch-0.6.dist-info/RECORD,,
