@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+partition_networkx/__init__.py
+partition_networkx/partition_networkx.py
+partition_networkx.egg-info/PKG-INFO
+partition_networkx.egg-info/SOURCES.txt
+partition_networkx.egg-info/dependency_links.txt
+partition_networkx.egg-info/requires.txt
+partition_networkx.egg-info/top_level.txt
