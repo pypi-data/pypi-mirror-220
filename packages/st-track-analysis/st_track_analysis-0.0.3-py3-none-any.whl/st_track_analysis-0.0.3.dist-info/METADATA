@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: st-track-analysis
+Version: 0.0.3
+Summary: A tool to view tracks on an image
+Home-page: 
+Author: Elliot Glas
+Author-email: elliot.glas@viscando.com
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: streamlit (>=0.63)
+
+A tool to view tracks on an image
