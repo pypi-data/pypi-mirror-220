@@ -1,0 +1,9 @@
+lkfmt/__init__.py,sha256=dxyryd7vVblPXpZHpWrIBILfo4iH7_Fy3l6to6pvvI0,187
+lkfmt/__main__.py,sha256=xpk_lSdRLk0UEuDQZSJyN76Niobvog1w8AB_0cop238,641
+lkfmt/diff.py,sha256=AvCNkz2sUaS99SlyiW9zd4ILxxIF-j_8uAZnlY0P8U8,5807
+lkfmt/formatter.py,sha256=fFI8hSyk-9QlkNlB-lEVCqxq0tyLo-BZNnbtIhyN8ng,6219
+lkfmt-0.2.1.dist-info/LICENSE,sha256=bO1rHKUWDbdeAwBtNXIDn9xUV35nu8Wo_v29KNXwm2I,1068
+lkfmt-0.2.1.dist-info/METADATA,sha256=ZSVwTFUSP1Gru5HDqcaGZb5QRYnVwoIlET7_R1bQF-g,2075
+lkfmt-0.2.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+lkfmt-0.2.1.dist-info/entry_points.txt,sha256=q_mrR6vJjVomeNzdN7IwzqD4hJCmKpY0z68XPRVH2_A,50
+lkfmt-0.2.1.dist-info/RECORD,,
