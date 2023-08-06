@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>streamlit-component-html_include</title>
+    <script src="./streamlit-component-lib.js"></script>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <!--
+      <label id="label" for="text_input">This is a label</label>
+      <div class="input">
+        <input type="text" name="text_input" id="input_box" />
+      </div>
+      <p style="color:orange">Testing 1,2,3...</p>
+      <p id="number_para" style="color:green">Test</p>
+      -->
+      <iframe id="carousel_iframe" style="color:blue; border:0"
+              src="./carousel/carousel.html?n_pics=7"
+              title="In an iFrame"
+              width="100%"
+              height="400px">
+      </iframe>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: streamlit-picture-carousel
+Version: 0.1.0
+Summary: Displays 3d carousel of pictures
+Author: Rafal Cegiela
+Author-email: rcegiela@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit (>=1.2)
+Requires-Dist: jinja2
+
+# streamlit-picture-carousel
+
+Displays 3d carousel of pictures
+
+## Installation instructions 
+
+```sh
+pip install streamlit-picture-carousel
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+
+from st_picture_carousel import st_picture_carousel
+
+value = st_picture_carousel()
+
+st.write(value)
