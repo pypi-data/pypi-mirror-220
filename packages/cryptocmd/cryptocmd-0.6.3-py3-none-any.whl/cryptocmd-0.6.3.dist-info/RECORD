@@ -1,0 +1,9 @@
+LICENSE,sha256=K8ljpSOjPXectucxA2rP97IOIFrZ4Hl0Ob9PB89y88Q,1511
+cryptocmd/__init__.py,sha256=pm9oj3VZJ3dPQwii15y_yDEfsF3XXf9UU-oguEwzM3I,57
+cryptocmd/__version__.py,sha256=zYiFHqR7JwbvdK9dvKrh-RTNfUqjHUwC4CTcFAPVYLc,22
+cryptocmd/core.py,sha256=sU18tMYFf_xGbM4E7gnDnBxzYR7Qps4wrq-v3lKc4UU,8697
+cryptocmd/utils.py,sha256=BsIsWfC2tJSmAahhzUhkdZhOpu5UJjnPfOHcTLZHCd0,5898
+cryptocmd-0.6.3.dist-info/LICENSE,sha256=K8ljpSOjPXectucxA2rP97IOIFrZ4Hl0Ob9PB89y88Q,1511
+cryptocmd-0.6.3.dist-info/METADATA,sha256=E5HXzcVnI37KDbwXx_gPoDR0_ilvfw-sJ4m3pzjBwoQ,4891
+cryptocmd-0.6.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+cryptocmd-0.6.3.dist-info/RECORD,,
