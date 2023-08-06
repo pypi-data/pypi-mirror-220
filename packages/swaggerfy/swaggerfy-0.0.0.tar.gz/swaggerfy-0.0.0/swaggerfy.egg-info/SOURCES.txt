@@ -1,0 +1,6 @@
+README.md
+swaggerfy.egg-info/PKG-INFO
+swaggerfy.egg-info/SOURCES.txt
+swaggerfy.egg-info/dependency_links.txt
+swaggerfy.egg-info/top_level.txt
+swaggerfy.egg-info/zip-safe
