@@ -1,0 +1,12 @@
+setup.py
+WaterScenes/Config.py
+WaterScenes/DataLoader.py
+WaterScenes/Transformation.py
+WaterScenes/WaterScenes.py
+WaterScenes/__init__.py
+WaterScenes/api.py
+WaterScenes.egg-info/PKG-INFO
+WaterScenes.egg-info/SOURCES.txt
+WaterScenes.egg-info/dependency_links.txt
+WaterScenes.egg-info/requires.txt
+WaterScenes.egg-info/top_level.txt
