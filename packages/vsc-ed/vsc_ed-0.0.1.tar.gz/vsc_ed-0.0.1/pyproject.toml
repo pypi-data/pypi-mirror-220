@@ -1,0 +1,28 @@
+[project]
+name = "vsc-ed"
+version = "0.0.1"
+description = ""
+authors = [
+    { name = "", email = "" },
+]
+dependencies = [
+    "httpx>=0.24.1",
+    "beautifulsoup4>=4.12.2",
+    "packaging>=23.1",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+vsc-ed = "vsc_ed:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]

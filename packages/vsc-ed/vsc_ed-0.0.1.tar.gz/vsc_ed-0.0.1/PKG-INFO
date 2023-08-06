@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: vsc-ed
+Version: 0.0.1
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: httpx>=0.24.1
+Requires-Dist: beautifulsoup4>=4.12.2
+Requires-Dist: packaging>=23.1
+Description-Content-Type: text/markdown
+
+# Visual studio code extension downloader
+```
+positional arguments:
+  {query,download}      Action
+options:
+  -h, --help            show this help message and exit
+  -n N                  extension name
+  -v V                  extension version check
+  -o O                  file name
+  --disable-tls-verify  disable TLS check
+  --version             show program's version number and exit
+```
+
+## Install
+```shell
+pipx install vsc-ed
+```
+
+## Examples
+Download
+```shell
+vsc-ed download -n ms-python.python
+```
+Download if the current version number is greater than 1.0.0
+```shell
+vsc-ed download -n ms-python.python -v 1.0.0
+```
+Query extension metadata(json)
+```shell
+vsc-ed query -n ms-python.python
+```
