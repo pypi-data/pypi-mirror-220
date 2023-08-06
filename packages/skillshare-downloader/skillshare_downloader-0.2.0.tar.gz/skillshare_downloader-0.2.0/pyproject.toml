@@ -1,0 +1,24 @@
+[build-system]
+requires = ["poetry>=1.1.0"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "skillshare_downloader"
+version = "0.2.0"
+description = "A Python package to download Skillshare classes."
+readme = "README.md"  # Make sure you have a valid README.md file in the root of your project.
+license = "MIT"
+authors = ["Uriel Albarran Oropeza <hello@ozonostudio.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.26.0"
+tqdm = "^4.62.2"
+telethon = "^1.23.0"
+ffmpeg-python = "^0.2.0"
+slugify = "^0.0.1"
+
+[tool.poetry.scripts]
+down = "skillshare_downloader.main:main"
+skdown = "skillshare_downloader.main:main"
+
