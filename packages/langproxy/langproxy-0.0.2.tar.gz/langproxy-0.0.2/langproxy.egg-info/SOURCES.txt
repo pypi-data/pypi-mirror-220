@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+langproxy/__init__.py
+langproxy/session.py
+langproxy.egg-info/PKG-INFO
+langproxy.egg-info/SOURCES.txt
+langproxy.egg-info/dependency_links.txt
+langproxy.egg-info/not-zip-safe
+langproxy.egg-info/top_level.txt
