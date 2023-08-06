@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyqtclass
+Version: 0.2.0
+Summary: PyQt 기반으로 동작하는 객체들의 베이스클래스 모음 패키지
+Home-page: https://github.com/innovata/PyQtClasses
+Author: innovata
+Author-email: iinnovata@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyQtClasses
+PyQt 기반으로 동작하는 객체들의 베이스클래스 모음 패키지
