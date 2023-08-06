@@ -1,0 +1,29 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.5.0"]
+
+[tool.poetry]
+authors = ["hotchpotch <hotchpotch@gmail.com>"]
+description = "Normalized Compression Distance based Classifier"
+name = "ncd_classifier"
+packages = [
+  {include = "ncd_classifier", from = "src"},
+]
+version = "0.1.1"
+repository = "https://github.com/hotchpotch/ncd_classifier"
+homepage = "https://github.com/hotchpotch/"
+
+[tool.poetry.dependencies]
+joblib = "^1.0.1"
+numpy = "^1.21.2"
+python = "^3.8"
+scikit-learn = "^1.0.0"
+psutil = "^5.9.5"
+tqdm = "^4.11.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[tool.poetry.group.dev.dependencies]
+datasets = "^2.13.1"
+
