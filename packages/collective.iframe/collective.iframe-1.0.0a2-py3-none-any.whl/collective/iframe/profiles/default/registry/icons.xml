@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<registry
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  i18n:domain="collective.iframe">
+
+  <!-- In the types xml for a portal_type we set an icon_expr.
+       This determines how it looks in the Add dropdown.
+       But the icon used in for example folder contents, is defined here in the registry.
+       Please keep the two the same.
+  -->
+
+  <record name="plone.icon.contenttype/iframe">
+    <field type="plone.registry.field.TextLine">
+      <title i18n:translate="">IFrame</title>
+    </field>
+    <value key="resource">++plone++bootstrap-icons/window.svg</value>
+  </record>
+</registry>
