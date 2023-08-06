@@ -1,0 +1,101 @@
+description: Schema for defining an environment
+type: object
+properties:
+  AccountId:
+    type: string
+  Name:
+    type: string
+  CidrRanges:
+    type: object
+    additionalProperties: False
+    properties:
+      ap-northeast-1:
+        type: string
+      ap-southeast-1:
+        type: string
+      eu-central-1:
+        type: string
+      eu-west-1:
+        type: string
+      sa-east-1:
+        type: string
+      ca-central-1:
+        type: string
+      us-east-1:
+        type: string
+      us-east-2:
+        type: string
+  Rules:
+    type: array
+    items:
+      $ref: "#/$defs/Rule"
+additionalProperties: False
+required:
+  - AccountId
+  - Name
+
+$defs:
+  Rule:
+    type: object
+    properties:
+      Name:
+        type: string
+      Description:
+        type: string
+      Sources:
+        type: array
+        items:
+          $ref: "#/$defs/Source"
+      Destinations:
+        type: array
+        items:
+          $ref: "#/$defs/Destination"
+    additionalProperties: False
+    required:
+      - Name
+      - Description
+      - Sources
+      - Destinations
+
+  Source:
+    type: object
+    properties:
+      Description:
+        type: string
+      Cidr:
+        type: string
+      Region:
+        type: string
+    additionalProperties: False
+    required:
+      - Description
+
+  Destination:
+    type: object
+    properties:
+      Description:
+        type: string
+      Endpoint:
+        type: string
+      Cidr:
+        type: string
+      Region:
+        type: string
+      Protocol:
+        enum: [ "TCP", "TLS" ]
+      Port:
+        type: integer
+    additionalProperties: False
+    required:
+      - Description
+      - Protocol
+      - Port
+    anyOf:
+      - required: ["Endpoint", "Cidr"]
+        not: { required: ["Region"] }
+      - required: ["Endpoint", "Region"]
+        not: { required: ["Cidr"] }
+      - required: ["Cidr"]
+        not: { required: ["Endpoint", "Region"] }
+#      - not: { required: ["Endpoint", "Region", "Cidr"] }
+#      - not: { required: ["Region", "Cidr"] }
