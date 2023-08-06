@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: promptsec-sdk
+Version: 0.0.1
+Summary: PromptSec SDK Library
+Home-page: https://github.com/promptsec/promptsec-sdk
+Author: PromptSec Team
+Author-email: team@prompt-security.com
+License-File: LICENSE
