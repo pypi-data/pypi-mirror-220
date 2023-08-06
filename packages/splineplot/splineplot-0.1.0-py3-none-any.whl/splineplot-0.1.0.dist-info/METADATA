@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: splineplot
+Version: 0.1.0
+Summary: 
+License: Apache 2.0
+Author: Matthew Badger
+Author-email: matt@branchenergy.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.7.2,<4.0.0)
+Requires-Dist: pandas (==1.4.2)
+Requires-Dist: statsmodels (>=0.14.0,<0.15.0)
+Description-Content-Type: text/markdown
+
+# splineplot
+
+A tiny Python package for plotting splines
+
+`splineplot` is a tiny Python package that uses `statsmodels` to fit
+a spline to 1-dimensional data and plot it, along with a scatter plot.
+It can be used on its own, or in conjunction with Seaborn
+
