@@ -1,0 +1,7 @@
+include bokehmol/*.min.js
+global-exclude *.py[cod]
+global-exclude *.ipynb_checkpoints/*
+prune dist
+prune nodes_modules
+prune docs
+prune scripts
