@@ -1,0 +1,8 @@
+
+[dev]
+cython
+networkx
+igraph
+
+[test]
+coverage
