@@ -1,0 +1,2 @@
+[console_scripts]
+nicescad = nicescad.nicescad_cmd:main
