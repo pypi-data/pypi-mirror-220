@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_uniagent34.egg-info/PKG-INFO
+yandex_uniagent34.egg-info/SOURCES.txt
+yandex_uniagent34.egg-info/dependency_links.txt
+yandex_uniagent34.egg-info/top_level.txt
