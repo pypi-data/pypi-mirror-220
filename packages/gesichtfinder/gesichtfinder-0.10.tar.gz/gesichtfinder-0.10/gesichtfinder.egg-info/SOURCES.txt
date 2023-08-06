@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gesichtfinder/README.MD
+gesichtfinder/__init__.py
+gesichtfinder/requirements.txt
+gesichtfinder/thirdparty.json
+gesichtfinder.egg-info/PKG-INFO
+gesichtfinder.egg-info/SOURCES.txt
+gesichtfinder.egg-info/dependency_links.txt
+gesichtfinder.egg-info/requires.txt
+gesichtfinder.egg-info/top_level.txt

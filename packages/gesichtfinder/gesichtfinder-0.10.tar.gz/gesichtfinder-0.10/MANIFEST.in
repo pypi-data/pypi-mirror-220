@@ -1,0 +1,3 @@
+include gesichtfinder/requirements.txt
+include gesichtfinder/thirdparty.json
+include gesichtfinder/README.MD
