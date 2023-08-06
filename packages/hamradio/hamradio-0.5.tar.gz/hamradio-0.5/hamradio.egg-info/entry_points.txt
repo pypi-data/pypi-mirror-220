@@ -1,0 +1,4 @@
+[console_scripts]
+callsign-lookup = hamradio.dxcc:main
+qsl-export = hamradio.qslcard:main
+qso-import = hamradio.dbimport:main

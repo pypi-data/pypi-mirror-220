@@ -1,0 +1,3 @@
+rsclib
+requests
+bs4
