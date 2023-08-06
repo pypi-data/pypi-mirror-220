@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: caped-ai-augmentations
+Version: 1.0.8
+Summary: Augmentations for volume, planar segmentation, classification image segmentation and associated csv file of oneat clicks.
+Home-page: https://github.com/Kapoorlabs-CAPED/Augmentations/
+Author: Varun Kapoor
+Author-email: randomaccessiblekapoor@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: albumentations
+Requires-Dist: scipy
+Requires-Dist: opencv-python
+Requires-Dist: scikit-learn
+Requires-Dist: dask
+Requires-Dist: natsort
+Requires-Dist: photutils
+
+# Augmentations
+Slim augmentation library built on top of albumentations
