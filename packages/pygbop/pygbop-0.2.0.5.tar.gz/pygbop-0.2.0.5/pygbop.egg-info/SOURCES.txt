@@ -1,0 +1,14 @@
+MANIFEST.in
+readme.md
+requirements.txt
+setup.cfg
+setup.py
+pygbop/__init__.py
+pygbop/common.py
+pygbop/event_push.py
+pygbop/gbop.py
+pygbop.egg-info/PKG-INFO
+pygbop.egg-info/SOURCES.txt
+pygbop.egg-info/dependency_links.txt
+pygbop.egg-info/requires.txt
+pygbop.egg-info/top_level.txt
