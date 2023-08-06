@@ -1,0 +1,6 @@
+numpy
+matplotlib
+astropy
+scipy
+git+https://github.com/dnidever/doppler@master#egg=doppler
+git+https://github.com/dnidever/synple@master#egg=synple
