@@ -1,0 +1,10 @@
+zshgpt/__about__.py,sha256=9RAAtB_c7fqxaJqUmrygkbnPAOT-ePaaBjCteN-2vZo,131
+zshgpt/__init__.py,sha256=VhWzdPeBo8HMaB9BJxYk9Y0_aFm7ZOELiYbByttDt3k,109
+zshgpt/__main__.py,sha256=gXkoJhDsyVP-TYVATz2QHp-qPIWhHzUZv4CPmURr8VE,206
+zshgpt/cli/__init__.py,sha256=J52lrH6XCgXhEB5CPwd7nRSjnKK848xH_if0I9BV6AU,665
+zshgpt/cli/messages.py,sha256=B2FQCPF3OqP_DPeh2930UKMPKo1EckTE1pbeccUdVzs,2219
+zshgpt-0.2.0.dist-info/METADATA,sha256=_e6xThJNn0Em1m9bECUwq7Zrpi9WfryKhEonB5ugzCY,3431
+zshgpt-0.2.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+zshgpt-0.2.0.dist-info/entry_points.txt,sha256=9U0qoEXxBiDhL0nY5doqGGQu9zz0QKQXr-D_2VIyNbU,45
+zshgpt-0.2.0.dist-info/licenses/LICENSE.txt,sha256=b93uaLpHyKruR7r5kbFBXOowAgAhJNDKdyTZT6OTr_0,1101
+zshgpt-0.2.0.dist-info/RECORD,,
