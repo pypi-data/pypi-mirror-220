@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/st_picture_carousel/__init__.py
+src/st_picture_carousel/frontend/index.html
+src/st_picture_carousel/frontend/main.js
+src/st_picture_carousel/frontend/streamlit-component-lib.js
+src/st_picture_carousel/frontend/style.css
+src/st_picture_carousel/frontend/carousel/carousel.css
+src/st_picture_carousel/frontend/carousel/carousel.html
+src/st_picture_carousel/frontend/carousel/carousel.js
+src/streamlit_picture_carousel.egg-info/PKG-INFO
+src/streamlit_picture_carousel.egg-info/SOURCES.txt
+src/streamlit_picture_carousel.egg-info/dependency_links.txt
+src/streamlit_picture_carousel.egg-info/requires.txt
+src/streamlit_picture_carousel.egg-info/top_level.txt
