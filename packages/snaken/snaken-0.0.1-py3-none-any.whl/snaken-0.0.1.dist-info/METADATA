@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: snaken
+Version: 0.0.1
+Summary: Normalise incoming data
+Author-Email: Doug Hudgeon <doug.hudgeon@managedfunctions.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: openai
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Requires-Dist: python-dotenv
+Requires-Dist: pytz
+Requires-Dist: PyYAML
+Requires-Dist: xlrd
+Requires-Dist: xmltodict
+Requires-Dist: mocker
+Description-Content-Type: text/markdown
+
+# snaken
