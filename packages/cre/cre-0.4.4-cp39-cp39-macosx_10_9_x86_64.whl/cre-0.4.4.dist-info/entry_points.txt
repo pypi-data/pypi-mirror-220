@@ -1,0 +1,2 @@
+[console_scripts]
+cre = cre.console_script:main
