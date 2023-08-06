@@ -1,0 +1,63 @@
+{
+  "src/ts/components/SolanaWalletMultiButton.tsx": {
+    "displayName": "SolanaWalletMultiButton",
+    "description": "",
+    "props": {
+      "network": {
+        "description": "",
+        "required": false,
+        "defaultValue": {
+          "value": "'mainnet'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'devnet'",
+              "computed": false
+            },
+            {
+              "value": "'mainnet'",
+              "computed": false
+            },
+            {
+              "value": "'testnet'",
+              "computed": false
+            }
+          ],
+          "raw": "\"devnet\" | \"mainnet\" | \"testnet\""
+        }
+      },
+      "initialPublicKeyState": {
+        "description": "",
+        "required": false,
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        },
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": true,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      }
+    },
+    "isContext": false
+  }
+}
