@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: seishmc
+Version: 0.0.1
+Summary: Full moment tensor inversion using Hamiltonian Monte Carlo (HMC) sampling
+Home-page: https://github.com/Liang-Ding/seishmc
+Author: Liang Ding
+Author-email: myliang.ding@mail.utoronto.ca
+Project-URL: Bug Tracker, https://github.com/Liang-Ding/seishmc/issues
+Keywords: seismology
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Full moment tensor inversion using Hamiltonian Monte Carlo (HMC) sampling
