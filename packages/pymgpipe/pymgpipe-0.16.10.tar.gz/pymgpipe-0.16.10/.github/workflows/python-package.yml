@@ -1,0 +1,84 @@
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Python package
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    if: ${{ github.event.head_commit.message != 'Github Actions- Push'}}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10"]
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        persist-credentials: false 
+        fetch-depth: 0 
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install -e .
+        pip install -r requirements.txt
+    - name: Lint with flake8
+      run: |
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+    - name: Test with pytest
+      run: |
+        pytest
+    - name: Build coverage file
+      run: |
+        echo '[run]\nomit =\n\tpymgpipe/tests/*\n\tpymgpipe/__init__.py' > .coveragerc
+        pytest --junitxml=pytest.xml --cov-report=term-missing:skip-covered --cov=pymgpipe pymgpipe/tests/ | tee pytest-coverage.txt
+    - name: Pytest coverage comment
+      if: ${{ github.ref == 'refs/heads/main' }}
+      id: coverageComment
+      uses: MishaKav/pytest-coverage-comment@main
+      with:
+        pytest-coverage-path: ./pytest-coverage.txt
+        junitxml-path: ./pytest.xml
+    - name: Update Readme with Coverage Html
+      if: ${{ github.ref == 'refs/heads/main' }}
+      run: |
+        sed -i '/<!-- Pytest Coverage Comment:Begin -->/,/<!-- Pytest Coverage Comment:End -->/c\<!-- Pytest Coverage Comment:Begin -->\n\${{ steps.coverageComment.outputs.coverageHtml }}\n<!-- Pytest Coverage Comment:End -->' ./README.md
+  release:
+    needs: build
+    if: ${{ github.ref == 'refs/heads/main' }}  && ${{ github.event.head_commit.message != 'Github Actions- Push'}}
+    name: Update version
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.RELEASE }}
+    steps:
+      - id: release
+        uses: rymndhng/release-on-push-action@master
+        with:
+          tag_prefix: "v"
+          bump_version_scheme: patch
+          use_github_release_notes: true
+  push-changes:
+    runs-on: ubuntu-latest
+    name: Push changes
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        persist-credentials: false 
+        fetch-depth: 0 
+    - name: Commit & Push changes to Readme
+      if: ${{ github.ref == 'refs/heads/main' }} 
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.PUSH_README }}
+        message: 'Github Actions- Push'
