@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+contactapi/__init__.py
+contactapi/__main__.py
+contactapi/config.py
+contactapi/crud.py
+contactapi/main.py
+contactapi/models.py
+contactapi/router.py
+contactapi/schemas.py
+contactapi.egg-info/PKG-INFO
+contactapi.egg-info/SOURCES.txt
+contactapi.egg-info/dependency_links.txt
+contactapi.egg-info/entry_points.txt
+contactapi.egg-info/requires.txt
+contactapi.egg-info/top_level.txt
