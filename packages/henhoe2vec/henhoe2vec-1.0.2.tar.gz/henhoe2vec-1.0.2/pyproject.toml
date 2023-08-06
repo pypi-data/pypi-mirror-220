@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=67.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "henhoe2vec"
+version = "1.0.2"
+description = "Implementation of the HeNHoE-2vec algorithm by Valentini et al. (2021)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE.txt"}
+authors = [
+    {name = "Robert Giesler", email = "robert.giesler@rwth-aachen.de"}
+]
+keywords = [
+    "embeddings", "graph embeddings", "network embeddings", "node embeddings",
+    "multilayer graph embeddings", "multilayer network embeddings", "node2vec",
+    "HeNHoE-2vec", "Het-node2vec", "multilayer networks"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas >= 1.2.0",
+    "numpy >= 1.22.0",
+    "networkx >= 2.5",
+    "gensim >= 4.3.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "build"]
+
+[project.urls]
+Repository = "https://github.com/Bertr0/HeNHoE-2vec"
