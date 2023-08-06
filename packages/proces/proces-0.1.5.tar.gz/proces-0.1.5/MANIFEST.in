@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+
+recursive-include proces *
+
+recursive-exclude * *.pyc
+recursive-exclude * .DS_Store
+recursive-exclude * __pycache__
