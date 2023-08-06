@@ -1,0 +1,9 @@
+fruitcraft/__init__.py,sha256=Q9U9l0ByFF3Ko_RDrL0BC92sBqBu0KNoV96MRJH-sz8,99
+fruitcraft/client.py,sha256=oopjyJBWd44IM6FS6HwXLefILwWdIHI4gg9BbaIrbsY,13181
+fruitcraft/f_types/__init__.py,sha256=XSP8IG1SAm2aTGL1neH__vVWmo5AT2QQpuukLyFl4So,22685
+fruitcraft/f_types/errors.py,sha256=wak13TxO1VQGt5XGltko9PovtVYs4lMILksevecy5KM,727
+fruitcraft/f_types/utils.py,sha256=ZAOhFR2i050QTQJzQfE0dpy95mCeYQQ5UcHyL4FSe38,3985
+fruitcraft-0.0.3.dist-info/LICENSE,sha256=euC8wKZWQYyzktvkgwCRkjbUpFnQiSjKsJCU2dgt6WE,1068
+fruitcraft-0.0.3.dist-info/METADATA,sha256=nw7qWd_V6MBbIY2mZTyAl3xZ59Gj_Pz23OzmUHh0xl8,1026
+fruitcraft-0.0.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+fruitcraft-0.0.3.dist-info/RECORD,,
