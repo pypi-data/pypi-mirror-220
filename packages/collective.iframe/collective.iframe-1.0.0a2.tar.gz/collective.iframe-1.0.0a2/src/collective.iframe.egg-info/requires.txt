@@ -1,0 +1,7 @@
+setuptools
+plone.api
+plone.app.dexterity
+
+[test]
+plone.app.testing
+plone.testing

@@ -1,0 +1,100 @@
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  xmlns:metal="http://xml.zope.org/namespaces/metal"
+  xmlns:tal="http://xml.zope.org/namespaces/tal"
+  lang="en"
+  metal:use-macro="context/@@main_template/macros/master"
+  xml:lang="en"
+  i18n:domain="plone"
+>
+  <body>
+    <metal:body fill-slot="body">
+      <metal:bodyslot define-slot="body">
+        <article id="content">
+          <metal:bodytext define-slot="main">
+            <tal:top_metadata condition="not:context/hide_metadata">
+              <header>
+                <div
+                  id="viewlet-above-content-title"
+                  tal:content="structure provider:plone.abovecontenttitle"
+                />
+
+                <metal:title define-slot="content-title">
+                  <h1 tal:replace="structure context/@@title" />
+                </metal:title>
+
+                <div
+                  id="viewlet-below-content-title"
+                  tal:content="structure provider:plone.belowcontenttitle"
+                />
+
+                <metal:description define-slot="content-description">
+                  <p tal:replace="structure context/@@description" />
+                </metal:description>
+
+                <tal:comment condition="nothing">plone.belowcontentdescription does not exist on Plone 5.2</tal:comment>
+                <div
+                  tal:on-error="string:"
+                  id="viewlet-below-content-description"
+                  tal:content="structure provider:plone.belowcontentdescription"
+                />
+              </header>
+
+              <div
+                id="viewlet-above-content-body"
+                tal:content="structure provider:plone.abovecontentbody"
+              />
+            </tal:top_metadata>
+            <div id="content-core">
+              <metal:text define-slot="content-core">
+                <div
+                  id="text_above"
+                  tal:condition="python:getattr(context, 'text_above', None)"
+                  tal:content="structure python:context.text_above.output_relative_to(view.context)"
+                />
+
+                <iframe
+                  src="${context/remote_url}"
+                  name="collective_iframe"
+                  id="collective_iframe"
+                  marginwidth="0"
+                  marginheight="0"
+                  frameborder="0"
+                  title="${context/title}"
+                  width="${context/page_width}"
+                  height="${context/page_height}"
+                />
+                <p tal:condition="context/show_reference">
+                  <span i18n:translate="link_address"
+                    >The link address is:</span
+                  >
+                  <a href="${context/remote_url}">${context/remote_url}</a>
+                </p>
+                <div
+                  id="text_below"
+                  tal:condition="python:getattr(context, 'text_below', None)"
+                  tal:content="structure python:context.text_below.output_relative_to(view.context)"
+                />
+              </metal:text>
+            </div>
+
+            <div
+              id="viewlet-below-content-body"
+              tal:condition="not:context/hide_metadata"
+              tal:content="structure provider:plone.belowcontentbody"
+            />
+          </metal:bodytext>
+          <tal:bottom_metadata condition="not:context/hide_metadata">
+            <footer>
+              <div
+                id="viewlet-below-content"
+                tal:content="structure provider:plone.belowcontent"
+              />
+            </footer>
+          </tal:bottom_metadata>
+        </article>
+      </metal:bodyslot>
+    </metal:body>
+  </body>
+</html>
