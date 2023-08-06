@@ -1,0 +1,3 @@
+[console_scripts]
+webplus = webplus.cli:main
+
