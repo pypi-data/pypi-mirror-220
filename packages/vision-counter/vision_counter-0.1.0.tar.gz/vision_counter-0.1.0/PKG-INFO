@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: vision_counter
+Version: 0.1.0
+Summary: Vision Counter: An Efficient Object Counting Library for Python
+Home-page: https://github.com/tamnguyenvan/vision-counter
+Author: Tam Nguyen
+Author-email: tamnvhustcc@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://tamnguyenvan.github.io/vision_counter
+Project-URL: Source, https://github.com/tamnguyenvan/vision_counter
+Keywords: computer-vision object-counting image-recognition deep-learning python-library
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Vision Counter is a powerful and user-friendly Python library that enables accurate object counting in images using pre-trained models. With a simple and intuitive API, Vision Counter can be easily integrated into your computer vision projects, providing reliable object counting solutions for various applications. The library comes equipped with state-of-the-art models and efficient algorithms to deliver high-performance object counting capabilities. Whether you need to count people, vehicles, or any other objects in your images, Vision Counter is the ideal choice for fast and accurate results.
+
