@@ -1,0 +1,9 @@
+half_json/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+half_json/core.py,sha256=hRStgTVh8HKwwZZ9pbABNQrBrItRfn1XAy5IhsvWgi0,7043
+half_json/json_util.py,sha256=bj6nDzMHJ7bOBU5FMDnjz7QY6pBon6hBnzMdnVEmJKo,4569
+half_json/main.py,sha256=PpU_md4HEb5osxwCT5E6M8XKLyp_PBIRJgeHzU48Ud4,792
+jsonfixer-0.2.0.dist-info/METADATA,sha256=l2P40_3bGRLoahZ47fVrmeL6ES4PM4EC_pQ00b6f3wc,2797
+jsonfixer-0.2.0.dist-info/WHEEL,sha256=0QD4Fi8spmPDA9YIWsctxI6ukFf44Zgk0L9495lbqs0,90
+jsonfixer-0.2.0.dist-info/entry_points.txt,sha256=J4RH3sgWYYYAM3gdeMiFg_zPT_2Z4ddE0QKWXqIqGFI,54
+jsonfixer-0.2.0.dist-info/licenses/LICENSE,sha256=mDXREBMnd9wVLp-E1D0l7CiuMZFRY4H2JUJoFpTmxlI,1065
+jsonfixer-0.2.0.dist-info/RECORD,,
