@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "vbtex"
+version = "0.1.4"
+description = "vbtex is cli tool for rendering pdf random things"
+authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+vbtex = "vbtex.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
