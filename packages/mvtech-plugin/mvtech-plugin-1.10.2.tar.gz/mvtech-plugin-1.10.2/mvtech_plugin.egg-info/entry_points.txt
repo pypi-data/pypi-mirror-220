@@ -1,0 +1,3 @@
+[console_scripts]
+mvtech-plugin = core.main:cmdline
+
