@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: warmindo
+Version: 0.4
+Summary: Framework Warmindo berbasis Python
+Home-page: https://github.com/adhamcahyo/warmindo
+Author: adham cahyo
+Author-email: arnolisarnol@gmail.com
+Project-URL: Source Code, https://github.com/adhamcahyo/warmindo
+Project-URL: Documentation, https://github.com/adhamcahyo/warmindo/docs
+Keywords: framework web warmindo python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
