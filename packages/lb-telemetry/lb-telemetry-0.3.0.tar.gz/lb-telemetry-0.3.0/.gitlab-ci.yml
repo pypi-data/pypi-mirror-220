@@ -1,0 +1,71 @@
+###############################################################################
+# (c) Copyright 2021 CERN for the benefit of the LHCb Collaboration           #
+#                                                                             #
+# This software is distributed under the terms of the GNU General Public      #
+# Licence version 3 (GPL Version 3), copied verbatim in the file "COPYING".   #
+#                                                                             #
+# In applying this licence, CERN does not waive the privileges and immunities #
+# granted to it by virtue of its status as an Intergovernmental Organization  #
+# or submit itself to any jurisdiction.                                       #
+###############################################################################
+
+image: registry.cern.ch/docker.io/library/python:3.11
+
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+before_script:
+  - source /cvmfs/lhcb.cern.ch/lib/LbEnv
+  - python -m venv .venv
+  - source .venv/bin/activate
+  - pip install -e .[dev]
+
+pre_commit:
+  stage: lint
+  before_script:
+    - pip install pre-commit
+  script:
+    - pre-commit run --all-files
+
+mypy:
+  stage: lint
+  script:
+    - mypy src/lb_telemetry --explicit-package-bases
+  allow_failure: true
+
+tests:
+  stage: test
+  needs: []
+  script:
+    - python -m pytest tests/ -v
+  coverage: '/TOTAL.*\s+(\d+%)$/'
+
+package:
+  stage: build
+  image: gitlab-registry.cern.ch/lhcb-docker/python-deployment:python-3.7
+  script:
+    - python -m build
+  artifacts:
+    paths:
+      - dist
+    expire_in: 1 week
+  before_script:
+    - pip install build
+  after_script: []
+
+
+deploy-packages:
+  stage: deploy
+  image: gitlab-registry.cern.ch/lhcb-docker/python-deployment:python-3.7
+  only:
+    - tags
+  dependencies:
+    - package
+  script:
+    - if [ -z "$TWINE_PASSWORD" ] ; then echo "Set TWINE_PASSWORD in CI variables" ; exit 1 ; fi
+    - twine upload -u __token__ dist/*
+  before_script: []
+  after_script: []
