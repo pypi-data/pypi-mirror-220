@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: FIMProject
+Version: 0.0.6
+Summary: Frequent Itemset Mining and Frequent Sequence Mining Algorithms package for ARM
+Home-page: https://github.com/fatihsen20/Frequent-Mining-Algorithms
+Author: Fatih Sen
+Author-email: fatih.sn2000@gmail.com
+Keywords: FIM,Frequent Itemset Mining,Frequent Sequence Mining,Association Rule Mining,ARM
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: numpy
+Requires-Dist: numpy ; extra == 'numpy'
+Provides-Extra: pandas
+Requires-Dist: pandas ; extra == 'pandas'
+
+ # How to Install
+```shell
+pip install FIMProject
+```
+# How to Use It
+```python
+from FIM import apriori, association_rules
+
+freq_items = apriori(df, min_support=0.6, show_colnames=True)
+rules = association_rules(freq_items, metric="confidince", min_threshold=0.7)
+
+```
+
+# What is df?  
+
+<p>
+df is a pandas dataframe. It is a table of transactions. Each row is a transaction and each column is an item. The value of each cell is the number of items in the transaction.
+</p>

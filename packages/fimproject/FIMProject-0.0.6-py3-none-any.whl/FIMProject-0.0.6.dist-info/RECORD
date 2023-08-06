@@ -1,0 +1,13 @@
+FIM/Apriori.py,sha256=GaNjk_IoWeuEt3ykgmx6hTN_Up3rwXleARm_LI5c-nk,4784
+FIM/__init__.py,sha256=q_95jDvpOV3RgqDjmpB-a_GeVEusfZ9IXTHoCaONLf0,286
+FIM/association_rules.py,sha256=j2zsM42zUoxGOSV8bcCjVKClIf5aXKC8bt5tBkJ55PU,3227
+FIM/eclat.py,sha256=CsjfLvozndryc1I4dX9YiMkbCAVG_YzI0j6NrjXaALg,4807
+FIM/fpgrowth.py,sha256=aWrZTCOV0gIVnhR1n0uXhwPrTiolo56nBpiG-LOW3yo,5673
+FIM/hmine.py,sha256=CkyY0IrPaoUL4iXU5ehTEuYfNilCEJBRGdrrWON8R6M,5328
+FIM/utils.py,sha256=6i1rLPuIgMQNU2wAS21iPcawYiprp8RLskfxs1E2h-8,3290
+FSM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FIMProject-0.0.6.dist-info/LICENSE,sha256=UcUOLl_MiQM4GpOo_f4iMcBN29WhoBTSw52Bscs4ZnY,1091
+FIMProject-0.0.6.dist-info/METADATA,sha256=0DARVWSPmS4MfzsELAJR4RKgJVWFEOkRxbqvcxoUDj8,1226
+FIMProject-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+FIMProject-0.0.6.dist-info/top_level.txt,sha256=R1zlpu_xXGvSWds-AD8Oz1_F9F3RxH6EROodL-EKBvg,8
+FIMProject-0.0.6.dist-info/RECORD,,
