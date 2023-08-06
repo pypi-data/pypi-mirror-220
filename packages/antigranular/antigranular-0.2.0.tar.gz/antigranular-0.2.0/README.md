@@ -1,0 +1,99 @@
+# Unlock privacy: Getting along with Antigranular
+Antigranular is a community-driven, open-source platform that merges confidential computing and differential privacy. This creates a secure environment for handling and unlocking the full potential of unseen data.
+### Connect to Antigranular 
+Antigranular works with just 4 characters `%%ag` , like magic!
+Any code written after the magic cell `%%ag` is run in our remote server 
+which is a restricted environment allowing methods which guarantees
+differential privacy.
+
+Install the Antigranular package using `pip`:
+```python
+!pip install antigranular
+```
+Import the `Antigranular` library:
+```python
+import antigranular as ag
+```
+Use your client credentials and dataset or competition ID to connect to the AG Enclave Server:
+```python
+ag.login("client id": "<client_secret_id>": competition="<competition_id>")
+```
+A succesful login will register the cell magic `%%ag`. 
+
+### Loading Private Datasets 
+Private dataset objects can be loaded in the form of `PrivateDataFrames` and `PrivateSeries`
+using the `ag_utils` library. `ag_utils` is a package locally intalled in the remote server.
+This eliminated the hassle of having to install anything other than 
+antigranular package.
+
+You can learn more about `PrivateSeries` and `PrivateDataFrames` on our quick 
+on [Private Pandas](./QS_pandas).
+
+We use `load_dataset()` method to obtain a collection of private objects in the form of a dictionary.
+The structure of the response dictionary, 
+dataset path and private object names will be mentioned during the competition.
+```python
+%%ag
+from op_pandas import PrivateDataFrame , PrivateSeries
+from ag_utils import load_dataset 
+"""
+Sample response structure
+{
+    train_x : priv_train_x,
+    train_y : priv_train_y,
+    test_x : priv_test_x
+}
+"""
+# Obtaining the dictionary containing private objects
+response = load_dataset("<path_to_dataset>")
+
+# Unpacking the response dictionary
+train_x = response["train_x"]
+train_y = response["train_y"]
+test_x = response["test_x"]
+```
+### Exporting Objects
+Since `%%ag` runs code in a very restricted environment, you need to export the differentially private 
+objects to the local environment in order to do further analysis.
+The data objects can be exported using the `export` method in `ag_utils`.
+##### **API info**: `export(obj, variable_name:str)`
+The remote object gets exported to the local environment and gets 
+assigned to the stated variable name. It is important to note that`PrivateSeries` and `PrivateDataFrame`
+objects cannot be exported and will raise an error if tried to 
+be exported in any manner.
+```python 
+%%ag
+from ag_utils import export
+train_info = train_x.describe(eps=1)
+export(train_info , 'variable_name')
+```
+Once exported, you can apply any form of data anlysis on the 
+differentially private object.
+
+```python
+# Local code block
+print(variable_name)
+--------------------------------------
+                    Age         Salary
+    count  99987.000000   99987.000000
+    mean      38.435953  120009.334336
+    std       12.167379   46255.486093
+    min       18.257448   40048.259037
+    25%       27.185189   80057.639960
+    50%       38.210860  120380.291216
+    75%       49.147724  159835.637091
+    max       59.282932  199920.664706
+```
+
+## Libraries Supported
+
+
+- **`pandas`**: A versatile data manipulation library that offers efficient data structures and tools for data analysis and manipulation.
+
+- **`op_pandas`**: A wrapped library specifically designed for differentially private data manipulation within the Pandas framework. It enhances privacy-preserving techniques and enables privacy-aware data processing.
+
+- **`op_diffprivlib`**: A differentially private library that provides various privacy-preserving algorithms and mechanisms for machine learning and data analysis tasks.
+
+- **`op_smartnoise`**: A library focused on privacy-preserving analysis using the SmartNoise framework. It provides tools for differential privacy and secure computation.
+
+- **`op_opendp`**: A library that offers differentially private data analysis and algorithms based on the OpenDP project. It provides privacy-preserving methods and tools for statistical analysis.
