@@ -1,0 +1,154 @@
+# Giraffe_View 
+
+**Giraffe_View** is designed to help assess and visualize the accuracy of a sequencing dataset, specifically for Oxford Nanopore Technologies (ONT) long-read sequencing including DNA and RNA data. There are four main functions to validate the read quality.
+
+- `observe`  calculates the observed read accuracy, mismatches porportion, and homopolymer identification.
+- `estimate`  calculates the estimated read accuracy, which is equal to Quality Score.
+- `gcbias`  compares the relationship between GC content and read coverage.
+- `modibin` perform statistics on the distribution of modification based on the bed file.
+
+
+
+## Install
+
+To use this software, you need to install additional dependencies including samtools, minimap2, seqkit, and bedtools for read processing. The following commands can help you to install the package  and dependencies.
+
+```shell
+pip install Giraffe-View
+conda install -c bioconda -c conda-forge samtools minimap2 seqkit bedtools -y
+```
+
+
+
+## General Usage
+
+Giraffe View is run simply with fllowing commands:
+
+```
+usage: giraffe [-h] {observe,estimate,gcbias,modibin} ...
+
+A tool to help you assess quality of ONT data.
+
+positional arguments:
+  {observe,estimate,gcbias,modibin}
+    observe             Observed quality in accuracy, mismatch, and homopolymer identification
+    estimate            Estimated read accuracy
+    gcbias              Relationship between GC content and depth
+    modibin             Average modification proportion of bins
+
+optional arguments:
+  -h, --help            show this help message and exit
+```
+
+
+
+The available sub-commands are:
+
+#### observe
+
+```
+giraffe observe -h
+usage: giraffe observe [-h] --input <fastq> --ref <reference> [--cpu <number>] [--plot]
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --input <fastq>    input reads
+  --ref <reference>  input reference
+  --cpu <number>     number of cpu (default:10)
+  --plot             Results visualization
+```
+
+- `fastq` - the raw fastq data, some filter steps will be conducted including short read ( < 200 bp) and low quality read ( < 7 ) removal.
+- `reference` - the reference file in fasta format.
+- `cpu` - the number of CPUs will be used during processing.
+
+
+
+#### estimate  
+
+```
+giraffe estimate -h
+usage: giraffe estimate [-h] --input <fastq> [--cpu <number>] [--plot]
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --input <fastq>  input reads
+  --cpu <number>   number of cpu (default:10)
+  --plot           Results visualization
+```
+
+
+
+#### gcbias
+
+```
+giraffe gcbias -h
+usage: giraffe gcbias [-h] --ref <reference> --input <sam/bam> [--binsize] [--plot]
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --ref <reference>  input reference file
+  --input <sam/bam>  input bam/sam file
+  --binsize          input bin size (default:1000)
+  --plot             Results visualization
+```
+
+- `reference` - the reference file in fasta format.
+- `sam` / `bam` - the result of mapping in sam/bam file. If you have used the observe function to process your data, the resulting `tmp.sort.bam` file can be used as the input.
+- `binsize` - the length of bin. A bin is the smallest unit to count the read coverage and GC content.
+
+
+
+#### modibin
+
+```
+giraffe modibin -h
+usage: giraffe modibin [-h] --input <bed> --ref <reference> [--cpu <number>] [--plot]
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --input <bed>      input modificated bed file, please use the .bed as the file suffix
+  --ref <reference>  input position file with CSV format, please use the .csv as the file suffix
+  --cpu <number>     number of cpu (default:10)
+  --plot             Results visualization
+```
+
+- `bed` -  a BED file with four columns (three columns for position, one for methylation proportion).  Please use the tab ("\t") to gap the column instead of the space (" ").
+
+   ```
+   #chrom	start	end	value
+   chr1	81	83	0.8
+   chr1	21314	21315	0.3
+   chr1	32421	32422	0.85
+   ```
+
+- `reference` - a CSV file with target regions.
+
+   ```
+   chr1,0,100000,1_0_100000
+   chr1,100000,200000,1_100000_200000
+   ```
+
+
+
+## Workflow
+
+```mermaid
+graph TD
+	A(raw signal) -.-> |Basecall| B(FASTA)
+	A(raw signal) -.-> |Basecall| C(modificated BED)
+	C(modificated BED) --> |modibin| D(modification distribution)
+	B(FASTA) --> |estimate|e(estimated accuracy)
+	B(FASTA) --> |observe| f(clean reads)
+	f(clean reads) --> |observe| g(aligned BAM)
+	
+	g(aligned BAM) --> |observe|h(homopolymer identification)
+ 	g(aligned BAM) --> |observe|i(observed accuracy)
+	g(aligned BAM) --> |gcbias|j(GC bias) 
+```
+
+
+
+## Developing
+
+- run the homopolymer identification with multi processes.
