@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: chidori
+Version: 0.1.7
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: typing-extensions>=3; python_version < '3.8'
+Requires-Dist: cffi
+Summary: A framework for building LLM based agents
+Author: Colton Pierson
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: repository, https://github.com/thousandbirds/chidori
+Project-URL: homepage, https://github.com/thousandbirds/chidori
+Project-URL: documentation, https://github.com/thousandbirds/chidori/README.md
+
+# Chidori
+
+## Generating Python Client
+- maturin develop --features python
+
+## Generating Nodejs Client
+- npm run build-release
+
