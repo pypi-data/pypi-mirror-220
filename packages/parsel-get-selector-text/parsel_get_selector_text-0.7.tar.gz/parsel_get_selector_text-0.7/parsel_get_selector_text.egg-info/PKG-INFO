@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: parsel-get-selector-text
+Version: 0.7
+Summary: Extracts all text results from an XPath query on a parsel Selector object.
+Author-email: "Carlos A. Planchón" <carlosandresplanchonprestes@gmail.com>
+License: MIT License
+Project-URL: repository, https://github.com/carlosplanchon/parsel_get_selector_text.git
+Keywords: dom,parsel,scraping,xpath
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# parsel_get_selector_text
+Module to get_selector_text from parsel.Selector objects.
