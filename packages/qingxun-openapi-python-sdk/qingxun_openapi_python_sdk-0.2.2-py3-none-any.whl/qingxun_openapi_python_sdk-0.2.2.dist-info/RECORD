@@ -1,0 +1,14 @@
+TranslateApi/account.py,sha256=30s8V4zviALzW_4P3SzGBh-5jXUXYU_f811voU3cg0g,970
+TranslateApi/audio_trans.py,sha256=X3O8YEH4uqOaGb5yteIiVz2h2UIS7nSFCoowoxzGKcA,2119
+TranslateApi/dict_search.py,sha256=tBjcWFjzll9xiDV7YbKwiT2OE6HVNKQCk0cE6L3aYUk,886
+TranslateApi/doc_convert.py,sha256=cBvqL_SiIOnr1_wJyfPOLpCtIEIUr6kfuk4-9702Qdg,1364
+TranslateApi/document_translation.py,sha256=admlg-l7QR4OiuFiv4MMR-HPH_KANsEAitugwxbFFzc,6413
+TranslateApi/image_trans.py,sha256=2BUtKul_TQ0KH4AoojS9Kq3gMiJINTXCU-44NJYosmY,2813
+TranslateApi/ocr.py,sha256=YyZFzQp7X6GosGL_WsQkzGWUGwHcX9WYOtHVh1m3DjM,1303
+TranslateApi/preproccess.py,sha256=LVlPMsag07b6g0kNCFZqURxIF6eI6Kg5aH0QWKVCtxg,592
+TranslateApi/text_trans.py,sha256=LvKvrYkeMg9qg2reu4WaOwqDZb2EnGU3OhfSOprv19Q,934
+TranslateApi/voice_trans.py,sha256=mVlzouPaBDQTjJVOt75s_CzJydl7rBMgQR90dyBuun4,2094
+qingxun_openapi_python_sdk-0.2.2.dist-info/METADATA,sha256=5F2lI8oTWPg_owW9YxWnj-w10ydrVgHfAXVbBDyozFk,94
+qingxun_openapi_python_sdk-0.2.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+qingxun_openapi_python_sdk-0.2.2.dist-info/top_level.txt,sha256=RHmWx_pJc1QDvDuAh94xUXFHfnNMmjD9WKEB3CFbztE,13
+qingxun_openapi_python_sdk-0.2.2.dist-info/RECORD,,
