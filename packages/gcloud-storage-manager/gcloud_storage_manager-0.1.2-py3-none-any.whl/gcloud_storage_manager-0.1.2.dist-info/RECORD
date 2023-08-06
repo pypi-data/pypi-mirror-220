@@ -1,0 +1,13 @@
+gcloud_storage_manager/__init__.py,sha256=Vh-yvJYEWgde5-Pj571AYQsK1C7y4rRQVXorp_KRGrw,191
+gcloud_storage_manager/base.py,sha256=qEx62su7-j4uk6wN7wxzJy5tsWTKrhYXxA5YVp7VRA0,913
+gcloud_storage_manager/download.py,sha256=QwgoG6nleg4GZd6EIIRcYUvsNQFpNjkO8qVBO4bVfhA,2829
+gcloud_storage_manager/std_logging.py,sha256=k-3sjGF2dFIP0VU4masHdcY7Vw3tLgSmPEpblqEp8Dg,137
+gcloud_storage_manager/upload.py,sha256=Q1pB4Ue-xAc0DgSd-kSFrN2bP6azZFCnRcIDL827gZI,3643
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_download.py,sha256=w5J-wAptzWJO-iKHrDX3RaqNIypWqYleXAEcNiJO6BM,4057
+tests/test_upload.py,sha256=SBYYDXFraDLbhMpdV_Ps5Gp2ULhJdmAA6fanOlJ2gF0,2901
+gcloud_storage_manager-0.1.2.dist-info/LICENSE,sha256=yXBKBdNS8lqS3qPK9EObxToBzv8rH8WtYCaCBO8RF9g,1069
+gcloud_storage_manager-0.1.2.dist-info/METADATA,sha256=O6s5yhbFQB_hapFq4-PRrmH3G1pk9FwqRamokfbnpa4,462
+gcloud_storage_manager-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gcloud_storage_manager-0.1.2.dist-info/top_level.txt,sha256=XDbuZxGHD6Rlb7WboeQB9XXYjq5yerBHZt_ByBPd9BM,29
+gcloud_storage_manager-0.1.2.dist-info/RECORD,,
