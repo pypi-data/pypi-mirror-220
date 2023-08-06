@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kingunit"
+version = "0.0.3"
+description = "KingUnit"
+authors = [{name = "东南dnf", email = "zjy2414@outlook.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dependencies = [
+    "pyyaml",
+    "pytest",
+    "pytest-html",
+    "black",
+    "allure-pytest",
+    "typer[all]"
+]
+
+[project.urls]
+Home = "https://github.com/zjy2414"
