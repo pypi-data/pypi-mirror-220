@@ -1,0 +1,8 @@
+timedctl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timedctl/http_cache.sqlite,sha256=UjzM_oAqaB5tTNShIa8HikPGH-chFpxSx13ljfxP9ZA,36864
+timedctl/timedctl.py,sha256=_6P-DRxR0SsAZ0fp3jvM8nDKLZI4rCdVH0xUU-N_Bq8,16931
+timedctl-3.5.0.dist-info/LICENSE,sha256=YVZ4J41kZ3lREzjuOFUFomv6hvvZoUfu8A888V24We0,34454
+timedctl-3.5.0.dist-info/METADATA,sha256=QEFffVR7bNuK4umMYzSW2lv0eqUnd2BWN5hAkPKnOzg,1565
+timedctl-3.5.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+timedctl-3.5.0.dist-info/entry_points.txt,sha256=g_phNfrRzyoW9ARNHEkV8iqrR6Vt4tx5WAV86vjdZQ0,55
+timedctl-3.5.0.dist-info/RECORD,,
