@@ -1,0 +1,11 @@
+service: "service.py:svc"
+labels:
+  owner: bentoml-team
+  project: bentoctl
+include:
+  - service.py
+python:
+  packages:
+    - scikit-learn
+    - pandas
+    - pydantic
