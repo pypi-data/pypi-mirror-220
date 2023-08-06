@@ -1,0 +1,14 @@
+click
+cli_exit_tools
+
+[test]
+black
+codecov
+coloredlogs
+coverage
+flake8
+mypy
+pytest
+pytest-cov
+pytest-runner
+readme_renderer
