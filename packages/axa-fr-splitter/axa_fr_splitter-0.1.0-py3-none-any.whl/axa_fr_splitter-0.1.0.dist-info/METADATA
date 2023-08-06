@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: axa-fr-splitter
+Version: 0.1.0
+Summary: AXA France file splitter package
+Home-page: https://github.com/AxaFrance/axa-fr-splitter
+Author: AXA
+Author-email: guillaume.chervet@axa.fr
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: PyMuPdf (==1.21.1)
+Requires-Dist: eml-parser (==1.17.5)
+Requires-Dist: python-magic (==0.4.27)
+Requires-Dist: opencv-python-headless (==4.7.0.68)
+
+Utility library used to split pages from common file types (pdf, tiff) into separate png files. It also extracts text from input files.
