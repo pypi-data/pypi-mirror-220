@@ -1,0 +1,3 @@
+[console_scripts]
+nat-gateway-setup=nat_gateway_setup.nat_gateway_setup:main
+
