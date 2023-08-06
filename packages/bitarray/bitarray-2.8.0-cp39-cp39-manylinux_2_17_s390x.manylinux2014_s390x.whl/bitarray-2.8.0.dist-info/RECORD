@@ -1,0 +1,17 @@
+bitarray/_bitarray.cpython-39-s390x-linux-gnu.so,sha256=2fApDNFoxHQN25XWCUc1Q0K2WmP8rePaOv40ADy8bN4,458224
+bitarray/bitarray.h,sha256=IuhCgyO-cxwErOB7si2JYEW43G3ipQg42OedjUASZks,9284
+bitarray/__init__.pyi,sha256=Fuo1aYCRckMEN2CX5jxUm8rDO46z1GcagGHyBRDezgw,4789
+bitarray/pythoncapi_compat.h,sha256=9ywdY-5gQSwyy61cQ-pEH2Wn4GyowXe93m3bGSlDN1E,16187
+bitarray/__init__.py,sha256=PME1Dx8EFSw_I5Bc3MrEPgenr26yqAmOZDae-GlUfaw,2525
+bitarray/test_data.pickle,sha256=v5oAS4jJwWDVDh8s0mPn4iCvwN3-Y5sZWpVGkpwyCqw,356
+bitarray/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bitarray/_util.cpython-39-s390x-linux-gnu.so,sha256=-UGoX-HRTO_icpdT7t8QjQaXiHHM-LzkY8VrI9ff9Is,240192
+bitarray/test_bitarray.py,sha256=UHqGloLrMGFiTFiDELsqunV5qq9AWFuJ04aET2zOnzY,172338
+bitarray/util.py,sha256=TNiBvKyBhFP1Kcr4i8vRFc1KMHQml9GudMwViXfQvsE,13200
+bitarray/test_util.py,sha256=j5Hvymx67vkGDcYzQlsAEEqXNZOkv5XtGlHBX6GSlDQ,87968
+bitarray/util.pyi,sha256=w_IVJ3MMHSCkueBuvjnOoxX1oMhoOGB9NzLRwVVb8ag,2439
+bitarray-2.8.0.dist-info/LICENSE,sha256=RdvbdncLCiee4uheVSgu2k8ioNProQY9UqwJCTs3rpM,2412
+bitarray-2.8.0.dist-info/METADATA,sha256=ANLJCdP7ePvyNbImllcsPwliP3nFvghryP9p-nMu_uU,32782
+bitarray-2.8.0.dist-info/top_level.txt,sha256=cLdoeIHotTwh4eHSe8qy8umF7zzyxUM90I8zFb2_xhg,9
+bitarray-2.8.0.dist-info/RECORD,,
+bitarray-2.8.0.dist-info/WHEEL,sha256=F5qJ9nq0Z7Rd02dpWQ9i8QohQ6Ct1IOhUBlVV76xxEI,146
