@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<odoo>
+<record id="test_transaction_mixin_inherit_view_form" model="ir.ui.view">
+    <field name="name">test.transaction.mixin.inherit.form</field>
+    <field name="model">test.transaction_mixin</field>
+    <field name="inherit_id" ref="test_transaction_mixin_view_form" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='str_pre_restart']" position="after">
+                <field name="str_pre_restart_2" />
+                <field name="str_pre_restart_3" />
+            </xpath>
+            <xpath expr="//field[@name='str_pre_confirm']" position="after">
+                <field name="str_pre_confirm_2" />
+                <field name="str_pre_confirm_3" />
+            </xpath>
+            <xpath expr="//field[@name='str_pre_cancel']" position="after">
+                <field name="str_pre_cancel_2" />
+                <field name="str_pre_cancel_3" />
+            </xpath>
+            <xpath expr="//field[@name='str_pre_open']" position="after">
+                <field name="str_pre_open_2" />
+                <field name="str_pre_open_3" />
+            </xpath>
+            <xpath expr="//field[@name='str_pre_done']" position="after">
+                <field name="str_pre_done_2" />
+                <field name="str_pre_done_3" />
+            </xpath>
+            <xpath expr="//field[@name='str_pre_terminate']" position="after">
+                <field name="str_pre_terminate_2" />
+                <field name="str_pre_terminate_3" />
+            </xpath>
+            <xpath expr="//field[@name='str_pre_approve']" position="after">
+                <field name="str_pre_approve_2" />
+                <field name="str_pre_approve_3" />
+            </xpath>
+            <xpath expr="//field[@name='str_pre_reject']" position="after">
+                <field name="str_pre_reject_2" />
+                <field name="str_pre_reject_3" />
+            </xpath>
+        </data>
+    </field>
+</record>
+</odoo>
