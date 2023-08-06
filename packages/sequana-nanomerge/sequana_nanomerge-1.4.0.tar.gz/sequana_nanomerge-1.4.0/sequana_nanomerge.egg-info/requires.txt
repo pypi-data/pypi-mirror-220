@@ -1,0 +1,13 @@
+sequana_pipetools>=0.12.2
+sequana
+pandas
+numpy
+
+[testing]
+pytest
+pytest-cov
+pytest-xdist
+pytest-mock
+pytest-timeout
+pytest-runner
+coveralls

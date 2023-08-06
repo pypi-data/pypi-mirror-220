@@ -1,0 +1,404 @@
+#
+#  This file is part of Sequana software
+#
+#  Copyright (c) 2016-2021 - Sequana Dev Team (https://sequana.readthedocs.io)
+#
+#  Distributed under the terms of the 3-clause BSD license.
+#  The full license is in the LICENSE file, distributed with this software.
+#
+#  Website:       https://github.com/sequana/sequana
+#  Documentation: http://sequana.readthedocs.io
+#  Contributors:  https://github.com/sequana/sequana/graphs/contributors
+##############################################################################
+
+"""nanomerge pipeline
+
+Author: Sequana Developers
+
+This pipeline is part of Sequana project (sequana.readthedocs.io)
+
+Execution:
+1. prepare the pipelie:
+
+    sequana_nanomerge --help
+
+2. exceute it either manually:
+
+    snakemake -s nanomerge.rules --forceall --stats stats.txt --cores 4
+
+or following the instructions from step 1.
+"""
+
+from pathlib import Path
+import pandas as pd
+from pylab import linspace 
+from numpy import zeros
+from sequana_pipetools import snaketools as sm
+
+sequana_wrapper_branch = "main"
+# This must be defined before the include
+configfile: "config.yaml"
+
+
+# A convenient manager
+manager = sm.PipelineManager("nanomerge", config)
+
+# convenient aliases
+input_directory = Path(config["input_directory"])
+input_pattern = config["input_pattern"]
+
+
+# infer barcoded directories
+barcodes = [x.name for x in input_directory.glob("*") if x.is_dir()]
+
+class Sample():
+
+    def __init__(self, samplesheet, barcoded):
+        self.df = pd.read_csv(samplesheet)
+        self.barcoded = barcoded
+        if "sample" not in self.df.columns:
+            self.df['sample'] = self.df['samplename']
+
+    def get_barcode_from_sample(self, sample):
+        candidate = self.df.query("sample==@sample")['barcode'].values[0]
+        return candidate
+
+    def get_projects(self):
+        return self.df.project.unique()
+
+
+if len(barcodes) == 0:
+    samples = Sample(config['samplesheet'], barcoded=False)
+else:
+    samples = Sample(config['samplesheet'], barcoded=True)
+
+
+if config["summary"]:
+    qc_file = ["pyco/pyco.html"]
+else:
+    qc_file = []
+
+# ========================================================================= pipeline starts here
+expected_fastqs = expand("./{project}/{sample}.fastq.gz", zip, project=samples.df['project'],
+        sample=samples.df['sample'])
+
+
+if "barcode" in samples.df.columns:
+    rule pipeline:
+        input:
+            expected_fastqs,
+            svg = ".sequana/rulegraph.svg",
+            html="summary.html",
+else:
+    rule pipeline:
+        input:
+            expected_fastqs,
+            html="summary.html",
+            svg = ".sequana/rulegraph.svg",
+            subsummary=expand("pycoqc/{barcode}_summary.html", barcode=samples.df.barcode.values)
+
+
+def get_input_merge(wildcards):
+    if samples.barcoded:
+        barcode = samples.get_barcode_from_sample(wildcards.sample)
+        filenames = list((input_directory / barcode).glob("*.fastq.gz"))
+    else:
+        filenames = list((input_directory).glob(input_pattern))
+    return filenames
+
+def get_input_directory(wildcards):
+    if samples.barcoded:
+        barcode = samples.get_barcode_from_sample(wildcards.sample)
+        return input_directory / barcode
+    else:
+        return input_directory
+
+
+if config["summary"]:
+
+
+    rule sub_sample_summary:
+        input:
+            config['summary']
+        output:
+            "sub_sample_summary/summary.txt"
+        params:
+            percentage=config['sub_sample_summary']['percentage'] / 100,
+            binning = 100
+        run:
+
+
+
+            # We need the min and max first of the entire start time vector
+            max_time = 0.
+            min_time = 24 * 10 * 3600 #(10 days is enough. runs are expected to be 72 hours max)
+            Ntotal = 0
+            with pd.read_csv(input[0], chunksize=10000, sep='\t') as reader:
+                for i, chunk in enumerate(reader):
+                    max_time = max(max_time, chunk.start_time.max())
+                    min_time = min(min_time, chunk.start_time.min())
+                    Ntotal += len(chunk)
+
+            bins = linspace(min_time, max_time, params.binning + 1)
+
+            # now we perform the stratified histogram
+            with pd.read_csv(input[0], chunksize=10000, sep="\t") as reader:
+
+                # we'll save the header once
+                header = True
+
+                # go through all chunks
+                for i,chunk in enumerate(reader):
+
+                    # save rows based on stratified sampling
+                    for j in range(params.binning-1):
+                        X1, X2 = bins[j], bins[j+1]
+                        subdf = chunk.query("start_time>=@X1 and start_time<@X2").sample(frac=params.percentage)
+                        if header is True:
+                            subdf.to_csv(output[0], header=True, mode="w", index=False, sep='\t')
+                            header = False
+                        else:
+                            subdf.to_csv(output[0], header=False, mode="a+", index=False, sep='\t')
+
+    rule pyco:
+        input:
+            "sub_sample_summary/summary.txt"
+        output:
+            "pyco/pyco.html"
+        log:
+            "pyco/pyco.log"
+        params:
+           options=config["pycoqc"]["options"]
+        container:
+            config["apptainers"]["pycoqc"]
+        shell:
+            """
+            pycoQC --summary_file {input} -o {output} {params.options} > {log} 2>&1
+            """
+
+    if "barcode" in samples.df.columns:
+        rule split_barcode:
+            input: "sub_sample_summary/summary.txt"
+            output: expand("sub_sample_summary/{barcode}_summary.txt", barcode=samples.df.barcode)
+            run:
+                import pandas as pd
+
+                headers = {}
+                for barcode in samples.df.barcode:
+                    headers[barcode] = True
+
+                with pd.read_csv(input[0], chunksize=100000, sep="\t") as reader:
+
+                    for i,chunk in enumerate(reader):
+                        for barcode in samples.df.barcode:
+                            filename= f"sub_sample_summary/{barcode}_summary.txt"
+                            subdf = chunk.query("alias==@barcode")
+                            if len(subdf):
+                                if headers[barcode] is True:
+                                    subdf.to_csv(filename, header=True, mode="w", index=False, sep='\t')
+                                    headers[barcode] = False
+                                else:
+                                    subdf.to_csv(filename, header=False, mode="a+", index=False, sep='\t')
+
+        rule pycoqc_per_barcode:
+            input:
+                "sub_sample_summary/{barcode}_summary.txt"
+            output:
+                "pycoqc/{barcode}_summary.html"
+            log:
+                "pycoqc/{barcode}.log"
+            params:
+                options=config["pycoqc"]["options"]
+            container:
+                config["apptainers"]["pycoqc"]
+            shell:
+                """
+                pycoQC --summary_file {input} -o {output} {params.options} > {log} 2>&1
+                """
+
+
+        
+
+
+rule merge:
+    input:
+        get_input_merge
+    output:
+        "./{project}/{sample}.fastq.gz"
+    params:
+        indir=get_input_directory
+    shell:
+        """
+        find {params.indir} -type f -name "*fastq.gz" -exec cat {{}} + > {output}
+        """
+
+
+rule rulegraph:
+    input:
+        workflow.snakefile
+    output:
+        "rulegraph/rulegraph.dot"
+    params:
+        configname = "config.yaml"
+    wrapper:
+        f"{sequana_wrapper_branch}/wrappers/rulegraph"
+
+
+rule dot2svg:
+    input:
+        "rulegraph/rulegraph.dot"
+    output:
+        ".sequana/rulegraph.svg"
+    container:
+        config['apptainers']['graphviz']
+    shell:
+        """dot -Tsvg {input} -o {output}"""
+
+
+
+rule html_report:
+    input:
+        list(expected_fastqs) + qc_file
+    output:
+        "summary.html"
+    run:
+        from sequana.modules_report.summary import SummaryModule2
+        from sequana_pipelines import nanomerge
+        os.makedirs("images", exist_ok=True)
+
+        data = {"name": "nanomerge",
+                 "rulegraph": ".sequana/rulegraph.svg",
+                 "pipeline_version": nanomerge.version}
+
+        dirs = ",".join([f'<a href="{x}/">{x}</a>' for x in samples.get_projects()])
+
+        def get_stats():
+            from sequana import FastA
+            from sequana.stats import N50
+            from pylab import mean
+            from collections import defaultdict
+
+            lengths = defaultdict(list)
+
+            for sample, filename in manager.samples.items():
+                barcode = filename.split("/")[-2]
+                barcodes.append(barcode)
+                f = FastA(filename)
+
+                # keep track of all lengths
+                these_lengths = list(f.get_lengths_as_dict().values())
+                lengths[barcode].extend(these_lengths)
+
+            mus = {}
+            N50s = {}
+            nreads = {}
+            sample_names = {}
+            for barcode in lengths.keys():
+                mus[barcode] = round(mean(lengths[barcode]), 0)
+                N50s[barcode] = N50(lengths[barcode])
+                nreads[barcode] = len(lengths[barcode])
+                try:
+                    sample_names[barcode] = samples.df.query("barcode==@barcode").samplename.values[0]
+                except:
+                    sample_names[barcode] = "undefined"
+
+            # a summary table
+            df = pd.DataFrame({
+                "sample": [sample_names[k]  for k in sorted(sample_names.keys())],
+                "barcodes": [k for k in sorted(sample_names.keys())],
+                "N50": [N50s[k] for k in sorted(sample_names.keys())],
+                "mean read length": [mus[k] for k in sorted(sample_names.keys())],
+                "Number of reads": [nreads[k] for k in sorted(sample_names.keys())]
+                }
+                )
+
+            # add a column with potential links to the
+            if "barcode" in samples.df.columns:
+                links = []
+
+                for barcode in df.barcodes.values:
+                    if barcode in samples.df.barcode.values:
+                        links.append(f"pycoqc/{barcode}_summary.html")
+                    else:
+                        links.append("")
+                df['link'] = links
+                df = df.rename({"index": "sample"}, axis=1)
+
+
+            total_reads = sum([nreads[k] for k in nreads.keys()])
+
+            from sequana.utils.datatables_js import DataTable
+            datatable = DataTable(df, 'nanomerge', index=False)
+            datatable.datatable.datatable_options = {'paging': 'false',
+                                          'buttons': ['copy', 'csv'],
+                                          'bSort': 'true',
+                                          'dom':"RSPrtp"
+                                        }
+
+            # add link to the sub html report
+            if "barcode" in samples.df.columns:
+                datatable.datatable.set_links_to_column('link', 'sample')
+
+            js = datatable.create_javascript_function()
+            htmltable = datatable.create_datatable()
+
+            return js + htmltable, total_reads
+
+        
+        htmltable, total_reads = get_stats()
+
+
+        def get_model():
+            from sequana import FastA
+            s = next(FastA(input[0]))
+            try:
+                model = [x.split("=")[1] for x in s.comment.split() if "model_version_id" in x][0]
+            except (IndexError, AttributeError):
+                model = "unknown"
+            return model
+
+        model = get_model()
+        model = f"The model used for base calling was {model}. "
+
+        if config['summary']:
+
+            # a warning message
+            percentage=config['sub_sample_summary']['percentage'] / 100
+
+            if percentage == 1:
+                subsample = ""
+            else:
+                ratio = round(1 / percentage,2)
+                subsample = f'<b style="color:red">Sub sampling was performed. Numbers here below are approximation of must be multiplies by {ratio} since only {percentage} of the data were used to generate the tables and plots</b>'
+
+            # the pyco qc repor
+            with open("pyco/pyco.html", "r") as fout:
+                pycodata = fout.read()
+                pycodata = '<div class="columns">' + pycodata.split('<div class="columns">')[-1].replace("</div>\n</body>\n</html>","")
+
+            # final report
+            s = SummaryModule2(data, f"""
+                    <h2>General Information</h2>
+                    <p>Your data (fastq files) are available in {dirs} directories. Please see the summary plots here below (if sequence summary was provided), generated with <a href="https://github.com/a-slide/pycoQC">pycoQC</a> software. {model}</p>""" + htmltable + f"Total number of reads passing filtering: {total_reads}" + "<hr>" + "<h2>Quality Control information</h2>" + subsample + pycodata)
+        else:
+            s = SummaryModule2(data, f"No summary was found. Your data  (fastq files) are available in {dirs} directories." +  htmltable +f"Total number of reads passing filtering: {total_reads}. {model}"  )
+
+        
+
+# ======================================================================================== rulegraph
+
+
+onsuccess:
+
+    print("Once done, please clean up the directory using\n'make clean'")
+
+    manager.teardown(extra_files_to_remove=["pyco/pyco.log", "pyco/pyco.html"])
+
+
+    shell("chmod -R g+w .")
+    shell("rm -rf pyco rulegraph")
+
+onerror:
+    from sequana_pipetools.errors import PipeError
+    p = PipeError("nanomerge")
+    p.status()
