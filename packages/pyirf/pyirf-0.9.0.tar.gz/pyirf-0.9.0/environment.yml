@@ -1,0 +1,32 @@
+name: pyirf
+
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - ipython
+  - jupyter
+  - matplotlib
+  - scipy
+  - astropy=5
+  - setuptools
+  - tqdm
+  # tests
+  - pytest
+  - pytest-cov
+  # docs
+  - towncrier
+  - numpydoc
+  - pytables
+  - nbsphinx
+  - sphinx
+  - sphinx_rtd_theme
+  - sphinx-automodapi
+  - uproot=4
+  - awkward=1
+  - gammapy=1
+  - pip
+  - pip:
+    - ogadf_schema
