@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mass_analytics
+Version: 1.0.3
+Summary: A small example package for mass-analytics
+Author-email: Selim <selim.alouini@mass-analytics.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy==1.25.1
+Requires-Dist: pandas==2.0.3
+Requires-Dist: plotly==5.15.0
+Requires-Dist: streamlit==1.24.1
+Description-Content-Type: text/markdown
+
+# Example Package
+
+A small example package for mass-analytics
