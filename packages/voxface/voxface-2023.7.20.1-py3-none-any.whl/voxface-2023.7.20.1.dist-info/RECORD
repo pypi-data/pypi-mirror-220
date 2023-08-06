@@ -1,0 +1,10 @@
+voxface/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+voxface/__main__.py,sha256=SvrKkqW-1UbHWowqLA8SVTh51ZwlwN_jesBd4pLZxUk,6035
+voxface/templates/ConteCore2_50_2mm_deface_mask.nii.gz,sha256=rtDu0NBMbZnp9wQ601MGw-WaqGc1gzIiDxDqsb_10ao,8489
+voxface/templates/ConteCore2_50_T1w_2mm.nii.gz,sha256=xejMdCCOMsRCMboXYCPfJkZuhstkp_uASAVLg4tkxss,4435119
+voxface-2023.7.20.1.dist-info/LICENSE,sha256=5N_OSiDsg1SWqREav-2hLQBSda_GeCxG0MvPIXrw6RA,1068
+voxface-2023.7.20.1.dist-info/METADATA,sha256=aG35-SFSRg9ZdVhnYut5NhfGbZi_nDiRn6kEi1SUo_w,1626
+voxface-2023.7.20.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+voxface-2023.7.20.1.dist-info/entry_points.txt,sha256=5Aq5c9OTv4wtEsch-abUWYhOpqalh3E7EMe41WHzHF0,50
+voxface-2023.7.20.1.dist-info/top_level.txt,sha256=vEBhXSNjFFfb-MN8Ru4TMsgvkGsUqymb6xLOrdlt7Mg,8
+voxface-2023.7.20.1.dist-info/RECORD,,
