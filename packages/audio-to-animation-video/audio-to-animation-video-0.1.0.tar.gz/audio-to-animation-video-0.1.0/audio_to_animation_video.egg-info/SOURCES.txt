@@ -1,0 +1,8 @@
+README.md
+setup.py
+audio-to-animation-video/app.py
+audio_to_animation_video.egg-info/PKG-INFO
+audio_to_animation_video.egg-info/SOURCES.txt
+audio_to_animation_video.egg-info/dependency_links.txt
+audio_to_animation_video.egg-info/requires.txt
+audio_to_animation_video.egg-info/top_level.txt
