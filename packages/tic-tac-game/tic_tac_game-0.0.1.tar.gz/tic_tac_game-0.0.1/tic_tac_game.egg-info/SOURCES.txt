@@ -1,0 +1,8 @@
+LICENSE.MIT
+README.md
+setup.py
+tic_tac_game/__init__.py
+tic_tac_game.egg-info/PKG-INFO
+tic_tac_game.egg-info/SOURCES.txt
+tic_tac_game.egg-info/dependency_links.txt
+tic_tac_game.egg-info/top_level.txt
