@@ -1,0 +1,17 @@
+astromy/__init__.py,sha256=MvlSkep-UNIuByL7kGMV_YRk5BgT8OXXslzlB75uLp0,544
+astromy/__version__.py,sha256=j0Z81JQSc0eCEcXWhRSn-lXElqfT4-SlTy7ypa40VrA,389
+astromy/astromatic.py,sha256=z1yi8NcDO1mn6X3Pkcdm9LSNSpTafntFumQX6ynAXYw,8475
+astromy/catalog.py,sha256=X006MxI1FUWgZMrBfQPSDx9VbSCp67P9R5p268JVIYg,1049
+astromy/cube.py,sha256=hwmUI7ka-Cyo7BH8rrXl9mPcuQHQwcVq-ahdAp3KL14,1946
+astromy/image-old.py,sha256=L-OyKY_Six9vrS6Kf5Dl0GXcn1JHttVofnxuS6mj33c,9786
+astromy/image.py,sha256=bbYkN9-pi3XAccdhhmNaLJe24bum86BHTkaFi9hHdWM,9535
+astromy/line.py,sha256=DlJ5PXX6e1EdrDRbQ4OvPf50OGuazGYAQ5D8LpmQSXw,3314
+astromy/mygrizli.py,sha256=NVfsBmc_tWra9b7sN6rzGlbF-7ehIy1YuA-0W0ohX9I,5557
+astromy/spec1d.py,sha256=5NwKPntXoPKGo0xm3yMWA-MqtVA-Us6njm-5pcAhaJI,2851
+astromy/spec2d.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+astromy/wcs.py,sha256=RlQJOgp_M-_R17-mF8ujsPCubzyIBf45SvV6rnbhKnw,2211
+astromy-0.1.2.dist-info/LICENSE,sha256=5mGKT-8JivLkYytFwVxN4KGDFE_yBq8WU3VdjGwRQ7k,1060
+astromy-0.1.2.dist-info/METADATA,sha256=-PCIrJvCXZ0W7_hXTpAgIAHiFKZE_2jji4JqyaW-sh4,883
+astromy-0.1.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+astromy-0.1.2.dist-info/top_level.txt,sha256=_XIslmuci68mr_UH5crPZSVqD3vRBLFs4K5wkRrd0RI,8
+astromy-0.1.2.dist-info/RECORD,,

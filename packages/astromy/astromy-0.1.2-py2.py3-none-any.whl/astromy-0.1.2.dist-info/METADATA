@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: astromy
+Version: 0.1.2
+Summary: Astronomy data analysis package.
+Home-page: https://github.com/lmytime/astromy
+Author: Mingyu Li
+Author-email: lmytime@hotmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: regions
+Requires-Dist: getpass
+Requires-Dist: spectral-cube
+Requires-Dist: scipy
+Requires-Dist: reproject
+
+
+# Astromy
+
+Astronomy data analysis package.
