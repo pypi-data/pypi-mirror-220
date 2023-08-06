@@ -1,0 +1,8 @@
+selenium
+requests
+get_chrome_driver
+progressbar
+progressbar2
+typer
+typing_extensions
+pandas
