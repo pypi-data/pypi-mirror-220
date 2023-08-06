@@ -1,0 +1,2 @@
+numpy>=1.25.1
+lib-cor-0ae-amp-json-utils>=1.0.0

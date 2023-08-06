@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+app/__init__.py
+app/main.py
+srv_rst_0ae_amp_test.egg-info/PKG-INFO
+srv_rst_0ae_amp_test.egg-info/SOURCES.txt
+srv_rst_0ae_amp_test.egg-info/dependency_links.txt
+srv_rst_0ae_amp_test.egg-info/requires.txt
+srv_rst_0ae_amp_test.egg-info/top_level.txt
