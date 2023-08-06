@@ -1,0 +1,4 @@
+ladybug-core>=0.41.30
+
+[display]
+ladybug-display==0.10.0
