@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+binary2strings.egg-info/PKG-INFO
+binary2strings.egg-info/SOURCES.txt
+binary2strings.egg-info/dependency_links.txt
+binary2strings.egg-info/not-zip-safe
+binary2strings.egg-info/top_level.txt
+src/binary2strings.cpp
+src/bindings.cpp
+src/extracted_string.cpp
+tests/test.py
