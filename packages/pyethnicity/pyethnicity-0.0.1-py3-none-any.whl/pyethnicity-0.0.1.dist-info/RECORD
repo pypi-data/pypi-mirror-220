@@ -1,0 +1,13 @@
+pyethnicity/__init__.py,sha256=NGoBFNXUyvpj5uTUKOs_kkaiRZ8AV84YzeCNVIT9Dn0,148
+pyethnicity/bayesian_models.py,sha256=s-LfZGuGn2Veo7BniVeJXQYa1IzHV61c1W-ovp-F-IM,5382
+pyethnicity/keras_models.py,sha256=f_iBEI2imZ1uG_NYzgCIFsI0SPEQvvzWuRyeIljyXik,4266
+pyethnicity/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyethnicity/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyethnicity/utils/paths.py,sha256=LhmJgg04XeMPpi_fRxnPaacKk09NVbfKtbTr2NCM1qw,176
+pyethnicity/utils/types.py,sha256=J9egmvCyUFlhKERIM79uTMci9786eZttoSixyxs3crI,301
+pyethnicity/utils/utils.py,sha256=Woz6sCAf0OD927qf3o-Vs9fSyOxOJ_vdolg1cF1QZ8g,789
+pyethnicity-0.0.1.dist-info/LICENSE,sha256=_tZka-9mY9ArkWzAxHgvLYf6vNyuNM1B0HhU4JQQikk,1077
+pyethnicity-0.0.1.dist-info/METADATA,sha256=JN3qQnVv5ag711x12k5U8EMY6tbi2dAfBfQq-a5OBWg,1721
+pyethnicity-0.0.1.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+pyethnicity-0.0.1.dist-info/top_level.txt,sha256=nfhseInUXE-wJIbWV4Dx4vq_aK_H618INl854Lbz4M0,12
+pyethnicity-0.0.1.dist-info/RECORD,,
