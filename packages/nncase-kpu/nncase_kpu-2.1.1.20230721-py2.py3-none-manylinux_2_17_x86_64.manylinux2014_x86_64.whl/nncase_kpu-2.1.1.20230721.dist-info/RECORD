@@ -1,0 +1,12 @@
+nncase.simulator.k510.c,sha256=2xFMSjruDuEbyJpEjT4yCtx2LnguPXNyBlJcL4NjPfw,1672624
+nncase.simulator.k230.sc,sha256=RJmdx18CMiwJQ_Osy2UFWCVNk0-b2Iav8BXy5TweMus,1554608
+nncase.simulator.k510.sc,sha256=erfG_EF6PN0JD7OiaCwd9X1jyJ3c4mrx8yqTb6wjns8,3447960
+libnncase.simulator.k230.so,sha256=tJNl0Jji8WECLoyCnmEMMQdehFVmPh50WHikLUqf0ig,771049
+libnncase.simulator.k510.so,sha256=U7kyFrFXOLO7mlq1ap7fejTsumlKCFp1sVJF-ZDrEyY,486377
+nncase_kpu-2.1.1.20230721.data/purelib/nncase_kpu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nncase/modules/kpu/Nncase.Modules.K230.dll,sha256=4mJW1yhiY-fb3h4LFF1fhu7Zl5CaDjZ1GnJHj3i651U,1379328
+nncase_kpu-2.1.1.20230721.dist-info/RECORD,,
+nncase_kpu-2.1.1.20230721.dist-info/LICENSE,sha256=tTdrr12tvYx4LKECY4VVPqHV_33egMjqCh6wE7bWeIQ,11342
+nncase_kpu-2.1.1.20230721.dist-info/WHEEL,sha256=Rpw_AFkCaGcNzEYXpm5kP0l2j69HjOzjRDQVgVsiTxc,217
+nncase_kpu-2.1.1.20230721.dist-info/top_level.txt,sha256=52OwoJtejrIUzDbTpcM2rpBjrRfNnODxA1gf6vjhaMQ,11
+nncase_kpu-2.1.1.20230721.dist-info/METADATA,sha256=IH0ToF5mg73Ei8QUAMp3uaX1UELIWRDMYhVwDMtvVUo,14014
