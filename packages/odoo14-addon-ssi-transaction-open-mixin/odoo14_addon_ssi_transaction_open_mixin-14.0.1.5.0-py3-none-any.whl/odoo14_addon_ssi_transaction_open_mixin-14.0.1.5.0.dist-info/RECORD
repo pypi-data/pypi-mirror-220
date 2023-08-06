@@ -1,0 +1,11 @@
+odoo/addons/ssi_transaction_open_mixin/README.rst,sha256=IIAJVJp3Gl-59vvspjvyVKXAcLwc3FIgnhxqQWyrSww,1256
+odoo/addons/ssi_transaction_open_mixin/__init__.py,sha256=X3ayW9k4OH3xqib3X0KEzYY9_pqaAhP2YdhFFVEJSvo,181
+odoo/addons/ssi_transaction_open_mixin/__manifest__.py,sha256=UvLFaPQZYDx1YJPPHSJ41t-Jwc8D1rkDxIL91CmEtE4,537
+odoo/addons/ssi_transaction_open_mixin/models/__init__.py,sha256=mf-5uhhmzxdX8sDukZo3TxsirW8FKEU-gf6M9o4MF7U,197
+odoo/addons/ssi_transaction_open_mixin/models/mixin_transaction_open.py,sha256=erVTXe8QTGx2mmf6ZCjLvshiysTtDFRzh_GCL1xDGaQ,6032
+odoo/addons/ssi_transaction_open_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo/addons/ssi_transaction_open_mixin/templates/mixin_transaction_open_templates.xml,sha256=jvvM_PryBC15uyehRHHYaaoDr-KA228INOZ3GQknc4g,496
+odoo14_addon_ssi_transaction_open_mixin-14.0.1.5.0.dist-info/METADATA,sha256=sQRs_rz9S131AS8zrmq64xMtp22BECotGgKjcVoOzdw,1835
+odoo14_addon_ssi_transaction_open_mixin-14.0.1.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_transaction_open_mixin-14.0.1.5.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_transaction_open_mixin-14.0.1.5.0.dist-info/RECORD,,

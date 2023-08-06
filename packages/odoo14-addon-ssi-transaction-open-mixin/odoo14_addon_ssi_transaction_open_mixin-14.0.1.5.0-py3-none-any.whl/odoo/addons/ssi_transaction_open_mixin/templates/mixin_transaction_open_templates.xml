@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<template id="open_policy_field">
+    <field name="open_ok" />
+</template>
+
+<template id="button_open">
+    <button
+            name="action_open"
+            string="Start"
+            type="object"
+            class="oe_highlight"
+            attrs="{'invisible':[('open_ok','!=',True)]}"
+        />
+</template>
+
+<template id="open_filter">
+    <filter name="dom_open" string="In Progress" domain="[('state', '=', 'open')]" />
+</template>
+</odoo>
