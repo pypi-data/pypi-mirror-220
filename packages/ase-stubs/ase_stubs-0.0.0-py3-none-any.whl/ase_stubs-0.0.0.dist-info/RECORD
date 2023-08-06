@@ -1,0 +1,13 @@
+.bumpversion.cfg,sha256=3pLgbHNdJsw11Oggi8eh5FKRmRZ5sWdz8sW07xMhzr0,173
+.editorconfig,sha256=RYlYhANKQvdr_K-au_QHt8NZ3Oh9J7pSYtT2UaJNXmg,353
+.pre-commit-config.yaml,sha256=OETmKvTIMlxhQmCnhft6abSe8WQe_vR31FmnE37mKKo,898
+AUTHORS.rst,sha256=9W1cF4AWIM4XJooGbOHTy0S0d2RHrvWov1oe7FoHKaM,55
+CHANGELOG.rst,sha256=9jT3KF8p9n99ZRDeBRbA39YBMProDtUaP-ISoaZyyvU,436
+CONTRIBUTING.rst,sha256=h_Dn0pmp2JFS_citI4VkrOw4JALmXgTppy_RUPE8xys,1346
+LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+README.rst,sha256=3QZJjqOKVVjSa_CTh3e5nysWG-E-RtWtAfPX-9DjoQ4,661
+ase-stubs/__init__.pyi,sha256=HEZlSq3ODY25eK1c66ddgFlQW-55iFvRQ-tnIybqVeI,71
+ase_stubs-0.0.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+ase_stubs-0.0.0.dist-info/METADATA,sha256=kLU9nTYnrv70kEajeaAmaAYvdIYJhq69DIaEwz2AFnc,1559
+ase_stubs-0.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+ase_stubs-0.0.0.dist-info/RECORD,,
