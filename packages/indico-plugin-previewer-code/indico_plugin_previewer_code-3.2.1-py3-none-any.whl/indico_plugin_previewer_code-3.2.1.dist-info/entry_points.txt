@@ -1,0 +1,2 @@
+[indico.plugins]
+previewer_code = indico_previewer_code:CodePreviewerPlugin

@@ -1,0 +1,8 @@
+indico_previewer_code/__init__.py,sha256=rSa-pZmKdbSB9ECqvcLX68ULLRJ_z0KfBxEuPs21-vI,401
+indico_previewer_code/plugin.py,sha256=L0ibuyxd3a68Iq4kytNijrEvM9HIGnqb4QKJfNx7CfI,2415
+indico_previewer_code/templates/pygments_preview.html,sha256=RlTiCN65mkJ5QuQI1OVZ2FQk7SHQYFzqCbbRidywR00,234
+indico_plugin_previewer_code-3.2.1.dist-info/METADATA,sha256=Q9KTw3WUqdULhBPW6M06Qf9z72WvTcnjYqq_8UlN00E,1107
+indico_plugin_previewer_code-3.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+indico_plugin_previewer_code-3.2.1.dist-info/entry_points.txt,sha256=LeMdLQw2GoNclrQAVjcg_8Vm0hfdiD1D_S8p_065dnA,76
+indico_plugin_previewer_code-3.2.1.dist-info/top_level.txt,sha256=3WgUqUWkxWA9m4gzyNKxqf1MkblikxmK9092FR8DZYY,22
+indico_plugin_previewer_code-3.2.1.dist-info/RECORD,,
