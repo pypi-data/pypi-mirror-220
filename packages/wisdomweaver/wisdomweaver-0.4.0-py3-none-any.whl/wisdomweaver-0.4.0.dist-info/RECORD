@@ -1,0 +1,12 @@
+wisdomweaver/__init__.py,sha256=mgHl1CQz6ILYImkINbGQAgOixPcC31XYWRZzkQ_2ajQ,241
+wisdomweaver/__main__.py,sha256=ymowkYj4QUT9ixde0RRrBV4DnHeWurY89w1ilggqTak,6321
+wisdomweaver/database.py,sha256=WHwbhrhXzTridF38V7L9QP36pIUYyHBJoBH6DwkR2xQ,3271
+wisdomweaver/document.py,sha256=CzFlwBUghVz9E6Fywm7_jcnOyGQ2TZzsHG_cHJ4eSAg,5588
+wisdomweaver/models.py,sha256=nPk-hE6ZIWIH03GT3RHHqKThs5DOZiMk5Z4QCcI3hQQ,108
+wisdomweaver/postprocessor.py,sha256=BheJZALX_iWSosXpfjzQTvHX2VhUps8Jcmj5WfKm73M,987
+wisdomweaver-0.4.0.dist-info/LICENSE,sha256=Wi9wiLFFTXlXkjeAPU4mhGFCDWRFLzRagFzcqSXzLk0,588
+wisdomweaver-0.4.0.dist-info/METADATA,sha256=tblICd-kF5iQbYrRd9Ok16ybeptbg1UZ82ALri-qeoU,2397
+wisdomweaver-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+wisdomweaver-0.4.0.dist-info/entry_points.txt,sha256=5wUu2IWbXQY8clQiry0USTpIBry5dWWhzDac4H16Hyo,54
+wisdomweaver-0.4.0.dist-info/top_level.txt,sha256=mJHmo4B81woVHCLQhePW3KB_RGrCI6drj5gd6Qbn43w,13
+wisdomweaver-0.4.0.dist-info/RECORD,,
