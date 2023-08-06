@@ -1,0 +1,17 @@
+torchanalyse/__init__.py,sha256=BWN3hLcJ1RSSVUQZ-J9iZIzJUqMbltcxJ_YEOaSepQc,113
+torchanalyse/handlers.py,sha256=NuCNP_1CiiiwFJeublM_A60bgojoTt5_GlxYXY1lIKs,6106
+torchanalyse/profile.py,sha256=DGYaW2oSds0dR7dekfK1eipzHqMTxcJ7bB4pMCuB5lE,1276
+torchanalyse/system.py,sha256=GhDwgZkk-kqyByuNlBgeRHXO_Z5U7DW0u2611pU63Q8,6791
+torchanalyse/unit.py,sha256=F0VKmXxZLQ3ycb0hPsZZbhWm46iFPonQOohOLGssw3E,1764
+torchanalyse/version.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+torchanalyse/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchanalyse/utils/flatten.py,sha256=nMUb4-y1PZZr1-YGca2wISe7wI8g-G9KnLoBXymDdb0,676
+torchanalyse/utils/trace.py,sha256=TWpn3usWAIavSXBoOzyvFclhj65bxY5ETgOA5k9u71w,1739
+torchanalyse/utils/ir/__init__.py,sha256=9znZf7f0TVrr4qjEEvlb1faRIW_Kd2C4LJLrAe9It6Q,79
+torchanalyse/utils/ir/graph.py,sha256=pjvHYg6g6aCFUYpg1NTah8yTSj4c81NhFQn_0t69d-8,1324
+torchanalyse/utils/ir/node.py,sha256=B39NC9Lt7dTE6d97o9oCKOxG-DQ2rjMqYWRvrskEjG0,1479
+torchanalyse/utils/ir/variable.py,sha256=SN-MVLDTOR9WDxtHKpCPtSUY-ceGflqJs6O_wTnEvRo,945
+torchanalyse-0.0.1.dist-info/METADATA,sha256=-JyZe-f_4qNLlXqtmrdF6aBJavFR1L5K4a1-TLp9v_I,240
+torchanalyse-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+torchanalyse-0.0.1.dist-info/top_level.txt,sha256=5N0pm3CRs9ErI0XT5-WMK7VhiI0LYuU0JRLlZGLtwSQ,13
+torchanalyse-0.0.1.dist-info/RECORD,,
