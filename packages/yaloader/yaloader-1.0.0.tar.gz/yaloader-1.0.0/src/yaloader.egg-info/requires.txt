@@ -1,0 +1,14 @@
+pydantic>=2.0
+pyyaml
+
+[docs]
+sphinx
+jupyter-server
+myst-nb
+furo
+autodoc-pydantic
+sphinx-remove-toctrees
+
+[tests]
+pytest
+coverage
