@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: filelistener
+Version: 1.0.0
+Summary: A tool to find duplicate content within a folder and its subdirectories
+Author: Rishabh Pandey
+Author-email: brikjr@outlook.com

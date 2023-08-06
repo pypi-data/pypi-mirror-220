@@ -1,0 +1,11 @@
+setup.py
+Content/__init__.py
+Content/duplicate_content.py
+Content/modules/__init__.py
+Content/modules/duplicate_zip_files.py
+filelistener.egg-info/PKG-INFO
+filelistener.egg-info/SOURCES.txt
+filelistener.egg-info/dependency_links.txt
+filelistener.egg-info/entry_points.txt
+filelistener.egg-info/requires.txt
+filelistener.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+listen = Content.duplicate_content:main
