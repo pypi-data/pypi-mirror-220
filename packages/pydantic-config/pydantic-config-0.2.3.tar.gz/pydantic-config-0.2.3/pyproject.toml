@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydantic-config"
+description = "Support for Pydantic settings configuration file loading"
+version = "0.2.3"
+authors = [{name="Jordan Shaw"}]
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    'Natural Language :: English',
+    'Intended Audience :: Developers',
+    'Development Status :: 4 - Beta',
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    'pydantic-settings>=2.0.1',
+
+]
+
+[project.optional-dependencies]
+yaml = [
+    "pyyaml>=5.1"
+]
+toml = [
+    'toml>=0.10.0'
+]
+all = [
+    'pyyaml>=5.1',
+    'toml>=0.10.0'
+]
+dev = [
+    'pytest',
+    'twine',
+    'build',
+    'pyyaml>=5.1',
+    'python-dotenv>=0.15.0',
+    'toml>=0.10.0'
+]
+test = [
+    'pytest',
+    'pyyaml==5.1',
+    'python-dotenv>=0.15.0',
+    'toml>=0.10.0'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jordantshaw/pydantic-config"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+

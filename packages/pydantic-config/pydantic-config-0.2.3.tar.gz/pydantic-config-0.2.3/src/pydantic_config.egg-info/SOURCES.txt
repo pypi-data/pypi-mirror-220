@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pydantic_config/__init__.py
+src/pydantic_config/main.py
+src/pydantic_config/merge.py
+src/pydantic_config/readers.py
+src/pydantic_config.egg-info/PKG-INFO
+src/pydantic_config.egg-info/SOURCES.txt
+src/pydantic_config.egg-info/dependency_links.txt
+src/pydantic_config.egg-info/requires.txt
+src/pydantic_config.egg-info/top_level.txt
+tests/test_loaders.py
+tests/test_settings_model.py
