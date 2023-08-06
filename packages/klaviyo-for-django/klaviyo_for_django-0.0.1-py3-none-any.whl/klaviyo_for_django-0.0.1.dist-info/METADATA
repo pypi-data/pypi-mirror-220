@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: klaviyo-for-django
+Version: 0.0.1
+Home-page: http://pypi.python.org/pypi/klaviyo-for-django/
+Author: Santiago Fernandez
+Author-email: 
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django (>=4.0.0)
+Requires-Dist: pytest
+Requires-Dist: klaviyo-api
+
+# klaviyo-for-django
