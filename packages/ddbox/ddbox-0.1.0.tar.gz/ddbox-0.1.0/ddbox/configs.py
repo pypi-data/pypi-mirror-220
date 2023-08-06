@@ -1,0 +1,5 @@
+DOCKING_CACHE = '.cache/ddbox/docking/'
+DATA_CACHE = '.cache/ddbox/data/'
+BINARIES_DIR = 'ddbox/bin/'
+VINA_RECEPTORS_CACHE = '.cache/ddbox/vina-receptors/'
+BASE_API_URL = 'http://localhost:8000'
