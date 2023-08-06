@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: meo
+Version: 0.1.12
+Summary: frequently-used function library
+Home-page: http://github.com/miaobuao/meo
+Author: miaobuao
+Author-email: miaobuao@outlook.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: json5 (>=0.9)
+Requires-Dist: packaging
+Requires-Dist: pyzipper (>=0.3.6)
+
+# ✨ meo
+
+*frequently-used function library*
+
+Looking forward to your star! 
+
+[0.x Document](https://github.com/miaobuao/meo/blob/main/docs/0.x_en.md): https://github.com/miaobuao/meo/blob/main/docs/0.x_en.md
+
+[repo](https://github.com/miaobuao/meo): https://github.com/miaobuao/meo
