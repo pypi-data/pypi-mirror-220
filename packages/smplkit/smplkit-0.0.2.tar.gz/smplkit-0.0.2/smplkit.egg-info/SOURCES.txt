@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+smplkit/__init__.py
+smplkit/__version__.py
+smplkit/layers.py
+smplkit/lbs.py
+smplkit/misc.py
+smplkit/params.py
+smplkit.egg-info/PKG-INFO
+smplkit.egg-info/SOURCES.txt
+smplkit.egg-info/dependency_links.txt
+smplkit.egg-info/requires.txt
+smplkit.egg-info/top_level.txt
+test/test.py
