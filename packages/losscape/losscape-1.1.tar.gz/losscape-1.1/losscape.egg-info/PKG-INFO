@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: losscape
+Version: 1.1
+Summary: Visualize easily the loss landscape of your neural networks
+Home-page: https://github.com/Procuste34/losscape
+Author: Alexandre TL
+Author-email: alexandretl3434@gmail.com
