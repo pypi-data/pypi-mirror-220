@@ -1,0 +1,1 @@
+[["", 0, 0], ["", 4096, 0], ["get_pc_internal", 62, 0], ["next", 66, 0], ["loader_call_main", 718, 65], ["loader_handle_relocation_table", 349, 369], ["loader_main", 0, 349], ["__bss_start", 12288, 0], ["_edata", 12288, 0], ["_end", 12288, 0]]
