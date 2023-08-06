@@ -1,0 +1,17 @@
+occ/CommandChat.py,sha256=m1AM1U5at_vQ6nR1RVqTkIGgou-fqxpzSLW_yf2j_cI,4758
+occ/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+occ/command/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+occ/command/__main__.py,sha256=BHvhAcJNlbbw9fn2qw0kFhdlVwtztWIdw54l7bUpm_Q,2029
+occ/commons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+occ/commons/config.py,sha256=ygKrepA2t4M7HVUL_ahYWIp21qf3SgJGN02JVtSQHjA,2607
+occ/configuration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+occ/configuration/profile_config.py,sha256=tdPaPr8yMd3F9yKrVliXnL6-Ts9ixRXIZ2hhN6I1464,1545
+occ/utils/CommonUtil.py,sha256=RJKezDP0lNdT10f_r4-cMu8dZOiXe8oST3umKset_tk,1273
+occ/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+occ/utils/logger.py,sha256=msmLKZBoWQvGO293oi1l14f-ez-Na7F5Gt5GIRXW3Vk,1578
+commandchat-0.0.4.dist-info/LICENSE,sha256=NdFNGwhdTy09cZHSPFCiz073hRna92x1LkhuZAA4DuI,1083
+commandchat-0.0.4.dist-info/METADATA,sha256=1w4jSknPbGjaNJIBY8HMBrTJ-u-zoQJ6MPPIc6B2AE4,1885
+commandchat-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+commandchat-0.0.4.dist-info/entry_points.txt,sha256=4m0xtaOGwQsOP83GIR7mvSHPr8lVnEGiEEWO2R8od8Q,50
+commandchat-0.0.4.dist-info/top_level.txt,sha256=vtoQBA3vgsN0IjCme9wohuucvbGtA48SnP9g3V3RK-s,4
+commandchat-0.0.4.dist-info/RECORD,,
