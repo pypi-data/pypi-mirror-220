@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: khmernormalizer
+Version: 0.0.1
+Summary: A missing toolkit for Khmer Natural Language Processing.
+Home-page: https://github.com/seanghay/khmer-normalizer
+Author: Seanghay Yath
+Author-email: seanghay.dev@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: regex
+Requires-Dist: emoji (==2.6.0)
+Requires-Dist: ftfy (==6.1.1)
+
+### Khmer Normalizer 
+
+A missing toolkit for **Khmer Natural Language Processing**.
+
+- Character Reordering
+- Duplicate Whitespaces
+- Remove zero width space
+- Remove emojis
+- Fix Common misspellings
+- Fix Unicode issues
+- Fix Khmer trailing vowels
+- URL Replacements
+- Unicode Normalization (NFKC)
+- Quotes symbols normalization
+- Remove repeated punctuations
+
+```python
+from khmernormalizer import normalize
+
+text = "hello, world សួស្តី​ពិភពលោក !!!! 🇰🇭"
+result = normalize(text)
+# -> "hello, world សួស្តី​ពិភពលោក!"
+```
