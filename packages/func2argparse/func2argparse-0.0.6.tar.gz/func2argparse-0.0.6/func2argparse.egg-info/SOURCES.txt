@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+func2argparse/__init__.py
+func2argparse/_version.py
+func2argparse/logging.ini
+func2argparse.egg-info/PKG-INFO
+func2argparse.egg-info/SOURCES.txt
+func2argparse.egg-info/dependency_links.txt
+func2argparse.egg-info/not-zip-safe
+func2argparse.egg-info/top_level.txt
+tests/test_func_to_argparse.py
