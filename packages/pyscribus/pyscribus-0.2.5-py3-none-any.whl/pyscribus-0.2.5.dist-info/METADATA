@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pyscribus
+Version: 0.2.5
+Summary: Read, create and update Scribus .sla files.
+Author: Étienne Nadji
+Author-email: etnadji@eml.cc
+License: GNU Affero General Public License v3 or later (AGPLv3+)
+Project-URL: Documentation, https://etnadji.fr/pyscribus
+Project-URL: Source Code, https://framagit.org/etnadji/pyscribus
+Project-URL: Issue tracker, https://framagit.org/etnadji/pyscribus/-/issues
+Keywords: scribus,sla
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: lxml
+Requires-Dist: svg.path
+
+.. image:: https://etnadji.fr/pyscribus/_static/logo-300.png
+    :alt: PyScribus logo
+    :align: center
+
+A library aiming to read, generate and update Scribus documents (SLA).
+
+----
+
+.. image:: https://nogithub.codeberg.page/badge.svg
+    :alt: Please don't upload to GitHub
+    :target: https://nogithub.codeberg.page
+.. image:: https://img.shields.io/pypi/v/pyscribus.svg?label=latest%20version
+    :alt: PyPi Latest Version
+    :target: https://pypi.python.org/pypi/pyscribus
+
+----
+
+For Python versions older than 3.8, see 
+`pyscribus-backported <https://pypi.org/project/pyscribus-backported>`_ package.
+
+- `Quickstart <https://etnadji.fr/pyscribus/guide/en/quickstart.html>`_
+
+
