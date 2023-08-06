@@ -1,0 +1,13 @@
+<html>
+<body>
+  <script>
+    fetch('http://localhost:8888/test-delete', {
+      method: 'DELETE',
+    }).then(function(response) {
+      console.log(response);
+    }).catch(function(error) {
+      console.error(error);
+    });
+  </script>
+</body>
+</html>

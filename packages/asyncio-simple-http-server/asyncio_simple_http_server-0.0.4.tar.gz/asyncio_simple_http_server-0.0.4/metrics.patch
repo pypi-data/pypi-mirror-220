@@ -1,0 +1,99 @@
+diff --git a/src/asyncio_simple_http_server/server.py b/src/asyncio_simple_http_server/server.py
+index af6728d..a3c0118 100644
+--- a/src/asyncio_simple_http_server/server.py
++++ b/src/asyncio_simple_http_server/server.py
+@@ -25,6 +25,7 @@ import json
+ import re
+ 
+ from .http_util import HttpRequest, HttpResponse, HttpHeaders, http_parser, http_send_response
++from .metrics import COLLECTOR_REGISTRY_INSTANCE
+ 
+ logger = logging.getLogger('asyncio_simple_http_server')
+ 
+@@ -134,6 +135,76 @@ def uri_variable_mapping(path: str, method: str | list[str] = 'GET'):
+     return lambda f: _uri_route_decorator(f, uri_regex, method, uri_variables)
+ 
+ 
++class MetricsHandler:
++    @uri_mapping('/metrics')
++    def get_metrics(self):
++        text = COLLECTOR_REGISTRY_INSTANCE.human_report()
++        headers = HttpHeaders()
++        headers.add('Content-Type', 'text/plain')
++        return HttpResponse(200, headers, text.encode())
++
++    @uri_mapping('/metrics/json')
++    def get_metrics_json(self):
++        return COLLECTOR_REGISTRY_INSTANCE.snapshot()
++
++from .humans import HUMAN_COUNT, UNIT_MIN, HUMAN_TIME_MS
++from .metrics import Collector, TimeRangeCounter
++
++class ServerStats:
++  trace_id = 0
++
++  server_request_count = Collector.register(
++    name = 'server_request_count',
++    label = 'Request Count (last 60min)',
++    help = 'Request Count divided by minute',
++    unit = HUMAN_COUNT,
++    collector = TimeRangeCounter(60 * UNIT_MIN, 1 * UNIT_MIN)
++  )
++
++  server_execution_avg_max_times = Collector.register(
++    name = 'server_execution_avg_max_times',
++    label = 'Avg/Max Execution Time over Time',
++    help = 'Avg/Max Execution Time divided by minute',
++    unit = HUMAN_TIME_MS,
++    collector = MaxAndAvgTimeRangeGauge(60 * humans.UNIT_MIN, 1 * humans.UNIT_MIN)
++  )
++
++  server_execution_time_histo = Collector.register_hourly(
++    name = 'server_execution_time_histo',
++    label = 'Execution Time Histo',
++    help = 'Histogram of the server requests execution times',
++    unit = HUMAN_TIME_MS,
++    collector = Histogram(Histogram.DEFAULT_MS_DURATION_BOUNDS)
++  )
++
++  server_execution_top_times = Collector.register_hourly(
++    name = 'server_execution_top_times',
++    label = 'Top 10 Execution Times',
++    help = 'Top 10 server requests with the highest execution time',
++    unit = HUMAN_TIME_MS,
++    collector = TopK(10)
++  )
++
++  server_request_types = Collector.register_hourly(
++    name = 'server_request_types',
++    label = 'Count of Requests by Type',
++    unit = HUMAN_COUNT,
++    collector = CounterMap()
++  )
++
++  def new_trace_id(self):
++    self.trace_id += 1
++    return self.trace_id
++
++  def add_request(self, path, trace_id, elapsed):
++    now = time_ns()
++    self.server_request_count.inc(now)
++    self.server_execution_avg_max_times.update(elapsed, now)
++
++    self.server_execution_time_histo.get(now).add(elapsed)
++    self.server_execution_top_times.get(now).add(path, elapsed, trace_id)
++    self.server_request_types.get(now).inc(path)
++
+ class HttpServer:
+     def __init__(self) -> None:
+         self.read_timeout = 10.0
+@@ -145,6 +216,9 @@ class HttpServer:
+     def add_default_response_headers(self, headers: HttpHeaders):
+         self._default_response_headers.merge(headers)
+ 
++    def add_metrics_handler(self):
++        self.add_handler(MetricsHandler())
++
+     def add_handler(self, handler):
+         logger.debug('Register handler %s', handler)
+         for method, route in _scan_handler_for_uri_routes(handler):
