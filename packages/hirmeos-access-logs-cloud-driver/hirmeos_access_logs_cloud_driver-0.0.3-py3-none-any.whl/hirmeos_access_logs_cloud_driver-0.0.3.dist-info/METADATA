@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: hirmeos-access-logs-cloud-driver
+Version: 0.0.3
+Summary: Functions required by the access-logs-local-driver
+Home-page: https://github.com/hirmeos/access_logs_driver
+Author: Cristian Garcia
+Author-email: cristian.garcia@ubiquitypress.com
+Description-Content-Type: text/markdown
+Requires-Dist: hirmeos-clients (>=0.1.6)
+Requires-Dist: httplib2 (==0.12.1)
+
+# Access Logs Driver
+[![Build Status](https://travis-ci.org/hirmeos/access_logs_driver.svg?branch=master)](https://travis-ci.org/hirmeos/access_logs_driver)
+
+
+Load the content of gzipped Apache HTTP log files
+Exclude bots, scrapers, etc., select URLs matching the provided regex(es), and generate a CSV of the relevant log entries.
+
+Take postprocessed logs and strip out multiple hits in sessions, and
+resolve URLs to the chosen `URI_SCHEME` (e.g. info:doi).
+
+We strip out entries where the same (IP address * user agent) pair has accessed
+a URL within the last `SESSION_TIMEOUT` (e.g. half-hour)
+
+Additionally, we convert the URLs to ISBNs and collate request data by date,
+outputting a CSV for ingest via the stats system.
+
+Release Notes:
+[0.0.2] - 2023-07-11
+
+Added:
+    * Unittests
+
+Changed:
+    * Moved the files out of the package and get the file's data as parameters and return the filtered data.
+    * renamed the plugin to access-logs-local
