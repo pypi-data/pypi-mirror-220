@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: helloworld1609
+Version: 0.0.1
+Summary: testing hello pack
+Author: ARee
+Author-email: 
+Keywords: python,hello,he,hello world,world 
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
