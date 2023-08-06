@@ -1,0 +1,7 @@
+README.md
+setup.py
+inscode_api.egg-info/PKG-INFO
+inscode_api.egg-info/SOURCES.txt
+inscode_api.egg-info/dependency_links.txt
+inscode_api.egg-info/requires.txt
+inscode_api.egg-info/top_level.txt
