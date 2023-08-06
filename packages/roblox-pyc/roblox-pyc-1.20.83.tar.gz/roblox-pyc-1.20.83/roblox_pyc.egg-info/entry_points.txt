@@ -1,0 +1,12 @@
+[console_scripts]
+rblx-c = robloxpyc.robloxpy:candcpperror
+rblx-cpp = robloxpyc.robloxpy:candcpperror
+rblx-lunar = robloxpyc.robloxpy:lunar
+rblx-py = robloxpyc.robloxpy:w
+rblx-pyc = robloxpyc.robloxpy:pyc
+rbxc = robloxpyc.robloxpy:candcpperror
+rbxcpp = robloxpyc.robloxpy:candcpperror
+rbxlun = robloxpyc.robloxpy:lunar
+rbxpy = robloxpyc.robloxpy:w
+rbxpyc = robloxpyc.robloxpy:pyc
+rpyc = robloxpyc.robloxpy:pyc
