@@ -1,0 +1,4 @@
+django-timescaledb
+psycopg2-binary
+aiohttp
+numpy
