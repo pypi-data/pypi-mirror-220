@@ -1,0 +1,8 @@
+matplotlib
+numpy
+opencv-python-headless
+ezplotly
+natsort
+nose2
+black
+twine
