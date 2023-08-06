@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pysunspec2
+Version: 1.0.9
+Summary: Python SunSpec Tools
+Home-page: https://sunspec.org/
+Author: SunSpec Alliance
+Author-email: support@sunspec.org
+Requires-Python: >=3.5
+Provides-Extra: serial
+Provides-Extra: excel
+Provides-Extra: test
+License-File: LICENSE
