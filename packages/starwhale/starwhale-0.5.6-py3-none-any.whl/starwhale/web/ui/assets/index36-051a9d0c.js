@@ -1,0 +1,1 @@
+import{bc as a}from"./index-54aca6e3.js";const e=["static","dynamic"],o=t=>({type:"string",description:"text string",example_data:t.value||"hello world"});export{a as Component,o as document,e as modes};
