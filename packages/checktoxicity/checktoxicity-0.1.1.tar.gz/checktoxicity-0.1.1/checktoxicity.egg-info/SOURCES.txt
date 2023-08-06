@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+checktoxicity.egg-info/PKG-INFO
+checktoxicity.egg-info/SOURCES.txt
+checktoxicity.egg-info/dependency_links.txt
+checktoxicity.egg-info/requires.txt
+checktoxicity.egg-info/top_level.txt
+toxic/__init__.py
+toxic/toxic.py
