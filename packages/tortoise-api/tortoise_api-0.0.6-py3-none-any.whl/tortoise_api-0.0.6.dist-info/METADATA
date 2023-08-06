@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tortoise-api
+Version: 0.0.6
+Author-email: Artemiev <mixartemev@gmail.com>
+Project-URL: Homepage, https://github.com/mixartemev/tortoise-api
+Project-URL: Repository, https://github.com/mixartemev/tortoise-api
+Requires-Python: >=3.9
+Requires-Dist: starlette
+Requires-Dist: tortoise-orm[asyncpg]
+Requires-Dist: python-dotenv
+
