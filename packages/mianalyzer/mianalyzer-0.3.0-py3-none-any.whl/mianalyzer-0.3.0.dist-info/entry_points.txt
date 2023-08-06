@@ -1,0 +1,2 @@
+[console_scripts]
+mianalyzer = mia.startup:start
