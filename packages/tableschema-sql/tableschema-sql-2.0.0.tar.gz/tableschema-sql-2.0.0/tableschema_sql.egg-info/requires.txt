@@ -1,0 +1,16 @@
+six>=1.9
+sqlalchemy<3,>=2.0
+pybloom_live>=2.2
+tabulator>=1.1
+tableschema>=1.0
+cryptography
+
+[develop]
+coverage
+mock
+pylama
+pytest
+pytest-cov
+psycopg2
+pymysql
+python-dotenv
