@@ -1,0 +1,4 @@
+keeper-secrets-manager-core>=16.6.0
+keeper-secrets-manager-helper>=1.0.4
+importlib_metadata
+ansible<8.0.0
