@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: cgkit1
+Version: 1.2.7
+Summary: Python Computer Graphics Kit v1
+Author-email: Matthias Bass <baas@ira.uka.de>
+Maintainer-email: Andrew Straw <strawman@astraw.com>
+License: Copyright (c) 2002, Matthias Baas
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are
+        met:
+        
+        - Redistributions of source code must retain the above copyright
+        notice, this list of conditions and the following disclaimer.
+        
+        - Redistributions in binary form must reproduce the above copyright
+        notice, this list of conditions and the following disclaimer in the
+        documentation and/or other materials provided with the distribution.
+        
+        - The names of its contributors may not be used to endorse or promote
+        products derived from this software without specific prior written
+        permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+        "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+        LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+        A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+        OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+        SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+        LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+        DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+        THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: homepage, https://github.com/strawlab/cgkit1
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# cgkit1
+
+[![build](https://github.com/strawlab/cgkit1/workflows/build-and-test/badge.svg?branch=master)](https://github.com/strawlab/cgkit1/actions?query=branch%3Amaster)
+[![PyPI version](https://badge.fury.io/py/cgkit1.svg)](https://badge.fury.io/py/cgkit1)
+
+This is a fork of Matthias Bass's python-cgkit v1.2.0.
+
+It has been updated to be compatible with Python 2 and 3 and has the
+renderman and noise generation code removed.
+
+<hr>
+Python Computer Graphics Kit v1.2.0
+
+Copyright (C) 2002, Matthias Baas (see license.txt)
+<hr>
+
+The Python Computer Graphics Kit is a collection of Python modules
+that contain the basic types and functions to be able to create 3D
+computer graphics images. The kit mainly focuses on Pixar's RenderMan
+interface, but some modules can also be used for OpenGL programs or
+non-RenderMan compliant renderers like POV-Ray, for example.
+
+## Installing the package
+
+The package uses the Python distutils, so compiling and installing
+looks the same on every platform, you simply have to call:
+
+```
+python setup.py install
+```
+
+This will compile the C-modules and install everything in the standard
+location. See the distutils documentation that are coming with Python
+if you have to install somewhere else.
+If you've updated the sources for cgkit I recommend to delete the "build"
+directory before compiling so that all the old code is out of the way.
+
+The cgtypes module uses Pyrex (v0.9 or higher required) to generate
+the C source file. The generated C file is included in the source
+package, so you only need Pyrex if you want to modify the cgtypes module.
+
+Once installed you can check the examples in the examples directory.
+
+IMPORTANT:
+
+If you've installed a version before v1.0beta3 you have to remove
+the directory Lib/site-packages/cgtypes in your Python distribution.
+Otherwise Python will access the old Python types instead of the
+new C types (which are located directly in Lib/site-packages).
+
+## Documentation
+
+The documentation has to be downloaded separatly or you can browse
+it online. Whatever you prefer, you should point your browser to:
+
+http://cgkit.sourceforge.net
+
