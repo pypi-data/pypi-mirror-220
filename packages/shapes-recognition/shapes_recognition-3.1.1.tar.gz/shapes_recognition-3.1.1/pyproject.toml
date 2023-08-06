@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "shapes-recognition"
+version = "3.1.1"
+description = "New Recognition Technology"
+authors = ["Boris Kravtsov <kravtsov.development@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "shapes_recognition"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python-headless = "^4.8.0.74"
+beepy = "^1.0.7"
+tqdm = "^4.65.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
