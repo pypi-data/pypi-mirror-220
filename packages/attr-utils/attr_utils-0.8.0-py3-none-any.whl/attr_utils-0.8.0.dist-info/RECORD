@@ -1,0 +1,14 @@
+attr_utils/__init__.py,sha256=r9nxyhWnOigEVVqdMxeWAmauoCHczTRWurkPYs_mOE8,1440
+attr_utils/annotations.py,sha256=guhAVbrbFlHU-Iv8cEgppnz0ADxpCEelBtChWa4UUDE,8713
+attr_utils/autoattrs.py,sha256=Pdvmcs7SidZWLWUDBofNERU66l2pVRZAIeSlGeBdH44,12298
+attr_utils/docstrings.py,sha256=TVjLCWTyD9kJc7PzosyGNl_KmPrjinfGETRzK8rFgis,4206
+attr_utils/mypy_plugin.py,sha256=O5aomEYLSNkTE_72K8ereyOkxxGuf-fbxxePDCnaN1w,8224
+attr_utils/pprinter.py,sha256=1UX3QyXMPa93ZPxLQ4e78zcYs6OHhsMp6SD5PUSMgyU,6047
+attr_utils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+attr_utils/serialise.py,sha256=JupigN6ZKR8d9dieH8LzWu6wAC63CtqnLpD1dfTfS2U,6609
+attr_utils/utils.py,sha256=jkh7XSwWy6Voy2q0sEX6LTcaXQL3DxKWxsQo_AEQ2GI,1707
+attr_utils-0.8.0.dist-info/LICENSE,sha256=BigaIaJbg4wCjk6MjLC_5kuevxdEotWApzfvN8Y9LMM,1064
+attr_utils-0.8.0.dist-info/METADATA,sha256=GpTK56AXXKChqT0xkF57YOufMnReiNegE-sezvEicEw,7299
+attr_utils-0.8.0.dist-info/WHEEL,sha256=3vSnEhs48RUlSXcCXKCl4DOHs_qqaP2dU3IGkMqN2oI,84
+attr_utils-0.8.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+attr_utils-0.8.0.dist-info/RECORD,,
