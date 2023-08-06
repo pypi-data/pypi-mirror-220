@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: start-selenium-webdriver
+Version: 0.3
+Summary: One simple selenium webdriver start script that (tries to) take care of binary locations and dependendencies in a platform independent manner.
+Home-page: https://github.com/JoachimDunkel/start_selenium_webdriver
+Author: Joachim Dunkel
+Author-email: joachim.github@gmx.at
+Project-URL: Bug Tracker, https://github.com/JoachimDunkel/start_selenium_webdriver/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+
+# start_selenium_webdriver
+
+One simple selenium webdriver start script that (tries to) take care of binary locations and dependendencies in a platform independent manner.
+
+Example:
+
+```python
+
+from start_selenium_webdriver.webdriver_startup import start_web_driver
+
+end_point = "https://www.google.com/"
+driver = start_web_driver(end_point, num_sec_implicit_wait=0)
+
+```
+
+
+## Note
+
+Only works with firefox atm. and therefore needs a valid firefox installation.
+
+## Roadmap
+
+* Support Chrome webdriver
+
+## Contributions & Improvments
+
+Be encouraged to send pull-requests for any kind of improvment.
