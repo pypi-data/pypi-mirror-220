@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/Pylette/__init__.py
+src/Pylette/auxiliary.py
+src/Pylette/cmd.py
+src/Pylette/color.py
+src/Pylette/color_extraction.py
+src/Pylette/gui.py
+src/Pylette/palette.py
+src/pylette_windows.egg-info/PKG-INFO
+src/pylette_windows.egg-info/SOURCES.txt
+src/pylette_windows.egg-info/dependency_links.txt
+src/pylette_windows.egg-info/entry_points.txt
+src/pylette_windows.egg-info/requires.txt
+src/pylette_windows.egg-info/top_level.txt
