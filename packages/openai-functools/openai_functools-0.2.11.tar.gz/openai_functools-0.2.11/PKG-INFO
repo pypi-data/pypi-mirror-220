@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: openai-functools
+Version: 0.2.11
+Summary: python openai functions tooling
+Author: Jakob Serlier
+Author-email: 37184788+Jakob-98@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: black (>=23.7.0,<24.0.0)
+Requires-Dist: flake8 (>=6.0.0,<7.0.0)
+Requires-Dist: isort (>=5.12.0,<6.0.0)
+Requires-Dist: openai (>=0.27.8,<0.28.0)
+Requires-Dist: pytest (>=7.4.0,<8.0.0)
+Description-Content-Type: text/markdown
+
+Hello world
