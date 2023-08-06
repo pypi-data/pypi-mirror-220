@@ -1,0 +1,17 @@
+algoapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algoapi/read_config.py,sha256=qFgnoBLia6B2iDBiy4dm_ZDE7cpisToeAEdAks73pDE,65
+algoapi/fxconnect/__init__.py,sha256=zAofNfFKNmD26BBi59-HTPPCbzfHNZrQdNHjAlYz4Pw,59
+algoapi/fxconnect/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algoapi/fxconnect/client/fxcmconfig.py,sha256=Wz1y7PzvTMSRWT2yHnyJ8DpL8eA27ve227XVcufRJN8,956
+algoapi/fxconnect/trade/__init__.py,sha256=aNLBkc_9Pu_3SQzDifgoaZNL21X-aPO8FyHzQNASA08,150
+algoapi/fxconnect/trade/delete_order.py,sha256=7EX1MPzHQtUGWx73Ob9kVs2XX8YotYTh9cvsuhvNuYU,1625
+algoapi/fxconnect/trade/position.py,sha256=V3lAoDGuriMBWd-D9aZAhD3YwkGt7aOtVPeLF1FiiQU,4656
+algoapi/fxconnect/trade/position_utils.py,sha256=EEPYXoAo7nzxU6929gNdeEwf18DwEKe3Sq_sWNyAC5Y,10924
+algoapi/fxconnect/utils/__init__.py,sha256=1RXmb9a_xh8DsX28qVYCYlTdQuHa8gkrsyXpuSpRI7U,59
+algoapi/fxconnect/utils/custom_exception.py,sha256=EPHVnphw7NTGxLq3TNPYEpsuB-UIAPM9MnL78UcCEso,79
+algoapi/fxconnect/utils/utils.py,sha256=wvPB2jfb8vGt6J_EpSip1pLe2yTTjZHl8r-gCEtEud4,603
+algoapi-0.0.4.dist-info/LICENSE,sha256=RH0iaeJHoZO1LaXPGRxdsnzoA8s5WMBCUwrA1fSs1Vo,1074
+algoapi-0.0.4.dist-info/METADATA,sha256=LH8g9ZfhweVLQEza-DlbLPa06ke44qzR__wZOp5bMTc,4286
+algoapi-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+algoapi-0.0.4.dist-info/top_level.txt,sha256=yOn3B1pU42pypmJoqB8iyHqJ9i4SCsmI2negd2geKjw,8
+algoapi-0.0.4.dist-info/RECORD,,
