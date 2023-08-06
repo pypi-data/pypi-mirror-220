@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+global_inflation_analyser/analysis.py
+global_inflation_analyser/plotter.py
+global_inflation_analyser/preprocessor.py
+global_inflation_analyser/test_analysis.py
+global_inflation_analyser/test_preprocessor.py
+global_inflation_analyser.egg-info/PKG-INFO
+global_inflation_analyser.egg-info/SOURCES.txt
+global_inflation_analyser.egg-info/dependency_links.txt
+global_inflation_analyser.egg-info/requires.txt
+global_inflation_analyser.egg-info/top_level.txt
