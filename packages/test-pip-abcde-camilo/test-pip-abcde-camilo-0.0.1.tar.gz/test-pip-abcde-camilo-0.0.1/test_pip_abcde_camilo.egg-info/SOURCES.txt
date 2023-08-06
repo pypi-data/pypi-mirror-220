@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+code/__init__.py
+code/test_pip_abcde.py
+test_pip_abcde_camilo.egg-info/PKG-INFO
+test_pip_abcde_camilo.egg-info/SOURCES.txt
+test_pip_abcde_camilo.egg-info/dependency_links.txt
+test_pip_abcde_camilo.egg-info/top_level.txt
