@@ -1,0 +1,16 @@
+tdcrpy/Activity_TDCR.py,sha256=wcllEOJbeEOexAYzcFGQx2luIBhxSU3LtpEalRmNziw,11530
+tdcrpy/EfficiencyProfils.py,sha256=-ZUPva1dU7lMRcKbQAewX9QyiTDwCiNQDoaQiw7dOI4,4829
+tdcrpy/TDCRPy.py,sha256=5dcjZ7humT1yD55PN3UaFhVYLowIBxNe0FtGOE22aC4,23233
+tdcrpy/TDCR_model_lib.py,sha256=1Y3SywDbQpGmqYOuWddSxdTckGfOFzGNN56Yo5wnkpQ,80125
+tdcrpy/TDCRoptimize.py,sha256=2CssmP_SZSe6C_Bkgei3hon21RPytH4DetMbXi-e6wk,3171
+tdcrpy/__init__.py,sha256=DrgMGzw5vhdxbXvJq3orzdPeFaq8CwtDHzssp1_DqhM,93
+tdcrpy/decay.py,sha256=Lnq-kj-6Xs2Rw9w3Y3LlK_ffFip1QzemHdesiug0Wko,817
+tdcrpy/test.py,sha256=3r8LxXmQwlHNIefMswwUCy3OoHHKDVK8A3izerGT15U,292
+tdcrpy/test1.py,sha256=rGA9d1cgArhAfxRAAdtiz-vPGQ0Ns3HEdN8sCwydHYM,3250
+tdcrpy/Quenching/alpha_toulene.txt,sha256=3aIOCC1h19z8E0JZ2_MaSWRWcdnr-mtmT4qEF6t_nm0,1626
+tdcrpy/decayData/All-nuclides_PenNuc.zip,sha256=DmhS2CYegWhL8qggc_MO6FgyiXE5qX73dOoH-SSQXoo,388954
+TDCRPy-0.0.21.dist-info/LICENCE.md,sha256=fuYzrZRiOAjJBzA1tsGQwojCgGROArb2Ec48GDTjlWM,1086
+TDCRPy-0.0.21.dist-info/METADATA,sha256=V8TgaYgoQ6eQK3zu1Q4n6t5ccKtYCpH87y9-ntYqaKg,5633
+TDCRPy-0.0.21.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+TDCRPy-0.0.21.dist-info/top_level.txt,sha256=VgPJa9YJ7fi8wrr9qDJPLhu3tK1BcFRIP6Ib4r3BEfs,7
+TDCRPy-0.0.21.dist-info/RECORD,,
