@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: minetcookies
+Version: 0.3.8
+Summary: A simple cookie manager for Minet by Medialab
+Project-URL: Documentation, https://github.com/Marceau-h/minetcookies#readme
+Project-URL: Issues, https://github.com/Marceau-h/minetcookies/issues
+Project-URL: Source, https://github.com/Marceau-h/minetcookies
+Author-email: Marceau-h <106751184+Marceau-h@users.noreply.github.com>
+Maintainer-email: Marceau-h <106751184+Marceau-h@users.noreply.github.com>
+License-Expression: AGPL-3.0-or-later
+License-File: LICENSE.txt
+Keywords: cookie,cookies,manager,minet,minet-cookies,minetcookies
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: minet~=0.67.1
+Requires-Dist: pyyaml~=6.0
+Description-Content-Type: text/markdown
+
+# minetcookies
+
+[![PyPI - Version](https://img.shields.io/pypi/v/minetcookies.svg)](https://pypi.org/project/minetcookies)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/minetcookies.svg)](https://pypi.org/project/minetcookies)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+- [Description](#description)
+- [Usage](#usage)
+- [Medias supported](#medias-supported)
+- [Browsers supported](#browsers-supported)
+
+## Installation
+
+```bash 
+pip install minetcookies
+```
+
+## License
+
+`minetcookies` is distributed under the terms of the [AGPLv3 license](https://www.gnu.org/licenses/agpl-3.0.en.html).
+
+# Minet cookies, a cookie manager for Minet
+
+## Description
+
+Minet cookies is a cookie manager for Minet.
+It checks for cookies by using the minet cli ant then writes them to the minet config file.
+Preventing you from doing it manually.
+
+Adittionally, it can also read minet commands, in that case, it will check for cookies and then return a folder path 
+based on the curent directory and the keyword. This is useful for chaining commands.
+
+CAUTION: For this script to work, you need to have one of the supported browsers installed and be logged in to the
+social media you want to use minet with.
+
+## Usage
+
+```bash
+minetcookies [media]
+```
+or
+```bash
+minetcookies [minet command]
+```
+
+## Medias supported
+
+- Instagram
+- Tiktok
+- Twitter
+- Facebook
+
+## Browsers supported
+
+- Chrome
+- Firefox
+- Chromium
+- Edge
