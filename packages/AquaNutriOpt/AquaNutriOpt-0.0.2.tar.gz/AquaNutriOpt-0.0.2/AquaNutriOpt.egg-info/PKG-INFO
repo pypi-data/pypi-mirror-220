@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: AquaNutriOpt
+Version: 0.0.2
+Summary: Finds the optimal placement of BMPs and Technologies in a network in order to reduce the nutrient loadings at the lake
+Home-page: https://github.com/Ashim-Khanal/AquaNutriOpt
+Author: Ashim Khanal
+Author-email: ashimkhanal18@gmail.com
+License: MIT
+Keywords: Optimization,Environment,Best Management Practices,Aqua,Technologies,Nutrient Load Reduction,environemnt protection
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+UNKNOWN
+
