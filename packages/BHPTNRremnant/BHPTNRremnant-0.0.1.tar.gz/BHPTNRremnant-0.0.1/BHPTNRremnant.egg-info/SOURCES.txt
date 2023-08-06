@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+BHPTNRremnant/__init__.py
+BHPTNRremnant/analytical_fits.py
+BHPTNRremnant/point_particle.py
+BHPTNRremnant/remnant.py
+BHPTNRremnant.egg-info/PKG-INFO
+BHPTNRremnant.egg-info/SOURCES.txt
+BHPTNRremnant.egg-info/dependency_links.txt
+BHPTNRremnant.egg-info/top_level.txt
+BHPTNRremnant/data/__init__.py
+BHPTNRremnant/tests/__init__.py
