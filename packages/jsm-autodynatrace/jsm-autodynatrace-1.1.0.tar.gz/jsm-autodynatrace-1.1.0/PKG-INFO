@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: jsm-autodynatrace
+Version: 1.1.0
+Summary: Auto instrumentation for the OneAgent SDK
+Home-page: https://github.com/juntossomosmais/OneAgent-SDK-Python-AutoInstrumentation
+Author: Juntos Somos Mais
+Author-email: labs@juntossomosmais.com.br
+Project-URL: Issue Tracker, https://github.com/juntossomosmais/OneAgent-SDK-Python-AutoInstrumentation/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.6
+License-File: LICENSE
+
+The autodynatrace package will auto instrument your python apps
