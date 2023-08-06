@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+responsecurve.egg-info/PKG-INFO
+responsecurve.egg-info/SOURCES.txt
+responsecurve.egg-info/dependency_links.txt
+responsecurve.egg-info/requires.txt
+responsecurve.egg-info/top_level.txt
