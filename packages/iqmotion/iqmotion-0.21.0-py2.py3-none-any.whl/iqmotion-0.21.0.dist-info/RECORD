@@ -1,0 +1,9 @@
+client_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client_files/client.py,sha256=fjolqBVUhHiZCWDpTnsQoqyaL53cuPhUcsukucMRLmI,649
+client_files/client_with_entries.py,sha256=rflpA0zHAc_c1NYXMZB6lOPo6cu1_Ez6jFPYSgSapvk,3966
+iqmotion/__init__.py,sha256=eBmBpjo92CfAgIIUZ7KdzbBBmr8uvY1YKi2nmfNfecY,906
+iqmotion/custom_errors.py,sha256=rlQTxdr-qJ7h4m5qI_iosBQ5QDcdvYkje37xkx3VWck,1449
+iqmotion-0.21.0.dist-info/METADATA,sha256=xkgQwNFySRBRVd6396Z1SBJTa-a1ZVgKdX7XkSNf9gk,6534
+iqmotion-0.21.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+iqmotion-0.21.0.dist-info/top_level.txt,sha256=hnp7trwU6FXor1LxfACyy83mOPr_66HYRWrvErzCx0U,22
+iqmotion-0.21.0.dist-info/RECORD,,
