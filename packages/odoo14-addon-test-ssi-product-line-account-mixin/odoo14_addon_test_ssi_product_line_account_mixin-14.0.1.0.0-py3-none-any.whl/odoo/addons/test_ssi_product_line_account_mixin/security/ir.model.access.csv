@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_test_product_line_account_all,test.product_line_account – All Users,model_test_product_line_account,,1,1,1,1

@@ -1,0 +1,12 @@
+odoo/addons/test_ssi_product_line_account_mixin/README.rst,sha256=n5VemtADzP__qn8Yjcq8teZhakyNJnuu1a-drX_Mleg,1292
+odoo/addons/test_ssi_product_line_account_mixin/__init__.py,sha256=8zIo3SAnL8bSDMH_emuY1fR-rFqf8gV4hPkZwcsY1yI,182
+odoo/addons/test_ssi_product_line_account_mixin/__manifest__.py,sha256=PxdtMKKWY-d6pJGim9-EozT9KoD_vaCyZ3KTugTIrIY,678
+odoo/addons/test_ssi_product_line_account_mixin/models/__init__.py,sha256=-LwaR_PKWX3ueGJDoP_6aP3Ikd4z_EnOYlg64FBEUuQ,201
+odoo/addons/test_ssi_product_line_account_mixin/models/test_product_line_account.py,sha256=FVTS8n76xCgM3jhMJKDnJ1Hrs53aZbiscFs-BmnXlgs,369
+odoo/addons/test_ssi_product_line_account_mixin/security/ir.model.access.csv,sha256=YPCjQN0Vwk3E1Tm8nX-NXi9XPrm0NGQ-dL_RagduHog,195
+odoo/addons/test_ssi_product_line_account_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo/addons/test_ssi_product_line_account_mixin/views/test_product_line_views.xml,sha256=zs_DalWw1550TgplPyVAb5ksuu6isjv0qSwEu2R4KZI,3756
+odoo14_addon_test_ssi_product_line_account_mixin-14.0.1.0.0.dist-info/METADATA,sha256=BejDj46OZZtzOaOM77mdoTUraoHMsXLnPAFw0dZNC_I,1899
+odoo14_addon_test_ssi_product_line_account_mixin-14.0.1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_test_ssi_product_line_account_mixin-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_test_ssi_product_line_account_mixin-14.0.1.0.0.dist-info/RECORD,,
