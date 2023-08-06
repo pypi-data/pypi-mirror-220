@@ -1,0 +1,17 @@
+setup.py
+ltsfit/CHANGELOG.rst
+ltsfit/LICENSE.txt
+ltsfit/README.rst
+ltsfit/__init__.py
+ltsfit/lts_linefit.py
+ltsfit/lts_planefit.py
+ltsfit/ltsfit.py
+ltsfit.egg-info/PKG-INFO
+ltsfit.egg-info/SOURCES.txt
+ltsfit.egg-info/dependency_links.txt
+ltsfit.egg-info/requires.txt
+ltsfit.egg-info/top_level.txt
+ltsfit.egg-info/zip-safe
+ltsfit/examples/__init__.py
+ltsfit/examples/ltsfit_examples.py
+ltsfit/examples/ltsfit_python_reference_output.txt
