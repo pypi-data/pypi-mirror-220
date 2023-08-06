@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: coziepy
+Version: 0.0.2
+Summary: A package for processing and visualizing data collected with the Cozie-Apple app
+Author-email: Mario Frei <mario.frei@gmx.net>
+Project-URL: homepage, https://www.cozie-apple.app/
+Project-URL: repository, https://github.com/cozie-app/cozie-wizard/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: arrow (>=1.2.3)
+Requires-Dist: DateTime (>=5.2)
+Requires-Dist: fastparquet (>=2023.7.0)
+Requires-Dist: influxdb (>=5.3.1)
+Requires-Dist: matplotlib (>=3.7.2)
+Requires-Dist: matplotlib-inline (>=0.1.6)
+Requires-Dist: numpy (>=1.25.1)
+Requires-Dist: packaging (>=23.1)
+Requires-Dist: pandas (>=2.0.3)
+Requires-Dist: plotly (>=5.15.0)
+Requires-Dist: pyarrow (>=12.0.1)
+Requires-Dist: pytz (>=2023.3)
+Requires-Dist: requests (>=2.31.0)
+Requires-Dist: seaborn (>=0.12.2)
+
+
+# Under Construction 
+This package is in the early development stage. Use at your own risk.
+
+# What is it?
+CoziePy is a Python package to retrieve, process, and visualize data collected witht the [Cozie Apple app](https://cozie-apple.app/). It aims to make the handling aof Cozie data easier.
+
+# Where to get it?
+TBD
+
+# How to use it?
+TBD
+
+# License
+TBD
+
+# Getting Help
+TBD
