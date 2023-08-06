@@ -1,0 +1,12 @@
+trad/__init__.py,sha256=uw4T89j-LMdOCUu9As99OBem9RK27_1q4i7u0khp2bk,647
+trad/helper.py,sha256=G9R96r5mCIG_KOrWJODsgiRwRZUMZeWV90Pq7luj7bI,890
+trad/plasma.py,sha256=md_lxr1GFyDai2cAPbiBMvoevC-NfHXiAPLvSYquM_k,1063
+trad/specradiance.py,sha256=J0x6QVkz8rGMY8F6GJabLrIoSkoTgNW2oKSVU7u3ogI,2237
+trad/sync/Dexter2016.py,sha256=qItYeP_85EUIcs9iP6zylvJLT6xzB5W8yPcKJwwLlEg,4045
+trad/sync/LeungX2011.py,sha256=wssxQ06X5nocqvAXIGH5ky7KRfmGqrBfHQuIbrAe0ZM,3127
+trad/sync/__init__.py,sha256=LSGXJWhcTNHyTMst74bx5z_Y4IvQvyIEA-09rkGPMRY,1816
+trad/units.py,sha256=dtBJuPJ4HOIbvetmh1Fkz4MdmQ1-wpxxJ0ozmXB8BFI,1772
+trad-0.1.2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+trad-0.1.2.dist-info/METADATA,sha256=34D6dGO1_AIvMCKVBIhc0yhVdOdwVxF9osc6-OhJqbU,1079
+trad-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+trad-0.1.2.dist-info/RECORD,,
