@@ -1,0 +1,8 @@
+pyyaml
+boltons
+jinja2
+sh
+tag-version
+tabulate
+docker-compose
+semver
