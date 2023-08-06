@@ -1,0 +1,17 @@
+IngeoDash/__init__.py,sha256=oZYFeelphGqU8ySRoMxb0ZkaJ7NlquAyN_WiE5uxGPY,678
+IngeoDash/__main__.py,sha256=NdSJ6-vIFN2GUupDWSng7RCQ7fAAqDqY4xKbJooo_9A,3894
+IngeoDash/annotate.py,sha256=RK2l74D1-iLxM5uu5XwuVuxRcEoDVpqBTwOP2oLEzeQ,4400
+IngeoDash/app.py,sha256=U_YA0XGuYiP_Qw-NrYyb3WqVvPoafVIbCHClQwi3S5I,4567
+IngeoDash/config.py,sha256=HB3dA6HoV9QwnzuwFplWIodP3EFoH6Ft1q-Z_VMpmXI,2263
+IngeoDash/download.py,sha256=3xcOZ4Qe6DWo2luv-4lorBvW7KtFZEMex4QuBqtLEf0,1683
+IngeoDash/upload.py,sha256=X2iNLunlT5hfGEZHz034WhqBW0qkMhT7ikDzipdKh2s,5548
+IngeoDash/tests/test_annotate.py,sha256=TVQmbdsJglaRvFI9R4Ov-_ZYjy8rPf4G2OXJ6QcYEuo,4461
+IngeoDash/tests/test_app.py,sha256=tMnOSVKbIXm6ixqANOTsLbfHx49wI9Cf38qV8j0HkvU,4232
+IngeoDash/tests/test_config.py,sha256=4LtgDjtHXY2VkuDuOwLAOnjkT_tUUGDc9-ON1faLg3I,2457
+IngeoDash/tests/test_download.py,sha256=__U2ggzVlCA0BK_Rcm0kND8RWQUXkzNLRxU9IVnrjXQ,1287
+IngeoDash/tests/test_upload.py,sha256=-FgHghGK0e3k3n6sFZjsC4D0BqhPk1JuKj6GAnIAMC4,4534
+IngeoDash-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+IngeoDash-0.1.0.dist-info/METADATA,sha256=xKanKhtGXC69ZrfILHBqACyZNY5SDsna49bxAQQqP2g,1130
+IngeoDash-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+IngeoDash-0.1.0.dist-info/top_level.txt,sha256=TXkFM1SYMP2k88isBCVLCjI1lT3pENHx7fzn8rVLUMU,10
+IngeoDash-0.1.0.dist-info/RECORD,,
