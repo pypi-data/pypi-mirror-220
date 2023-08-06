@@ -1,0 +1,12 @@
+LbPlatformUtils
+logzero
+requests
+
+[dev]
+mypy
+mypy-extensions
+pre-commit
+pytest
+pytest-cov
+ruff
+types-requests
