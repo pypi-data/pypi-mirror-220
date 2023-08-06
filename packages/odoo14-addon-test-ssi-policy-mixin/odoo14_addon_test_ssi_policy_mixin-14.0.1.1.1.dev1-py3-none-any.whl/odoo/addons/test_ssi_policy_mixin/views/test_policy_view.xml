@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="test_policy_view_tree" model="ir.ui.view">
+        <field name="name">test.policy.tree</field>
+        <field name="model">test.policy</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="active" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="test_policy_view_form" model="ir.ui.view">
+        <field name="name">test.policy.form</field>
+        <field name="model">test.policy</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_confirm"
+                        type="object"
+                        string="Confirm"
+                        class="oe_highlight"
+                        attrs="{'invisible':[('confirm_ok','=',False)]}"
+                    />
+                    <button
+                        name="action_open"
+                        type="object"
+                        string="Open"
+                        class="oe_highlight"
+                        attrs="{'invisible':[('open_ok','=',False)]}"
+                    />
+                    <button
+                        name="action_done"
+                        type="object"
+                        string="Done"
+                        class="oe_highlight"
+                        attrs="{'invisible':[('done_ok','=',False)]}"
+                    />
+                    <button
+                        name="action_cancel"
+                        type="object"
+                        string="Cancel"
+                        class="oe_highlight"
+                        attrs="{'invisible':[('cancel_ok','=',False)]}"
+                    />
+                    <button
+                        name="action_restart"
+                        type="object"
+                        string="Restart"
+                        class="oe_highlight"
+                        attrs="{'invisible':[('restart_ok','=',False)]}"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,confirm,open,done"
+                    />
+                </header>
+                <sheet>
+                <div class="oe_button_box" name="button_box">
+                </div>
+                <div class="oe_left" style="width: 500px;">
+                    <div class="oe_title" style="width: 500px;">
+                        <label for="name" />
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                </div>
+
+                <group>
+                    <group name="left">
+                        <field name="type_id" />
+                    </group>
+                    <group name="right">
+                        <field name="date" />
+                        <field name="active" />
+                    </group>
+                </group>
+                <notebook>
+                    <page name="page_note" string="Notes">
+                        <field name="notes" nolabel="1" />
+                    </page>
+                    <page name="policy" string="Policies" groups="base.group_system">
+                        <group name="policy_1" colspan="4" col="2">
+                            <field
+                                    name="policy_template_id"
+                                    groups="base.group_system"
+                                />
+                            <button
+                                    name="action_reload_policy_template"
+                                    string="Reload Template"
+                                    class="oe_highlight"
+                                    type="object"
+                                />
+                            <newLine />
+                            <field name="confirm_ok" />
+                            <field name="open_ok" />
+                            <field name="done_ok" />
+                            <field name="cancel_ok" />
+                            <field name="restart_ok" />
+                        </group>
+                    </page>
+                </notebook>
+            </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="test_policy_action" model="ir.actions.act_window">
+        <field name="name">Test Policies</field>
+        <field name="res_model">test.policy</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="test_policy_menu"
+        name="Tests"
+        parent="ssi_policy_mixin.root_policy_template_menu"
+        action="test_policy_action"
+        sequence="101"
+    />
+</odoo>

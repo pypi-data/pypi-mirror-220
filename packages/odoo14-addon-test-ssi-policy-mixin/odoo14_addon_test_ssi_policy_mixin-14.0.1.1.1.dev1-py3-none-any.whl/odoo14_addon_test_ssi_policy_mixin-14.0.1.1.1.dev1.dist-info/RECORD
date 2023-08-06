@@ -1,0 +1,15 @@
+odoo/addons/test_ssi_policy_mixin/README.rst,sha256=yplhWmyRSTCLNN57muW-5qV_Xwkbv8cXj9NN-BpZG-I,1258
+odoo/addons/test_ssi_policy_mixin/__init__.py,sha256=BdcklWB34k_T7rljVtjcTXP7JSJuG9B3nBRrLXpleQw,181
+odoo/addons/test_ssi_policy_mixin/__manifest__.py,sha256=7hTkGR3JKHmP6SK0tsVGwwNHZxpEwK14KmG541Dc8Xk,675
+odoo/addons/test_ssi_policy_mixin/data/policy_template_data.xml,sha256=Ki6XqQa43rVXnHnkhCDBFDfn4MWNuvfxp8_tZr6kQD0,3669
+odoo/addons/test_ssi_policy_mixin/models/__init__.py,sha256=NXegUUQVH1Qj33a94VjLXwuRrTWHHDEirLNAgaOUcH4,208
+odoo/addons/test_ssi_policy_mixin/models/test_policy.py,sha256=f1W5tF5vCSiNOxJIV-idhKBjB7BwlYcIGwNzmv6Y_Ng,3587
+odoo/addons/test_ssi_policy_mixin/models/test_policy_type.py,sha256=Y_gkwSq6ZFRJA6An3ZIiX2JHTwDmarIWLpaowVUJaTg,563
+odoo/addons/test_ssi_policy_mixin/security/ir.model.access.csv,sha256=Y2DMJkxaWGTBFS7EAPjBRuA0Ug4EGMub_2gmAGXagmU,258
+odoo/addons/test_ssi_policy_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo/addons/test_ssi_policy_mixin/views/test_policy_type_view.xml,sha256=-QeNvWtj2A2AooQrXjspBPDJzTMkOMa105ZBREOwvPs,1981
+odoo/addons/test_ssi_policy_mixin/views/test_policy_view.xml,sha256=FcMio6E8XVWfa7JT_E9AgqoQfLZEbdgQERi2RufChKI,4984
+odoo14_addon_test_ssi_policy_mixin-14.0.1.1.1.dev1.dist-info/METADATA,sha256=rOYz_joL92FdXuxF1_O1ozj1m1XEsfppdcEKgXaPGl0,1820
+odoo14_addon_test_ssi_policy_mixin-14.0.1.1.1.dev1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_test_ssi_policy_mixin-14.0.1.1.1.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_test_ssi_policy_mixin-14.0.1.1.1.dev1.dist-info/RECORD,,

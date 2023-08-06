@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="test_policy_type_view_tree" model="ir.ui.view">
+        <field name="name">test.policy.type.tree</field>
+        <field name="model">test.policy.type</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="code" />
+                <field name="name" />
+                <field name="active" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="test_policy_type_view_form" model="ir.ui.view">
+        <field name="name">test.policy.type.tree</field>
+        <field name="model">test.policy.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                </header>
+                <sheet>
+                <group>
+                    <group name="left">
+                        <field name="name" />
+                        <field name="code" />
+                    </group>
+                    <group name="right">
+                        <field name="active" />
+                    </group>
+                </group>
+                <notebook>
+                    <page name="page_note" string="Notes">
+                        <field name="notes" nolabel="1" />
+                    </page>
+                </notebook>
+            </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="test_policy_type_action" model="ir.actions.act_window">
+        <field name="name">Test Policy Types</field>
+        <field name="res_model">test.policy.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="test_policy_type_menu"
+        name="Test Types"
+        parent="ssi_policy_mixin.root_policy_template_menu"
+        action="test_policy_type_action"
+        sequence="100"
+    />
+</odoo>
