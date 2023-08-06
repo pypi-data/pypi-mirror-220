@@ -1,0 +1,2 @@
+class DupKeyException(Exception):
+    pass

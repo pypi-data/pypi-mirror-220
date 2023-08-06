@@ -1,0 +1,10 @@
+figh-0.1.0.dist-info/METADATA,sha256=JOO-hh2baHDSeL80Xke8wYiLw_GwKvdNQhscWpU51nA,1037
+figh-0.1.0.dist-info/WHEEL,sha256=0QD4Fi8spmPDA9YIWsctxI6ukFf44Zgk0L9495lbqs0,90
+figh-0.1.0.dist-info/licenses/LICENSE,sha256=aTu9clULVA5tkB_HOe4gVcqrJypuo6jEdx4FX9Z_obg,1064
+figh/__init__.py,sha256=Ky5v7-qBNuUo6pEBBb4gvCXNjl3e66MQeHYWRFlyjSg,229
+figh/base.py,sha256=ajmqS8uwDJLxD5fjkubK6-PyBqr6C4leiZmMHDox3c8,259
+figh/config_file_format.py,sha256=QILtNfW_f-tyqhzaJTuFJCzMr1gGc3tFh3hTsHHfJD0,473
+figh/errors.py,sha256=4R4iK24f3XtSVOdxXHe22ASzqBeSOxPeaqibBnrmAu0,43
+figh/github.py,sha256=ktIhMdz4uj4sbB_NQhWeoPlrufOL98v1HvI_4vYZ0JQ,3115
+figh/util.py,sha256=4452WiVE2Vg92i_-LSjylgOL1BrR6pf0LMS4bPV4Pqg,268
+figh-0.1.0.dist-info/RECORD,,
