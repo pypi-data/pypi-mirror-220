@@ -1,0 +1,10 @@
+odoo/addons/ssi_pricelist_mixin/README.rst,sha256=gdoE3p7BKX1KOcWnI9h4UoqWmv1BL5vTelQrwUYQI84,1164
+odoo/addons/ssi_pricelist_mixin/__init__.py,sha256=X3ayW9k4OH3xqib3X0KEzYY9_pqaAhP2YdhFFVEJSvo,181
+odoo/addons/ssi_pricelist_mixin/__manifest__.py,sha256=Sgbc9Zg9uEGpKLCqMzIfgXR1_zfcURNuEUJAV5ppSss,439
+odoo/addons/ssi_pricelist_mixin/models/__init__.py,sha256=WxRHtuoxYiK3kuOqLTRrOAaaf_G0RixUjvcX3L6qIXs,190
+odoo/addons/ssi_pricelist_mixin/models/mixin_pricelist.py,sha256=cufWIjAjBbx0HSWBllQgSBxWobVEoFLoSag7AoUukKY,1294
+odoo/addons/ssi_pricelist_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_pricelist_mixin-14.0.1.0.0.dist-info/METADATA,sha256=lYkwpQ0lVKfdMS40lqh-dgvibrW3RM76cwRhhekY3FI,1664
+odoo14_addon_ssi_pricelist_mixin-14.0.1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_pricelist_mixin-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_pricelist_mixin-14.0.1.0.0.dist-info/RECORD,,
