@@ -1,0 +1,11 @@
+monitorVW/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monitorVW/monitorVW.py,sha256=njb4uSeuFB5mE7v9wxJ38Qi57nt2Z14KDYCz6FtqVcw,26646
+monitorVW/weconnect/NativeAPI.py,sha256=PJ81DLuNVdhrvLJA4jp5ar36WMISP3KJRBdCllIJN5E,34513
+monitorVW/weconnect/__init__.py,sha256=exnitEc5wdqEMpGM1uTMjwDJ7ccBz68a3J8Q3bW_ARc,125
+monitorVW/weconnect/_version.py,sha256=OHn1756LxmD4OFcAASWcSIVTvWHjnm81oSlNlJfbbX8,27
+monitorVW/weconnect/vsr.py,sha256=1NTFIIIPXnnOKKfw4qFHYxbkmEggqvRCy_YMfjWtHJY,10933
+monitorVW-1.4.1.dist-info/LICENSE,sha256=QK_CZt_V3iCVhCEaJj4xH76aBCHZ0jhg4QUu9mAqb9k,1063
+monitorVW-1.4.1.dist-info/METADATA,sha256=1TQHt04unt8VLttL4ikiPGrf8ac_n2wrdkfvbY_ZyNc,14272
+monitorVW-1.4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+monitorVW-1.4.1.dist-info/top_level.txt,sha256=r4K987B9ZnqI4CfxPjOKqJg-s2PDJDcH2w3b2VIZcts,10
+monitorVW-1.4.1.dist-info/RECORD,,
