@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: uagents-twilio-test-dummy
+Version: 1.0.3
+Summary: 
+Home-page: https://github.com/Github User/uagents-twilio
+Author: Harsh
+Author-email: harsh@gmail.com
+Requires-Python: >=3.8.1,<3.12
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: fastapi (>=0.100.0,<0.101.0)
+Requires-Dist: flake8 (==6.0.0)
+Requires-Dist: pre-commit (==3.3.3)
+Requires-Dist: python-decouple (==3.8)
+Requires-Dist: uagents (==0.5.0)
+Project-URL: Repository, https://github.com/Github User/uagents-twilio
+Description-Content-Type: text/x-rst
+
+======
+twilio
+======
+
+.. image:: https://img.shields.io/pypi/v/uagents-twilio.svg
+    :target: https://pypi.org/project/uagents-twilio
+    :alt: PyPI version
+
+
+
+----
+
+This `uagents <https://github.com/fetchai/uAgents>`_ utlity was generated with `Cookiecutter <https://github.com/cookiecutter/cookiecutter>`_.
+
+
+Features
+--------
+
+* TODO
+
+
+Requirements
+------------
+
+* TODO
+
+
+Installation
+------------
+
+You can install "uagents-twilio" via `pip <https://pypi.org/project/pip/>`_ from `PyPI <https://pypi.org/project>`_::
+
+    $ poetry add uagents-twilio
+
+
+Usage
+-----
+
+* TODO
+

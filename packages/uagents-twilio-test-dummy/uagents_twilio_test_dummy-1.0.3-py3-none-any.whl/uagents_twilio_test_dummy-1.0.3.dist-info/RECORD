@@ -1,0 +1,15 @@
+uagents_twilio/__init__.py,sha256=sTpmcAHWL6g2Sl5SDrJ38mZvw9ktlrKnT_3CurNeZAk,68
+uagents_twilio/gc_integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uagents_twilio/gc_integration/constants.py,sha256=jpyER5EMOGyGH76O49oWYbPf9_T077lt6MaYO8_twWo,1727
+uagents_twilio/gc_integration/google_calendar.py,sha256=vSwok24EXET3VOnBnWNL6UtTl8tBN23FXB9S72ydv90,14304
+uagents_twilio/gc_integration/utils.py,sha256=QQyH1oCYBgpoZqj_85KWaJDZdrWkfpfMGFk1w8lI9qc,1229
+uagents_twilio/models.py,sha256=LkVFBEAzy7Mqxt_2VlYlDz5jrBzv9EPWPtl_JiYnr5o,219
+uagents_twilio/protocols/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uagents_twilio/protocols/sms.py,sha256=rSEHZvxQTJrIWp02Q77Ui4B-hOkEnBdatROgwAQOGyM,1432
+uagents_twilio/webhook.py,sha256=AkwyT5MaCfzyMbUtDYq8_yPjKvZTf50Ajm9n9OTOpqg,769
+uagents_twilio/wrappers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uagents_twilio/wrappers/smsWrapper.py,sha256=F8BffPziQLrcyLzjgESSD3c-QHc3NrrI1-_8_jUIb6c,1969
+uagents_twilio_test_dummy-1.0.3.dist-info/LICENSE,sha256=SyzfyyJqXMown_oIFnCljkuwJKQFeSkixktZ_U9LHmg,1073
+uagents_twilio_test_dummy-1.0.3.dist-info/METADATA,sha256=1rJ7ewkaWtrpZ5fNkvndcX9VTcLewzuqESuAwDyx0nQ,1595
+uagents_twilio_test_dummy-1.0.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+uagents_twilio_test_dummy-1.0.3.dist-info/RECORD,,
