@@ -1,0 +1,6 @@
+pyproject.toml
+Banner_9000.egg-info/PKG-INFO
+Banner_9000.egg-info/SOURCES.txt
+Banner_9000.egg-info/dependency_links.txt
+Banner_9000.egg-info/top_level.txt
+BigChars/__init__.py
