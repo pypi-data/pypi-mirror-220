@@ -1,0 +1,14 @@
+Giraffe_View/__init__.py,sha256=GrGELllaFrhI2rLFeV3PMOB68fJnLPxEBVLfvy8XNxs,57
+Giraffe_View/estimated_read_accuracy.py,sha256=ReL2xbaiP3F_w2huzKEytPsYmKSjY6X8-3eA5Ud4tAg,2835
+Giraffe_View/function.py,sha256=33b8TJ6Guq1IXK-PJABuImuEjDd9PslrSDr3sopTiLY,4539
+Giraffe_View/gc_bias.py,sha256=hnPpSa8gm3GHFGzFYZTeBLwZ1XkqzBgJLDsS9wBr_oI,3288
+Giraffe_View/homopolymer.py,sha256=E13cXdmr7h7tmwxzq2OmZZK8R6KD5bAmVnnRCge51to,4721
+Giraffe_View/observed_read_accuracy.py,sha256=xgIupO1sIoYgK4odpr-XxoqLJLXdoRrmnqhwT7x9ezg,2944
+Giraffe_View/plot.py,sha256=m9OaS5wbFoLyn9LyQek0Ph3KVmfBEu0JViDn5dr6Guo,5505
+Giraffe_View/regional_modification.py,sha256=eG2Vcr33SAuDHBMCYDjPWNungmo2mXpKePxiO4F60Dg,2156
+Giraffe_View-0.0.9.1.data/scripts/giraffe,sha256=kcNE0B81SZzM3xL4dLpt0BDNDbALVhpoEH4NYX1s12E,3642
+Giraffe_View-0.0.9.1.dist-info/LICENSE,sha256=LONStjWrOd8B4R8rPYBUCpNrorSz4T5ChdPpJjaB7T0,1064
+Giraffe_View-0.0.9.1.dist-info/METADATA,sha256=i2W8d04rfz8xgymHB9f-Lzqjl74wxEd9D67AnGavzBI,5211
+Giraffe_View-0.0.9.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Giraffe_View-0.0.9.1.dist-info/top_level.txt,sha256=sokpgPSlTNh57uZczCbhmY1PTnOeGF5NP-pT4ADnHU8,13
+Giraffe_View-0.0.9.1.dist-info/RECORD,,
