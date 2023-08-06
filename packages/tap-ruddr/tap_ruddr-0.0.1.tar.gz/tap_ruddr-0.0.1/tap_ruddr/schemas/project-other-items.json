@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": ["string", "null"]
+      },
+      "date": {
+        "type": ["string", "null"],
+        "format": "date"
+      },
+      "quantity": {
+        "type": ["number", "null"]
+      },
+      "rate": {
+        "type": ["number", "null"]
+      },
+      "fee": {
+        "type": ["number", "null"]
+      },
+      "description": {
+        "type": ["string", "null"]
+      },
+      "invoiced": {
+        "type": ["boolean", "null"]
+      },
+      "createdAt": {
+        "type": ["string", "null"],
+        "format": "date-time"
+      },
+      "project": {
+        "type": ["object", "null"],
+        "properties": {
+          "id": {
+            "type": ["string", "null"]
+          },
+          "name": {
+            "type": ["string", "null"]
+          },
+          "client": {
+            "type": ["object", "null"],
+            "properties": {
+              "id": {
+                "type": ["string", "null"]
+              },
+              "name": {
+                "type": ["string", "null"]
+              }
+            }
+          }
+        }
+      },
+      "invoiceItem": {
+        "type": ["object", "null"],
+        "properties": {
+          "id": {
+            "type": ["string", "null"]
+          },
+          "name": {
+            "type": ["string", "null"]
+          }
+        }
+      }
+    },
+    "required": ["id", "date", "quantity", "rate", "fee", "description", "invoiced", "createdAt", "project", "invoiceItem"]
+  }
+  

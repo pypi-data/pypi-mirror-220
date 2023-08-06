@@ -1,0 +1,80 @@
+{
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "isActive": {
+        "type": "boolean"
+      },
+      "isBillable": {
+        "type": "boolean"
+      },
+      "rate": {
+        "type": ["number", "null"]
+      },
+      "createdAt": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "project": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "client": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "discipline": {
+        "type": ["object", "null"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "budget": {
+        "type": ["object", "null"],
+        "properties": {
+          "billableHours": {
+            "type": ["number", "null"]
+          },
+          "nonBillableHours": {
+            "type": ["number", "null"]
+          }
+        }
+      },
+      "monthlyBudget": {
+        "type": ["object", "null"],
+        "properties": {
+          "billableHours": {
+            "type": ["number", "null"]
+          },
+          "nonBillableHours": {
+            "type": ["number", "null"]
+          }
+        }
+      }
+    }
+  }
+  

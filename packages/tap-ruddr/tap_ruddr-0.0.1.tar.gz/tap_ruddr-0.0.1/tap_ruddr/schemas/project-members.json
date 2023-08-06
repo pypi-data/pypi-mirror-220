@@ -1,0 +1,78 @@
+{
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "typeId": {
+        "type": "string"
+      },
+      "isActive": {
+        "type": "boolean"
+      },
+      "isBillable": {
+        "type": ["boolean", "null"]
+      },
+      "rate": {
+        "type": ["number", "null"]
+      },
+      "createdAt": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "project": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "client": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "member": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "roles": {
+        "type": ["array", "null"],
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "budget": {
+        "type": ["number", "null"]
+      },
+      "monthlyBudget": {
+        "type": ["number", "null"]
+      }
+    }
+  }
+  

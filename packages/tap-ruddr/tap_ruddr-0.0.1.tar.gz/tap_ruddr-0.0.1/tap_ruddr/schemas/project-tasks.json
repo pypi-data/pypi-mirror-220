@@ -1,0 +1,116 @@
+{
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": ["string", "null"]
+      },
+      "name": {
+        "type": ["string", "null"]
+      },
+      "notes": {
+        "type": ["string", "null"]
+      },
+      "order": {
+        "type": ["integer", "null"]
+      },
+      "statusId": {
+        "type": ["string", "null"]
+      },
+      "start": {
+        "type": ["string", "null"],
+        "format": "date"
+      },
+      "end": {
+        "type": ["string", "null"],
+        "format": "date"
+      },
+      "isBillable": {
+        "type": ["boolean", "null"]
+      },
+      "lockTime": {
+        "type": ["boolean", "null"]
+      },
+      "capHours": {
+        "type": ["boolean", "null"]
+      },
+      "forAssignedOnly": {
+        "type": ["boolean", "null"]
+      },
+      "requireNotes": {
+        "type": ["boolean", "null"]
+      },
+      "budgetedHours": {
+        "type": ["number", "null"]
+      },
+      "createdAt": {
+        "type": ["string", "null"],
+        "format": "date-time"
+      },
+      "project": {
+        "type": ["object", "null"],
+        "properties": {
+          "id": {
+            "type": ["string", "null"]
+          },
+          "name": {
+            "type": ["string", "null"]
+          },
+          "client": {
+            "type": ["object", "null"],
+            "properties": {
+              "id": {
+                "type": ["string", "null"]
+              },
+              "name": {
+                "type": ["string", "null"]
+              }
+            }
+          }
+        }
+      },
+      "roles": {
+        "type": ["array", "null"],
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": ["string", "null"]
+            },
+            "name": {
+              "type": ["string", "null"]
+            },
+            "hours": {
+              "type": ["number", "null"]
+            }
+          }
+        }
+      },
+      "projectMembers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": ["string", "null"]
+            },
+            "member": {
+              "type": ["object", "null"],
+              "properties": {
+                "id": {
+                  "type": ["string", "null"]
+                },
+                "name": {
+                  "type": ["string", "null"]
+                }
+              }
+            },
+            "hours": {
+              "type": ["number", "null"]
+            }
+          }
+        }
+      }
+    },
+    "required": ["id", "name", "statusId", "start", "end", "isBillable", "lockTime", "capHours", "forAssignedOnly", "requireNotes", "budgetedHours", "createdAt"]
+  }
+  
