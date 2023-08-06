@@ -1,0 +1,14 @@
+MEGNetSparse/__init__.py,sha256=ABuuHwArScIRBSN5pw01Z_9TO8qlHOXz96zG_mChxmU,120
+MEGNetSparse/dense2sparse.py,sha256=IO-oEYi9OEtxSksY27TpRODRd3_2VhBS96GB3Ipv12g,5423
+MEGNetSparse/eos.py,sha256=moz5cGFYCsTPFy-PP33lMTV-EadBjHvyGlutyKpWYHI,3586
+MEGNetSparse/layers.py,sha256=BgY57MME2tjzPJA-c2ucr7gU9W35Qa81Gldiu_qJjBA,5105
+MEGNetSparse/losses.py,sha256=lDODA0rI8-jxBgpTHQ07QVtJ4gRRXr9X358t_LlqS44,1878
+MEGNetSparse/model.py,sha256=HkrlQWT5Y7jG3Pv-WgcOQHvMb3GwTYGXpxV3gxgXsdk,3015
+MEGNetSparse/struct2graph.py,sha256=ySp0W2G7YTWzBsAK54bJjo-R70s_dqvIVFufbEqCuCs,6891
+MEGNetSparse/trainer.py,sha256=qru16MRVTEojS5iRNlDx_qmjo9B_KU5DpPd4LjyIGGM,8040
+MEGNetSparse/utils.py,sha256=rkRuZhUwCwljy2ikGDzUiXD_ACBdbYKLA4-Gj8luPH4,885
+MEGNetSparse-0.0.5.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+MEGNetSparse-0.0.5.dist-info/METADATA,sha256=SVZaypG7hvwNmNjaKd9IYBiEQaMXsNRZzzn7ifw_c0M,2785
+MEGNetSparse-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+MEGNetSparse-0.0.5.dist-info/top_level.txt,sha256=OFcU6thmqZFgJuaPIY_026lFcfEc7_07ERxfoIZOA3Q,13
+MEGNetSparse-0.0.5.dist-info/RECORD,,
