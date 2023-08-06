@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fast Transfer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/bulma.min.css" />
+    <style>
+     th a {
+       color: #999;
+     }
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+	<div class="columns">
+	  <div class="column is-8 is-offset-2">
+	    <h1 class="title">Fast Transfer</h1>
+	    {% with messages = get_flashed_messages() %}
+	      {% if messages %}
+		{% for message in messages %}
+		  <div class="notification is-light is-primary">{{message}}</div>
+		{% endfor %}
+	      {% endif %}
+	    {% endwith %}
+	    <div class="level">
+	      <div class="level-left">
+		{% if dirs %}
+		  <nav class="breadcrumb" aria-label="breadcrumbs">
+		    <ul>
+		      <li><a href="/">Home</a></li>
+		      {% for dir in dirs %}
+			<li {% if loop.last %} class="is-active"{% endif %}>
+			  <a {% if loop.last %}href="#" aria-current="page"{% else %}{% endif %}href="?dir={{dir.path}}">{{dir.name}}</a>
+			</li>
+		      {% endfor %}
+		    </ul>
+		  </nav>
+		{% endif %}
+	      </div>
+	      <div class="level-right">
+		<form method="post" enctype="multipart/form-data">
+		  <label class="button is-warning" >
+		    <input class="is-hidden" type="file" name="file" />Upload
+		  </label>
+		</form>
+	      </div>
+	    </div>
+
+	    {% if links %}
+	    <div class="table-container">
+	      <table class="table is-fullwidth">
+		<thead>
+		  <tr>
+		    <th>{% if sort == "-name" %}<a href="?dir={{dir}}&sort=name">Name &darr;</a>{% elif sort == "name" %}<a href="?dir={{dir}}&sort=-name">Name &uarr;</a>{% else %}<a href="?dir={{dir}}&sort=name">Name</a>{% endif %}</th>
+		    <th>{% if sort == "-size" %}<a href="?dir={{dir}}&sort=size">Size &darr;</a>{% elif sort == "size" %}<a href="?dir={{dir}}&sort=-size">Size &uarr;</a>{% else %}<a href="?dir={{dir}}&sort=size">Size</a>{% endif %}</th>
+		    {#<th>{% if sort == "-ctime" %}<a href="?dir={{dir}}&sort=ctime">Created At &darr;</a>{% elif sort == "ctime" %}<a href="?dir={{dir}}&sort=-ctime">Created At &uarr;</a>{% else %}<a href="?dir={{dir}}&sort=-ctime">Created At</a>{% endif %}</th>#}
+		    <th class="has-text-right">{% if sort == "-mtime" %}<a href="?dir={{dir}}&sort=mtime">Last Modified &darr;</a>{% elif sort == "mtime" %}<a href="?dir={{dir}}&sort=-mtime">Last Modified &uarr;</a>{% else %}<a href="?dir={{dir}}&sort=-mtime">Last Modified</a>{% endif %}</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  {% for link in links %}
+		    <tr data-href="{{link.link}}" class="is-clickable">
+		      <td><div class="is-flex is-align-items-center"><span class="icon mr-2">{% if link.is_dir %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#536DFE" stroke="#536DFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>{% else %}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>{% endif %}</span><span>{{ link.name }}</span></div></td>
+		      <td>{{link.size|filesizeformat}}</td>
+		      {#<td>{{link.ctime}}</td>#}
+		      <td class="has-text-right">{{link.mtime}}</td>
+		    </tr>
+		  {% endfor %}
+		</tbody>
+	      </table>
+	    </div>
+	    {% else %}
+	    <p class="block has-text-centered py-6">Empty</p>
+	    {% endif %}
+	  </div>
+	</div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+	<p><a target="_blank" href="https://github.com/ChanMo/fast-transfer">Github</a></p>
+      </div>
+    </footer>
+    <script>
+     document.querySelector("[name=file]").addEventListener("change", (e) => {
+       e.target.closest("form").submit();
+     });
+     document.querySelectorAll("[data-href]").forEach(ele => {
+       ele.addEventListener("click", () => {
+	 window.location.href = ele.dataset.href;
+       });
+     });
+    </script>
+  </body>
+</html>
