@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+GoogleAds/__init__.py
+GoogleAds/main.py
+GoogleAds/regions.py
+Google_Ads_Transparency_Scraper.egg-info/PKG-INFO
+Google_Ads_Transparency_Scraper.egg-info/SOURCES.txt
+Google_Ads_Transparency_Scraper.egg-info/dependency_links.txt
+Google_Ads_Transparency_Scraper.egg-info/requires.txt
+Google_Ads_Transparency_Scraper.egg-info/top_level.txt
