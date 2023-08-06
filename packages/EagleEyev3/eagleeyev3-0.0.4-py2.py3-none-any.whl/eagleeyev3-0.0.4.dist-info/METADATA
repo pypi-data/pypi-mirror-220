@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: EagleEyev3
+Version: 0.0.4
+Summary: Python client for Eagle Eye Networks APIv3 
+Author-email: mcotton <mcotton@mcottondesign.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://mcottondesign.com
+
+# EE-status-v3 #
+
+## Summary ##
+This is a python webapp for getting status history for your cameras.
+
+## Settings File ##
+There is file `settings.py` that is needed to run.  You can create your application and setup credentials at: [https://developerv3.eagleeyenetworks.com/page/my-application-html](my applications).  You can also reach out to api_support@een.com for help.
+
