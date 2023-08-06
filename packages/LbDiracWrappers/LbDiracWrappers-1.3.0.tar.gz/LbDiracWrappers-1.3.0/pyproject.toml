@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.2", "wheel", "setuptools_scm[toml]>=3.4"]
+build-backend = "setuptools.build_meta"
+
+# Enable setuptools_scm to compute the version number from the most recent tag
+# https://github.com/pypa/setuptools_scm/#pyprojecttoml-usage
+[tool.setuptools_scm]
+
+[project]
+name = "LbDiracWrappers"
+description = "Wrappers for LHCbDirac commands"
+readme = "README.rst"
+license = {text = "GPL-3.0-or-later"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "LbEnv",
+    "packaging >=20.0",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+testing = [
+    "black",
+    "pylint",
+    "pytest",
+    "pytest-cov",
+]
+
+[project.scripts]
+lb-dirac = "LbDiracWrappers:lb_dirac"
+lhcb-proxy-init = "LbDiracWrappers:lhcb_proxy_init"
+lhcb-proxy-info = "LbDiracWrappers:lhcb_proxy_info"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--cov-report term-missing --cov=LbDiracWrappers . -vvv"
+
+[tool.ruff]
+select = ["E", "F", "B", "I", "PLE", "RUF", "UP"]
+target-version = "py39"
+[tool.ruff.isort]
+known-first-party = ["LbDiracWrappers"]
