@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Banner_9000
+Version: 1.0.1
+Summary: Big-Character Banner Printer
+Author-email: Randall Nagy <r.a.nagy@gmail.com>
+Project-URL: Homepage, https://github.com/soft9000/Banner9000
+Project-URL: Bug Tracker, https://github.com/soft9000/Banner9000/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Banner9000
+Quick &amp; easy way to create bigger-character ('banner') console messages.
+
+```
+import BigChars as banner
+
+banner.big_print("Python", 1, '#')
+banner.big_print(" got", 4, '@')
+banner.big_print("Bigger", 2, 'B')
+```
+
+Now available on [PyPi](https://pypi.org/project/Banner-9000/)
