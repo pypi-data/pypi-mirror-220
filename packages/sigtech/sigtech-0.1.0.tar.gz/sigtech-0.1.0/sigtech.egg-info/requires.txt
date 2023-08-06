@@ -1,0 +1,16 @@
+requests
+pandas
+
+[test]
+jupyter
+statsmodels
+matplotlib
+pytest
+pytest-mock
+
+[tools]
+black
+flake8
+isort
+build
+python-semantic-release
