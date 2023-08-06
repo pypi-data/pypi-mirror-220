@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: streamlit_bmc
+Version: 0.0.3
+Summary: A Streamlit Component for drawing Business Model Canvas
+Home-page: https://github.com/teq-thuynguyen/streamlit-business_model_canvas
+Author: Ember
+Author-email: nguyencaonguyenthuy@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+A Streamlit Component for drawing Business Model Canvas
+
