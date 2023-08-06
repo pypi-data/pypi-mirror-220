@@ -1,0 +1,12 @@
+pop>=23.0
+idem>=23.0.0
+kubernetes==23.3.0
+pop-config<13.0.0,>=12.0.1
+deepdiff>=5.8.1
+jmespath==1.0.0
+
+[autogen]
+pop-create-idem
+
+[full]
+pop-create-idem
