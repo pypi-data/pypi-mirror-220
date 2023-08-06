@@ -1,0 +1,3 @@
+[console_scripts]
+piranha-playground = piranha_playground.main:main
+
