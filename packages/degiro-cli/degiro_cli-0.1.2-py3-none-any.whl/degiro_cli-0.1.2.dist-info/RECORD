@@ -1,0 +1,13 @@
+degiro_cli-0.1.2.data/scripts/degiro-history,sha256=fw5b-RieoKX-nwScINRS6pancxlMyVeQcpFbtKPXxHc,138
+degiro_cli-0.1.2.data/scripts/degiro-login,sha256=no_y2QoKtttaV2eHMo5GfjrXra1CBezwsfUtiwWhRNE,134
+degiro_cli-0.1.2.data/scripts/degiro-search,sha256=FHzOS_KO3riBaxBMx_9D-RN6Gamek8zfnXYo5OWRwH8,136
+degirocli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+degirocli/helpers.py,sha256=WMz1dMgzUe4L55p58exN8TGdxL284RZcgxk25P8oVVU,1476
+degirocli/history.py,sha256=ASo7L0ci6VZUrMKgRBzB4QhvkzpD5Fox-LSpFgH-hlk,5761
+degirocli/login.py,sha256=-6EuL-LsvbFFI8kUulOs2MUPHiw-AqFxfqtQmJwNRIo,5270
+degirocli/search.py,sha256=s8o1GOvxmzIm2a3n3K0SAYNj8td_h_Pb2tioBW11Crc,5224
+degiro_cli-0.1.2.dist-info/LICENSE,sha256=1t3lQtXIoHQlQLwaEbicyyEg_DEWY3Sgt1b_3dMffNs,1075
+degiro_cli-0.1.2.dist-info/METADATA,sha256=lKEfljKq5hcyQjU9m_heRE39pFXV9m8vnZvuwiuqBug,7817
+degiro_cli-0.1.2.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+degiro_cli-0.1.2.dist-info/top_level.txt,sha256=8cx4xA80WmmY1LVvkCIFfDMopS-y1021ohzDvKkj3s8,10
+degiro_cli-0.1.2.dist-info/RECORD,,

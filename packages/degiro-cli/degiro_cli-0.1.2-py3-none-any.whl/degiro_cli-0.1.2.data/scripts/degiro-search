@@ -1,0 +1,8 @@
+#!python
+
+
+if __name__ == '__main__':
+    import sys
+    import degirocli.search
+    res = degirocli.search.run_cli()
+    sys.exit(res)
