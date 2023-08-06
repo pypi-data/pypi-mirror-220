@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: argsdict
+Version: 1.0.0
+Summary: Simple command-line argument parser.
+Home-page: https://github.com/Julynx/argsdict
+Author: Julio Cabria
+Author-email: juliocabria@tutanota.com
+Maintainer: Julio Cabria
+Maintainer-email: juliocabria@tutanota.com
+License: GPLv2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# argsdict
+*Simple command-line argument parser.*
+```python
+$ python args.py John Smith --age=30 --married
+
+from argsdict import args
+
+arg = args(["name", "surname"])
+>> {"name": "John",
+    "surname": "Smith",
+    "--age": "30",
+    "--married": True}
+```
