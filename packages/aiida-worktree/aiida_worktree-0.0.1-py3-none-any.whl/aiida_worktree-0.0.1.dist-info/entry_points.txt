@@ -1,0 +1,5 @@
+[scinode_node]
+aiida = aiida_worktree.nodes:node_list
+
+[scinode_property]
+aiida = aiida_worktree.properties.built_in:property_list

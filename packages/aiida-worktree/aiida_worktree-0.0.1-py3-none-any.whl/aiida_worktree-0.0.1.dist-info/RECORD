@@ -1,0 +1,17 @@
+aiida_worktree/__init__.py,sha256=TqCymtbkSYh26QcquDH_xQlgStNHutaTHY0AfZgEFOo,74
+aiida_worktree/decorator.py,sha256=ezOS-O4ZNOWaWNBRz8t_eX4-enINr6VHfscPQWRb5KA,4599
+aiida_worktree/utils.py,sha256=iBfbZh0b4ePvdW0KGpNNww4eqfwgdhp3MlEfLXvpR5Q,2739
+aiida_worktree/worktree.py,sha256=pIrVTLvh7F0RcNWIciagmkk0B-5glvuXuiDAg-3Zhg8,2477
+aiida_worktree/engine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiida_worktree/engine/worktree.py,sha256=ygMtnWYE-qrm6FLhVCycvi1Qp7r0_bhUZzl42m2XUMU,27373
+aiida_worktree/nodes/__init__.py,sha256=0M7RyYA9ZMSDoEFNa55dJkcsPThAdb5F3NHC8Z_pNZo,687
+aiida_worktree/nodes/qe.py,sha256=oiJbov2s0H535vB0Sowq44Ic2LzbediR9o9u9x7iKY8,4836
+aiida_worktree/nodes/test.py,sha256=Z-bZs9A9sjwN4gEZveI9Zbd6zikkcXHLcPyWeOFyCk4,7206
+aiida_worktree/properties/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiida_worktree/properties/built_in.py,sha256=Glc-sFrXOrjTcz0v6waN5Itx_1fb6GCoSymR4oKk95c,3906
+aiida_worktree-0.0.1.dist-info/LICENSE,sha256=YJLEYAG-YryBvolh8xKAXvcssdbASWv6hv7xaUhM-xs,1066
+aiida_worktree-0.0.1.dist-info/METADATA,sha256=U6BdWriCzqHgiR3Zq3ayqHL28f6DxwcekOBx5gM8oyo,3115
+aiida_worktree-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aiida_worktree-0.0.1.dist-info/entry_points.txt,sha256=TpoYbHH7xdoiRYuFJgzIHxcFEBtiVmsE07VP-cgK1nI,131
+aiida_worktree-0.0.1.dist-info/top_level.txt,sha256=ZKTulJDT_VY6JRlfnv9EqR-N8teYguvTAaFuZ3wedG4,15
+aiida_worktree-0.0.1.dist-info/RECORD,,
