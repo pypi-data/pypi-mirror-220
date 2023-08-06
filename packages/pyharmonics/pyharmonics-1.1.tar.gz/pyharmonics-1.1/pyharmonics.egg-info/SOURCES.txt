@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+pyharmonics.egg-info/PKG-INFO
+pyharmonics.egg-info/SOURCES.txt
+pyharmonics.egg-info/dependency_links.txt
+pyharmonics.egg-info/requires.txt
+pyharmonics.egg-info/top_level.txt
+tests/test_aplaca.py
+tests/test_binance.py
+tests/test_market_data_base.py
+tests/test_matrix.py
+tests/test_plotter.py
+tests/test_technicals.py
+tests/test_utils.py
+tests/test_yahoo.py
