@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ppromptor
+Version: 0.1.2
+Summary: An autonomous agent framework for prompt engineering
+Home-page: https://github.com/pikho/ppromptor
+Author: Pikho Tan
+Author-email: pikho.tan@gmail.com
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: langchain
+Requires-Dist: loguru
+Requires-Dist: dataclasses-json
+Requires-Dist: requests
+Requires-Dist: openai
+Requires-Dist: sqlalchemy
+Requires-Dist: beautifulsoup4
+Requires-Dist: streamlit
+Requires-Dist: streamlit-diff-viewer
+Requires-Dist: streamlit-autorefresh
+Requires-Dist: streamlit-aggrid
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Provides-Extra: local-llms
+Requires-Dist: torch ; extra == 'local-llms'
+Requires-Dist: auto-gptq ; extra == 'local-llms'
+Requires-Dist: transformers ; extra == 'local-llms'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
