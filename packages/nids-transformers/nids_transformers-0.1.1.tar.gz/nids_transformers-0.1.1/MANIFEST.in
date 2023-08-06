@@ -1,0 +1,4 @@
+include nids_transformers/SCALER.pkl
+include nids_transformers/CORPUS.txt
+include nids_transformers/KMEANS-CLUSTER-CENTERS.npy
+include nids_transformers/TAGS-NAMES-EMBEDDINGS.npy
