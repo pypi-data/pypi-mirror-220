@@ -1,0 +1,2 @@
+[console_scripts]
+runexample = gocept.runner.example:example
