@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: jakt
+Version: 0.0.3
+Summary: Just another timetracker
+Author-email: kwillno <kristian@kwill.no>
+Project-URL: Homepage, https://github.com/kwillno/jakt
+Project-URL: Bug Tracker, https://github.com/kwillno/jakt/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+
+# JAKT
+Jakt is just another (k)ommand-line timetracker tool. 
+
+## The name
+The name comes from the norwegian word for hunt. Timetracking is one of the best tools in your arsenal in your hunt for productivity.  
+And if you are wondering, yes, I started with the acronym. 
+
+## Features
+TODO: Features
+
+## Requirements
+TODO: Requirements
+
+## Installation
+
+### From Source
+1. Clone the repo
+2. `cd jakt` 
+3. `pip install -e .`  
+	Make sure to use the correct version of pip, some users will need to use `pip3` instead. 
+
+
+## License 
+This project is licensed under the MIT License. See [LICENSE](https://github.com/kwillno/jakt/blob/main/LICENSE). 
