@@ -1,0 +1,20 @@
+Source: python-zapf
+Section: python
+Priority: optional
+Maintainer: Georg Brandl <g.brandl@fz-juelich.de>
+Build-Depends: debhelper (>= 11~),
+ dh-python,
+ git,
+ python3 (>= 3.6),
+ python3-setuptools,
+ python3-setuptools-scm
+Standards-Version: 4.1.4
+
+Package: python3-zapf
+Architecture: all
+Depends: ${misc:Depends},
+ ${python3:Depends},
+ python3-tango
+Description: Client library for the PILS PLC communication protocol
+ Provides a client layer that can communicate with PILS PLCs
+ over several protocols: ADS, Modbus and Tango.
