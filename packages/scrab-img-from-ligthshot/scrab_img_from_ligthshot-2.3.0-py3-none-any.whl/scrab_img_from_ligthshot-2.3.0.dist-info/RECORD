@@ -1,0 +1,10 @@
+silf/__init__.py,sha256=XkjViLtPcErxmy9F6hcE2gQQUhyiJUl9Y526Vsisxw4,58
+silf/cli.py,sha256=zyTbvfmz1J2wSbgzqp_fF6WlmWqN8w82CNpMljVE_og,1409
+silf/ect.py,sha256=N2enPZg3G5QMtRyQ_wN9Y0VXNxCO-OsI4OgAlBVma7U,2041
+silf/main.py,sha256=1JwEM3GK8L5DUVN6vblzBaiMt0dFGyEyQtOWD_yZeSs,1370
+silf/scrab_img_from_lightshot.py,sha256=JxiNMr4SNsKHpHsZEvyHrwRo3xN79nQ6s78XDro94Fo,5232
+scrab_img_from_ligthshot-2.3.0.dist-info/LICENSE,sha256=DOwG4OVfvD3FzuT8qbYH9my49OTbzzs8ATWU3RVnMuk,10173
+scrab_img_from_ligthshot-2.3.0.dist-info/METADATA,sha256=Hs8LhIc0C5a1puxWPCNYx2aaIsN7QJwVyg70z4R43ck,3001
+scrab_img_from_ligthshot-2.3.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+scrab_img_from_ligthshot-2.3.0.dist-info/entry_points.txt,sha256=JpmTrmRw_y7sgspNSwLtst-wTcHw-DuXe3b7W94bokw,78
+scrab_img_from_ligthshot-2.3.0.dist-info/RECORD,,

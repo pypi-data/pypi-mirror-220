@@ -1,0 +1,4 @@
+[console_scripts]
+run_test=python3-munittestsrc/tests/test.py
+silf=silf:main
+
