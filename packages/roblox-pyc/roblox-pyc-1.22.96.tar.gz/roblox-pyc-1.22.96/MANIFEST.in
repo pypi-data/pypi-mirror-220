@@ -1,0 +1,2 @@
+recursive-include robloxpyc *.pkl
+recursive-include robloxpyc *.lua
