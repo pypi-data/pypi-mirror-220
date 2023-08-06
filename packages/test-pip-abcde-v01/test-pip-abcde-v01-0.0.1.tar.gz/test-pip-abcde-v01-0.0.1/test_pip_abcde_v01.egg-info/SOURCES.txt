@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+test_pip_abcde_v01/__init__.py
+test_pip_abcde_v01/test_pip_abcde_v01.py
+test_pip_abcde_v01.egg-info/PKG-INFO
+test_pip_abcde_v01.egg-info/SOURCES.txt
+test_pip_abcde_v01.egg-info/dependency_links.txt
+test_pip_abcde_v01.egg-info/top_level.txt
