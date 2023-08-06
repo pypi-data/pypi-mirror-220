@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pollboy
+Version: 0.1.0
+Summary: Simple RSS poller
+Home-page: https://github.com/bbeng89/pollboy
+Author: BMB
+Author-email: blake@don-the-armour.com
+License: MIT
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+## Pollboy
+
+Simple script to poll an RSS feed and send notifications about new posts.
