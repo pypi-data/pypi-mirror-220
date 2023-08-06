@@ -1,0 +1,10 @@
+numba
+numpy
+pandas
+pytest
+pytest-cov
+pytest-benchmark
+pre-commit
+setuptools>=45
+wheel
+setuptools_scm>=6.0

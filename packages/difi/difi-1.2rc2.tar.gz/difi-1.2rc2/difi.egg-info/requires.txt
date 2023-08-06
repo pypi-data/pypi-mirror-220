@@ -1,0 +1,9 @@
+numba
+numpy
+pandas
+
+[tests]
+pytest
+pytest-cov
+pytest-benchmark
+pre-commit
