@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/pysqldbm/__init__.py
+src/pysqldbm/client.py
+src/pysqldbm/rest_client.py
+src/pysqldbm.egg-info/PKG-INFO
+src/pysqldbm.egg-info/SOURCES.txt
+src/pysqldbm.egg-info/dependency_links.txt
+src/pysqldbm.egg-info/entry_points.txt
+src/pysqldbm.egg-info/requires.txt
+src/pysqldbm.egg-info/top_level.txt
+src/pysqldbm_cli/__init__.py
+src/pysqldbm_cli/run.py
