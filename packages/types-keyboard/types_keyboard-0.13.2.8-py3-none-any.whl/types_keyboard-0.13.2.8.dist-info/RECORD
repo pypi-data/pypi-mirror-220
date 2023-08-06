@@ -1,0 +1,11 @@
+keyboard-stubs/METADATA.toml,sha256=jEM8Cf6x44Mh4fP8pj9YViNnZmrjurcPwLCqyKFAp_g,364
+keyboard-stubs/__init__.pyi,sha256=7O5ykSrXDAyQ-vOgVK0xP0ElGA6_rs9HpNsV-fZIBo4,5081
+keyboard-stubs/_canonical_names.pyi,sha256=B9brbT-ZNkrsipQ4Cyf3nEivr7d7FU31IdmFoOedHFw,125
+keyboard-stubs/_generic.pyi,sha256=nvQq_WrxMsGPcuH1sxL66V0nNRAs2N1hSmiDUtZBfco,900
+keyboard-stubs/_keyboard_event.pyi,sha256=hozX6iYgIBeMx25P-tziMgY47s9ro1hy-IU343GXGh0,834
+keyboard-stubs/_mouse_event.pyi,sha256=b76Xah-bJkid2MwTf-PuJKGaGcHoJG67y2SYnfjkQQo,1048
+keyboard-stubs/mouse.pyi,sha256=KhNYzGK8_rUrBQAYvMO5bZ6Pzmi3rI9L4BjEiEtETXY,3140
+types_keyboard-0.13.2.8.dist-info/METADATA,sha256=-oonGLOwrumluuhR8kbeQ4_ql3wocSKzVGIoS6eArtI,1372
+types_keyboard-0.13.2.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+types_keyboard-0.13.2.8.dist-info/top_level.txt,sha256=M1SLuV7QA8XE_DvgDjfjzoxba4XcrSa2yuOJnoqJ00A,15
+types_keyboard-0.13.2.8.dist-info/RECORD,,
