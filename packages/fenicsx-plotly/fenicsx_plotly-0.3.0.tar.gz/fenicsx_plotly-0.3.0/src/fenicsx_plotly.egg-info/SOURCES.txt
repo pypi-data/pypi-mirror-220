@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/fenicsx_plotly/__init__.py
+src/fenicsx_plotly/_fenicsx_plotly.py
+src/fenicsx_plotly.egg-info/PKG-INFO
+src/fenicsx_plotly.egg-info/SOURCES.txt
+src/fenicsx_plotly.egg-info/dependency_links.txt
+src/fenicsx_plotly.egg-info/requires.txt
+src/fenicsx_plotly.egg-info/top_level.txt
+tests/test_fenicsx_plotly.py
