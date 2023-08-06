@@ -1,0 +1,17 @@
+webpagebp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webpagebp/browsers.py,sha256=fTsSo2nb-1L8mYm-T31L2R0_za2Yk_dbGXWt__125Tc,929
+webpagebp/generic_browser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webpagebp/generic_browser/browser.py,sha256=VMfnvvsPAzHXmtERuBxf_7Aj3fPtdajW_TxFVjavzwU,2431
+webpagebp/generic_browser/old_browser.py,sha256=-wXSOjJOw0xVkBICNvB-o2ZgtKEB6-vOfZGMigzmJyo,2090
+webpagebp/job.py,sha256=2t0HNyPURzFVvR113jTXTLuEAP-v8anmdI9EXPXD6lQ,2356
+webpagebp/scrapers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webpagebp/scrapers/soup.py,sha256=nUkaAf4kyuPOSDjPHDSPYXC2CiXOPe0og5hq4QOHXiU,945
+webpagebp/selenium_driver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webpagebp/selenium_driver/drivers.py,sha256=XhU0sEDE8BrAJRkEIaMvDXiBOxTFVUNOhzWQ8qybywY,2364
+webpagebp/selenium_driver/generic_driver.py,sha256=6s4DvCaYtGgIgO4Nn0Gni0KBXoC60PEozxQ7dR4JFXY,1555
+webpagebp/utils.py,sha256=v6it2fRaqFABIHu8tuP0BxYJjoPGm0H7jtFW6nMvxgg,950
+webpagebp/webpage.py,sha256=DXFp2zfdD9AismIuwbxrDjK0SngLZEh_XC0uUmM78wg,2640
+webpagebp-0.1.2.dist-info/LICENSE,sha256=lO0EY4HPSekLSZEKMm7g6cH3X3V2ik9v9ZixTDEuBSY,1096
+webpagebp-0.1.2.dist-info/METADATA,sha256=-SIK6LdExaOrARs3Cf_JyRGQSzki7F3g68uioOZjw_o,533
+webpagebp-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+webpagebp-0.1.2.dist-info/RECORD,,
