@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+SpeakerVerSim/__init__.py
+SpeakerVerSim/common.py
+SpeakerVerSim/server_double.py
+SpeakerVerSim/server_single_hash.py
+SpeakerVerSim/server_single_multiprofile.py
+SpeakerVerSim/server_single_simple.py
+SpeakerVerSim/server_single_sync.py
+SpeakerVerSim/simulator.py
+SpeakerVerSim/test_simulation.py
+SpeakerVerSim.egg-info/PKG-INFO
+SpeakerVerSim.egg-info/SOURCES.txt
+SpeakerVerSim.egg-info/dependency_links.txt
+SpeakerVerSim.egg-info/top_level.txt
