@@ -1,0 +1,7 @@
+setup.py
+webplus/cli.py
+webplus.egg-info/PKG-INFO
+webplus.egg-info/SOURCES.txt
+webplus.egg-info/dependency_links.txt
+webplus.egg-info/entry_points.txt
+webplus.egg-info/top_level.txt
