@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: htscf
+Version: 0.0.7
+Summary: High-throughput computing flow
+Home-page: http://zhcloud.top
+Author: Hao Zhao
+Author-email: 601095001@qq.com
+License: OSI Approved :: MIT License
+Platform: Linux/Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ase (==3.22.1)
+Requires-Dist: pymongo (==4.4.1)
+Requires-Dist: Requests (==2.31.0)
+Requires-Dist: setuptools (==65.5.0)
+
+### 使用说明
+
+1. 使用pip安装该软件包
+2. 初始化：`htsct init`
+3. 配置ASE所需的vasp赝势文件
+4. 启动数据库服务 "htsct-db run --port 8000 --host 0.0.0.0"
+
+# 批量能带计算
+
+1. 确保数据库已经启动
+2. htsct task --fileType ".cif" --folderNum 6 --maxFile 1 --srcFolder "src" 启动文件自动管理
