@@ -1,0 +1,15 @@
+py_go_goose-1.4.5.data/purelib/py_go_goose/Makefile,sha256=necrsycdd6ELlJfCeCSJmGlQ_nmnLWJh0s21nuzQhvU,1553
+py_go_goose-1.4.5.data/purelib/py_go_goose/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_go_goose-1.4.5.data/purelib/py_go_goose/_go_goose.cpython-38-darwin.h,sha256=m4tFvAdJT0vX6khICwjbdWRAEy9r9QA9FVJyOOixna8,10383
+py_go_goose-1.4.5.data/purelib/py_go_goose/_go_goose.cpython-38-darwin.so,sha256=Abd4rUIMleEU-Y7ySokKad4l2U2iL8ky9zduyJx44UE,8745730
+py_go_goose-1.4.5.data/purelib/py_go_goose/build.py,sha256=N-LrAMkfbu3frzKIgr6xoDbjwDYpySnlSOtIwufXc2Y,12582
+py_go_goose-1.4.5.data/purelib/py_go_goose/go.py,sha256=A9afnwmjsrg_WyPD7JcGztm4-TRK4HHo5MSkB9aQ50I,48182
+py_go_goose-1.4.5.data/purelib/py_go_goose/go_goose.c,sha256=Wa84CwLnpScDVmIFPyyMmx97t4XcEGxA7yYBFCEWE_c,87293
+py_go_goose-1.4.5.data/purelib/py_go_goose/go_goose.go,sha256=jWhBMcgysmcexFLYRPm7WWVx91QoaWKU0qM_BY2Ro58,29968
+py_go_goose-1.4.5.data/purelib/py_go_goose/go_goose.py,sha256=ZJwK_L34u7yHtosIzUeJewxLBQKvl_vo6HQYaQNl5oQ,3144
+py_go_goose-1.4.5.data/purelib/py_go_goose/go_goose_go.h,sha256=m4tFvAdJT0vX6khICwjbdWRAEy9r9QA9FVJyOOixna8,10383
+py_go_goose-1.4.5.dist-info/LICENSE,sha256=y16Ofl9KOYjhBjwULGDcLfdWBfTEZRXnduOspt-XbhQ,11325
+py_go_goose-1.4.5.dist-info/METADATA,sha256=lltlhwaRhy_aeAajjLiwxbi75P9L4E1rSS4RB1f8WEw,99
+py_go_goose-1.4.5.dist-info/WHEEL,sha256=Ly3Etn219k3CPJw_u_O2JJStO3-SwhzjwofZN3Au6Uw,108
+py_go_goose-1.4.5.dist-info/top_level.txt,sha256=pJBOG0ZH8nCDhVYF_PnKi02DTuci04mu_FbrXi4ssSc,12
+py_go_goose-1.4.5.dist-info/RECORD,,
