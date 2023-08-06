@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "easylaser"
+version = "0.1.5"
+authors = [
+  { name="Lingua Custodia", email="it@linguacustodia.com" },
+]
+description = "An easy to use interface to LASER"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+]
+requires-python = ">=3.7"
+dependencies = [
+  "sentencepiece",
+  "requests",
+  "ftfy",
+  #"mosestokenizer",
+  "fairseq", # will install torch and numpy
+  "faiss-cpu",
+]
+[project.urls]
