@@ -1,0 +1,12 @@
+seaborn
+requests
+
+[dev]
+pipreqs
+
+[gis]
+rasterio
+shapely
+
+[test]
+pytest
