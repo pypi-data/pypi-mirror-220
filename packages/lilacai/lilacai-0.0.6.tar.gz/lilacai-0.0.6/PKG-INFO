@@ -1,0 +1,271 @@
+Metadata-Version: 2.1
+Name: lilacai
+Version: 0.0.6
+Summary: Organize unstructured data
+Home-page: https://github.com/lilacai/lilac
+License: Apache-2.0
+Author: Lilac AI Inc.
+Author-email: info@lilacml.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: all
+Provides-Extra: embeddings
+Provides-Extra: gmail
+Provides-Extra: lang-detection
+Provides-Extra: llms
+Provides-Extra: ner
+Provides-Extra: pii
+Provides-Extra: signals
+Provides-Extra: text-stats
+Requires-Dist: authlib (>=1.2.1,<2.0.0)
+Requires-Dist: cohere (>=3.7.0,<4.0.0) ; extra == "all" or extra == "embeddings"
+Requires-Dist: dask (>=2023.3.2,<2024.0.0)
+Requires-Dist: datasets (>=2.12.0,<3.0.0)
+Requires-Dist: detect-secrets (>=1.4.0,<2.0.0) ; extra == "all" or extra == "signals" or extra == "pii"
+Requires-Dist: distributed (>=2023.3.2.1,<2024.0.0.0)
+Requires-Dist: duckdb (>=0.8.1,<0.9.0)
+Requires-Dist: email-reply-parser (>=0.5.12,<0.6.0) ; extra == "all" or extra == "gmail"
+Requires-Dist: fastapi (>=0.98.0,<0.99.0)
+Requires-Dist: gcsfs (>=2023.4.0,<2024.0.0)
+Requires-Dist: google-api-python-client (>=2.88.0,<3.0.0) ; extra == "all" or extra == "gmail"
+Requires-Dist: google-auth-httplib2 (>=0.1.0,<0.2.0) ; extra == "all" or extra == "gmail"
+Requires-Dist: google-auth-oauthlib (>=1.0.0,<2.0.0) ; extra == "all" or extra == "gmail"
+Requires-Dist: google-cloud-storage (>=2.5.0,<3.0.0)
+Requires-Dist: google-generativeai (>=0.1.0,<0.2.0) ; extra == "all" or extra == "embeddings"
+Requires-Dist: gunicorn (>=20.1.0,<21.0.0)
+Requires-Dist: httpx (>=0.24.1,<0.25.0)
+Requires-Dist: itsdangerous (>=2.1.2,<3.0.0)
+Requires-Dist: joblib (>=1.3.1,<2.0.0)
+Requires-Dist: langdetect (>=1.0.9,<2.0.0) ; extra == "all" or extra == "signals" or extra == "lang-detection"
+Requires-Dist: openai (>=0.27.8,<0.28.0) ; extra == "all" or extra == "embeddings" or extra == "llms"
+Requires-Dist: openai-function-call (>=0.0.5,<0.0.6)
+Requires-Dist: orjson (>=3.8.10,<4.0.0)
+Requires-Dist: pillow (>=9.3.0,<10.0.0)
+Requires-Dist: psutil (>=5.9.5,<6.0.0)
+Requires-Dist: pyarrow (>=9.0.0,<10.0.0)
+Requires-Dist: pydantic (>=1.10.11,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: regex (>=2023.6.3,<2024.0.0) ; extra == "pii"
+Requires-Dist: requests (>=2,<3)
+Requires-Dist: scikit-learn (>=1.3.0,<2.0.0)
+Requires-Dist: sentence-transformers (>=2.2.2,<3.0.0) ; extra == "all" or extra == "embeddings"
+Requires-Dist: spacy (>=3.5.1,<4.0.0) ; extra == "all" or extra == "signals" or extra == "ner" or extra == "text-stats"
+Requires-Dist: tenacity (>=8.2.2,<9.0.0)
+Requires-Dist: textacy (>=0.13.0,<0.14.0) ; extra == "all" or extra == "signals" or extra == "text-stats"
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Requires-Dist: types-psutil (>=5.9.5.12,<6.0.0.0)
+Requires-Dist: typing-extensions (>=4.7.1,<5.0.0)
+Requires-Dist: uvicorn[standard] (>=0.22.0,<0.23.0)
+Project-URL: Repository, https://github.com/lilacai/lilac
+Description-Content-Type: text/markdown
+
+# Lilac
+
+### Prerequisites
+
+Before you can run the server, install the following:
+
+- [Python Poetry](https://pypi.org/project/poetry/)
+- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+### Install dependencies
+
+```sh
+./scripts/setup.sh
+```
+
+### Run Lilac
+
+#### Development
+
+To run the web server in dev mode with fast edit-refresh:
+
+```sh
+./run_server_dev.sh
+```
+
+Format typescript files:
+
+```sh
+npm run format --workspace web/lib
+npm run format --workspace web/blueprint
+```
+
+##### Huggingface
+
+Huggingface spaces are used for PRs and for demos.
+
+Details can be found at [Managing Spaces with Github Actions](https://huggingface.co/docs/hub/spaces-github-actions)
+
+###### Staging demo
+
+1. Login with the HuggingFace to access git.
+
+   `poetry run huggingface-cli login`
+
+   [Follow the instructions](https://huggingface.co/docs/hub/repositories-getting-started) to use your git SSH keys to talk to HuggingFace.
+
+1. Create a huggingface space from your browser: [huggingface.co/spaces](https://huggingface.co/spaces)
+
+1. Turn on persistent storage in the Settings UI.
+
+1. Set .env.local environment variables so you can upload data to the space:
+
+   ```sh
+     # The repo to use for the huggingface demo.
+     HF_STAGING_DEMO_REPO='lilacai/your-space'
+     # To authenticate with HuggingFace for uploading to the space.
+     HF_USERNAME='your-username'
+   ```
+
+1. Deploy to your HuggingFace Space:
+
+   ```
+   poetry run deploy-hf \
+     --dataset=$DATASET_NAMESPACE/$DATASET_NAME
+
+   # --concept is optional. By default all lilac/* concepts are uploaded. This flag enables uploading other concepts from local.
+   # --hf_username and --hf_space are optional and can override the ENV for local uploading.
+   ```
+
+#### Deployment
+
+To build the docker image:
+
+```sh
+./scripts/build_docker.sh
+```
+
+To run the docker image locally:
+
+```sh
+docker run -p 5432:5432 lilac_blueprint
+```
+
+#### Authentication
+
+Authentication is done via Google login. A Google Client token should be created
+from the Google API Console. Details can be found [here](https://developers.google.com/identity/protocols/oauth2).
+
+By default, the Lilac google client is used. The secret can be found in Google
+Cloud console, and should be defined under `GOOGLE_CLIENT_SECRET` in .env.local.
+
+For the session middleware, a random string should be created and defined as `LILAC_OAUTH_SECRET_KEY` in .env.local.
+
+You can generate a random secret key with:
+
+```py
+import string
+import random
+key = ''.join(random.choices(string.ascii_uppercase + string.digits, k=64))
+print(f"LILAC_OAUTH_SECRET_KEY='{key}'")
+```
+
+### Publishing on pip
+
+To authenticate, add the `PYPI_TOKEN` to your `.env.local` file. You can get the token from
+[pypi.org](https://pypi.org/manage/project/lilacai/settings/). To publish, run:
+
+```sh
+./scripts/publish_pip.sh
+```
+
+### Configuration
+
+To use various API's, API keys need to be provided. Create a file named `.env.local` in the root, and add variables that are listed in `.env` with your own values.
+
+#### Testing
+
+Run all the checks before mailing:
+
+```sh
+./scripts/checks.sh
+```
+
+Test python:
+
+```sh
+./scripts/test_py.sh
+```
+
+Test JavaScript:
+
+```sh
+./scripts/test_ts.sh
+```
+
+### Ingesting datasets from CLI
+
+Datasets can be ingested entirely from the UI, however if you prefer to use the CLI you can ingest data with the following command:
+
+```sh
+poetry run python -m lilac.data_loader \
+  --dataset_name=$DATASET \
+  --output_dir=./data/ \
+  --config_path=./datasets/the_movies_dataset.json
+```
+
+NOTE: You have to have a JSON file that represents your sour configuration, in this case
+"the_movies_dataset.json".
+
+### Tips
+
+#### Recommended dev tools
+
+- [VSCode](https://code.visualstudio.com/)
+
+#### Installing poetry
+
+You may need the following to install poetry:
+
+- [Install XCode and sign license](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+- [XCode command line tools](https://mac.install.guide/commandlinetools/4.html) (MacOS)
+- [homebrew](https://brew.sh/) (MacOS)
+- [pyenv](https://github.com/pyenv/pyenv) (Python version management)
+- [Set your current python version](./.python-version)
+- [Python Poetry](https://pypi.org/project/poetry/)
+
+### Troubleshooting
+
+#### pyenv install not working on M1
+
+If your pyenv does not work on M1 machines after installing xcode, you may need to reinstall xcode command line tools. [Stack Overflow Link](https://stackoverflow.com/questions/65778888/pyenv-configure-error-c-compiler-cannot-create-executables)
+
+#### No module named `_lzma`
+
+Follow instructions from [pyenv](https://github.com/pyenv/pyenv/wiki#suggested-build-environment):
+
+- Uninstall python via `pyenv uninstall`
+- Run `brew install openssl readline sqlite3 xz zlib tcl-tk`
+- Reinstall python via `pyenv install`
+
+```sh
+$ sudo rm -rf /Library/Developer/CommandLineTools
+$ xcode-select --install
+```
+
+#### Installing TensorFlow on M1
+
+M1/M2 chips need a special TF installation. These steps are taken from the official
+[Apple docs](https://developer.apple.com/metal/tensorflow-plugin/):
+
+1. Click [here](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh) to download Conda env
+2. Run:
+
+```
+chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
+sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
+source ~/miniforge3/bin/activate
+```
+
+3. Install the TensorFlow `2.9.0` dependencies: `conda install -c apple tensorflow-deps=2.9.0`
+
+#### Too many open files on MacOS
+
+When downloading and pre-processing TFDS datasets, you might get `too many open files`
+error. To fix, increase [the max open files limit](https://superuser.com/a/1679740).
+
