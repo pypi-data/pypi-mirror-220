@@ -1,0 +1,9 @@
+README.md
+setup.py
+magic_number_guess/__init__.py
+magic_number_guess/game.py
+magic_number_guess.egg-info/PKG-INFO
+magic_number_guess.egg-info/SOURCES.txt
+magic_number_guess.egg-info/dependency_links.txt
+magic_number_guess.egg-info/requires.txt
+magic_number_guess.egg-info/top_level.txt
