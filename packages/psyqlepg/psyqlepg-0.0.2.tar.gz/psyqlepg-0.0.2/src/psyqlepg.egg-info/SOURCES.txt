@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/psyqlepg/__init__.py
+src/psyqlepg.egg-info/PKG-INFO
+src/psyqlepg.egg-info/SOURCES.txt
+src/psyqlepg.egg-info/dependency_links.txt
+src/psyqlepg.egg-info/top_level.txt
