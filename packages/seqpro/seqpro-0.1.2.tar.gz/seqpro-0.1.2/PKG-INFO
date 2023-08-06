@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: seqpro
+Version: 0.1.2
+Summary: Sequence processing toolkit
+Author: Adam Klie
+Author-email: aklie@ucsd.edu
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: dev
+Requires-Dist: cython (>=0.29.35,<0.30.0)
+Requires-Dist: matplotlib[dev] (>=3.6.2,<4.0.0) ; extra == "dev"
+Requires-Dist: numba (>=0.57.0,<0.58.0)
+Requires-Dist: numpy (>=1.23.5,<1.24.0)
