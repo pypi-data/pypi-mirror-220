@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/switchblade/__init__.py
+src/switchblade/debugging.py
+src/switchblade/logging.py
+src/switchblade/modules.py
+src/switchblade/utils.py
+src/switchblade.egg-info/PKG-INFO
+src/switchblade.egg-info/SOURCES.txt
+src/switchblade.egg-info/dependency_links.txt
+src/switchblade.egg-info/top_level.txt
