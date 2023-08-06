@@ -1,0 +1,2 @@
+BookerPdfTool/assets/7z.dll
+BookerPdfTool/assets/jbig2enc.dll
