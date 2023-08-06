@@ -1,0 +1,9 @@
+agent_protocol/__init__.py,sha256=5iD_XTWnSGDgVuvyCrf4i4W8XkrYK7REG7ewo7EpQR8,76
+agent_protocol/agent.py,sha256=4NCF22cfq6nhy2gMePGaYIANyESa2Z4GOBilE32d5Ao,4074
+agent_protocol/dependencies.py,sha256=28Tp7RYyhs6l4tk68cunSyu_oCmofipJS1yrgJQabD4,202
+agent_protocol/models.py,sha256=Zsi5wMrWtoebfpTJ7YO0kOmdypF7posuPQItxlXVsK8,1683
+agent_protocol/server.py,sha256=rgMRZNkRU1OgSgxB0UXPOR5-Gst3DgLsq3N4fheNC9I,329
+agent_protocol-0.1.0.dist-info/METADATA,sha256=NNmk8-JmDuzo1JwZNS2sGF-IU_Ij6pPKldAHGHFVpDE,2914
+agent_protocol-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+agent_protocol-0.1.0.dist-info/entry_points.txt,sha256=nca1rc35sa2TvXuySJ3aLfRQRGogQlscEWYipyiplNU,41
+agent_protocol-0.1.0.dist-info/RECORD,,
