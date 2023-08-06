@@ -1,0 +1,9 @@
+slsdm/_generate.py,sha256=UbHygVbZBsbW3zzQOI0iWb9WeraKeucPqw8eKD0fGeE,8976
+slsdm/__init__.py,sha256=2T09K6JUb78m1jnnwpbLEz1s89DYnbD6zuuAWwWuhS8,538
+slsdm/_dist_metrics.pxd,sha256=1IQ6uecxx6ldSi6Xruj4iDgnszf-mSUwCevGdZeK15M,1077
+slsdm/_dist_metrics.cpython-311-x86_64-linux-gnu.so,sha256=QvQBkEN1nr8b4KjN5DC6wZlFVgykeGanLRGQze-LKPQ,556320
+slsdm-0.1.0.dist-info/top_level.txt,sha256=djHrI0FWksBeY4hvj72ZZRFikuunem1Jwx5DPtK4nQg,6
+slsdm-0.1.0.dist-info/WHEEL,sha256=8KU227XctfdX2qUwyjQUO-ciQuZtmyPUCKmeGV6Byto,152
+slsdm-0.1.0.dist-info/RECORD,,
+slsdm-0.1.0.dist-info/METADATA,sha256=mEilter5cyJ7wMBuUmG3QWZSOOWPzCIqi_ZT7nUJtRQ,2006
+slsdm-0.1.0.dist-info/LICENSE,sha256=8LPUtUXYryOxT6_ElK0g1_wwgh2nTmR6sWzTADccO5I,1499
