@@ -1,0 +1,41 @@
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+
+[project]
+name = 'repleno'
+version = '0.0.15'
+authors = [
+    {'name' = 'Afonso Schulz Albrecht', email = 'a.schulzalbrecht@gmail.com'},
+]
+description = 'Supply chain analytics on Bill Of Materials (BOM) and Material Requirements Planning (MRP)'
+keywords = ['supply chain', 'bill of materials', 'material requirements planning', 'BOM', 'MRP']
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Manufacturing",
+]
+requires-python = '>=3.10'
+dependencies = [
+    'pptree >=3.1',
+]
+dynamic = ['readme']
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md", content-type="text/markdown"}
+
+
+[project.optional-dependencies]
+tests = [
+    'pytest'
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "dev",
+]
+
+

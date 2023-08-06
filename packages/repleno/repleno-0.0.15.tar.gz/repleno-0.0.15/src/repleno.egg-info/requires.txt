@@ -1,0 +1,4 @@
+pptree>=3.1
+
+[tests]
+pytest
