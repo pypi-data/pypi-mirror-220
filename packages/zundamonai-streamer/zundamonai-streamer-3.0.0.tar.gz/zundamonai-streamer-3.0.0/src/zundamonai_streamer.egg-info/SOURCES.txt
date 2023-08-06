@@ -1,0 +1,15 @@
+LICENSE
+LICENSE_ffmpeg
+README.md
+setup.py
+src/TransparentViewer.py
+src/ZundamonAIStreamer.py
+src/ZundamonAIStreamerManager.py
+src/ZundamonAIStreamerUI.py
+src/__init__.py
+src/zundamonai_streamer.egg-info/PKG-INFO
+src/zundamonai_streamer.egg-info/SOURCES.txt
+src/zundamonai_streamer.egg-info/dependency_links.txt
+src/zundamonai_streamer.egg-info/not-zip-safe
+src/zundamonai_streamer.egg-info/requires.txt
+src/zundamonai_streamer.egg-info/top_level.txt
