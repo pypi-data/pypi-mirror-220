@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: ambra-clone-eyork-rad
+Version: 0.0.2
+Summary: Ambra Clone tools for technical services
+Author-email: Ethan York <ethan.york@intelerad.com>
+Project-URL: Homepage, https://github.com/dicomgrid/tech-services-scripts
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Ambra_Clone
+
+The Clone account class can be used to copy Ambra data from one account into another. These accounts can be in different Ambra instances. This Module is intended to be used within the Ambra scripting platform (future release) but can be downloaded and run locally as well.
+
+The data that can be copied at this time is limited to the corresponding ambra api calls and can be specified with the [clone_items](#initialization-parameters) parameter.
+
+
+## Get started with cloning Ambra data from local machine. 
+1. pip install Ambra_Clone
+2. Import the Clone class from the file labeled Clone.py
+```Python
+from Ambra_Clone.Clone Import Clone
+```
+3. Create a cloning instance. See [initialization parameters](#initialization-parameters) for more details. For this example I am creating a new account although you can copy/update records to an existing account by specifying it's uuid.
+
+  ```Python
+    example_clone = Clone(
+        sid="e9d41c71-b8fb-4119-8456-xxxxxxxxxx",
+        original_url="https://uat.ambrahealth.com/api/v3/",
+        original_account_uuid="",
+        clone_items="all")
+    example_clone.run()
+  ```
+4. Once satisfied with the Clone parameters (see methods section for other customizable parameters) use the .run() method to perform the cloning task. 
+
+### Initialization parameters 
+* sid (str): session id for original_url
+* original_url (str): the original url with "api/v3" included. ie. https://access.ambrahealth.com/api/v3
+* original_account_uuid (str): original account uuid
+* clone_items (str/list, optional): list of items to clone. Defaults to "all".
+  
+  ```
+  ["customfield",
+    "role",
+    "group",
+    "location",
+    "account/users",
+    "webhook",
+    "route",
+    "group_location_users",
+    "namespace_settings",
+    "terminology",
+    "hl7/template",
+    "hl7/transform",
+    "dictionary",
+    "mail_templates",
+    "account_settings",
+    "radreport/template",
+    "share_settings",
+    "site"]
+  ```
+* copy_url_base (str, optional): [description]. Defaults to None.
+* copy_account_uuid (str, optional): If unspecified a new account will be created. The uuid of the duplicate account if it already exists. Defaults to None. 
+* sid_copy (str, optional): If unspecified, same as original session id. The session id for the duplicate account. Defaults to None.
+* account_name (str,optional): Account Name. If unspecified or "", Account name will be be "Copy of <original account Name>"
+
+## Methods
+### add_special_field
+Instead of copying the value for the specified field and apistr. Default a preset value. For example if you wanted to suspend all webhooks in the newly cloned account - apistr='webhook',field_key='suspended',value=1
+
+ Args:
+ - field_key (str): field key for specified value. Use : to separate fields in a seeded json. 
+ - apistr (str): api endpoint string ie. webhook, route, customfield, ect.
+ - value (any): value to default for the api endpoint value
+
+### add_special_uuid
+For a specific uuid. Instead of copying the original field data use the specified value
+
+Args:
+- uuid (str): uuid of the original item with a special field
+- field_key (str): field key for the special value. separate seeded json fields by a :
+- value (any): value of the uuid field.
+  
+### update_uuid_map
+Ambra items are generally mapped to their new uuid by the name of the record. However you can manually map records with this parameter instead. 
+Args:
+    - dict (dictionary): map of uuids {original_uuid : new_uuid}
+
+## Architectural Design
+
+Copying records from original_account to copy_account. Items are mapped by name unless the item uuid is manually mapped prior to running. When the .run() method is used the script first prints out the cloning information to the terminal then for each clone_item listed a cooresponding _clone_ method is called. These methods all operate simmilarly and follow this procedure.
+
+1. map records to the uuid_map parameter- orignal_account uuids are the key, copy_account uuids are the values. 
+2. add records that don't exist and add them to the uuid_map
+3. update mapped records to match the original
+  
+uuid substitutions are automatic and rely on the uuid_map. If a uuid cannot be found the item is skipped and an error is printed.
+
+## Requirements
+The clone script requires up to date versions of the python requests package and ambra-sdk package
+```
+pip install requests
+pip install ambra-sdk
+```
