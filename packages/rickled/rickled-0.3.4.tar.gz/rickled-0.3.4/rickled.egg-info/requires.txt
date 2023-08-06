@@ -1,0 +1,9 @@
+pyyaml
+requests
+
+[twisted]
+twisted
+
+[twisted,ssl]
+twisted
+pyopenssl
