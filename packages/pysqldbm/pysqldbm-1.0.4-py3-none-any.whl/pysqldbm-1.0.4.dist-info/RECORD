@@ -1,0 +1,10 @@
+pysqldbm/__init__.py,sha256=7tSN3qLVGrRas_2AqNs-ixtRluClpPuLwQOqr51kuCI,124
+pysqldbm/client.py,sha256=vsZjNVnJB2bzCpM2NgJX0TCb9PObV-ZpjOuFRKBC7Ks,1863
+pysqldbm/rest_client.py,sha256=ipa4gRZcsJyDbfEHTMu0V8dPmsM1y20P99g3dSSEaVY,2688
+pysqldbm_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysqldbm_cli/run.py,sha256=HD6gKChEXiRDjvqgNGy-ZnB9QJlVYLeyG77zCzuAR58,3706
+pysqldbm-1.0.4.dist-info/METADATA,sha256=tEOI_kewsAiYGHh-lF4qdmcsmA_Ou3wnDDJ2OEJ10mk,1428
+pysqldbm-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pysqldbm-1.0.4.dist-info/entry_points.txt,sha256=oj1iMF-YBW3eRQdEgt7DPlC8OJO-I4KAUD7vDxlsweA,48
+pysqldbm-1.0.4.dist-info/top_level.txt,sha256=RhSghNXqOvbTXtahJmvEs0KoNRbwF9EFlFXB6Sy_Jdw,22
+pysqldbm-1.0.4.dist-info/RECORD,,
