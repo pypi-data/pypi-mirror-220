@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: DependiPy
+Version: 1.0.2
+Home-page: https://github.com/ajacassi/DependiPy.git
+Author: Andrea Jacassi
+Author-email: 
+License: MIT
+License-File: LICENSE
+Requires-Dist: argparse (==1.4.0)
+Requires-Dist: tqdm (==4.64.1)
+Requires-Dist: pandas (==2.0.0)
+Requires-Dist: numpy (==1.23.5)
+
