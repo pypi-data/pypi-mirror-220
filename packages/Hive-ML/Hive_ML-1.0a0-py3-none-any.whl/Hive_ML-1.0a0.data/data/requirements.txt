@@ -1,0 +1,15 @@
+numpy
+SimpleITK
+six
+hive-maia
+pandas
+pyradiomics
+tqdm
+mlflow
+pysftp
+mlxtend
+scikit_learn
+scipy
+plotly
+yellowbrick
+kaleido
