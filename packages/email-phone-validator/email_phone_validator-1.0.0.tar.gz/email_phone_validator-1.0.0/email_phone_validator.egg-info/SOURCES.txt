@@ -1,0 +1,5 @@
+setup.py
+email_phone_validator.egg-info/PKG-INFO
+email_phone_validator.egg-info/SOURCES.txt
+email_phone_validator.egg-info/dependency_links.txt
+email_phone_validator.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: email_phone_validator
+Version: 1.0.0
+Summary: A simple Python package for email and phone number validation
+Author: Yonatan Dev
+Author-email: yonatan@yourhost.cloud
