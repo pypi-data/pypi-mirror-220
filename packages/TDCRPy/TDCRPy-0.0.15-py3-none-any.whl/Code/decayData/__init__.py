@@ -1,0 +1,1 @@
+from Code.decayData import All-nuclides_BetaShape.zip
