@@ -1,0 +1,10 @@
+fast_transfer/__about__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+fast_transfer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_transfer/app.py,sha256=nQdwpjlTsmlw2rexN5jP0PWrqcK59FU4NVceTssBkGc,2502
+fast_transfer/static/bulma.min.css,sha256=rTpdO0HXBCNpreAHcu6tB2Ppg515Vo-5GtYSsnNLz-8,207302
+fast_transfer/templates/index.html,sha256=6vSOeY1GdDhJKbQ0O_nlbS58pApDM5AXgxfALaVNfs4,3218
+fast_transfer-0.2.1.dist-info/METADATA,sha256=TCdXaYPQHlYktB9edy109UEaQUqBVp1oTwUTNQgzkFM,1189
+fast_transfer-0.2.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+fast_transfer-0.2.1.dist-info/entry_points.txt,sha256=qX1uR2NcOBbbTY91xnwhzo5v-h9Kt6h7Gqq8AcB7Lfo,56
+fast_transfer-0.2.1.dist-info/licenses/LICENSE,sha256=_4sqVZXjzO--otZYUMVXWLt-YkAFzzXHKfxQLU9fyqo,1063
+fast_transfer-0.2.1.dist-info/RECORD,,
