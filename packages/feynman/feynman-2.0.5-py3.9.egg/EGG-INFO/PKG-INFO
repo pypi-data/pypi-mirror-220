@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: feynman
+Version: 2.0.5
+Summary: Feynman diagrams with python-matplotlib.
+Home-page: http://gkantonius.github.io/feynman
+Author: Gabriel Antonius
+Author-email: gabriel.antonius@gmail.com
+License: GPL
+Keywords: Feynman diagram diagrams
+Platform: UNKNOWN
+License-File: COPYING
+
+UNKNOWN
+
