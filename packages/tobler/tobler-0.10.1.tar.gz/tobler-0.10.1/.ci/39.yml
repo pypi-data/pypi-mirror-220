@@ -1,0 +1,32 @@
+name: test
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - geopandas
+  - pandas
+  - rasterio
+  - rasterstats
+  - statsmodels
+  - scikit-learn
+  - scipy
+  - libpysal
+  - tqdm
+  - codecov
+  - pytest
+  - quilt3
+  - pytest-mpl
+  - pytest-cov
+  - twine
+  - pip
+  - h3-py
+  - mapclassify
+  - descartes
+  - sphinx>=1.4.3
+  - sphinxcontrib-bibtex==1.0.0
+  - sphinx_bootstrap_theme
+  - numpydoc
+  - nbsphinx
+  - joblib
+  - astropy

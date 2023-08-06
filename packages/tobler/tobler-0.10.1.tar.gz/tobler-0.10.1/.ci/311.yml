@@ -1,0 +1,27 @@
+name: test
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - numpy
+  - geopandas
+  - pandas
+  - numpy
+  - rasterio
+  - rasterstats
+  - statsmodels
+  - scikit-learn
+  - scipy
+  - libpysal
+  - tqdm
+  - codecov
+  - pytest
+  - quilt3
+  - pytest-mpl
+  - pytest-cov
+  - twine
+  - pip
+  - h3-py
+  - joblib
+  - astropy

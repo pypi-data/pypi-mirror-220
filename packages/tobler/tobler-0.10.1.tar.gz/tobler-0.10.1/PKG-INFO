@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: tobler
+Version: 0.10.1
+Summary: Tobler is a Python library for areal interpolation.
+Author-email: Eli Knaap <ek@knaaptime.com>, Serge Rey <sjsrey@gmail.com>
+Maintainer: pysal contributors
+License: BSD 3-Clause
+Project-URL: Home, https://github.com/pysal/tobler/
+Project-URL: Repository, https://github.com/pysal/tobler
+Keywords: dasymetric mapping, spatial analysis, interpolation, change of support
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: tests
+License-File: LICENSE.txt
+
+Spatial interpolation, Dasymetric Mapping, & Change of Support"
+
