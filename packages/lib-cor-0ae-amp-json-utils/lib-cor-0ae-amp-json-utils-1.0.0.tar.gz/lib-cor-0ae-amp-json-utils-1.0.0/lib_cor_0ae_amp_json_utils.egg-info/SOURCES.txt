@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+es/atp/app0aeamp/lib/cor/jsonutils/__init__.py
+lib_cor_0ae_amp_json_utils.egg-info/PKG-INFO
+lib_cor_0ae_amp_json_utils.egg-info/SOURCES.txt
+lib_cor_0ae_amp_json_utils.egg-info/dependency_links.txt
+lib_cor_0ae_amp_json_utils.egg-info/top_level.txt
