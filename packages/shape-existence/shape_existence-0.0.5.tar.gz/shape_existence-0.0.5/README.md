@@ -1,0 +1,40 @@
+# shape_existence
+
+This is a package to prove the existence of non-intersecting realizations of abstract simplicial complexes with specified edge lengths.
+
+This README should be fleshed out soon, for now here are the test cases from `shape_existence.py`.
+```
+if __name__ == '__main__':
+    examples = [4]
+    if 1 in examples:
+        #tetrahedron
+        tetrahedron_asc = AbstractSimplicialComplex(mode = "maximal_simplices", data = [["a", "b", "c", "d"]])
+        tetrahedron_rsc = tetrahedron_asc.heuristic_embed(dim = 3, desired_sq_lengths = {"default" : 1}, final_round_digits = 5)
+        tetrahedron_rsc.save_as_obj("tetrahedron.obj", "./obj_files/")
+        tetrahedron_rsc.prove_existence(desired_sq_lengths = {"default" : Fraction(1)}, verbose = True)
+    if 2 in examples:
+        #octahdron
+        octahedron_asc = AbstractSimplicialComplex(mode = "maximal_simplices", 
+                                                   data = [["t", "1", "2"], ["t", "2", "3"], ["t", "3", "4"], ["t", "4", "1"],
+                                                           ["b", "1", "2"], ["b", "2", "3"], ["b", "3", "4"], ["b", "4", "1"]]) 
+        octahedron_rsc = octahedron_asc.heuristic_embed(dim = 3, desired_sq_lengths = {"default" : 1}, final_round_digits = 5)
+        octahedron_rsc.save_as_obj("octahedron.obj", "./obj_files/")
+        octahedron_rsc.prove_existence(desired_sq_lengths = {"default" : Fraction(1)}, verbose = True)
+    if 3 in examples:
+        #icosahedron
+        icosahedron_asc = AbstractSimplicialComplex(mode = "maximal_simplices",
+                                                    data = [["t", "a1", "a2"], ["t", "a2", "a3"], ["t", "a3", "a4"], ["t", "a4", "a5"], ["t", "a5", "a1"],
+                                                            ["a1", "a2", "b1"], ["a2", "a3", "b2"], ["a3", "a4", "b3"], ["a4", "a5", "b4"], ["a5", "a1", "b5"],
+                                                            ["b1", "b2", "a2"], ["b2", "b3", "a3"], ["b3", "b4", "a4"], ["b4", "b5", "a5"], ["b5", "b1", "a1"],
+                                                            ["b", "b1", "b2"], ["b", "b2", "b3"], ["b", "b3", "b4"], ["b", "b4", "b5"], ["b", "b5", "b1"]])
+        icosahedron_rsc = icosahedron_asc.heuristic_embed(dim = 3, desired_sq_lengths = {"default" : 1}, final_round_digits = 9)
+        icosahedron_rsc.save_as_obj("icosahedron.obj", "./obj_files/")
+        icosahedron_rsc.prove_existence(desired_sq_lengths = {"default" : Fraction(1)}, verbose = True)
+    if 4 in examples:
+        #existence of a triangle with sides 3, 4, and 5
+        right_triangle = AbstractSimplicialComplex(mode = "maximal_simplices", 
+                                                  data = [["a", "b"], ["b", "c"], ["c", "a"]])
+        right_triangle_rsc = right_triangle.heuristic_embed(dim = 2, desired_sq_lengths = {("a", "b") : 9, ("b", "c") : 16, ("c", "a") : 25}, final_round_digits = 8)
+        right_triangle_rsc.save_as_obj("345_triangle.obj", "./obj_files/")
+        right_triangle_rsc.prove_existence(desired_sq_lengths = {("a", "b") : 9, ("b", "c") : 16, ("c", "a") : 25}, verbose = True)
+```

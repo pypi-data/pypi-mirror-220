@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shape_existence"
+version = "0.0.5"
+authors = [
+  { name="Matthew Ellison", email="matthew.v.ellison@gmail.com" },
+]
+description = "A package to prove the existence of non-intersecting realizations of abstract simplicial complexes with specified edge lengths."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mve17/shape_existence"
+"Bug Tracker" = "https://github.com/mve17/shape_existence/issues"
