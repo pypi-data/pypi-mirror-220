@@ -1,0 +1,11 @@
+pymeasurement/__init__.py,sha256=si3t3T9JszPKQL1-FXguWTjmLybNLcT0UkA1_nFCFBk,39
+pymeasurement/measurement.py,sha256=GXYnBbvH6BYBsXguIJ-1m-ppF-8BsYnqRRH1N6d_l44,23936
+pymeasurement/sigfig.py,sha256=CnAJRd-OgIW5bLNjygpVUrdyri2tMyfPpBl6jwj6LXM,10526
+pymeasurement/util/parser.py,sha256=Wye8z3rAYu6VZWRdGpJGbcWHVu9J3HNsNeep6GshQh0,1556
+pymeasurement/util/typecheck.py,sha256=gWR3npw0sff7EDxxHZIIFj97ByyXbfvuFCwH9t4UWK0,1073
+pymeasurement/util/chem/compound.py,sha256=YSCNo3EgRUQPjZIF_AHqpVpa2GlbzuaHgTODe5z6_EA,6129
+pymeasurement/util/chem/element.py,sha256=d33FLGG-Dke3FPak5exnqluitrAQgFxzqoTMc1b_IhE,5739
+pymeasurement-1.1.0.dist-info/METADATA,sha256=rgiA8jaeioq5ycGsCJY0ALimm4s1prRws7EiJYriEqo,1084
+pymeasurement-1.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+pymeasurement-1.1.0.dist-info/licenses/LICENSE,sha256=lAM7sRaudijJXH7-DM5dKn426t71Q5vxBJYr3gNaNKg,1067
+pymeasurement-1.1.0.dist-info/RECORD,,
