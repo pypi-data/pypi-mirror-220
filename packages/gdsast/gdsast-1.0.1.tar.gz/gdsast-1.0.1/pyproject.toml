@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "gdsast"
+version = "1.0.1"
+description = "GDS <-> AST translation and GDS objects manipulation"
+authors = ["Serge Rabyking <serge.rabyking@chipflow.io>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://gitlab.com/ChipFlow/gdsast"
+packages = [{include = "gdsast"}]
+exclude = ["*.git"]
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+#dirty = true
+vcs = "git"
+#style = "semver"
+latest-tag = true
+metadata = false
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
