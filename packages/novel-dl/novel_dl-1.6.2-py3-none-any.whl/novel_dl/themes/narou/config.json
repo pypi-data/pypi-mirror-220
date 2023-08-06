@@ -1,0 +1,11 @@
+{
+	"medias": ["", "pc", "mobile"],
+	"loads": {
+		"js":["static/jquery.min.js","static/jquery.readmore.js","static/custom.js"],
+		"css":{
+			"all":["static/switch.css","static/custom.css"],
+			"screen and (min-width:768px)":["static/reset.css","static/kotei.css"],
+			"screen and (max-width:768px)":["static/novel_smpview.css"]
+		}
+	}
+}

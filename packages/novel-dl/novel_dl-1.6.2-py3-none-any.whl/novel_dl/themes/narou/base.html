@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+
+<title>{{subtitle}} - {{title}}</title>
+
+<link rel="shortcut icon" href="static/narou.ico" />
+<link rel="icon" href="static/narou.ico" />
+<link rel="apple-touch-icon-precomposed" href="static/apple-touch-icon-precomposed.png" />
+{%- for i in loads['css'] %}
+<link rel="stylesheet" type="text/css" href="{{i[0]}}" media="{{i[1]}}" />
+{%- endfor %}
+</head>
+
+<body>
+<div id="page_type" style="display: none">base</div>
+<div class="pc">
+{% include "base_body_pc.html" %}
+</div>
+
+<div class="sp">
+{% include "base_body_mobile.html" %}
+</div>
+{%- for i in loads['js'] %}
+<script src="{{i}}"></script>
+{%- endfor %}
+</body>
+</html>
