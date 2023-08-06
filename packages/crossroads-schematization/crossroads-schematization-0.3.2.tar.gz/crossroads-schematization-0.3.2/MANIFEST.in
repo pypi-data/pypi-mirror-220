@@ -1,0 +1,6 @@
+include README.md
+include requirements.txt
+recursive-include crschem/resources *
+recursive-include crschem/model *
+recursive-include crschem/normalization *
+global-exclude .gitignore
