@@ -1,0 +1,12 @@
+plothist/__init__.py,sha256=hmjoLV5VAFdqTsmT4PT37kq5fRyfsufwj1CRWLyA5tI,1352
+plothist/default_style.mplstyle,sha256=VSiM8AWQCX_GavoamjlglLbc72OHtSYm00mty-zOvbc,1761
+plothist/generate_dummy_data.py,sha256=emiS9laViGb6mTFRBW4Y39GC7uOklCul7bfU6S82SPU,801
+plothist/hep_plotters.py,sha256=sLbutooQaJIjwt5VN_nWf7dlJqNxT4tIgClo48Ld4Gg,13931
+plothist/plothist_style.py,sha256=t_YYRnsFZNvP0LbTY0UdM_EXK7j5EBnGhkgwmA7XOSI,1021
+plothist/plotters.py,sha256=JB-dloQQKpnvaYrV_SpJSKhTEwpU9fhD4X7Mj1RpEcY,22401
+plothist/small_style.mplstyle,sha256=_SYoywDvXPLU35EEohOjBNwl-nVdY-yei38v98e8pts,1723
+plothist/variable_registry.py,sha256=1FTG74_XWxuwYXFKauHLL4TZmUn-73u5qulfoWp1khM,6402
+plothist-0.5.3.dist-info/LICENSE,sha256=3x4ZYY2YTYaoCKbmWtUa9Yernv-Zx4n9vI__4ed1Gus,1518
+plothist-0.5.3.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+plothist-0.5.3.dist-info/METADATA,sha256=kDWijVC6vG_-iegDMWAqqWePFOIki6vzwnod7gWKMNs,700
+plothist-0.5.3.dist-info/RECORD,,
