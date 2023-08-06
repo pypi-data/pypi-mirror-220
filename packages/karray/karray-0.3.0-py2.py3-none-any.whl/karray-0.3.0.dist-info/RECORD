@@ -1,0 +1,10 @@
+karray/__init__.py,sha256=jK_CBFKg68LtDMQOYvq78DLkEBjDkTNmqxhAXgiqIxI,114
+karray/arrays.py,sha256=dowqwT36izESCmn26OB30l2ySf_Sx42nFVpj-3So4z4,78230
+karray/long.py,sha256=03KDn9CKuO3xcMqXUcLZigsU3jXZkOfOTJk8GOlGlxI,32055
+karray/setting.py,sha256=LMIsI9JgMKDtGufrFwvm8VRFvkqrsQEV5g6V31IVTnU,411
+karray/utils.py,sha256=vq1BUaFV2IPPcFTrw8zijyAPTTXB-NwpNnaVNjwZ5_Y,5408
+karray-0.3.0.dist-info/LICENSE,sha256=tuiTXVmco9Zhsk8bw15TwWH8x_Wl6C0ucPw4SOO44zM,1069
+karray-0.3.0.dist-info/METADATA,sha256=4LQTrkxbXQ_wbcGTjr21_Aco4EKYC7WzMtR7kXe1Tyg,919
+karray-0.3.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+karray-0.3.0.dist-info/top_level.txt,sha256=-ziDaqCA9DbCr7hrzYdoZ13qehaaljVGXjxVz7Mw-H4,7
+karray-0.3.0.dist-info/RECORD,,
