@@ -1,0 +1,10 @@
+README.md
+setup.py
+paucode/__init__.py
+paucode/ds.py
+paucode/eco.py
+paucode/tsp.py
+paucode.egg-info/PKG-INFO
+paucode.egg-info/SOURCES.txt
+paucode.egg-info/dependency_links.txt
+paucode.egg-info/top_level.txt
