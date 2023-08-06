@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: periodicity-detection
+Version: 0.1.0rc1
+Summary: Detect the dominant period in univariate, equidistant time series data.
+Home-page: https://github.com/CodeLionX/periodicity_detection
+Author: Sebastian Schmidl
+Author-email: sebastian.schmidl@hpi.de
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.21.6)
+Requires-Dist: pandas (>=1.3.5)
+Requires-Dist: scipy (>=1.7.3)
+Requires-Dist: statsmodels (>=0.13.5)
+Requires-Dist: spectrum (>=0.8.1)
+Requires-Dist: typing-extensions (>=4.7.1)
+Requires-Dist: matplotlib (>=3.5.3)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: mypy (==0.920) ; extra == 'dev'
+Requires-Dist: flake8 (==5.0.4) ; extra == 'dev'
+Requires-Dist: black (==23.1) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.21) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx (==5.0.2) ; extra == 'docs'
+Requires-Dist: myst-parser (==0.18.0) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==1.0.0) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-dark-mode (==1.2.4) ; extra == 'docs'
+
+# Periodicity Detection
+
+Detect the dominant period in univariate, equidistant time series data.
+
+[![CI](https://github.com/CodeLionX/periodicity-detection/actions/workflows/build.yml/badge.svg)](https://github.com/CodeLionX/periodicity-detection/actions/workflows/build.yml)
+[![Documentation Status](https://readthedocs.org/projects/periodicity-detection/badge/?version=latest)](https://periodicity-detection.readthedocs.io/en/latest/?badge=latest)
+[![codecov](https://codecov.io/gh/CodeLionX/periodicity-detection/branch/main/graph/badge.svg?token=6QXOCY4TS2)](https://codecov.io/gh/CodeLionX/periodicity-detection)
+[![PyPI package](https://badge.fury.io/py/periodicity-detection.svg)](https://badge.fury.io/py/periodicity-detection)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![python version 3.7|3.8|3.9|3.10|3.11](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue)
+[![Downloads](https://pepy.tech/badge/periodicity-detection)](https://pepy.tech/project/periodicity-detection)
+
+Toolbox for detecting the dominant period in univariate, equidistant time series data.
+The toolbox contains the following methods:
+
+- Autocorrelation
+- AutoPeriod
+- Fast Fourier Transform (FFT)
+- `find_length`
+- Python-adaption of the R package `forecast`'s `findfrequency` function
+- Number of Peaks-method
+
+📖 Periodicity Detection's documentation is hosted at https://periodicity-detection.readthedocs.io.
