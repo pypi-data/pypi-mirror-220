@@ -1,0 +1,11 @@
+[project]
+name = 'KwoksTool'
+version ='0.0.11'
+dependencies=[
+    'selenium',
+    'tushare',
+    'pyexecjs',
+    'requests',
+    'pandas',
+    'numpy'
+]
