@@ -1,0 +1,9 @@
+jax_plugins/metal_plugin/__init__.py,sha256=HVkCwzfSVR_D570keSxTvCHsRXOZeO2mOYu82_Yni44,501
+jax_plugins/metal_plugin/pjrt_plugin_metal_13.dylib,sha256=DQbaOG_f0NaxMRUGk1NET5Ho4W_X56vaQpYXJN_wsVk,191740728
+jax_plugins/metal_plugin/pjrt_plugin_metal_14.dylib,sha256=qRH7M7RZ8Zmwpd4y5Z69o4r1qO7nSyzVzWQq-6kb7sY,191943696
+jax_metal-0.0.3.dist-info/LICENSE,sha256=OfPqnp_EOEGe2MEy8qal9F9vLWukffEAUT8rZddRrs0,1054
+jax_metal-0.0.3.dist-info/METADATA,sha256=Vl_r7W8IoGvW61DHP4BPN8BOOHg8Yx1E5VbyU25-VLY,677
+jax_metal-0.0.3.dist-info/WHEEL,sha256=hJl1OxMfPCCe8rBZn-Y9D0xx-hzHXrkhDjYTszfK09I,109
+jax_metal-0.0.3.dist-info/entry_points.txt,sha256=gQheCLgPUaFIZ2T5ngq0a2nwtxzwIfy4R8MZ5soRNsk,54
+jax_metal-0.0.3.dist-info/top_level.txt,sha256=BMuBVFd0VZSL85gH2fQxPQpETv27dLmJ90vD27bu13Q,12
+jax_metal-0.0.3.dist-info/RECORD,,
