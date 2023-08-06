@@ -1,0 +1,4 @@
+open-aea<2.0.0,>=1.0.0
+web3==5.31.4
+ipfshttpclient==0.8.0a2
+eth-account<0.6.0,>=0.5.9
