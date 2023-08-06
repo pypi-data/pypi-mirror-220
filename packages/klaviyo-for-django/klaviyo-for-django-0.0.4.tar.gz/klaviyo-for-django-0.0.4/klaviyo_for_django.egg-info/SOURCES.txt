@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+klaviyo_for_django/__init__.py
+klaviyo_for_django.egg-info/PKG-INFO
+klaviyo_for_django.egg-info/SOURCES.txt
+klaviyo_for_django.egg-info/dependency_links.txt
+klaviyo_for_django.egg-info/requires.txt
+klaviyo_for_django.egg-info/top_level.txt
