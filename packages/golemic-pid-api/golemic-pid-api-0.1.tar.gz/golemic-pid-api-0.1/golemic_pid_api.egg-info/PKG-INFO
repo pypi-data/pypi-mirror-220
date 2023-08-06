@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: golemic-pid-api
+Version: 0.1
+Summary: golemic-pid wrapper
+Home-page: https://github.com/0x216/Prague-Public-Transport-Golemio-API-Wrapper
+Author: 0x216
+Author-email: 0x216@pm.me
+License: MIT
+Keywords: funniest joke comedy flying circus
+License-File: LICENSE
+
+Api wrapper for https://api.golemio.cz/v2/pid/docs/openapi/#/.

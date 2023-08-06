@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+golemic_pid_api.egg-info/PKG-INFO
+golemic_pid_api.egg-info/SOURCES.txt
+golemic_pid_api.egg-info/dependency_links.txt
+golemic_pid_api.egg-info/not-zip-safe
+golemic_pid_api.egg-info/requires.txt
+golemic_pid_api.egg-info/top_level.txt
+golemio/__init__.py
+golemio/client.py
+golemio/errors.py
+tests/test_golemio_client.py
