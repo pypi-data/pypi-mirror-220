@@ -1,0 +1,9 @@
+cv2box
+
+[full]
+apscheduler
+numexpr
+h5py
+yaml
+
+[light]
