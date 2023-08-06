@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: micro-chrome-devtools-protocol
+Version: 0.1.0
+Summary: A lightweight library for speaking the Chrome DevTools Protocol in order to debug JavaScript
+Home-page: https://github.com/aib/ucdp
+Author: aib
+Author-email: aibok42@gmail.com
+License: MIT
+Keywords: chrome,chromium,devtools,protocol,node,nodejs,electron,debugging,debugger
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: JavaScript
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ucdp or Micro Chrome DevTools Protocol
+
+A lightweight library that helps you speak the Chrome DevTools Protocol in order to debug JavaScript with a Python script.
+
+## Installation
+
+```pip install micro-chrome-devtools-protocol```
+
+## Examples
+
+Please see the [`examples/`](examples/) directory.

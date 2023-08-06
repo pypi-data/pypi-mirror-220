@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+micro_chrome_devtools_protocol.egg-info/PKG-INFO
+micro_chrome_devtools_protocol.egg-info/SOURCES.txt
+micro_chrome_devtools_protocol.egg-info/dependency_links.txt
+micro_chrome_devtools_protocol.egg-info/top_level.txt
+ucdp/__init__.py
+ucdp/data.py
+ucdp/event.py
+ucdp/ucdp.py
