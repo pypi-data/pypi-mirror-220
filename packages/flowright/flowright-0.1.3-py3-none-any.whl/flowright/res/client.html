@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+            class ServerHandler {
+                constructor() {
+                    this.messageMap = new Object();
+                    this.messageQueue = new Array();
+                }
+
+                handleMessage(obj) {
+                    console.log(obj);
+                    if (obj.kind in this.messageMap) {
+                        this.messageMap[obj.kind](obj);
+                    }
+                    else {
+                        console.error("Unsupported message: " + obj.kind);
+                    }
+                }
+
+                addMessageListener(kind, fn) {
+                    this.messageMap[kind] = fn;
+                }
+            }
+
+            const onComponentRemoveMessage = function (message) {
+                message.marked_components.forEach(marked_component => {
+                    element = document.getElementById(marked_component);
+                    if (element !== null) {
+                        element.remove();
+                    }
+                });
+            }
+
+            const onComponentUpdateMessage = function (message) {
+                existing_element = document.getElementById(message.component_id);
+                if (existing_element !== null) {
+                    existing_element.innerHTML = message.component_data;
+                }
+                else {
+                    parent = document.getElementById(message.component_parent);
+                    parent.insertAdjacentHTML("beforeend", message.component_data);
+                }
+                existing_element = document.getElementById(message.component_id);
+                Array.from((existing_element.getElementsByTagName("script"))).forEach(element => {
+                    eval(element.textContent);
+                });
+            }
+
+            const onIterationStartMessage = function (message) {
+                if (message.reload === true) {
+                    window.location.reload();
+                }
+                else if (message.preload_data !== '') {
+                    document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", message.preload_data);
+                    Array.from((document.getElementsByTagName("head")[0].getElementsByTagName("script"))).forEach(element => {
+                        eval(element.textContent);
+                    });
+                }
+            }
+
+            const onPageRedirectMessage = function (message) {
+                window.location = message.url;
+            }
+
+            serverHandler = new ServerHandler();
+            serverHandler.addMessageListener("ComponentUpdateMessage", onComponentUpdateMessage);
+            serverHandler.addMessageListener("ComponentRemoveMessage", onComponentRemoveMessage);
+            serverHandler.addMessageListener("IterationStartMessage", onIterationStartMessage);
+            serverHandler.addMessageListener("PageRedirectMessage", onPageRedirectMessage);
+
+            let socket = undefined;
+            function reloadConnection() {
+                const host = window.location.host;
+                const path = window.location.pathname;
+                const proto = window.location.protocol;
+                const wsproto = proto === "http:" ? "ws:" : "wss:";
+                let start = new Date().getTime(); 
+
+                if (socket !== undefined && socket.readyState == WebSocket.OPEN) {
+                    socket.close();
+                }
+                socket = new WebSocket(wsproto + "//" + host + path);
+
+                socket.addEventListener("open", onOpen);
+                socket.addEventListener("close", onClose);
+                socket.addEventListener("error", onError);
+                socket.addEventListener("message", onMessage);
+            }
+
+            function closeConnection (event) {
+                if (event.persisted === false && socket !== undefined) {
+                    socket.close();
+                }
+            }
+
+            const onMessage = function (event) {
+                serverMessage = JSON.parse(event.data);
+                // console.log(serverMessage);
+                serverHandler.handleMessage(serverMessage);
+            }
+
+            const onError = function (event) {
+                console.log("Socket error: ", event);
+            }
+
+            const onClose = function (event) {
+                console.log("Socket closed");
+            }
+
+            const onOpen = function (event) {
+                console.log("Socket open");
+                const params = new Map();
+                const url = new URL(window.location.toLocaleString());
+                for (const param of url.searchParams.entries()) {
+                    params[param[0]] = JSON.parse(param[1]);
+                }
+                socket.send(JSON.stringify({
+                    "kind": "ConnectionInitiationMessage",
+                    "params": params
+                }))
+            }
+
+            const flush = function (component_id, value) {
+                socket.send(JSON.stringify({
+                    "kind": "ComponentFlushMessage",
+                    "component_id": component_id,
+                    "value": value
+                }));
+            }
+
+            const flush_raw = function (component_id, value, force_refresh) {
+                socket.send(JSON.stringify({
+                    "kind": "ComponentFlushMessage",
+                    "component_id": component_id,
+                    "value": value,
+                    "force_refresh": force_refresh
+                }));
+            }
+
+            window.addEventListener("load", reloadConnection);
+            window.addEventListener("onpagehide" in self ? "pagehide" : "unload", closeConnection);
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+</html>

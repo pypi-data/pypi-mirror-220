@@ -1,0 +1,4 @@
+[console_scripts]
+flowright=flowright.commands:run
+flowright_test=flowright.commands:run
+
