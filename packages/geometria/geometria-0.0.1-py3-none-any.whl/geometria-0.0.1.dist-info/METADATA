@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: geometria
+Version: 0.0.1
+Summary: Biblioteca para formulas de geometria
+Home-page: UNKNOWN
+Author: Mayumi Shingaki
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+## README
+
+Para execuÃ§Ã£o dos testes unitÃ¡rios, execute na pasta raÃ­z:
+> coverage run -m pytest
+> coverage report
+> coverage html
+
