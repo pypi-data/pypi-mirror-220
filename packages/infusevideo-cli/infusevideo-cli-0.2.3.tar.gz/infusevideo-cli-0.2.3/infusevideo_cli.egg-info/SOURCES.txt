@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+infusevideo_cli/__init__.py
+infusevideo_cli/__main__.py
+infusevideo_cli.egg-info/PKG-INFO
+infusevideo_cli.egg-info/SOURCES.txt
+infusevideo_cli.egg-info/dependency_links.txt
+infusevideo_cli.egg-info/entry_points.txt
+infusevideo_cli.egg-info/requires.txt
+infusevideo_cli.egg-info/top_level.txt

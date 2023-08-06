@@ -1,0 +1,3 @@
+[console_scripts]
+ivc = infusevideo_cli:cli
+ivs = infusevideo_cli:cli
