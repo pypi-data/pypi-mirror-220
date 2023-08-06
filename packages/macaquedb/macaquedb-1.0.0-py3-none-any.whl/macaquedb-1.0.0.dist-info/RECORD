@@ -1,0 +1,11 @@
+macaquedb/Database.py,sha256=hN5uL21h1fDPcheIjGBDujVpPMlhOHsDjmvhSYN1ddQ,12366
+macaquedb/__init__.py,sha256=b20HAH07tPp4in3i6fwibuSEXuYvwS3zCcxGQq22HTQ,31
+macaquedb/database/Image.py,sha256=2pZ8YJ2cwd1NWFMZWafkl16QaUmoFuZfwMtwQnqJnwo,489
+macaquedb/database/Session.py,sha256=oxKVqp7ENUCn5tAY7c3PaV3aghubYoYhTJidOcGI9oo,306
+macaquedb/database/Subject.py,sha256=WqvvKy82CS9ESCXyZsti1IRehSfbB9O44x60ZDKw410,321
+macaquedb/database/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+macaquedb/database/utilities.py,sha256=uB05ckHoiSTNx5My9d2osuNLQwIW1vcAVTkihksxjOs,451
+macaquedb-1.0.0.dist-info/METADATA,sha256=00TpQs2vR4bAly8taN97aAtWUOUb-AxIPO7AwWuc2EY,256
+macaquedb-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+macaquedb-1.0.0.dist-info/top_level.txt,sha256=qhQFZFu5DG-MvpRybXdgrTDADc48xDkH70lnBQbtDjE,10
+macaquedb-1.0.0.dist-info/RECORD,,
