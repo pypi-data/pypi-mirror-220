@@ -1,0 +1,21 @@
+{
+  "urls": [
+    [
+      "micropython_motor/__init__.py",
+      "github:jposada202020/MicroPython_MOTOR/micropython_motor/__init__.py"
+    ],
+    [
+      "micropython_motor/motor.py",
+      "github:jposada202020/MicroPython_MOTOR/micropython_motor/motor.py"
+    ],
+    [
+      "micropython_motor/servo.py",
+      "github:jposada202020/MicroPython_MOTOR/micropython_motor/servo.py"
+    ],
+    [
+      "micropython_motor/stepper.py",
+      "github:jposada202020/MicroPython_MOTOR/micropython_motor/stepper.py"
+    ]
+  ],
+  "version": "1"
+}
