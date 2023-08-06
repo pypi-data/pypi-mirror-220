@@ -1,0 +1,11 @@
+applitools/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+applitools/core_universal/__init__.py,sha256=E6_xAdjL4WTxxQO0Qwy1vrRJUrXkYlhlSYF8lCHbtGQ,141
+applitools/core_universal/__main__.py,sha256=cx9LZOEPp_-VxVrIT-LVZh2JSiwHANjflVYkAAVAsXk,210
+applitools/core_universal/instance.py,sha256=Msxa8I61CvkWnsmKEdoehpmAC72KkL3kvZ3AHykZ_cU,94
+applitools/core_universal/server.py,sha256=_11M0Df_DAGOh9qDTFPfUJ9TElQKSSaOzhJMrN-lcuE,1705
+applitools/core_universal/bin/core,sha256=NPFV71DOdzVJUo56V3taOrel9goUIHc96XaQAQVIbPk,83516176
+core_universal-3.6.1.dist-info/LICENSE,sha256=BDCdBp0jsd8YdhkGmoXEMSOVCarxR6n2x55oNN2BBAA,15088
+core_universal-3.6.1.dist-info/METADATA,sha256=7I9996aGJ7FYVbYthW7SBAPjqHa0OimsD45VenUCQ8c,1665
+core_universal-3.6.1.dist-info/WHEEL,sha256=QFqSVvh29nfXUkG8-CSYqxifruqzrmS4cs5ASpvuzAE,146
+core_universal-3.6.1.dist-info/top_level.txt,sha256=5jig8U7TAvEHIZT_r46UImIndsZ1-NqX5iWR7H9YZwc,11
+core_universal-3.6.1.dist-info/RECORD,,
