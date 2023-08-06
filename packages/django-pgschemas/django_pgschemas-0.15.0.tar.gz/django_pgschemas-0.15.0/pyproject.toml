@@ -1,0 +1,73 @@
+[tool.poetry]
+name = "django-pgschemas"
+version = "0.15.0"
+description = "Multi-tenancy on Django using PostgreSQL schemas."
+license = "MIT"
+authors = ["Lorenzo Peña <lorinkoz@gmail.com>"]
+readme = "README.rst"
+repository = "https://github.com/lorinkoz/django-pgschemas"
+documentation = "https://django-pgschemas.readthedocs.io/"
+keywords = ["django", "tenants", "schemas", "multi-tenancy", "postgresql"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Django",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+django = "^4.0"
+
+[tool.poetry.dev-dependencies]
+black = "^23.3.0"
+channels = "^2.1"
+coverage = {extras = ["toml"], version = "^6.3"}
+doc8 = "^0.8.0"
+ruff = "^0.0.275"
+sphinx = "^1.8"
+sphinx_rtd_theme = "^0.4.2"
+sphinx-django-command = "^0.1.3"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+select = ["I", "E", "F"]
+line-length = 120
+
+[tool.ruff.isort]
+combine-as-imports = true
+known-first-party = ["django_pgschemas"]
+
+[tool.mypy]
+strict_optional = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = [
+    "channels.*",
+    "psycopg.*",
+    "psycopg2.*",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = [
+    "docs.*",
+    "django_pgschemas.contrib.*",
+    "django_pgschemas.postgresql_backend.*",
+    "dpgs_sandbox.*",
+]
+ignore_errors = true
+
+[tool.coverage.run]
+source = ["django_pgschemas"]
+omit = ["django_pgschemas/contrib/channels*"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
