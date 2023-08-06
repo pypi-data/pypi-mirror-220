@@ -1,0 +1,16 @@
+volvopy/__constants__.py,sha256=DhqIZOoFWMXPlgyWcWX8J3mOvGBsxN7UseH3ZZJiDU0,2026
+volvopy/__init__.py,sha256=FN13ZfyFieZZExw6V7eOpPtnkTQlrz-bqHvGeg_NzjU,242
+volvopy/connected.py,sha256=VXqc8TCKRgNsq-2TaiMrRh5G0ADrvb5J_0HoNirmABU,872
+volvopy/energy.py,sha256=vcar7xvw7NbDrq59IV9VLEb43bv12XwnbAAKzxTF14o,845
+volvopy/extended.py,sha256=w_fT1j_jXZN74PRqs5NKN-FFXFXUx34KsiEq3edyr4c,873
+volvopy/location.py,sha256=cTt7CH0VlBWCuTfI7IkxoaZJHPd3zx3mhhsNIfSJm_4,835
+volvopy/volvo_api.py,sha256=gX96WXXFQY1ZEB8AdbLOb__20bGVubqZY6ATX7wlTf8,4951
+volvopy/specification/connected-vehicle-c3-specification.v1.json,sha256=RjKyaqrlmUT51iynyGgYqNGB0a036yDQDwRLWSVDuik,377649
+volvopy/specification/connected-vehicle-c3-specification.v2.json,sha256=RjKyaqrlmUT51iynyGgYqNGB0a036yDQDwRLWSVDuik,377649
+volvopy/specification/energy-api-specification.v1.json,sha256=5BKaT8b54iQua7cJy8wZPqCtIzLy3ogI8liQ5gShFOA,56534
+volvopy/specification/extended-vehicle-c3-specification.v1.json,sha256=Qi-akscUuKyLnXw1tTNwUcdJM5-qNZ_FOa6N1iexXe4,23483
+volvopy/specification/location-specification.v1.json,sha256=TFz7zVa2eIl4drUgxuCBEXAL-2QzU-JbUTG5nyRSjZ0,11391
+volvopy-0.1.12.dist-info/METADATA,sha256=hZOLdk8N29MTk6-mpPTck7p-ODtpjhUHf2gfIxpfHys,2068
+volvopy-0.1.12.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+volvopy-0.1.12.dist-info/licenses/LICENSE,sha256=wS9urNOfCSnvMlKE-z-hBB-30dAvUhBulKvkw_26lJU,1084
+volvopy-0.1.12.dist-info/RECORD,,
