@@ -1,0 +1,16 @@
+numpy
+pandas
+xlrd
+matplotlib
+seaborn
+scipy
+statsmodels
+scikit-learn
+imbalanced-learn
+ppscore
+tensorflow
+minisom
+lime
+shap
+geopy
+folium
