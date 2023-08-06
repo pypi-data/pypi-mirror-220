@@ -1,0 +1,12 @@
+recursive-exclude .github *
+recursive-exclude docs *
+recursive-exclude tests *
+exclude *.yaml
+exclude *.xml
+exclude flake.*
+exclude noxfile.py
+exclude CONTRIBUTING.md
+include README.md
+include CHANGELOG.md
+include LICENSE.md
+include respx/py.typed
