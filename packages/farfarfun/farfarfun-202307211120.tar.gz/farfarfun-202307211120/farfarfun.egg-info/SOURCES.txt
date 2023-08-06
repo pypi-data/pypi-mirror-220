@@ -1,0 +1,7 @@
+README.md
+setup.py
+farfarfun/__init__.py
+farfarfun.egg-info/PKG-INFO
+farfarfun.egg-info/SOURCES.txt
+farfarfun.egg-info/dependency_links.txt
+farfarfun.egg-info/top_level.txt
