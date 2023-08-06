@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bearish
+Version: 0.1.1
+Summary: We're bearish on SQL backends
+License: Apache-2.0
+Author: Phillip Cloud
+Author-email: 417981+cpcloud@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
