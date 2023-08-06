@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: modpypes3
+Version: 0.5
+Summary: MODBUS Communications Library
+Home-page: https://github.com/JoelBender/modpypes3
+Author: Joel Bender
+Author-email: joel@carrickbender.com
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+MODBUS communications library
