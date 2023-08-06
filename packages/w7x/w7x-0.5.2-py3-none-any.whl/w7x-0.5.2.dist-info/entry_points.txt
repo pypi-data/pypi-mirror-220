@@ -1,0 +1,5 @@
+[console_scripts]
+install_presentation=w7x.setup.presentation:install
+install_vmec_local=w7x.setup.vmec.stellopt:install
+install_vmec_nn=w7x.setup.vmec.nn:install
+
