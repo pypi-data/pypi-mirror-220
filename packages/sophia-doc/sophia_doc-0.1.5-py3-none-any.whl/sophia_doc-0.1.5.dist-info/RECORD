@@ -1,0 +1,12 @@
+sophia_doc/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+sophia_doc/__init__.py,sha256=wd_FjkGWfYkRJJqsCd3WEh2emlHz80t0aim8OWXAGfY,15605
+sophia_doc/__main__.py,sha256=XfLXeC-xDwUL6-S1ObZ3ChjEebNadbUPSPZAx7nwXJk,3621
+sophia_doc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sophia_doc/utils.py,sha256=lQjL_YaR9uvKqXMEapEJA7WQq4Nyl75p36EO6OInfZY,4915
+sophia_doc/builders/__init__.py,sha256=_fkqQgbSafuZtm9Nk_QC3W3IZ4CMEKFLRFzx7fDbXZg,2666
+sophia_doc/builders/markdown.py,sha256=3W-Wmwzzw_ItRc2eGmD7uZVPp3iqac8Do8ZqqTnN9x4,16335
+sophia_doc-0.1.5.dist-info/METADATA,sha256=YZyvo353X5N7tZRBlIMiUPWLiTjbU1CJEIDjNd8xmYw,2609
+sophia_doc-0.1.5.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+sophia_doc-0.1.5.dist-info/entry_points.txt,sha256=ZuIc0YWpgAGSI3C9Uo4VjJu2wQAe7ZM8DNUR9EcqzEk,55
+sophia_doc-0.1.5.dist-info/licenses/LICENSE,sha256=UmXY02bJ9BVQeBu7uKQHQpP7iOQdp_JiXvL64m1Qbrc,1072
+sophia_doc-0.1.5.dist-info/RECORD,,
