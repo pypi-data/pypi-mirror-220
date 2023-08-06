@@ -1,0 +1,6 @@
+flake8_builtins-stubs/METADATA.toml,sha256=c1meCuvGz1HaSq_mE6N5XjlwnzcALQWbkE1tJFvJCB0,150
+flake8_builtins-stubs/__init__.pyi,sha256=PASXO-DZaJ9DDOA_-MMwlOP4TDGXq8MZCi2acZLkK5k,443
+types_flake8_builtins-2.1.0.3.dist-info/METADATA,sha256=qV2vq1d-JUyRKMNIvyJsXILTyb3vH31GQ_gE7bZtFHQ,1611
+types_flake8_builtins-2.1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+types_flake8_builtins-2.1.0.3.dist-info/top_level.txt,sha256=URo6D9BKEVPyabOzbu5OjmHOOGkAxNd321BudrN0ygM,22
+types_flake8_builtins-2.1.0.3.dist-info/RECORD,,
