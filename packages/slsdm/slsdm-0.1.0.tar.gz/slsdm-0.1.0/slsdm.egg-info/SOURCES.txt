@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+slsdm/__init__.py
+slsdm/_dist_metrics.pxd
+slsdm/_generate.py
+slsdm.egg-info/PKG-INFO
+slsdm.egg-info/SOURCES.txt
+slsdm.egg-info/dependency_links.txt
+slsdm.egg-info/not-zip-safe
+slsdm.egg-info/requires.txt
+slsdm.egg-info/top_level.txt
+tests/test_distancemetrics.py

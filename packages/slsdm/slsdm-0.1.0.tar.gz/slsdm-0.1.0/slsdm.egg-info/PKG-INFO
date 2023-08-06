@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: slsdm
+Version: 0.1.0
+Summary: A set of SIMD-accelerated DistanceMetric implementations
+Maintainer: Meekail Zain
+Maintainer-email: zainmeekail@gmail.com
+License: new BSD
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: markdown
+Provides-Extra: examples
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: benchmark
+License-File: LICENSE
+
+# Scikit-Learn SIMD DistanceMetrics (SLSDM)
+
+## Install from pip
+Run `pip install slsdm`.
+## Install From Source:
+
+1. Create a new environment with `xsimd`: `conda create -n <env_name> -c conda-forge python~=3.10.0 compilers`
+2. Activate the environment: `conda activate <env_name>`
+3. Run `pip install -e .`
+
+Note: if you are building with a custom development installation of scikit-learn then use the `--no-build-isolation`
+flag to ensure it is not superceded by the published version.
+
+## Specify SIMD Target Architectures
+
+Coming soon.
