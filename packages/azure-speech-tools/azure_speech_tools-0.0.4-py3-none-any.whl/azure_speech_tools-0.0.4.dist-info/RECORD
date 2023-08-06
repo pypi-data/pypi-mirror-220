@@ -1,0 +1,12 @@
+azure_speech_tools/__init__.py,sha256=smc0KsYQ8M2FVyyrg8AvJjHtIThNrRm-aaWr0-lL-8I,80
+azure_speech_tools/tools/__init__.py,sha256=smc0KsYQ8M2FVyyrg8AvJjHtIThNrRm-aaWr0-lL-8I,80
+azure_speech_tools/tools/azure_speech_sr.py,sha256=Pa0LrMoRLhbIrWFs69JfMqpiXlVlr4ULxgjj3EKFi-k,1217
+azure_speech_tools/tools/azure_speech_tts.py,sha256=7uv1iDkPUZuXxsWkYOYPJX17ZgkQd8rvMntm7ljoREc,1516
+azure_speech_tools/tools/utils.py,sha256=2IzzgQ2uPO-hwo35es148uhDfuZmkH0ke3mBI46-qT0,568
+azure_speech_tools/yamls/azure_speech_sr.yaml,sha256=px9926FQa1lTA2Dbxp73nGuRoDl4JCzXmfEhs-8hz_c,494
+azure_speech_tools/yamls/azure_speech_tts.yaml,sha256=R1Y45GnHdwnLE6hIeCuztHcr3rsPGPbeHVJI74k0eHo,623
+azure_speech_tools-0.0.4.dist-info/METADATA,sha256=nAX5trHucaqOlikCXJi4TD7RZ6JSftuRNRfTsN9V7IM,293
+azure_speech_tools-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+azure_speech_tools-0.0.4.dist-info/entry_points.txt,sha256=YcnRDgxfTLa2UERnO7qc2scIRw2nqnyRh9ri_HICxEc,78
+azure_speech_tools-0.0.4.dist-info/top_level.txt,sha256=cQEgnQ5bCZQJin3BQxo-04AjUTOpNhr1GyqqeZQv8sE,19
+azure_speech_tools-0.0.4.dist-info/RECORD,,
