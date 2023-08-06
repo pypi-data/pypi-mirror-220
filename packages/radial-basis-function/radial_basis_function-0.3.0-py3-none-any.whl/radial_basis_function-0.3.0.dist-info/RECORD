@@ -1,0 +1,7 @@
+radial_basis_function/__init__.py,sha256=s7NTpWLq4tdTPWKm5hcXaBsKGFcahmo-xSMELfOF70Y,142
+radial_basis_function/pseudo_inversa.py,sha256=mN0C8NiYXyqR4WT673-VbcbO-UVxJMk7GFMHxJupHJ4,2090
+radial_basis_function/rbf.py,sha256=33dZyfSU4d8nXK0F28X0_zDN5_1LMqaNH9ZldH8yFwI,7736
+radial_basis_function-0.3.0.dist-info/LICENSE,sha256=6drEp7mciX4kswFm4JpbrJ87rCkqBe9oCCNU5bkJKY0,1097
+radial_basis_function-0.3.0.dist-info/METADATA,sha256=2KJNBQc6wMnVUyFIOREAgkUgdXN_fDQ5zjy6CASbdO0,3710
+radial_basis_function-0.3.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+radial_basis_function-0.3.0.dist-info/RECORD,,
