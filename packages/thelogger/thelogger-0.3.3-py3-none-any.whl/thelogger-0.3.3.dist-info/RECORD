@@ -1,0 +1,13 @@
+thelogger/__init__.py,sha256=dhhY16P4WEGhomsCWhVx3MWMdQBnHbydtr8V3vVC-ZE,486
+thelogger/__logger.py,sha256=JTyQbecMYpi1n7zKoVe9sohS6tTy87Bx2UnCDHb4-N4,4234
+thelogger/__ver.py,sha256=v27jnS60TKa54IbFVzSTknhDiKMS4J3KCuFTOffZqRU,214
+thelogger/dirty_timer.py,sha256=NxlxGSQ09Q3BRRKYlIRgFahGFgvAn78a9xb-xrNKkXc,1049
+thelogger/sys_meta.py,sha256=FihAGy_9Hfn7abX5tXnCne45o8Ei5jiUWyg-vvHjsbg,4406
+thelogger/notify/__init__.py,sha256=X0cVRenLKIbnOoapwPN9KJvtwXaHycKVb-ZTZ8tmuWQ,140
+thelogger/notify/decorator.py,sha256=kiiVpcCayMsdtGtiOtswHaa_v8OzSQjXnKnoSvrt0Uk,3611
+thelogger/notify/exec_func.py,sha256=uN4mbHtdmG4-djWnEzomVeFfbOJ6jHqlNmydolX5QwU,6990
+thelogger-0.3.3.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+thelogger-0.3.3.dist-info/METADATA,sha256=1SGIefTDy1JbAHKDK1ndwor_OZOzC-GHcKfpI-TgngQ,6692
+thelogger-0.3.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+thelogger-0.3.3.dist-info/top_level.txt,sha256=6qGJ7TaRPKJuypP1ToyTCDT03pcvwWZ-vqDreYaUfjQ,10
+thelogger-0.3.3.dist-info/RECORD,,
