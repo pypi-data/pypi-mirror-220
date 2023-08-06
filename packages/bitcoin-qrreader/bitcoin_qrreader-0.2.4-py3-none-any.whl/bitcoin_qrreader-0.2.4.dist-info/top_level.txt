@@ -1,0 +1,3 @@
+bitcoin_qrreader
+ur
+urtypes
