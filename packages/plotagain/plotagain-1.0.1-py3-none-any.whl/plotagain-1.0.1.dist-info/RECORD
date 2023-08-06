@@ -1,0 +1,10 @@
+plotagain/__init__.py,sha256=vrEPwnRc_6c0Qr2KDLGiimleWCDfV7wHTCO6zlOgIx4,109
+plotagain/iddict.py,sha256=2X7gbcl4xDSvsOIqEDB8vCavfx7sUpt59xSTVVV8uos,2526
+plotagain/pyplotcall.py,sha256=qaemTAt6IwuqbDlP5N1m_KuUoF51hex0KKCdg8W0fuU,7252
+plotagain/saveplotcontext.py,sha256=fTQIcy5NnePQ6ntsK8fLRjWwhOK6gNcIuysm4i160kQ,7839
+plotagain/script_template.txt,sha256=QTpVPBEVrVRTf4TW8_tXFU7k-t6Lotc03r1qvo1IiHc,124
+plotagain/utils.py,sha256=hsaWLkwlsf0DoZmkV6xJVk8zQeqvIAXevWDZZj9vjF8,1930
+plotagain-1.0.1.dist-info/METADATA,sha256=tRnJ4Uhvjvi9zyfvd4ewTU0XG9u86VThrPHdZKn51AA,3939
+plotagain-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+plotagain-1.0.1.dist-info/top_level.txt,sha256=xBXmmSVzG6S473pmK3_q5jzCVYH8Il0TPwVrGnZ72C4,10
+plotagain-1.0.1.dist-info/RECORD,,
