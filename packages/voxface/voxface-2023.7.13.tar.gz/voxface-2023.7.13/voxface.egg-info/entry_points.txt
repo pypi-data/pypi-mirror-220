@@ -1,0 +1,2 @@
+[console_scripts]
+voxface = voxface.__main__:main
