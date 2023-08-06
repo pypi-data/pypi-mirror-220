@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "advert-cafe"
+version = "0.1.2"
+description = ""
+authors = ["George Pamfilis <gpamfilis@gmail.com>"]
+readme = "README.md"
+packages = [{include = "advert_cafe"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+netifaces = "^0.11.0"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
