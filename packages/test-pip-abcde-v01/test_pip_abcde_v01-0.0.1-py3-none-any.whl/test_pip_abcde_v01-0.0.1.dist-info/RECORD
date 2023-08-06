@@ -1,0 +1,7 @@
+test_pip_abcde_v01/__init__.py,sha256=9TD0OSUUN9q84COQ-_dt5bq0sEYwn19b7gCDamviVlE,33
+test_pip_abcde_v01/test_pip_abcde_v01.py,sha256=PBjU5YRZp_SCCG1OEYNJ8nWKzjUYNRSphz4exraP-AU,3379
+test_pip_abcde_v01-0.0.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+test_pip_abcde_v01-0.0.1.dist-info/METADATA,sha256=_xwBSL1QvfKzgToZ8pEiQSu2-ZJiROd4XwxE7lh9y58,522
+test_pip_abcde_v01-0.0.1.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+test_pip_abcde_v01-0.0.1.dist-info/top_level.txt,sha256=OvzL-yC8tAMMQdNhQmNk0MOUrLC0qWG5458tUfwLYTc,19
+test_pip_abcde_v01-0.0.1.dist-info/RECORD,,

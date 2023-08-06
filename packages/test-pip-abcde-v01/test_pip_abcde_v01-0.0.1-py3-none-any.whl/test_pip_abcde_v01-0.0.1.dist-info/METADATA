@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: test-pip-abcde-v01
+Version: 0.0.1
+Summary: A small example package to test pip v01
+Home-page: https://github.com/camiloakv/test-pip-abcde-v01
+Author: Camilo Akimushkin Valencia
+Author-email: camilo.akimushkin@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# test-pip-abcde-v01
+Another try of pip repository
