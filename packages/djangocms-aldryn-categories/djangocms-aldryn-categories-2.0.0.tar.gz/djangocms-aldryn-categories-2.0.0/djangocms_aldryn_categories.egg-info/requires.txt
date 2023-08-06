@@ -1,0 +1,1 @@
+djangocms-aldryn-translation-tools
