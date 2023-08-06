@@ -1,0 +1,9 @@
+python-telegram-bot
+psutil
+numpy
+pandas
+pytz
+beautifulsoup4
+requests
+aiohttp
+websockets
