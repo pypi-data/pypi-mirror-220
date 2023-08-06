@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+anysolve/__init__.py
+anysolve.egg-info/PKG-INFO
+anysolve.egg-info/SOURCES.txt
+anysolve.egg-info/dependency_links.txt
+anysolve.egg-info/not-zip-safe
+anysolve.egg-info/requires.txt
+anysolve.egg-info/top_level.txt
