@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+ocean/__init__.py
+ocean/automl/__init__.py
+ocean/automl/_auto.py
+ocean/automl/_params.py
+ocean/automl/_prep.py
+ocean/automl/_result.py
+ocean_ml.egg-info/PKG-INFO
+ocean_ml.egg-info/SOURCES.txt
+ocean_ml.egg-info/dependency_links.txt
+ocean_ml.egg-info/requires.txt
+ocean_ml.egg-info/top_level.txt
