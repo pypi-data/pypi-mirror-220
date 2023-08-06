@@ -1,0 +1,8 @@
+LICENSE
+README.md
+hide_frames.py
+pyproject.toml
+hide_frames.egg-info/PKG-INFO
+hide_frames.egg-info/SOURCES.txt
+hide_frames.egg-info/dependency_links.txt
+hide_frames.egg-info/top_level.txt
