@@ -1,0 +1,79 @@
+# A full example of model metadata.
+Collections:                                    # Information about the algorithm.
+  - Name: {name}                                # Required. Example: the name of the algorithm, e.g Faster_RCNN.
+    License: {license_name}                     # Required. Example: apache-2.0.
+    Code:
+      URL: {code_url}                           # Required. Links to GitHub algorithm repository code snippet.
+      Version: {version}    
+    Paper:                                      # Optional. URL to the paper, or a dict with paper title, url, image, code and so on.
+      URL: {url}
+      Title: {title}
+    README: {readme_url}                        # Optional. The content of, or a link to the README.md file for the algorithm.
+    Tags:                                       # Optional. Custom Tags.
+        - {tags_0}
+        - {tags_1}
+    Frameworks: {frameworks}    
+    Metadata:                                   # Metadata is a dict of common and custom metadata.
+      Training Data: {training_dataset}         # Optional. Names of dataset on which the models is trained on.
+      Epochs: {epoch}                           # Optional. Number of training epochs.
+      Batch Size: {batch_size}                  # Optional. Input batch size.
+      Training Techniques:                      # Optional. A list of training techniques.
+        - {techiques_0}
+        - {techiques_1}
+      Training Resources: {resources}           # Optional. The hardware used for training.
+      FLOPs: {flops}                            # Optional. The number of FLOPs of the model
+      Parameters: {parameters}                  # Optional. The total number of parameters of the model.
+      Training Time: {training_time}            # Optional. How many hours or days it takes to train.
+      Train time: {train_time}                  # Optional. How many hours or days it takes to train.
+      Training Memory: {training_memory}        # Optional. Video memory consumed for training.
+      Architecture:                             # Optional. A list of architectural features of the model.
+        - {architecture_0}
+        - {architecture_1}
+        - {architecture_2}
+        - {architecture_3}
+    
+Models:                                       # A list of Model dicts.
+  - Name: {name}                                # Required. the name of the model.
+    In Collection: {collection_name}            # Optional. the name of the Collection to which this model belongs.
+    Results:                                    # A list of Result dicts. Result is a dict capturing the evaluation results of the model. 
+      - Task: {task}                            # Required. Name of the task.
+        Dataset: {dataset_name}                 # Required. Name of the dataset.
+        Metrics:                                # Optional. a list of dictionaries with metrics. 
+          - metric_0: {value_0}
+          - metric_1: {value_1}  
+    Weights: {weights}                          # Required. link to download the pretrained weights
+    Training Log:  {log_url}                    # Optional. Training generated logs.    
+    Config: {cofing_url}                        # Optional. Link to the config file used for training
+    Metadata:
+      Training Data: {dataset_name}             # Optional. Names of dataset on which the models is trained on.
+      Epochs: {epoch}                           # Optional. Number of training epochs.
+      Batch Size: {batch_size}                  # Optional. Input batch size.
+      Training Techniques:                      # Optional. A list of training techniques.
+        - {techiques_0}
+        - {techiques_1}
+      Training Resources: {resources}           # Optional. The hardware used for training.
+      FLOPs: {flops}                            # Optional. The number of FLOPs of the model.
+      Parameters: {parameters}                  # Optional. The total number of parameters of the model.
+      Training Time: {training_time}            # Optional. How many hours or days it takes to train.
+      Train time: {train_time}                  # Optional. Single iteration time consumption during training.
+      Training Memory: {training_memory}        # Optional. Video memory consumed for training.
+      Architecture:                             # Optional. A list of architectural features of the model.
+        - {architecture_0}
+        - {architecture_1}
+        - {architecture_2}
+        - {architecture_3}
+      inference time:                           # Optional. Time consumed by inference.
+          value: {value}
+          hardware: {hardware}
+          backend: {backend}
+          batch size: {batch_size}
+          model: {model}
+          resolution: (s,a)            
+    Paper:                                      # Optional. URL to the paper, or a dict with paper title, url, image, code and so on.
+      URL: {url}
+      Title: {title}
+      Image: {image}
+      Code: {code}
+      Alias: {alias}
+      Language: {language}
+    README: {readme_url}                        # Optional. the content of, or a link to the README.md file for the model
