@@ -1,0 +1,4 @@
+aiohttp<4,>=3.7.4
+asn1>=2.4.1
+python-dateutil>=2.8.1
+tenacity>=8.0.1
