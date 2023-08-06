@@ -1,0 +1,12 @@
+cavsiopy/38_EOP_C01.1900-NOW_V2013_0138.txt,sha256=1hLVIv5rDUjgTe6WZcW6-OuiN31TKM-uTL1azTO609E,321345
+cavsiopy/IERS_daily_deltaT.txt,sha256=Z76nMD5yeCgswJu-HYR0uLLLFIpTlgsxgXzQQtKv71Q,3435240
+cavsiopy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cavsiopy/attitude_analysis.py,sha256=2mQdbGtKakA27NxEKKKQXsZhnmi9jSyrP1MLQkICjmg,26322
+cavsiopy/attitude_plotter.py,sha256=UAq0UV1Q7X6XnsEiASJ62p2A4I2AskNnX5OWv2iQmyg,59209
+cavsiopy/ephemeris_importer.py,sha256=HB1WQR_rapEWhCaYEaKMI8mJiNR0DjYwecpiAHCh7bA,27030
+cavsiopy/miscellaneous.py,sha256=U56pRZlUn63q32v7DxkcMrUOPvKBpvSI-VcF8XUu5DA,18225
+cavsiopy/use_rotation_matrices.py,sha256=SGtMP460grPRCd5FNJS8I41AMe--F0s8ssSh8DnbGCA,32219
+cavsiopy-0.9.13.dist-info/METADATA,sha256=Crit72rjBl-BXrXBtn0qhfsmHli99a7LicacXFW8ngs,14733
+cavsiopy-0.9.13.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+cavsiopy-0.9.13.dist-info/licenses/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+cavsiopy-0.9.13.dist-info/RECORD,,
