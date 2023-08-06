@@ -1,0 +1,16 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "qcausality"
+description = "A module for quantum causal discovery and modelling"
+authors = [
+	{name = "Alexei Gilchrist", email = "alexei@entropy.energy"},
+	{name = "Christina Giarmatzi"},
+]
+maintainers = [
+  {name = "Alexei Gilchrist", email = "alexei@entropy.energy"}
+]
+keywords = ["Quantum", "Causality", "Process Tensor"]
+dynamic = ["version"]
