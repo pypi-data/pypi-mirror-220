@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: tinyimagenet
+Version: 0.6
+Summary: Dataset class for PyTorch and the TinyImageNet dataset, with automated download and extraction.
+Home-page: https://github.com/facundoq/tinyimagenet
+Author: Facundo Manuel Quiroga
+Author-email: facundoq@gmail.com
+Project-URL: Bug Tracker, https://github.com/facundoq/tinyimagenet/issues
+Project-URL: Documentation, https://github.com/facundoq/tinyimagenet
+Project-URL: Source Code, https://github.com/facundoq/tinyimagenet
+Keywords: TinyImageNet ImageNet Dataset PyTorch torch torchvision
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torchvision
+
+# torchvision-tinyimagenet
+Dataset class for PyTorch and the TinyImageNet dataset.
+
+# Installation
+
+``` pip install tinyimagenet ```
+
+# How to use
+````
+from tinyimagenet import TinyImageNet
+from pathlib import Path
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
+split ="val"
+dataset = TinyImageNet(Path("~/.torchvision/tinyimagenet/"),split=split)
+n = len(dataset)
+print(f"TinyImageNet, split {split}, has  {n} samples.")
+n_samples = 5
+print(f"Showing info of {n_samples} samples...")
+for i in range(0,n,n//n_samples):
+    image,klass = dataset[i]
+    print(f"Sample of class {klass:3d}, image {image}, words {dataset.idx_to_words[klass]}")
+````
+
+You can also check the [quickstart notebook](https://colab.research.google.com/drive/1FCDsDJg86mCjyeAWOxDW9iF49goWCx4j?usp=sharing)
