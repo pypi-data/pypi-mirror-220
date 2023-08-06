@@ -1,0 +1,6 @@
+/Users/evans/Documents/py-online/pip_test/testforBCIplot/plotfunc.py
+testforBCIplot.egg-info/PKG-INFO
+testforBCIplot.egg-info/SOURCES.txt
+testforBCIplot.egg-info/dependency_links.txt
+testforBCIplot.egg-info/requires.txt
+testforBCIplot.egg-info/top_level.txt
