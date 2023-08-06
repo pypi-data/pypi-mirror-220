@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+fundialogues/fundialogues.egg-info/PKG-INFO
+fundialogues/fundialogues.egg-info/SOURCES.txt
+fundialogues/fundialogues.egg-info/dependency_links.txt
+fundialogues/fundialogues.egg-info/top_level.txt
+fundialogues/utils/__init__.py
+fundialogues/utils/loaders.py
