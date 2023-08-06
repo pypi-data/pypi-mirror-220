@@ -1,0 +1,3 @@
+packaging
+setuptools
+requests~=2.24
