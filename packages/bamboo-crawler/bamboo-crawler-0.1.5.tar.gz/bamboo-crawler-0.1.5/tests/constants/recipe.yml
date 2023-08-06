@@ -1,0 +1,19 @@
+constant_inputter:
+  input:
+    type: ConstantInputter
+    options:
+      value: abc1234
+  process:
+    type: NullProcessor
+  output:
+    type: StdoutOutputter
+
+constant_outputter:
+  input:
+    type: ConstantInputter
+    options:
+      value: abc1234
+  process:
+    type: NullProcessor
+  output:
+    type: StdoutOutputter

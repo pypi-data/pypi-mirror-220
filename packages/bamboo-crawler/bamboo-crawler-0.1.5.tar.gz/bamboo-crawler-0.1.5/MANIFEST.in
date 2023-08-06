@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include bamboo_crawler *.py
+recursive-include tests *.py *.yml *.html

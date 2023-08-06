@@ -1,0 +1,15 @@
+boto3
+cssselect
+lxml
+requests
+PyYAML
+SQLAlchemy
+jinja2
+
+[dev]
+flake8
+nose
+pyformat
+moto[server]
+mypy
+httpbin

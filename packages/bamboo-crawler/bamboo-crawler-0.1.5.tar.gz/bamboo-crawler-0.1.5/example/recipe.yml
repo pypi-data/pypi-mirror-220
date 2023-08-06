@@ -1,0 +1,9 @@
+mytask:
+  input:
+    type: ConstantInputter
+    options:
+      value: http://httpbin.org/robots.txt
+  process:
+    type: HTTPCrawler
+  output:
+    type: StdoutOutputter

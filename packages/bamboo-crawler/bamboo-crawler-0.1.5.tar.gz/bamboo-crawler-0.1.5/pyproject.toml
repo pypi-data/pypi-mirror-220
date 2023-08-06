@@ -1,0 +1,91 @@
+[build-system]
+requires = ["setuptools",  "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "bamboo_crawler/_version.py"
+
+[tool.mypy]
+# https://mypy.readthedocs.io/en/latest/config_file.html
+ignore_missing_imports = true
+disallow_any_decorated = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_unused_ignores = true
+warn_return_any = true
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.black]
+line-length = 79
+
+[tool.flake8]
+max-line-length = 79
+
+[tool.poetry]
+# I use poetry as just a package manager.
+# So, I only write the settings that poetry needs.
+# The actual package metadata is written in setup.cfg.
+# I use pypa/build for packaging.
+name = "bamboo-crawler"
+version = "0.0.0"
+description = ""
+authors = []
+packages = [
+    { include = "bamboo_crawler" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+boto3 = '*'
+cssselect = '*'
+lxml = '*'
+requests = '*'
+PyYAML = '*'
+SQLAlchemy = {extras = ["mypy"], version = ">=2.0.0"}
+types-pyyaml = "*"
+lxml-stubs = "*"
+types-requests = "*"
+boto3-stubs = "*"
+cached-property = {version = "*", python = "<3.8"}
+
+[tool.poetry.group.dev.dependencies]
+moto = {extras = ["server"], version = '*'}
+flake8 = "*"
+mypy = '*'
+httpbin = '*'
+black = "*"
+isort = "*"
+coverage = "*"
+pytest = "*"
+pytest-cov = "*"
+pyupgrade = "*"
+build = "*"
+setuptools-scm = "*"
+importlib-metadata = {version = "*", python = "<3.8"}
+poethepoet = "*"
+
+[tool.poe.tasks]
+test = "pytest"
+coverage-xml = "pytest --cov=bamboo_crawler --doctest-modules --cov-report=xml"
+format = [
+    { cmd = "isort bamboo_crawler"},
+    { cmd = "black bamboo_crawler"},
+    { cmd = "pyupgrade --py38-plus bamboo_crawler/*.py"},
+]
+check = [
+    { cmd = "isort --check-only --diff bamboo_crawler"},
+    { cmd = "black --check --diff bamboo_crawler"},
+    { cmd = "flake8 bamboo_crawler"},
+    { cmd = "mypy bamboo_crawler"},
+]
+build = [
+    { cmd = "python -m build"}
+]
