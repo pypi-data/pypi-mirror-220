@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: kinactive
+Version: 0.1
+Summary: Protein kinases annotation and feature extraction
+Project-URL: Documentation, https://github.com/edikedik/kinactive#readme
+Project-URL: Issues, https://github.com/edikedik/kinactive/issues
+Project-URL: Source, https://github.com/edikedik/kinactive
+Author-email: Ivan Reveguk <ivan.reveguk@gmail.com>
+License-Expression: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: eboruta==0.1
+Requires-Dist: lxtractor==0.1.1
+Requires-Dist: more-itertools
+Requires-Dist: optuna
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: toolz
+Requires-Dist: tqdm
+Requires-Dist: xgboost
+Description-Content-Type: text/x-rst
+
+KinActive
+=========
+
+TBD
