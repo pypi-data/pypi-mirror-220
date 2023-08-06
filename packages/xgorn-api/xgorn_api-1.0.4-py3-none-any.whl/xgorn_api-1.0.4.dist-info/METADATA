@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: xgorn-api
+Version: 1.0.4
+Summary: API Interface for api.xgorn.pp.ua
+Home-page: https://github.com/X-Gorn/xgorn-api
+Author: xgorn
+License: MIT
+Project-URL: Web, https://api.xgorn.pp.ua
+Project-URL: Documentation, https://api.xgorn.pp.ua/docs
+Keywords: api scraper bypasser translator client library python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Noid API
+
+```python
+from xgorn_api import NoidAPI
+
+api = NoidAPI()
+api.api_key = 'your-api-key'
+
+api.bypass.ouo('https://ouo.io/4ZuwGMc')
+```
+
+## Examples
+
+##### Change endpoint to api feature.
+
+For example: `/scrape/instagram`
+
+```python
+api.scrape.instagram('https://www.instagram.com/reel/CqcUdr-ppgT/?igshid=YmMyMTA2M2Y=')
+```
+
+##### Change default api url.
+
+For example: `api.xgorn.eu.org`
+
+```python
+api.base_url = 'https://api.xgorn.eu.org'
+```
+
+##### Making custom request.
+
+For example: `/scrape/likee`
+
+```python
+# GET request
+# method & endpoint: default arguments.
+method = 'get'
+endpoint = '/scrape/likee'
+# url: params because it's **kwargs
+url = 'https://likee.video/@MEKDede/video/7199606118785777185'
+api.make_request(method=method, endpoint=endpoint, url=url)
+```
+
+## Installation
+
+```bash
+pip3 install xgorn-api
+```
