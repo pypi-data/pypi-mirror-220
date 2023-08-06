@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pathgenmap/__init__.py
+pathgenmap/pathgenmap.py
+pathgenmap/pathprocess.py
+pathgenmap.egg-info/PKG-INFO
+pathgenmap.egg-info/SOURCES.txt
+pathgenmap.egg-info/dependency_links.txt
+pathgenmap.egg-info/entry_points.txt
+pathgenmap.egg-info/requires.txt
+pathgenmap.egg-info/top_level.txt
