@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hivclustering
+Version: 1.6.7
+Summary: HIV molecular clustering tools
+Home-page: http://github.com/veg/hivclustering
+Author: Sergei Kosakovsky Pond
+Author-email: spond@ucsd.edu
+License: MIT License
+Platform: UNKNOWN
+Provides-Extra: edgefiltering
+
+UNKNOWN
+
