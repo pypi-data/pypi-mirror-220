@@ -1,0 +1,174 @@
+[project]
+name = "flufl.lock"
+authors = [
+    { name = "Barry Warsaw", email = "barry@python.org" },
+]
+description = "NFS-safe file locking with timeouts for POSIX and Windows"
+readme = "README.rst"
+requires-python = ">=3.8"
+keywords = [
+    "locking",
+    "locks",
+    "lock",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Development Status :: 6 - Mature",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "atpublic",
+    "psutil",
+]
+dynamic = []
+version = "8.0.2"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.urls]
+"Home Page" = "https://flufllock.readthedocs.io"
+Documentation = "https://flufllock.readthedocs.io"
+"Source Code" = "https://gitlab.com/warsaw/flufl.lock.git"
+"Bug Tracker" = "https://gitlab.com/warsaw/flufl.lock/issues"
+
+[tool.pdm.version]
+source = "file"
+path = "src/flufl/lock/__init__.py"
+
+[tool.pdm.build]
+includes = [
+    "src/flufl",
+]
+excludes = [
+    "**/.mypy_cache",
+]
+source-includes = [
+    "docs/",
+    "test/",
+    "tox.ini",
+    "conftest.py",
+]
+
+[tool.pdm.dev-dependencies]
+testing = [
+    "coverage[toml]",
+    "diff-cover",
+    "pytest",
+    "pytest-cov",
+    "sybil",
+]
+qa = [
+    "blue",
+    "mypy",
+    "ruff",
+]
+docs = [
+    "sphinx",
+    "furo",
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov=flufl --cov-report=term --cov-report=xml"
+testpaths = "test docs"
+
+[tool.coverage.run]
+branch = true
+parallel = true
+
+[tool.coverage.report]
+fail_under = 100
+show_missing = true
+
+[tool.coverage.paths]
+source = [
+    "flufl/lock",
+]
+
+[tool.ruff]
+line-length = 79
+src = [
+    "src",
+]
+select = [
+    "B",
+    "D",
+    "E",
+    "F",
+    "I",
+    "RUF100",
+    "UP",
+    "W",
+]
+ignore = [
+    "D100",
+    "D104",
+]
+
+[tool.ruff.per-file-ignores]
+"src/flufl/lock/_lockfile.py" = [
+    "I001",
+]
+
+[tool.ruff.pydocstyle]
+convention = "pep257"
+
+[tool.ruff.isort]
+classes = [
+    "SEP",
+]
+known-first-party = [
+    "flufl.lock",
+]
+lines-after-imports = 2
+lines-between-types = 1
+order-by-type = true
+
+[tool.mypy]
+mypy_path = "src"
+namespace_packages = true
+disallow_any_generics = true
+disallow_subclassing_any = true
+disallow_untyped_calls = false
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = false
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_return_any = true
+warn_unreachable = true
+implicit_reexport = false
+strict_equality = true
+show_error_context = true
+show_column_numbers = true
+show_error_codes = true
+pretty = true
+show_absolute_path = true
+warn_unused_configs = true
+verbosity = 0
+
+[[tool.mypy.overrides]]
+module = [
+    "public",
+    "pytest",
+    "sybil.*",
+    "psutil",
+]
+ignore_missing_imports = true
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
