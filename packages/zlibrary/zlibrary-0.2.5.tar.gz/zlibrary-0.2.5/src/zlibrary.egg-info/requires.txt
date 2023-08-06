@@ -1,0 +1,12 @@
+aiodns
+aiohttp
+aiohttp-socks
+beautifulsoup4
+bs4
+charset-normalizer
+cffi
+Brotli
+lxml
+ujson
+idna
+yarl
