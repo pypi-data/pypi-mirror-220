@@ -1,0 +1,121 @@
+[version]
+path = "src/openllm/__about__.py"
+[metadata]
+allow-direct-references = true
+[build.targets.wheel]
+packages = ["src/openllm", "src/openllm_client"]
+[build.targets.sdist]
+exclude = ["/.github", "/typings", "/examples", "/assets", "/changelog.d", "/tools", ".git"]
+[envs.default]
+dependencies = [
+    # NOTE: To run all hooks
+    "pre-commit",
+    # NOTE: towncrier for changelog
+    "towncrier",
+    # NOTE: Using under ./tools/update-optional-dependencies.py
+    "tomlkit",
+    # NOTE: Using under ./tools/update-readme.py
+    "markdown-it-py",
+    # NOTE: the below includes types for mypy
+    "types-tabulate",
+    "types-Deprecated",
+    "types-PyYAML",
+    "types-decorator",
+    "types-protobuf",
+    "types-python-dateutil",
+    "types-requests",
+    "types-setuptools",
+    "types-six",
+    "types-ujson",
+    "pandas-stubs",
+    "types-Pillow",
+    "types-Pygments",
+    "types-appdirs",
+    "types-colorama",
+    "types-google-cloud-ndb",
+    "types-jsonschema",
+    "types-psutil",
+    "types-pywin32",
+    "types-tqdm",
+    "types-openpyxl",
+]
+[envs.default.scripts]
+changelog = "towncrier build --version main --draft"
+quality = [
+    "./tools/dependencies.py",
+    "./tools/update-readme.py",
+    "./tools/update-config-stubs.py",
+    "./tools/update-models-import.py",
+    "- ./tools/add-license-headers .",
+    "pre-commit run --all-files",
+]
+setup = "pre-commit install"
+typing = ["- pre-commit run mypy {args:-a}", "- pre-commit run pyright {args:-a}"]
+watch-typing = "pyright {args:src/openllm} -w"
+[envs.tests]
+dependencies = [
+    # NOTE: interact with docker for container tests.
+    "docker",
+    # NOTE: Tests strategies with Hypothesis and pytest, and snapshot testing with syrupy
+    "coverage[toml]>=6.5",
+    "filelock>=3.7.1",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-randomly",
+    "pytest-rerunfailures",
+    "pytest-asyncio>=0.21.0",
+    "pytest-xdist[psutil]",
+    "trustme",
+    "hypothesis",
+    "syrupy",
+]
+features = ['flan-t5', 'baichuan']
+skip-install = false
+template = 'tests'
+[envs.tests.scripts]
+_run_script = "pytest --cov --cov-report={env:COVERAGE_REPORT:term-missing} --cov-config=pyproject.toml -vv"
+distributed = "_run_script --reruns 5 --reruns-delay 3 --ignore tests/models -n 3 -r aR {args:tests}"
+models = "_run_script -s {args:tests/models}"
+python = "_run_script --reruns 5 --reruns-delay 3 --ignore tests/models -r aR {args:tests}"
+snapshot-models = "_run_script -s --snapshot-update {args:tests/models}"
+[envs.tests.overrides]
+env.GITHUB_ACTIONS.env-vars = "COVERAGE_REPORT="
+[envs.coverage]
+dependencies = ["coverage[toml]>=6.5", "lxml", "orjson"]
+detached = true
+[envs.coverage.scripts]
+combine = "coverage combine {args}"
+generate-summary = "python tools/generate-coverage.py"
+report-uncovered-html = "coverage html --skip-covered --skip-empty"
+report-xml = "coverage xml"
+write-summary-report = "python tools/write-coverage-report.py"
+[build.targets.wheel.hooks.mypyc]
+dependencies = [
+    "hatch-mypyc>=0.14.1",
+    "types-tabulate",
+    "types-Deprecated",
+    "types-PyYAML",
+    "types-decorator",
+    "types-protobuf",
+    "types-python-dateutil",
+    "types-requests",
+    "types-setuptools",
+    "types-six",
+    "types-ujson",
+    "pandas-stubs",
+    "types-Pillow",
+    "types-Pygments",
+    "types-appdirs",
+    "types-colorama",
+    "types-google-cloud-ndb",
+    "types-jsonschema",
+    "types-psutil",
+    "types-pywin32",
+    "types-tqdm",
+    "types-openpyxl",
+]
+enable-by-default = false
+mypy-args = ["--no-warn-unused-ignores"]
+require-runtime-dependencies = true
+require-runtime-features = ["agents", "chatglm", "opt"]
