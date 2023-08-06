@@ -1,0 +1,8 @@
+setup.py
+hellodemo123/__init__.py
+hellodemo123/hello.py
+hellodemo123.egg-info/PKG-INFO
+hellodemo123.egg-info/SOURCES.txt
+hellodemo123.egg-info/dependency_links.txt
+hellodemo123.egg-info/top_level.txt
+hellodemo123/data/test.txt
