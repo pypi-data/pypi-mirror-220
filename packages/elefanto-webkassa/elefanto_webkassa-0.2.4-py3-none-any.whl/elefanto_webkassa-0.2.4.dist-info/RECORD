@@ -1,0 +1,14 @@
+webkassa/__init__.py,sha256=1IGyV-WKobiAcYlyaqEfo4jJzzOMGkHvcS8qzr8ReHY,488
+webkassa/admin.py,sha256=ViuWiG0dbnaLbspjdDXvBcsmF3wR25KjQA5-kYpiLyo,1656
+webkassa/apps.py,sha256=7YAbmH3-hQ1i7_UI10GyRNg56xTPyXI5AtZDdmRcXFs,236
+webkassa/migrations/0001_initial.py,sha256=vAWdespPIbbL4Oc4hMFh1_tt--Zdg0v9e3O0uUAP8T4,3472
+webkassa/migrations/0002_check_order_number.py,sha256=qah8LdlktarEJNuC3I0fTQc2q0YFflSsAD4dWZYHJ4E,469
+webkassa/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webkassa/models.py,sha256=TNpogyBx68mSB9S8e2EC9ls9s9WhXNljVypLkGgl1VI,3027
+webkassa/serializers.py,sha256=fKY-aXomvP9NKo0uPqLVx6QhkfuMYZ5OL1EXKovfA9k,1204
+webkassa/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webkassa/services/manager.py,sha256=FlUkWsUbx7GGzDGNuIIY76MqdteyWnA_IlTuxlMAyiA,6879
+webkassa/services/password_encryption.py,sha256=JdabWm1QfivUauGmraFzHtdbyg0CVQ7X0WbhL2d_YVA,392
+elefanto_webkassa-0.2.4.dist-info/METADATA,sha256=9TU4P_VmG96CwlFq3X3kwa1Nk-_dI6SpKRbV55DkIAk,695
+elefanto_webkassa-0.2.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+elefanto_webkassa-0.2.4.dist-info/RECORD,,
