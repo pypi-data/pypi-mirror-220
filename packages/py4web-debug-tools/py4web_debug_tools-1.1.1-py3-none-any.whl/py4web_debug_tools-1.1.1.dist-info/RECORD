@@ -1,0 +1,17 @@
+py4web_debug/__about__.py,sha256=q8_5C0f-8mHWNb6mMw02zlYPnEGXBqvOmP3z0CEwZKM,22
+py4web_debug/__init__.py,sha256=BI3EW2n3uCKl6gjqTXefr_b95AiWNw_QwRd3Ojxf0yk,248
+py4web_debug/_internals.py,sha256=Lx_5cfMXMhZHCykbo7QxqDjdOmisqLz5HevDGbX_kaM,527
+py4web_debug/core.py,sha256=q4ywbTDWsnoLS7GRvPTAK6tJ95VHIfuHtZvMYCeUvII,3135
+py4web_debug/debugbar.py,sha256=nIDny_XPP2kZkuXflGTEmGiMqyoBj3lKcV4Xbei60BA,7475
+py4web_debug/dumping.py,sha256=0iPbMzAFfeZh0Sd7AF5oRWvQq4cWE3jMVwY-9zvY3XM,4423
+py4web_debug/env.py,sha256=1n3PWHK3fhSwtVVSFqOmEYETQIGRxh-8VVhpYIS824c,90
+py4web_debug/internals.py,sha256=9U3HrUjgZxasgBNMalOfbmv0kQtSjG3jAhqZPAPcAWA,5147
+py4web_debug/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py4web_debug/wsgi.py,sha256=SnJzcvc07L918Z1LZWkM85OxgFegsi5E5_eQnhEgGPU,271
+py4web_debug/templates/debugbar.html,sha256=gbaBLBJpDIti9QAkDWXRP10_LEvCrQmK1GxFlbsHasA,7169
+py4web_debug/templates/dumpdie.html,sha256=pFjRjs2VBZPo1nyfObCO5kksyQS9q-K4EqPdZNFo9lg,60
+py4web_debug/templates/error_default.html,sha256=OGMvbHWb7xX91GH5Kx9WPXqv93ee7UcII5B-nUu3TYk,868
+py4web_debug/templates/fancy_dumpdie.html,sha256=eaquCyAOM1QU3QMv__fIqgbmyFHOnwd495PMGMVOzo8,532
+py4web_debug_tools-1.1.1.dist-info/METADATA,sha256=TTOaLM--vpZv86LJE5HMQ66_dzF2rZS26mGAj02poYU,4463
+py4web_debug_tools-1.1.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+py4web_debug_tools-1.1.1.dist-info/RECORD,,
