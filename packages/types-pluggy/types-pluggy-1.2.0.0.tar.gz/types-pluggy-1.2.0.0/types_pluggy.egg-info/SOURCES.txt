@@ -1,0 +1,13 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+pluggy-stubs/METADATA.toml
+pluggy-stubs/__init__.pyi
+pluggy-stubs/_hooks.pyi
+pluggy-stubs/_manager.pyi
+pluggy-stubs/_result.pyi
+pluggy-stubs/_tracing.pyi
+types_pluggy.egg-info/PKG-INFO
+types_pluggy.egg-info/SOURCES.txt
+types_pluggy.egg-info/dependency_links.txt
+types_pluggy.egg-info/top_level.txt
