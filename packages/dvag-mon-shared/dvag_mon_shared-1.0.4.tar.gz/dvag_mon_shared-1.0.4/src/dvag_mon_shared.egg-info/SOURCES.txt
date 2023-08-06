@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/dvag_mon_shared/AzureCredentials.py
+src/dvag_mon_shared/KqlClasses.py
+src/dvag_mon_shared/PushgwHeartbeat.py
+src/dvag_mon_shared/__init__.py
+src/dvag_mon_shared/mapping_const.py
+src/dvag_mon_shared.egg-info/PKG-INFO
+src/dvag_mon_shared.egg-info/SOURCES.txt
+src/dvag_mon_shared.egg-info/dependency_links.txt
+src/dvag_mon_shared.egg-info/requires.txt
+src/dvag_mon_shared.egg-info/top_level.txt
