@@ -1,0 +1,9 @@
+LICENSE
+README.md
+apkpatcher
+setup.py
+apkpatcher_cli.egg-info/PKG-INFO
+apkpatcher_cli.egg-info/SOURCES.txt
+apkpatcher_cli.egg-info/dependency_links.txt
+apkpatcher_cli.egg-info/requires.txt
+apkpatcher_cli.egg-info/top_level.txt
