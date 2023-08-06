@@ -1,0 +1,7 @@
+LICENSE.py
+README.txt
+setup.py
+HOLY_BIBLE.egg-info/PKG-INFO
+HOLY_BIBLE.egg-info/SOURCES.txt
+HOLY_BIBLE.egg-info/dependency_links.txt
+HOLY_BIBLE.egg-info/top_level.txt

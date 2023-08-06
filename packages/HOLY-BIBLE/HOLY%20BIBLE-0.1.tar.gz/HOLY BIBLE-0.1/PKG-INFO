@@ -1,0 +1,259 @@
+Metadata-Version: 2.1
+Name: HOLY BIBLE
+Version: 0.1
+Summary: HOLY BIBLE Module that loads an entire HOLY BIBLE, performs searches, and displays related references. It provides functionalities to access specific chapters and verses.
+Author: C. Praiseline Christina
+Author-email: praiseline2021@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.py
+
+Welcome to HOLYBIBLE's Documentation!
+=====================================
+
+Bible Overview
+--------------
+
+This is a HOLY BIBLE that helps in reading and referring the Bible with multiple related search references of input text, providing various functionalities to work with the HOLY BIBLE text. It includes the following functions:
+
+- **Load Bible**: Loads the entire HOLY BIBLE text from a file.
+- **Search Reference**: Performs a search in the HOLY BIBLE text and displays related references based on the input query.
+- **Books**: Retrieves the chapter count for a specific book.
+
+These functions allow users to interact with the HOLY BIBLE text and perform various operations. Developed by C. Praiseline Christina.
+
+Load Bible
+----------
+
+The ``load_bible`` function loads the HOLY BIBLE text from a file and stores it in memory for further processing.
+
+    def load_bible():
+        file_path = r"C:\Users\path\to\bible_file.txt"
+        try:
+            with open(file_path, 'r') as file:
+                bible_text = file.read()
+                text_widget.delete('1.0', tk.END)
+                text_widget.insert(tk.END, bible_text)
+        except FileNotFoundError:
+            text_widget.delete('1.0', tk.END)
+            text_widget.insert(tk.END, "Bible file not found.")
+
+Search Reference
+----------------
+
+The ``search_file`` function performs a search in the loaded HOLY BIBLE text based on the user's input query. It displays a list of related references that match the search query.
+
+	def search_file():
+        search_query = query_entry.get()
+
+        if search_query == '':
+            messagebox.showerror("Error", "Please enter a search query.")
+            return
+
+        try:
+            # Implement search logic here
+            pass
+
+        except Exception as e:
+            messagebox.showerror("Error", str(e))
+
+Books Search
+------------
+
+The ``on_book_selected`` function retrieves the number of chapters for a specific book in the HOLY BIBLE. It returns a list of chapter numbers.
+
+        def on_book_selected(event):
+        selected_book = book_combo.get()
+        chapters = get_chapters(selected_book)
+        chapter_combo['values'] = chapters
+
+Chapters Search
+---------------
+
+The ``on_chapter_selected`` function retrieves the number of chapters for a specific book in the HOLY BIBLE. It returns a list of chapter numbers.
+
+        def on_chapter_selected(event):
+        selected_book = book_combo.get()
+        selected_chapter = chapter_combo.get()
+        verses = get_verses(selected_book, selected_chapter)
+        verse_combo['values'] = verses
+
+Verses Search
+-------------
+
+The ``on_verse_selected`` function retrieves the number of verses for specific chapters in the HOLY BIBLE. It returns a list of verse numbers.
+
+        def on_verse_selected(event):
+        selected_book = book_combo.get()
+        selected_chapter = chapter_combo.get()
+        selected_verse = verse_combo.get()
+
+        verse = get_verse(selected_book, selected_chapter, selected_verse)
+
+        selected_verse_text.delete('1.0', tk.END)
+        selected_verse_text.insert(tk.END, f"Selected Verse: {selected_book} {selected_chapter}:{selected_verse}\n")
+        selected_verse_text.insert(tk.END, f"Verse Text: {verse}\n")
+
+Module 1 Load Bible
+-------------------
+
+This code loads the entire HOLY BIBLE.
+
+        def load_bible():
+        file_path = (file_path, 'r')
+        try:
+            with open(file_path, 'r') as file:
+                bible_text = file.read()
+                text_widget.delete('1.0', tk.END)
+                text_widget.insert(tk.END, bible_text)
+        except FileNotFoundError:
+            text_widget.delete('1.0', tk.END)
+            text_widget.insert(tk.END, "Bible file not found.")
+
+Module 2 Search Reference
+-------------------------
+
+This code results in the multiple related references of the input Word.
+
+        def search_file():
+        search_query = query_entry.get()
+
+        if search_query == '':
+            messagebox.showerror("Error", "Please enter a search query.")
+            return
+
+        try:
+            with open(r"C:\Users\THINK\Desktop\kjv.txt", 'r') as file:
+                bible_text = file.read()
+
+            found_lines = []
+            found_references = []
+            lines = bible_text.split('\n')
+            for index, line in enumerate(lines):
+                if search_query.lower() in line.lower():
+                    found_lines.append(line)
+                    reference = f"Verse {index + 1}"
+                    found_references.append(reference)
+
+            if found_lines:
+                result_text.delete(1.0, tk.END)
+                result_text.insert(tk.END, "Search results:\n")
+                for found_line, found_reference in zip(found_lines, found_references):
+                    result_text.insert(tk.END, f"{found_reference}: {found_line.strip()}\n")
+            else:
+                result_text.delete(1.0, tk.END)
+                result_text.insert(tk.END, "No matching results found.")
+
+        except Exception as e:
+            messagebox.showerror("Error", str(e))
+
+Module 3 Search Books
+---------------------
+
+This code results in the book search from the HOLY BIBLE.
+
+        def on_book_selected(event):
+        selected_book = book_combo.get()
+        chapters = get_chapters(selected_book)
+        chapter_combo['values'] = chapters
+
+Module 4 Search Chapters
+------------------------
+
+This code results in the Chapter search from the HOLY BIBLE.
+
+        def on_chapter_selected(event):
+        selected_book = book_combo.get()
+        selected_chapter = chapter_combo.get()
+        verses = get_verses(selected_book, selected_chapter)
+        verse_combo['values'] = verses
+
+Module 5 Search Verses
+----------------------
+
+This code results in the Verses search from the HOLY BIBLE.
+
+        def on_verse_selected(event):
+        selected_book = book_combo.get()
+        selected_chapter = chapter_combo.get()
+        selected_verse = verse_combo.get()
+
+        verse = get_verse(selected_book, selected_chapter, selected_verse)
+
+        selected_verse_text.delete('1.0', tk.END)
+        selected_verse_text.insert(tk.END, f"Selected Verse: {selected_book} {selected_chapter}:{selected_verse}\n")
+        selected_verse_text.insert(tk.END, f"Verse Text: {verse}\n")
+
+Details about the Software
+---------------------------
+
+Package Name: HOLY BIBLE
+Version: 1.0.0
+
+This is a HOLY BIBLE Module that loads an entire HOLY BIBLE, performs searches, and displays related references. It provides functionalities to access specific chapters and verses. HOLY BIBLE is a package that aims to facilitate the integration of biblical content into Python projects.
+
+Installation Instructions
+-------------------------
+
+To install HOLY BIBLE, you can use pip, the Python package manager. Simply run the following command in your terminal:
+
+       pip install HOLY-BIBLE
+
+Usage Guide
+-----------
+
+Once HOLY BIBLE is installed, you can import it into your Python projects using the following import statement:
+
+       import holy_bible
+
+HOLY BIBLE offers a rich set of functionalities to work with the Bible text. You can retrieve specific verses, search for keywords or phrases, access chapters and books, and more. Detailed usage examples and API documentation can be found in the package's documentation.
+
+API Documentation
+-----------------
+
+The HOLY BIBLE package provides a user-friendly API to interact with the biblical text. The documentation covers all the available methods, classes, and parameters, along with example code snippets to help you get started.
+
+License Information
+-------------------
+
+HOLY BIBLE is released under a software license. You can find the full text of the license in the ``LICENSE`` file included with the package.
+
+Author and Contact Information
+------------------------------
+
+HOLY BIBLE is developed and maintained by C. Praiseline Christina, the founder of God Claved Hallow Ministries. You can contact the author via email at praiseline2021@outlook.com.
+
+Links and References
+--------------------
+
+- `PyPI Package Page <link_to_pypi_package>`
+- Please note that HOLY BIBLE is a package providing access to the biblical text and does not include any religious interpretations or commentary. It aims to facilitate the integration of Bible content into Python applications and projects.
+
+Indices and Tables
+------------------
+
+- Bible Overview
+- Load Bible
+- Search References
+- Books Search
+- Chapter Search
+- Verses Search
+- Module 1 - Load Bible
+- Moddule 2 - Search Reference
+- Module 3 - Search Books
+- Module 4 - Search Chapters
+- Module 5 - Search Verses
+- Index
+- Module Index
+- Search Page
+
+HOLYBIBLE
+---------
+
+God Claved Hallow Ministries
+
+©2023, C. Praiseline Christina. | Powered by God Claved Hallow Ministries 
+
