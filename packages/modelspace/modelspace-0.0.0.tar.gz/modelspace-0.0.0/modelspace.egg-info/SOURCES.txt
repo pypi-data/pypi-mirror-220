@@ -1,0 +1,8 @@
+README.md
+setup.py
+modelspace/__init__.py
+modelspace.egg-info/PKG-INFO
+modelspace.egg-info/SOURCES.txt
+modelspace.egg-info/dependency_links.txt
+modelspace.egg-info/requires.txt
+modelspace.egg-info/top_level.txt
