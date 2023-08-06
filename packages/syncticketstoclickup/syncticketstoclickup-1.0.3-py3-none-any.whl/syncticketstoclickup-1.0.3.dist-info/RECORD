@@ -1,0 +1,10 @@
+syncticketstoclickup/__init__.py,sha256=li_u7ekWY5YPQiHYQaEYo2WdOK7Uea_kCEkv_ffLUes,49
+syncticketstoclickup/clickup.py,sha256=8fZdvJvL3SwTgcwoy621l13C0e0m-QatrxwaZgiNqdk,12057
+syncticketstoclickup/main.py,sha256=iX1j-HAJqf807r75RBzw5VK8RpQ41xHp1RfuuQpKkLE,140
+syncticketstoclickup/zendesk.py,sha256=uZSgQFIlfmimgLsx-GHzMdcOFQVc1KJ0kNkuA0zxuzg,4298
+syncticketstoclickup/zendesk_to_clickup.py,sha256=vkZj58uvNDnXo_JdlYcD3txCjzX6wtMyaYaVNS__w_4,6597
+syncticketstoclickup-1.0.3.dist-info/LICENSE,sha256=64ISIj9aOPHerf23Y26kT58YEKqQlby2TaspT9ZdQyM,1081
+syncticketstoclickup-1.0.3.dist-info/METADATA,sha256=ObgdPMHR4TMSdo4hSW83KchzoMr5Ff6zSrdlq1HkNJ8,1425
+syncticketstoclickup-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+syncticketstoclickup-1.0.3.dist-info/top_level.txt,sha256=a2TfxhZkLP9yu_HGYmiKypfiaATDuw7IGCRc_r_sFho,21
+syncticketstoclickup-1.0.3.dist-info/RECORD,,
