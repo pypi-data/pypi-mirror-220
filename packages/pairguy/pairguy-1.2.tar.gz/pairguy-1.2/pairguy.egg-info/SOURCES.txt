@@ -1,0 +1,11 @@
+README.md
+setup.py
+pairguy/__init__.py
+pairguy/pairguy_Aggregate.py
+pairguy/pairguy_Components.py
+pairguy/pairguy_EquityCurves.py
+pairguy.egg-info/PKG-INFO
+pairguy.egg-info/SOURCES.txt
+pairguy.egg-info/dependency_links.txt
+pairguy.egg-info/requires.txt
+pairguy.egg-info/top_level.txt
