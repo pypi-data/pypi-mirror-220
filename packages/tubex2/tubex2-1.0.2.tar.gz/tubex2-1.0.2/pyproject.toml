@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tubex2"
+version = "1.0.2"
+packages=['tubex2']
+authors = [
+    { name = "Alson5" }
+]
+description = "Quick and easy-to-use package that allows downloading videos from YouTube both synchronously and asynchronously"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Unlicense"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Operating System :: OS Independent",
+]
+keywords = ["youtube", "async", "download"]
+dependencies = [
+    "httpx[http2]"
+]
+[project.urls]
+"Homepage" = "https://github.com/Alsond5/tubex2"
