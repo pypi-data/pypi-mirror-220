@@ -1,0 +1,17 @@
+FedexSDK/FedExSDK.py,sha256=DQc8h5cd5pZpnPDUpz9vxJy8RAw5DdNE1D8sK5tuVqg,3231
+FedexSDK/__init__.py,sha256=VA2zyQeMqxhm9DT7jL8FzSVhnbWQ_dJKuQVkCCDLIFA,55
+FedexSDK/models/AccountNumber.py,sha256=DMDwoe9ClwXimxsh_tYPlLEkG62e4WuJD5xFOWJnjoQ,79
+FedexSDK/models/Address.py,sha256=OfXuAUT5EPoAw8K9s3-x-qZxIaqqcclvw8pNP_r-d-4,1400
+FedexSDK/models/Contact.py,sha256=6ZNelKYgyT7MKLHU1Cx6obQtWEdh10Lmv01vQR9R-WE,2163
+FedexSDK/models/Recipient.py,sha256=Zfc6ykt1ZQF0uSMDyuKuiZ8mjJUcT7roUmNjxo_O_78,297
+FedexSDK/models/Request.py,sha256=oBaLJvSa00ms5UR9LjzvCZ7TLkf5SJuHC0fpmIbJvrE,1345
+FedexSDK/models/RequestedShipment.py,sha256=Wa6_cs4oTa88AXqhXc52d795MJe0OfVOPlAtKymnGO8,6754
+FedexSDK/models/Shipper.py,sha256=KxsqLsYg5XHn5oNtqPPPzwDPRwhVDuts1GsLx5i_TKU,263
+FedexSDK/models/SoldTo.py,sha256=DJuQpQOwiTcTRZIJi5N03RABaE07aT9tIIP6npLMFt4,316
+FedexSDK/models/Tin.py,sha256=urbEeVc0mYVgpuJAAeYJ2rapr-StNPIiDeIuiU8-seM,581
+FedexSDK/models/TotalDeclaredValue.py,sha256=8oSjejHAzH_OcSWb9lSXa0x7udRYhAWY0W6P1hEauCg,300
+FedexSDK/models/__init__.py,sha256=pIli9KnYgb_X_cI4vrzsdHYM-7DgCD9l17D0_dCMfMU,969
+fedex_sdk-0.0.4.dist-info/METADATA,sha256=r2V27JtQe4X0VoH4gljshOpdrhqdP_HQTZR-VQVTq_I,317
+fedex_sdk-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fedex_sdk-0.0.4.dist-info/top_level.txt,sha256=DYO417Xr7-jb7SjQjWp0mM71YOU4TaWd21ztB9usfuI,9
+fedex_sdk-0.0.4.dist-info/RECORD,,
