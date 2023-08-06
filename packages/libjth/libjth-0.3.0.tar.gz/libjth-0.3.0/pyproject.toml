@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "libjth"
+version = "0.3.0"
+authors = [
+
+  { name="J.T. Hartzfeld", email="jth@jthmedia.com" },
+
+]
+description = "J.T. Hartzfeld's Personal Library. You might find it useful, too."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+dependencies = ["auto_all >= 1.4.1"]
+classifiers = ["Programming Language :: Python :: 3",
+"License :: OSI Approved :: MIT License",
+"Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jthfoss/libjth"
+"Bug Tracker" = "https://github.com/jthfoss/libjth/issues"
