@@ -1,0 +1,11 @@
+fly_python_sdk/__init__.py,sha256=zwrXxfxvspBNBNV2ZBgU4U-cZHW1HylGbldT83zlz5g,2055
+fly_python_sdk/copilot/main.py,sha256=arr4PmLEtkWnAIBgi_O2JhFNTvW9O73bMygtGZWcLXc,1186
+fly_python_sdk/copilot/templates/htmx/machines_grid.html,sha256=L5r63fTrk9INE0dObnrlpCEtn0jhWAOPhRalUXEz_-Q,7357
+fly_python_sdk/copilot/templates/index.html,sha256=u6IUsH6p70mPpe-mpZu77KpfKmr0KQlI1SNy1-ZP3PM,938
+fly_python_sdk/exceptions.py,sha256=ZguTr7hj9874bodJIqZV-TY6rndXrkDpYxAWQM_vmc8,1268
+fly_python_sdk/fly.py,sha256=MIKsJHMysYUK0XgSEaoAY4nmbXk-w1AVY52LYLgRjCA,12966
+fly_python_sdk/models.py,sha256=u7CrjqysbePbnD58pAz2bUPHTQAjHkVdkrKHEqh66YI,3543
+fly_python_sdk-0.2.0.dist-info/LICENSE,sha256=d2r2K21Gd_PjkOmoLTjczbTLkKN4lXLrEQazPQzMpqc,1075
+fly_python_sdk-0.2.0.dist-info/METADATA,sha256=QmAw1kZHz43zR5Nvoxqu5WlGLsp6IJ9B0VX9kgryFkA,604
+fly_python_sdk-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+fly_python_sdk-0.2.0.dist-info/RECORD,,
