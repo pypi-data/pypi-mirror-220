@@ -1,0 +1,4 @@
+include README.md
+include exoplot/resources/exoplanets.sqlite3
+include exoplot/resources/example_input_image.jpg
+include exoplot/resources/arial.ttf

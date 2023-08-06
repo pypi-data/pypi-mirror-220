@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exoplot"
+version = "0.2.0"
+description = "Plate solving and plotting exoplanets on your astronomy image."
+readme = "README.md"
+license = {text = "GNU General Public License v3.0" }
+authors = [
+  { name="Nico Vermaas", email="nvermaas@xs4all.nl" },
+]
+
+# Check https://pypi.org/classifiers/ for applicable classifiers
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.10"
+dependencies = [
+    'requests',
+    'astropy',
+    'Pillow',
+]
+
+[project.urls]
+Source = "https://github.com/nvermaas/exoplot"
+
+[project.scripts]
+exoplot = "exoplot.main:main"
+
+[tool.setuptools]
+packages=["exoplot","exoplot.astrometry", "exoplot.database", "exoplot.imaging", "exoplot.services"]
+
