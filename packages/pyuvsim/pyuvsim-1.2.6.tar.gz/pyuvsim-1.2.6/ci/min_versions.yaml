@@ -1,0 +1,26 @@
+name: min_versions
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - astropy==5.2
+  - astropy-healpix==0.6
+  - coverage
+  # specify this version of h5py (the min supported by pyuvdata) to avoid an h5py package issue
+  - h5py==3.1.*
+  - line_profiler
+  - mpi4py==3.0.*
+  - numpy==1.20.*
+  - pip
+  - psutil
+  - python-casacore==3.3.1
+  - pytest
+  - pytest-cov
+  - pyuvdata==2.2.10
+  - pyyaml==5.1.*
+  - scipy==1.3.*
+  - setuptools_scm==7.0.3
+  - pip:
+    - pyradiosky==0.2.0
+    - lunarsky==0.2.1
+    - git+https://github.com/aelanman/analytic_diffuse
