@@ -1,0 +1,6 @@
+algo-ops
+easyocr
+pytesseract
+pyspellchecker
+shapely
+Pillow==9.5.0
