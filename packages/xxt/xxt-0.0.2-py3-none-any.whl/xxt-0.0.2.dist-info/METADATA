@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: xxt
+Version: 0.0.2
+Summary: Library with many uses
+Home-page: 
+Author: Xi Teo
+Author-email: diamondraft1575@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: datetime
+
+# XXT
+
+
+
+XXT is a multi-purpose library
+
+
+
+## Uses
+
+
+
+> - Wait function
+
+> - Clear function
+
+> - Functions to get time and date
+
+> - Classes for numbers and random choices
+
+
+
+## Installation
+
+
+
+```
+
+pip install xxt
+
+```
+
+
+
+## Changelog
+
+
+
+0.0.1 (17/7/2023)
+
+
+
+> - First Release
+
+
+
+0.0.2 (17/07/2023)
+
+
+
+> - Better Documentation
+
+> - Changelog
+
+
+
+
+
+
+
+## Documentation
+
+
+
+#### Number Class
+
+
+
+```py
+
+import xxt
+
+
+
+ten = xxt.Number(10) #Make the object
+
+
+
+print(ten) # Print the traits
+
+print(ten.prime) # Print whether it is a prime or not
+
+print(ten.evenodd) # Print whether it is even or odd
+
+print(ten.numtype) # Print whether it is a float or an integer
+
+print(ten.square) # Print whether it is a square or not
+
+print(ten.cube) # Print whether it is a cube or not
+
+print(ten.palindrome) # Print whether it is a palindrome or not
+
+print(ten.strobogrammatic) # Print whether it is strobogrammatic (when turned upside down is the same)
+
+print(ten.strobogrammaticdifferent) # Print whether it is strobogrammatic different (when turned upside down is a different number)
+
+```
+
+
+
+#### Random Class
+
+
+
+```py
+
+import xxt
+
+
+
+ran = xxt.Random()
+
+list = ["Hello", "World", "How", "Are", "You"]
+
+
+
+print(ran.integer(1, 10)) # Print a random integer between 1 and 10
+
+print(ran.float(1, 10)) # Print a random float between 1, 10
+
+print(ran.choice(list)) # Print a random choice from 'list'
+
+```
+
+
+
+#### Other Functions
+
+
+
+```py
+
+import xxt
+
+
+
+print(f"{xxt.gettime()} on {xxt.getdate()}") # Prints (time) on (date)
+
+xxt.wait(1) #Waits one second
+
+xxt.clear() # Clears console
+
+```
