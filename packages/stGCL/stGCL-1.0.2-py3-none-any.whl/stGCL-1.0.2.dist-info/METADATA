@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: stGCL
+Version: 1.0.2
+Summary: Deciphering spatial domains from spatially resolved transcriptomics with adaptive graph attention auto-encoder
+License: MIT
+License-File: LICENSE
+Requires-Dist: requests
+
+pleaes http:xxx.com

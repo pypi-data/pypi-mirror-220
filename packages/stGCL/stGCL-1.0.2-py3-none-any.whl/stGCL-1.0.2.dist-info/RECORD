@@ -1,0 +1,17 @@
+stGCL/__init__.py,sha256=NGh_s0KCwTfzIcOUx3HmKCcnT20RsvWwA8HB4Nh3Myo,346
+stGCL/advance_deep_graph_infomax.py,sha256=55iGeWi982c1VhzqyvjNU-pid1Kqdia1imZ9M8hEfkc,3860
+stGCL/gat_conv.py,sha256=bVTQNtwVLFIdFhZC7D5mjWFq6QeIVyugiHZZSRDFLBo,9664
+stGCL/image_processing.py,sha256=sUxjZekOmJtZgNbLazBKMSPxR1N36GTUyyszYlB7A2o,7354
+stGCL/image_resnet50.py,sha256=ctxrzevKfDJ3UrbJouLXip37o6HCdvOOIdj_ALKw-H0,1424
+stGCL/inits.py,sha256=xDf31IivLp_pxpDyeYbxxWXZg2RzSMcN2hGGP-aYuyg,1328
+stGCL/modules.py,sha256=SNI_sGirXdiUFoCHt-0Ba_oaG14lhYRDKpBQnDNtqLU,1192
+stGCL/process.py,sha256=lhYHEulamtspfeJGAOU4dMOcpuqw7ETjPt1j7qFnaPA,6286
+stGCL/stGCL_model.py,sha256=USZIpPMjN6MdIfmShme2R5xzskI8DumB2dD0jtWXoDg,7367
+stGCL/train_model.py,sha256=BSl4w4_KNTUnuAIYL7dhfySnz2-NjrF7UZYsGi2Z6Rg,4519
+stGCL/utils.py,sha256=ChxnG5CV-q867OVi9LvuEjJR8jYxzF_5Jhx9ua8qjqM,10739
+stGCL/vit_model.py,sha256=voTYCDO_no8ACpelyU4cdKT9rTFTNr1_UH5SltXqx3w,16271
+stGCL-1.0.2.dist-info/LICENSE,sha256=Cg--8bkvEfKR9D5rFKtMyK6iZTepyWlyqVZ_CyL5Fq0,1070
+stGCL-1.0.2.dist-info/METADATA,sha256=fSSf_wXIRWvjwaYSP_ae-Q2TXC8cn4LRBIx-jr9Bl5A,249
+stGCL-1.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+stGCL-1.0.2.dist-info/top_level.txt,sha256=5I_EKK9cvsnZsDuJNKlhgQ8Q9QFqULfYivYASQCYE88,6
+stGCL-1.0.2.dist-info/RECORD,,
