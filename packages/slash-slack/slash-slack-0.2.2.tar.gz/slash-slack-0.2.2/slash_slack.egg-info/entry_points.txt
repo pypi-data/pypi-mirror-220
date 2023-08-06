@@ -1,0 +1,2 @@
+[console_scripts]
+mock-slack = slash_slack.mock_slack:main
