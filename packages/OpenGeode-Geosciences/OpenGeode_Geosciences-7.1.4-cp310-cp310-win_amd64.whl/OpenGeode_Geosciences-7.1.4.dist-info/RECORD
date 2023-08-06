@@ -1,0 +1,11 @@
+opengeode_geosciences/__init__.py,sha256=w7_ys_rdYFV6X9-DHDK4aHD3C7a7YbuiKhXh-gdoyq0,199
+opengeode_geosciences/explicit.py,sha256=uSrCUigVUNQlZUlZGI6tLpCACmWLqC3zJdI9V9p2L9w,1239
+opengeode_geosciences/implicit.py,sha256=1h6T21wYBxmNpkFTsSbPw-sFx79T_iZGANQRnwCtmho,1239
+opengeode_geosciences/bin/OpenGeode-Geosciences_explicit.dll,sha256=gwsuymNyZsJ4l8QhLpdOh195QWVPfWGk-mm1hw0dhPs,575488
+opengeode_geosciences/bin/OpenGeode-Geosciences_implicit.dll,sha256=gEcASg8GxcOt1Vw4JkR2-hgmPH80znKg0BnoNrUtNWY,482304
+opengeode_geosciences/bin/opengeode_geosciences_py_explicit.cp310-win_amd64.pyd,sha256=aWxudrIzv_u_pSzBCNpIb0zFCIa3xBvw-JzftWXEtxo,429056
+opengeode_geosciences/bin/opengeode_geosciences_py_implicit.cp310-win_amd64.pyd,sha256=R22jV0n6GF05Yf-Zk2x-sj0a1Ve3VuyIAVjnYIaNMAA,376832
+OpenGeode_Geosciences-7.1.4.dist-info/METADATA,sha256=4BUX2lDf2QoOvkj1aXyKQ160Y1ky9lAAo2NLrafQpp8,3209
+OpenGeode_Geosciences-7.1.4.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+OpenGeode_Geosciences-7.1.4.dist-info/top_level.txt,sha256=eFBaUchohZc70xqscdwdB_yif7gMPIL5JXdcDqoHasU,22
+OpenGeode_Geosciences-7.1.4.dist-info/RECORD,,
