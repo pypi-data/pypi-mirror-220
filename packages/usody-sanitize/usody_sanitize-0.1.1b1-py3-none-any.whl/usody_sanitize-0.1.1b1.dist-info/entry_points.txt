@@ -1,0 +1,3 @@
+[console_scripts]
+sanitize=usody_sanitize.cmd_client:run_cmd
+
