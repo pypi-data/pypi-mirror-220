@@ -1,0 +1,11 @@
+beautifulsoup4
+click
+faiss-cpu
+GitPython
+langchain
+loguru
+openai
+prompt-toolkit
+pyyaml
+rich
+tiktoken
