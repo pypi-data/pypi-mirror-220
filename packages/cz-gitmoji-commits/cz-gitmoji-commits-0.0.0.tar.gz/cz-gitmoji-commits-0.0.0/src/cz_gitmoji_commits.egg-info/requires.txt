@@ -1,0 +1,12 @@
+commitizen
+
+[dev]
+pre-commit
+tox
+
+[lint]
+
+[test]
+coverage
+pytest
+pytest-custom-exit-code

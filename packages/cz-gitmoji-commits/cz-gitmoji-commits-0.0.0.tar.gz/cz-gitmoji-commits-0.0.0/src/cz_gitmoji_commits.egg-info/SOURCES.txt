@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+requirements/build.in
+requirements/dev.in
+requirements/test.in
+src/cz_gitmoji_commits.egg-info/PKG-INFO
+src/cz_gitmoji_commits.egg-info/SOURCES.txt
+src/cz_gitmoji_commits.egg-info/dependency_links.txt
+src/cz_gitmoji_commits.egg-info/requires.txt
+src/cz_gitmoji_commits.egg-info/top_level.txt
+src/gitmoji_commits/__init__.py

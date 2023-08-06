@@ -1,0 +1,94 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cz-gitmoji-commits"
+description = "🔖 Commitizen plugin for Gitmoji-based version bumps and changelogs 😜"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  {name = "Kamil Paduszyński", email="paduszyk@gmail.com"},
+]
+keywords = [
+  "commitizen",
+  "gitmoji",
+]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+dynamic = [
+  "version",
+  "dependencies",
+  "optional-dependencies",
+]
+
+[project.urls]
+Repository = "https://github.com/paduszyk/cz-gitmoji-commits"
+
+[tool.setuptools.dynamic.version]
+attr = "gitmoji_commits.__version__"
+
+[tool.setuptools.dynamic.dependencies]
+file = "requirements/build.in"
+
+[tool.setuptools.dynamic.optional-dependencies]
+dev = {file = "requirements/dev.in"}
+lint = {file = "requirements/lint.in"}
+test = {file = "requirements/test.in"}
+
+[tool.black]
+target-version = ["py38", "py39", "py310", "py311"]
+
+[tool.docformatter]
+black = true
+recursive = true
+
+[tool.flake8]
+max-line-length = 88
+extend-exclude = [".venv"]
+extend-ignore = ["E203"]
+
+[tool.isort]
+profile = "black"
+sections = [
+  "FUTURE",
+  "STDLIB",
+  "THIRDPARTY",
+  "FIRSTPARTY",
+  "LOCALFOLDER",
+]
+known_first_party = [
+  "gitmoji_commits",
+]
+
+[tool.mypy]
+exclude = ".venv"
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.coverage.report]
+exclude_also = [
+  "raise NotImplementedError",
+]
+show_missing = true
+skip_covered = true
+skip_empty = true
+
+[tool.pytest.ini_options]
+addopts = [
+  "--suppress-no-test-exit-code",
+]
