@@ -1,0 +1,51 @@
+[project]
+name = "yabci"
+version = "0.2.0"
+authors = [
+  { name="privatize-koala" },
+]
+description = "Yet another beancount importer - import any file formats, with total customization"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Accounting",
+]
+dependencies = [
+    "python-benedict",
+    "beancount",
+    "python-dateutil",
+]
+keywords = ["beancount", "importer"]
+license = {file = "LICENSE"}
+
+[project.urls]
+"Homepage" = "https://codeberg.org/privatize-koala/yabci"
+"Bug Tracker" = "https://codeberg.org/privatize-koala/yabci/issues"
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+# pyproject.toml
+[tool.pytest.ini_options]
+addopts = [
+  "src/",
+  "tests/",
+
+  # -rap to print tests summary even when they are successful
+  # "-rap"
+  "--verbose",
+
+  # otherwise it won't discover doctests
+  "--doctest-modules",
+
+  # print coverage report, do not consider tests directory
+  "--cov=src/",
+]
+asyncio_mode = "strict"
+
+
