@@ -1,0 +1,10 @@
+glypniro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glypniro/cli.py,sha256=kkoO_PIXVRuylWFSRjV9pHQY_6zy7J8Twc4tZNzFv3c,14001
+glypniro/common.py,sha256=rDv35GQviCroYV1UDr_nr5d5PyYKZEE31cn0YgI1UhQ,49474
+glypniro/reformat.py,sha256=0ptOkY7VY-ShvrOZ9rL4Icn63qpg4JpOTVLlvhChe_M,6572
+glypniro/reformat_skyline.py,sha256=xqHph8l6F9kVjvic90C4oQI0oufIB4Ywwz_naoA_NXQ,2597
+glypniro-0.1.0.dist-info/entry_points.txt,sha256=iUG9_SSYbgWr8pYXUSW9llaw-RLAxEa9Mq7wZ378_lk,137
+glypniro-0.1.0.dist-info/LICENSE,sha256=eDO7ITwpfzi0JAQqz9yHnzqCAuF7YF70g-aJnwTPnTc,1087
+glypniro-0.1.0.dist-info/METADATA,sha256=H8wJDF_9K8WA3u8PW5xguqPUloe_ZegVA9tOIKekNDM,8073
+glypniro-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+glypniro-0.1.0.dist-info/RECORD,,
