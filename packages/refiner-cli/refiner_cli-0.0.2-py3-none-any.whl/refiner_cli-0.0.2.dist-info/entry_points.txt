@@ -1,0 +1,2 @@
+[console_scripts]
+refiner = refiner_cli.cli:cli
