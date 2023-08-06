@@ -1,0 +1,61 @@
+constants:
+  node_types:
+    symlink:
+      type_char: l
+      type_suffix: "@"
+      color: null
+      icon: null
+    dir:
+      type_char: d
+      type_suffix: "/"
+      color: cyan
+      icon: folder
+    fifo:
+      type_char: p
+      type_suffix: "|"
+      color: null
+      icon: null
+    socket:
+      type_char: s
+      type_suffix: "="
+      color: null
+      icon: null
+    char_device:
+      type_char: c
+      type_suffix: null
+      color: null
+      icon: null
+    block_device:
+      type_char: b
+      type_suffix: null
+      color: null
+      icon: null
+    file:
+      type_char: "[dim]-[/]"
+      type_suffix: null
+      color: null
+      icon: null
+    unknown:
+      type_char: "[dim red]?[/]"
+      type_suffix: "[dim red]?[/]"
+      color: null
+      icon: null
+    broken: # only applies to broken symlinks; does not support `icon` and `type_char`
+      type_suffix: "⚠"
+      color: red
+  tree:
+    pipe_space: "│ "
+    space_space: "  "
+    tee_dash: "├─"
+    bend_dash: "└─"
+  permission_styles:
+    r: yellow
+    w: red
+    x: green
+    t: magenta
+    T: magenta
+    s: magenta
+    S: magenta
+  spacer:
+    name: " "
+    value: " "
