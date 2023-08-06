@@ -1,0 +1,4 @@
+[console_scripts]
+secrets = secrets_vault.__main__:cli
+secrets-vault = secrets_vault.__main__:cli
+
