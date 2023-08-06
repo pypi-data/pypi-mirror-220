@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gptree.egg-info/PKG-INFO
+gptree.egg-info/SOURCES.txt
+gptree.egg-info/dependency_links.txt
+gptree.egg-info/entry_points.txt
+gptree.egg-info/requires.txt
+gptree.egg-info/top_level.txt
