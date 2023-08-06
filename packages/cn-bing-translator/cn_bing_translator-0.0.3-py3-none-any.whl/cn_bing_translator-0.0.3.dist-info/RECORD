@@ -1,0 +1,9 @@
+cn_bing_translator/__init__.py,sha256=pqJ5a3SAieatVCL3b-buoDWpNeL7X3z6qz1ZIL4BvrU,98
+cn_bing_translator/exceptions.py,sha256=rKjcYFsOoDKF9NOyBqvRUzoFAImS_gW3XpljxggjOpg,647
+cn_bing_translator/requesttype.py,sha256=9Ut4K0Dk1TkA69HL0dY-AmVFH47J63lCFnWYAOS0lgg,157
+cn_bing_translator/translator.py,sha256=MKj3vP8FTqD3r4s2FzJGhWVk3iP6lkk4SdpuqjxTrB4,5329
+cn_bing_translator-0.0.3.dist-info/LICENSE,sha256=J0J1NxLHKSGK7CZNkMsL8TV8qx8Oxv1mP5jni6QIQvM,1088
+cn_bing_translator-0.0.3.dist-info/METADATA,sha256=9OHmo1K_NWVqACmSlKBMLRDtlyEBA1OKJHomFumca7U,2698
+cn_bing_translator-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cn_bing_translator-0.0.3.dist-info/top_level.txt,sha256=pBbj28dBt_btjRlZDI8c381kw-cFcJ9pmdiwVPr-N94,19
+cn_bing_translator-0.0.3.dist-info/RECORD,,
