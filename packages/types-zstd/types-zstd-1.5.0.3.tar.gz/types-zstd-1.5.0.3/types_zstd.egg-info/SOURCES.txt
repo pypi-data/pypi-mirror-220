@@ -1,0 +1,9 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+types_zstd.egg-info/PKG-INFO
+types_zstd.egg-info/SOURCES.txt
+types_zstd.egg-info/dependency_links.txt
+types_zstd.egg-info/top_level.txt
+zstd-stubs/METADATA.toml
+zstd-stubs/__init__.pyi
