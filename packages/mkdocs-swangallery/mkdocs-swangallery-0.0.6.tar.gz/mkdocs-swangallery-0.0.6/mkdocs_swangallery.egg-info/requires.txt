@@ -1,0 +1,5 @@
+mkdocs
+nbconvert>=7
+ipython_genutils
+nbformat
+bs4

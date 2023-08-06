@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+swangallery = mkdocs_swangallery:SwanGallery
