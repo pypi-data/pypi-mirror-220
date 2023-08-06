@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: otter_submit
+Version: 0.1.0
+Summary: A JupyterLab extension used to submit notebooks for grading to otter-service.
+Project-URL: Homepage, https://github.com/data-8/otter-submit
+Project-URL: Bug Tracker, https://github.com/data-8/otter-submit/issues
+Project-URL: Repository, https://github.com/jupyterlab/extension-examples.git
+Author: Project Jupyter Contributors
+License: BSD-3-Clause License
+License-File: LICENSE
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 4
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Otter Submit
+
+This JupyterLab extension places a "Submit" button in the Jupyter Notebook header. The submit button is used to submit a notebook to otter-service for grading.
+
+## Development
+Create your environment however you like:
+- mamba create -n otter-submit -c conda-forge python==3.11
+- mamba activate otter-submit
+
+Make changes and run these commands:
+- python3 -m pip install -ve .
+- jlpm run build
+- jupyter lab
+
