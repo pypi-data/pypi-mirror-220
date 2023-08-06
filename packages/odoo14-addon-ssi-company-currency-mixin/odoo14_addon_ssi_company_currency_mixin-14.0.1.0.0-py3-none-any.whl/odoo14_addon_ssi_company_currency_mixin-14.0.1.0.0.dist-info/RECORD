@@ -1,0 +1,10 @@
+odoo/addons/ssi_company_currency_mixin/README.rst,sha256=7ME3kwpH4jSfxJf36DNEmGMZfHnlyQl1HR3OI-gWvco,1192
+odoo/addons/ssi_company_currency_mixin/__init__.py,sha256=X3ayW9k4OH3xqib3X0KEzYY9_pqaAhP2YdhFFVEJSvo,181
+odoo/addons/ssi_company_currency_mixin/__manifest__.py,sha256=1bdQP2zKPwVM7SFfRsSpAE1j3-u3RaOPVgrvcdqyui8,443
+odoo/addons/ssi_company_currency_mixin/models/__init__.py,sha256=EmOdp6pTESqdctmQy1z0el7h0D8DL_nfI0nszb1gdO8,197
+odoo/addons/ssi_company_currency_mixin/models/mixin_company_currency.py,sha256=x3wXIELevd5d19qc1JaqIfJjgSgB3Jo6cSenVdHUSnA,800
+odoo/addons/ssi_company_currency_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_company_currency_mixin-14.0.1.0.0.dist-info/METADATA,sha256=JoL520Ayu653QQOkqW2QRHceUJD6KjNqX0Q9mhZTQJ8,1706
+odoo14_addon_ssi_company_currency_mixin-14.0.1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_ssi_company_currency_mixin-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_company_currency_mixin-14.0.1.0.0.dist-info/RECORD,,
