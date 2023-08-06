@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="test_multiple_approval_view_tree" model="ir.ui.view">
+        <field name="name">test.multiple.approval.mixin.tree</field>
+        <field name="model">test.multiple_approval_mixin</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="id" />
+                <field name="display_name" />
+                <field name="active" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="test_multiple_approval_view_form" model="ir.ui.view">
+        <field name="name">test.multiple.approval.mixin.form</field>
+        <field name="model">test.multiple_approval_mixin</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_confirm"
+                        type="object"
+                        string="Confirm"
+                        class="oe_highlight"
+                        attrs="{'invisible':[('state','!=','draft')]}"
+                        confirm="Confirm Data. Are you sure?"
+                    />
+                    <button
+                        name="action_done"
+                        type="object"
+                        string="Done"
+                        class="oe_highlight"
+                        attrs="{'invisible':[('state','!=','open')]}"
+                        confirm="Done Data. Are you sure?"
+                    />
+
+                    <button
+                        name="action_request_approval"
+                        string="Request Approval"
+                        attrs="{'invisible': ['|','|',('need_validation', '!=', True),('rejected','=',True),('state','not in',['confirm'])]}"
+                        type="object"
+                        confirm="Request Approval Data. Are you sure?"
+                    />
+
+                    <button
+                        name="action_approve_approval"
+                        string="Approve"
+                        attrs="{'invisible': ['|', '|', '|',
+                         ('approved', '=', True), ('state', 'not in', ['confirm']),
+                         ('rejected', '=', True), ('approval_ids', '=', [])]}"
+                        type="object"
+                        class="oe_highlight"
+                        confirm="Approve Data. Are you sure?"
+                    />
+                    <button
+                        name="action_reject_approval"
+                        string="Reject"
+                        attrs="{'invisible': ['|', '|', '|',
+                         ('approved', '=', True), ('state', 'not in', ['confirm']),
+                         ('rejected', '=', True), ('approval_ids', '=', [])]}"
+                        type="object"
+                        confirm="Reject Data. Are you sure?"
+                    />
+
+                    <button
+                        name="action_cancel"
+                        type="object"
+                        string="Cancel"
+                        class="oe_highlight"
+                        attrs="{'invisible':[('state','in',['cancel','reject'])]}"
+                        confirm="Cancel Data. Are you sure?"
+                    />
+                    <button
+                        name="action_restart"
+                        type="object"
+                        string="Restart"
+                        class="oe_highlight"
+                        attrs="{'invisible':[('state','not in',['cancel','reject'])]}"
+                        confirm="Restart Data. Are you sure?"
+                    />
+
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,confirm,open,done"
+                    />
+                </header>
+                <field name="need_validation" invisible="1" />
+                <field name="approved" invisible="1" />
+                <field name="rejected" invisible="1" />
+                <sheet>
+                    <div
+                        class="oe_right oe_button_box"
+                        style="width: 300px;"
+                        name="buttons"
+                    >
+                    </div>
+                    <div name="header" class="oe_left" style="width: 500px;">
+                        <div name="header_1" class="oe_title" style="width: 500px;">
+                            <label for="name" class="oe_edit_only" />
+                            <h1>
+                                <field name="name" class="oe_edit_only" />
+                                <field name="display_name" class="oe_read_only" />
+                            </h1>
+                        </div>
+                    </div>
+
+                    <group>
+                        <group name="left">
+                        </group>
+                        <group name="right">
+                            <field name="date" />
+                            <field name="active" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="page_note" string="Notes">
+                            <field name="notes" nolabel="1" />
+                        </page>
+                        <page string="Approvals" name="tier_validation">
+                            <group name="tier_validation_1" colspan="4" col="2">
+                                <field name="approval_template_id" />
+                                <button
+                                    name="action_reload_approval_template"
+                                    string="Reload Template"
+                                    class="oe_highlight"
+                                    type="object"
+                                />
+                                <newLine />
+                                <field
+                                    name="active_approver_partner_ids"
+                                    widget="many2many_tags"
+                                />
+                            </group>
+                            <group name="tier_validation_2" colspan="4" col="2">
+                                <button
+                                    name="action_reload_approval"
+                                    string="Reload Approval"
+                                    class="oe_highlight"
+                                    type="object"
+                                />
+                                <newLine />
+                                <field
+                                    name="approval_ids"
+                                    attrs="{'invisible':[('approval_ids', '=', [])]}"
+                                    nolabel="1"
+                                    readonly="1"
+                                />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field
+                        name="message_follower_ids"
+                        widget="mail_followers"
+                        groups="base.group_user"
+                    />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="test_multiple_approval_mixin_action" model="ir.actions.act_window">
+        <field name="name">Test Multiple Approvals Mixin</field>
+        <field name="res_model">test.multiple_approval_mixin</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="test_multiple_approval_mixin_menu"
+        name="Test Multiple Approvals"
+        parent="ssi_multiple_approval_mixin.menu_multiple_approval"
+        action="test_multiple_approval_mixin_action"
+        sequence="100"
+    />
+</odoo>
