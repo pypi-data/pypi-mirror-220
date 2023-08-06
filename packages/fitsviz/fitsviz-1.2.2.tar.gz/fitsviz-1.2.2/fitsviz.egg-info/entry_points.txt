@@ -1,0 +1,2 @@
+[console_scripts]
+fitsviz = fitsviz.__main__:fitsviz
