@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+pypbireport/__init__.py
+pypbireport.egg-info/PKG-INFO
+pypbireport.egg-info/SOURCES.txt
+pypbireport.egg-info/dependency_links.txt
+pypbireport.egg-info/requires.txt
+pypbireport.egg-info/top_level.txt
+pypbireport/constants/bookmarks.py
+pypbireport/constants/charts.py
+pypbireport/constants/shapes.py
+pypbireport/constants/structures.py
+pypbireport/functions/functions.py
+pypbireport/pbi/pbifile.py
+pypbireport/pbi/pbireport.py
