@@ -1,0 +1,14 @@
+harpia/__init__.py,sha256=ovAICgDLH1mufa378NBKxHEQ3_moaHZJv29EqByuZdU,1105
+harpia/tropomi/__init__.py,sha256=jrvZ--rsZaNB7UpTYrujwx7o58W0em4C58L_ORIrbzg,1101
+harpia/tropomi/no2/__init__.py,sha256=kM2PspRSkzuRjrcnIzyqlC_P4r7uctpBlHximXKEEqw,1107
+harpia/tropomi/no2/converter.py,sha256=7AsExMlW5Aw2SDzJwnkLyr0hle-VICIUkcxV4pMeVMg,6881
+harpia/tropomi/no2/lib/raster_template_130w60w20n55n_005.tif,sha256=-CRcBjrELgKjSa5tN1rtdse-npgLySwpKV4Eull_kLk,7844566
+harpia/tropomi/no2/lib/raster_template_130w60w20n55n_010.tif,sha256=SSNRMHVAZ5WUPnB5xYe609JnB4AYGaUz4jmZPRONR-Y,1970880
+harpia/tropomi/no2/lib/raster_template_130w60w20n55n_025.tif,sha256=wfHCkIfgrXCZ9QZeSnWDPgrIVBhgXdk6apaBXtDCPj8,317616
+harpia/tropomi/no2/lib/raster_template_130w60w20n55n_050.tif,sha256=kq4cG-FF2SOMbDVo1fxE4iWH1j5_BgQmUdUwMvxPwzk,78826
+harpia/tropomi/no2/lib/raster_template_130w60w20n55n_100.tif,sha256=AQCw7fOYiTa6MPFQXzPpnJoJkF9_dU2ox-dh9mVu_ZY,19984
+harpia-1.4.dist-info/LICENSE,sha256=uQav-R7HMD5ZQaZgFoKKfRv4RrVgZ7QA_DUgPZDDkWk,1061
+harpia-1.4.dist-info/METADATA,sha256=QNREECPYNVFVMt8foMG88Y_DgHXYIVmorfecCaFYSUU,837
+harpia-1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+harpia-1.4.dist-info/top_level.txt,sha256=Mf7a7D1E2gqNIemwiINgrcwu2bqB3YwAgkJ50ZcIVpI,7
+harpia-1.4.dist-info/RECORD,,
