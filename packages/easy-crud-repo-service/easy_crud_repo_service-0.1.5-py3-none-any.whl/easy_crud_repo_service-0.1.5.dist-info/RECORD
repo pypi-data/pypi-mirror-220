@@ -1,0 +1,14 @@
+easy_crud_repo_service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easy_crud_repo_service/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easy_crud_repo_service/model/car.py,sha256=MSJbfQcU7e0JPj4_ckyQspcOjj993HSepnwAqf6JnZQ,848
+easy_crud_repo_service/model/order.py,sha256=5oSmAFJ1NzDWBUMzbj46kmIgan24E441dTf9anqlHn8,141
+easy_crud_repo_service/model/player.py,sha256=sLTb3MH6NKmML1wnZu6I3l6dnluM-kpN8-iUgBYgGK0,183
+easy_crud_repo_service/model/team.py,sha256=SspyCaRB81BgwNH_SfSYpBaQwNuNSVdWYVxfJz2OzZE,146
+easy_crud_repo_service/repo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easy_crud_repo_service/repo/connections/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easy_crud_repo_service/repo/connections/builders.py,sha256=4DgFiUZUsxYFF76yjM7OA4oYQBQMii8P60AjObXTEFM,3974
+easy_crud_repo_service/repo/connections/get_connection_pool.py,sha256=owAE6ej-s8MAJqZNTinosUPMlYK-QCxk3WyPQyyk9RQ,1121
+easy_crud_repo_service/repo/crud_repo.py,sha256=H-H4sa0-hs3YzjXsUr_V3H1Z3bETHhc7K4zdW3wbyiQ,5989
+easy_crud_repo_service-0.1.5.dist-info/METADATA,sha256=2Bym7VAJAT6EFLN0lB7xad06Ib6luAKjn_f24iElqAU,9862
+easy_crud_repo_service-0.1.5.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+easy_crud_repo_service-0.1.5.dist-info/RECORD,,
