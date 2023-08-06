@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: vna
+Version: 0.0.1
+Summary: Instrument control library for the PicoVNA 106 and PicoVNA 108
+Home-page: http://picotech.com
+Author: AAI Robotics Ltd
+Author-email: help@aairobotics.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7
