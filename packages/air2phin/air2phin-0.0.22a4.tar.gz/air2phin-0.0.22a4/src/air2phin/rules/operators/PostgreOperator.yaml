@@ -1,0 +1,66 @@
+name: PostgresOperator
+description: The configuration for migrating Airflow PostgresOperator to DolphinScheduler SQL task.
+
+migration:
+  module:
+    - action: replace
+      src: airflow.providers.postgres.operators.postgres.PostgresOperator
+      dest: pydolphinscheduler.tasks.sql.Sql
+    - action: add
+      module: pydolphinscheduler.resources_plugin.Local
+  parameter:
+    - action: replace
+      src: task_id
+      dest: name
+    - action: replace
+      src: postgres_conn_id
+      dest: datasource_name
+    - action: add
+      arg: resource_plugin
+      default:
+        type: code
+        value: Local(prefix="/path/to/dir/")
+
+examples:
+  bare_sql:
+    description: |
+      The example of migrating `airflow.providers.postgres.operators.postgres.PostgresOperator` with
+      bare sql statement as parameter ``sql``.
+    src: |
+      from airflow.providers.postgres.operators.postgres import PostgresOperator
+
+      task = PostgresOperator(
+          task_id='postgres-sql',
+          postgres_conn_id='postgres_default_conn',
+          sql='select * from table',
+      )
+    dest: |
+      from pydolphinscheduler.resources_plugin import Local; from pydolphinscheduler.tasks.sql import Sql
+
+      task = Sql(
+          name='postgres-sql',
+          datasource_name='postgres_default_conn',
+          sql='select * from table',
+      resource_plugin=Local(prefix="/path/to/dir/"),
+      )
+  sql_file:
+    description: |
+      The example of migrating `airflow.operators.spark_sql_operator.SparkSqlOperator` with sql file as
+      parameter ``sql``.
+    src: |
+      from airflow.providers.postgres.operators.postgres import PostgresOperator
+
+      task = PostgresOperator(
+          task_id='postgres-sql',
+          postgres_conn_id='postgres_default_conn',
+          sql='test.sql',
+      )
+    dest: |
+      from pydolphinscheduler.resources_plugin import Local; from pydolphinscheduler.tasks.sql import Sql
+
+      task = Sql(
+          name='postgres-sql',
+          datasource_name='postgres_default_conn',
+          sql='test.sql',
+      resource_plugin=Local(prefix="/path/to/dir/"),
+      )
