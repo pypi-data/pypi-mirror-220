@@ -1,0 +1,10 @@
+simplekivy/__init__.py,sha256=szck4kJvpNHkHBqyIbplHO3QcPn2VIY7pzi2cMdMBGU,35
+simplekivy/simplekivy.py,sha256=hV1sK1ezjJBfJjq_WDvDyL70CNevdxIq9ZxWtK9hrGQ,912
+simplekivy/widgets/__init__.py,sha256=I88Ntfud_Pro5VFzkeHPcjfwc_6cHgZC-TgYoNBsmO8,37
+simplekivy/widgets/app.py,sha256=u_EUZ9QOfKRGLKr1prlLlfggEUF_qF9fKoNMRq84J7A,3222
+simplekivy/widgets/main.kv,sha256=l9ilseSqgkrsSALRFv3boUvKtpD5-XTaIRcSEx1Vbjg,443
+simplekivy-0.0.5.dist-info/LICENSE,sha256=48CE_p5d8YvgNhVnoGIdiACNf4a8fSiLMfEo5exmhmo,1058
+simplekivy-0.0.5.dist-info/METADATA,sha256=BWN4cB4zcJ3ETR5YEfCZzoGBoBkZSQ3RyUMl4uIGpuA,3383
+simplekivy-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+simplekivy-0.0.5.dist-info/top_level.txt,sha256=QJqOKGUuG5lfRCvgd3jh4ayY0_8zILZrYPi9HkZzTFQ,11
+simplekivy-0.0.5.dist-info/RECORD,,
