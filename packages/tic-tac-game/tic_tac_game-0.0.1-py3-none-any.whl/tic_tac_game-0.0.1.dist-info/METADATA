@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tic-tac-game
+Version: 0.0.1
+Summary: A sample test package
+Home-page: https://github.com/BehruzYBF/tic_tac_game
+Author: Bekhruz
+Author-email: iutstudent2022@gmail.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.MIT
+
+﻿# Welcome to TIC TAC TOE game
+
+Hi! This program is all about Tic Tac Toe game. It has two options: 
+1. Versus Bot -> With this mode you can play tic tac toe game against computer. Computer plays with random function. So it does not know what it is doing. 
+2. Play Friend -> With this mode you can play tic tac toe game with your friend. 
+ 
+This game has nice looking UI with the help of Tkinter module. Just play! 		
+
+
+
