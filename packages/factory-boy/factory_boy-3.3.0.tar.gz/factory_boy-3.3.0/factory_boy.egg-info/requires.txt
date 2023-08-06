@@ -1,0 +1,22 @@
+Faker>=0.7.0
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[dev]
+coverage
+Django
+flake8
+isort
+Pillow
+SQLAlchemy
+sqlalchemy_utils
+mongoengine
+wheel>=0.32.0
+tox
+zest.releaser[recommended]
+
+[doc]
+Sphinx
+sphinx_rtd_theme
+sphinxcontrib-spelling
