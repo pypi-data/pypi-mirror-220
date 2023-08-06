@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: CloudEdgeAssetsOptimizer
+Version: 0.1.3
+Summary: # CloudEdgeAssetsOptimizer   
+Home-page: https://github.com/pauterv/CloudEdgeAssetsOptimizer
+Author: Paulius Tervydis
+Author-email: Paulius.Tervydis@ktu.lt
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: Pillow
+
+# CloudEdgeAssetsOptimizer   
+    
+CloudEdgeAssetsOptimizer is a software tool designed to evaluate and 
+optimize the assets within a Cloud and Edge computing network. Its primary 
+purpose is to provide insights and estimations to ensure efficient resource
+allocation and decision-making. 
+
+The developed software simulates the queues in Cloud and Edge devices, 
+providing waiting times, battery consumption of Edge devices, and Servers' 
+load. With a fore mentioned parameters available, valuable insights 
+for decision-making can be obtained to optimize the network. Alternatively 
+automated optimization can be performed using the embedded functions. 
+CloudEdgeAssetsOptimizer aims to optimize operational efficiency, 
+enhance resource utilization, and ultimately improve overall system 
+performance. 
+
+CloudEdgeAssetsOptimizer functions utilize queueing theory principles, 
+therefore it also enables users to explore and fine-tune system parameters 
+across diverse domains,including telecommunication networks, transportation
+and manufacturing systems.
+
+Author: Paulius Tervydis
+ 
+Date: 2023-07-23
