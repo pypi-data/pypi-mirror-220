@@ -1,0 +1,16 @@
+aioconsole
+aiofiles
+aiohttp
+autopep8
+benimang==0.4.2
+build
+colorama
+nest-asyncio
+orjson
+portalocker
+pretty_errors
+pyperclip
+qiniu
+twine
+typer
+tzdata
