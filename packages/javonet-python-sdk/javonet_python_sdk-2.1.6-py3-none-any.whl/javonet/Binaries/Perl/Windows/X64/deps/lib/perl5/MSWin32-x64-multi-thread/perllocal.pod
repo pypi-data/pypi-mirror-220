@@ -1,0 +1,198 @@
+=head2 Wed Jul 19 14:19:16 2023: C<Module> L<PPI|PPI>
+
+=over 4
+
+=item *
+
+C<installed into: D:\a\1\s\src\perl\deps\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.276>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Jul 19 14:19:39 2023: C<Module> L<Want|Want>
+
+=over 4
+
+=item *
+
+C<installed into: D:\a\1\s\src\perl\deps\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.29>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Jul 19 14:19:44 2023: C<Module> L<PPI::XS|PPI::XS>
+
+=over 4
+
+=item *
+
+C<installed into: D:\a\1\s\src\perl\deps\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.910>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Jul 19 14:19:46 2023: C<Module> L<Nice::Try|Nice::Try>
+
+=over 4
+
+=item *
+
+C<installed into: D:\a\1\s\src\perl\deps\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: v1.3.4>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Jul 19 14:19:48 2023: C<Module> L<Attribute::Util|Attribute::Util>
+
+=over 4
+
+=item *
+
+C<installed into: D:\a\1\s\src\perl\deps\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.07>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Jul 19 14:19:51 2023: C<Module> L<Data::Cmp|Data::Cmp>
+
+=over 4
+
+=item *
+
+C<installed into: D:\a\1\s\src\perl\deps\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.010>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Jul 19 14:19:56 2023: C<Module> L<autobox|autobox>
+
+=over 4
+
+=item *
+
+C<installed into: D:\a\1\s\src\perl\deps\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: v3.0.1>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Jul 19 14:20:00 2023: C<Module> L<Scalar::Util::Numeric|Scalar::Util::Numeric>
+
+=over 4
+
+=item *
+
+C<installed into: D:\a\1\s\src\perl\deps\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.40>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Jul 19 14:20:05 2023: C<Module> L<Data::UUID|Data::UUID>
+
+=over 4
+
+=item *
+
+C<installed into: D:\a\1\s\src\perl\deps\lib\perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.226>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
