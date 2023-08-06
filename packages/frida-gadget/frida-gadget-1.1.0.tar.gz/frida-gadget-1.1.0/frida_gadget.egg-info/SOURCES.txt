@@ -1,0 +1,15 @@
+README.rst
+setup.py
+frida_gadget.egg-info/PKG-INFO
+frida_gadget.egg-info/SOURCES.txt
+frida_gadget.egg-info/dependency_links.txt
+frida_gadget.egg-info/entry_points.txt
+frida_gadget.egg-info/requires.txt
+frida_gadget.egg-info/top_level.txt
+scripts/__init__.py
+scripts/cli.py
+scripts/frida_github.py
+scripts/logger.py
+scripts/files/README.md
+tests/__init__.py
+tests/test_cli.py

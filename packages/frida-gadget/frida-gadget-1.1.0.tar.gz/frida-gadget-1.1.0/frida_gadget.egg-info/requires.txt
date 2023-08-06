@@ -1,0 +1,7 @@
+click
+androguard
+apk-signer
+pytest
+colorlog
+coverage
+requests
