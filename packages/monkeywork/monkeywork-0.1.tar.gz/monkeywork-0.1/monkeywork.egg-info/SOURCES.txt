@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+monkeywork/__init__.py
+monkeywork/monkeywork.py
+monkeywork.egg-info/PKG-INFO
+monkeywork.egg-info/SOURCES.txt
+monkeywork.egg-info/dependency_links.txt
+monkeywork.egg-info/top_level.txt
