@@ -1,0 +1,5 @@
+#!python
+
+from iframes import cli
+
+cli()
