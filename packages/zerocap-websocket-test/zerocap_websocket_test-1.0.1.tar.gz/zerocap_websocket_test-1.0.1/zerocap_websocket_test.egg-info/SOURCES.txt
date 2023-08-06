@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.py
+zerocap_websocket_test/__init__.py
+zerocap_websocket_test/main.py
+zerocap_websocket_test.egg-info/PKG-INFO
+zerocap_websocket_test.egg-info/SOURCES.txt
+zerocap_websocket_test.egg-info/dependency_links.txt
+zerocap_websocket_test.egg-info/top_level.txt
