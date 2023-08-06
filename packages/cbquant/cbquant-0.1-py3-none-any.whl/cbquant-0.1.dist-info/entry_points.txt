@@ -1,0 +1,2 @@
+[console_scripts]
+cbquant = cbquant.cli:main

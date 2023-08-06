@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: cbquant
+Version: 0.1
+Summary: Lossy Comic Book Archive Compressor
+Home-page: https://pypi.python.org/pypi/cbquant
+Author: Reece Walsh
+Author-email: reece@brikwerk.com
+License: GPLV3
+Project-URL: Code, https://github.com/Brikwerk/cbquant
+Project-URL: Issue tracker, https://github.com/Brikwerk/cbquant/issues
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: libimagequant
+Requires-Dist: libimagequant-integrations
+Requires-Dist: Pillow
+Requires-Dist: tqdm
+
+# Comic Book Quantizer
+
+Comic Book Quantizer (cbquant) is a command-line interface tool that converts images within comic book archive files to palette-based indexed images.
+
+Using cbquant can result in up to 9x smaller comic book archive files, while still preserving the majority of details. This tool is ideal for generating compressed comic books or manga for viewing on grayscale e-ink devices.
+
+## Features
+
+- Quantization of comic book archive images to a specific number of colors, with dithering.
+- Optional, separate quantization levels for color images and grayscale images.
+- Resize images while maintaining aspect ratio.
+- Parallelized conversion for fast quantization.
+
+## Installation
+
+From PyPi:
+
+```bash
+pip install cbquant
+```
+
+From Github:
+
+```bash
+pip install -e git+https://github.com/Brikwerk/cbquant
+```
+
+## Usage
+
+Compress a single .cbz file (called `test.cbz`) to 2 colors for grayscale images and 4 colours for color images:
+
+```bash
+python cbquant.py test.cbz --ncolors 2 --color_ncolors 4
+```
+
+Compress a directory of comic book archive files and output all compressed files to a new folder:
+
+```bash
+python cbquant.py "/path/to/files/*" --ncolors 2 --color_ncolors 4 --height 1872 --output ./quant
+```
+
+## Acknowledgements
+
+Thanks to [libimagequant](https://github.com/ImageOptim/libimagequant) and [libimagequant-python](https://github.com/RoadrunnerWMC/libimagequant-python) for the image quantization code used in this tool.
