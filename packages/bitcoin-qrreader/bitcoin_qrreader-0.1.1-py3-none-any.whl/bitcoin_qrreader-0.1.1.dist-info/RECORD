@@ -1,0 +1,9 @@
+bitcoin_qrreader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bitcoin_qrreader/bitcoin_qr.py,sha256=XxciuwGWrv3Byaz1Vxlhj_hUi4O-qD9je2dV3OhPgQw,15502
+bitcoin_qrreader/bitcoin_qr_gui.py,sha256=xf80wTBYxHa06Z31sg-jqGBCAhcBtv_CHFlqMTIy_Hg,1239
+bitcoin_qrreader/qr_qui.py,sha256=YjB0e2nhdV-pC-Erj626YCpGMsQmJh8mwcq__WqPANc,3689
+bitcoin_qrreader-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bitcoin_qrreader-0.1.1.dist-info/METADATA,sha256=fb3BoLRXLKTJ5-eN_vDqEHMerJwHV9NbFCj4LyrMUHw,1253
+bitcoin_qrreader-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bitcoin_qrreader-0.1.1.dist-info/top_level.txt,sha256=HeocEEmfy-LN8WuKHNQwzzNAh-kHHQPmJGrmqpTDu40,17
+bitcoin_qrreader-0.1.1.dist-info/RECORD,,
