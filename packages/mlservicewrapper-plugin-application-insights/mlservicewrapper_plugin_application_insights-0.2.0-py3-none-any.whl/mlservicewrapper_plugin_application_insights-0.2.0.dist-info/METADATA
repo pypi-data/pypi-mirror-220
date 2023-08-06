@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mlservicewrapper-plugin-application-insights
+Version: 0.2.0
+Summary: Enable Application Insights logging for mlservicewrapper instance
+Home-page: https://github.com/ml-service-wrapper/ml-service-wrapper-plugin-application-insights
+Author: Matthew Haugen
+Author-email: mhaugen@haugenapplications.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mlservicewrapper-core (<0.8,>0.7.0-alpha)
+Requires-Dist: opencensus-ext-azure (==1.0.4)
+Requires-Dist: opencensus-ext-logging (==0.1.0)
+
+
+# mlservicewrapper plugin for Application Insights logging
