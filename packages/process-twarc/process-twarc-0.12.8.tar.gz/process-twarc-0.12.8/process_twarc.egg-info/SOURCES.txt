@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+process_twarc/__init__.py
+process_twarc/util.py
+process_twarc.egg-info/PKG-INFO
+process_twarc.egg-info/SOURCES.txt
+process_twarc.egg-info/dependency_links.txt
+process_twarc.egg-info/requires.txt
+process_twarc.egg-info/top_level.txt
