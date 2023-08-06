@@ -1,0 +1,8 @@
+alembic_postgresql_enum/__init__.py,sha256=firo7dAaT-qEZk_Qk9PsWsbwHQ77aeZqRsmfwrDc648,60
+alembic_postgresql_enum/enum_alteration.py,sha256=xp-mmh8H-wwOKvZPjCkg4MdnZReQ8Lh5a3TjNT4aKA4,4821
+alembic_postgresql_enum/enum_creation.py,sha256=7Wb9I-ustETCvi0sxVfR6_TYE0t9xRPdxRVn7oR_0TM,2191
+alembic_postgresql_enum/get_enum_data.py,sha256=p84mx8Rk_tJtSxaUZTEsIc0oYGkZoh6g-lS6Ha69FN4,3890
+alembic_postgresql_enum-0.1.3a2.dist-info/LICENSE,sha256=3rNJcYJpxoppz5d1OR7s0VJCW017EGYzs764XAFNoNU,1082
+alembic_postgresql_enum-0.1.3a2.dist-info/METADATA,sha256=is-oqQyLyxcV358ow6YRyTBFwC0mYjCu0QBLYarKAkA,5103
+alembic_postgresql_enum-0.1.3a2.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+alembic_postgresql_enum-0.1.3a2.dist-info/RECORD,,
