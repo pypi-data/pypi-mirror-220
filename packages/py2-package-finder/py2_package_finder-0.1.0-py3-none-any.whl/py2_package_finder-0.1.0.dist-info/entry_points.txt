@@ -1,0 +1,3 @@
+[console_scripts]
+py2-package-finder=py2_package_finder.__main__:app
+
