@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hasso
+Version: 0.0.3
+Summary: A simple library for data analysis
+Project-URL: Homepage, https://github.com/KaimingTao/hasso
+Project-URL: Bug Tracker, https://github.com/KaimingTao/hasso/issues
+Author-email: Kaiming Tao <mads396@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: ruamel-yaml
+Description-Content-Type: text/markdown
+
+# hasso
+Python libraries

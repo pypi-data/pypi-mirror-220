@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "hasso"
+description = "A simple library for data analysis"
+version = "0.0.3"
+authors = [
+  { name="Kaiming Tao", email="mads396@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'ruamel.yaml'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/KaimingTao/hasso"
+"Bug Tracker" = "https://github.com/KaimingTao/hasso/issues"
