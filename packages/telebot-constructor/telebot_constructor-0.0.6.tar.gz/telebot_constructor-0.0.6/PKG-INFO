@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: telebot-constructor
+Version: 0.0.6
+Summary: No-code Telegram bot constructor
+License: GPL-3
+Author: Igor Vaiman
+Author-email: gosha.vaiman@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp-swagger (>=1.0.16,<2.0.0)
+Requires-Dist: pydantic (>=2.0.3,<3.0.0)
+Requires-Dist: telebot-against-war (>=0.6.9,<0.7.0)
+Requires-Dist: telebot-components (>=0.8.13,<0.9.0)
+Description-Content-Type: text/markdown
+
+# telebot-constructor
+
+Free & open-source Telegram bot constructor with no-code web UI, using as backend [telebot-components](https://github.com/bots-against-war/telebot-components).
+
+## Development
+
+### Setup
+
+1. The project requires Poerty 1.5.1 (see [installation instruction](https://python-poetry.org/docs/master#installing-with-the-official-installer))).
+
+2. Then, to install the library with all dependencies, run from project root
+   ```bash
+   poetry install
+   ```
+   - You might need to manually install dynamic versioning plugin (without it local build will
+     always have version `0.0.0`):
+     ```bash
+     poetry self add poetry-dynamic-versioning-plugin
+     ```
+   - To create virtualenv inside the project’s root directory, use command
+     ```bash
+     poetry config virtualenvs.in-project false --local
+     ```
+
+
+### Running in debug mode
+
+```sh
+export TELEBOT_CONSTRUCTOR_DEBUG=1
+python run_polling.py
+```
+
