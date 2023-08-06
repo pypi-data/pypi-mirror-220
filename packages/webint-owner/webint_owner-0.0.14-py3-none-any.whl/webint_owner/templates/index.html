@@ -1,0 +1,16 @@
+$def with ()
+$var title: Site Owner
+
+$ get = lambda property: tx.host.owner.get(property, [None])
+
+<form method=post>
+<div><label>Your address<br>
+<input type=text readonly value="$get('uid')[0]"></div>
+<div><label>Name<br>
+<input type=text name=name value="$get('name')[0]"></div>
+<div><label>Nickname<br>
+<input type=text name=nickname value="$get('nickname')[0]"></div>
+<div><label>Note<br>
+<input type=text name=note value="$get('note')[0]"></div>
+<button>Update</button>
+</form>
