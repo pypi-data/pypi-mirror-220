@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: torchanalyse
+Version: 0.0.2
+Home-page: https://github.com/HaoKang-Timmy/torchanalyse
+Requires-Dist: numpy (>=1.14)
+Requires-Dist: torch (>=1.4)
+Requires-Dist: torchvision (>=0.4)
+Requires-Dist: pandas (>=2.0.0)
+
