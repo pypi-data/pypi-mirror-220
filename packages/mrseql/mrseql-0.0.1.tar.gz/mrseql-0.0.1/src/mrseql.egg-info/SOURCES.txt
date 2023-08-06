@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/mrseql/SNode.cpp
+src/mrseql/__init__.py
+src/mrseql/mrseql.cpp
+src/mrseql/seql_learn.cpp
+src/mrseql.egg-info/PKG-INFO
+src/mrseql.egg-info/SOURCES.txt
+src/mrseql.egg-info/dependency_links.txt
+src/mrseql.egg-info/top_level.txt
