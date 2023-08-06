@@ -1,0 +1,11 @@
+vbtex/.DS_Store,sha256=XpklPqdhGlHjeoD_p3UEOD43b4ToT31b1s5pFqXR1fA,6148
+vbtex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vbtex/__main__.py,sha256=_Tthi2oHngDEj7lrQx3IrPsNhBQUqI_DgPyJjkEf1ZY,47
+vbtex/choice_option.py,sha256=0M4rnlTqZBvJPd9KNZ9bwp_b5PCKjLt5be-CMREiP2s,1236
+vbtex/framed.py,sha256=fcXNbq1OimIFNl8NTGIzaEtSKLxw3RPbOk_il-A4slI,1812
+vbtex/main.py,sha256=LfrrvVGHdEwU6K4roeSZfLRJwVOMDxJKILp1_VLLhQo,299
+vbtex/padded.py,sha256=NuU1JNiG1FoZq7nVyRJTaDquTIIAMFdyP4io0Q2_Peo,1191
+vbtex-0.1.5.dist-info/METADATA,sha256=5wvvUMvV0bhVyKzeaNUYupaa-1Pn_CFSlNUMes4itYM,340
+vbtex-0.1.5.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+vbtex-0.1.5.dist-info/entry_points.txt,sha256=TSfuJeVbLdGXNmMRTKPkNWzFT7ghVS9gQuYw38tpA2A,41
+vbtex-0.1.5.dist-info/RECORD,,
