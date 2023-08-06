@@ -1,0 +1,180 @@
+Metadata-Version: 2.1
+Name: openla-feature-representation
+Version: 0.1.1a2
+Summary: A Python module that adds features to OpenLA data to make it easier to use for ML
+Author: LIMU
+Author-email: repository@limu.ait.kyushu-u.ac.jp
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fasttext-wheel (>=0.9.2,<0.10.0)
+Requires-Dist: openla (>=0.2.8,<0.3.0)
+Description-Content-Type: text/markdown
+
+# openla-feature-representation: generate features for EventStream data
+
+## Introduction
+
+openla-feature-representation is an open-source Python module that generates features from [OpenLA](https://limu.ait.kyushu-u.ac.jp/~openLA/) EventStream data, to make the data easier to use for ML.
+
+## Installation
+
+This module module is available on PyPI and it can be installed using `pip` as follows:
+
+```sh
+pip install openla-feature-representation
+```
+
+### Downloading the model
+
+For the E2Vec class, you will need the `openla-feature-representation-fastText_1min.bin` model .
+Feel free to dowload it from the [OpenLA models download site](https://limu.ait.kyushu-u.ac.jp/~openLA/models/).
+
+## Usage of the E2Vec class
+
+First, import the `openla_feature_representation` package with an arbitrary name, here `lafr`.
+
+```py
+import openla_feature_representation as lafr
+```
+
+### Initializing the class
+
+This is the constructor:
+
+```py
+e2Vec = lafr.E2Vec(fT_model_path, info_dir, course_id)
+```
+
+- `fT_model_path` is the path to a fastText language model trained for this task
+- `info_dir` is the path to a directory with the dataset (see below)
+- `course_id` is a string to identify files for the course to analyze within the `info_dir` directory (e.g. `'A-2023'`)
+
+After getting your own `e2Vec` object, all methods the class provides can be used on it.
+
+### Generate sentences for the event log
+
+The fastText model uses an artificial language to express event log entries as sentences. This is how you can generate them:
+
+```py
+sentences = e2Vec.get_Sentences(
+    sentences_path=sentence_path,
+    eventstream_path=eventstream_path,
+    info_dir=info_dir,
+    course_id=course_id,
+)
+```
+
+If you need to select or filter a time span:
+
+```py
+sentences = e2Vec.get_Sentences(
+    sentences_path=sentence_path,
+    mode="select",
+    start=0,
+    period=90,
+    eventstream_path=eventstream_path,
+    info_dir=info_dir,
+    course_id=course_id,
+)
+```
+
+- `sentence_path` is the path to the directory where you want the sentence files to be written
+- `eventstream_path` is the path to the event stream csv file
+- `info_dir` is the path to a directory with the dataset (see below)
+- `course_id` is a string to identify files for the course to analyze within the `info_dir` directory
+- `mode` can be either `"all"` or `"select"` (optional)
+- `start` is the minute in the data the sentence generation should start (optional)
+- `period` is the number of minutes worth of sentences that should be generated (optional)
+
+This function saves the sentences to a text file and returns a path to it.
+
+### Vectorize the sentences
+
+This function returns a pandas DataFrame with the vectors generated from the sentences.
+
+```py
+user_vectors = e2Vec.sentences_to_vector(sentences_path, save_path)
+```
+
+- `sentences_path` is the path to the sentence files generated in the previous step
+- `save_path` needs a string, but it is currently unused (to be removed)
+
+### Concatenation
+
+The class has a function to concatenate vectors by time (minutes) or weeks.
+
+This will concatenate the vectors in 10-minute spans.
+
+```py
+user_vec_C = e2Vec.get_concat_vectors(
+    sentences_path=sentence_path,
+    eventstream_path=eventstream_path,
+    vector_path="",
+    info_dir=eduData,
+    course_id=course_id,
+    concat_mode="time",
+    start=0,
+    period=10,
+)
+```
+
+This will concatenate the vectors by the week or lesson.
+
+```py
+user_vec_C = e2Vec.get_concat_vectors(
+    sentences_path=sentence_path,
+    eventstream_path=eventstream_path,
+    vector_path="",
+    info_dir=eduData,
+    course_id=course_id,
+    concat_mode="week",
+    start=0,
+)
+```
+
+- `sentences_path` is the path to the sentence files generated in the previous step
+- `eventstream_path` is the path to the event stream csv file
+- `vector_path` needs a string, but it is currently unused (to be removed)
+- `info_dir` is the path to a directory with the dataset (see below)
+- `course_id` is a string to identify files for the course to analyze within the `info_dir` directory
+- `concat_mode` needs to be "time" or "week"
+- `start` is the minute in the data the sentence generation should start (optional)
+- `period` is the number of minutes worth of sentences that should be generated each time (optional)
+
+## Usage of the ALP (Active Learner Point) functions
+
+ALP is a set of metrics that take BookRoll (ebook) and Moodle activity per lecture into account: attendance, report submissions, course views, slide views, adding markers or memos, and other actions.
+
+First, the `aggregate_feature` function aggregates the number of times each user took any of the actions above for each lecture, resulting on a DataFrame that we will call `features_df` on this example. These are the features ALP will work with.
+
+```py
+from openla_feature_representation import aggregate_feature
+features_df = aggregate_feature(course_id=course_id)
+```
+
+- `course_id` is an `int` to identify files for the course to analyze within the `Dataset` directory
+
+To further ready the data for ML and other analysis, the `feature2ALP` function returns a DataFrame that we will call `alp_df`, in which the feature is replaced by a number from 0 to 5 with the following meaning:
+
+- `5`: Top 10%, or attending the lecture, or submitting a report
+- `4`: Top 20%
+- `3`: Top 30%, or being late to the lecture, or submitting late
+- `2`: Top 40%
+- `1`: Top 50%
+- `0`: Bottom 50%, or not attending, or not submitting
+
+The additional `alp_df_normalized` DataFrame returned by the function is the same data as `alp_df`, only normalized to `1`.
+
+```py
+from openla_feature_representation import feature2ALP
+alp_df, alp_df_normalized = feature2ALP(features_df=features_df)
+```
+
+## Datasets for OpenLA
+
+This module uses data in the same or a similar format as OpenLA. Please refer to the [OpenLA documentation](https://limu.ait.kyushu-u.ac.jp/~openLA/) for further information.
+
