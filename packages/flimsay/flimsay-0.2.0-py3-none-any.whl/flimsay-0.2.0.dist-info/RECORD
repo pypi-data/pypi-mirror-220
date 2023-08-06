@@ -1,0 +1,13 @@
+flimsay/__init__.py,sha256=FSN4OjYGP-rFcGTWJQdzO_H2mrQTJrZiaGaay4nIMJY,74
+flimsay/blib.py,sha256=TLepzKBQ5mlfUpxCL_fuZVY2E74VqVBg2Md2Eiv9BV8,9145
+flimsay/cli.py,sha256=kUm43d4wxWUCqtyUzcDnvbEPU8wVpbKMz5SdebLyzcE,472
+flimsay/constants.py,sha256=n2G_4tqx2ZCTbKslU7DTATfoxAoL2T7CRKw04UpMLXk,1014
+flimsay/data.py,sha256=-Mrq1JH3gfR18Uau2geKhraRZtjaBbgxSGxI84TUQ5k,7017
+flimsay/features.py,sha256=yRWyHZ_WpF9FK8t6JEQ1TTBML1egDugc39qtYnMPXyo,10778
+flimsay/mass.py,sha256=w4xu1H-fPh0IU9byLSpYRr4E9VQMrfunCaIZ-nhRnuE,1320
+flimsay/model.py,sha256=qjmydYCXFp1mgH8pYif-pjh18mB0FqYFC7BAyGUYuGU,2114
+flimsay-0.2.0.dist-info/METADATA,sha256=Dk3aovH7afcHp1Xq46Cp5EM1cqq7w_uMnm-vpeuzGqw,9874
+flimsay-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+flimsay-0.2.0.dist-info/entry_points.txt,sha256=e6Wm7NYHiHtX4Dmx1uUFHsC_3pJH4HOabSPZWgB9Y2A,44
+flimsay-0.2.0.dist-info/top_level.txt,sha256=sS2Ay90b7gR_GVQbPC-oPo1XqUMmkoHhknJniFVeH7I,8
+flimsay-0.2.0.dist-info/RECORD,,
