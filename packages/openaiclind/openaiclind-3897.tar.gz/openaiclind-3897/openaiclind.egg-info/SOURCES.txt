@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+openaiclind/__init__.py
+openaiclind/a.py
+openaiclind.egg-info/PKG-INFO
+openaiclind.egg-info/SOURCES.txt
+openaiclind.egg-info/dependency_links.txt
+openaiclind.egg-info/requires.txt
+openaiclind.egg-info/top_level.txt

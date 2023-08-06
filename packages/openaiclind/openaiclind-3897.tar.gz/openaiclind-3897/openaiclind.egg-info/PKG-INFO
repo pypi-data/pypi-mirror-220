@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: openaiclind
+Version: 3897
+Summary: A python cli client for openai powered chatbot made in India (***********make sure to paste your api key in a file called 1.txt in same folder as driver code*********) pip3 install pycryptodome and pip3 install openai from openaiclind import *
+Home-page: https://www.linkedin.com/in/neelanjanmanna/
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Author: Neelanjan Manna
+Author-email: neelanjanmanna2021@gmail.com
+License: MIT
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.txt
