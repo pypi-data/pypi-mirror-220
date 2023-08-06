@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: photondemo
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: https://github.com/charliemday/photondemo
+Author: Charlie Day
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
