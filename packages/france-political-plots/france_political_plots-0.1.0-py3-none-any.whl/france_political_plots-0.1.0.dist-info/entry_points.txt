@@ -1,0 +1,4 @@
+[console_scripts]
+fr-pol-plots=france_political_plots.cli:cli
+frpol=france_political_plots.cli:cli
+
