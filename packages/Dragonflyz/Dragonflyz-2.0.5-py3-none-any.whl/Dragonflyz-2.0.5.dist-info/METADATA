@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: Dragonflyz
+Version: 2.0.5
+Summary: Package for Code Analysis across your scripts
+Home-page: https://github.com/jacob-h-barrow/Dragonflyz
+Author: Jacob H Barrow
+Author-email: jacob.h.barrow@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dataclasses
+Requires-Dist: matplotlib
+Requires-Dist: panel
+
+# Dragonflyz
+[![Test Coverage](https://img.shields.io/badge/Test%20Coverage-100%25-success)](https://github.com/jacob-h-barrow/Penguin-Services)
+[![Security](https://img.shields.io/badge/Secure-True-informational)](https://github.com/jacob-h-barrow/Penguin-Services)
+[![Platform](https://img.shields.io/badge/Platform-Ubuntu%2020%2B-critical)](https://github.com/jacob-h-barrow/Penguin-Services)
+[![Python Version](https://img.shields.io/badge/Python-3.8%2B-critical)](https://github.com/jacob-h-barrow/Penguin-Services)
+[![MIT License](https://img.shields.io/badge/License-MIT-lightgrey)](https://github.com/jacob-h-barrow/Penguin-Services/blob/main/Penguin-Services.png)
+
+![Dragonflyz](https://user-images.githubusercontent.com/112576275/190509615-30b150b8-d67d-47af-bdff-4ee10163826b.png)
+
+- Created By Jacob H Barrow, Cybersploit LLC
+
+## What Is Dragonflyz?
+### This time it's not just about being fast = Dominic Torretto.
+- This package is being designed to make the software development lifecycle fast, effective, and financially responsible.
+- From cradle to end of life, let's focus on being agile while prioritizing cost!
+- Using Dragonflyz, software engineers can minimize their carbon footprint while securing their code from hackers.
+
+### Why The Name
+- For catching bugs in Python
+
+### Kill Chain Overview
+- Cross examined with Lockheed's Cyber Kill Chain
+- Loads more to follow, this was the first day investing some time
+- Right now, the package focuses on project engagement and management overhead.
+- Later, it will get more technical as the package explores each stage below! 
+
+### Code Analysis
+- Reconnaisance stage
+- Refers to both static and dynamic analysis
+- Static and dynamic type exploitation
+- etc
+
+### Modification
+- Weaponization stage
+- Identify the location, functionality, systems of system(s) effect(s), then modify
+- Based on the analysis, where can it be weaponized?
+- What location(s) provide the state of interest?
+- How many location(s) need to be involved to change each functionality?
+- What functionalities are necessary to weaponize the entire system, or systems of systems?
+- etc.
+
+### Access
+- Delivery stage
+- How will this be delivered to all customers, new and existing?
+- What will be needed to get this update or modification in place?
+  - For example, do we need to compromise the PKI server or modify the signature on the signed code,in order to upload as the original author.
+- etc.
+
+### Execute
+- Exploit stage
+- When will the code be run?
+- What NTP server is being used to track the time of execution?
+- What conditions/systems are required for the code to be triggered?
+- etc.
+
+### State Analysis
+- Installation stage
+- How is our software going to beat attestation algorithms in-place?
+- What index profile will our system be given after being modified?
+  - For example, will the protection profile change? Will the heuristic profile change?
+- etc.
+
+### Networking
+- Command and control stage
+- Is the current REST API going to be leveraged?
+- Does the modification allow the software to communicate/interact with other cover channels?
+- etc.
+
+### Your Move
+- Actions or objections stage
+- Is this to collect information, weaken the protection profile for subsequent attack, or are we trying to damge the system/network?
+- Is this automated? Do we need to supervise further compromise? Is it a zero click that gives us a singular piece of information?
+- Are we planning to lay low with the modification? Ex. NSA's ECC PRNG 2011
+- Do we use this modification to attack as many as possible, or do we focus on non-attribution/a single demographic? 
+
+## Installation
+``` console
+dragonfly@bugeatery:~$ pip install Dragonflyz
+```
+
+## Usage
+``` python
+>>> from KillChain import sprint_gantt, project_gantt, map_job_ids, Date_Range_Generator
+>>> 
+>>> ### Sprint Gantt Example
+>>> tasks_mins = {"john": {"jobs": [(40, 50), (0,0), (0,0), (0,0), (0,0), (0,0), (175,250)]}, "natilie": {"jobs": [(110, 10), (150, 10)]}, "sammy": {"jobs": [(10, 50), (100, 20), (130, 10)]}, "max": {"jobs": [(0,0), (0, 0), (0, 0), (160, 180), (205, 225)]}, "Trix": {"jobs": [(0,0), (0,0), (0,0), (0,0), (175, 200), (240, 250)]}}
+>>> sprint_gantt(tasks_mins, project_length = 270, project_name = "Soaring Eagle")
+>>> 
+>>> ### Project Gantt Example
+>>> people = {'John': {0: Date_Range_Generator(6,9,2022, count = 3), 1: Date_Range_Generator(12, 9, 2022, count = 4), 2: Date_Range_Generator(16, 9, 2022)}, 'Trix': {3: Date_Range_Generator(26, 9, 2022, count = 6)}, 'Roxy': {0: Date_Range_Generator(6,9,2022, count = 4), 2: Date_Range_Generator(16,9,2022, count = 11), 3: Date_Range_Generator(29,9,2022, count = 3)}}
+>>> tasks = {'people': {}, 'jobIds': {0: ["Engagement", 'tab:orange'], 1: ["Contract", "tab:red"], 2: ["Work", "tab:blue"], 3: ["Reporting", "tab:green"]}}
+>>> project_gantt(map_job_ids(tasks, people), project_name = "Strike Eagle", filename = "Project Resource Allocation Gantt_Strike Eagle.png")
+```
+
+## Experimental Usage
+- Influenced by PowerAPI code
+- Not prime time yet, and would recommend using joulehunter in the meantime
+### Warning -> Code Must Be Run With Sudo
+``` console
+dragonfly@bugeatery:~$ sudo pip install Dragonflyz
+dragonflyz@bugeatery:~$ echo "Try the panel web interface"
+dragonflyz@bugeatery:~$ sudo panel serve TESTFILE.py --show --autoreload
+```
+### Warning -> Code Must Be Run With Sudo
+``` python
+>>> # TESTFILE.py
+>>> from Dragonflyz import EnergyConsumed, totalEnergy
+>>> @EnergyConsumed(panel = True) # Only if you want to serve it to panel, else it returns the results in json form
+>>> def decoratedFun():
+>>> 	pass
+>>>
+>>> @EnergyConsumed(panel = False)
+>>> def decoratedFun2():
+>>> 	pass
+>>> # Experimental
+>>> print(totalEnergy(decoratedFun2()))
+```
+### Used in Profile-Aware -> Online GUI
+``` python
+>>> from Dragonflyz import check_disks, get_database_size
+>>> from pathlib import Path
+>>> check_disks()
+>>> get_database_size(Path("DATABASE LOCATION HERE"))
+```
+``` python
+>>> from Dragonflyz import sensor_info, print_devices
+>>> print_devices(sensor_info())
+```
+### Used in Profile-Aware -> Online GUI
+#### CpuHandler won't work with PowerEdge devices -> commercial product coming soon
+``` python
+>>> from Dragonflyz import MemoryHandler, CpuHandler
+>>> with MemoryHandler() as memory:
+>>>     print(memory.basic_memory_info())
+>>> with CpuHandler() as cpu:
+>>>     print(cpu.get_json())
+```
+
+### Made By Cybersploit LLC
+- Defend against the software cyber killchain!
+
+
