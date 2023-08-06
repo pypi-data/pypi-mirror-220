@@ -1,0 +1,8 @@
+include requirements.txt CMakeLists.txt LICENSE README*.md pyproject.toml
+graft src/
+recursive-include exts/pybind11/include/pybind11 *
+recursive-include exts/pybind11/tools *
+include exts/pybind11/CMakeLists.txt exts/pybind11/LICENSE exts/pybind11/README.md exts/pybind11/CONTRIBUTING.md
+
+recursive-include exts/hamming-codec *
+include exts/hamming-codec/CMakeLists.txt exts/hamming-codec/LICENSE exts/hamming-codec/README.md
