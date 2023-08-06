@@ -1,0 +1,9 @@
+ovos_audio_plugin_spotify/__init__.py,sha256=KiuKT0K21LFJ7Z5-N0lQfn9Jnv0_K3pQbONyc9z6aFY,3365
+ovos_audio_plugin_spotify/spotify_client.py,sha256=u_eQyvhKobVe7WFdR1t4K5f7Evx2u0xqPEKoQVsFG_E,28703
+ovos_audio_plugin_spotify/version.py,sha256=JN7aD_TugTLEaBIwM5kbDnKdd-QQQx3WIIaO6M_RM2s,177
+ovos_audio_plugin_spotify-0.0.0a4.dist-info/LICENSE,sha256=ntGHfW0JQ281uH6ycFGfAyFMCThkNAUM3r6HS2aPXA0,11349
+ovos_audio_plugin_spotify-0.0.0a4.dist-info/METADATA,sha256=IZFG-Z7mT6CD6l_7xAQ-QMbMNz4vdhtJf0y6G9JG-gI,387
+ovos_audio_plugin_spotify-0.0.0a4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ovos_audio_plugin_spotify-0.0.0a4.dist-info/entry_points.txt,sha256=eRqnpnbjSvjP2gy6-F4y1bj6PxZdk9bSuDQMZCg9YSo,179
+ovos_audio_plugin_spotify-0.0.0a4.dist-info/top_level.txt,sha256=61lSsvrOmPf1COig3R9LzTT5MQHYWehvB45eUgCNIZQ,26
+ovos_audio_plugin_spotify-0.0.0a4.dist-info/RECORD,,
