@@ -1,0 +1,3 @@
+[console_scripts]
+nautobot_api_sandbox=nautobot_api_sandbox.nautobot_api_sandbox_ui:user_interface
+
