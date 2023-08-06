@@ -1,0 +1,11 @@
+dblite/__init__.py,sha256=VUJO_ccke7SXnUOnVee-gHPoxkEE5DU83o4zdQHHTfo,455
+dblite/api.py,sha256=WpS_zTsvbio9e1WaodFEDqrVtDJ0c9xDoMp0MEQbVmY,23720
+dblite/util.py,sha256=EYWgZm6GxvexnbB-faCIp0X7Fti1k4lFKNsjiyvWFYI,10086
+dblite/engines/__init__.py,sha256=9gBmUj3w_YghEIfTLPBPS9M3Yxpnl9evaEenJe6RaiQ,925
+dblite/engines/postgres.py,sha256=cf8yt4rk-dYtd9X9mODaCkM_ssEvtKnO7FTITcrioMA,43223
+dblite/engines/sqlite.py,sha256=tx2yTeYxLFNd2vn5RMc3Rhiafbz65NGGG1lI5w-MbWg,25257
+dblite-1.3.3.dist-info/LICENSE.md,sha256=mIDGY8bJlK6Rl4JRQcwbaMa6nunxllJAg8W9CCaABo0,1078
+dblite-1.3.3.dist-info/METADATA,sha256=5EyKPTzfWELFGgINLQ-WukuueHEhpqLntT8nY5CIVPU,23050
+dblite-1.3.3.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+dblite-1.3.3.dist-info/top_level.txt,sha256=VT9nBs5LFsXA4RhRGIQS0YnQeeg9HAgKskGtWWbuT04,7
+dblite-1.3.3.dist-info/RECORD,,
