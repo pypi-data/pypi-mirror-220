@@ -1,0 +1,7 @@
+sqlite-utils
+
+[test]
+pytest
+mypy
+black
+ruff
