@@ -1,0 +1,66 @@
+# only-pip3-autoremove
+
+Remove a package and its unused dependencies.
+
+This is a fork of https://github.com/invl/pip-autoremove to port it to Python 3.
+To be clear, this is designed to *only* work with Python 3, and `pip3` by extension.
+
+## Quickstart
+
+First install `only-pip3-autoremove`
+
+```sh
+$ pip3 install only-pip3-autoremove
+```
+
+To install using Git:
+
+```sh
+$ pip3 install git+https://github.com/JohnDevlopment/pip-autoremove.git
+```
+
+Install a package which has dependencies, e.g. `Flask`
+
+```sh
+$ pip3 install Flask
+...
+Successfully installed Flask Jinja2 MarkupSafe Werkzeug blinker click itsdangerous
+```
+
+Uninstall it and all its unused dependencies
+
+```sh
+$ pip3-autoremove Flask -y
+Flask 2.3.2 (/tmp/pip-autoremove/test/.env/lib/python3.10/site-packages)
+    itsdangerous 2.1.2 (/tmp/pip-autoremove/test/.env/lib/python3.10/site-packages)
+    blinker 1.6.2 (/tmp/pip-autoremove/test/.env/lib/python3.10/site-packages)
+    Jinja2 3.1.2 (/tmp/pip-autoremove/test/.env/lib/python3.10/site-packages)
+        MarkupSafe 2.1.3 (/tmp/pip-autoremove/test/.env/lib/python3.10/site-packages)
+    click 8.1.6 (/tmp/pip-autoremove/test/.env/lib/python3.10/site-packages)
+    Werkzeug 2.3.6 (/tmp/pip-autoremove/test/.env/lib/python3.10/site-packages)
+...
+Found existing installation: Flask 2.3.2
+Uninstalling Flask-2.3.2:
+  Successfully uninstalled Flask-2.3.2
+...
+```
+
+## Usage
+
+	usage: pip3-autoremove [-h] [-L | -f] [-l] [ARG ...]
+
+	positional arguments:
+	  ARG           a Python package
+
+	options:
+	  -h, --help    show this help message and exit
+	  -L, --leaves  list leaves (packages that are not used by any others)
+	  -f, --freeze  list leaves (packages that are not used by any others) in requirements.txt format
+	  -l, --list    list unused dependencies, but don't uninstall them
+
+## Installation
+
+```sh
+$ pip3 install only-pip3-autoremove
+$ pip3 install git+https://github.com/JohnDevlopment/pip-autoremove.git
+```

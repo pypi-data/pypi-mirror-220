@@ -1,0 +1,33 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "only-pip3-autoremove"
+description = "Remove a package and its unused dependencies"
+dynamic = ["version"]
+readme = "README.md"
+license.file = "LICENSE"
+requires-python = ">=3.8"
+authors = [
+	{ name = "JohnDevlopment" },
+	{ name = "invlpg" }
+]
+classifiers = [
+	    "Intended Audience :: Developers",
+	    "License :: OSI Approved :: Apache Software License",
+	    "Programming Language :: Python",
+	    "Programming Language :: Python :: 3"
+]
+dependencies = ["pip", "setuptools"]
+
+[project.scripts]
+pip3-autoremove = "pip3_autoremove:main"
+
+[tool.flit.module]
+name = "pip3_autoremove"
+
+[project.urls]
+Source = "https://github.com/JohnDevlopment/pip3-autoremove"
+Homepage = "https://github.com/JohnDevlopment/pip3-autoremove"
+OriginalSource = "https://github.com/invl/pip-autoremove"
