@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/Flask_ShopifyUtils.egg-info/PKG-INFO
+src/Flask_ShopifyUtils.egg-info/SOURCES.txt
+src/Flask_ShopifyUtils.egg-info/dependency_links.txt
+src/Flask_ShopifyUtils.egg-info/requires.txt
+src/Flask_ShopifyUtils.egg-info/top_level.txt
+src/flask_shopify_utils/__init__.py
+src/flask_shopify_utils/model.py
+src/flask_shopify_utils/utils.py
+tests/test_admin_routes.py
+tests/test_default_routes.py
+tests/test_gdpr_routes.py
+tests/test_graphql_cli.py
+tests/test_init.py
