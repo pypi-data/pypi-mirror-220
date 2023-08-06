@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: my-email-parser
+Version: 1.1
+Requires-Dist: win32com
+Requires-Dist: openpyxl
+
