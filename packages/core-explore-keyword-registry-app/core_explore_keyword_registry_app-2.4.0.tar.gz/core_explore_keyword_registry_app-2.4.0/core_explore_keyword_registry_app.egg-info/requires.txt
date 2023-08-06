@@ -1,0 +1,6 @@
+Django
+django-simple-menu
+core-main-registry-app==2.4.*
+core-explore-keyword-app==2.4.*
+core-explore-oaipmh-app==2.4.*
+core-oaipmh-harvester-app==2.4.*
