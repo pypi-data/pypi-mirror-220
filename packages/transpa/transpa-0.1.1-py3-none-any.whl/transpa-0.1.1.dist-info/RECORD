@@ -1,0 +1,10 @@
+transpa/__init__.py,sha256=8zLGg-DfQhnDl2Ky0n-zXpN-8e-g7iR0AcaI4l4Vvpk,32
+transpa/eval_util.py,sha256=Ul-iFcdpTZyX6hBiV-VQS6x3HsGmqkcHYugDcQNVjY8,11230
+transpa/model.py,sha256=mVFDVOQd49lH5bcEnOoB9hySoz03PYKcOtjYXLFw1Lg,25293
+transpa/util.py,sha256=XTuY3Q1Fh0F71N7_VQiCYxywV6Ez4hDfwCaWI5TWFHA,23027
+transpa/version.py,sha256=jZ5uWOiyV1Hb9rhNyo3bAgfWmHx8_xkueUWpcUrkz_w,21
+transpa-0.1.1.dist-info/LICENSE,sha256=oopEyPX_r4V00Xi0gO9y5g6HY0iGXHLCtSLYSW-I6-0,1061
+transpa-0.1.1.dist-info/METADATA,sha256=sGUgfK9ziIxrMYOm9om1Z5v8GQcEpoCsWuTW_p1I-gA,626
+transpa-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+transpa-0.1.1.dist-info/top_level.txt,sha256=hUS7H4-fhUxW2JOP_UV0p6RpVZlVhTHms9-IUe740Cc,8
+transpa-0.1.1.dist-info/RECORD,,
