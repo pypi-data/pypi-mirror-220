@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: kiri-walkgame
+Version: 1.1.0
+Summary: a mini game to visualize the path-finding algorithm
+Home-page: https://github.com/kiri-chow/kiri-walkgame
+License: MIT
+Author: anthony
+Author-email: mrchowpoor@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: kiri-pathfinding (>=1.2.0,<2.0.0)
+Requires-Dist: pygame (>=2.5.0,<3.0.0)
+Requires-Dist: pypng (>=0.20220715.0,<0.20220716.0)
+Project-URL: Repository, https://github.com/kiri-chow/kiri-walkgame
+Description-Content-Type: text/markdown
+
+# kiri-walkgame
+
+![PythonVersion](https://img.shields.io/badge/python-3.*-blue)
+![PyPi](https://img.shields.io/pypi/v/kiri-walkgame)
+
+This is a mini game to visualize the path-finding algorithm.
+
+To play this game, you just need to click the map twice. The first clicking will place a cat named **Kiri**, and the following one will place a box. Then Kiri will find his way to get inside the box immediately.
+
+## Usage
+
+```shell
+python kiri_walkgame
+```
+
+## Credits
+Music track: Fantasy by Pufino
+Source: https://freetouse.com/music
+Copyright Free Music for Video
+

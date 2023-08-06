@@ -1,0 +1,17 @@
+kiri_walkgame/__init__.py,sha256=U3sFPfP6oIQzEIhzPU5poabwHQ-ERyucLkS5um-JxD8,8818
+kiri_walkgame/__main__.py,sha256=WqfHP_j9yum2kMOABnF33NywZHCC7TCGQ8dg07nSoPk,177
+kiri_walkgame/characters.py,sha256=WXsqEevgkewunYrpD1JfLID_gfup3BE_w-iq9eqQlg8,5533
+kiri_walkgame/output.py,sha256=qNGngQfkHAFDxGti1e-GPZgdVmkvzQ7kNXKym0v5qhQ,838
+kiri_walkgame/shortcuts.py,sha256=V_PvCXGWjzJ_ate_UAL_FYeLF9UkRKQUO1BvqS61q2E,1788
+kiri_walkgame/sources/audios/Fantasy_by_Pufino_on_freetouse_com.mp3,sha256=l65FG43Onw23IZPnCeQVH8CpeYMOk54tYYJ9FjQFsQg,5256004
+kiri_walkgame/sources/box.png,sha256=5iZ8TwGB5EABPZzO80Cb9sa0NiSxRAaa-xhwMAYN5ZU,337
+kiri_walkgame/sources/icons/refresh.png,sha256=E0RrdKcaTRloYOUhQgIZciAd0_jiFjQblh5OpNZNba4,898
+kiri_walkgame/sources/icons/voice_off.png,sha256=oo8NeNVfTgWDHw-ges_UfVtBLUsjUCFGM3nLlnItbXo,1016
+kiri_walkgame/sources/icons/voice_on.png,sha256=xlwW-wgDy_Bmqv9H3JwnzyTUEXisdxICT2agdaGh6mM,899
+kiri_walkgame/sources/kiri/run.png,sha256=oHY0PUvaJTMLAQVmlqabiXBlS0-QtsACa5JTofVqcsw,703
+kiri_walkgame/sources/kiri/stand.png,sha256=FlyRmB6WEXIdEJULs_Dtkn2T_mAT3JeYKVRvC9l-xys,647
+kiri_walkgame/sources/logo.png,sha256=i38KGGgUPslDxgpPtsNflVRVOb7LviFJVJVKJSoJ120,97861
+kiri_walkgame-1.1.0.dist-info/LICENSE,sha256=hysBEr67NmDxeqxpkc-juor-K_yK5N5gy02eP0SPJIw,1068
+kiri_walkgame-1.1.0.dist-info/METADATA,sha256=KfVwz5uX_2SzxX7nLzj8fDe7M9p2TLl82BJNvFBuijw,1328
+kiri_walkgame-1.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+kiri_walkgame-1.1.0.dist-info/RECORD,,
