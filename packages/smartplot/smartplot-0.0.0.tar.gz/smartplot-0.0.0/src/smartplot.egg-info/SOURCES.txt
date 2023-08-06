@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/smartplot/__init__.py
+src/smartplot/smartplot.py
+src/smartplot.egg-info/PKG-INFO
+src/smartplot.egg-info/SOURCES.txt
+src/smartplot.egg-info/dependency_links.txt
+src/smartplot.egg-info/top_level.txt

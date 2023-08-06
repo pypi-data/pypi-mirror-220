@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: smartplot
+Version: 0.0.0
+Summary: A helper tool for matplotlib. Provides a contextmanager which automatically saves data used to make plots and automatically generates a script to re-load and re-plot this data at a later stage.
+Author-email: Jeremy John Henry Wilkinson <jero.wilkinson@gmail.com>
+License: BSD-3-Clause
+Keywords: save data,matplotlib,plt
+Classifier: Framework :: Matplotlib
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
