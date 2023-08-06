@@ -1,0 +1,20 @@
+urllib3
+imutils
+numpy
+opencv_python
+Pillow
+ttkthemes
+requests
+beautifulsoup4
+whatsmyip
+pynput
+keyboard
+playsound==1.2.2
+event-scheduler
+mouse
+pyautogui
+mss
+
+[:platform_system == "Windows"]
+pypiwin32
+winshell
