@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: transpa
+Version: 0.1.1
+Summary: Translation-based imputation and cell type deconvolution
+Home-page: https://github.com/qiaochen/tranSpa
+Author: Chen Qiao
+Author-email: cqiao@connect.hku.hk
+License-File: LICENSE

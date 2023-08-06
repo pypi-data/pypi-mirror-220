@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+transpa/__init__.py
+transpa/eval_util.py
+transpa/model.py
+transpa/util.py
+transpa/version.py
+transpa.egg-info/PKG-INFO
+transpa.egg-info/SOURCES.txt
+transpa.egg-info/dependency_links.txt
+transpa.egg-info/requires.txt
+transpa.egg-info/top_level.txt
