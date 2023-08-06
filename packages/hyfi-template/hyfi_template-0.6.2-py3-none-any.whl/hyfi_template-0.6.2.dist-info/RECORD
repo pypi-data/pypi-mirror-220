@@ -1,0 +1,11 @@
+hyfit/__cli__.py,sha256=AfPY7KhPseTxnZrYRfFNZiY9LnxBADUg9aFG1ELqd9k,180
+hyfit/__init__.py,sha256=SshftCiqPmKIjp3h2hMNwXa7LJ-9w4qLitYKqwAo-VM,464
+hyfit/_version.py,sha256=jFlbxEJFS0G44LE-yXXVSwXACA1J_NyYDk5E20_2zpc,22
+hyfit/conf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hyfit/conf/about/hyfit.yaml,sha256=J_MdlIDK9MjC1tiT3ju1E8zA5E8y3a2smBzUzPgtljk,206
+hyfit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hyfi_template-0.6.2.dist-info/LICENSE,sha256=6_-z_j5TJ7bQ5RlPwAJZ0Eqo3qWC6pMDjlLjz0R4wkE,1071
+hyfi_template-0.6.2.dist-info/METADATA,sha256=97rwWYjSjT6uu9vgOwmQ1bMrah3jf8o66MoGcB2n7UM,2887
+hyfi_template-0.6.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+hyfi_template-0.6.2.dist-info/entry_points.txt,sha256=I0KjQI1hvP_IYqXr49PGPW3cj-f2vaf06IstLD29ACI,44
+hyfi_template-0.6.2.dist-info/RECORD,,
