@@ -1,0 +1,12 @@
+connex/__init__.py,sha256=PAe9ESwwQzUCuGoQn_68KiUk3GaQnjMep2QMcdv7DpM,237
+connex/_network.py,sha256=HpN3FOCdSsHid3rwDFaAxVTsj7XXPpNsbJonCvr6xAU,33083
+connex/_plasticity.py,sha256=jm5KqmVmHpFNKjnrL-ABCuQUaHHyoBwzdpsggEuRAWg,46919
+connex/_utils.py,sha256=3H8tOrfAaYATQp6azezrk6jUrrO__2QFx3CgJRkNItA,1401
+connex/nn/__init__.py,sha256=93EbW0_3G0KVQqgLsnlSWpuVHfMSQcDD6ri6IloDNEA,55
+connex/nn/_dense_mlp.py,sha256=tT5nT9sH510JcwCS8gJQiPHHN8haFt-YJChGgpsEa6c,7085
+connex/nn/_mlp.py,sha256=WazOYx1eNYvks0_bfyr_DIKkQY9T5KeqAPKkCJSfdj8,6549
+connex/nn/_utils.py,sha256=nZyZa4rClp7Vf_o9UzoSXImKJQhZo5bOrCajpwT5jKM,31
+connex-0.3.3.dist-info/METADATA,sha256=N68aivIZgCoeqSg4hXqFUfmu_RuYHz_m2SUoJkd5T2k,17487
+connex-0.3.3.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+connex-0.3.3.dist-info/licenses/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+connex-0.3.3.dist-info/RECORD,,
