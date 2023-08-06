@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mcred/__init__.py
+mcred.egg-info/PKG-INFO
+mcred.egg-info/SOURCES.txt
+mcred.egg-info/dependency_links.txt
+mcred.egg-info/requires.txt
+mcred.egg-info/top_level.txt
