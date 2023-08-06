@@ -1,0 +1,6 @@
+#!python
+# shellcheck disable=SC1071
+
+from pytdxattest.cli import TDXEventLogsCmd
+
+TDXEventLogsCmd().run()

@@ -1,0 +1,5 @@
+#!python
+
+from pytdxattest.cli import TDXVerifyCmd
+
+TDXVerifyCmd().run()
