@@ -1,0 +1,86 @@
+[project]
+name = "ccwriter"
+version = "0.1.0"
+description = "Writer for CloudCompare .bin format"
+authors = [
+    { name = "Marko Bausch", email = "60338487+mrkbac@users.noreply.github.com" }
+]
+dependencies = [
+    "numpy>=1.22",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Robot Framework :: Tool",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.10",
+
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "autopep8>=2.0.2",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.autopep8]
+aggressive = 3
+recursive = true
+max_line_length = 100
+
+[tool.ruff]
+line-length = 100
+select = ["ALL"]
+
+ignore = [
+    'ANN101', # missing-type-self
+    'ANN102', # missing-type-cls
+    'ANN204', # missing-type-cls
+
+    'C',
+    'D',       # pydocstyle
+    'EM101',
+    'ERA001',  # CommentedOutCode
+    'FIX002',  # Line contains TODO
+    'INP',     # flake8-no-pep420
+    'PD',      # pandas-vet
+    'PLR',
+    'PLR0913', # Too many arguments to function call
+    'PT',      # PyTest
+    'PTH',
+    'S',       # flake8-bandit
+    'SIM',
+    'T20',     # flake8-print
+    'TD',      # Todo
+    'TRY003',
+    'UP007',
+]
+
+unfixable = [
+    'T20',    # flake8-print
+    'ERA001', # CommentedOutCode
+]
+
+src = ['src']
+
+target-version = 'py38'
+
+[tool.ruff.flake8-annotations]
+# Whether to suppress ANN000-level violations for arguments matching the "dummy" variable regex (like _).
+suppress-dummy-args = true
+# Whether to suppress ANN200-level violations for functions that meet either of the following criteria:
+# - Contain no return statement.
+# - Explicit return statement(s) all return None (explicitly or implicitly).
+suppress-none-returning = true
+
+[tool.ruff.pydocstyle]
+convention = "google"
