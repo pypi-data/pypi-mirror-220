@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: plotano
+Version: 0.0.0
+Summary: 
+License: Apache
+Author: CambioML
+Author-email: wanwanaiai45@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: accelerate (==0.21.0)
+Requires-Dist: bitsandbytes (==0.40.2)
+Requires-Dist: einops (==0.6.1)
+Requires-Dist: flask (==2.3.2)
+Requires-Dist: flask-cors (==4.0.0)
+Requires-Dist: pyngrok (==6.0.0)
+Requires-Dist: scipy (==1.11.1)
+Requires-Dist: transformers (==4.31.0)
+Description-Content-Type: text/markdown
+
+
+# Plotano
+
+## Setup
+```
+conda create -n plotano python=3.10
+conda activate plotano
+cd plotano
+pip3 install poetry
+poetry install --no-root
+```
+## Run
+```
+python -m example.chatbot.demo
+```
+
+## Development
+Frontend:
+```
+cd frontend
+npm run build
+```
+
+Backend:
+```
+python -m example.chatbot.demo
+```
+
