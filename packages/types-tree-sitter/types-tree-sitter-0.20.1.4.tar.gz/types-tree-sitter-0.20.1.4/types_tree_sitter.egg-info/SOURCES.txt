@@ -1,0 +1,10 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+tree_sitter-stubs/METADATA.toml
+tree_sitter-stubs/__init__.pyi
+tree_sitter-stubs/binding.pyi
+types_tree_sitter.egg-info/PKG-INFO
+types_tree_sitter.egg-info/SOURCES.txt
+types_tree_sitter.egg-info/dependency_links.txt
+types_tree_sitter.egg-info/top_level.txt
