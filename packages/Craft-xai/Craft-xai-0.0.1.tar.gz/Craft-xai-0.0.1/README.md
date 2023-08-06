@@ -1,0 +1,34 @@
+# 👋 CRAFT: Concept Recursive Activation FacTorization for Explainability (CVPR 2023)
+
+This repository contains code for the paper:
+
+*CRAFT: Concept Recursive Activation FacTorization for Explainability*, Thomas Fel*, Agustin Picard*, Louis Bethune*, Thibaut Boissin*, David Vigouroux, Julien Colin, Rémi Cadène, Thomas Serre. CVPR 2023, [[arXiv]](https://arxiv.org/abs/2211.10154).
+
+The code is implemented and available **for Pytorch & Tensorflow**. A notebook for each of them is available: [notebook Pytorch](./craft_pytorch.ipynb), [notebook Tensorflow](./craft_tensorflow.ipynb).
+
+<img src="./assets/craft.jpg" width="800px">
+
+```
+@inproceedings{fel2023craft,
+      title={CRAFT: Concept Recursive Activation FacTorization for Explainability},
+      author={Thomas, Fel and Agustin, Picard and Louis, Bethune and Thibaut, Boissin and David, Vigouroux and Julien, Colin and Rémi, Cadène and Thomas, Serre},
+      year={2023},
+      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+}
+```
+
+## To go further
+
+The code for the metrics and the other attribution methods used in the paper come from the [Xplique toolbox](https://github.com/deel-ai/xplique).
+
+<a href="https://github.com/deel-ai/xplique">
+    <img src="https://github.com/deel-ai/xplique/blob/master/docs/assets/banner.png?raw=true" width="500px">
+</a>
+
+
+# Authors of the code
+
+- [Thomas Fel](https://thomasfel.fr) - thomas_fel@brown.edu, PhD Student DEEL (ANITI), Brown University
+- [Agustin Picard]() - agustin-martin.picard@irt-saintexupery.com, IRT Saint-exupéry, DEEL
+- [Louis Béthune]() - louis.bethune@univ-toulouse.fr, PhD Student DEEL (ANITI)
+- [Thibaut Boissin]() - thibaut.boissin@irt-saintexupery.com, IRT Saint-exupéry, DEEL
