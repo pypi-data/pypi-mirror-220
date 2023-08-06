@@ -1,0 +1,3 @@
+recursive-include src/text_selection_component/frontend *
+include README.md
+include LICENSE

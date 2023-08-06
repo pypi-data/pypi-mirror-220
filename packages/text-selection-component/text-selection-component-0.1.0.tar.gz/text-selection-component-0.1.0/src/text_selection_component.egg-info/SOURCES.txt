@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/text_selection_component/__init__.py
+src/text_selection_component.egg-info/PKG-INFO
+src/text_selection_component.egg-info/SOURCES.txt
+src/text_selection_component.egg-info/dependency_links.txt
+src/text_selection_component.egg-info/requires.txt
+src/text_selection_component.egg-info/top_level.txt
+src/text_selection_component/frontend/index.html
+src/text_selection_component/frontend/main.js
+src/text_selection_component/frontend/streamlit-component-lib.js
+src/text_selection_component/frontend/style.css
