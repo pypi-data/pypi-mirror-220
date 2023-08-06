@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+gitea_actions.egg-info/PKG-INFO
+gitea_actions.egg-info/SOURCES.txt
+gitea_actions.egg-info/dependency_links.txt
+gitea_actions.egg-info/requires.txt
+gitea_actions.egg-info/top_level.txt
