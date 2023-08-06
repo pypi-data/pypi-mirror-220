@@ -1,0 +1,9 @@
+argcomplete
+prettytable
+pyxdg
+PyYAML
+toolrack>=3
+
+[testing]
+pytest
+pytest-mock
