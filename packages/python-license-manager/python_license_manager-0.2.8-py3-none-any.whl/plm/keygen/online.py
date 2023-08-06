@@ -1,0 +1,1 @@
+from .._agg import _N1sij as validate, _eNCpz as console, _xLWb3 as LicenseError, _JfpGk as get_fingerprint, _LKj6C as safeget
