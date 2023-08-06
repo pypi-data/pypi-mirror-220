@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "bioacme"
+version = "1.0.1"
+description = ""
+authors = [
+    "Ali Farhat <afarha5@uic.edu>",
+    "João Carlos Rodrigues Jr. <jc.rodrigues1997@gmail.com>",
+    "Hendrik Dumith Louzada <hendriklouzada@gmail.com>"
+]
+include = [
+    { path = "bioacme/bin/*", format = "wheel"},
+    { path = "src/*", format = "sdist"},
+    { path = "CMakeModules/*", format = "sdist"},
+    { path = "CMakeLists.txt", format = "sdist"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "cmake", "setuptools", "wheel"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+build_state_space_bfs = "bioacme.__main__:build_state_space_bfs"
+build_state_space_dfs = "bioacme.__main__:build_state_space_dfs"
+mxexp = "bioacme.__main__:mxexp"
+net2matrix = "bioacme.__main__:net_2_matrix"
+ssor = "bioacme.__main__:ssor"
+
+[tool.poetry.build]
+script = "build.py"
