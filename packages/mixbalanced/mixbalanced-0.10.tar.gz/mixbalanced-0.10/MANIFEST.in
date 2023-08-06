@@ -1,0 +1,3 @@
+include mixbalanced/requirements.txt
+include mixbalanced/thirdparty.json
+include mixbalanced/README.MD

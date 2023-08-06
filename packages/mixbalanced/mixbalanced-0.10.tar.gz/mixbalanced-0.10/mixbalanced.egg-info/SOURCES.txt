@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mixbalanced/README.MD
+mixbalanced/__init__.py
+mixbalanced/requirements.txt
+mixbalanced/thirdparty.json
+mixbalanced.egg-info/PKG-INFO
+mixbalanced.egg-info/SOURCES.txt
+mixbalanced.egg-info/dependency_links.txt
+mixbalanced.egg-info/top_level.txt
