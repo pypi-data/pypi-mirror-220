@@ -1,0 +1,72 @@
+#!python
+
+import argparse
+import os
+import sys
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--port', default=9000, help='El puerto en el que se ejecutará la aplicación', type=int)
+parser.add_argument('--mode', default='wsgi', help='El modo de la aplicación (asgi o wsgi)')
+parser.add_argument('command', nargs='?', default='', help='El comando a ejecutar (start, stop, restart, rm, bash, o en blanco para imprimir ayuda)')
+
+args = parser.parse_args()
+
+if args.mode.lower() in ['wsgi', 'asgi']:
+    mode = args.mode.lower()
+else:
+    print('Must select a mode WSGI or ASGI')
+    sys.exit()
+
+print(f'Using {mode.upper()}.')
+
+IMAGE = f'yeisondev/djangoship:{mode}'
+SOURCE = os.path.abspath(os.curdir)
+APP = os.path.split(SOURCE)[-1].replace('_', '')
+
+port = args.port
+APPNAME = f'{APP}_{mode}'
+
+
+port_mode = {
+    'asgi': '8000',
+    'wsgi': '80',
+}[mode]
+
+try:
+    command = args.command
+except:
+    command = ''
+
+extra = ''
+if os.path.exists('docker.args'):
+    with open('docker.args', 'r') as file:
+        extra = file.read().replace('\n', '')
+
+DOCKER_RUN = f'docker run -d -p {port}:{port_mode} --name {APPNAME} -e DJANGOPROJECT={APP} -e "PROXY_PASS=http://127.0.0.1:8000/" --network mynetwork --mount type=bind,source={SOURCE},target=/app/djangoship {extra} {IMAGE}'
+DOCKER_EXEC = f'docker exec -it {APPNAME} bash'
+DOCKER_STOP = f'docker stop {APPNAME}'
+DOCKER_START = f'docker start {APPNAME}'
+DOCKER_RM = f'docker rm {APPNAME}'
+
+match command:
+
+    case 'start':
+        os.system(DOCKER_START)
+
+    case 'stop':
+        os.system(DOCKER_STOP)
+
+    case 'restart':
+        os.system(DOCKER_STOP)
+        os.system(DOCKER_START)
+
+    case 'rm':
+        os.system(DOCKER_STOP)
+        os.system(DOCKER_RM)
+
+    case 'bash':
+        os.system(DOCKER_EXEC)
+
+    case _:
+        os.system(DOCKER_RUN)
+        os.system(DOCKER_EXEC)
