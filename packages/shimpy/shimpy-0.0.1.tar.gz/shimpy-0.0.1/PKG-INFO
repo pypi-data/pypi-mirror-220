@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: shimpy
+Version: 0.0.1
+Summary: Sample CLI Tool to interact with Shimmer Network.
+License: MIT
+Author: Kumar Anirudha
+Author-email: mail@anirudha.dev
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: arrow (>=1.2.3,<2.0.0)
+Requires-Dist: click (>=8.1.6,<9.0.0)
+Requires-Dist: iota-sdk (==1.0.0rc1)
+Description-Content-Type: text/markdown
+
+# Shimpy
+
+Sample CLI Tool to interact with Shimmer Network using [iota-sdk](https://pypi.org/project/iota-sdk/).
+
+## Install
+
+### Using pip
+
+`pip install shimpy`
+
+### Using poetry
+
+`poetry add shimpy`
+
+## Usage
+
+`shimpy --help`
+
+## Commands
+
+- info : Get Info about Node
+- account
+  - new: Generate new account
+  - balance: Get balance by account alias
+  - list: List all accounts
+- address
+  - new: Generate new address for account
+  - list: List all addresses in the account
+- nft
+  - mint: Mint new NFT
+  - send: Send NFT to an address
+
+### Contributions Welcome
+
+#### Under Development
+
