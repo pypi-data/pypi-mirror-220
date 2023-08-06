@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dramatiq-sqs
+Version: 0.2.0
+Summary: An Amazon SQS broker for Dramatiq.
+Requires-Python: >=3.5
+Provides-Extra: dev
+License-File: LICENSE
+
+Visit https://github.com/Bogdanp/dramatiq_sqs for more information.
