@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+infoind/__init__.py
+infoind/osint.py
+infoind.egg-info/PKG-INFO
+infoind.egg-info/SOURCES.txt
+infoind.egg-info/dependency_links.txt
+infoind.egg-info/requires.txt
+infoind.egg-info/top_level.txt
