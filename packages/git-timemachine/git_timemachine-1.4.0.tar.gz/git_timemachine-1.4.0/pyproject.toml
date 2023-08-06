@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "git-timemachine"
+version = "1.4.0"
+description = "A command-line tool that helps you record commits on Git repositories at any time node."
+license = "GPL-3.0"
+authors = ["HE Yaowen <he.yaowen@hotmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/he-yaowen/git-timemachine"
+repository = "https://github.com/he-yaowen/git-timemachine.git"
+keywords = ["git", "timemachine", "committing"]
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Version Control :: Git",
+    "Topic :: Utilities",
+]
+include = ["COPYING"]
+packages = [{include = "git_timemachine", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.12"
+click = "^8.1.5"
+ini-parser = "^1.2.1"
+pygit2 = "^1.12.2"
+tabulate = "^0.9.0"
+
+[tool.poetry.group.dev.dependencies]
+chance = "^0.110"
+pre-commit = "^3.3.3"
+pyinstaller = "^5.13.0"
+pylint = "^2.17.4"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+tox = "^4.6.4"
+
+[tool.poetry.scripts]
+git-timemachine = "git_timemachine.__main__:cli"
+
+[tool.poe.tasks]
+gtm = "poetry run git-timemachine"
+dist = "poetry run pyinstaller git-timemachine.spec"
+lint = "poetry run pylint src"
+pre-commit = "poetry run pre-commit install"
+test = "poetry run pytest --cov=src --cov-report=term-missing"
+tox = "poetry run tox"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
