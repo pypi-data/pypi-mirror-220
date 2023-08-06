@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+pyribs.egg-info/PKG-INFO
+pyribs.egg-info/SOURCES.txt
+pyribs.egg-info/dependency_links.txt
+pyribs.egg-info/top_level.txt
