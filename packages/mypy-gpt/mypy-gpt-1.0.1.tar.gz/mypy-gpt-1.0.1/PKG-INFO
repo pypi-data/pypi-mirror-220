@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mypy-gpt
+Version: 1.0.1
+Summary: Python minor issue resolver (mypy) using gpt by openai! 
+Home-page: https://github.com/eyalk11/mypy-gpt
+Author: ekarni
+Author-email: 
+License:  AGPL-3.0 license
+License-File: LICENSE
+
+Python minor issue resolver (mypy) using gpt by openai! 
