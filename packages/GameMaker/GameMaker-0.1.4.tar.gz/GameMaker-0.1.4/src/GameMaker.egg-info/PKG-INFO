@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: GameMaker
+Version: 0.1.4
+Summary: pygame Wrapper for drawing/making games
+Author-email: Dennis Yahnov <den.yakhnov@gmail.com>
+Project-URL: Homepage, https://github.com/denyahnov/GameMaker
+Project-URL: Bug Tracker, https://github.com/denyahnov/GameMaker/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GameMaker
+
+## Requirements.
+
+```sh
+pip install pygame
+```
+
+## Installation & Usage
+
+```sh
+pip install GameMaker
+```
+
+See `examples` for usage of wrapper

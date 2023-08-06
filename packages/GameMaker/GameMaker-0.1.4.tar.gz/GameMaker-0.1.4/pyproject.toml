@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GameMaker"
+version = "0.1.4"
+authors = [
+  { name="Dennis Yahnov", email="den.yakhnov@gmail.com" },
+]
+description = "pygame Wrapper for drawing/making games"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/denyahnov/GameMaker"
+"Bug Tracker" = "https://github.com/denyahnov/GameMaker/issues"
