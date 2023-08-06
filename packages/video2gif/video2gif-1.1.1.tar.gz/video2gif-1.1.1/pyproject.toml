@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "video2gif"
+version = "1.1.1"
+description = "a simple program that converts a video to gif. it will also download a video for you using yt-dlp. Depends on ffmpeg"
+authors = ["Mae Miller <maeborow@posteo.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+yt-dlp = "^2023.7.6"
+ffmpeg-python = "^0.2.0"
+validators = "^0.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+python-lsp-server = "^1.7.4"
+pylsp-mypy = "^0.6.7"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+video2gif = 'video2gif.main:run'
