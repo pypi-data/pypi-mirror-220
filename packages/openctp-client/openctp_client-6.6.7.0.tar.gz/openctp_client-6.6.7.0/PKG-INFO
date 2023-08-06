@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: openctp-client
+Version: 6.6.7.0
+Summary: Clients of openctp-ctp
+Project-URL: Homepage, https://github.com/dennisxie/openctp-client
+Project-URL: Bug Tracker, https://github.com/dennisxie/openctp-client/issues
+Author-email: Dennis Xie <dennisxie1992@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# openctp-client
