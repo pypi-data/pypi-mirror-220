@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+src/main.py
+src/system123.egg-info/PKG-INFO
+src/system123.egg-info/SOURCES.txt
+src/system123.egg-info/dependency_links.txt
+src/system123.egg-info/top_level.txt
+src/systemdata/__init__.py
+src/systemdata/systemdata.py
+src/systemdata/test.py
+tests/test.py
