@@ -1,0 +1,3 @@
+[console_scripts]
+colordemo = colordemo.__main__:main
+

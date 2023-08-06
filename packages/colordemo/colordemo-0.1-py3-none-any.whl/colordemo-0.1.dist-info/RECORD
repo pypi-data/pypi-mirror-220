@@ -1,0 +1,10 @@
+colordemo-0.1.dist-info/METADATA,sha256=yMJ__3Z2gDM_P5T9cQARA9NlcoKs5V_7OizbrozhOuE,46337
+colordemo-0.1.dist-info/WHEEL,sha256=0QD4Fi8spmPDA9YIWsctxI6ukFf44Zgk0L9495lbqs0,90
+colordemo-0.1.dist-info/entry_points.txt,sha256=7_tLQQvRbMeul977zXS_FlX6Ck-R8gvzIWrCxPwYCSc,55
+colordemo-0.1.dist-info/licenses/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+colordemo/__init__.py,sha256=KDjVPDHKtHMytOyNET5ab0D6A8Mar4lxwNOVT8W2OoI,1014
+colordemo/__main__.py,sha256=QK-7FWIRER2o1E-IN20QWS8RtqcJoFGQQQCxevmiVN4,5344
+colordemo/color_display.py,sha256=MSf5lfUQFVj4LV5dTqqW-nWQnkHPjRGXZPOgZywf8JM,13792
+colordemo/colors.py,sha256=pY4yohdHTTjipHjobmNzVM8S6BAn02TL7poMJNORDbc,820
+colordemo/terminal_query.py,sha256=HwtEi_AmqYvmXnLUaej87aMucHJq8uw0ATqD9ysrohk,14331
+colordemo-0.1.dist-info/RECORD,,
