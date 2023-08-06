@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pusteblume
+Version: 1.0
+Summary: Light-weight time tracking tool.
+Home-page: https://github.com/PascalinDe/pusteblume
+Author: Carine Dengler
+Author-email: pusteblume@pascalin.de
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+
