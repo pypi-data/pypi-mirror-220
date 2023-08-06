@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+parserito/__init__.py
+parserito/run.py
+parserito.egg-info/PKG-INFO
+parserito.egg-info/SOURCES.txt
+parserito.egg-info/dependency_links.txt
+parserito.egg-info/requires.txt
+parserito.egg-info/top_level.txt
