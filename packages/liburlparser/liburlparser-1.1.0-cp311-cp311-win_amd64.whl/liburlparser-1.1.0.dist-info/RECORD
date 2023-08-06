@@ -1,0 +1,10 @@
+liburlparser/__init__.py,sha256=avnhAxdykC4Z3Q5IdiRceA967sfMTfXjqy7wABExaNI,164
+liburlparser/__main__.py,sha256=RfOmaGYL-JqkHol9P6oPpFleqDluBvFETN7GcQfCLjY,1078
+liburlparser/_core.cp311-win_amd64.pyd,sha256=ne4jpqudtU_LzOxGi_qz9BapGeYhDZ-29UKsyj2qbrc,159744
+liburlparser/core.py,sha256=S50lZolj8ag8EP6Izv7qDyuIefra3GRAhBbud_pMDy0,918
+liburlparser/public_suffix_list.dat,sha256=EFZOicLE1svkGvh1_lbcBgHVEEe0nYgfN-AKC3QflF4,239615
+liburlparser-1.1.0.dist-info/METADATA,sha256=8S4Zve3ilchxjzSLgqF8wEu-xnPlL_Ax_BC4BuhHsiU,7844
+liburlparser-1.1.0.dist-info/WHEEL,sha256=petd9TkNf7ALS0VJWrRDEIOYRGCCXF0mu7zZETA-MLA,105
+liburlparser-1.1.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+liburlparser-1.1.0.dist-info/licenses/LICENSE,sha256=N_R9-5l0U5HZyk0-el1LtB0nxSXttAIy78h4x_w_bgk,2218
+liburlparser-1.1.0.dist-info/RECORD,,
