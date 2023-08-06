@@ -1,0 +1,4 @@
+fsspec
+pydantic[dotenv]==1.*
+sqlalchemy>=2.0.9
+structlog
