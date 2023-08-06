@@ -1,0 +1,14 @@
+numpy
+scipy
+astropy
+tqdm
+jupyter
+poppy
+pyxel
+
+[testing]
+pytest>=6.0
+pytest-cov>=2.0
+mypy>0.981
+flake8>=3.9
+tox>=3.24
