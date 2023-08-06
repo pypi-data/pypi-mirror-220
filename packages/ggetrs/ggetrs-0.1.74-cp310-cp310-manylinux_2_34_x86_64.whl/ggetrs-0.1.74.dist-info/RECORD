@@ -1,0 +1,8 @@
+ggetrs-0.1.74.dist-info/METADATA,sha256=8_9hHubChiDUVDbZku_TVLFVZsfD73LzgAoqNSEyVXg,4589
+ggetrs-0.1.74.dist-info/WHEEL,sha256=bfGp_yE8WTqA5OoFZNFGxJ8_9Bt0lw3uvm4DNV6Bok0,108
+ggetrs-0.1.74.dist-info/license_files/LICENSE,sha256=3gVVEg5nJ1JczX6GMIdmXxoYhYPZb8c_rHLyKyqh1aM,1070
+ggetrs.libs/libcrypto-12cc2011.so.3,sha256=PjxlP74Rx104LamMs0Rtw2rgoJVOjijWjGs3NBO-gzQ,5365281
+ggetrs.libs/libssl-9fde38df.so.3,sha256=spXqquM0iCJSBkKNFUhmgy5NcuhzD-pC9n_Gn0Ulphs,701249
+ggetrs/__init__.py,sha256=0HE9AFALUHDRVkbIZlwWjsPDkWbzmJUlAsAlSi6ttOo,107
+ggetrs/ggetrs.cpython-310-x86_64-linux-gnu.so,sha256=Dp6FkPCccw1dSMj1rTPVZdvd3WjG8Q6xe3b8m4CKsb4,6902105
+ggetrs-0.1.74.dist-info/RECORD,,
