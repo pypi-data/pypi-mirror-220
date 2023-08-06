@@ -1,0 +1,15 @@
+done/__init__.py,sha256=roWwx2W-hp6u2HeYOhYnVjyTitY78TMeZCiy7-XA_Ng,107
+done/done.py,sha256=YH-WbYM0_N9cTNlZxeJsbVRDr4ckRPI5O4PDQmAySas,5022
+done/public/check-empty.png,sha256=GQ3g-DqVK1YZyCTglvviqKLZL9AShG3Z9b7qFUsypaQ,465
+done/public/check-full.png,sha256=uSvqwzEv4cdlneDH35hvWQ76NhVKBRX3lcA2yCwzjzI,379
+done/static/css/done.css,sha256=eFBCBk4qh7oeb_wFMJpXtu1JzHllbz8ylb6V9n5e9XI,2185
+done/static/js/src/done.js,sha256=CVtVtHTM95NuLsHxUiEU-aVtqGWf_HjkLeKomyy_T-s,1496
+done/templates/done.html,sha256=esMMfvM7A87xAPhHiT-VHM3dh9NBcZnR9brzSf2zBPw,794
+done/templates/studioview.html,sha256=BSt0SGrrM4F6a8TvpfcmoDvCrXF5_lN0sVJN7Bcil8A,732
+done_xblock-2.1.0.dist-info/LICENSE,sha256=YMZtFw1tnvZVwfBy9c1oHJ2PXOy8oSV70UX5XJdAlWU,34500
+done_xblock-2.1.0.dist-info/METADATA,sha256=ciVTWPnyd4yBkdgoxCK9iuAwow7ZvZ8FX-kqczDQ6ms,4708
+done_xblock-2.1.0.dist-info/NOTICE,sha256=mQOWSATBvrIsnSt8VsCZKsAeS-2oknDbu9tkD0HMZME,719
+done_xblock-2.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+done_xblock-2.1.0.dist-info/entry_points.txt,sha256=w5rqs4SBTPngyBc83vCFtdiE6ufH1QXx3Z56onhfT-Y,36
+done_xblock-2.1.0.dist-info/top_level.txt,sha256=0Rf6AGupIIUAspMM5py95DbGR6-pF8tzlqm8kRGkbdI,5
+done_xblock-2.1.0.dist-info/RECORD,,
