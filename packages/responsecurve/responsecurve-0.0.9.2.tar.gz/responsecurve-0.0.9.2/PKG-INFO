@@ -1,0 +1,360 @@
+Metadata-Version: 2.1
+Name: responsecurve
+Version: 0.0.9.2
+Summary: A library for detecting response curves in time series data.
+Home-page: https://github.com/himanalot/ResponseCurve
+Author: Ishan Ramrakhiani
+Author-email: ishanramrakhiani@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ResponseCurve.py
+
+ResponseCurve.py is a Python library that is designed to process and analyze response curves in a data-driven approach. It includes various functionalities such as response curve start/end detection, normalization, response rate calculation, peak detection, baseline correction, noise estimation, signal-to-noise ratio calculation, enveloping, and parameter optimization, using a combination of statistical and machine learning techniques to identify patterns in the data that correspond to changes in the underlying system.
+
+## Installation
+
+You can install ResponseCurve.py using pip install responsecurve
+
+
+ResponseCurve.py requires several external dependencies, including pandas, numpy, scipy, matplotlib, and scikit-learn, which will be installed automatically when you install the library.
+
+## Documentation Overview
+
+### Class Initialization
+**Function:** `ResponseCurve(x, y)`
+
+**Inputs:**
+
+- `x`: A list, numpy array, or pandas Series representing the x-values of the data points.
+- `y`: A list, numpy array, or pandas Series representing the y-values of the data points.
+
+**Output:** None
+
+This function initializes the `ResponseCurve` class with input data. Both `x` and `y` should have the same length. The function raises a ValueError if either `x` or `y` is None.
+
+### calculate_derivatives()
+**Function:** `calculate_derivatives()`
+
+**Inputs:** None
+
+**Output:** None
+
+This function calculates the first and second derivatives of the y-data and stores them in the DataFrame columns 'y_derivative' and 'y_2nd_derivative'. It raises a ValueError if the 'y' column is not found in the DataFrame.
+
+### calculate_differences()
+**Function:** `calculate_differences()`
+
+**Inputs:** None
+
+**Output:** None
+
+This function calculates the difference between consecutive y-values and stores it in the 'y_diff' column of the DataFrame. It raises a ValueError if the 'y' column is not found in the DataFrame.
+
+### get_response_start_end(window_size=5, plot=False)
+**Function:** `get_response_start_end(window_size=5, plot=False)`
+
+**Inputs:**
+
+- `window_size`: An integer indicating the size of the window to use for local analysis around the detected start point. Default is 5.
+- `plot`: A boolean indicating whether to plot the response with the start and end points. Default is False.
+
+**Output:** A tuple with the start and end points as pandas DataFrame rows.
+
+This function detects the start and end points of the response in the data using the second derivative and differences. It optionally plots the response with the start and end points. **It is meant to be used on a dataset which contains 1 response curve.**
+
+### response_duration(start=None, end=None)
+**Function:** `response_duration(start=None, end=None)`
+
+**Inputs:**
+
+- `start`: A pandas DataFrame row representing the start point of the response. If None, a ValueError is raised.
+- `end`: A pandas DataFrame row representing the end point of the response. If None, a ValueError is raised.
+
+**Output:** The duration as a float.
+
+This function calculates the duration of the response from the start to the end point.
+
+### peak_value()
+**Function:** `peak_value()`
+
+**Inputs:** None
+
+**Output:** The peak value as a float.
+
+This function calculates the peak value in the y-data. It raises a ValueError if the 'y' column is not found in the DataFrame.
+
+### time_to_peak()
+**Function:** `time_to_peak()`
+
+**Inputs:** None
+
+**Output:** The time as a float.
+
+This function calculates the time (x-value) at which the peak occurs. It raises a ValueError if either the 'x' or 'y' column is not found in the DataFrame.
+
+### area_under_curve(start=None, end=None)
+**Function:** `area_under_curve(start=None, end=None)`
+
+**Inputs:**
+
+- `start`: A pandas DataFrame row representing the start point of the response. If None, a ValueError is raised.
+- `end`: A pandas DataFrame row representing the end point of the response. If None, a ValueError is raised.
+
+**Output:** The area as a float.
+
+This function calculates the area under the curve from the start to the end point using numerical integration.
+
+### normalize(method='max')
+**Function:** `normalize(method='max')`
+
+**Inputs:**
+
+- `method`: A string indicating the normalization method. It can be either 'max' (default) or 'area'.
+
+**Output:** None
+
+This function normalizes the y-data either by its maximum value or by the area under the curve.
+
+### response_rate(start=None, end=None)
+**Function:** `response_rate(start=None, end=None)`
+
+**Inputs:**
+
+- `start`: A pandas DataFrame row representing the start point of the response. If None, a ValueError is raised.
+- `end`: A pandas DataFrame row representing the end point of the response. If None, a ValueError is raised.
+
+**Output:** The response rate as a float.
+
+This function calculates the response rate as the peak value divided by the response duration.
+
+### peak_detection(height=None, distance=None)
+**Function:** `peak_detection(height=None, distance=None)`
+
+**Inputs:**
+
+- `height`: A scalar or sequence specifying the minimum height for a peak. Default is None.
+- `distance`: A scalar or sequence specifying the minimum horizontal distance (in number of samples) between neighboring peaks. Default is None.
+
+**Output:** A pandas DataFrame with the detected peaks.
+
+This function detects the peaks in the y-data.
+
+### baseline_correction(degree=1)
+**Function:** `baseline_correction(degree=1)`
+
+**Inputs:**
+
+- `degree`: An integer specifying the degree of the fitting polynomial. Default is 1.
+
+**Output:** None
+
+This function corrects the baseline of the y-data by subtracting a polynomial fit.
+
+### fit_multipeak(peaks, model_func)
+**Function:** `fit_multipeak(peaks, model_func)`
+
+**Inputs:**
+
+- `peaks`: A list or array-like of initial guesses for the peak parameters.
+- `model_func`: A function representing the model to fit to the data.
+
+**Output:** A list of parameter arrays for each fitted peak.
+
+This function fits multiple peaks in the y-data using a provided model function.
+
+### noise_estimation()
+**Function:** `noise_estimation()`
+
+**Inputs:** None
+
+**Output:** The noise as a float.
+
+This function estimates the noise in the y-data as its standard deviation. It raises a ValueError if the 'y' column is not found in the DataFrame.
+
+### signal_to_noise_ratio()
+**Function:** `signal_to_noise_ratio()`
+
+**Inputs:** None
+
+**Output:** The ratio as a float.
+
+This function calculates the signal-to-noise ratio in the y-data as the mean divided by the standard deviation.
+
+### enveloping()
+**Function:** `enveloping()`
+
+**Inputs:** None
+
+**Output:** None
+
+This function calculates the envelope of the y-data using the absolute value of its Hilbert transform. It raises a ValueError if the 'y' column is not found in the DataFrame.
+
+### plot_response(start, end)
+**Function:** `plot_response(start, end)`
+
+**Inputs:**
+
+- `start`: A pandas DataFrame row representing the start point of the response. If None, the start point is not plotted.
+- `end`: A pandas DataFrame row representing the end point of the response. If None, the end point is not plotted.
+
+**Output:** None
+
+This function plots the response curve with optional start and end points.
+
+### compare_responses(other)
+**Function:** `compare_responses(other)`
+
+**Inputs:**
+
+- `other`: A `ResponseCurve` object representing the other response curve.
+
+**Output:** A dictionary with the differences in the compared features.
+
+This function compares the response curve with another one in terms of duration, peak value, time to peak, and area under the curve.
+
+### detect_peaks(window_size=10, std_multiplier=3)
+**Function:** `detect_peaks(window_size=10, std_multiplier=3)`
+
+**Inputs:**
+
+- `window_size`: An integer indicating the size of the window to use for local analysis around each data point
+
+**Output:** A pandas DataFrame with the detected peaks.
+
+This function detects peaks in the y-data that are local maxima and are above a threshold defined as the local mean plus a multiple of the local standard deviation. It raises a ValueError if the 'y' column is not found in the DataFrame or if no peaks are detected.
+
+### iterative_baseline_correction(degree=1, iterations=3)
+**Function:** `iterative_baseline_correction(degree=1, iterations=3)`
+
+**Inputs:**
+
+- `degree`: An integer specifying the degree of the fitting polynomial. Default is 1.
+- `iterations`: An integer specifying the number of iterations to perform. Default is 3.
+
+**Output:** None
+
+This function corrects the baseline of the y-data by subtracting a polynomial fit, and repeats this process a number of times. The function raises a ValueError if either the 'x' or 'y' column is not found in the DataFrame.
+
+### localized_normalization(window_size=10)
+**Function:** `localized_normalization(window_size=10)`
+
+**Inputs:**
+
+- `window_size`: An integer indicating the size of the window to use for local normalization. Default is 10.
+
+**Output:** None
+
+This function normalizes the y-data by the maximum value in a local window around each point. The function raises a ValueError if the 'y' column is not found in the DataFrame.
+
+### dynamic_peak_detection(min_window_size=5, max_window_size=20, std_multiplier=3)
+**Function:** `dynamic_peak_detection(min_window_size=5, max_window_size=20, std_multiplier=3)`
+
+**Inputs:**
+
+- `min_window_size`: An integer indicating the minimum size of the window to use for local analysis. Default is 5.
+- `max_window_size`: An integer indicating the maximum size of the window to use for local analysis. Default is 20.
+- `std_multiplier`: A float indicating the number of standard deviations above the mean to consider a point as a peak. Default is 3.
+
+**Output:** A pandas DataFrame with the detected peaks.
+
+This function detects peaks in the y-data that are local maxima and are above a threshold defined as the local mean plus a multiple of the local standard deviation. It uses different window sizes for local analysis. The function raises a ValueError if the 'y' column is not found in the DataFrame or if no peaks are detected.
+
+### robust_response_rate(start=None, end=None)
+**Function:** `robust_response_rate(start=None, end=None)`
+
+**Inputs:**
+
+- `start`: A pandas DataFrame row representing the start point of the response. If None, a ValueError is raised.
+- `end`: A pandas DataFrame row representing the end point of the response. If None, a ValueError is raised.
+
+**Output:** The response rate as a float.
+
+This function calculates a robust estimate of the response rate as the trimmed mean of the y-values divided by the response duration.
+
+### compare_multiple_curves(others)
+**Function:** `compare_multiple_curves(others)`
+
+**Inputs:**
+
+- `others`: A list of `ResponseCurve` objects representing the other response curves.
+
+**Output:** A 2D numpy array with the pairwise distances.
+
+This function compares the response curve with multiple others in terms of their pairwise Euclidean distances. The function raises a ValueError if either the 'x' or 'y' column is not found in the DataFrame of either the current or any of the other response curves.
+
+### curve_segmentation(segments)
+**Function:** `curve_segmentation(segments)`
+
+**Inputs:**
+
+- `segments`: An integer specifying the number of segments to divide the response curve into.
+
+**Output:** A list of pandas DataFrames representing the segments.
+
+This function divides the response curve into a specified number of equal-length segments. The function raises a ValueError if either the 'x' or 'y' column is not found in the DataFrame.
+
+### optimize_parameters(model_func, p0)
+**Function:** `optimize_parameters(model_func, p0)`
+
+**Inputs:**
+
+- `model_func`: A function representing the model to fit to the data.
+- `p0`: A list or array-like of initial guesses for the parameters of the model function.
+
+**Output:** An array of optimized parameters.
+
+This function optimizes the parameters of a specified model function to fit the response curve. The function raises a ValueError if either the 'x' or 'y' column is not found in the DataFrame.
+
+### generate_report()
+**Function:** `generate_report()`
+
+**Inputs:** None
+
+**Output:** None
+
+## Usage
+
+To use ResponseCurve.py, simply import the functions or classes you need into your Python code. Here's an example of how to use the `detect_response_curves` function:
+
+```python
+from responsecurve import detect_response_curves
+
+# Load time series data from a file
+data = load_data('data.csv')
+
+# Detect response curves in the data
+response_curves = detect_response_curves(data)
+
+# Print the start and end points of each response curve
+for curve in response_curves:
+    print('Start:', curve[0], 'End:', curve[1])
+```
+
+ResponseCurve.py also includes a ResponseCurveDetector class that provides a higher-level interface for detecting response curves. Below is an example of how to use the ResponseCurveDetector class:
+
+```python
+from responsecurve import ResponseCurveDetector
+
+# Create a detector object with default parameters
+detector = ResponseCurveDetector()
+
+# Load time series data from a file
+data = load_data('data.csv')
+
+# Detect response curves in the data
+detector.detect(data)
+
+# Visualize the data and the detected response curves
+detector.plot()
+```
+
+For more information on how to use ResponseCurve.py, please refer to the documentation above.
+
+## Contributing
+
+If you find a bug or have a feature request, please open an issue on GitHub. If you would like to contribute to the development of ResponseCurve.py, please submit a pull request.
+
+## License
+
+ResponseCurve.py is licensed under the MIT License. See LICENSE for more information.
