@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: plann
+Version: 0.15
+Summary: Simple command-line CalDAV client and planning tool, for adding and browsing calendar items, todo list items, etc.
+Home-page: https://plann.no/
+Author: Tobias Brox
+Author-email: t-plann@tobixen.no
+Maintainer: Tobias Brox
+License: GPLv3+
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+License-File: LICENSE.TXT
+Requires-Dist: icalendar
+Requires-Dist: caldav (>=0.12-dev0)
+Requires-Dist: tzlocal
+Requires-Dist: Click
+Requires-Dist: PyYAML
+Requires-Dist: sortedcontainers
+
