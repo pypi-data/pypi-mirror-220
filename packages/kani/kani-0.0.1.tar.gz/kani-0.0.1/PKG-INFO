@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: kani
+Version: 0.0.1
+Summary: kani (カニ) is a lightweight and highly hackable harness for chat-based language models with tool usage/function calling.
+Project-URL: Homepage, https://github.com/zhudotexe/kani
+Project-URL: Bug Tracker, https://github.com/zhudotexe/kani/issues
+Author-email: Andrew Zhu <andrew@zhu.codes>
+License: MIT License
+        
+        Copyright (c) 2023 Andrew Zhu
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Requires-Dist: aiohttp<4.0.0,>=3.0.0
+Requires-Dist: cachetools<6.0.0,>=5.0.0
+Requires-Dist: pydantic<3.0.0,>=2.0.0
+Provides-Extra: huggingface
+Requires-Dist: transformers<5.0.0,>=4.0.0; extra == 'huggingface'
+Provides-Extra: llama
+Requires-Dist: sentencepiece~=0.1.99; extra == 'llama'
+Provides-Extra: openai
+Requires-Dist: tiktoken~=0.4.0; extra == 'openai'
+Description-Content-Type: text/markdown
+
+# kani (カニ)
+
+[![Test Package](https://github.com/zhudotexe/kani/actions/workflows/pytest.yml/badge.svg)](https://github.com/zhudotexe/kani/actions/workflows/pytest.yml)
+[![Documentation Status](https://readthedocs.org/projects/kani/badge/?version=latest)](https://kani.readthedocs.io/en/latest/?badge=latest)
+[![PyPI](https://img.shields.io/pypi/v/kani)](https://pypi.org/project/kani/)
+
+
+kani (カニ) is a lightweight and highly hackable harness for chat-based language models with tool usage/function calling.
+
+Compared to other LM harnesses, kani is less opinionated and offers more fine-grained customizability
+over the parts of the control flow that matter, making it the perfect choice for NLP researchers, hobbyists, and
+developers alike.
+
+[Read the docs on ReadTheDocs!](http://kani.readthedocs.io/)
+
+## Features
+
+- **Lightweight and high-level** - kani implements common boilerplate to interface with language models without forcing
+  you to use opinionated prompt frameworks or complex library-specific tooling.
+- **Automatic chat memory management** - Allow chat sessions to flow without worrying about managing the number of
+  tokens in the history - kani takes care of it.
+- **Function calling with model feedback and retry** - Give models access to functions in just one line of code.
+  kani elegantly provides feedback about hallucinated parameters and errors and allows the model to retry calls.
+- **Model agnostic** - kani provides a simple interface to implement: token counting and completion generation.
+  Implement these two, and kani can run with any language model.
+- **You are in control** - You can override and provide a custom implementation for all
+  of these features, allowing you to run experiments just the way you want to. There are no hidden prompt hacks.
+- **Fast to iterate and intuitive to learn** - With kani, you only write Python - we handle the rest.
+- **Asynchronous design from the start** - kani can scale to run multiple chat sessions in parallel easily, without
+  having to manage multiple processes or programs.
+
+## Quickstart
+
+kani requires Python 3.10 or above.
+
+First, install the library. In this quickstart, we'll use the OpenAI engine, though kani
+is [model-agnostic](https://kani.readthedocs.io/en/latest/engines.html).
+
+```shell
+$ pip install "kani[openai]"
+```
+
+Then, let's use kani to create a simple chatbot using ChatGPT as a backend.
+
+```python
+# import the library
+from kani import Kani, chat_in_terminal
+from kani.engines.openai import OpenAIEngine
+
+# Replace this with your OpenAI API key: https://platform.openai.com/account/api-keys
+api_key = "sk-..."
+
+# kani uses an Engine to interact with the language model. You can specify other model 
+# parameters here, like temperature=0.7.
+engine = OpenAIEngine(api_key, model="gpt-3.5-turbo")
+
+# The kani manages the chat state, prompting, and function calling. Here, we only give 
+# it the engine to call ChatGPT, but you can specify other parameters like 
+# system_prompt="You are..." here.
+ai = Kani(engine)
+
+# kani comes with a utility to interact with a kani through your terminal! Check out 
+# the docs for how to use kani programmatically.
+chat_in_terminal(ai)
+```
+
+kani makes the time to set up a working chat model short, while offering the programmer deep customizability over
+every prompt, function call, and even the underlying language model.
+
+To learn more about how
+to [customize kani with your own prompt wrappers](https://kani.readthedocs.io/en/latest/customization.html),
+[function calling](https://kani.readthedocs.io/en/latest/function_calling.html), and
+more, [read the docs!](http://kani.readthedocs.io/)
+
+Or take a look at the hands-on examples [in this repo](https://github.com/zhudotexe/kani/tree/main/examples).
+
+<!--
+For developers:
+
+## Build and Publish
+
+`fastlmi` uses Hatchling to build.
+
+Make sure to bump the version in pyproject.toml before publishing.
+
+```shell
+rm -r dist/
+python -m build
+python -m twine upload dist/*
+```
+-->
