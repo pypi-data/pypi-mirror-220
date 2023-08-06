@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+img2jb2pdf/__init__.py
+img2jb2pdf.egg-info/PKG-INFO
+img2jb2pdf.egg-info/SOURCES.txt
+img2jb2pdf.egg-info/dependency_links.txt
+img2jb2pdf.egg-info/top_level.txt
