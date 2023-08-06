@@ -1,0 +1,10 @@
+gen_course/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gen_course/gen_answer_to_article_ques.py,sha256=X5SHNdjwbhv6m7VMjrIm-pPBZHd-BRQ8PaWIDaDcMVk,1603
+gen_course/gen_base.py,sha256=17VMnfj-BbcGWAp5SdjAmDSEhiZ3zCSMfaCThMCfwbM,1791
+gen_course/gen_course_article_content.py,sha256=XFDQEzTM_FhGQHrtAu5E7gkm0c_Eb_pz8fvEcOQDBLk,1790
+gen_course/gen_course_articles_titles.py,sha256=kAnKETbJg-P_rcdOxC0FTQpoacUvFWY2lt0LKmS4C40,1439
+gen_course/gen_course_metadata.py,sha256=pnidBWNHyNwEivKm6eXThvwJ_PYxtx07ZG2Enw3AbvE,1230
+microlearn_gen_course-0.0.1.dist-info/METADATA,sha256=lQqWxEKklzaHTrEhxDrLCya0gEZA8ljwJfsCpXrLx_M,710
+microlearn_gen_course-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+microlearn_gen_course-0.0.1.dist-info/top_level.txt,sha256=Wm0OYr_KxYalsIUmGBVp2R-tJrlSme_9QrsC_lh2RHQ,11
+microlearn_gen_course-0.0.1.dist-info/RECORD,,
