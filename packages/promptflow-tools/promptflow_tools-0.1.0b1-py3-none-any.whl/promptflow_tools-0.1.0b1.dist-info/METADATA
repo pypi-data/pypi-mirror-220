@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: promptflow-tools
+Version: 0.1.0b1
+Summary: PromptFlow SDK
+Home-page: https://github.com/microsoft/promptflow
+Author: Microsoft Corporation
+Author-email: aml-pt-eng@microsoft.com
+License: MIT License
+Project-URL: Bug Reports, https://github.com/microsoft/promptflow/issues
+Project-URL: Source, https://github.com/microsoft/promptflow
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <4.0,>=3.8
+
