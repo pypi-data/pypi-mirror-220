@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+payload_validator/__init__.py
+payload_validator/exceptions.py
+payload_validator/validators.py
+payload_validator.egg-info/PKG-INFO
+payload_validator.egg-info/SOURCES.txt
+payload_validator.egg-info/dependency_links.txt
+payload_validator.egg-info/top_level.txt
+tests/__init__.py
+tests/test_exceptions.py
+tests/test_validators.py
