@@ -1,0 +1,3 @@
+[console_scripts]
+jira-amt=jira_amt.cli:app
+
