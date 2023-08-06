@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+easystockplot/__init__.py
+easystockplot/stockplot.py
+easystockplot.egg-info/PKG-INFO
+easystockplot.egg-info/SOURCES.txt
+easystockplot.egg-info/dependency_links.txt
+easystockplot.egg-info/requires.txt
+easystockplot.egg-info/top_level.txt
