@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kingunit_inspector"
+version = "0.0.5"
+description = "KingUnit Inspector"
+authors = [{name = "东南dnf", email = "zjy2414@outlook.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+Home = "https://github.com/zjy2414"

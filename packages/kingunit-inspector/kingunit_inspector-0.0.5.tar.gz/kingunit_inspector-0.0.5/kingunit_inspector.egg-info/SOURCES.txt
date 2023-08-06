@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+kingunit_inspector/__init__.py
+kingunit_inspector/inspector.py
+kingunit_inspector.egg-info/PKG-INFO
+kingunit_inspector.egg-info/SOURCES.txt
+kingunit_inspector.egg-info/dependency_links.txt
+kingunit_inspector.egg-info/requires.txt
+kingunit_inspector.egg-info/top_level.txt
