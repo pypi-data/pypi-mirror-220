@@ -1,0 +1,9 @@
+server_discovery/__init__.py,sha256=yRSOWC6sMx3QSvUADnJb7RqXviDvzy11ZkKHLrMW2gY,190
+server_discovery/_broadcast.py,sha256=g8IO9spAn9OlVo9VuFIFkiw6ETzgexoIvQ604q82TLQ,860
+server_discovery/_client.py,sha256=Lbl6Wx-CW3b2VpzWCnS5-34eMDhHKGzhi10WhPLCS0Q,1490
+server_discovery/_info_model.py,sha256=Y2c3RysbTdj9ehnmOv0XEwXUO7AGS-mfdxoGXwRB_eg,495
+server_discovery/_server.py,sha256=U8a-Q3HP_70scxbnF3eG8g9aIHkG-VNwxKB73w_CFbM,1432
+server_discovery-0.1.dist-info/METADATA,sha256=Cz5iwA3CPYTc0v1QvYmC0vVCj8zmf4EkZJvMuJ6wG5U,169
+server_discovery-0.1.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+server_discovery-0.1.dist-info/top_level.txt,sha256=lupk-mxM0SqhRPwubhsWoXpOenerslQLWC5Ry1gkSbI,17
+server_discovery-0.1.dist-info/RECORD,,
