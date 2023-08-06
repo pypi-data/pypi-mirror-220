@@ -1,0 +1,7 @@
+setup.py
+magicmath/__init__.py
+magicmath/magicmath.py
+magicmath.egg-info/PKG-INFO
+magicmath.egg-info/SOURCES.txt
+magicmath.egg-info/dependency_links.txt
+magicmath.egg-info/top_level.txt
