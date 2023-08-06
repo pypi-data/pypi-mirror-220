@@ -1,0 +1,11 @@
+awp/__init__.py,sha256=wkMbO1mWmJodNyQJThjLnxSeGhG5xTl_USiaA5jNge4,38
+awp/argparse_extras.py,sha256=oPrvbJA2RAy0CI6J3EeowfINQbc9br6yCpE6Ph117z4,1060
+awp/main.py,sha256=_yY3mqcjS_AffdMwGFl48tM0G3sbrc6mswSt-QffNJU,1452
+awp/packager.py,sha256=DWcPhVESaHNWJN1qR3uEbPwo2JxLe_r7StfxoAVx38I,9375
+awp/validator.py,sha256=5twYvIeCHG0ta5O6uZYJt7UEiW3_8HGqrFz7ul7SQvs,399
+alfred_workflow_packager-3.0.0b6.dist-info/LICENSE.txt,sha256=4YkmCsgIrzLVersGR4dggoQDoTPA3MDY5FLcY7ZMbBo,1083
+alfred_workflow_packager-3.0.0b6.dist-info/METADATA,sha256=I3usojpLQaSjbD_tL2XX4eyhTJG9qqGyDsrQSaOT2fY,6402
+alfred_workflow_packager-3.0.0b6.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+alfred_workflow_packager-3.0.0b6.dist-info/entry_points.txt,sha256=S62yQHsu3Daya5c7ZkifZMUxuZbv9J2xsRl2FGly66s,38
+alfred_workflow_packager-3.0.0b6.dist-info/top_level.txt,sha256=GkE-_4SfDsg5bA0dPENdX3-dKrfBfcaBu-EsGa0XFj0,4
+alfred_workflow_packager-3.0.0b6.dist-info/RECORD,,
