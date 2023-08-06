@@ -1,0 +1,17 @@
+cfa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfa/cli.py,sha256=DsaFwqWUDFmmj8TmkAKRozi0mPA42JP3lITxCXRY5Mk,401
+cfa/commands/ICommand.py,sha256=HmC65N6g6weZUtx3sD-kXowQgbj7r0H6rxB1ih45R7U,93
+cfa/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfa/commands/command_builder.py,sha256=B6g8ZoqCQWBLCOvzUNBdjpIoAwI-6B_LTCpGXJIM6WQ,873
+cfa/commands/impl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfa/commands/impl/clone_git.py,sha256=Pp2QSHcaexY1gEkI7XPZ4YPSzE-dfhFMaKXzYq5K_xs,548
+cfa/commands/impl/dependency_installer.py,sha256=2NFQOnX5JBHPMdi8UGaK7T2KobqxuHPmuBGdU5zYx0M,1067
+cfa/commands/impl/dir_creator.py,sha256=Jr3oA-nQZTOzFsF8E_1FjWnJnprtdm-hEY6ndvRTGD8,314
+cfa/config/__init__.py,sha256=Tp20hC0TjdVrOnO5oUdyfvj3F6ZUk7_f2JNNR-_f--M,341
+cfa/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfa/helpers/logger.py,sha256=8nFO6Z6s6NVHI-cgR2C5i5xs8ykRkaEvvkM3MrGfFcs,279
+create_fastapi-0.0.7.dist-info/METADATA,sha256=cDQSoT6QWBr-bQpqzu0r4x6VQwMHidmBaTJbIqiwBR8,13991
+create_fastapi-0.0.7.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+create_fastapi-0.0.7.dist-info/entry_points.txt,sha256=2UDw3Di-IR7ZxhnIH1aPProczHi1MGUd0wzbnNIuB9A,56
+create_fastapi-0.0.7.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+create_fastapi-0.0.7.dist-info/RECORD,,
