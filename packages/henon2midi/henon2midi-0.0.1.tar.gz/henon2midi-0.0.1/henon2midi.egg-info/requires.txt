@@ -1,0 +1,16 @@
+mido
+click
+python-rtmidi
+colorama
+
+[test]
+pytest
+pytest-cov
+pytest-mock
+coverage
+flake8
+black
+isort
+mypy
+types-setuptools
+pre-commit
