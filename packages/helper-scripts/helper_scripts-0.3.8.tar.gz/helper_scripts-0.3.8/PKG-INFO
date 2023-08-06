@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: helper_scripts
+Version: 0.3.8
+Summary: Database Helper Package
+Author: Samuel Kizza
+Author-email: SK8@gmail.com
+Maintainer: Winston David Ssentongo
+Maintainer-email: winstondavid96@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
