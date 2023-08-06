@@ -1,0 +1,16 @@
+qbee/__init__.py,sha256=WIlkrLQnD82q22_4ciNYiJ9tczV6HCC2gLsZAYEAVoU,653
+qbee/dimension_agnostic.py,sha256=_qYlcftnHgyCFqI3phDUw95vxb05rTcnKpkla2wqmzo,5525
+qbee/experimental/__init__.py,sha256=oGWEiddFxX5ZAgtFCXAOtF-mdj6j305jHcTPiyCP0BA,108
+qbee/experimental/numerical.py,sha256=V0_5FISR_7jVHDlWwXrKbdPCM9JB2rXTu8sFJ650prA,4573
+qbee/experimental/pde.py,sha256=qkwUyY7xZIdz-E0bmOfWyghBTbtvOsC9R2Y6qF_g0Mc,3722
+qbee/no_C4_count.py,sha256=mBCcGgtvX1Kj26Nrtrh4ReAuATuhbbNyN_JNskDwyaA,2213
+qbee/polynomialization.py,sha256=MDDVcPITVzE89c1oglGPdwbU3tDPYCzcJlyxImZrlZc,22296
+qbee/printer.py,sha256=u3rAlTolAV24p8f98MHXn5u6AXofHRhftl35hD8ZEts,964
+qbee/quadratization.py,sha256=sCqFHL5XBdTkuNj4kQfUszhX6xBnNUts4pzv56bdfxo,34678
+qbee/selection.py,sha256=4BPiwSJRl100rghaah3RFL6HxTygLlPrVg0-Uhn4rWs,6214
+qbee/util.py,sha256=3JhXFSq_8MYotzB6GRLC7uUpRDxLY8kAh7V7Q7TZv7A,11353
+qbee-0.8.2.dist-info/entry_points.txt,sha256=me3eF9nIQgUQ42OBmL2rEyakqZ8y8rUHnikfOG-aZtM,100
+qbee-0.8.2.dist-info/LICENSE,sha256=jJHfksLUtaNditIOAc3xFoE1K2j-lzCD52GRWoH8F7I,1092
+qbee-0.8.2.dist-info/METADATA,sha256=0Ik_7fzjgZucFihZQEv6irihlHIvfk3NnurlP-z3Ubs,5186
+qbee-0.8.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+qbee-0.8.2.dist-info/RECORD,,
