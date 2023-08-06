@@ -1,0 +1,11 @@
+ustcjwxt/__init__.py,sha256=s6DV-wY77ZNkf0TSFeqvX4urlNvrGk_S3fUygMPzi7s,82
+ustcjwxt/course_select.py,sha256=O4qtEG3aU9BoddTC2A5IuDKt6X2KxHunkxk-V4of-eo,7476
+ustcjwxt/log.py,sha256=nCFp3lryjmpOGB5wGFyLDdgrL4lEhhVfHeBDUA0ULb4,779
+ustcjwxt/request_info.py,sha256=NrJnIkBF5jASJfTRsxhnfmYFAKN07RBKBLn_MeYCbIQ,866
+ustcjwxt/score.py,sha256=s-6nqy48GjoiC7RgNYThokzXDIyG0CvUt813qT2ig-k,4238
+ustcjwxt/session.py,sha256=hlc5CHtlDn9SvuhWeRaXwc8dVPjAtlrgAmwehohu_zc,6608
+ustcjwxt-0.0.2.dist-info/LICENSE,sha256=1tu17E6iCXs1Ih1zvN22j8nXcSXUqxn7KGEf9rNREB0,1086
+ustcjwxt-0.0.2.dist-info/METADATA,sha256=yZJjFbxmZfma5ZUPo_jbofCrH6-RR0GY7rhZLZ-gfG8,2224
+ustcjwxt-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ustcjwxt-0.0.2.dist-info/top_level.txt,sha256=1U5plqftI_CooL-x--GqgRhm2x3ZVmlWyDzlej6iakU,9
+ustcjwxt-0.0.2.dist-info/RECORD,,
