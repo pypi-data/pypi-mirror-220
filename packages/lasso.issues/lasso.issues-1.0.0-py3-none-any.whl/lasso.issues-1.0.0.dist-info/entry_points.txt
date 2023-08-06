@@ -1,0 +1,5 @@
+[console_scripts]
+milestones = lasso.issues.milestones.milestones:main
+move-issues = lasso.issues.issues.move_issues:main
+pds-issues = lasso.issues.issues.issues:main
+pds-labels = lasso.issues.issues.labels:main
