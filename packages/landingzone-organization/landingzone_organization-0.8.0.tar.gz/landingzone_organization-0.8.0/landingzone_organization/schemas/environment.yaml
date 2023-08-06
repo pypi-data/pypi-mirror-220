@@ -1,0 +1,10 @@
+type: object
+additionalProperties: False
+required:
+  - AccountId
+  - Name
+properties:
+  AccountId:
+    type: string
+  Name:
+    type: string
