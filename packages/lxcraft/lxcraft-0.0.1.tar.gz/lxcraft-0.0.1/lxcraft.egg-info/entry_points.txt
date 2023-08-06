@@ -1,0 +1,2 @@
+[console_scripts]
+lxcraft = lxcraft.__main__:main
