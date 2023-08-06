@@ -1,0 +1,15 @@
+click
+
+[build]
+build
+twine
+
+[test]
+botocore-stubs
+boto3-stubs[ec2]
+build
+mypy
+pytest
+pytest-asyncio
+pre-commit
+coverage
