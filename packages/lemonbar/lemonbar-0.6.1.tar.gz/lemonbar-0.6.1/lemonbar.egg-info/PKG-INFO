@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lemonbar
+Version: 0.6.1
+Summary: A Python API for interacting with Lemonbar
+Home-page: https://github.com/Heknon/lemonbar-api
+Download-URL: https://github.com/Heknon/lemonbar-api/archive/refs/tags/v0.6.1.tar.gz
+Author: Ori Harel
+Author-email: oeharel@gmail.com
+License: MIT
+Keywords: lemonbar,api,lemonbar-api,arch,linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
