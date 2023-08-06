@@ -1,0 +1,7 @@
+README.md
+setup.py
+work_time_log.egg-info/PKG-INFO
+work_time_log.egg-info/SOURCES.txt
+work_time_log.egg-info/dependency_links.txt
+work_time_log.egg-info/requires.txt
+work_time_log.egg-info/top_level.txt

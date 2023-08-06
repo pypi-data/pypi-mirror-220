@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: work-time-log
+Version: 0.999.0
+Summary: work-time-log is now work
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+
+# work-time-log is now work
+
+This package has been renamed. Use `pipx install work` instead.
+
+New package: https://pypi.org/project/work/
