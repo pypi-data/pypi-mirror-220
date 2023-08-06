@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: seis-realtime
+Version: 0.0.2
+Summary: Seismology realtime workflow
+License: Apache-2.0
+Author: OUCyf
+Author-email: oucyinfu@gmail.com
+Requires-Python: >=3.9,<3.12
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: numpy (>=1.25.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# seis_realtime
+
+[![Actions Status](https://github.com/shakeflow/seis_realtime/actions/workflows/workflow.yml/badge.svg)](https://github.com/shakeflow/seis_realtime/actions)
+[![coverage](https://codecov.io/gh/shakeflow/seis_realtime/branch/main/graph/badge.svg)](https://codecov.io/gh/shakeflow/seis_realtime)
+[![docs](https://img.shields.io/badge/docs-stable-blue.svg)](https://shakeflow.github.io/seis_realtime/)
+[![supported versions](https://img.shields.io/pypi/pyversions/seis_realtime.svg?label=python_versions)](https://pypi.python.org/pypi/seis_realtime)
+[![docs](https://badge.fury.io/py/seis_realtime.svg)](https://badge.fury.io/py/seis_realtime)
+
+
+Seismology realtime workflow
+
+## License
+
