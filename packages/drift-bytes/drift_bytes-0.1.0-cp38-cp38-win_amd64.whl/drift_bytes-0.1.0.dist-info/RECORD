@@ -1,0 +1,12 @@
+drift_bytes/__init__.py,sha256=73Z-1KZNg_XGKyaAfhNKxV_EEFldDXRjGmzCF5tMSFM,39
+drift_bytes/_drift_bytes.cp38-win_amd64.pyd,sha256=mWsOhd5qpg_sHEWMG7g_GFk0XwopYFiShPxsE56nofQ,235520
+drift_bytes/bytes.py,sha256=S5Nu4Z8y51QHSfuq4e99hZ5Wro1gepmpHAxk5rvrb6s,4732
+drift_bytes/include/drift_bytes/bytes.h,sha256=8o4-BJMB0trF4mFkWZGeNXsmBx_HuIq3JQPgStUjQCM,1752
+drift_bytes/share/drift_bytes/cmake/drift_bytes-config-version.cmake,sha256=BxmOYi968qFz1xcHYkCLjK-mxAgWGdXwIxRCx5Nrdpk,3332
+drift_bytes/share/drift_bytes/cmake/drift_bytes-config.cmake,sha256=60U4LxATJwuWuv_yA7ufT663KbcBSsqc7zJalkfKysw,1087
+drift_bytes/share/drift_bytes/cmake/drift_bytes-targets.cmake,sha256=IhfjR989TCwyfc8BBK71NjVZnq_oRcIjJBs8HjL9ebk,4265
+drift_bytes-0.1.0.dist-info/LICENSE,sha256=JoTeFzAOCkNGhvHsf4r2BFIHpLRXo_4EsrnOZV58XVA,17098
+drift_bytes-0.1.0.dist-info/METADATA,sha256=PHRa2amf_LUF7IJpT3ij0RTB54Bn0CyezaDSxrUX7eU,1496
+drift_bytes-0.1.0.dist-info/WHEEL,sha256=rjmE6jOYKSgS2T4NpCJJtLEPSybiWFu39x_TGcEjjFE,94
+drift_bytes-0.1.0.dist-info/top_level.txt,sha256=OPRFEZOxLGG9kl2TnFP8anWsg_TmPIdb0xdS75rP6sM,12
+drift_bytes-0.1.0.dist-info/RECORD,,
