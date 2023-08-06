@@ -1,0 +1,13 @@
+umapi_cli/__init__.py,sha256=Jh1WDX1GdGLzVd2Q6Sq63hP6xgak3XJ0YR0etUthSqo,603
+umapi_cli/action_queue.py,sha256=IRiKEbcOtO45xrkfXftBN4NyoickEvO2_KjL9_1GU6g,4036
+umapi_cli/cli.py,sha256=Aw5eiAhaqRjm_Cby6Gy3wLpTYY_1194YWyeYB9UKn3Q,19529
+umapi_cli/client.py,sha256=D61LXiUU2ZmGgb6NpaNwjfwiFXefOqN3PLwfe9DZEFI,1504
+umapi_cli/config.py,sha256=JP-51pnpnZelMWRTuXtOWL3BSN5Ifs_jzlxm4CapQgM,1253
+umapi_cli/formatter.py,sha256=2cerf6GeOKoLOhi4d50Xo1Y6ijR3MTn7XVeU_lpU8R4,6187
+umapi_cli/log.py,sha256=t9uzEZlk4620NDvfjVzNaVCxHKFkFD47L6bDiV4x-F0,1298
+umapi_cli/version.py,sha256=pwQh_j5ZP5wlrakArUj5VKO6dNBiSMgfBQsrg7nyiqQ,626
+umapi_cli-2.2.0.dist-info/LICENSE,sha256=9orJNucdMG2snpDJB_jLlKJssWcbuZSqJ8kLlGYun0E,11335
+umapi_cli-2.2.0.dist-info/METADATA,sha256=ahF3s3yy88zbCzDIbWYzaFHlEW8zAbP4bPKFW2JdXZg,25613
+umapi_cli-2.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+umapi_cli-2.2.0.dist-info/entry_points.txt,sha256=km-OZ-rvgkdGqpqQJxGqaXg28BOBeMoRZh4eUxjbeNI,45
+umapi_cli-2.2.0.dist-info/RECORD,,
