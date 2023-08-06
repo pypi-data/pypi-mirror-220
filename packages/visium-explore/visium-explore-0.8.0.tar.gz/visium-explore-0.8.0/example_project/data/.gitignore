@@ -1,0 +1,5 @@
+/download_iris_dataset
+/split_dataset
+/train_model
+
+/evaluate_model
