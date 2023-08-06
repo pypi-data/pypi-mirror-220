@@ -1,0 +1,16 @@
+django_open_ai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_open_ai/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_open_ai/apps.py,sha256=oU3KPhm80R8GhnA7TQcLsF7E11xP-5-gaacsUjtEua0,152
+django_open_ai/forms.py,sha256=ctqh4WC0DMDv_6UtB7MTNlk4598oX8RhqE5q67doW9s,104
+django_open_ai/helper.py,sha256=DCfRzoNtaV02pC6B9FqXSYFKXoVG1oSVY-mqQG3x2lw,2934
+django_open_ai/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_open_ai/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_open_ai/urls.py,sha256=RT0of_exSOz1L9LjwGvqKq562D0B6_Vss-hboBPt0_U,186
+django_open_ai/views.py,sha256=qOcj-2_G91J1hBHoB6VQ2t1cwATMffCbvqlumqTsUsU,659
+django_open_ai/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_open_ai/templates/form.html,sha256=CVcTr1N1cfRq_JSowaDrM3Cmml0GKWbayoV57ryx_Wg,166
+django_open_ai-0.0.41.dist-info/LICENSE,sha256=MLKX5YH9RTACFBq4gxfGpwBdi-bEtlYaaXJtwoYIkoY,1079
+django_open_ai-0.0.41.dist-info/METADATA,sha256=4BTSIQ72ApVQ2X8741NlApbcWBx-ojUaPwC7jToM0GY,1415
+django_open_ai-0.0.41.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_open_ai-0.0.41.dist-info/top_level.txt,sha256=26KslgrHposxzsSQualU1UefIr8ZRUWczWh_HFV4Yro,15
+django_open_ai-0.0.41.dist-info/RECORD,,
