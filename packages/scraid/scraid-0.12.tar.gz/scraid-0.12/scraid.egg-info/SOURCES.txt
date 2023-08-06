@@ -1,0 +1,11 @@
+README.md
+setup.py
+scraid/__init__.py
+scraid/advanced_request.py
+scraid.egg-info/PKG-INFO
+scraid.egg-info/SOURCES.txt
+scraid.egg-info/dependency_links.txt
+scraid.egg-info/requires.txt
+scraid.egg-info/top_level.txt
+tests/__init__.py
+tests/test_advanced_request.py

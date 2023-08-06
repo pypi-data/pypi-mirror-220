@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: scraid
+Version: 0.12
+Summary: A package for advanced Scrapy functionality and utilities.
+Home-page: https://github.com/na0495/scraid
+Author: na0495
+Author-email: saad.mrabet@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# Scraid
+
+scraid is a Python library that provides advanced utilities for Scrapy, including an advanced features and utilities.
+
+## Installation
+
+You can install scraid from PyPI:
+
+```bash
+pip install scraid
+```
+
+## Usage
+
+Here's a basic example of how to use the AdvancedRequest class:
+
+
+```python
+from scraid.advanced_request import advancedRequest
+
+request = AdvancedRequest('http://example.com')
+print(request.headers['User-Agent'])  # prints the random User-Agent
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## TODO
+
+- [ ] Add more scrapy most common utilities (middlewares, pipelines, etc.)
+- [ ] Add more advanced request features
+- [ ] Add more documentation
+
+
