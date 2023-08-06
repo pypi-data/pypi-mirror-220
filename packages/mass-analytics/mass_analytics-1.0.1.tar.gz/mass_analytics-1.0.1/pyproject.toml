@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mass_analytics"
+version = "1.0.1"
+authors = [
+  { name="Selim", email="selim.alouini@mass-analytics.com" },
+]
+description = "A small example package for mass-analytics"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
