@@ -1,0 +1,6 @@
+ipfsspec
+fsspec
+requests
+pandas
+beautifulsoup4
+pystac-client
