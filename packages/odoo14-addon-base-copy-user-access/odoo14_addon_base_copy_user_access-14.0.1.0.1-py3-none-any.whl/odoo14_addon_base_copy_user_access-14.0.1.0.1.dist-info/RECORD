@@ -1,0 +1,16 @@
+odoo/addons/base_copy_user_access/README.rst,sha256=K7PI5I0D3Pgnu7-Ox6MYHp43x8wDwm4uyw8yrfPskhM,3462
+odoo/addons/base_copy_user_access/__init__.py,sha256=cT3WwaKz0scGi74Ag5B-bfZ3tpXx0vvYxhAcfH2CsXE,174
+odoo/addons/base_copy_user_access/__manifest__.py,sha256=eq0aeK0EVrJeuiQWY-v-00bTge1E_EAPeZ1dYSYaDgY,698
+odoo/addons/base_copy_user_access/i18n/base_copy_user_access.pot,sha256=3cz5KtqJlbNdZ6ljj3ds4WV24K3WSmIrKO7MbdnYyv8,2564
+odoo/addons/base_copy_user_access/i18n/id.po,sha256=x6hCXUY2fG39YSQipoKSQyrZrK6EBZ08iqrF_ekSTcE,3015
+odoo/addons/base_copy_user_access/security/ir.model.access.csv,sha256=DrQTDZDOxaEA4aaHmEnQhfhHPW4PkfPREJ95vG5uBZo,181
+odoo/addons/base_copy_user_access/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo/addons/base_copy_user_access/tests/__init__.py,sha256=PjFzXG-yF4T4Bo64SrGbl1dw-U-zR9aGud77VAoxqR0,188
+odoo/addons/base_copy_user_access/tests/test_copy_user_access.py,sha256=v7xJTYvr6ynwqBjv64tK1CCeon6jeJnIxDE1dvNG6y4,1700
+odoo/addons/base_copy_user_access/wizards/__init__.py,sha256=uvGNqjX36szaEIABdw7KD87X-3H5Vi9oPjQI5mVqB10,188
+odoo/addons/base_copy_user_access/wizards/base_copy_user_access.py,sha256=LGjCgVvV6j3WppqHMdI04yv4yugpF6cdBXyMWvZKicY,1601
+odoo/addons/base_copy_user_access/wizards/base_copy_user_access.xml,sha256=7slzINpeqtU7zWOOYHxiapcLpJF5t-naGz4ynkDh_-o,1777
+odoo14_addon_base_copy_user_access-14.0.1.0.1.dist-info/METADATA,sha256=p_6Htxau6lXfdXtAQLAFttydJx2Uuj28we7W4fommqk,3974
+odoo14_addon_base_copy_user_access-14.0.1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo14_addon_base_copy_user_access-14.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_base_copy_user_access-14.0.1.0.1.dist-info/RECORD,,
