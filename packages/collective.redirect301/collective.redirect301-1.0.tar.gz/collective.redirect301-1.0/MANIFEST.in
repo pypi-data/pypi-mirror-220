@@ -1,0 +1,13 @@
+include *.in
+include *.rst
+include *.txt
+include *.yml
+include tox.ini
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include src *.po
+recursive-include src *.pot
+recursive-include src *.rst
+recursive-include src *.sh
+recursive-include src *.xml
+recursive-include src *.zcml
