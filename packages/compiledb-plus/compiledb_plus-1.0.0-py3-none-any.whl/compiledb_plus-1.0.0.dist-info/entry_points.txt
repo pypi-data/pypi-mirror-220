@@ -1,0 +1,2 @@
+[console_scripts]
+compiledb-plus = compiledb.cli:cli
