@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: excel_framework
+Version: 0.3.0
+Summary: A small example package
+Project-URL: Homepage, https://github.com/TheUltimateOptimist/excel_framework
+Project-URL: Bug Tracker, https://github.com/TheUltimateOptimist/excel_framework/issues
+Author-email: Jonathan Dück <jonathan.dueck@digital-confidence.de>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: openpyxl
+Requires-Dist: overrides
+Description-Content-Type: text/markdown
+
+Nice project
