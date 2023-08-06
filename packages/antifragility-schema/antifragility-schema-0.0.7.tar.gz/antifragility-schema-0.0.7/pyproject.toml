@@ -1,0 +1,17 @@
+[project]
+name = "antifragility-schema"
+requires-python = ">=3.9"
+authors = [
+    {name = "Mike Artemiev", email = "mixartemev@gmail.com"},
+]
+dependencies = [
+    "tortoise-api-model",
+]
+version = "0.0.7"
+
+[project.urls]
+Homepage = "https://gitlab.com/antifragility/schema"
+Repository = "https://gitlab.com/antifragility/schema"
+
+[tool.setuptools.dynamic]
+version = {attr = "antifragility_schema.__version__"}
