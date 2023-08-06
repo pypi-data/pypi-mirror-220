@@ -1,0 +1,9 @@
+notas_musicais/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notas_musicais/acordes.py,sha256=LVAbP3mMUsaqgY4GvcXUm_8vp_NH_cBiR-8-3RGkZig,2855
+notas_musicais/campo_harmonico.py,sha256=Yw4weLKj27ADn6J0SU7nU6lmaQocAUZunDNY3t2MK8A,2170
+notas_musicais/cli.py,sha256=LJKhFae91Xok3AE1IpUdak5_bnEPt5JDXys_K2YZdKo,1316
+notas_musicais/escalas.py,sha256=RmcdUsglvIzv_cSavJtbL10jVgCcG5nA8DoeBc72ADs,2826
+notas_musicais_hcca-0.1.0.dist-info/METADATA,sha256=2xWGiO9QyX7t4HgzcNPYHlsW-I8FpKSWYbQF54b4AO8,9422
+notas_musicais_hcca-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+notas_musicais_hcca-0.1.0.dist-info/entry_points.txt,sha256=saYsjitNzMbarGPwduAyu7Dks6aiDEW1K0SwH40IKAc,57
+notas_musicais_hcca-0.1.0.dist-info/RECORD,,
