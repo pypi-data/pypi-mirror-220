@@ -1,0 +1,252 @@
+Metadata-Version: 2.1
+Name: kwutil
+Version: 0.2.3
+Summary: The kwutil module
+Author: Jon Crall
+Author-email: jon.crall@kitware.com
+License: Apache 2
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: ubelt (>=1.3.2)
+Requires-Dist: ruamel.yaml (>=0.17.21)
+Requires-Dist: PyYAML (>=6.0)
+Requires-Dist: pint (>=0.17)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: rich (>=12.3.0)
+Requires-Dist: fasteners (>=0.16.3)
+Requires-Dist: pytimeparse (>=1.1.8)
+Requires-Dist: text-unidecode (>=1.3)
+Requires-Dist: progiter (>=1.1.0)
+Requires-Dist: psutil (>=5.7.3) ; python_version < "3.10" and python_version >= "3.9"
+Requires-Dist: psutil (>=5.9.1) ; python_version < "3.11" and python_version >= "3.10"
+Requires-Dist: psutil (>=5.0.1) ; python_version < "3.7" and python_version >= "3.6"
+Requires-Dist: psutil (>=5.4.6) ; python_version < "3.8" and python_version >= "3.7"
+Requires-Dist: psutil (>=5.6.3) ; python_version < "3.9" and python_version >= "3.8"
+Requires-Dist: psutil (>=5.9.1) ; python_version < "4.0" and python_version >= "3.11"
+Requires-Dist: lazy-loader (>=0.1) ; python_version >= "3.7"
+Provides-Extra: all
+Requires-Dist: ubelt (>=1.3.2) ; extra == 'all'
+Requires-Dist: ruamel.yaml (>=0.17.21) ; extra == 'all'
+Requires-Dist: PyYAML (>=6.0) ; extra == 'all'
+Requires-Dist: pint (>=0.17) ; extra == 'all'
+Requires-Dist: python-dateutil (>=2.8.2) ; extra == 'all'
+Requires-Dist: rich (>=12.3.0) ; extra == 'all'
+Requires-Dist: fasteners (>=0.16.3) ; extra == 'all'
+Requires-Dist: pytimeparse (>=1.1.8) ; extra == 'all'
+Requires-Dist: text-unidecode (>=1.3) ; extra == 'all'
+Requires-Dist: progiter (>=1.1.0) ; extra == 'all'
+Requires-Dist: xdoctest (>=1.1.1) ; extra == 'all'
+Requires-Dist: pytest-timeout (>=1.4.2) ; extra == 'all'
+Provides-Extra: all-strict
+Requires-Dist: ubelt (==1.3.2) ; extra == 'all-strict'
+Requires-Dist: ruamel.yaml (==0.17.21) ; extra == 'all-strict'
+Requires-Dist: PyYAML (==6.0) ; extra == 'all-strict'
+Requires-Dist: pint (==0.17) ; extra == 'all-strict'
+Requires-Dist: python-dateutil (==2.8.2) ; extra == 'all-strict'
+Requires-Dist: rich (==12.3.0) ; extra == 'all-strict'
+Requires-Dist: fasteners (==0.16.3) ; extra == 'all-strict'
+Requires-Dist: pytimeparse (==1.1.8) ; extra == 'all-strict'
+Requires-Dist: text-unidecode (==1.3) ; extra == 'all-strict'
+Requires-Dist: progiter (==1.1.0) ; extra == 'all-strict'
+Requires-Dist: xdoctest (==1.1.1) ; extra == 'all-strict'
+Requires-Dist: pytest-timeout (==1.4.2) ; extra == 'all-strict'
+Requires-Dist: coverage (==4.5) ; (python_version < "2.7" and python_version >= "2.6") and extra == 'all-strict'
+Requires-Dist: pytest (<=4.6.11,==4.6.0) ; (python_version < "2.8.0" and python_version >= "2.7.0") and extra == 'all-strict'
+Requires-Dist: pytest-cov (==2.8.1) ; (python_version < "2.8.0" and python_version >= "2.7.0") and extra == 'all-strict'
+Requires-Dist: numpy (==1.19.3) ; (python_version < "3.10" and python_version >= "3.6") and extra == 'all-strict'
+Requires-Dist: psutil (==5.7.3) ; (python_version < "3.10" and python_version >= "3.9") and extra == 'all-strict'
+Requires-Dist: coverage (==5.3.1) ; (python_version < "3.10" and python_version >= "3.9") and extra == 'all-strict'
+Requires-Dist: pytest (==4.6.0) ; (python_version < "3.10.0" and python_version >= "3.7.0") and extra == 'all-strict'
+Requires-Dist: psutil (==5.9.1) ; (python_version < "3.11" and python_version >= "3.10") and extra == 'all-strict'
+Requires-Dist: numpy (==1.21.6) ; (python_version < "3.11" and python_version >= "3.10") and extra == 'all-strict'
+Requires-Dist: coverage (==5.3.1) ; (python_version < "3.4" and python_version >= "2.7") and extra == 'all-strict'
+Requires-Dist: coverage (==4.3.4) ; (python_version < "3.5" and python_version >= "3.4") and extra == 'all-strict'
+Requires-Dist: pytest (<=4.6.11,==4.6.0) ; (python_version < "3.5.0" and python_version >= "3.4.0") and extra == 'all-strict'
+Requires-Dist: pytest-cov (==2.8.1) ; (python_version < "3.5.0" and python_version >= "3.4.0") and extra == 'all-strict'
+Requires-Dist: coverage (==5.3.1) ; (python_version < "3.6" and python_version >= "3.5") and extra == 'all-strict'
+Requires-Dist: pytest (<=6.1.2,==4.6.0) ; (python_version < "3.6.0" and python_version >= "3.5.0") and extra == 'all-strict'
+Requires-Dist: pytest-cov (==2.9.0) ; (python_version < "3.6.0" and python_version >= "3.5.0") and extra == 'all-strict'
+Requires-Dist: psutil (==5.0.1) ; (python_version < "3.7" and python_version >= "3.6") and extra == 'all-strict'
+Requires-Dist: coverage (==6.1.1) ; (python_version < "3.7" and python_version >= "3.6") and extra == 'all-strict'
+Requires-Dist: pytest (==4.6.0) ; (python_version < "3.7.0" and python_version >= "3.6.0") and extra == 'all-strict'
+Requires-Dist: psutil (==5.4.6) ; (python_version < "3.8" and python_version >= "3.7") and extra == 'all-strict'
+Requires-Dist: coverage (==6.1.1) ; (python_version < "3.8" and python_version >= "3.7") and extra == 'all-strict'
+Requires-Dist: psutil (==5.6.3) ; (python_version < "3.9" and python_version >= "3.8") and extra == 'all-strict'
+Requires-Dist: coverage (==6.1.1) ; (python_version < "3.9" and python_version >= "3.8") and extra == 'all-strict'
+Requires-Dist: psutil (==5.9.1) ; (python_version < "4.0" and python_version >= "3.11") and extra == 'all-strict'
+Requires-Dist: numpy (==1.23.2) ; (python_version < "4.0" and python_version >= "3.11") and extra == 'all-strict'
+Requires-Dist: coverage (==6.1.1) ; (python_version >= "3.10") and extra == 'all-strict'
+Requires-Dist: pytest (==6.2.5) ; (python_version >= "3.10.0") and extra == 'all-strict'
+Requires-Dist: pytest-cov (==3.0.0) ; (python_version >= "3.6.0") and extra == 'all-strict'
+Requires-Dist: lazy-loader (==0.1) ; (python_version >= "3.7") and extra == 'all-strict'
+Requires-Dist: coverage (>=4.5) ; (python_version < "2.7" and python_version >= "2.6") and extra == 'all'
+Requires-Dist: pytest (<=4.6.11,>=4.6.0) ; (python_version < "2.8.0" and python_version >= "2.7.0") and extra == 'all'
+Requires-Dist: pytest-cov (>=2.8.1) ; (python_version < "2.8.0" and python_version >= "2.7.0") and extra == 'all'
+Requires-Dist: numpy (>=1.19.3) ; (python_version < "3.10" and python_version >= "3.6") and extra == 'all'
+Requires-Dist: psutil (>=5.7.3) ; (python_version < "3.10" and python_version >= "3.9") and extra == 'all'
+Requires-Dist: coverage (>=5.3.1) ; (python_version < "3.10" and python_version >= "3.9") and extra == 'all'
+Requires-Dist: pytest (>=4.6.0) ; (python_version < "3.10.0" and python_version >= "3.7.0") and extra == 'all'
+Requires-Dist: psutil (>=5.9.1) ; (python_version < "3.11" and python_version >= "3.10") and extra == 'all'
+Requires-Dist: numpy (>=1.21.6) ; (python_version < "3.11" and python_version >= "3.10") and extra == 'all'
+Requires-Dist: coverage (>=5.3.1) ; (python_version < "3.4" and python_version >= "2.7") and extra == 'all'
+Requires-Dist: coverage (>=4.3.4) ; (python_version < "3.5" and python_version >= "3.4") and extra == 'all'
+Requires-Dist: pytest (<=4.6.11,>=4.6.0) ; (python_version < "3.5.0" and python_version >= "3.4.0") and extra == 'all'
+Requires-Dist: pytest-cov (>=2.8.1) ; (python_version < "3.5.0" and python_version >= "3.4.0") and extra == 'all'
+Requires-Dist: coverage (>=5.3.1) ; (python_version < "3.6" and python_version >= "3.5") and extra == 'all'
+Requires-Dist: pytest (<=6.1.2,>=4.6.0) ; (python_version < "3.6.0" and python_version >= "3.5.0") and extra == 'all'
+Requires-Dist: pytest-cov (>=2.9.0) ; (python_version < "3.6.0" and python_version >= "3.5.0") and extra == 'all'
+Requires-Dist: psutil (>=5.0.1) ; (python_version < "3.7" and python_version >= "3.6") and extra == 'all'
+Requires-Dist: coverage (>=6.1.1) ; (python_version < "3.7" and python_version >= "3.6") and extra == 'all'
+Requires-Dist: pytest (>=4.6.0) ; (python_version < "3.7.0" and python_version >= "3.6.0") and extra == 'all'
+Requires-Dist: psutil (>=5.4.6) ; (python_version < "3.8" and python_version >= "3.7") and extra == 'all'
+Requires-Dist: coverage (>=6.1.1) ; (python_version < "3.8" and python_version >= "3.7") and extra == 'all'
+Requires-Dist: psutil (>=5.6.3) ; (python_version < "3.9" and python_version >= "3.8") and extra == 'all'
+Requires-Dist: coverage (>=6.1.1) ; (python_version < "3.9" and python_version >= "3.8") and extra == 'all'
+Requires-Dist: psutil (>=5.9.1) ; (python_version < "4.0" and python_version >= "3.11") and extra == 'all'
+Requires-Dist: numpy (>=1.23.2) ; (python_version < "4.0" and python_version >= "3.11") and extra == 'all'
+Requires-Dist: coverage (>=6.1.1) ; (python_version >= "3.10") and extra == 'all'
+Requires-Dist: pytest (>=6.2.5) ; (python_version >= "3.10.0") and extra == 'all'
+Requires-Dist: pytest-cov (>=3.0.0) ; (python_version >= "3.6.0") and extra == 'all'
+Requires-Dist: lazy-loader (>=0.1) ; (python_version >= "3.7") and extra == 'all'
+Provides-Extra: optional
+Provides-Extra: optional-strict
+Requires-Dist: numpy (==1.19.3) ; (python_version < "3.10" and python_version >= "3.6") and extra == 'optional-strict'
+Requires-Dist: numpy (==1.21.6) ; (python_version < "3.11" and python_version >= "3.10") and extra == 'optional-strict'
+Requires-Dist: numpy (==1.23.2) ; (python_version < "4.0" and python_version >= "3.11") and extra == 'optional-strict'
+Requires-Dist: numpy (>=1.19.3) ; (python_version < "3.10" and python_version >= "3.6") and extra == 'optional'
+Requires-Dist: numpy (>=1.21.6) ; (python_version < "3.11" and python_version >= "3.10") and extra == 'optional'
+Requires-Dist: numpy (>=1.23.2) ; (python_version < "4.0" and python_version >= "3.11") and extra == 'optional'
+Provides-Extra: runtime-strict
+Requires-Dist: ubelt (==1.3.2) ; extra == 'runtime-strict'
+Requires-Dist: ruamel.yaml (==0.17.21) ; extra == 'runtime-strict'
+Requires-Dist: PyYAML (==6.0) ; extra == 'runtime-strict'
+Requires-Dist: pint (==0.17) ; extra == 'runtime-strict'
+Requires-Dist: python-dateutil (==2.8.2) ; extra == 'runtime-strict'
+Requires-Dist: rich (==12.3.0) ; extra == 'runtime-strict'
+Requires-Dist: fasteners (==0.16.3) ; extra == 'runtime-strict'
+Requires-Dist: pytimeparse (==1.1.8) ; extra == 'runtime-strict'
+Requires-Dist: text-unidecode (==1.3) ; extra == 'runtime-strict'
+Requires-Dist: progiter (==1.1.0) ; extra == 'runtime-strict'
+Requires-Dist: psutil (==5.7.3) ; (python_version < "3.10" and python_version >= "3.9") and extra == 'runtime-strict'
+Requires-Dist: psutil (==5.9.1) ; (python_version < "3.11" and python_version >= "3.10") and extra == 'runtime-strict'
+Requires-Dist: psutil (==5.0.1) ; (python_version < "3.7" and python_version >= "3.6") and extra == 'runtime-strict'
+Requires-Dist: psutil (==5.4.6) ; (python_version < "3.8" and python_version >= "3.7") and extra == 'runtime-strict'
+Requires-Dist: psutil (==5.6.3) ; (python_version < "3.9" and python_version >= "3.8") and extra == 'runtime-strict'
+Requires-Dist: psutil (==5.9.1) ; (python_version < "4.0" and python_version >= "3.11") and extra == 'runtime-strict'
+Requires-Dist: lazy-loader (==0.1) ; (python_version >= "3.7") and extra == 'runtime-strict'
+Provides-Extra: tests
+Requires-Dist: xdoctest (>=1.1.1) ; extra == 'tests'
+Requires-Dist: pytest-timeout (>=1.4.2) ; extra == 'tests'
+Provides-Extra: tests-strict
+Requires-Dist: xdoctest (==1.1.1) ; extra == 'tests-strict'
+Requires-Dist: pytest-timeout (==1.4.2) ; extra == 'tests-strict'
+Requires-Dist: coverage (==4.5) ; (python_version < "2.7" and python_version >= "2.6") and extra == 'tests-strict'
+Requires-Dist: pytest (<=4.6.11,==4.6.0) ; (python_version < "2.8.0" and python_version >= "2.7.0") and extra == 'tests-strict'
+Requires-Dist: pytest-cov (==2.8.1) ; (python_version < "2.8.0" and python_version >= "2.7.0") and extra == 'tests-strict'
+Requires-Dist: coverage (==5.3.1) ; (python_version < "3.10" and python_version >= "3.9") and extra == 'tests-strict'
+Requires-Dist: pytest (==4.6.0) ; (python_version < "3.10.0" and python_version >= "3.7.0") and extra == 'tests-strict'
+Requires-Dist: coverage (==5.3.1) ; (python_version < "3.4" and python_version >= "2.7") and extra == 'tests-strict'
+Requires-Dist: coverage (==4.3.4) ; (python_version < "3.5" and python_version >= "3.4") and extra == 'tests-strict'
+Requires-Dist: pytest (<=4.6.11,==4.6.0) ; (python_version < "3.5.0" and python_version >= "3.4.0") and extra == 'tests-strict'
+Requires-Dist: pytest-cov (==2.8.1) ; (python_version < "3.5.0" and python_version >= "3.4.0") and extra == 'tests-strict'
+Requires-Dist: coverage (==5.3.1) ; (python_version < "3.6" and python_version >= "3.5") and extra == 'tests-strict'
+Requires-Dist: pytest (<=6.1.2,==4.6.0) ; (python_version < "3.6.0" and python_version >= "3.5.0") and extra == 'tests-strict'
+Requires-Dist: pytest-cov (==2.9.0) ; (python_version < "3.6.0" and python_version >= "3.5.0") and extra == 'tests-strict'
+Requires-Dist: coverage (==6.1.1) ; (python_version < "3.7" and python_version >= "3.6") and extra == 'tests-strict'
+Requires-Dist: pytest (==4.6.0) ; (python_version < "3.7.0" and python_version >= "3.6.0") and extra == 'tests-strict'
+Requires-Dist: coverage (==6.1.1) ; (python_version < "3.8" and python_version >= "3.7") and extra == 'tests-strict'
+Requires-Dist: coverage (==6.1.1) ; (python_version < "3.9" and python_version >= "3.8") and extra == 'tests-strict'
+Requires-Dist: coverage (==6.1.1) ; (python_version >= "3.10") and extra == 'tests-strict'
+Requires-Dist: pytest (==6.2.5) ; (python_version >= "3.10.0") and extra == 'tests-strict'
+Requires-Dist: pytest-cov (==3.0.0) ; (python_version >= "3.6.0") and extra == 'tests-strict'
+Requires-Dist: coverage (>=4.5) ; (python_version < "2.7" and python_version >= "2.6") and extra == 'tests'
+Requires-Dist: pytest (<=4.6.11,>=4.6.0) ; (python_version < "2.8.0" and python_version >= "2.7.0") and extra == 'tests'
+Requires-Dist: pytest-cov (>=2.8.1) ; (python_version < "2.8.0" and python_version >= "2.7.0") and extra == 'tests'
+Requires-Dist: coverage (>=5.3.1) ; (python_version < "3.10" and python_version >= "3.9") and extra == 'tests'
+Requires-Dist: pytest (>=4.6.0) ; (python_version < "3.10.0" and python_version >= "3.7.0") and extra == 'tests'
+Requires-Dist: coverage (>=5.3.1) ; (python_version < "3.4" and python_version >= "2.7") and extra == 'tests'
+Requires-Dist: coverage (>=4.3.4) ; (python_version < "3.5" and python_version >= "3.4") and extra == 'tests'
+Requires-Dist: pytest (<=4.6.11,>=4.6.0) ; (python_version < "3.5.0" and python_version >= "3.4.0") and extra == 'tests'
+Requires-Dist: pytest-cov (>=2.8.1) ; (python_version < "3.5.0" and python_version >= "3.4.0") and extra == 'tests'
+Requires-Dist: coverage (>=5.3.1) ; (python_version < "3.6" and python_version >= "3.5") and extra == 'tests'
+Requires-Dist: pytest (<=6.1.2,>=4.6.0) ; (python_version < "3.6.0" and python_version >= "3.5.0") and extra == 'tests'
+Requires-Dist: pytest-cov (>=2.9.0) ; (python_version < "3.6.0" and python_version >= "3.5.0") and extra == 'tests'
+Requires-Dist: coverage (>=6.1.1) ; (python_version < "3.7" and python_version >= "3.6") and extra == 'tests'
+Requires-Dist: pytest (>=4.6.0) ; (python_version < "3.7.0" and python_version >= "3.6.0") and extra == 'tests'
+Requires-Dist: coverage (>=6.1.1) ; (python_version < "3.8" and python_version >= "3.7") and extra == 'tests'
+Requires-Dist: coverage (>=6.1.1) ; (python_version < "3.9" and python_version >= "3.8") and extra == 'tests'
+Requires-Dist: coverage (>=6.1.1) ; (python_version >= "3.10") and extra == 'tests'
+Requires-Dist: pytest (>=6.2.5) ; (python_version >= "3.10.0") and extra == 'tests'
+Requires-Dist: pytest-cov (>=3.0.0) ; (python_version >= "3.6.0") and extra == 'tests'
+
+The kwutil Module
+=================
+
+
+|Pypi| |PypiDownloads| |GitlabCIPipeline| |GitlabCICoverage|
+
+.. .. |ReadTheDocs|
+
+The Kitware utility module.
+
+This module is for small, pure-python utility functions. Dependencies are
+allowed, but they must be small and highly standard packages (e.g. rich,
+psutil, ruamel.yaml).
+
+These were originally derived from `geowatch <https://gitlab.kitware.com/computer-vision/geowatch>`_ utilities.
+Some of them were also from `xdev <https://github.com/Erotemic/xdev>`_.
+
+In the case that a no-dependency utility in this library proves itself to be
+extremely useful, it may be ported to `ubelt <https://github.com/Erotemic/ubelt>`_.
+
+
+Current top-level API:
+
+.. code:: python
+
+    from kwutil import copy_manager
+    from kwutil import partial_format
+    from kwutil import slugify_ext
+    from kwutil import util_environ
+    from kwutil import util_eval
+    from kwutil import util_json
+    from kwutil import util_locks
+    from kwutil import util_parallel
+    from kwutil import util_path
+    from kwutil import util_pattern
+    from kwutil import util_progress
+    from kwutil import util_resources
+    from kwutil import util_time
+    from kwutil import util_windows
+    from kwutil import util_yaml
+
+
+.. |Pypi| image:: https://img.shields.io/pypi/v/kwutil.svg
+    :target: https://pypi.python.org/pypi/kwutil
+
+.. |PypiDownloads| image:: https://img.shields.io/pypi/dm/kwutil.svg
+    :target: https://pypistats.org/packages/kwutil
+
+.. |ReadTheDocs| image:: https://readthedocs.org/projects/kwutil/badge/?version=release
+    :target: http://kwutil.readthedocs.io/en/release/
+
+.. # See: https://ci.appveyor.com/project/jon.crall/kwutil/settings/badges
+.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/py3s2d6tyfjc8lm3/branch/main?svg=true
+   :target: https://ci.appveyor.com/project/jon.crall/kwutil/branch/main
+
+.. |GitlabCIPipeline| image:: https://gitlab.kitware.com/computer-vision/kwutil/badges/main/pipeline.svg
+   :target: https://gitlab.kitware.com/computer-vision/kwutil/-/jobs
+
+.. |GitlabCICoverage| image:: https://gitlab.kitware.com/computer-vision/kwutil/badges/main/coverage.svg?job=coverage
+    :target: https://gitlab.kitware.com/computer-vision/kwutil/commits/main
