@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: orchd-sdk
+Version: 0.1a5
+Summary: SDK for Orchd Ecosystem Applications
+Home-page: http://orchd.io
+Author: Mathias Santos de Brito
+Author-email: mathias.brito@me.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: service resource orchestration edge cloud
+Platform: UNKNOWN
+Classifier: License :: Other/Proprietary License
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: System :: Distributed Computing
+Provides-Extra: test
+Provides-Extra: docs
