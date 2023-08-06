@@ -1,0 +1,14 @@
+oidc_drf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oidc_drf/admin.py,sha256=mVegNEwDj-Zd6-hICRzQ-cwMCzvwySkA1mZIIOfQpuI,797
+oidc_drf/backends.py,sha256=zdKBH6EM-RRZFlbf05GLFkABZz9-rTm15fF6nROtEj8,17462
+oidc_drf/drf.py,sha256=q6ynCf6PrJ1dkrUGDZ5y6Z1djGT5hqewWGJgyTCrlRQ,4767
+oidc_drf/models.py,sha256=cJsS9jsNMzvYrtpEg-PQJOzrLcatIvlJH0YimijkrmE,277
+oidc_drf/urls.py,sha256=o_8RHRtVMbjIhdoOV0QCAPiJZymIi-uVfgb5kvPeA7Q,507
+oidc_drf/utils.py,sha256=stTAYWl_8GglfzTJNvVNQJNsEgjcWWkMBu8W1S6MMro,2759
+oidc_drf/views.py,sha256=WteVT7PxnYnfpxtw_wa2zgVkb-_Vs2j_w7qYDmxQxak,8324
+oidc_drf/migrations/0001_initial.py,sha256=oxzUDhIbx-0-oFf9quL2UvJn1LOUVBQAvOY77J699k0,737
+oidc_drf/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oidc_drf-1.3.4.dist-info/METADATA,sha256=e72cIWO9HZ9ZZcCngkoXfKRULx7NwqvuwvNHBxnBUs0,7748
+oidc_drf-1.3.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+oidc_drf-1.3.4.dist-info/top_level.txt,sha256=JPt4X27bH2ilPG4fR3q1IIa4zyadfLNWnrrK1LE66xI,9
+oidc_drf-1.3.4.dist-info/RECORD,,
