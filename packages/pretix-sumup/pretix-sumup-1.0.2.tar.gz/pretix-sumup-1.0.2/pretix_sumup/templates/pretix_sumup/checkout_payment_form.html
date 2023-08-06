@@ -1,0 +1,63 @@
+{% load i18n %}
+{% load static %}
+{% load bootstrap3 %}
+<p id="help-text">{% blocktrans trimmed %}
+    Please fill and click on Pay in the Sumup widget
+    {% endblocktrans %}</p>
+<div id="sumup-card"></div>
+
+<script type="text/javascript" nonce="{{ nonce }}" src="https://gateway.sumup.com/gateway/ecom/card/v2/sdk.js"></script>
+
+<script type="text/javascript" nonce="{{ nonce }}">
+    /* © Ronan LE MEILlAT 2023 */
+    let sumupCard; // will host Sumup widget
+
+    function waitForElm(selector) {
+        return new Promise(resolve => {
+            if (document.querySelector(selector)) {
+                return resolve(document.querySelector(selector));
+            }
+
+            const observer = new MutationObserver(mutations => {
+                if (document.querySelector(selector)) {
+                    resolve(document.querySelector(selector));
+                    observer.disconnect();
+                }
+            });
+
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        });
+    }
+
+    function insertAfter(referenceNode, newNode) {
+        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+    }
+
+    waitForElm('button[type="submit"]').then((submitElm) => {
+        submitElm.classList.add('hidden');
+        submitElm.disabled = true;
+        sumupCard = SumUpCard.mount({
+            id: 'sumup-card',
+            nonce: "{{ nonce }}",
+            checkoutId: "{{sumupCheckout.id}}",
+            locale: "{{locale}}",
+            onResponse: function (type, body) {
+                console.log('Type', type);
+                console.log('Body', body);
+                if (type == "success") {
+                    document.getElementById('help-text').innerHTML = "";
+                    sumupCard.unmount();
+                    submitElm.classList.remove('hidden');
+                    submitElm.disabled = false;
+                    submitElm.innerHTML = "{{btn_text}}";
+                    document.querySelector("body > div.container.main-box > main > form").submit();
+                }
+            }
+        });
+    })
+
+
+</script>
