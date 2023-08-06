@@ -1,0 +1,10 @@
+amdgpu_stats/__init__.py,sha256=OMKXv5PTPJRFM4BrP4MsEUnC2g9lKJyhhh098SrkZf8,639
+amdgpu_stats/__main__.py,sha256=Qso34WwyLihWQlo7lH23OPAEqLyIjC7Jn_3Nj9zYVD4,248
+amdgpu_stats/style.css,sha256=OcbqglP1EaK99zw_RychvViAeRrJjEsvid7pXp42Fnw,1040
+amdgpu_stats/tui.py,sha256=hHIYIwSaH7W-JO3mH64Gt9xj--5NeHGRENCh2t971WQ,12706
+amdgpu_stats/utils.py,sha256=CQhP5S2BF3yE_n_n6OeeqcqQwtJEjz_lY9d1DputiK4,12313
+amdgpu_stats-0.1.19.dist-info/LICENSE.md,sha256=EytHevvsc9Rd_JaMugPw8EHcsr1fWTwnnlYwi0ypWgU,1065
+amdgpu_stats-0.1.19.dist-info/METADATA,sha256=C-Z1AxJsO4KuGSNjV_M8DC1xOnTNnW704O2HYojAjjE,3132
+amdgpu_stats-0.1.19.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+amdgpu_stats-0.1.19.dist-info/entry_points.txt,sha256=p3P4rCRUmz9HZg0kLHCNb6_ptFcjhJOxyn-7PbOq4pQ,57
+amdgpu_stats-0.1.19.dist-info/RECORD,,
