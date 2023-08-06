@@ -1,0 +1,11 @@
+README.md
+setup.py
+AndroidN.egg-info/PKG-INFO
+AndroidN.egg-info/SOURCES.txt
+AndroidN.egg-info/dependency_links.txt
+AndroidN.egg-info/top_level.txt
+N/HPSocket4C.dll
+N/N.dll
+N/N.py
+N/__init__.py
+N/libeay32.dll
