@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: libs_n_utils_package_uq_2022
+Version: 0.0.5.4
+Summary: A small library of utilities
+Project-URL: Homepage, https://github.com/layeghy/libs_n_utils
+Project-URL: Bug Tracker, https://github.com/layeghy/libs_n_utils/issues
+Author-email: siamak layeghy <siamak.layeghy@uq.net.au>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# A small pack of Libraries and Utilities 
+
+`Created By Siamak`

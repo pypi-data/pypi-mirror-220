@@ -1,0 +1,10 @@
+ref: https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+  $python3 -m pip install --upgrade pip
+  python3 -m pip install --upgrade twine
+  $cd src/libs_n_utils_package_uq_2022/
+  $python3 -m build
+  $python3 -m twine upload --repository pypi dist/*
+
+
+pypi-AgEIcHlwaS5vcmcCJDQwYmFkZjc0LWNmNDgtNDA5ZC05NjczLTZjMjFkOWM3NTBlNwACKlszLCJmMzU5ODdjMC04NTA1LTRmZDMtYjFmMS1lYmExMmNjYmYyYjEiXQAABiDEaWFmMqTuQBI00hldkkyfDh-jNFMVgMSU67hCLcIRXw
