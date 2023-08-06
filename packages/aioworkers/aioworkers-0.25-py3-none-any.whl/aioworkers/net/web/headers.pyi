@@ -1,0 +1,2 @@
+CONNECTION: bytes
+CONTENT_LENGTH: bytes
