@@ -1,0 +1,7 @@
+toypandas/__init__.py,sha256=VZP8VV4DGB_pmpD68913GKV_Kao6lnHTNN4AJb44vHE,618
+toypandas/dataframe.py,sha256=YtVynSAOuN3_-MrAoA_GIIIud491QSFuRS4K6LuZtiw,7572
+toypandas/series.py,sha256=AVMj_mGAn2KEzL75MpqTJC3xMzS8rYbcbYilyPEbkBY,5929
+toypandas-0.2.0.dist-info/METADATA,sha256=AyfPsSaBL2XsfHx0wTNvWh76rXn2SvOJQbynYeAgfvA,965
+toypandas-0.2.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+toypandas-0.2.0.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+toypandas-0.2.0.dist-info/RECORD,,
