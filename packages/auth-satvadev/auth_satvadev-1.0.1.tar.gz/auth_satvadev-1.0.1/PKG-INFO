@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: auth-satvadev
+Version: 1.0.1
+Summary: Registration with confirmation by code and token authorization
+Author: satva.dev
+Author-email: info@satva.dev
+Requires-Python: >=3.9.10,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Django (>=3.2.12,<4.0.0)
+Requires-Dist: celery (>=5.2.3,<6.0.0)
+Requires-Dist: django-celery-beat (>=2.2.1,<3.0.0)
+Requires-Dist: django-celery-results (>=2.2.0,<3.0.0)
+Requires-Dist: djangorestframework-simplejwt (>=4.8.0,<5.0.0)
+Requires-Dist: mail-satvadev (>=1.0.5,<2.0.0)
+Requires-Dist: psycopg2 (>=2.9.3,<3.0.0)
+Requires-Dist: sentry-sdk (>=1.5.6,<2.0.0)
+Requires-Dist: uWSGI (>=2.0.20,<3.0.0)
+Project-URL: Homepage, https://gitlab.com/satvaspace/_tools/python/auth_satvadev
+Description-Content-Type: text/markdown
+
+# Django приложение аутентификации
+
+## Конфигурация
+Подключение приложения
+```python
+INSTALLED_APPS = [
+    'auth_satvadev',
+]
+```
+
+## Использование классов аутентификации
+Для использования необходимо задать переменную в settings.py:
+```python
+SENDER_CLASS = 'SenderClassName'
+```
+, где SenderClassName название класса для отправления и валидации кода подтверждения из списка:
+```
+'MailSender',
+```
+
+Также, необходимо добавить URL's аутентификации в urls.py проекта:
+```python
+urlpatterns = [
+    ...
+    path(
+        'api/auth-satvadev/',
+        include(('auth_satvadev.api.urls', 'auth_satvadev'))
+    ),
+    ...
+]
+```
+
+Для запросов авторизации используются пути:
+    'api/auth-satvadev/jwt/' - для получения JWT токена
+    'api/auth-satvadev/jwt/refresh/' - обновления JWT токена
+    'api/auth-satvadev/reset-password/' - для запроса на восстановление пароля
+    'api/auth-satvadev/reset-password/confirm/' - для проверки кода подтверждения
+
