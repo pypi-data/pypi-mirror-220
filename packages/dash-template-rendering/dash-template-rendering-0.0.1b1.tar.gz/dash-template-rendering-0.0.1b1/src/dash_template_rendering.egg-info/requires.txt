@@ -1,0 +1,6 @@
+dash
+plotly
+flask
+markupsafe
+Jinja2
+beautifulsoup4
