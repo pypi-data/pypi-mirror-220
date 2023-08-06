@@ -1,0 +1,30 @@
+# Config for tests
+runtime:
+    metering:
+        # Switch on metering by default
+        enabled: true
+        # Directory to save metrics files
+        log_dir: "test/metering_logs"
+        # Write to log file every N seconds
+        log_interval: 5
+
+    training:
+        output_dir: test/training_output
+        auto_load_trained_model: true
+
+inference_plugin:
+    model_mesh:
+        runtime_version: mock
+
+model_management:
+    finders:
+        default:
+            type: LOCAL
+    initializers:
+        default:
+            type: LOCAL
+            config:
+                backend_priority:
+                    # There is a 'MOCK' backend type defined in our test helpers
+                    - type: MOCK
+                    - type: LOCAL
