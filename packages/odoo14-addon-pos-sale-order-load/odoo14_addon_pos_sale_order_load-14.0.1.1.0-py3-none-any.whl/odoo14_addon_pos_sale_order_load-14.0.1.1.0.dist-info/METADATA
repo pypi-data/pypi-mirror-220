@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: odoo14-addon-pos-sale-order-load
+Version: 14.0.1.1.0
+Summary: POS Sale Order Load
+Home-page: https://github.com/akretion/pos-sale-order
+Author: Akretion
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.6
+Requires-Dist: odoo14-addon-pos-backend-communication
+Requires-Dist: odoo14-addon-pos-sale-order
+Requires-Dist: odoo (<14.1dev,>=14.0a)
+
+UNKNOWN
+
+
