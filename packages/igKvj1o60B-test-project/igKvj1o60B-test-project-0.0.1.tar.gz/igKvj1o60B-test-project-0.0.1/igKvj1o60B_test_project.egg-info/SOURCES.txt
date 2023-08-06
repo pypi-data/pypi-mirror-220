@@ -1,0 +1,7 @@
+README.md
+setup.py
+igKvj1o60B_test_project.egg-info/PKG-INFO
+igKvj1o60B_test_project.egg-info/SOURCES.txt
+igKvj1o60B_test_project.egg-info/dependency_links.txt
+igKvj1o60B_test_project.egg-info/requires.txt
+igKvj1o60B_test_project.egg-info/top_level.txt
