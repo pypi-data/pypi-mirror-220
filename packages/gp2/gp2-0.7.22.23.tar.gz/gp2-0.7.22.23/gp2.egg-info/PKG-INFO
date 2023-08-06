@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gp2
+Version: 0.7.22.23
+Summary: A framework for tuning segmentation classifiers and discriminators
+Home-page: https://github.com/RyanZurrin/CS410-GP2
+Author: mpsych lab
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+
+UNKNOWN
+

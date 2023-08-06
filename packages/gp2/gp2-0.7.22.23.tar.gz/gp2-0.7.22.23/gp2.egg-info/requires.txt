@@ -1,0 +1,5 @@
+tensorflow>=2.5.0
+matplotlib>=3.4.1
+keras_unet_collection>=0.1.1
+keras-unet>=0.1.2
+numpy>=1.19.5
