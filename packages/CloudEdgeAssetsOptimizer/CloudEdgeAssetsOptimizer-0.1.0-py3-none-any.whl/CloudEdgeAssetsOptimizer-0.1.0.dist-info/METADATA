@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: CloudEdgeAssetsOptimizer
+Version: 0.1.0
+Summary: # CloudEdgeAssetsOptimizer   
+Home-page: https://github.com/pauterv/CloudEdgeAssetsOptimizer
+Author: Paulius Tervydis
+Author-email: Paulius.Tervydis@ktu.lt
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: Pillow
+
+# queueing_systems
+
+## Python Package for Queueing System Parameter Estimation using Queueing Theory
+
+This Python package is designed to assist with estimating parameters in queueing systems using queueing theory. It provides a set of tools and algorithms to analyze and model queueing systems, allowing users to estimate various parameters such as arrival rates, service rates, queue lengths, and waiting times. With this package, users can leverage the power of queueing theory to optimize and improve the performance of their systems.
