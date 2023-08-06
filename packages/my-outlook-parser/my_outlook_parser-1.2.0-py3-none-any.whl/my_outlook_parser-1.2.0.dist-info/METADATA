@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: my-outlook-parser
+Version: 1.2.0
+Requires-Dist: pywin32
+Requires-Dist: openpyxl
+
