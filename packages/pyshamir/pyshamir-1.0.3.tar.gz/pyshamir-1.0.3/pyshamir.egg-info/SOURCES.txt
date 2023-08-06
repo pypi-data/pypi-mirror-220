@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+pyshamir/__init__.py
+pyshamir/_utils.py
+pyshamir/shamir.py
+pyshamir.egg-info/PKG-INFO
+pyshamir.egg-info/SOURCES.txt
+pyshamir.egg-info/dependency_links.txt
+pyshamir.egg-info/not-zip-safe
+pyshamir.egg-info/top_level.txt
+tests/test_shamir.py
