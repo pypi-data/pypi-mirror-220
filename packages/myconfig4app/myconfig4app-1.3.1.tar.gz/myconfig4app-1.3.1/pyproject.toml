@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "myconfig4app"
+version = "1.3.1"
+description = ""
+authors = ["icersong <icersong@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "myconfig", from = ""}]
+#homepage = "https://gitea.local/icersong/myconfig"
+#repository = "https://gitea.local/icersong/myconfig"
+
+[[tool.poetry.source]]
+# poetry config repositories.foo https://foo.bar/simple/
+# poetry config http-basic.foo username password
+# poetry pobulish -r som
+name = "som"
+url = "https://pypi.smart-factory.cn/simple/"
+default = true
+
+[tool.poetry.dependencies]
+python = "^3.7"
+path = "^16.4.0"
+concurrent-log-handler = "^0.9.20"
+singleton-decorator = "^1.0.0"
+pyyaml = "^6.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+tomli = "^2.0.1"
+poetry-core = "^1.0.8"
+pkginfo = "^1.8.3"
+
+# [tool.poetry.scripts]
+# my-script = "my_module:main"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+# style = "semver"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
