@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mtmtool
+Version: 1.2.11
+Summary:  A Personal Python Tool Library.
+Home-page: https://github.com/imutum/imutum_python_tool
+Author: imutum
+Author-email: 
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mdfpytool
+
+A personal code tool
+
+个人使用的简单的Python代码片段
