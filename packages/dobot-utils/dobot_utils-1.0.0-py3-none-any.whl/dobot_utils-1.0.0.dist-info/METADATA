@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dobot-utils
+Version: 1.0.0
+Summary: A better implementation of the Dobot API in Python
+Author-email: Calastrophe <vmxoperation@proton.me>
+Project-URL: Homepage, https://github.com/Calastrophe/dobot_utils
+Project-URL: Bug Tracker, https://github.com/Calastrophe/dobot_utils/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: StrEnum
+
+## Ergonomic and type-hinted Python API for Dobot Products
+
+A work-in-progress API, but with the goal of becoming the standard communication layer with their TCP-IP Protocol. 
