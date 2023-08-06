@@ -1,0 +1,7 @@
+devstuff
+dist
+docs
+ptpstuff
+tests
+upsies
+venv
