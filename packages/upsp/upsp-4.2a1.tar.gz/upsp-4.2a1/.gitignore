@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+*.egg-info
+
+# scikit-build artifacts
+_skbuild/
+python/upsp/_version.py
+
