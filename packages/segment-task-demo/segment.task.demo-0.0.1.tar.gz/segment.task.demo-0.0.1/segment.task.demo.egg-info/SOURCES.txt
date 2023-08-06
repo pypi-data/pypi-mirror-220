@@ -1,0 +1,5 @@
+setup.py
+segment.task.demo.egg-info/PKG-INFO
+segment.task.demo.egg-info/SOURCES.txt
+segment.task.demo.egg-info/dependency_links.txt
+segment.task.demo.egg-info/top_level.txt
