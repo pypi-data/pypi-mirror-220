@@ -1,0 +1,13 @@
+henhoe2vec/__init__.py,sha256=yNnWLt4gZL4SmkPNixWite2kkqZOkpINHgWFu70lk-s,78
+henhoe2vec/__main__.py,sha256=yi4gAM2NTLb8NRbzt819DQNApVA6UWzOw1FGP-r7AOw,37
+henhoe2vec/alias_sampling.py,sha256=l7ZpeFfkMNBKPe0FTbTctZ2lzZIYXrvgNNVB80FQZ8Q,2188
+henhoe2vec/embeddings.py,sha256=iCeinizQG9Qs9FolxCzc-Z_JaIC3nlSbZo9mojXJ8C0,2109
+henhoe2vec/henhoe2vec.py,sha256=OeIdsawMiy-YuyITqNlQ3iYg-7TQadLPaJLUanVvVFU,10540
+henhoe2vec/henhoe2vec_walks.py,sha256=RZj483dinAOJkTMWP0coQARhCSgEQS-Y3x1YYz1_160,12288
+henhoe2vec/napkin.py,sha256=j1ibRq5fRitDrWE4ISF6YuuOlWNctw6Pt3ZvXZRVwmw,573
+henhoe2vec/utils.py,sha256=Fov9ZkLpR4QxHSod-mjbJCqYR6yaMTMt1PbG_vLq8iE,5314
+henhoe2vec-1.0.2.dist-info/LICENSE.txt,sha256=OjxM6BnwYLAT3axypwxnA31Pdef9NlK2vfjIBbX_YgM,1071
+henhoe2vec-1.0.2.dist-info/METADATA,sha256=Pw7BDxQD-qkv7ISbb-k3WMKwfozAlYsk_gTJZH8X5uI,7341
+henhoe2vec-1.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+henhoe2vec-1.0.2.dist-info/top_level.txt,sha256=Hqx8YDeZNtuNw8HaOL2IAu0fAdgHkwfDylEyhiTS2mw,11
+henhoe2vec-1.0.2.dist-info/RECORD,,
