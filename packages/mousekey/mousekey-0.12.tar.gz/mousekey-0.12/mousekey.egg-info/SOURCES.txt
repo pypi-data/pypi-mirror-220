@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mousekey/README.MD
+mousekey/__init__.py
+mousekey/requirements.txt
+mousekey/thirdparty.json
+mousekey.egg-info/PKG-INFO
+mousekey.egg-info/SOURCES.txt
+mousekey.egg-info/dependency_links.txt
+mousekey.egg-info/requires.txt
+mousekey.egg-info/top_level.txt
