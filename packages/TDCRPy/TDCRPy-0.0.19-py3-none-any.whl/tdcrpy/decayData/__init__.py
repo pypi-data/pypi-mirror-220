@@ -1,0 +1,1 @@
+from tdcrpy.decayData import All-nuclides_BetaShape.zip
