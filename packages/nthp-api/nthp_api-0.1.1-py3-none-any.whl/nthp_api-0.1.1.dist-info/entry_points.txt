@@ -1,0 +1,4 @@
+[console_scripts]
+nthp=nthp_api.cli:cli
+nthp_api=nthp_api.cli:cli
+
