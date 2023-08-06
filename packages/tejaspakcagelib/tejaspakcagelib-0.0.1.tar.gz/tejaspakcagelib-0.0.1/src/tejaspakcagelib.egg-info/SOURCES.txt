@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/imppkg/__init__.py
+src/imppkg/hello.py
+src/tejaspakcagelib.egg-info/PKG-INFO
+src/tejaspakcagelib.egg-info/SOURCES.txt
+src/tejaspakcagelib.egg-info/dependency_links.txt
+src/tejaspakcagelib.egg-info/top_level.txt
