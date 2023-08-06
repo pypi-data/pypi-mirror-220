@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: w7x
+Version: 0.6.0
+Summary: The w7x package is a simulation framework that defines interfaces for simulation codes with interchangeable backends, computation pipelines in a directed acyclic graph that communicate via a central state.
+Home-page: https://gitlab.mpcdf.mpg.de/dboe/w7x
+License: MIT
+Keywords: Wendelstein 7-X,simulation,state,field line tracer,vmec,extender,numerical modeling,distributed computing
+Author: Daniel Böckenhoff
+Author-email: dboe@ipp.mpg.de
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: dot
+Provides-Extra: hyperopt
+Requires-Dist: dask[complete,distributed] (>=2021.06.00)
+Requires-Dist: dill
+Requires-Dist: gitpython (>=3.1.31,<4.0.0)
+Requires-Dist: graphviz ; extra == "dot"
+Requires-Dist: hydra_core
+Requires-Dist: hyperopt ; extra == "hyperopt"
+Requires-Dist: netCDF4
+Requires-Dist: numpy (>=1.20.0)
+Requires-Dist: osa
+Requires-Dist: pathlib ; python_version < "3.10"
+Requires-Dist: requests
+Requires-Dist: rna[pyqtgraph] (>=0.11.0)
+Requires-Dist: scikit-learn (>0.0)
+Requires-Dist: scipy (>=1.9.2)
+Requires-Dist: tfields[io] (>=0.5.0)
+Project-URL: Documentation, https://dboe.pages.mpcdf.de/w7x
+Project-URL: Repository, https://gitlab.mpcdf.mpg.de/dboe/w7x
+Description-Content-Type: text/x-rst
+
+library documentation
+=====================
+
+..
+    [shields-start]
+
+.. pypi
+.. image:: https://img.shields.io/pypi/v/w7x.svg
+    :target: https://pypi.python.org/pypi/w7x
+
+.. ci
+.. image:: https://gitlab.mpcdf.mpg.de/dboe/w7x/badges/master/pipeline.svg
+    :target: https://gitlab.mpcdf.mpg.de/dboe/w7x/-/pipelines/latest
+
+.. latest release
+.. image:: https://gitlab.mpcdf.mpg.de/dboe/w7x/-/badges/release.svg
+    :target: https://gitlab.mpcdf.mpg.de/dboe/w7x/-/releases
+
+.. coverage
+.. image:: https://gitlab.mpcdf.mpg.de/dboe/w7x/badges/master/coverage.svg
+    :target: https://gitlab.mpcdf.mpg.de/dboe/w7x/commits/master
+
+.. docs
+.. image:: https://img.shields.io/website-up-down-green-red/https/dboe.pages.mpcdf.de/w7x.svg?label=docs
+    :target: https://dboe.pages.mpcdf.de/w7x
+
+.. pre-commit
+.. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
+
+..
+    [shields-end]
+
+Overview
+--------
+
+..
+    [overview-start]
+
+The `w7x` package is a **simulation framework** that defines **interfaces for simulation codes** with interchangeable **backends**, **computation pipelines** in a directed acyclic **graph**.
+It provides access to simulation codes that **does not require the user to be a domain expert** of the specific codes and **will take care** about particularities (like binary installation, sanity checks, output files/format, passing on the output to follow-on codes etc).
+
+The package is named after the Wendelstein 7-X stellarator, but it is **generic** enough to be used for any **magnetic confinement fusion** device.
+
+..
+    [overview-end]
+
+Licensed under the ``MIT License``
+
+Resources
+~~~~~~~~~
+
+..
+    [resources-start]
+
+* Source code: https://gitlab.mpcdf.mpg.de/dboe/w7x
+* Examples: https://gitlab.mpcdf.mpg.de/dboe/w7x/-/tree/master/examples
+* Documentation: https://dboe.pages.mpcdf.de/w7x
+* Pypi: https://pypi.python.org/pypi/w7x
+
+..
+    [resources-end]
+

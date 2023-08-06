@@ -1,0 +1,154 @@
+package:
+    resources: ${path:${package.path}/../tests/resources}
+
+general:
+    backend: web_service
+    tmp_dir : ${os.home}/tmp
+    data: ${os.home}/data
+    cache: ${os.home}/.w7x/w7x_cache
+    stellopt_dir: ${general.cache}/STELLOPT
+
+    user:
+        # The user is an entry which does not make sense to fill on the module level config.
+        # Add your own config under "~/.w7x/config.cfg" and add the below fields.
+        # IF YOU ADD A PASSWORD, MAKE SURE OTHER USERS CAN NOT READ IT!
+        # first_name = John
+        # family_name = Doe
+        # alias = jdoe
+        # password = password1234
+
+mgrid:
+    nfp: 5
+
+    r:
+        # w7as had half the resolution (num)
+        iter: 1
+        min: 4.05
+        max: 6.75
+        num: 181
+
+    phi:
+        iter: 0
+        min: None
+        max: None
+        num: 96
+
+    z:
+        # w7as had half the resolution (num)
+        iter: 2
+        min: -1.35
+        max: 1.35
+        num: 181
+
+vmec:
+    backend: ${general.backend}
+    folder: ${general.tmp_dir}/vmec
+
+    runner:
+        cache: ${general.cache}/vmec_runner
+        mgrid_url: https://datashare.mpcdf.mpg.de/s/Ba9ZhuZTOZ3cASf
+        mgrid_dir: ${vmec.runner.cache}/mgrid
+
+    slurm:
+        exe: /bin/xvmec2000
+
+    local:
+        exe: ${general.stellopt_dir}/VMEC2000/Release/xvmec2000
+
+    web_service:
+        server: http://esb.ipp-hgw.mpg.de:8280/services/vmec_v8?wsdl
+        database: http://svvmec1.ipp-hgw.mpg.de:8080/vmecrest/v1/run/
+
+    nn:
+        cache: ${general.cache}/vmecnn
+        model_url: https://datashare.mpcdf.mpg.de/s/HsvafUNo7LggcUv
+        model_relative_path: 2022-07-31/14-29-30
+        # relative path to model_path and model_url
+        checkpoint_relative_path: ${vmec.nn.model_relative_path}/lightning_logs/0_1/checkpoints/epoch=55-step=14000.ckpt
+        checkpoint: ${vmec.nn.cache}/${vmec.nn.checkpoint_relative_path}
+        # relative path to model_path and model_url
+        metadata_relative_path: ${vmec.nn.model_relative_path}/metadata.json
+        metadata: ${vmec.nn.cache}/${vmec.nn.metadata_relative_path}
+        # I1 value in A used during training
+        training_I1: 13068
+        # mgrid file used during training
+        training_mgrid_file: mgrid_w7x_nv36_hires.nc
+
+    test:
+        # standard case (0 current, 0 pressure)
+        example_vmec_id: dboe_id_1000_1000_1000_1000_+0000_+0000_v_00_pres_00_it_12
+        example_wout_nc: ${package.resources}/vmec/wout_${vmec.test.example_vmec_id}.nc
+
+components:
+    web_service:
+        server: http://esb.ipp-hgw.mpg.de:8280/services/MeshSrv?wsdl
+        database: http://esb.ipp-hgw.mpg.de:8280/services/ComponentsDBProxy?wsdl
+        # resolves to http://10.129.4.14/services/python/ComponentsDB?wsdl
+        database_duplicate: http://10.129.4.14/services/python/ComponentsDB3?wsdl
+        user:
+            alias: ${general.user.alias}
+            password: ${general.user.password}
+
+    test:
+      example_stp: ${package.resources}/components/CATPRT-233672-CATSRPROD-000991_tungsten_tile_for_1-ace00ba120vbc20-p.1_CATPRT-232044_surface1_1_1.stl
+      example_kisslinger: ${package.resources}/components/div_hor_upper.kisslinger
+
+coils:
+    web_service:
+        database: http://esb.ipp-hgw.mpg.de:8280/services/CoilsDBProxy?wsdl
+
+flt:
+    backend: web_service
+    folder: ${general.tmp_dir}/fieldlines
+
+    local:
+        exe: /bin/xfieldlines
+
+    web_service:
+        server: http://esb.ipp-hgw.mpg.de:8280/services/FieldLineProxy?wsdl
+        network_share: //share.ipp-hgw.mpg.de/mp/
+        network_share_mount: /ipp-hgw
+        network_share_relative_path: fieldline/w7x/
+        network_share_pam_mount_volume: |
+            <volume
+                fstype="cifs"
+                server="share.ipp-hgw.mpg.de"
+                path="mp/fieldline"
+                mountpoint="~/ipp-hgw/fieldline"
+                options="nodev,nosuid,dir_mode=0700,file_mode=0700,domain=ipp-hgw,uid=%(USERUID),gid=%(USERGID)"
+            />
+
+    test:
+      diffused_state_dill: ${package.resources}/flt/state_sc_diffusion.dill
+
+fieldlines:
+    backend: ${general.backend}
+
+extender:
+    backend: web_service
+    folder: ${general.tmp_dir}/extender
+    chunk_size: 200000
+
+    local:
+        exe: NOT_YET_DEFINED
+
+    slurm:
+        exe: ${os.home}/bin/xvmec
+
+    web_service:
+        server: http://esb.ipp-hgw.mpg.de:8280/services/Extender?wsdl
+
+    test:
+        # VMEC + EXTENDER standard case (0 current, 0 pressure)
+        example_dat: ${package.resources}/extender/field_${vmec.test.example_vmec_id}.dat
+        example_datc: ${package.resources}/extender/field_${vmec.test.example_vmec_id}.datc
+        example_npz: ${package.resources}/extender/field_${vmec.test.example_vmec_id}.npz
+
+job:
+    # good default options for Cobra
+    log_path: log.txt
+    timeout: 300
+    partition: tiny
+    tasks: 20
+    nodes: 1
+    mem: 2G
