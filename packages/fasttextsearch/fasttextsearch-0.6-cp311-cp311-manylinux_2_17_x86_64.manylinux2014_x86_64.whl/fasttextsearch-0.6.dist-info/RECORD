@@ -1,0 +1,12 @@
+libtextsearch_core.so,sha256=IoSAWkl7qT5Ci5MlkXZyD1pCrB7eJaqqEGsk9ovZjfE,32360
+_textsearch.cpython-311-x86_64-linux-gnu.so,sha256=YnqmQ785KBKZadMqedZDFu89HHU36EPuXTE-JlpTjaY,245856
+fasttextsearch-0.6.dist-info/top_level.txt,sha256=mhdOeWn2kpMq1qsLsVFmKzexpShGfpE2mq-9am7B2wU,24
+fasttextsearch-0.6.dist-info/RECORD,,
+fasttextsearch-0.6.dist-info/WHEEL,sha256=uvhLde9X7XNceebvGHQkVb4ve2X4iBpP6gimh7Ysn18,152
+fasttextsearch-0.6.dist-info/METADATA,sha256=k9ebiUd15bK6bcX6Cr1VV4i9l7R2l3SoFHnF8uzAi0g,1190
+textsearch/suffix_array.py,sha256=H9o2XzsK_GHxnZwAf0ytHrauCC2cwVAEbSM9SzgGpVs,3208
+textsearch/levenshtein.py,sha256=VR2sjYNv1SuOcDSQI4sG07RzQQqctJittCB0VEWKbCk,3606
+textsearch/datatypes.py,sha256=aKw2YUSgylJS23zbeI7cIHx9GfPFlf5Jzw6MP1o95CM,13469
+textsearch/match.py,sha256=a1aZjmc_RF5sbvABIuYYATRmDe5Wf0S1XXgp0bHECXo,52271
+textsearch/utils.py,sha256=QHDdI0JOwIHumx2xWdE4jDemPjN6tGXdwjydfptmT38,5269
+textsearch/__init__.py,sha256=Kt21fL0pbJtoZPmtP0MT9boHmU8IgufHu5aCDMaQ_aE,998
