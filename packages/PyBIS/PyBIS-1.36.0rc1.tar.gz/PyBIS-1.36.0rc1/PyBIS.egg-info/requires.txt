@@ -1,0 +1,8 @@
+pytest
+requests
+requests_toolbelt
+urllib3
+pandas
+texttable
+tabulate
+python-dateutil
