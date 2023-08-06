@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyquizrd
+Version: 0.1.1
+Summary: 
+Author: marcacohen
+Author-email: marcacohen@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: langchain (>=0.0.240,<0.0.241)
+Description-Content-Type: text/markdown
+
+pyquizrd is a Python package that creates trivia quizzes using static datasets and
+generative AI.
+
