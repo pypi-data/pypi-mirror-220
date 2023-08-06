@@ -1,0 +1,2 @@
+[console_scripts]
+intelab_python_sdk = intelab_python_sdk.helper.cpu:run_print
