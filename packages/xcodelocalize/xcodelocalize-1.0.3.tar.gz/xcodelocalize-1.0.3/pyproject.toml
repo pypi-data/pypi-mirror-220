@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "xcodelocalize"
+version = "1.0.3"
+description = "Tool for automatic search and localization of .strings files"
+authors = ["MarkParker5 <markparker.it@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://pypi.org/project/xcodelocalize/"
+repository = "https://github.com/MarkParker5/XCodeLocalize"
+documentation = "https://github.com/MarkParker5/XCodeLocalize/blob/main/README.md"
+keywords = ["xcode", "localize", "strings", "localization", "ios"]
+
+[tool.poetry.scripts]
+xcodelocalize = "xcodelocalize.main:run"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = {extras = ["all"], version = "^0.7.0"}
+mtranslate = "^1.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
