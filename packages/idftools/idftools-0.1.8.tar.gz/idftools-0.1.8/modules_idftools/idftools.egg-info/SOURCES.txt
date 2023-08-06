@@ -1,0 +1,6 @@
+README.md
+setup.py
+modules_idftools/idftools.egg-info/PKG-INFO
+modules_idftools/idftools.egg-info/SOURCES.txt
+modules_idftools/idftools.egg-info/dependency_links.txt
+modules_idftools/idftools.egg-info/top_level.txt
