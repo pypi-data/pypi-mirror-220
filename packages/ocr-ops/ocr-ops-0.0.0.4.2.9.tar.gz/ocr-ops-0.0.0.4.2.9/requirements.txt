@@ -1,0 +1,6 @@
+algo-ops
+easyocr
+pytesseract
+natsort
+pyspellchecker
+shapely
