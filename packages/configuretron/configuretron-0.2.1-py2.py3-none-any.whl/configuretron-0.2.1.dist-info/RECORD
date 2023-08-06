@@ -1,0 +1,11 @@
+configuretron/__init__.py,sha256=7-aa0XX0jbbZ6LDyx4uJpmcJO48CZ0phlZq_7crDVbQ,217
+configuretron/__main__.py,sha256=_7r-aEo_9LlKvOz2nUd0O8rGNaq97d2IaS2EXJhlkXE,140
+configuretron/cli.py,sha256=riKxPlWkA2zn87a06uy5eVMwXmQ1OtZou-2FrxiEQoA,7628
+configuretron/configuretron.py,sha256=2ti28ZyTuJ-X8bX3UXwiRpHNZ9JxqmXwc9_UkFRXnso,5208
+configuretron-0.2.1.dist-info/AUTHORS.rst,sha256=2tXV4AD7tm3SSSMPTpX04ZfbqK4xgFTEaQM-lWQacoY,157
+configuretron-0.2.1.dist-info/LICENSE,sha256=0op3aFpdE9xD-1ICWEdC5IXfihMYtStrFFcxJSraeGE,1070
+configuretron-0.2.1.dist-info/METADATA,sha256=TBJUygh4GaI-B7cB0LC_nGTaioWLs5_bcV0a13Ciye0,3625
+configuretron-0.2.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+configuretron-0.2.1.dist-info/entry_points.txt,sha256=wX3QqxbXKhRbm0yVJV8PdxraqZSiwsDSgyULcpCH6n0,57
+configuretron-0.2.1.dist-info/top_level.txt,sha256=WuOCS_7Wumy25dVNmDz1w13Uxb0IyFKkXMXIU6JpYgc,14
+configuretron-0.2.1.dist-info/RECORD,,
