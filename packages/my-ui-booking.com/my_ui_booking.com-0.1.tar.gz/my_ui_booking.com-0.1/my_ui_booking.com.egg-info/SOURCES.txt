@@ -1,0 +1,5 @@
+setup.py
+my_ui_booking.com.egg-info/PKG-INFO
+my_ui_booking.com.egg-info/SOURCES.txt
+my_ui_booking.com.egg-info/dependency_links.txt
+my_ui_booking.com.egg-info/top_level.txt
