@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: qcausality
+Version: 0.0.1
+Summary: A module for quantum causal discovery and modelling
+Author: Christina Giarmatzi
+Author-email: Alexei Gilchrist <alexei@entropy.energy>
