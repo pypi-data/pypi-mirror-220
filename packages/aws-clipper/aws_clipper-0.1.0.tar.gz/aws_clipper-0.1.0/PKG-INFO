@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: aws-clipper
+Version: 0.1.0
+Summary: `aws-clipper` dumps AWS CLI config from a simple YAML file.
+Home-page: https://github.com/kai2nenobu/aws-clipper
+License: MIT
+Keywords: aws
+Author: kai2nenobu
+Author-email: kai2nenobu@gmail.com
+Requires-Python: >=3.8.1
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Project-URL: Bug Tracker, https://github.com/kai2nenobu/aws-clipper/issues
+Project-URL: Changelog, https://github.com/kai2nenobu/aws-clipper/blob/main/CHANGELOG.md
+Project-URL: Repository, https://github.com/kai2nenobu/aws-clipper
+Description-Content-Type: text/markdown
+
+[![PyPI][pypi_badge]][pypi_project] ![PythonVersions][pyversions] ![LICENSE][license_badge] [![CI][actions_status]][ci_workflow]
+
+[pypi_project]: https://pypi.org/project/aws-clipper/
+[pypi_badge]: https://img.shields.io/badge/pypi-v0.1.0-orange
+[license_badge]: https://img.shields.io/badge/license-MIT-green
+[pyversions]: https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue
+[actions_status]: https://github.com/kai2nenobu/aws-clipper/actions/workflows/ci.yml/badge.svg
+[ci_workflow]: https://github.com/kai2nenobu/aws-clipper/actions/workflows/ci.yml
+
+# aws-clipper
+
+`aws-clipper` dumps AWS CLI config from a simple YAML file.
+
+## License
+
+This project is developed and distributed under MIT license. See [LICENCE](./LICENSE) for more details.
+

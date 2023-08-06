@@ -1,0 +1,86 @@
+[tool.poetry]
+name = "aws-clipper"
+version = "0.1.0"
+description = "`aws-clipper` dumps AWS CLI config from a simple YAML file."
+authors = ["kai2nenobu <kai2nenobu@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "aws_clipper", from = "src"}]
+homepage = "https://github.com/kai2nenobu/aws-clipper"
+repository = "https://github.com/kai2nenobu/aws-clipper"
+keywords = ["aws"]
+include = [
+    { path = "CHANGELOG.md", format = "sdist" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Intended Audience :: Developers",
+    "Development Status :: 3 - Alpha"
+]
+
+[tool.poetry.urls]
+"Changelog" = "https://github.com/kai2nenobu/aws-clipper/blob/main/CHANGELOG.md"
+"Bug Tracker" = "https://github.com/kai2nenobu/aws-clipper/issues"
+
+[tool.poetry.scripts]
+aws-clipper = 'aws_clipper.cli:main'
+
+[tool.poetry.dependencies]
+python = ">=3.8.1"
+pyyaml = "^6.0"
+
+
+[tool.poetry.group.dev.dependencies]
+tox = "^4.0.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.2"
+pytest-cov = "^4.0.0"
+
+[tool.poetry.group.lint.dependencies]
+pre-commit = "^3.2.0"
+black = "^23.1.0"
+isort = {version = "^5.11.5", extras = ["colors"]}
+flake8 = "^6.0.0"
+flake8-pyproject = "^1.2.3"
+mypy = "^1.1.1"
+types-pyyaml = "^6.0.12.8"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+bump = true
+[tool.poetry-dynamic-versioning.substitution]
+files = ["src/aws_clipper/__init__.py"]
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.flake8]
+max-line-length = 120
+extend-ignore = ['E203']
+
+[tool.mypy]
+python_version = "3.8"
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ['tests']
+addopts = '--cov --cov-report=term --cov-report=xml --cov-report=html'
+
+[tool.coverage.run]
+branch = true
+source = ['aws_clipper']
+
+[tool.coverage.report]
+exclude_lines = [
+    'pragma: no cover',
+    '''if __name__ == ['"]__main__['"]'''  # exclude main functions
+]
