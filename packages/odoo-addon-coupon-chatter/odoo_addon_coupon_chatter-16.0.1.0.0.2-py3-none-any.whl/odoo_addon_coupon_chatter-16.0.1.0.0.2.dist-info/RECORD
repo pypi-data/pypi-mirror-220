@@ -1,0 +1,17 @@
+odoo/addons/coupon_chatter/README.rst,sha256=TPAdc2B8Vy82lk_s4PNGB7AuaWO9F4k45cHHVDWufDM,3297
+odoo/addons/coupon_chatter/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/coupon_chatter/__manifest__.py,sha256=EAjCN-jcJ5H8gUvh32aIRotbGKtPjeidn8BAGRJPaD0,572
+odoo/addons/coupon_chatter/i18n/coupon_chatter.pot,sha256=t5vGvDtbUgKyY2Uw8ivZv5-rldMIhy2q2tUCBBtQqBA,5677
+odoo/addons/coupon_chatter/i18n/sale_coupon_chatter.pot,sha256=r0mRNH0sThStYpILpN1ztcEmHFuBersLqNZOdBXK1BE,491
+odoo/addons/coupon_chatter/models/__init__.py,sha256=-lmxAJYkidEbcdt09Kyx6-lS07MDnHXLY1Kd2DDHpiI,30
+odoo/addons/coupon_chatter/models/loyalty_program.py,sha256=LHw9ziLU7D5iiFkwVfnm-rjGLciGwnqVZ7RF-Bo36UY,271
+odoo/addons/coupon_chatter/readme/CONTRIBUTORS.rst,sha256=rGn2nwh1N0GTXtAwdiO7vZubV2D8XOobA0Y0pAd-R8U,99
+odoo/addons/coupon_chatter/readme/DESCRIPTION.rst,sha256=q7aQRSLdN-js83lxfnXQXBe5u_i35wDjieOoK7XMlTY,124
+odoo/addons/coupon_chatter/readme/USAGE.rst,sha256=vPPSav7FwbUI8GxUH_y9Cw5HCgxYHnk0x4TBfrcSKU0,247
+odoo/addons/coupon_chatter/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/coupon_chatter/static/description/index.html,sha256=kSJG6RsqucLF-xG5IK7n_9wyf1teTwdALzn8YJJlZuI,12640
+odoo/addons/coupon_chatter/views/loyalty_program_view.xml,sha256=CP2F2Lm2_Q5VN9NE8eEc1R-EDEqeBrhb4cPav7bcZVs,1060
+odoo_addon_coupon_chatter-16.0.1.0.0.2.dist-info/METADATA,sha256=nUtubYkN-H2ceUjX-pI-b3rmT7PZH-Yy2cDe5R5n_hE,3927
+odoo_addon_coupon_chatter-16.0.1.0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+odoo_addon_coupon_chatter-16.0.1.0.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_coupon_chatter-16.0.1.0.0.2.dist-info/RECORD,,
