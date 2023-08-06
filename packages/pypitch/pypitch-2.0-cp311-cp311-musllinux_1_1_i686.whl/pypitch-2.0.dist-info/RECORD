@@ -1,0 +1,9 @@
+pypitch-2.0.dist-info/WHEEL,sha256=5Br54LkLAM_XrDPbNYIDpikGK9hHI1uk74I_AkuPT3c,111
+pypitch-2.0.dist-info/METADATA,sha256=hrmyEcmmZSHD32UY3AC5Vo2zvIgvq1LeT9GNiKsw0PQ,2838
+pypitch-2.0.dist-info/RECORD,,
+pypitch-2.0.dist-info/top_level.txt,sha256=HwXUyJfwNFm4lq8yH1Qvk2JtEB49Rv5ajCoxj3dDc9c,8
+pypitch-2.0.dist-info/LICENSE,sha256=wDzqAntLQORAL6vQhVdzZyfsPVvFStZKtkct5DIZjK0,18047
+pypitch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypitch/pypitch.cpython-311-i386-linux-musl.so,sha256=rq1EZyWVlZ46-CBpw7dHUsGZ4pHwHk5eqcUbCtLbARk,994937
+pypitch.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+pypitch.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
