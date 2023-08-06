@@ -1,0 +1,9 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+entrypoints-stubs/METADATA.toml
+entrypoints-stubs/__init__.pyi
+types_entrypoints.egg-info/PKG-INFO
+types_entrypoints.egg-info/SOURCES.txt
+types_entrypoints.egg-info/dependency_links.txt
+types_entrypoints.egg-info/top_level.txt
