@@ -1,0 +1,12 @@
+wagtailimagecaptions/__init__.py,sha256=yMOePe7TkvIxGy5OdaNi924feCiFLRwHm76xqN4QRnk,164
+wagtailimagecaptions/apps.py,sha256=ue4K_wcdIiL4tXXrqhWnCX9raTVoqLiHRKEpZF5PWEk,303
+wagtailimagecaptions/models.py,sha256=G9yzUPd_1CmN6V6ta2PFiF3_DnQSUoV5ADO3Hg3HxM8,1310
+wagtailimagecaptions/services.py,sha256=EAd9m4qFIisZ56iKPOeMSwMLO0_3bkjWOOM2HI72qzg,2957
+wagtailimagecaptions/signals.py,sha256=VeU_Xbmbp6-4v_YifeN3u4q93HAZkFxlu0OA_TEGQvo,1123
+wagtailimagecaptions/migrations/0001_initial.py,sha256=D7FDImUliI3fUAPLwL85XFDEErxwQACqZjs2jKrTehY,5372
+wagtailimagecaptions/migrations/0002_rename_extendedrendition_captionedrendition.py,sha256=i_uwyu-1PBZ1xseyny8aIRqwVNSVgwQaVW8Scq03iV4,352
+wagtailimagecaptions/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtailimagecaptions-0.1.4.dist-info/LICENSE,sha256=qE_aNQk2hRMfhEvRhZlQLtTUYT27kaSgnDhylJq2LBA,1535
+wagtailimagecaptions-0.1.4.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+wagtailimagecaptions-0.1.4.dist-info/METADATA,sha256=IR-AqY2YB0jv_DlOTJ6UBoThFkbPI04GdEdi7WR5ba0,2291
+wagtailimagecaptions-0.1.4.dist-info/RECORD,,
