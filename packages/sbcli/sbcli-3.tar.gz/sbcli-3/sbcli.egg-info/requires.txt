@@ -1,0 +1,7 @@
+foundationdb
+requests
+numpy
+typing
+prettytable
+docker
+psutil
