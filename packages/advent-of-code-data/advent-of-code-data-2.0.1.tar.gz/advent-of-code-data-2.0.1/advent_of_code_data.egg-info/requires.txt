@@ -1,0 +1,11 @@
+beautifulsoup4
+pebble
+urllib3
+aocd-example-parser>=2023.2
+
+[:platform_system == "Windows"]
+tzdata
+
+[nb]
+IPython
+jupyter-server
