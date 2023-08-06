@@ -1,0 +1,17 @@
+Steps:
+1) Update Readme with new version
+2) Update Changelog
+3) Update setup
+4) Push
+5) Github Release
+6) PyPi release (https://www.youtube.com/watch?v=5KEObONUkik)
+    >> pipenv shell
+    Build PyPi package cmd:
+    >> python setup.py bdist_wheel sdist
+    Check it:
+    >> twine check dist/*
+    Publish PyPi package to test:
+    >> twine upload -r testpypi dist/*
+    Test, (pip install -i https://test.pypi.org/simple/ venture-ai)
+    After test, publish to PyPi
+    >> twine upload dist/*
