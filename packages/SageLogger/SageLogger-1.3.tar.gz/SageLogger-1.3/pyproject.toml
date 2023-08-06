@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "SageLogger"
+version = "1.3"
+authors = [
+  { name="PanSageYT", email="pansage@hugedick.fyi" },
+]
+description = "Yet another python logger, or is it like any other?"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "colorama",
+  "requests"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/PanSageYT/SageLogger"
+"Bug Tracker" = "https://github.com/PanSageYT/SageLogger/issues"
