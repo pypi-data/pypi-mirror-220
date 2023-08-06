@@ -1,0 +1,178 @@
+Metadata-Version: 2.1
+Name: pytest-codspeed
+Version: 2.0.1
+Summary: Pytest plugin to create CodSpeed benchmarks
+Project-URL: Homepage, https://codspeed.io/
+Project-URL: Documentation, https://docs.codspeed.io/
+Project-URL: Source, https://github.com/CodSpeedHQ/pytest-codspeed
+Author-email: Arthur Pastel <arthur@codspeed.io>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2022 CodSpeed and contributors
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+License-File: LICENSE
+Keywords: benchmark,codspeed,performance,pytest
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Benchmark
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Requires-Dist: cffi~=1.15.1
+Requires-Dist: pytest>=3.8
+Requires-Dist: setuptools~=67.8.0; python_full_version >= '3.12.0b1'
+Provides-Extra: compat
+Requires-Dist: pytest-benchmark~=4.0.0; extra == 'compat'
+Provides-Extra: lint
+Requires-Dist: black~=23.3.0; extra == 'lint'
+Requires-Dist: isort~=5.12.0; extra == 'lint'
+Requires-Dist: mypy~=1.3.0; extra == 'lint'
+Requires-Dist: ruff~=0.0.275; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest-cov~=4.0.0; extra == 'test'
+Requires-Dist: pytest~=7.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+<div align="center">
+<h1>pytest-codspeed</h1>
+
+[![CI](https://github.com/CodSpeedHQ/pytest-codspeed/actions/workflows/ci.yml/badge.svg)](https://github.com/CodSpeedHQ/pytest-codspeed/actions/workflows/ci.yml)
+<a href="https://pypi.org/project/pytest-codspeed" target="_blank">
+<img src="https://img.shields.io/pypi/v/pytest-codspeed?color=%2334D058&label=pypi" alt="Package version">
+</a>
+<img src="https://img.shields.io/badge/python-3.7%20|%203.8%20|%203.9%20|%203.10%20|%203.11%20|%203.12-informational.svg" alt="python-3.7-3.8-3.9-3.10-3.11-3.12">
+[![Discord](https://img.shields.io/badge/chat%20on-discord-7289da.svg)](https://discord.com/invite/MxpaCfKSqF)
+
+Pytest plugin to create CodSpeed benchmarks
+
+</div>
+
+## Requirements
+
+**Python**: 3.7 and later
+
+**pytest**: any recent version
+
+## Installation
+
+```shell
+pip install pytest-codspeed
+```
+
+## Usage
+
+### Creating benchmarks
+
+Creating benchmarks with `pytest-codspeed` is compatible with the standard `pytest-benchmark` API. So if you already have benchmarks written with it, you can start using `pytest-codspeed` right away.
+
+#### Marking a whole test function as a benchmark with `pytest.mark.benchmark`
+
+```python
+import pytest
+from statistics import median
+
+@pytest.mark.benchmark
+def test_median_performance():
+    return median([1, 2, 3, 4, 5])
+```
+
+#### Benchmarking selected lines of a test function with the `benchmark` fixture
+
+```python
+import pytest
+from statistics import mean
+
+def test_mean_performance(benchmark):
+    # Precompute some data useful for the benchmark but that should not be
+    # included in the benchmark time
+    data = [1, 2, 3, 4, 5]
+
+    # Benchmark the execution of the function
+    benchmark(lambda: mean(data))
+
+
+def test_mean_and_median_performance(benchmark):
+    # Precompute some data useful for the benchmark but that should not be
+    # included in the benchmark time
+    data = [1, 2, 3, 4, 5]
+
+    # Benchmark the execution of the function:
+    # The `@benchmark` decorator will automatically call the function and
+    # measure its execution
+    @benchmark
+    def bench():
+        mean(data)
+        median(data)
+```
+
+### Running benchmarks
+
+#### Testing the benchmarks locally
+
+If you want to run only the benchmarks tests locally, you can use the `--codspeed` pytest flag:
+
+```shell
+pytest tests/ --codspeed
+```
+
+> **Note:** Running `pytest-codspeed` locally will not produce any performance reporting. It's only useful for making sure that your benchmarks are working as expected. If you want to get performance reporting, you should run the benchmarks in your CI.
+
+#### In your CI
+
+You can use the [CodSpeedHQ/action](https://github.com/CodSpeedHQ/action) to run the benchmarks in Github Actions and upload the results to CodSpeed.
+
+Example workflow:
+
+```yaml
+name: benchmarks
+
+on:
+  push:
+    branches:
+      - "main" # or "master"
+  pull_request:
+
+jobs:
+  benchmarks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.9"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run benchmarks
+        uses: CodSpeedHQ/action@v1
+        with:
+          token: ${{ secrets.CODSPEED_TOKEN }}
+          run: pytest tests/ --codspeed
+```
