@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: geoapps-utils
+Version: 0.1.0
+Summary: Geoapps Utils
+Author: Mira Geoscience
+Author-email: support@mirageoscience.com
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: geoh5py (>=0.8.0a3,<0.9.0)
+Requires-Dist: ipyfilechooser (>=0.6.0,<0.7.0)
+Requires-Dist: ipywidgets (>=7.6.5,<8.0.0)
+Requires-Dist: numpy (>=1.23.5,<1.24.0)
