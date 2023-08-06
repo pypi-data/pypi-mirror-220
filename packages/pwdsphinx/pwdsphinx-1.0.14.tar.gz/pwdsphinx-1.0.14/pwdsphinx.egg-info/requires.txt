@@ -1,0 +1,5 @@
+SecureString
+pyequihash
+pysodium
+qrcodegen
+zxcvbn-python
