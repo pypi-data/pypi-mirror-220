@@ -1,0 +1,7 @@
+PyMPDATA
+open-atmos-jupyter-utils
+pystrict
+scipy
+pint
+joblib
+sympy
