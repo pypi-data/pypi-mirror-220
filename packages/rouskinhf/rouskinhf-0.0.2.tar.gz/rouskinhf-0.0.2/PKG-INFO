@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: rouskinhf
+Version: 0.0.2
+Summary: A library to manipulate data for our DMS prediction models.
+Author-email: Yves Martin <yves@martin.yt>, Alberic de Lajarte <albericlajarte@gmail.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Docs](https://github.com/rouskinlab/RNA_data/actions/workflows/sphinx.yml/badge.svg)](https://github.com/rouskinlab/RNA_data/actions/workflows/sphinx.yml)
+
+
+# RNA_data
+
+A repo to manipulate the data for our RNA structure prediction model.
+
+See [the docs](https://rouskinlab.github.io/RNA_data/) for more information.
