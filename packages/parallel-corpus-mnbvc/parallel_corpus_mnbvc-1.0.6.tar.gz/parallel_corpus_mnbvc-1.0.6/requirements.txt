@@ -1,0 +1,9 @@
+datasets==2.10
+transformers==4.20.0
+sentencepiece
+lxml
+wandb
+scikit-learn
+pylcs
+tiktoken
+
