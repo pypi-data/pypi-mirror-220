@@ -1,0 +1,8 @@
+numpy
+scipy
+torch>=1.9.1
+torchvision>=0.9.1
+thop
+opencv-python
+wget
+tqdm
