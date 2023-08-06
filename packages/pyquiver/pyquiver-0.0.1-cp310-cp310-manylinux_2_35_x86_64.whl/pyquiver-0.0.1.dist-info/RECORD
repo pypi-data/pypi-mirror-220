@@ -1,0 +1,8 @@
+pyquiver/__init__.py,sha256=_J15JtHy6YSBVDrp2mAR-yMyimIU-B99I2vvntD2SUo,314
+pyquiver/_quiver.cpython-310-x86_64-linux-gnu.so,sha256=I8l84VUvRetCcv42YW69niPyMUX9YoA0yAehCbyb2AM,9212336
+pyquiver/collections.py,sha256=LDMpJHJlF3Di4sDqZduTH22gfUjVw2g8DJF5ORzo-4w,5189
+pyquiver-0.0.1.dist-info/METADATA,sha256=LqQRhggvZ8JpfiEUqjkGFk8DJJ-bDFivSxLYEMWXaNI,137234
+pyquiver-0.0.1.dist-info/WHEEL,sha256=Yuc5e5P7V7b2bShMkDFhMB2TBgJ_4Z0sGpuML-QIq3Q,117
+pyquiver-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyquiver-0.0.1.dist-info/licenses/LICENSE.txt,sha256=hw3XT3pLPBnlJT7n-2K8quZnSTYKqgojpLLMzG8S9mg,116629
+pyquiver-0.0.1.dist-info/RECORD,,
