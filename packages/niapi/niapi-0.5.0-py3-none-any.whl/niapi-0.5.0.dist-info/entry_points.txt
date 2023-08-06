@@ -1,0 +1,6 @@
+[console_scripts]
+app=litestar.__main__:run_cli
+
+[litestar.commands]
+run-all=app.cli:run_all_app
+
