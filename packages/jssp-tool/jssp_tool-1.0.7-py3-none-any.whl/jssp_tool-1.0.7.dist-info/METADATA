@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jssp-tool
+Version: 1.0.7
+Summary: 提供JSSP问题的工具类，如网络结构绘制、排序甘特图等
+Home-page: 
+Author: Weixian Shi
+Author-email: shiweixian@szwanggu.com
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: gym
+Requires-Dist: torch
+
