@@ -1,0 +1,9 @@
+hchacha/__init__.py,sha256=nKu2QJje6wA7NoEGV9ubJ1Bb7IrXkrlXVb48f8UKJ9A,47
+hchacha/data/GRCh37.tsv.gz,sha256=mhpi4dSgHK_KzqeX4-3-zBZgupbDvzxAFJdzVJmh0iQ,1899
+hchacha/data/GRCh38.tsv.gz,sha256=8GmnP0urrglQCbko2E0Y1EUo6cVbpjNJXmgfw9zksRc,13611
+hchacha/hchacha.py,sha256=KHXm2lrirOrmjkUSm-eCIK8oY_jdRppnwHx3nQbjMQU,7342
+hchacha-1.0.5.dist-info/LICENSE.txt,sha256=hwf1LiEq0Ut96OL5jBICCxXlK_eiuJS4Wh5Gpl_Oh6I,1077
+hchacha-1.0.5.dist-info/METADATA,sha256=8zhK870dlNkmFeDCvixkf-x8Ouk7ihpsFtIevNbx-Zg,4355
+hchacha-1.0.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+hchacha-1.0.5.dist-info/entry_points.txt,sha256=I9UgUW4-n-Ssyy9KNHffkg8ByOuj8wcy-077lk1ZBms,39
+hchacha-1.0.5.dist-info/RECORD,,
