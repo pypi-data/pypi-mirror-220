@@ -1,0 +1,12 @@
+minecraft_script/__init__.py,sha256=PSYtLKSNduFr7TNdB2ZtspBvfPuEitbWQ5eKeELK8WM,743
+minecraft_script/__main__.py,sha256=e2BdDpEU4nkb6OZ_zQcuw-6f-j5PFe2zkNk58uSoYYc,329
+minecraft_script/build.py,sha256=nzFbLavc8c77KTp0I5_xqyMqR23u-dhKIU-illwyggU,1565
+minecraft_script/interpreter.py,sha256=5kVgX__ORsd2Y2wVIGk7rZusncwJ7R6EeBHd1yQeQsc,191
+minecraft_script/parser.py,sha256=P90R6jjWKhs5NF4Z7teI7LovTDwgyJ7j0LEUsTLdoqc,3041
+minecraft_script/parsetab.py,sha256=7bEbJ-HT45hhtm0K-svGblVN32ETdlZ86_K9ipzdvRI,3756
+minecraft_script/shell_commands.py,sha256=itMXw3Mt3BlDAYyj0-0MoXUXNt24Rj07W7H3qwaSUOY,1881
+minecraft_script/tokens.py,sha256=Su02syFakxfT6ah-rip0T8d6GIv0vPCFfNmI9Y2DYQI,679
+minecraft_script-0.1.1.dist-info/METADATA,sha256=QJtekmR8usHAP4ZYwrV2RWUtprxEnkdm-v3bD9AM4jk,529
+minecraft_script-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+minecraft_script-0.1.1.dist-info/top_level.txt,sha256=unnj9WgsFDD0ycCshGjzgeAhcFEh5mwD9pn6K_dqXsI,17
+minecraft_script-0.1.1.dist-info/RECORD,,
