@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+epoque.egg-info/PKG-INFO
+epoque.egg-info/SOURCES.txt
+epoque.egg-info/dependency_links.txt
+epoque.egg-info/top_level.txt
