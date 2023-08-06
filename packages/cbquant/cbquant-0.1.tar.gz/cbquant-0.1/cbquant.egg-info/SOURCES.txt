@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cbquant/cbquant.py
+cbquant/cli.py
+cbquant.egg-info/PKG-INFO
+cbquant.egg-info/SOURCES.txt
+cbquant.egg-info/dependency_links.txt
+cbquant.egg-info/entry_points.txt
+cbquant.egg-info/requires.txt
+cbquant.egg-info/top_level.txt
+cbquant.egg-info/zip-safe

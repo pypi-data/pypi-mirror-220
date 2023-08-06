@@ -1,0 +1,4 @@
+libimagequant
+libimagequant-integrations
+Pillow
+tqdm
