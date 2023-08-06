@@ -1,0 +1,11 @@
+README.md
+setup.py
+lexset/LexsetManager.py
+lexset/__init__.py
+lexset/credentials.py
+lexset/review.py
+lexset.egg-info/PKG-INFO
+lexset.egg-info/SOURCES.txt
+lexset.egg-info/dependency_links.txt
+lexset.egg-info/requires.txt
+lexset.egg-info/top_level.txt
