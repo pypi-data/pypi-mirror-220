@@ -1,0 +1,14 @@
+guidance
+pyyaml
+openai
+pandas
+numpy
+
+uvicorn
+starlette
+fastapi
+jinja2
+python-multipart
+
+python-dotenv
+watchfiles
