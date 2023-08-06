@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: zuicorn
+Version: 1.0.0
+Summary: A WSGI server designed & developed for ZYLO Python web Framework.
+Home-page: https://github.com/E491K7/zuicorn
+Author: Pawan kumar
+Author-email: control@vvfin.in
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
