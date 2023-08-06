@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: marketwatchdata
+Version: 0.0.4
+Summary: retrieve data from MarketWatch.com
+Home-page: https://github.com/yacper/marketwatchdata
+Author: yacper
+Author-email: yacper@gmail.com
+License: MIT
+Keywords: stock,option,futures,fund,bond,index,air,finance,spider,quant,quantitative,investment,trading,algotrading,data
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MarketWatchData
+retrieve datas from marketwatch.com
