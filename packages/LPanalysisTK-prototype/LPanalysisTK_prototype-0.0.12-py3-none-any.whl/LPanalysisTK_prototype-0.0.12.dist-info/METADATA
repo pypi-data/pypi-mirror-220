@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: LPanalysisTK-prototype
+Version: 0.0.12
+Summary: A protoype of a new package in python for Laplacefintools analysis
+Author: Nabil Benjaa
+Author-email: nabil.benjaa@laplaceinsights.com
+Keywords: Analysis,Fintools
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+
+# PackagePrototype
+
+preliminary exemple of package in python with somes util functions. More details descriptions will be added later.
+
