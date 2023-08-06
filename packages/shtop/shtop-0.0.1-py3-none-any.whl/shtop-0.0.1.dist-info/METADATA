@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: shtop
+Version: 0.0.1
+Summary: Simple tui slurm job viewer.
+Home-page: UNKNOWN
+Author: Lukáš Plevač
+Author-email: <lukas@plevac.eu>
+License: UNKNOWN
+Keywords: python,slurm,shtop,top,htop
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+
+Simple tui slurm job viewer. Using /etc/hosts and ssh to get CPU and RAM utilization of all cluster nodes. Distrubuted using PIP and writen in python.
+
+
