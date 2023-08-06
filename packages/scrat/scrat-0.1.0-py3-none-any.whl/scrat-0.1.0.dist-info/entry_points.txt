@@ -1,0 +1,3 @@
+[console_scripts]
+scrat=scrat.cli:scrat
+

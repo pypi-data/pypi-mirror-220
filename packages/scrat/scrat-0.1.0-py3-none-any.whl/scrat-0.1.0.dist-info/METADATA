@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: scrat
+Version: 0.1.0
+Summary: Easily stash the results of expensive functions to disk
+Home-page: https://github.com/javiber/scrat
+License: BSD-3-Clause
+Keywords: cache,disk
+Author: javiber
+Author-email: javier.berneche@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: click (>=8.1.4,<9.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: sqlalchemy (>=2.0.18,<3.0.0)
+Project-URL: Repository, https://github.com/javiber/scrat
+Description-Content-Type: text/markdown
+
+# 🐿️ Scrat
+
+Easily stash the results of expensive functions to disk.
+
+## Get Started
+
+1. Install with `pip install git+https://github.com/javiber/scrat.git` (pypi package coming soon)
+2. Initialize stash `scrat init`
+3. Start saving time:
+``` python
+import scrat as sc
+import time
+
+@sc.stash()
+def expensive_function(param_1):
+    time.sleep(3)
+    return param_1
+
+expensive_function(1)  # <- function called
+expensive_function(1)  # <- function not called the result is recovered from stash
+expensive_function(2)  # <- function called again beacuse the parameters changed
+```
+
+## Features
+
+- Stores results to disk so they can be reused in different runs
+- Automatically re-runs the function if the parameters or the function code changed
+- Automatically saves any result using pickle
+- Automatically saves pandas DataFrames as parquet
+- Customizable to allow other serializers to store any kind of result efficiently
+- Customizable to hash any type of parameter efficiently
+- CLI to control stash
