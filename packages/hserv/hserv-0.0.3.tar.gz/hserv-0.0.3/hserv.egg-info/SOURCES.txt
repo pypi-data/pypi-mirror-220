@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+hserv/__init__.py
+hserv/__version__.py
+hserv/server.py
+hserv/supabase.py
+hserv.egg-info/PKG-INFO
+hserv.egg-info/SOURCES.txt
+hserv.egg-info/dependency_links.txt
+hserv.egg-info/requires.txt
+hserv.egg-info/top_level.txt
