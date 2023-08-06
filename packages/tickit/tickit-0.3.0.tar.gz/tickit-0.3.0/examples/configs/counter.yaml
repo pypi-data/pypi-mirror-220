@@ -1,0 +1,9 @@
+- type: examples.devices.counter.Counter
+  name: counter
+  inputs: {}
+- type: tickit.devices.sink.Sink
+  name: counter_sink
+  inputs:
+    input:
+      component: counter
+      port: _value
