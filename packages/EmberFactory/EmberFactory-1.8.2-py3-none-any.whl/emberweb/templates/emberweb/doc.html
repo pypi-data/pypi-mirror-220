@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% set active_page = "doc"+pagename %}
+<!--The example page is constructed from a markdown file that resides in the /doc directory-->
+{% block content %}
+{{content|safe}}
+{% endblock %}
