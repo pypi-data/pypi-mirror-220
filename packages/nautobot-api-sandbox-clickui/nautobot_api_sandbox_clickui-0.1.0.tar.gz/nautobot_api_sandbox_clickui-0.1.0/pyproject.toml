@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "nautobot-api-sandbox-clickui"
+version = "0.1.0"
+description = "click UI for nautobot_api_sandbox package"
+authors = ["tpayne0647"]
+readme = "README.md"
+packages = [{include = "nautobot_api_sandbox_clickui_pkg"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pynautobot = "^1.5.0"
+click = "^8.1.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
