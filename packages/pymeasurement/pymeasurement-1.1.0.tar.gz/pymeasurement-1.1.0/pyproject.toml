@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pymeasurement"
+version = "1.1.0"
+authors = [
+  { name="Saptak Das", email="saptak.das625@gmail.com" },
+]
+description = "A Measurement Calculator with Fixed Point Precision, Uncertainties, and Units"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Saptak625/pymeasurement"
+"Bug Tracker" = "https://github.com/Saptak625/pymeasurement/issues"
