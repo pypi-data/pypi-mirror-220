@@ -1,0 +1,3 @@
+hexkit
+scripts
+tests
