@@ -1,0 +1,30 @@
+
+<!-- # <img src="https://raw.githubusercontent.com/altar31/altar31/c0215bfa276765f6edbbaa4e8963f16424bc521f/public/logo-openpm.png" alt="Image Title" width="800" height="auto"> -->
+
+# 🏭 Facto.AI
+**"The AI toolkit with applications in minds"**
+## ☕️ About
+More to come soon...
+
+## 📚 Documentation
+
+To do ...
+
+
+## 💻 Installation
+
+To do...
+## For developement
+
+### 🔗 Dependencies
+
+To do..
+
+## ⚠️ Under construction
+This project is at the **early developement stage** and is truly **experimental**.
+This mean **most** of the features are **missing** and the documentation is still **lacking**.
+The project **github** repository will be available soon ! Stay tuned !
+After the public release of the github repository, contributions of any kinds (code, documentation, logo, community ...) will be really welcome !😁
+
+
+

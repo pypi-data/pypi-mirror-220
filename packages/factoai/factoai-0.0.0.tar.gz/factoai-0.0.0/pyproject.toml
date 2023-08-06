@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "factoai"
+version = "0.0.0"
+description = "The AI toolkit with applications in minds"
+authors = ["altar31 <damien.sicard31@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
