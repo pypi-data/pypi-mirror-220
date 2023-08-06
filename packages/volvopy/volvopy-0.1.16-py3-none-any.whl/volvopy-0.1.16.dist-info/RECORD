@@ -1,0 +1,13 @@
+volvopy/__init__.py,sha256=FWBQKOLznVthvMYMASrx2Gw5lqKHEOccQpBisDZ53Dw,24
+volvopy/volvo_api.py,sha256=_QvE1EXncBtk9x7UNpBaikVmEzR53MWJBFX4kbGNxtw,7366
+volvopy/settings/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+volvopy/settings/connected-vehicle-c3-specification.v1.json,sha256=RjKyaqrlmUT51iynyGgYqNGB0a036yDQDwRLWSVDuik,377649
+volvopy/settings/connected-vehicle-c3-specification.v2.json,sha256=RjKyaqrlmUT51iynyGgYqNGB0a036yDQDwRLWSVDuik,377649
+volvopy/settings/constants.py,sha256=QKAjg6ieRZyUqVvJRD3sCEZXwv06pCNM6tb2DYl9uCE,1956
+volvopy/settings/energy-api-specification.v1.json,sha256=5BKaT8b54iQua7cJy8wZPqCtIzLy3ogI8liQ5gShFOA,56534
+volvopy/settings/extended-vehicle-c3-specification.v1.json,sha256=Qi-akscUuKyLnXw1tTNwUcdJM5-qNZ_FOa6N1iexXe4,23483
+volvopy/settings/location-specification.v1.json,sha256=TFz7zVa2eIl4drUgxuCBEXAL-2QzU-JbUTG5nyRSjZ0,11391
+volvopy-0.1.16.dist-info/METADATA,sha256=NzrLL1nUjh6ISnIxQbTogSbOctWHa5TK8cHLYJOesr0,2068
+volvopy-0.1.16.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+volvopy-0.1.16.dist-info/licenses/LICENSE,sha256=wS9urNOfCSnvMlKE-z-hBB-30dAvUhBulKvkw_26lJU,1084
+volvopy-0.1.16.dist-info/RECORD,,
