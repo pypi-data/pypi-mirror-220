@@ -1,0 +1,3 @@
+[console_scripts]
+cage_json_extractor = cage_json_extractor.cage_json_extractor:main
+extract_cages = cage_json_extractor.extract_cages:main
