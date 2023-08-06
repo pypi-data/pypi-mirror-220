@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+PyComps/LaminateCalculator.py
+PyComps/Micromechanics.py
+PyComps/__init__.py
+PyComps.egg-info/PKG-INFO
+PyComps.egg-info/SOURCES.txt
+PyComps.egg-info/dependency_links.txt
+PyComps.egg-info/top_level.txt
+test/test_LaminateCalculator.py
+test/test_Micromechanics.py
