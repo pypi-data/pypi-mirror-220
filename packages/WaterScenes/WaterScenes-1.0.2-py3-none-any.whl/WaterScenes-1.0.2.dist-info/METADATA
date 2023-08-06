@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: WaterScenes
+Version: 1.0.2
+Summary: Toolkit for WaterScenes
+Home-page: https://github.com/waterscenes
+Author: Shanliang Yao
+Author-email: shanliang.yao19@gmail.com
+License: MIT-0
+Requires-Python: >=3.8
+Requires-Dist: numpy
+
