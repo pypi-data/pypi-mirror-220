@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-maintenance
+Version: 15.0.20230722.0
+Summary: Meta package for oca-maintenance Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 15.0
+Requires-Dist: odoo-addon-base-maintenance (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-base-maintenance-config (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-base-maintenance-group (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-account (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-equipment-contract (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-equipment-hierarchy (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-equipment-image (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-equipment-scrap (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-equipment-sequence (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-equipment-status (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-equipment-tags (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-plan (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-plan-activity (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-plan-employee (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-product (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-project (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-remote (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-request-employee (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-request-repair (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-request-sequence (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-request-stage-transition (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-security (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-team-hierarchy (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-timesheet (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-maintenance-timesheet-time-control (<15.1dev,>=15.0dev)
+
+UNKNOWN
+
