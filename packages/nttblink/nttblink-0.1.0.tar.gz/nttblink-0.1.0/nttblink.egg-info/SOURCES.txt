@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+nttblink.egg-info/PKG-INFO
+nttblink.egg-info/SOURCES.txt
+nttblink.egg-info/dependency_links.txt
+nttblink.egg-info/requires.txt
+nttblink.egg-info/top_level.txt

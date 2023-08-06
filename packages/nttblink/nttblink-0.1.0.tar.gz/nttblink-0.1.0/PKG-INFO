@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nttblink
+Version: 0.1.0
+Summary: A utility package for fetching secrets and documents from NTT Blink
+Home-page: https://github.com/NTT-AM-DDD/python-nttblink
+Author: Austin Arlint
+Author-email: austin.arlint@global.ntt
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# python-nttblink
+
+Controller to push and pull secrets and documents from NTT Blink.  Used to automate document and secret handling.
+ 
