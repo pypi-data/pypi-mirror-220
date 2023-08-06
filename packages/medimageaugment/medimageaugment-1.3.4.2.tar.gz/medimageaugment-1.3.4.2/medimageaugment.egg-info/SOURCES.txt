@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+medimageaugment.egg-info/PKG-INFO
+medimageaugment.egg-info/SOURCES.txt
+medimageaugment.egg-info/dependency_links.txt
+medimageaugment.egg-info/requires.txt
+medimageaugment.egg-info/top_level.txt
