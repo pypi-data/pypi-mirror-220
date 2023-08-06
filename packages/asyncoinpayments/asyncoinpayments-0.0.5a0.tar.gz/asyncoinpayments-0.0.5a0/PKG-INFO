@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: asyncoinpayments
+Version: 0.0.5a0
+Summary: Python Asynchronous Wrapper of the CoinPayments API
+Author-email: flalugli <flalugli.dev@gmail.com>
+License: Apache License 2.0
+Project-URL: Homepage, https://github.com/flalugli/asyncoinpayments
+Keywords: python,crypto,cryptocurrency,payment gateway,async,aiohttp
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# AsynCoinpayments  
+
+An async/await compatible python wrapper for the CoinPayments API  
+
+---
+
+## How to install  
+
+```
+# run this in the command propt or terminal
+pip install asyncoinpayments  
+```
+
+## Features  
+- Fast to setup and simple to use
+- Easy to use async/await interface
+- API calls using aiohttp requests  
+- create your own API calls
+
+### Contact me
+
+**Email** : <flalugli.dev@gmail.com>  
+**Discord** : flalugli   
