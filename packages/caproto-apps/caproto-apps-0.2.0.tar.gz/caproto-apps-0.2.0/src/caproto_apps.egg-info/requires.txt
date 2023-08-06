@@ -1,0 +1,9 @@
+caproto
+fabric
+
+[dev]
+black
+pytest
+pytest-asyncio
+build
+twine
