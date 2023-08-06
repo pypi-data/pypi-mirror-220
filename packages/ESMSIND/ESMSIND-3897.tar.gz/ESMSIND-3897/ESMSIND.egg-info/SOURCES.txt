@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+ESMSIND/__init__.py
+ESMSIND/a.py
+ESMSIND.egg-info/PKG-INFO
+ESMSIND.egg-info/SOURCES.txt
+ESMSIND.egg-info/dependency_links.txt
+ESMSIND.egg-info/requires.txt
+ESMSIND.egg-info/top_level.txt
