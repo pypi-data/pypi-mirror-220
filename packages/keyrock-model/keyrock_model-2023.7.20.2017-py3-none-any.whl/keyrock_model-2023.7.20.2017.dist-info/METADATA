@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: keyrock-model
+Version: 2023.7.20.2017
+Requires-Dist: keyrock-core
+Requires-Dist: pydantic
+
