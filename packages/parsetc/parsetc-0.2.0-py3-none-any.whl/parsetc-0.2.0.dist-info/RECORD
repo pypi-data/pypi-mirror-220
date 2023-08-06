@@ -1,0 +1,10 @@
+parsetc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parsetc/parsetc.py,sha256=neXDNcLm-UazQpTohcXcr7sWLO7ffE7_xHaxYC2t7u4,12752
+parsetc/terminals.json,sha256=YJVj4WuN8tMXiv7N4MV5S3bMdrn7XOlDdqWp8sk8H1A,4669
+parsetc/translit.py,sha256=4GM4qAuG6ed6ruJppLJX0KIWz4KYS_DdrExJNXy3Yyk,19566
+parsetc-0.2.0.dist-info/LICENSE,sha256=DrAkXMJn2Isl6DmqZqc-DSLZt9stvzc6ItxOp1x5gCA,1100
+parsetc-0.2.0.dist-info/METADATA,sha256=OyzmoX9wa2fGrKpsukaZV7XQmkDXO0JBfTZb-mK2JKU,4443
+parsetc-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+parsetc-0.2.0.dist-info/entry_points.txt,sha256=8ae916LiF2qEcZIZDAaKacUBw4wBGF7_sumSAknwYN8,49
+parsetc-0.2.0.dist-info/top_level.txt,sha256=tRg3lsiV6sI4d2xdys5me1IhLWXteHRGKfYOuvikePo,8
+parsetc-0.2.0.dist-info/RECORD,,

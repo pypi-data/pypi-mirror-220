@@ -1,0 +1,2 @@
+[console_scripts]
+parsetc = parsetc.parsetc:main
