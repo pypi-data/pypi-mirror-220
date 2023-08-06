@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+kvlog/server.py
+kvlog.egg-info/PKG-INFO
+kvlog.egg-info/SOURCES.txt
+kvlog.egg-info/dependency_links.txt
+kvlog.egg-info/top_level.txt

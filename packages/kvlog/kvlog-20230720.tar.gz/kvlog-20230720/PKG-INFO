@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: kvlog
+Version: 20230720
+Summary: A simple Queue and DB - with get/put operations over HTTPS.
+Home-page: https://github.com/magicray/kvlog
+Author: Bhupendra Singh
+Author-email: bhsingh@gmail.com
+Keywords: queue,paxos,pubsub,pub,sub,kv,key,value
+License-File: LICENSE
+
+Uses Paxos for replication and SQLite for storage. Leaderless and highly available.
