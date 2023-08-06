@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bearish"
+version = "0.1.1"
+description = "We're bearish on SQL backends"
+authors = ["Phillip Cloud <417981+cpcloud@users.noreply.github.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
