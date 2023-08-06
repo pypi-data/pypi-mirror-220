@@ -1,0 +1,3 @@
+[console_scripts]
+python-jmap=python_jmap.__main__:main
+

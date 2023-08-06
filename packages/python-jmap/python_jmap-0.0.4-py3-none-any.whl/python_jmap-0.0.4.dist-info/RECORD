@@ -1,0 +1,12 @@
+python_jmap/__init__.py,sha256=u05KbWc4h4UUZil3Lad_Mhw7uJddnJtub0z6KWBpN-M,256
+python_jmap/__main__.py,sha256=ywvZ5IuhPDQr9sC75DpXX9hTKvZCulpf_cDD5E0lq5s,142
+python_jmap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_jmap/types/__init__.py,sha256=7gUiVlKSxE2UL8xWOIRfers60i9CoxcFeVrVnhekZOk,221
+python_jmap/types/date.py,sha256=h_ERTXkn5kbChQRUdjTRyLkzDSGdtAtyq9tEWDZlxwQ,2128
+python_jmap/types/id.py,sha256=bu2_9QRp5-mqHfq-tCCWUxFJ1WNdKZ2fDA7glcFfqMs,3739
+python_jmap/types/int.py,sha256=UTdF8LSBdZSFh9gkwAdpE-KD5Z9vLwf6rT_TxI_t34k,2123
+python_jmap-0.0.4.dist-info/LICENSE,sha256=OLxDAN1SO90bMFyrROiFBSjqaIU04npV1pM4CrgOBW8,1066
+python_jmap-0.0.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+python_jmap-0.0.4.dist-info/METADATA,sha256=Q8CGkT8xBhjhjuWSHcUzDaI_VUuZ4hikA5zyrXdxapQ,3234
+python_jmap-0.0.4.dist-info/entry_points.txt,sha256=Qw6iHbqxGx6PrGfOLHJWMeGZTmEEhkoOF5Oboi8Q9vw,57
+python_jmap-0.0.4.dist-info/RECORD,,
