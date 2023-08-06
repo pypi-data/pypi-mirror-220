@@ -1,0 +1,11 @@
+multidms/__init__.py,sha256=vtfvYYprvJcffldeVTTRHDJQ44zxKsFgo0PIDNhFcEQ,1897
+multidms/biophysical.py,sha256=30YMw3vycHdMovw-8qcBgUNog1wOK0mqY_Ydd4aDt0Y,13845
+multidms/data.py,sha256=HjS9Pqfxh25nX5ClDSPKm11XDFevHal-jAMWZqQ-lZM,21658
+multidms/model.py,sha256=rO2KNtVg_CKLlj869c8tV2yIKcfKWcDo0dbAqBf8vEU,41562
+multidms/plot.py,sha256=SJtfOWv3LCCYamPqpLbeKnsghnALayRE0ixeRVNhV9Y,31052
+multidms/utils.py,sha256=euspIRGH8OC5JLv0cPG_mrjuYEyxD18sZNfbN5UU19U,9924
+multidms-0.1.9.dist-info/LICENSE,sha256=mJ4ZEGg5nui2ZBfp2ROb3o3ft3TJ4TkypMQnImQoCDo,1095
+multidms-0.1.9.dist-info/METADATA,sha256=SU1wBNZZV5nSSdbLGfjKVBM7kGhtxjGfPYuNVUACQvY,3730
+multidms-0.1.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+multidms-0.1.9.dist-info/top_level.txt,sha256=NIdwAxUTLTJjI9-QL1q_dkT2pVlN3yOZY7apfx0X2nk,9
+multidms-0.1.9.dist-info/RECORD,,
