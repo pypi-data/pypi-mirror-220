@@ -1,0 +1,9 @@
+math_time/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+math_time/date_arithmetic.py,sha256=UoxMm5TfHu6pTeBsCHnXO9KnR1KUseoK_wf9RpiAd7k,3382
+math_time/date_format.py,sha256=rdVvAecWFgdAJnXGtIIPsCEWEzGcfQK1SHd3_Nzy01o,2442
+math_time/timezone.py,sha256=5JY0ntl7yFHzE2HnRrAPS5h9VNcUqejGcMkR3atvEgg,1256
+math_time-0.1.12.dist-info/LICENSE,sha256=maDITBYJVEkvdpdHYdu7kzhnLkzDyyhGW8fQn1ny0kw,14097
+math_time-0.1.12.dist-info/METADATA,sha256=WuYewEsBw20GFhMZa_u_iATlw3phUapQoqOcNZRwEgs,19850
+math_time-0.1.12.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+math_time-0.1.12.dist-info/top_level.txt,sha256=pL8dmViDPzZqPKSj1GSiqD5e_m7-I1B-w_9pB1rCo3U,10
+math_time-0.1.12.dist-info/RECORD,,
