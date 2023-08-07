@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "math_time"
+version = "0.1.12"
+authors = [
+  { name="W3i", email="hello@mail.w3i.eu" },
+]
+description = "A smal package that help you with time and date conversions and assists with converting between different time zones"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+keywords = ["time", "date", "datetime", "date_time", "date-time", "date time", "timezone", "date format", "date-format", "date_format",]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)",
+    "Natural Language :: English",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "pytz",
+    "datetime",
+    "python-dateutil"
+]
+
+[project.urls]
+"Homepage" = "https://git.w3i.eu/Kilian/math_time"
+"Bug Tracker" = "https://git.w3i.eu/Kilian/math_time/issues"
